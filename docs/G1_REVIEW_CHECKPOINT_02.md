@@ -1,12 +1,14 @@
 # G1-02 Light / Selective Deep Review — Checkpoint 02
 
-Status: **CHECKPOINT REACHED — RESEARCHER REVIEW REQUIRED; NO EMPIRICAL WORK STARTED**
+Status: **G1-02 EVIDENCE REVIEW COMPLETED — PROVISIONAL SYNTHESIS INPUTS ONLY; NO EMPIRICAL WORK STARTED**
 
 ## Scope and stopping result
 
-G1-02 was approved on 2026-09-03. Review depth followed potential G2 decision impact. Fifteen narrow claims from decision-critical full texts were admitted. This checkpoint stops because first-wave reviews now define stable permitted-use boundaries and missing links; further broad review is more likely to add examples than change those boundaries. Pending China-specific full texts remain discovery metadata only.
+G1-02 was approved on 2026-09-03. Review depth followed potential G2 decision impact. Fifteen narrow claims from decision-critical full texts were admitted. Adaptive review stopped because further broad reading was unlikely to change candidate boundaries or missing-link assessments. Pending China-specific full texts remain discovery metadata only.
 
-## Pair Formation decision map
+Under the normalized hierarchy, the tables below are provisional cross-paper comparison inputs produced during review. They are not the four formal maps, are not frozen permitted-use decisions, and cannot authorize G2. Formal synthesis belongs to G1-03; evidence freeze and handoff belong to G1-04.
+
+## Provisional Pair Formation comparison input for G1-03
 
 `Pair Formation Information → Construct Measured → Evidence → Limitations → Permitted G2 Use`
 
@@ -21,7 +23,7 @@ G1-02 was approved on 2026-09-03. Review depth followed potential G2 decision im
 
 Strongest conclusions: company and statistical layers are complementary; raw distance is a necessary weak baseline; residual dependence is distinct but not dominant; stability/rejection is a necessary candidate constraint before calling an event a dislocation.
 
-## Provisional observable-signature map
+## Provisional observable-signature comparison input for G1-03
 
 `Mechanism → observable signature → identification strength → competing explanation → data requirement → permitted use`
 
@@ -61,6 +63,6 @@ Literature ancestry exists for DR-001–DR-015 only within their permitted uses.
 4. Does M3 have any positive independently identified signature? Current answer: not established.
 5. Does B-P4 support more than an explicit evidence-absence/Measurement-Gap conclusion?
 
-## Researcher decision requested
+## Next governed action
 
-Approve or revise this checkpoint and choose whether G1 should (a) run narrowly targeted gap closure for items 1–3, or (b) declare decision saturation with M3 and B-P4 explicitly unresolved, then proceed only to G2 measurement design. Neither option authorizes data acquisition, providers, database construction, models, or empirical inspection.
+G1-02 is complete. The next possible action is researcher approval of G1-03 Cross-Paper Evidence Synthesis, including a choice between narrowly targeted gap closure and an explicit evidence-absence finding. G2 remains locked until G1-03 is completed and G1-04 freezes permitted downstream use.

@@ -1,8 +1,8 @@
 # Literature Evidence Register
 
-Status: **G1-02 CHECKPOINT 02 — 15 DECISION-RELEVANT CLAIMS ADMITTED**
+Status: **G1-02 EVIDENCE REVIEW COMPLETE — 15 CLAIMS ADMITTED; CROSS-PAPER SYNTHESIS NOT YET FROZEN**
 
-Only researcher-authored notes and bibliographic links are retained. No source PDF is redistributed. Access date for all records: 2026-09-03. “Permitted G2 use” authorizes construct consideration and measurement-design requirements only—not a factor, formula, label, provider, or empirical conclusion.
+Only researcher-authored notes and bibliographic links are retained. No source PDF is redistributed. Access date for all records: 2026-09-03. Entries in “Permitted G2 use” are reviewer recommendations for G1-03/G1-04, not current authorization. Only G1-04 may freeze downstream use; no factor, formula, label, provider, or empirical conclusion is authorized.
 
 ## Admitted claims
 

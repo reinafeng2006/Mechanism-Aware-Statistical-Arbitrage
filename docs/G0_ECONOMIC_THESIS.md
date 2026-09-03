@@ -41,7 +41,7 @@ M0–M3 are falsifiable working hypotheses rather than assumed true mechanism cl
 | 8 | Economic materiality | **DECIDE AT G0** | Pursue incremental net economic value versus an appropriate mechanism-agnostic/no-trade comparator; exact metrics and thresholds remain deferred to G3/G4. |
 | 9 | Causal and predictive estimands | **STATISTICAL-DESIGN — DEFER** | G0 freezes claim separation and causal ordering only; estimands and target populations go to G3. |
 | 10 | Timing policy | **MEASUREMENT-DESIGN — DEFER** | G0 freezes point-in-time admissibility; timestamp fields, lags, revisions, sessions, and as-of logic go to G2. |
-| 11 | Development/held-out architecture | **STATISTICAL-DESIGN — DEFER** | Split, embargo, overlap, reveal, and custody protocol go to G3 before inspection. |
+| 11 | Development/held-out architecture | **STATISTICAL-DESIGN — DEFER** | Split, embargo, overlap, reveal, and custody protocol go to G4 before inspection. |
 | 12 | Quantitative stopping rules | **STATISTICAL-DESIGN — DEFER** | G0 freezes the obligation to predeclare stops and immediate stop for governance breach; numerical thresholds go to G3. |
 | 13 | Governance ownership | **DECIDE AT G0** | Roles, authority, conflicts, amendment control, and independent gate review are required; individual appointments may be recorded before the first gate requiring them. |
 | 14 | Observatory intake administration | **DECIDE AT G0** | Quarantine and non-evidence status are frozen; cadence, storage, and workflow implementation remain deferred. |

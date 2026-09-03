@@ -1,8 +1,8 @@
 # Data Requirement Register
 
-Status: **G1 INPUT TO G2/G3 — REQUIREMENTS ONLY; NO DATA ACQUISITION OR PROVIDER SELECTION**
+Status: **G1-02 CLAIM-LINKED INPUT TO G1-03 — NOT YET THE FORMAL LITERATURE-DERIVED DATA REQUIREMENT MAP**
 
-Frequency and history are literature-motivated candidate requirements, not frozen specifications. PIT means only the version publicly available at the decision timestamp, including publication and revision lags.
+Frequency and history are literature-motivated candidate requirements, not frozen specifications. PIT means only the version publicly available at the decision timestamp, including publication and revision lags. G1-03 must synthesize these rows into the formal Literature-Derived Data Requirement Map; G1-04 must classify permitted downstream use before any row may enter G2.
 
 | ID | Construct | Candidate observable | Role | Frequency | PIT requirement | Required history | Source class (not provider) | Raw / derived | Claim ID |
 |---|---|---|---|---|---|---|---|---|---|
@@ -22,7 +22,7 @@ Frequency and history are literature-motivated candidate requirements, not froze
 | DR-014 | Structural/fundamental divergence | Corporate event, business/link/fundamental change, relationship break | R | Event/daily/periodic | Publication/effective timestamps; preserve taxonomy vintages | Multi-year vintages plus events | Regulatory/issuer disclosures and PIT fundamentals | Mixed | CL-PF-001, CL-PF-004/005, CL-M0-001 |
 | DR-015 | Ex-post resolution | Continuation/reversal/non-resolution path | Outcome only | Intraday/daily horizons | Strictly unavailable to event-time mechanism assignment | Candidate horizons deferred | Market records | Derived outcome | CL-M2-004, CL-B4-001 |
 
-## Prohibitions carried into G2/G3
+## Prohibitions before G1-04 handoff
 
 - No provider, field, frequency, lookback, formula, threshold, classifier, or schema is selected at G1.
 - A residual, later reversal, later continuation, or profitable trade is not a mechanism label.

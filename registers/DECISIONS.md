@@ -11,10 +11,10 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | D-004 | Detailed relationship constructs and admissible measures | DEFERRED | LITERATURE-INFORMED — G1, then measurement at G2 |
 | D-005 | Event clock, state measures, labels, and resolution horizons | DEFERRED | MEASUREMENT-DESIGN — G2 |
 | D-006 | Observable indicators discriminating M0–M3 | DEFERRED | LITERATURE-INFORMED — G1; measurement follows at G2 |
-| D-007 | Trading directions, sizing, exits, and A-share feasibility | DEFERRED | IMPLEMENTATION — G4 |
-| D-008 | Exact comparator construction, metric, loss function, and materiality threshold | DEFERRED | STATISTICAL-DESIGN — G3; implementation inputs at G4 |
-| D-009 | Development/held-out split, embargo, overlap, custody, and reveal protocol | DEFERRED | STATISTICAL-DESIGN — G3 before inspection |
-| D-010 | Quantitative empirical stopping thresholds | DEFERRED | STATISTICAL-DESIGN — G3 |
+| D-007 | Trading directions, sizing, exits, and A-share feasibility | DEFERRED | IMPLEMENTATION — G5 |
+| D-008 | Exact comparator construction, metric, loss function, and materiality threshold | DEFERRED | STATISTICAL-DESIGN — G4; implementation inputs at G5 |
+| D-009 | Development/held-out split, embargo, overlap, custody, and reveal protocol | DEFERRED | STATISTICAL-DESIGN — G4 before inspection |
+| D-010 | Quantitative empirical stopping thresholds | DEFERRED | STATISTICAL-DESIGN — G4 |
 | D-011 | Freeze seven-stage conceptual pipeline | APPROVED | Incorporated into G0-02 |
 | D-012 | Company-aware, data-driven, point-in-time, reproducible, generalizable, non-manual formal pair formation | APPROVED | Incorporated into G0-05; no factor/formula chosen |
 | D-013 | Classify the 15 former G0 groups by downstream gate | APPROVED | Scope routing preserved in G0 thesis |
@@ -30,6 +30,9 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | G1-00 | Approve G1 literature design before search begins | SUPERSEDED | Replaced by G1-01 |
 | G1-01 | Approve seven primary G1 decision questions, 26-question mapping, priorities, dependencies, and stopping conditions | APPROVED | User approval, 2026-09-03; Discovery/Triage authorized in dependency order |
 | G1-02 | Approve decision-value-prioritized Light/Selective Deep review, linked supportive/contradictory evidence blocks, claim-level extraction, provisional observable-signature mapping, Data Requirement Register, and absence-aware stop | APPROVED | Researcher approval, 2026-09-03; no empirical work or provider selection authorized |
+| G1-H01 | Nest the mature literature workflow within G1 as G1-01 through G1-04; assign G1/G2/G3 responsibilities and renumber later gates without changing completed evidence | APPROVED | Researcher approval, 2026-09-03; G1-01 unchanged; G1-02 migrated as completed |
+| G1-03 | Approve Cross-Paper Evidence Synthesis and production of the four formal maps | PROPOSED | Not authorized by hierarchy normalization; provisional G1-02 tables are inputs only |
+| G1-04 | Freeze permitted downstream use and authorize G2 handoff | DEFERRED | Requires approved G1-03 synthesis checkpoint |
 
 ## Required record fields for every amendment
 
