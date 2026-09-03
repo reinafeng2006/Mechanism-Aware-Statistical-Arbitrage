@@ -27,6 +27,7 @@ Frequency and history are literature-motivated candidate requirements, not froze
 | ID | Construct | Candidate observable | Role | Frequency | PIT requirement | Required history | Source class (not provider) | Raw / derived | Claim ID |
 |---|---|---|---|---|---|---|---|---|---|
 | DR-016 | Permanent/transitory microstructure component | Timestamped trade price and quote; signed trade/order flow; liquidity-provider/quote-competition proxy; model-conditional permanent/transitory component | C/R | Tick/intraday candidate | Exchange timestamps, quote/trade sequence and any model input must be available by the decision timestamp; prohibit future-interval revisions in event-time use | Multiple intraday periods, liquidity regimes and event windows; length deferred | Exchange trade/quote/order-book records | Raw + derived | CL-B4-002 |
+| DR-017 | Pair-candidate overlap governance | Candidate-pair incidence graph; shared-asset count/concentration and candidate-edge weight lineage | P/R | Formation-period candidate | Candidate edges, weights, universe and overlap rule frozen from PIT information before portfolio governance use | Repeated formation vintages; length deferred | Derived from approved candidate relationship inputs | Derived | CL-PF-010 |
 
 ## Prohibitions before G1-04 handoff
 

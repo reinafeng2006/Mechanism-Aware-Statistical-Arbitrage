@@ -16,9 +16,9 @@ Before retaining `PROVISIONALLY_SATURATED`, assess contradictions, population/ma
 
 | Scope | Status | Reason / next governed action | Reopen trigger |
 |---|---|---|---|
-| A-P1 Company/economic representation | `OPEN — G1-03 UNAUTHORIZED` | Existing G1-02 claims are provisional inputs; no cross-paper synthesis decision yet | G1-03 approval, new contradiction, or material A-share-machinery transfer evidence |
-| A-P2 Normal statistical relationship | `OPEN — G1-02 REVIEW ARTIFACTS REQUIRED` | Prior bounded result is preliminary because no candidate-specific full-text review artifact exists. | Verified review of the priority queue, then a documented saturation/stop judgment |
-| A-P3 Generalizable data-driven construction | `OPEN — G1-02 REVIEW ARTIFACTS REQUIRED` | Prior bounded result is preliminary because no candidate-specific full-text review artifact exists. | Verified review of the priority queue, then a documented saturation/stop judgment |
+| A-P1 Company/economic representation | `OPEN — G1-02 PAIR FORMATION NOT SATURATED` | PF-001 is verified, but PF-003's direct structural/fundamental comparison is full-text blocked. | Lawful full-text review of PF-003/PF-012, then documented saturation judgment |
+| A-P2 Normal statistical relationship | `OPEN — G1-02 PAIR FORMATION NOT SATURATED` | Raw, residual, cointegration and stability constructs are verified as non-equivalent candidates; PF-003/PF-012's direct false-identification comparison is still unavailable. | Lawful full-text review of PF-003/PF-012, then documented saturation judgment |
+| A-P3 Generalizable data-driven construction | `OPEN — G1-02 PAIR FORMATION NOT SATURATED` | Temporal separation, FDR and global-overlap governance are bounded inputs; PF-003/PF-012 may materially change the false-relationship/generalization boundary. | Lawful full-text review of PF-003/PF-012, then documented saturation judgment |
 | B-P1 M1 delayed incorporation | `OPEN — G1-03 UNAUTHORIZED` | Event-level identification and China transfer gaps remain | G1-03 approval or source/follower identification evidence |
 | B-P2 M2 pressure/flow | `OPEN — G1-03 UNAUTHORIZED` | Linked proxy-contamination critique must be synthesized with supportive evidence | G1-03 approval or valid A-share pressure identification evidence |
 | B-P3 M3 versus M0 | `OPEN — G1-02 REVIEW ARTIFACTS REQUIRED` | The absence finding must be confirmed through the required full-text review artifacts before it can support a stopping judgment. | Verified priority review, then a documented saturation/stop judgment |

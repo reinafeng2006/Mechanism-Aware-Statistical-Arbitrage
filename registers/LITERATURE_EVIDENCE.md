@@ -1,10 +1,10 @@
 # Literature Evidence Register
 
-Status: **6 PAIR-FORMATION CLAIMS FULL-TEXT VERIFIED IN G1-02 ROUND 1; 13 CLAIMS PRELIMINARY — G1-02 CONTINUES; G1-03 NOT AUTHORIZED**
+Status: **8 PAIR-FORMATION CLAIMS FULL-TEXT VERIFIED IN G1-02 ROUNDS 1/1B; 13 CLAIMS PRELIMINARY — G1-02 CONTINUES; G1-03 NOT AUTHORIZED**
 
 ## Evidence maturity control
 
-The review-depth audit initially found no candidate-specific artifact. G1-02 Round 1 has now completed verified Selective Deep artifacts for CL-PF-001 through CL-PF-006 (PF-001, PF-004, PF-008, PF-006, PF-007, PF-013); their full-schema records are in `literature/claims/` and their review artifacts are in `literature/reviews/`. The remaining 13 claims retain `PRELIMINARY — TRIAGE-DERIVED / FULL-TEXT REVIEW PENDING` status. No claim is frozen or authorized for G2.
+The review-depth audit initially found no candidate-specific artifact. G1-02 Rounds 1/1B have now completed verified artifacts for CL-PF-001 through CL-PF-006 and CL-PF-009/010. Their full-schema records are in `literature/claims/` and their review artifacts are in `literature/reviews/`. The remaining 13 claims retain `PRELIMINARY — TRIAGE-DERIVED / FULL-TEXT REVIEW PENDING` status. No claim is frozen or authorized for G2.
 
 Only researcher-authored notes and bibliographic links are retained. No source PDF is redistributed. Access date for all records: 2026-09-03. Entries in “Permitted G2 use” are reviewer recommendations for G1-03/G1-04, not current authorization. Only G1-04 may freeze downstream use; no factor, formula, label, provider, or empirical conclusion is authorized.
 
@@ -31,6 +31,8 @@ Only researcher-authored notes and bibliographic links are retained. No source P
 | CL-PF-007 | A-P2/B-P3; PF-014 | Factor-adjusted residual return; rolling Fama–French residuals and short-horizon residual reversal | Identifies a distinct residual-return construction and reported later-return pattern; does not identify an M3 event, pair relation, or structural-break exclusion | Trailing factor estimates needed; non-A-share evidence; factor misspecification/omitted fundamentals compete | Candidate raw/residual comparator and residual-state diagnostic; **leaves M3 unresolved** | Blitz, Huij & Martens (2012/2013), Abstract, Sections 2–4; [full text](https://www.efmaefm.org/0EFMAMEETINGS/EFMA%20ANNUAL%20MEETINGS/2012-Barcelona/papers/EFMA2012_0112_fullpaper.pdf); G1-02b→PF-014→CL-PF-007; full schema record |
 | CL-PF-008 | A-P2/A-P3/B-P4; PF-015 | Peer-relative return residual; historical-correlation peer portfolio and later-return test | Identifies a reproducible peer-relative construction; does not validate pair quality independently of future returns or classify a mechanism contemporaneously | Historical windows must be PIT; US/monthly; common factors, data-mined peers and all mechanism families compete | Candidate representation plus outcome-leakage negative control; **weakens outcome-linked validation** | Chen, Da & Huang (2019), Abstract, Sections 2–3; full-text record; G1-02b→PF-015→CL-PF-008; full schema record |
 | CL-B4-002 | B-P2/B-P4; B4-004 | Intraday permanent/transitory price-pressure decomposition; timestamped trades/quotes, signed flow and structural state-space model | Identifies model-conditional permanent/transitory components; does not identify trader motive, M1, M3, M0, or a four-way event label | Strict intraday PIT timing; US microstructure; trade-sign error, informed flow and market design compete | Candidate narrow C/R diagnostic and data-lineage requirement; **supports, but M3/B-P4 remain unresolved** | Yueshen (2020 manuscript), pp. 1–7; [full text](https://www.sfm.url.tw/pdf/pastawardpapers/2020-02.pdf); G1-02b→B4-004→CL-B4-002; full schema record |
+| CL-PF-009 | A-P2; PF-005 | Representation taxonomy; normalized-price distance, return correlation/price ratio, stochastic/residual process, cointegration | Identifies non-equivalent method families in one comparison; does not identify economic proximity, outcome-independent validity, stability, or universal superiority | US bank sample 2008–2013; performance ranking is implementation/regime dependent | Keep representations as separate comparators; **supports no-general-winner boundary** | Carrasco Blázquez et al. (2018), pp. 160–167; [full text](https://www.elsevier.es/index.php?p=revista&pRevista=pdf-simple&pii=S2444883418300457&r=489); G1-02 R1B→PF-005→CL-PF-009 |
+| CL-PF-010 | A-P3; PF-010 | Global overlap governance; weighted candidate-pair graph and maximum-weight matching | Identifies portfolio shared-asset overlap/concentration under model assumptions; does not identify economic/statistical validity of individual pairs | S&P 500 and cointegration-weighted inputs; PIT edges needed; portfolio performance not validity | Candidate portfolio-governance constraint only; **supports separation from pair validity** | Qureshi & Zaman (2024), pp. 1–8; [full text](https://arxiv.org/pdf/2403.07998); G1-02 R1B→PF-010→CL-PF-010 |
 
 ## G1-02 Round 1 full-text reconciliation
 
@@ -42,6 +44,8 @@ Only researcher-authored notes and bibliographic links are retained. No source P
 | CL-PF-004 | literature/reviews/PF-006.md | Confirmed; qualified: recurrence is rejection information, not ex-ante proof | Selective Deep verified, provisional |
 | CL-PF-005 | literature/reviews/PF-007.md | Narrowed to algorithm-independent break/rejection construct; no M0 label or method choice | Selective Deep verified, provisional |
 | CL-PF-006 | literature/reviews/PF-013.md | Confirmed; narrowed: FDR controls statistical false discoveries, not economic validity or residual supremacy | Selective Deep verified, provisional |
+| CL-PF-009 | literature/reviews/PF-005.md | Confirmed; performance-based representation ranking rejected as a general choice rule | Light verified, provisional |
+| CL-PF-010 | literature/reviews/PF-010.md | Confirmed; narrowed to portfolio overlap governance, not pair validity | Light verified, provisional |
 
 ## Linked contradiction rule
 

@@ -1,0 +1,28 @@
+claim_id: CL-PF-009
+candidate_id: PF-005
+primary_question: A-P2
+construct_or_mechanism: Comparative taxonomy of raw, correlation, stochastic/residual, and cointegration relationship representations
+pscr_role: [P, S, R]
+full_text_basis: {access_route: "https://www.elsevier.es/index.php?p=revista&pRevista=pdf-simple&pii=S2444883418300457&r=489", source_version: "ERMBE 24(3), 2018", access_date: "2026-09-03", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "160–167", section: "theory, data/methodology and conclusions", table_figure: "method comparison tables"}
+claim_paraphrase: Distance, correlation, stochastic/residual and cointegration approaches measure distinct relationship/state objects; a single-sample profitability ranking does not select a general normal-relationship representation.
+exact_observable_or_method: Normalized-price distance; return correlation/price ratio; stochastic and stochastic-differential residual models; cointegration tests.
+what_identified: Method-family distinctions and comparative outcomes in one US-bank sample.
+what_not_identified: Economic proximity, outcome-independent validity, stable relationship, A-share generalization, or universal method superiority.
+logic_chain: {premise: {statement: "Different relationship models encode different assumptions.", status: ASSUMED}, measurement_identification: {statement: "Five representation families produce candidate pairs/residuals.", status: ESTIMATED}, intermediate_evidence: {statement: "The study compares them in a single sector/time period.", status: OBSERVED}, inference: {statement: "Their objects should not be collapsed.", status: INFERRED}, final_claim: {statement: "All remain competing G2 candidates; performance ranking is not a general choice rule.", status: INFERRED}}
+limitations: ["US bank sample", "2008–2013", "profit/residual efficiency objective", "implementation dependence"]
+point_in_time_causal_timing_limitations: Historical windows must be trailing; profitability outcomes cannot validate event-time relationship or mechanism.
+sample_market_transferability: No A-share machinery transfer established.
+competing_explanations: ["Regime/sample dependence", "threshold implementation", "transaction cost assumptions"]
+missing_link: PIT outcome-independent comparison of representation validity.
+validation_test_needed: G2/G4 comparator protocol retaining distinct objects and forbidding outcome-informed selection.
+project_testability: Requires G2 definitions and later authorized PIT data; no method selected.
+data_requirement_ids: [DR-002, DR-003, DR-004, DR-013]
+permitted_g2_candidate_use: ["Representation taxonomy", "raw-versus-residual/cointegration comparator families"]
+prohibited_interpretations: ["Cointegration winner", "OU assumption", "profit ranking selects a method"]
+review_depth: LIGHT
+evidence_direction: SUPPORTS
+ancestry: "G1-01 candidate PF-005 → full text → G1-02 Round 1B Light review → CL-PF-009"
+review_artifact: literature/reviews/PF-005.md
+review_completion: LIGHT_VERIFIED_G1_02_ROUND_1B
+status: PROVISIONAL_G1_02

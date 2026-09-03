@@ -1,0 +1,28 @@
+claim_id: CL-PF-010
+candidate_id: PF-010
+primary_question: A-P3
+construct_or_mechanism: Global pair-portfolio overlap/exclusivity governance
+pscr_role: [P, R]
+full_text_basis: {access_route: "https://arxiv.org/pdf/2403.07998", source_version: "arXiv:2403.07998v1, March 2024", access_date: "2026-09-03", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "1–8", section: "introduction, matching formulation and theoretical analysis", table_figure: "matching graph and shared-asset covariance result"}
+claim_paraphrase: Global matching can control shared-asset overlap in a portfolio of already selected statistical pairs; it is portfolio governance, not economic relationship validity.
+exact_observable_or_method: Weighted candidate-pair graph and maximum-weight matching that forbids shared assets.
+what_identified: Model-conditional shared-asset covariance/concentration effect and an exclusivity construction.
+what_not_identified: Economic proximity, individual pair validity, stability, causal mechanism, or universal generalizability.
+logic_chain: {premise: {statement: "Independent pair selection may reuse assets.", status: ASSUMED}, measurement_identification: {statement: "A candidate-edge graph represents pair overlap.", status: ESTIMATED}, intermediate_evidence: {statement: "The paper derives/reports covariance and portfolio results under cointegration assumptions.", status: OBSERVED}, inference: {statement: "Overlap is separable portfolio governance.", status: INFERRED}, final_claim: {statement: "Global matching may be a later candidate constraint only after pair validity is established.", status: INFERRED}}
+limitations: ["Cointegration-weighted input", "S&P 500 sample", "portfolio-performance objective", "exclusivity may discard valid relations"]
+point_in_time_causal_timing_limitations: Candidate edges/weights and universe must be PIT; performance outcomes cannot certify pair validity.
+sample_market_transferability: US S&P 500; no A-share machinery or individual-pair claim.
+competing_explanations: ["Other concentration/risk controls", "portfolio optimization choices", "edge-weight misspecification"]
+missing_link: Whether overlap policy improves governance after PIT company-aware pair validity is defined.
+validation_test_needed: Keep individual validity and portfolio-overlap constraints as separate G2/G4 decisions.
+project_testability: Requires later frozen pair candidates and portfolio protocol; no matching algorithm selected.
+data_requirement_ids: [DR-004, DR-017]
+permitted_g2_candidate_use: ["Candidate overlap/concentration-governance construct"]
+prohibited_interpretations: ["Matching certifies relationship", "maximum-weight matching selected", "cointegration edge required"]
+review_depth: LIGHT
+evidence_direction: SUPPORTS
+ancestry: "G1-01 candidate PF-010 → full text → G1-02 Round 1B Light review → CL-PF-010"
+review_artifact: literature/reviews/PF-010.md
+review_completion: LIGHT_VERIFIED_G1_02_ROUND_1B
+status: PROVISIONAL_G1_02
