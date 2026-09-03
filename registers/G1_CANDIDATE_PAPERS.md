@@ -1,6 +1,7 @@
 # G1 Candidate-Paper Inventory — Discovery Checkpoint 01
 
-Status: **DISCOVERY/TRIAGE ONLY — NO CLAIMS ADMITTED**  
+Status: **HISTORICAL DISCOVERY INVENTORY — G1-02 REVIEW STATUS APPENDED**
+
 Checkpoint date: **2026-09-03**
 
 “Full text” means a lawful full paper or full HTML article was located during discovery. It does not mean the paper has been reviewed or admitted as evidence. “Pending” candidates cannot support claims unless lawful full text is obtained.
@@ -49,6 +50,6 @@ Checkpoint date: **2026-09-03**
 - Pending lawful full text: **7 rows**.
 - Proposed Selective Deep: **18 rows**, including one same-source section.
 - Proposed Light: **16 rows**, conditional on full-text access where marked Pending.
-- Evidence admitted: **0**.
+- Evidence admitted at Checkpoint 02: **15 claims** from PF-001, PF-004, PF-006, PF-007, PF-008, M1-001, M1-002, M1-008, M2-001, M2-002, M2-003, M2-005, M3-001, M0-001/M0-002, and B4-001. See `registers/LITERATURE_EVIDENCE.md`.
 
 No candidate is included because a factor or method is popular. Each is mapped to a frozen primary question and an explicit economic/statistical construct.

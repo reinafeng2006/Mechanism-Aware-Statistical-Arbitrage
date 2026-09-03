@@ -1,7 +1,8 @@
 # Mechanism-Aware Statistical Arbitrage
 
-Status: **G0 FROZEN — G1 DISCOVERY/TRIAGE ACTIVE**  
-Literature Discovery is authorized under G1-01; empirical work remains prohibited.
+Status: **G0 FROZEN — G1 CHECKPOINT 02 REACHED**
+
+Decision-value-prioritized Light/Selective Deep review is complete under G1-02; empirical work remains prohibited.
 
 ## Objective
 
@@ -37,8 +38,8 @@ M0–M3 are falsifiable working hypotheses, not assumed true mechanism classes. 
 
 ## Current boundary
 
-G0 was frozen on 2026-09-03. G1-01 authorizes a bounded Literature Discovery/Triage checkpoint under the seven-question dependency map.
+G0 was frozen on 2026-09-03. G1-01 authorized Discovery/Triage and G1-02 authorized decision-value-prioritized Light/Selective Deep review. Checkpoint 02 admits fifteen bounded claims and a literature-ancestry Data Requirement Register; it does not authorize empirical work.
 
-Still prohibited: substantive claim admission without lawful full text; unapproved Light/Selective Deep expansion beyond the checkpoint; data acquisition; empirical inspection; formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; and parameter tuning.
+Still prohibited: claim admission without lawful full text; data acquisition or provider selection; database construction; empirical inspection; formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; and parameter tuning.
 
-See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [G0 thesis](docs/G0_ECONOMIC_THESIS.md), and [G1 literature design](docs/G1_LITERATURE_DESIGN.md).
+See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [G1 literature design](docs/G1_LITERATURE_DESIGN.md), and [G1-02 Checkpoint 02](docs/G1_REVIEW_CHECKPOINT_02.md).
