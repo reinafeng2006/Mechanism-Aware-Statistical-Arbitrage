@@ -1,11 +1,11 @@
 # Gate Structure
 
-No gate may be passed by repository activity alone. Each gate requires a signed decision record, listed artifacts, reviewer, and explicit PASS / REVISE / STOP outcome.
+No gate may be passed by repository activity alone. Each gate requires a recorded decision, listed artifacts, reviewer, and explicit PASS / REVISE / STOP outcome.
 
 | Gate | Purpose | Minimum exit evidence | Status |
 |---|---|---|---|
-| G0 Economic Thesis | Freeze thesis, monetization aim, initial mechanisms, pair-formation philosophy, information boundary, falsifiability, Observatory quarantine, and governance scope | Approved reduced G0 decision set | **STOPPED / unresolved** |
-| G1 Constructs & Literature | Review literature; define company representation, normal relationship, abnormal state, mechanisms, counter-hypotheses, and P/S/C/R constructs | Literature protocol; construct dictionary; discriminating implications | Locked |
+| G0 Economic Thesis | Freeze thesis, monetization aim, initial mechanisms, pair-formation philosophy, information boundary, falsifiability, Observatory quarantine, and governance scope | Approved reduced G0 decision set | **PASS / FROZEN — 2026-09-03** |
+| G1 Literature & Mechanism Evidence | Design and then execute two literature streams; define literature-supported candidate constructs and discriminating implications without choosing measurements or models | Approved search plan; full-text evidence ledger; synthesis; unresolved gaps | **ACTIVE — DESIGN ONLY; SEARCH NOT AUTHORIZED** |
 | G2 Measurement & Timing | Specify point-in-time universe, information families, event clock, measures, labels, availability lags, and leakage tests | Measurement plan; timing DAG/table; data-access approval | Locked |
 | G3 Statistical Protocol Freeze | Freeze estimands, pair-formation evaluation, comparators, splits, metrics, multiplicity controls, quantitative stopping rules, and model-selection protocol | Timestamped preregistration; held-out custody record | Locked |
 | G4 Implementation Readiness | Specify data engineering, algorithms, trading feasibility, costs, execution, and deterministic build controls | Audited implementation plan; no outcome inspection | Locked |

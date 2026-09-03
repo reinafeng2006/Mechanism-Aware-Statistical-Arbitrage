@@ -5,7 +5,7 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | ID | Decision | State | Gate / note |
 |---|---|---|---|
 | D-000 | Freeze the former five-stage conceptual pipeline | SUPERSEDED | Replaced by D-011 |
-| D-001 | Treat M0–M3 as hypotheses, not observed truth | APPROVED | Sponsor mandate; G0-04 requests ratification of falsifiability boundary |
+| D-001 | Treat M0–M3 as hypotheses, not observed truth | APPROVED | Incorporated into G0-04 |
 | D-002 | Use P/S/C/R as candidate-information roles | APPROVED | Construct and measurement choices remain deferred |
 | D-003 | Detailed investable A-share machinery universe | DEFERRED | MEASUREMENT-DESIGN — G2 |
 | D-004 | Detailed relationship constructs and admissible measures | DEFERRED | LITERATURE-INFORMED — G1, then measurement at G2 |
@@ -15,10 +15,19 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | D-008 | Exact comparator construction, metric, loss function, and materiality threshold | DEFERRED | STATISTICAL-DESIGN — G3; implementation inputs at G4 |
 | D-009 | Development/held-out split, embargo, overlap, custody, and reveal protocol | DEFERRED | STATISTICAL-DESIGN — G3 before inspection |
 | D-010 | Quantitative empirical stopping thresholds | DEFERRED | STATISTICAL-DESIGN — G3 |
-| D-011 | Freeze seven-stage pipeline | APPROVED | Sponsor amendment, 2026-09-03 |
-| D-012 | Formal pair formation is company-aware, data-driven, point-in-time, reproducible, generalizable, and non-manual | APPROVED | Principle only; no factor/formula chosen |
-| D-013 | Classify the 15 former G0 groups by downstream gate | APPROVED | See G0 scope review |
-| G0-01…09 | Reduced G0 approval set | PROPOSED | Researcher approval required now |
+| D-011 | Freeze seven-stage conceptual pipeline | APPROVED | Incorporated into G0-02 |
+| D-012 | Company-aware, data-driven, point-in-time, reproducible, generalizable, non-manual formal pair formation | APPROVED | Incorporated into G0-05; no factor/formula chosen |
+| D-013 | Classify the 15 former G0 groups by downstream gate | APPROVED | Scope routing preserved in G0 thesis |
+| G0-01 | Economic thesis as documented | APPROVED | User approval, 2026-09-03 |
+| G0-02 | Seven-stage pipeline and non-collapse boundary | APPROVED | User approval, 2026-09-03 |
+| G0-03 | Incremental net-value monetization objective; metrics/thresholds deferred | APPROVED | User approval, 2026-09-03 |
+| G0-04 | M0–M3 are falsifiable working hypotheses; ambiguity, rejection, counter-hypotheses, and no trade valid | APPROVED | User approval, 2026-09-03 |
+| G0-05 | Company-aware, fully data-driven, point-in-time, reproducible, generalizable, non-manual formal pair formation | APPROVED | User approval, 2026-09-03 |
+| G0-06 | Causal and point-in-time information boundary | APPROVED | User approval, 2026-09-03 |
+| G0-07 | Governance, claim separation, ancestry, held-out, determinism, and stop-rule boundary | APPROVED | User approval, 2026-09-03 |
+| G0-08 | Observatory quarantine and non-evidence boundary | APPROVED | User approval, 2026-09-03 |
+| G0-09 | Lawful/licensed, non-MNPI, gated-claims boundary | APPROVED | User approval, 2026-09-03 |
+| G1-00 | Approve G1 literature design before search begins | PROPOSED | Researcher review required; no searching authorized |
 
 ## Required record fields for every amendment
 

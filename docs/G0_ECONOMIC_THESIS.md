@@ -1,6 +1,6 @@
 # G0 — Economic Thesis
 
-Status: **STOP. NOT APPROVED.** No empirical work is authorized.
+Status: **FROZEN / PASS — 2026-09-03.** The approval freezes thesis and boundaries only; it does not authorize empirical work.
 
 ## What G0 does—and does not—freeze
 
@@ -25,7 +25,7 @@ The formal strategy must be company-aware, fully data-driven, point-in-time, rep
 - **M3:** temporary idiosyncratic relative dislocation may imply relative normalization.
 - **M0:** structural, fundamental, ambiguous, or unresolved divergence may make no trade preferable.
 
-The hypotheses must later yield mutually informative, point-in-time observable implications and permit ambiguity or rejection. Operational definitions and tests are deferred.
+M0–M3 are falsifiable working hypotheses rather than assumed true mechanism classes. Ambiguity, rejection, counter-hypotheses, and no trade are valid outcomes. Operational definitions and tests are deferred.
 
 ## Classification of the 15 former G0 decision groups
 
@@ -36,33 +36,21 @@ The hypotheses must later yield mutually informative, point-in-time observable i
 | 3 | Abnormal state | **MEASUREMENT-DESIGN — DEFER** | Object, scale, clock, reference set, and thresholds go to G2. |
 | 4 | Mechanism semantics | **LITERATURE-INFORMED — DEFER** | Initial M0–M3 remain hypotheses; indicators, competing explanations, and adjudication begin at G1. |
 | 5 | Resolution | **MEASUREMENT-DESIGN — DEFER** | Outcomes, horizons, paths, censoring, and corporate-event handling go to G2. |
-| 6 | Decision problem | **DECIDE AT G0** | Approve monetization as a trade/no-trade decision with abstention; directions, sizing, exits, comparator construction, and loss function are deferred. |
+| 6 | Decision problem | **DECIDE AT G0** | Monetization is a trade/no-trade decision with abstention; directions, sizing, exits, comparator construction, and loss function remain deferred. |
 | 7 | A-share feasibility | **IMPLEMENTATION — DEFER** | Borrow, settlement, limits, suspensions, fees, slippage, impact, capacity, and execution go to G4. |
-| 8 | Economic materiality | **DECIDE AT G0** | Approve pursuit of incremental net economic value versus an appropriate mechanism-agnostic/no-trade comparator; exact metrics and thresholds go to G3/G4. |
+| 8 | Economic materiality | **DECIDE AT G0** | Pursue incremental net economic value versus an appropriate mechanism-agnostic/no-trade comparator; exact metrics and thresholds remain deferred to G3/G4. |
 | 9 | Causal and predictive estimands | **STATISTICAL-DESIGN — DEFER** | G0 freezes claim separation and causal ordering only; estimands and target populations go to G3. |
 | 10 | Timing policy | **MEASUREMENT-DESIGN — DEFER** | G0 freezes point-in-time admissibility; timestamp fields, lags, revisions, sessions, and as-of logic go to G2. |
 | 11 | Development/held-out architecture | **STATISTICAL-DESIGN — DEFER** | Split, embargo, overlap, reveal, and custody protocol go to G3 before inspection. |
 | 12 | Quantitative stopping rules | **STATISTICAL-DESIGN — DEFER** | G0 freezes the obligation to predeclare stops and immediate stop for governance breach; numerical thresholds go to G3. |
-| 13 | Governance ownership | **DECIDE AT G0** | Approve roles, authority, conflicts, amendment control, and independent gate review; individual appointments may be recorded before the first gate requiring them. |
-| 14 | Observatory intake administration | **DECIDE AT G0** | Approve quarantine and non-evidence status now; cadence, storage, and workflow implementation are deferred. |
-| 15 | Scope and ethics | **DECIDE AT G0** | Approve lawful/licensed, non-MNPI research and release boundaries; source-specific licensing and operational controls are deferred. |
+| 13 | Governance ownership | **DECIDE AT G0** | Roles, authority, conflicts, amendment control, and independent gate review are required; individual appointments may be recorded before the first gate requiring them. |
+| 14 | Observatory intake administration | **DECIDE AT G0** | Quarantine and non-evidence status are frozen; cadence, storage, and workflow implementation remain deferred. |
+| 15 | Scope and ethics | **DECIDE AT G0** | Lawful/licensed, non-MNPI research and release boundaries are frozen; source-specific licensing and operational controls remain deferred. |
 
-## Reduced set of genuine G0 decisions requiring researcher approval now
+## Frozen G0 decisions
 
-| G0 ID | Approval required |
-|---|---|
-| G0-01 | Approve the economic thesis: mechanism identification may improve resolution prediction and the trade/no-trade decision for abnormal relative states among economically related A-share machinery companies. |
-| G0-02 | Approve the seven-stage conceptual pipeline and the requirement that stage order and claim boundaries cannot be collapsed using later outcomes. |
-| G0-03 | Approve the monetization objective: seek incremental **net** economic value from mechanism-aware trade/no-trade decisions relative to an appropriate mechanism-agnostic and/or no-trade comparator, without yet choosing metrics or thresholds. |
-| G0-04 | Approve M0–M3 as initial, falsifiable hypotheses—not established states—and require ambiguity, rejection, and counter-hypotheses to remain possible. |
-| G0-05 | Approve the pair-formation philosophy: company-aware, fully data-driven, point-in-time, reproducible, generalizable, and no subjective/manual pair assignment in the formal strategy. |
-| G0-06 | Approve the causal information boundary: only information available by the decision time may inform a decision; later outcomes/revisions cannot define earlier representations, pairs, states, or mechanisms. |
-| G0-07 | Approve the governance boundary: freeze before inspection; separate description/prediction/intervention/economic validation; register decisions and evidence ancestry; protect held-out evidence; require deterministic artifacts and predeclared stops. |
-| G0-08 | Approve the Observatory boundary: imports are quarantined discovery context only and can never substitute for independent literature, construct, measurement, or OOS work. |
-| G0-09 | Approve the ethical/scope boundary: use only lawful, appropriately licensed, non-MNPI information; no empirical or performance claims before their gates. |
+G0-01 through G0-09 are APPROVED exactly as recorded in [the G0 freeze decision](G0_FREEZE_DECISION.md). No deferred item is resolved by this approval.
 
-## G0 exit checklist
+## Post-G0 boundary
 
-G0-01 through G0-09 are explicitly approved or revised; no deferred item is silently answered; the thesis is falsifiable in principle; downstream gates own operational choices; and the approval is recorded in the decision register.
-
-Until then: no data acquisition, pair selection, factor or algorithm choice, measurement implementation, model fitting, backtest, outcome inspection, or performance claim.
+G1 may design literature evidence questions and a search/review protocol. Searching begins only after researcher review of that design. Data acquisition, empirical analysis, measurement implementation, pair selection, factor or algorithm choice, modeling, and backtesting remain prohibited.
