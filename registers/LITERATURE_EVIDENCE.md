@@ -1,10 +1,10 @@
 # Literature Evidence Register
 
-Status: **19 PRELIMINARY, TRIAGE-DERIVED CLAIMS RETAINED — G1-02 FULL-TEXT EVIDENCE REVIEW REOPENED; G1-03 NOT AUTHORIZED**
+Status: **6 PAIR-FORMATION CLAIMS FULL-TEXT VERIFIED IN G1-02 ROUND 1; 13 CLAIMS PRELIMINARY — G1-02 CONTINUES; G1-03 NOT AUTHORIZED**
 
 ## Evidence maturity control
 
-The review-depth audit found no candidate-specific artifact in `literature/reviews/` for any claim-bearing paper. Therefore every claim below, including the four YAML-backed G1-02b claims, is retained as `PRELIMINARY — TRIAGE-DERIVED / FULL-TEXT REVIEW PENDING`. The substantive wording and all claim/data links are preserved. A claim may be upgraded only after its paper has an auditable Light or Selective Deep review artifact and the wording is verified, narrowed, contradicted, or rejected against full text.
+The review-depth audit initially found no candidate-specific artifact. G1-02 Round 1 has now completed verified Selective Deep artifacts for CL-PF-001 through CL-PF-006 (PF-001, PF-004, PF-008, PF-006, PF-007, PF-013); their full-schema records are in `literature/claims/` and their review artifacts are in `literature/reviews/`. The remaining 13 claims retain `PRELIMINARY — TRIAGE-DERIVED / FULL-TEXT REVIEW PENDING` status. No claim is frozen or authorized for G2.
 
 Only researcher-authored notes and bibliographic links are retained. No source PDF is redistributed. Access date for all records: 2026-09-03. Entries in “Permitted G2 use” are reviewer recommendations for G1-03/G1-04, not current authorization. Only G1-04 may freeze downstream use; no factor, formula, label, provider, or empirical conclusion is authorized.
 
@@ -31,6 +31,17 @@ Only researcher-authored notes and bibliographic links are retained. No source P
 | CL-PF-007 | A-P2/B-P3; PF-014 | Factor-adjusted residual return; rolling Fama–French residuals and short-horizon residual reversal | Identifies a distinct residual-return construction and reported later-return pattern; does not identify an M3 event, pair relation, or structural-break exclusion | Trailing factor estimates needed; non-A-share evidence; factor misspecification/omitted fundamentals compete | Candidate raw/residual comparator and residual-state diagnostic; **leaves M3 unresolved** | Blitz, Huij & Martens (2012/2013), Abstract, Sections 2–4; [full text](https://www.efmaefm.org/0EFMAMEETINGS/EFMA%20ANNUAL%20MEETINGS/2012-Barcelona/papers/EFMA2012_0112_fullpaper.pdf); G1-02b→PF-014→CL-PF-007; full schema record |
 | CL-PF-008 | A-P2/A-P3/B-P4; PF-015 | Peer-relative return residual; historical-correlation peer portfolio and later-return test | Identifies a reproducible peer-relative construction; does not validate pair quality independently of future returns or classify a mechanism contemporaneously | Historical windows must be PIT; US/monthly; common factors, data-mined peers and all mechanism families compete | Candidate representation plus outcome-leakage negative control; **weakens outcome-linked validation** | Chen, Da & Huang (2019), Abstract, Sections 2–3; full-text record; G1-02b→PF-015→CL-PF-008; full schema record |
 | CL-B4-002 | B-P2/B-P4; B4-004 | Intraday permanent/transitory price-pressure decomposition; timestamped trades/quotes, signed flow and structural state-space model | Identifies model-conditional permanent/transitory components; does not identify trader motive, M1, M3, M0, or a four-way event label | Strict intraday PIT timing; US microstructure; trade-sign error, informed flow and market design compete | Candidate narrow C/R diagnostic and data-lineage requirement; **supports, but M3/B-P4 remain unresolved** | Yueshen (2020 manuscript), pp. 1–7; [full text](https://www.sfm.url.tw/pdf/pastawardpapers/2020-02.pdf); G1-02b→B4-004→CL-B4-002; full schema record |
+
+## G1-02 Round 1 full-text reconciliation
+
+| Claim ID | Artifact | Full-text reconciliation | Current evidence maturity |
+|---|---|---|---|
+| CL-PF-001 | literature/reviews/PF-001.md | Confirmed; narrowed to product-market representation, not return relation/pair proof | Selective Deep verified, provisional |
+| CL-PF-002 | literature/reviews/PF-004.md | Confirmed; narrowed: formation/trading separation is not outcome-independent pair validity | Selective Deep verified, provisional |
+| CL-PF-003 | literature/reviews/PF-008.md | Confirmed; materially narrowed: replicate residual is multi-asset, not pairwise/economic relation | Selective Deep verified, provisional |
+| CL-PF-004 | literature/reviews/PF-006.md | Confirmed; qualified: recurrence is rejection information, not ex-ante proof | Selective Deep verified, provisional |
+| CL-PF-005 | literature/reviews/PF-007.md | Narrowed to algorithm-independent break/rejection construct; no M0 label or method choice | Selective Deep verified, provisional |
+| CL-PF-006 | literature/reviews/PF-013.md | Confirmed; narrowed: FDR controls statistical false discoveries, not economic validity or residual supremacy | Selective Deep verified, provisional |
 
 ## Linked contradiction rule
 

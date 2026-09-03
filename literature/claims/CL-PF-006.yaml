@@ -44,4 +44,6 @@ prohibited_interpretations:
 review_depth: SELECTIVE_DEEP
 evidence_direction: SUPPORTS
 ancestry: "G1-02b targeted retrieval → PF-013 → journal full text → CL-PF-006"
+review_artifact: literature/reviews/PF-013.md
+review_completion: SELECTIVE_DEEP_VERIFIED_G1_02_ROUND_1
 status: PROVISIONAL_G1_02

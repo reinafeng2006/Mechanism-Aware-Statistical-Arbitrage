@@ -1,0 +1,28 @@
+claim_id: CL-PF-003
+candidate_id: PF-008
+primary_question: A-P2 | A-P3
+construct_or_mechanism: Sparse peer-replication residual and conditional replicability
+pscr_role: [P, S, R]
+full_text_basis: {access_route: "https://arxiv.org/pdf/2103.09987", source_version: "arXiv:2103.09987v1, March 2021", access_date: "2026-09-03", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "1–9; Appendix A", section: "factor framework, elastic-net projection and data procedure", table_figure: "Figure 1"}
+claim_paraphrase: A trailing sparse replicate portfolio measures conditional multi-asset replicability and a residual return object, not a pairwise or economic relationship.
+exact_observable_or_method: Twelve-month daily-return elastic-net projection on all other stocks; sparse weights and projection R-squared.
+what_identified: Model-conditional replicate fit and own-minus-replicate residual construction.
+what_not_identified: Company peerhood, pairwise relation, structural stability, true factors, or residual superiority.
+logic_chain: {premise: {statement: "Assets sharing factor exposures can be replicated by other assets.", status: ASSUMED}, measurement_identification: {statement: "Elastic-net estimates a sparse return replicate.", status: ESTIMATED}, intermediate_evidence: {statement: "The paper gives factor-model theory and US implementation.", status: OBSERVED}, inference: {statement: "Replication residual differs from raw pair distance.", status: INFERRED}, final_claim: {statement: "It is a comparator family, not a selected pair model.", status: INFERRED}}
+limitations: ["Multi-asset rather than pairwise object", "regularization dependence", "outcome-oriented empirical results"]
+point_in_time_causal_timing_limitations: Universe and trailing returns must be frozen at estimation time.
+sample_market_transferability: US CRSP; no A-share machinery pair transfer claim.
+competing_explanations: ["Factor model misspecification", "unstable peer set", "economic relation absent despite fit"]
+missing_link: Whether replicate portfolios reduce to stable company-aware pairs and improve non-outcome pair validity.
+validation_test_needed: Keep pairwise and multi-asset constructs separate; compare under frozen PIT protocol.
+project_testability: Requires G2 definitions and G3 PIT returns/universe; no elastic-net setting is selected.
+data_requirement_ids: [DR-002, DR-003, DR-004, DR-013]
+permitted_g2_candidate_use: ["Residual/replication comparator", "conditional-replicability diagnostic"]
+prohibited_interpretations: ["R-squared is economic similarity", "elastic-net selected", "later return labels relationship"]
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS
+ancestry: "G1-01 candidate PF-008 → full text → G1-02 Round 1 review → CL-PF-003"
+review_artifact: literature/reviews/PF-008.md
+review_completion: SELECTIVE_DEEP_VERIFIED_G1_02_ROUND_1
+status: PROVISIONAL_G1_02

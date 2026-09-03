@@ -1,0 +1,28 @@
+claim_id: CL-PF-002
+candidate_id: PF-004
+primary_question: A-P2 | A-P3
+construct_or_mechanism: Raw normalized-price-path distance
+pscr_role: [P, S, R]
+full_text_basis: {access_route: "https://depot.som.yale.edu/icf/papers/fileuploads/2573/original/08-03.pdf", source_version: "Yale ICF WP 08-03, February 2006", access_date: "2026-09-03", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "2–9; methodology section", section: "formation/trading separation and normalized price distance", table_figure: "pair-formation equations"}
+claim_paraphrase: Raw normalized-price distance is a reproducible historical co-movement baseline with temporal formation/trading separation, not outcome-independent economic pair validity.
+exact_observable_or_method: Sum of squared deviations between normalized cum-dividend price paths over formation window.
+what_identified: A deterministic raw-path similarity construction using prior observations.
+what_not_identified: Economic relatedness, residual dependence, cointegration, stability, or mechanism; later-profit evidence cannot validate event-time pair status.
+logic_chain: {premise: {statement: "Close historical raw paths may represent relative similarity.", status: ASSUMED}, measurement_identification: {statement: "Normalized path distance is computed over formation data.", status: ESTIMATED}, intermediate_evidence: {statement: "The paper executes separated historical formation and subsequent evaluation.", status: OBSERVED}, inference: {statement: "Raw distance is a comparator object.", status: INFERRED}, final_claim: {statement: "Use only as a candidate raw baseline, not a final validity rule.", status: INFERRED}}
+limitations: ["Spurious correlation", "returns/profits dominate empirical validation", "US long-short context"]
+point_in_time_causal_timing_limitations: Normalization, universe and corporate actions must be PIT; later evaluation must be quarantined.
+sample_market_transferability: US 1962–2002; no A-share machinery validity established.
+competing_explanations: ["Common factors", "coincidental paths", "unobserved structural relation"]
+missing_link: Direct outcome-independent comparison with residual and stability representations.
+validation_test_needed: Pre-register PIT normalization and non-outcome relationship-validity diagnostics.
+project_testability: Requires authorized G3 PIT prices/universe; no threshold/window selected.
+data_requirement_ids: [DR-002, DR-004, DR-015]
+permitted_g2_candidate_use: ["Raw co-movement comparator", "formation/trading temporal-separation precedent"]
+prohibited_interpretations: ["Distance proves economic pair", "distance equals cointegration", "profitability proves pair validity"]
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS
+ancestry: "G1-01 candidate PF-004 → full text → G1-02 Round 1 review → CL-PF-002"
+review_artifact: literature/reviews/PF-004.md
+review_completion: SELECTIVE_DEEP_VERIFIED_G1_02_ROUND_1
+status: PROVISIONAL_G1_02

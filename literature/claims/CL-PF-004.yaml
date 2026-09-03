@@ -1,0 +1,28 @@
+claim_id: CL-PF-004
+candidate_id: PF-006
+primary_question: A-P2 | A-P3
+construct_or_mechanism: Cointegration-edge persistence and recurrence
+pscr_role: [P, R]
+full_text_basis: {access_route: "https://www.sciencedirect.com/science/article/pii/S0378437118304503", source_version: "Physica A 505, 2018", access_date: "2026-09-03", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "Abstract; Sections 2–5", section: "cointegration networks and edge recurrence", table_figure: "edge-survival/reoccurrence results"}
+claim_paraphrase: Persistence of a specified cointegration-network edge is candidate rejection information; fragility weakens validity but survival does not prove an economic or tradable pair.
+exact_observable_or_method: Daily-price cointegration matrix/network, edge survival and recurrence circles across periods.
+what_identified: Historical recurrence/fragility of the paper's network relation in Chinese market periods.
+what_not_identified: Cause of a break, ex-ante pair validity, universal stability rule, or M0 label.
+logic_chain: {premise: {statement: "Meaningful normal relations should persist.", status: ASSUMED}, measurement_identification: {statement: "Repeated cointegration edges measure persistence.", status: ESTIMATED}, intermediate_evidence: {statement: "Many reported edges fail to recur.", status: OBSERVED}, inference: {statement: "Non-persistence weakens pair interpretation.", status: INFERRED}, final_claim: {statement: "A no-valid-pair/rejection branch is supported; parameters remain open.", status: INFERRED}}
+limitations: ["Network/test definition dependence", "ex-post recurrence", "MTSS/regime/universe specificity"]
+point_in_time_causal_timing_limitations: Only trailing windows may be used; recurrence cannot use future edges at event time.
+sample_market_transferability: Chinese equity relevance, but not A-share machinery-specific validation.
+competing_explanations: ["Estimation noise", "market regime change", "policy/universe change"]
+missing_link: PIT stability diagnostic separating structural break from transient noise.
+validation_test_needed: Pre-specify detection delay and false-alarm evaluation without resolution leakage.
+project_testability: Requires G2 stability definition and G3 PIT price/universe lineage.
+data_requirement_ids: [DR-002, DR-004, DR-014]
+permitted_g2_candidate_use: ["P/R relationship-persistence diagnostic", "no-valid-pair route"]
+prohibited_interpretations: ["Cointegration selected", "recurrence proves economic pair", "failed edge equals M0"]
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS
+ancestry: "G1-01 candidate PF-006 → full text → G1-02 Round 1 review → CL-PF-004"
+review_artifact: literature/reviews/PF-006.md
+review_completion: SELECTIVE_DEEP_VERIFIED_G1_02_ROUND_1
+status: PROVISIONAL_G1_02

@@ -1,0 +1,28 @@
+claim_id: CL-PF-001
+candidate_id: PF-001
+primary_question: A-P1 | A-P3
+construct_or_mechanism: Time-varying text-based product-market similarity
+pscr_role: [P, R]
+full_text_basis: {access_route: "https://www.nber.org/papers/w15991.pdf", source_version: "NBER WP 15991, revised 2012; published 2016", access_date: "2026-09-03", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "Abstract; Sections 2–4", section: "text-based industry construction and validation", table_figure: "validation tables"}
+claim_paraphrase: Text-based product descriptions support a PIT candidate representation of product-market proximity, not a normal return relationship or pair selection rule.
+exact_observable_or_method: Annual filing product text transformed into firm-pair similarity and firm-specific competitor sets.
+what_identified: Construct validity against competition discussion, manager-named rivals, and industry-shock changes.
+what_not_identified: Payoff equivalence, return co-movement, stable pair validity, causal price linkage, or A-share transferability.
+logic_chain: {premise: {statement: "Product text contains economically relevant overlap.", status: ASSUMED}, measurement_identification: {statement: "Text is transformed into annual pair similarity.", status: ESTIMATED}, intermediate_evidence: {statement: "Competitor sets align with several external competition-validation targets.", status: OBSERVED}, inference: {statement: "Company similarity is a candidate P information family.", status: INFERRED}, final_claim: {statement: "It may constrain a reproducible candidate universe only after PIT A-share validation.", status: INFERRED}}
+limitations: ["Strategic/stale disclosure language", "US 10-K setting", "annual updating"]
+point_in_time_causal_timing_limitations: Filing timestamps, amendments, and language vintage must be available before use.
+sample_market_transferability: US public firms; China disclosure taxonomy and language require independent validation.
+competing_explanations: ["Common terminology without close economic substitutability", "strategic disclosure"]
+missing_link: Outcome-independent evidence that versioned Chinese company similarity predicts stable pair validity.
+validation_test_needed: Define PIT text-vintage and test contribution separately from later returns.
+project_testability: Requires authorized G3 filing vintages; no text model/formula selected.
+data_requirement_ids: [DR-001, DR-014]
+permitted_g2_candidate_use: ["P-layer company/economic prior", "relationship-drift rejection context"]
+prohibited_interpretations: ["Manual pair assignment", "text similarity equals co-movement", "contemporaneous mechanism label"]
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS
+ancestry: "G1-01 candidate PF-001 → full text → G1-02 Round 1 review → CL-PF-001"
+review_artifact: literature/reviews/PF-001.md
+review_completion: SELECTIVE_DEEP_VERIFIED_G1_02_ROUND_1
+status: PROVISIONAL_G1_02

@@ -1,0 +1,28 @@
+claim_id: CL-PF-005
+candidate_id: PF-007
+primary_question: A-P2 | B-P3
+construct_or_mechanism: Structural-break probability for preselected cointegrated pairs
+pscr_role: [R]
+full_text_basis: {access_route: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8369334/", source_version: "Journal of Supercomputing article, 2021", access_date: "2026-09-03", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "Abstract; Sections 3–6", section: "structural-break detection and evaluation", table_figure: "break-detection framework/results"}
+claim_paraphrase: Break detection can be separated from a trading policy as a candidate rejection construct, but the reviewed method does not identify fundamental divergence or provide a universal PIT validity rule.
+exact_observable_or_method: Prior price sequences, time/frequency features and model-specific structural-break probability for cointegrated Taiwan pairs.
+what_identified: The paper's detector/policy performance in its selected Taiwan setting.
+what_not_identified: Fundamental M0 divergence, general pair validity, causal break source, or portable algorithm/threshold.
+logic_chain: {premise: {statement: "A fitted relationship can break.", status: ASSUMED}, measurement_identification: {statement: "Features estimate model-specific break probability.", status: ESTIMATED}, intermediate_evidence: {statement: "The paper reports detection and policy evaluation.", status: OBSERVED}, inference: {statement: "Break risk merits separate R information.", status: INFERRED}, final_claim: {statement: "Only an algorithm-independent rejection family is candidate G2 input.", status: INFERRED}}
+limitations: ["Supervised/performance evaluation", "Taiwan tick context", "detector/model dependence"]
+point_in_time_causal_timing_limitations: Break signal must exclude future intervals; detection delay must be recorded.
+sample_market_transferability: Taiwan 2017–2020, not A-share machinery.
+competing_explanations: ["Transient regime noise", "microstructure change", "estimation error"]
+missing_link: Link between detected break and independently observed structural/fundamental divergence.
+validation_test_needed: PIT timing DAG plus false-alarm/delay criteria independent of trade outcome.
+project_testability: Requires G2 construct and later G3 data authorization; no ML/RL method selected.
+data_requirement_ids: [DR-004, DR-005, DR-014]
+permitted_g2_candidate_use: ["R-layer break/rejection construct", "no-valid-pair path"]
+prohibited_interpretations: ["Adopt SWANet/SADQN", "choose tick frequency", "break equals M0"]
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS
+ancestry: "G1-01 candidate PF-007 → full text → G1-02 Round 1 review → CL-PF-005"
+review_artifact: literature/reviews/PF-007.md
+review_completion: SELECTIVE_DEEP_VERIFIED_G1_02_ROUND_1
+status: PROVISIONAL_G1_02
