@@ -31,6 +31,7 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | G1-01 | Approve seven primary G1 decision questions, 26-question mapping, priorities, dependencies, and stopping conditions | APPROVED | User approval, 2026-09-03; Discovery/Triage authorized in dependency order |
 | G1-02 | Approve decision-value-prioritized Light/Selective Deep review, linked supportive/contradictory evidence blocks, claim-level extraction, provisional observable-signature mapping, Data Requirement Register, and absence-aware stop | APPROVED | Researcher approval, 2026-09-03; no empirical work or provider selection authorized |
 | G1-H01 | Nest the mature literature workflow within G1 as G1-01 through G1-04; assign G1/G2/G3 responsibilities and renumber later gates without changing completed evidence | APPROVED | Researcher approval, 2026-09-03; G1-01 unchanged; G1-02 migrated as completed |
+| G1-H02 | Migrate predecessor Literature Review OS process infrastructure and reconcile existing current G1-02 records without importing predecessor evidence | APPROVED | Researcher approval, 2026-09-03; G1-03 remains unauthorized; see docs/LITERATURE_OS_MIGRATION.md |
 | G1-03 | Approve Cross-Paper Evidence Synthesis and production of the four formal maps | PROPOSED | Not authorized by hierarchy normalization; provisional G1-02 tables are inputs only |
 | G1-04 | Freeze permitted downstream use and authorize G2 handoff | DEFERRED | Requires approved G1-03 synthesis checkpoint |
 

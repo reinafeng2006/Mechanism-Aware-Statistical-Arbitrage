@@ -42,4 +42,4 @@ G0 was frozen on 2026-09-03. G1-01 completed literature design, discovery and tr
 
 Still prohibited: claim admission without lawful full text; data acquisition or provider selection; database construction; empirical inspection; formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; and parameter tuning.
 
-See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [G1 stage hierarchy](docs/G1_STAGE_HIERARCHY.md), [G1 literature design](docs/G1_LITERATURE_DESIGN.md), and [G1-02 evidence-review checkpoint](docs/G1_REVIEW_CHECKPOINT_02.md).
+See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [G1 stage hierarchy](docs/G1_STAGE_HIERARCHY.md), [G1 literature design](docs/G1_LITERATURE_DESIGN.md), [G1-02 evidence-review checkpoint](docs/G1_REVIEW_CHECKPOINT_02.md), and [Literature OS migration](docs/LITERATURE_OS_MIGRATION.md).

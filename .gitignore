@@ -1,0 +1,3 @@
+# User-managed literature full texts are local, immutable process inputs.
+literature/library/*
+!literature/library/.gitkeep
