@@ -1,6 +1,6 @@
 # G1-02 Round 1B — Pair Formation Gap Closure
 
-Status: **COMPLETE WITH ONE FULL-TEXT ACCESS BLOCKER — PAIR FORMATION NOT SATURATED; G1-03 LOCKED**
+Status: **COMPLETE — PAIR FORMATION SATURATED SUBJECT TO UNRESOLVED SOURCE ACCESS; G1-03 LOCKED**
 
 ## Review completion
 
@@ -21,6 +21,22 @@ Status: **COMPLETE WITH ONE FULL-TEXT ACCESS BLOCKER — PAIR FORMATION NOT SATU
 
 ## Pair Formation saturation decision
 
-**NOT SATURATED.** The unresolved question is specific: whether Liu (2023) provides a decision-relevant, outcome-independent false-identification/structural-validity argument that changes the admissible G2 construct set. It is a named, directly relevant source, but its lawful full text was unavailable in the present environment. The issue is access, not a search for a universal winner.
+**SATURATED SUBJECT TO UNRESOLVED SOURCE ACCESS.** A bounded exact-title/author/repository access attempt found no lawful readable full-text alternative for PF-003/PF-012. The reviewed accessible evidence already preserves the relevant uncertainty as G2/internal-validation work: no outcome-independent economic/trading validity rule; non-equivalent representation families; separate statistical false-relationship controls; stability/rejection distinct from economic validity; and portfolio-overlap governance distinct from individual pair validity.
 
-Required action before declaring G1 Pair Formation saturated: obtain lawful full text for PF-003/PF-012 and perform the authorized Selective Deep review. No additional broad discovery is warranted. G1-03 remains locked; M1 review was not started.
+No other specifically identified accessible paper is expected to materially change the current G2 candidate representation set. No claim from PF-003/PF-012 was admitted. Their later lawful availability is an explicit reopen trigger; it may reopen the Pair Formation literature boundary. This status does not start G1-03 or M1.
+
+## Pair Formation handoff summary — provisional G1 input only
+
+| Literature-ancestry construct | Measures | Cannot establish | Must remain open / internally validated |
+|---|---|---|---|
+| Company/product-market proximity | Versioned company/business similarity | Return dependence, stable pair, payoff equivalence, trade validity | PIT transfer and contribution to pair validity |
+| Raw price-path distance | Historical normalized-path proximity | Economic link, factor-neutral relation, stability | Distance as G2 comparator |
+| Correlation | Linear return co-movement | Long-run equilibrium, causality, economic proximity | Correlation as G2 comparator |
+| Residual/replicate relation | Conditional common-component removal or multi-asset replicability | Pairwise economic relation, universal residual superiority | Factor/residual object and pairwise reduction |
+| Stochastic spread model | Assumed spread dynamics | That the assumed process is stable/true | Process assumptions and validation |
+| Cointegration | Lower-order-integrated linear price combination | Economic proximity, persistence, trade validity | Cointegration as G2 comparator |
+| Persistence/break information | Recurrence or instability of a specified relation | Break cause, M0 label, surviving-pair validity | PIT delay/noise/rejection tests |
+| FDR/multiplicity control | Statistical false discoveries among tested relations | Economic false pairs or generalization | Multiplicity and universe control |
+| Global matching | Portfolio overlap/concentration among candidate edges | Individual relation validity | Overlap policy after pair validity |
+
+No Pair Score, factor representation, pair algorithm, or threshold is selected. G2 must internally validate construct contribution, PIT timing, stability/rejection behavior, transferability, and pairwise/portfolio governance separation.
