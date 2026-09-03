@@ -1,6 +1,10 @@
 # Literature Evidence Register
 
-Status: **G1-02b TARGETED GAP CLOSURE COMPLETE — 19 CLAIMS ADMITTED; CROSS-PAPER SYNTHESIS NOT YET FROZEN**
+Status: **19 PRELIMINARY, TRIAGE-DERIVED CLAIMS RETAINED — G1-02 FULL-TEXT EVIDENCE REVIEW REOPENED; G1-03 NOT AUTHORIZED**
+
+## Evidence maturity control
+
+The review-depth audit found no candidate-specific artifact in `literature/reviews/` for any claim-bearing paper. Therefore every claim below, including the four YAML-backed G1-02b claims, is retained as `PRELIMINARY — TRIAGE-DERIVED / FULL-TEXT REVIEW PENDING`. The substantive wording and all claim/data links are preserved. A claim may be upgraded only after its paper has an auditable Light or Selective Deep review artifact and the wording is verified, narrowed, contradicted, or rejected against full text.
 
 Only researcher-authored notes and bibliographic links are retained. No source PDF is redistributed. Access date for all records: 2026-09-03. Entries in “Permitted G2 use” are reviewer recommendations for G1-03/G1-04, not current authorization. Only G1-04 may freeze downstream use; no factor, formula, label, provider, or empirical conclusion is authorized.
 

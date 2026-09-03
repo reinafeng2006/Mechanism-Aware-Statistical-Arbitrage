@@ -2,6 +2,8 @@
 
 Status: **HISTORICAL DISCOVERY INVENTORY — G1-02 REVIEW STATUS APPENDED**
 
+Review-depth audit correction (2026-09-03): proposed depth and claim admission do not establish completed review depth. No candidate-specific review artifacts existed at audit time; all rows are Discovery-only or Triage until an artifact records Light or Selective Deep review. See `docs/G1_02_REVIEW_DEPTH_AUDIT.md`.
+
 Checkpoint date: **2026-09-03**
 
 “Full text” means a lawful full paper or full HTML article was located during discovery. It does not mean the paper has been reviewed or admitted as evidence. “Pending” candidates cannot support claims unless lawful full text is obtained.

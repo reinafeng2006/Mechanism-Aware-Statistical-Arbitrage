@@ -35,11 +35,11 @@ foreach ($claimId in $requiredClaims) {
 }
 
 $gates = Get-Content -Raw -LiteralPath (Join-Path $RepositoryRoot "docs\GATES.md")
-Assert-Condition ($gates -match "G1-02b COMPLETE.*G1-03 LOCKED") "G1-03 must remain locked after G1-02b"
+Assert-Condition ($gates -match "G1-02 REOPENED.*G1-03 LOCKED") "G1-03 must remain locked while G1-02 review is reopened"
 
 [PSCustomObject]@{
     ValidatedG102bClaims = $requiredClaims.Count
     RequiredSchemaFields = $requiredFields.Count
-    G103Status = "LOCKED"
+    G103Status = "LOCKED; G1-02 REOPENED"
     Result = "PASS"
 } | Format-List

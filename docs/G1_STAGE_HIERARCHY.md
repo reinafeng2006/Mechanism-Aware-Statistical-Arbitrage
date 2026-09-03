@@ -15,7 +15,7 @@ G1 is the single literature and mechanism-evidence gate. The literature-review w
 | Substage | Purpose | Status / exit |
 |---|---|---|
 | G1-01 — Literature Design, Discovery & Triage | Freeze the seven-question decision map; execute discovery and triage; produce candidate inventory, coverage and review priorities | **COMPLETED** — historical Discovery Checkpoint 01 preserved unchanged |
-| G1-02 — Evidence Review | Adaptive Light / Selective Deep reading; admit only decision-relevant full-text claims; review supportive and contradictory evidence together | **COMPLETED — G1-02b TARGETED GAP CLOSURE REACHED** — 19 provisional claims; no formal synthesis |
+| G1-02 — Evidence Review | Adaptive Light / Selective Deep reading; admit only decision-relevant full-text claims; review supportive and contradictory evidence together | **REOPENED / IN PROGRESS** — review-depth audit found no candidate-specific review artifacts; 19 claims retained as preliminary pending verified full-text reviews |
 | G1-03 — Cross-Paper Evidence Synthesis | Produce the formal Pair Formation Evidence Map, Mechanism Observable-Signature Map, Literature-Derived Data Requirement Map, and Unresolved Gap Map | **NEXT — NOT YET APPROVED/STARTED** |
 | G1-04 — Evidence Freeze & G2 Handoff | Classify constructs/claims by permitted downstream use; freeze the literature basis and hand only eligible constructs/gaps to G2 | **LOCKED** |
 
