@@ -42,14 +42,18 @@ Checkpoint date: **2026-09-03**
 | B4-001 | [Price Reversals and Continuations Following Large Price Movements](https://www.sciencedirect.com/science/article/pii/S014829631830420X) | 2019 | B-P4 | Integrative | Yes | High | Selective Deep | Compares liquidity, overreaction, and underreaction observables; construct: competing explanations for large moves. |
 | B4-002 | [Asset Price Dynamics with Limited Attention](https://academic.oup.com/rfs/article/35/2/962/6226477) | 2022 | B-P1, B-P2, B-P4 | Recent | Yes | Medium | Light | Joint attention, inventory, order-flow, and pricing-error structure; construct: attention versus inventory channels. |
 | B4-003 | [Salience and Return Reversals: Evidence from China](https://www.sciencedirect.com/science/article/pii/S0927538X25003749) | 2026 | B-P3, B-P4 | Recent / China | Pending | Medium | Light if obtained | Industry-relative deviation, attention, liquidity, and news alternatives; construct: salient relative displacement. |
+| PF-013 | [Factor-adjusted multiple testing of correlations](https://www.sciencedirect.com/science/article/pii/S0167947318301397) | 2018/2019 | A-P2, A-P3 | Admitted G1-02b | Yes | High | Selective Deep | Factor-adjusted residual correlation and FDR control; construct: outcome-independent statistical false-pair control. |
+| PF-014 | [Short-Term Residual Reversal](https://www.efmaefm.org/0EFMAMEETINGS/EFMA%20ANNUAL%20MEETINGS/2012-Barcelona/papers/EFMA2012_0112_fullpaper.pdf) | 2012/2013 | A-P2, B-P3 | Admitted G1-02b | Yes | High | Light | Factor-residual rather than raw return; construct: representation contrast and M3 non-identifiability boundary. |
+| PF-015 | Empirical Investigation of an Equity Pairs Trading Strategy | 2019 | A-P2, A-P3, B-P4 | Admitted G1-02b | Yes | High | Light | Historical-correlation peer residual; construct: outcome-linked validation limitation. |
+| B4-004 | [What Is in High-Frequency Price Pressure?](https://www.sfm.url.tw/pdf/pastawardpapers/2020-02.pdf) | 2020 | B-P2, B-P4 | Admitted G1-02b | Yes | High | Selective Deep | Structural permanent/transitory price decomposition; construct: narrow contemporaneous pressure-vs-information discrimination. |
 
 ## Triage summary
 
-- Candidates: **34 rows / 33 distinct works** (PF-003 and PF-012 are separate decision-relevant sections of one dissertation).
+- Candidates: **38 rows / 37 distinct works** (PF-003 and PF-012 are separate decision-relevant sections of one dissertation).
 - Located lawful full text: **27 rows**.
 - Pending lawful full text: **7 rows**.
 - Proposed Selective Deep: **18 rows**, including one same-source section.
 - Proposed Light: **16 rows**, conditional on full-text access where marked Pending.
-- Evidence admitted at Checkpoint 02: **15 claims** from PF-001, PF-004, PF-006, PF-007, PF-008, M1-001, M1-002, M1-008, M2-001, M2-002, M2-003, M2-005, M3-001, M0-001/M0-002, and B4-001. See `registers/LITERATURE_EVIDENCE.md`.
+- Evidence admitted at G1-02 / G1-02b: **19 claims**. G1-02b admits PF-013–PF-015 and B4-004 only within the targeted-gap boundary. See `registers/LITERATURE_EVIDENCE.md`.
 
 No candidate is included because a factor or method is popular. Each is mapped to a frozen primary question and an explicit economic/statistical construct.

@@ -13,6 +13,9 @@ Edges connect current Claim IDs only. They preserve relationships already explic
 | CE-005 | CL-PF-005 | CL-M0-001 | SUPPORTS | Relationship-break risk and convergence-risk theory jointly preserve rejection/no-trade as a valid outcome | OPEN |
 | CE-006 | CL-M1-001 | CL-M1-003 | EXTENDS | Directed economic links and timestamped news links are complementary M1 evidence families with distinct timing caveats | OPEN |
 | CE-007 | CL-B4-001 | CL-M1-001 | QUALIFIES | Later continuation/reversal and event observables have multiple competing mechanisms; return path cannot label M1 | OPEN |
+| CE-008 | CL-PF-006 | CL-PF-003 | EXTENDS | Both support residual-related statistical representations, but neither establishes economic pair validity or selects a universal relationship object | OPEN |
+| CE-009 | CL-PF-007 | CL-M3-001 | QUALIFIES | Residual-return constructions and fundamental-news-adjusted residuals both leave M3 as non-positive/competing-explanation territory | OPEN |
+| CE-010 | CL-B4-002 | CL-M2-002 | QUALIFIES | High-frequency permanent/transitory decomposition does not repair contaminated lower-frequency flow measures; distinct inputs and estimands remain necessary | OPEN |
 
 ## Required handling at G1-03
 

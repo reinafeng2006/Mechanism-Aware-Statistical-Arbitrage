@@ -22,6 +22,12 @@ Frequency and history are literature-motivated candidate requirements, not froze
 | DR-014 | Structural/fundamental divergence | Corporate event, business/link/fundamental change, relationship break | R | Event/daily/periodic | Publication/effective timestamps; preserve taxonomy vintages | Multi-year vintages plus events | Regulatory/issuer disclosures and PIT fundamentals | Mixed | CL-PF-001, CL-PF-004/005, CL-M0-001 |
 | DR-015 | Ex-post resolution | Continuation/reversal/non-resolution path | Outcome only | Intraday/daily horizons | Strictly unavailable to event-time mechanism assignment | Candidate horizons deferred | Market records | Derived outcome | CL-M2-004, CL-B4-001 |
 
+## G1-02b addition — still provisional
+
+| ID | Construct | Candidate observable | Role | Frequency | PIT requirement | Required history | Source class (not provider) | Raw / derived | Claim ID |
+|---|---|---|---|---|---|---|---|---|---|
+| DR-016 | Permanent/transitory microstructure component | Timestamped trade price and quote; signed trade/order flow; liquidity-provider/quote-competition proxy; model-conditional permanent/transitory component | C/R | Tick/intraday candidate | Exchange timestamps, quote/trade sequence and any model input must be available by the decision timestamp; prohibit future-interval revisions in event-time use | Multiple intraday periods, liquidity regimes and event windows; length deferred | Exchange trade/quote/order-book records | Raw + derived | CL-B4-002 |
+
 ## Prohibitions before G1-04 handoff
 
 - No provider, field, frequency, lookback, formula, threshold, classifier, or schema is selected at G1.

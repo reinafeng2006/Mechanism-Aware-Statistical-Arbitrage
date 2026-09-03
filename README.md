@@ -1,6 +1,6 @@
 # Mechanism-Aware Statistical Arbitrage
 
-Status: **G0 FROZEN — G1-02 EVIDENCE REVIEW COMPLETE; G1-03 NOT STARTED**
+Status: **G0 FROZEN — G1-02b TARGETED GAP CLOSURE COMPLETE; G1-03 NOT STARTED**
 
 The mature literature workflow is nested within G1 as G1-01 through G1-04. G1-01 and G1-02 are complete; G1-03 synthesis and G1-04 evidence freeze remain locked pending approval. Empirical work remains prohibited.
 
@@ -38,8 +38,8 @@ M0–M3 are falsifiable working hypotheses, not assumed true mechanism classes. 
 
 ## Current boundary
 
-G0 was frozen on 2026-09-03. G1-01 completed literature design, discovery and triage. G1-02 completed adaptive Light/Selective Deep evidence review and admitted fifteen bounded claims. Its comparison tables and claim-linked Data Requirement Register are provisional inputs to G1-03, not formal synthesis or a G2 handoff.
+G0 was frozen on 2026-09-03. G1-01 completed literature design, discovery and triage. G1-02 admitted fifteen bounded claims. G1-02b then performed a closed, targeted review of outcome-independent pair validity, raw-versus-residual relationship representation, and contemporaneous multi-mechanism identifiability. Its nineteen claims and sixteen provisional data requirements remain inputs to G1-03, not formal synthesis or a G2 handoff.
 
 Still prohibited: claim admission without lawful full text; data acquisition or provider selection; database construction; empirical inspection; formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; and parameter tuning.
 
-See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [G1 stage hierarchy](docs/G1_STAGE_HIERARCHY.md), [G1 literature design](docs/G1_LITERATURE_DESIGN.md), [G1-02 evidence-review checkpoint](docs/G1_REVIEW_CHECKPOINT_02.md), and [Literature OS migration](docs/LITERATURE_OS_MIGRATION.md).
+See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [G1 stage hierarchy](docs/G1_STAGE_HIERARCHY.md), [G1 literature design](docs/G1_LITERATURE_DESIGN.md), [G1-02 evidence-review checkpoint](docs/G1_REVIEW_CHECKPOINT_02.md), [G1-02b targeted gap closure](docs/G1_02B_TARGETED_GAP_CLOSURE.md), and [Literature OS migration](docs/LITERATURE_OS_MIGRATION.md).

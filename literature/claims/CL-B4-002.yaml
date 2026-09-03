@@ -1,0 +1,48 @@
+claim_id: CL-B4-002
+candidate_id: B4-004
+primary_question: B-P2 | B-P4
+construct_or_mechanism: Intraday permanent-versus-transitory price-pressure decomposition
+pscr_role: [C, R]
+full_text_basis:
+  access_route: https://www.sfm.url.tw/pdf/pastawardpapers/2020-02.pdf
+  source_version: Bart Zhou Yueshen, What Is in High-Frequency Price Pressure? manuscript version, 2020
+  access_date: 2026-09-03
+  permitted_use_boundary: Lawful full-text review; retain citation and researcher-authored extraction only; do not redistribute source PDF.
+source_locator:
+  page: "1–7"
+  section: "Abstract, model intuition, data and state-space decomposition"
+  table_figure: "Model equations and intraday decomposition results"
+claim_paraphrase: With high-frequency trade/quote data and a specified microstructure model, permanent information effects and transitory price pressure can be decomposed; this provides a narrow mechanism-discrimination construct, not a general event-time M1/M2/M3/M0 classifier.
+exact_observable_or_method: Timestamped trades, trade direction/signed order flow, price and quote information; state-space permanent/transitory price decomposition under liquidity-provider competition assumptions.
+what_identified: Model-conditional decomposition of permanent price changes and transitory price pressure in the study's intraday setting.
+what_not_identified: A causal trader motive, arbitrary forced flow, M1 delayed information, M3 temporary idiosyncratic dislocation, structural M0 divergence, or a portable unified multi-mechanism label.
+logic_chain:
+  premise: {statement: "Observed intraday prices can combine information effects with transitory pressure when liquidity-provider quotes are not fully competitive.", status: ASSUMED}
+  measurement_identification: {statement: "A state-space microstructure model estimates permanent and transitory components from timestamped trade/quote inputs.", status: ESTIMATED}
+  intermediate_evidence: {statement: "The paper reports a negative association between transitory price-pressure changes and contemporaneous signed order flow in its sample.", status: OBSERVED}
+  inference: {statement: "Permanent/transitory decomposition is a candidate C/R diagnostic for a narrow pressure-versus-information distinction.", status: INFERRED}
+  final_claim: {statement: "It cannot positively identify M3 or resolve a four-way contemporaneous mechanism classification without additional, independently validated evidence.", status: INFERRED}
+limitations:
+  - Structural assumptions about liquidity-provider competition and trade-sign measurement.
+  - High-frequency data quality and market microstructure dependence.
+point_in_time_causal_timing_limitations: Inputs must be timestamped and available by the decision time; model estimates may be revised as later intraday observations arrive and cannot use future intervals for an event-time decision.
+sample_market_transferability: US high-frequency equity setting; A-share tick rules, investor composition, and quote/order-book access may differ materially.
+competing_explanations:
+  - Informed order flow can coexist with inventory pressure.
+  - Trade-sign error, stale quotes, and market-design effects.
+  - Fundamentals or relationship breakdown outside the microstructure model.
+missing_link: Evidence that this or any contemporaneous observable system positively separates M3 from M0 and jointly identifies M1/M2/M3/M0 in economically related equity pairs.
+validation_test_needed: If G2 is authorized, define a strictly PIT intraday timing DAG, trade-sign/quote quality checks, and rival-mechanism rejection tests before considering the decomposition.
+project_testability: Testable only if G3 later establishes lawful PIT tick/quote/order-flow lineage; no data acquisition, provider choice, or implementation is authorized now.
+data_requirement_ids: [DR-011, DR-016]
+permitted_g2_candidate_use:
+  - Candidate microstructure C/R construct for permanent-versus-transitory pressure distinction.
+  - Candidate data-lineage and timing requirement.
+prohibited_interpretations:
+  - Do not call transitory pressure a forced-flow M2 label without independent identification.
+  - Do not label M3 from a residual transitory component.
+  - Do not use later price paths to classify the event.
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS
+ancestry: "G1-02b targeted retrieval → B4-004 → manuscript full text → CL-B4-002"
+status: PROVISIONAL_G1_02

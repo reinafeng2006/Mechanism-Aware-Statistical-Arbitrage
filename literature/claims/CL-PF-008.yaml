@@ -1,0 +1,47 @@
+claim_id: CL-PF-008
+candidate_id: PF-015
+primary_question: A-P2 | A-P3 | B-P4
+construct_or_mechanism: Peer-relative return residual and outcome-linked pairs validation
+pscr_role: [P, S, R]
+full_text_basis:
+  access_route: https://www.ivey.uwo.ca/media/3772457/empirical-investigation-of-an-equity-pairs-trading-strategy.pdf
+  source_version: Chen, Da and Huang, Empirical Investigation of an Equity Pairs Trading Strategy, Management Science 65(1), 2019
+  access_date: 2026-09-03
+  permitted_use_boundary: Lawful full-text review; retain citation and researcher-authored extraction only; do not redistribute source PDF.
+source_locator:
+  page: "Abstract; Sections 2–3"
+  section: "Pair construction, return-difference decomposition, and forward-return tests"
+  table_figure: "Construction equations and portfolio-return tables"
+claim_paraphrase: A peer-relative return difference can be constructed from historical peer correlations, but its reported forward-return or profitability evidence cannot independently validate a pair relationship or contemporaneously classify a mechanism.
+exact_observable_or_method: Highest historical-return-correlation peer set; beta-scaled peer-portfolio return minus own return; subsequent monthly return tests.
+what_identified: The study defines a reproducible peer-relative return construction and documents its relation to later returns under its design.
+what_not_identified: Economic relation validity independent of future returns, a stable/generalizable pair, causal source of a relative move, or an event-time M1/M2/M3/M0 label.
+logic_chain:
+  premise: {statement: "Historical correlations can form a peer set and a relative-return residual.", status: ASSUMED}
+  measurement_identification: {statement: "Peer portfolios and beta-scaled return differences are estimated from historical returns.", status: ESTIMATED}
+  intermediate_evidence: {statement: "The paper evaluates the construction using later return patterns.", status: OBSERVED}
+  inference: {statement: "The construction is a candidate relationship/state representation, not an independent validity proof.", status: INFERRED}
+  final_claim: {statement: "Outcome-linked validation is insufficient for formal pair validity or contemporaneous mechanism identification.", status: INFERRED}
+limitations:
+  - Peer selection based on historical correlations can inherit common-factor or outcome-selection concerns.
+  - Subsequent-return evidence is not usable as an event-time input.
+point_in_time_causal_timing_limitations: Historical correlation windows must be trailing and universe-stable; forward returns must be quarantined to later validation and cannot influence pair formation or labels.
+sample_market_transferability: US equity sample and monthly horizon; A-share market rules and machinery-industry relation structure require independent validation.
+competing_explanations:
+  - Common-factor exposure and risk compensation.
+  - Information diffusion, liquidity pressure, or omitted fundamentals.
+  - Data-mined correlation peer sets.
+missing_link: A pair-validity criterion that is independent of resolution/returns and jointly checks economic relevance, stability, and generalization.
+validation_test_needed: G2/G4 must separate pair-formation validity checks from downstream return-resolution evaluation and pre-register a no-outcome-leakage protocol.
+project_testability: Testable only after G2 definitions and G4 split/held-out protocol are approved; no trading test is authorized here.
+data_requirement_ids: [DR-002, DR-003, DR-004, DR-015]
+permitted_g2_candidate_use:
+  - Candidate peer-relative state construction family.
+  - Explicit negative control: future outcomes cannot validate event-time pair or mechanism status.
+prohibited_interpretations:
+  - Do not infer pair quality from profitability.
+  - Do not infer a mechanism from eventual reversal/continuation.
+review_depth: LIGHT
+evidence_direction: WEAKENS
+ancestry: "G1-02b targeted retrieval → PF-015 → journal full text → CL-PF-008"
+status: PROVISIONAL_G1_02

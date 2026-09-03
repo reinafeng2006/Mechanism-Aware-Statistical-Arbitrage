@@ -1,0 +1,47 @@
+claim_id: CL-PF-007
+candidate_id: PF-014
+primary_question: A-P2 | B-P3
+construct_or_mechanism: Residual-return representation versus raw short-horizon return reversal
+pscr_role: [S, C, R]
+full_text_basis:
+  access_route: https://www.efmaefm.org/0EFMAMEETINGS/EFMA%20ANNUAL%20MEETINGS/2012-Barcelona/papers/EFMA2012_0112_fullpaper.pdf
+  source_version: Working-paper version of Blitz, Huij and Martens, Short-Term Residual Reversal (2012; later journal publication 2013)
+  access_date: 2026-09-03
+  permitted_use_boundary: Lawful full-text review; retain citation and researcher-authored extraction only; do not redistribute source PDF.
+source_locator:
+  page: "Abstract; Sections 2–4"
+  section: "Residual-return construction and empirical tests"
+  table_figure: "Residual-reversal portfolios and robustness tables"
+claim_paraphrase: A rolling factor-model residual is a distinct return object from raw reversal returns, but reported residual-reversal patterns do not positively identify a temporary idiosyncratic M3 dislocation.
+exact_observable_or_method: Stock returns residualized against rolling Fama–French factor exposures, followed by short-horizon residual-reversal portfolio tests.
+what_identified: A factor-adjusted return construction and its reported association with later returns in the study's samples.
+what_not_identified: A normal pair relationship, the contemporaneous cause of an individual residual move, an M3 label, or exclusion of omitted fundamentals and relationship breaks.
+logic_chain:
+  premise: {statement: "Raw stock returns contain common-factor exposure that can be separated statistically.", status: ASSUMED}
+  measurement_identification: {statement: "Rolling factor regressions estimate residual returns.", status: ESTIMATED}
+  intermediate_evidence: {statement: "The paper reports residual-reversal patterns after the chosen construction.", status: OBSERVED}
+  inference: {statement: "Residualization creates a candidate alternative state/relationship representation.", status: INFERRED}
+  final_claim: {statement: "Residual reversal alone cannot positively identify M3 or distinguish M3 from M0/omitted-fundamental explanations.", status: INFERRED}
+limitations:
+  - Findings are outcome-based rather than event-time mechanism labels.
+  - Factor specification and rolling estimation affect residuals.
+point_in_time_causal_timing_limitations: Factor exposures and all inputs require trailing/PIT estimation; later returns used in the paper cannot enter event-time classification.
+sample_market_transferability: Non-A-share evidence; factor availability, trading structure, and microstructure differ from A-share machinery stocks.
+competing_explanations:
+  - Omitted or stale fundamental information.
+  - Temporary liquidity/order-flow pressure.
+  - Structural relationship break or factor-model misspecification.
+missing_link: Contemporaneous evidence that a residual move is temporary idiosyncratic dislocation rather than M0 or another mechanism.
+validation_test_needed: G2 must define distinct rejection/context measures before any residual state can be considered for an M3 hypothesis; G4 must validate labels without using resolution outcomes.
+project_testability: Testable only after frozen PIT residual and rejection definitions; no factor model or event test is selected here.
+data_requirement_ids: [DR-002, DR-012, DR-013, DR-014]
+permitted_g2_candidate_use:
+  - Candidate raw-versus-residual representation comparator.
+  - Candidate residual-state diagnostic requiring M0 and rival-mechanism controls.
+prohibited_interpretations:
+  - Do not label a residual return M3.
+  - Do not use realised reversal as contemporaneous evidence of M3.
+review_depth: LIGHT
+evidence_direction: UNRESOLVED
+ancestry: "G1-02b targeted retrieval → PF-014 → working-paper full text → CL-PF-007"
+status: PROVISIONAL_G1_02

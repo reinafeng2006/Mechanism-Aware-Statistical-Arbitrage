@@ -1,0 +1,47 @@
+claim_id: CL-PF-006
+candidate_id: PF-013
+primary_question: A-P2 | A-P3
+construct_or_mechanism: Factor-adjusted residual dependence and outcome-independent multiple-testing control for highly matched pairs
+pscr_role: [P, R]
+full_text_basis:
+  access_route: https://www.sciencedirect.com/science/article/pii/S0167947318301397
+  source_version: Journal article, Computational Statistics & Data Analysis 130 (2019), online 2018
+  access_date: 2026-09-03
+  permitted_use_boundary: Lawful full-text review; retain citation and researcher-authored extraction only; do not redistribute source PDF.
+source_locator:
+  page: "Abstract; Sections 1–3, 5–6"
+  section: "Approximate factor model, FACL procedure, simulations, empirical illustration"
+  table_figure: "Tables 1–4"
+claim_paraphrase: A factor-adjusted residual-correlation procedure with false-discovery-rate control can recover statistically matched pairs more defensibly than naive raw-correlation screening when common factors and multiplicity matter.
+exact_observable_or_method: PCA-estimated approximate common factors; factor-adjusted residual correlations; two-stage FACL testing with FDR control.
+what_identified: Statistical recovery and false-positive control for residual correlation structure under the paper's factor-model assumptions, simulations, and an HS300 daily-return illustration.
+what_not_identified: Economic company relatedness, a stable normal pair relationship, out-of-sample generalization, causal mechanism, or whether residual dependence is universally superior to raw dependence.
+logic_chain:
+  premise: {statement: "Raw correlations can be induced by common factors and many pairwise tests create false discoveries.", status: ASSUMED}
+  measurement_identification: {statement: "Common factors and residual correlations are estimated from a return panel using PCA and FACL testing.", status: ESTIMATED}
+  intermediate_evidence: {statement: "Theory, simulations, and an HS300 illustration show controlled residual-correlation recovery under stated assumptions.", status: OBSERVED}
+  inference: {statement: "Residual-dependence screening with multiplicity control is a literature-supported candidate validity constraint.", status: INFERRED}
+  final_claim: {statement: "Use as a candidate outcome-independent statistical false-pair control only; do not interpret it as economic pair validity or a choice of normal relationship object.", status: INFERRED}
+limitations:
+  - Dependence on approximate-factor and estimation assumptions.
+  - Empirical illustration is not a test of economic peer validity or strategy generalization.
+point_in_time_causal_timing_limitations: PCA factors and testing universe must be estimated only from trailing, frozen observations; the paper does not resolve PIT universe/corporate-action governance for this project.
+sample_market_transferability: China HS300 daily returns provide partial China relevance, but not A-share machinery-specific or A-share point-in-time implementation validation.
+competing_explanations:
+  - Raw dependence may be economically meaningful despite common-factor exposure.
+  - A statistically significant residual relation may still be transient, non-economic, or outcome-selected.
+missing_link: Direct outcome-independent evidence linking factor-adjusted statistical matching to economically stable and generalizable company pairs.
+validation_test_needed: Pre-specified G2/G4 comparison of raw and residual relationship validity using only trailing/PIT inputs and separate outcome-independent stability/false-pair diagnostics.
+project_testability: Testable only after G2 operational definitions and G3 PIT return/universe lineage are authorized; no test is authorized now.
+data_requirement_ids: [DR-002, DR-003, DR-004]
+permitted_g2_candidate_use:
+  - Candidate residual-dependence representation.
+  - Candidate multiplicity/false-pair validity diagnostic.
+prohibited_interpretations:
+  - Do not treat residual correlation as economic similarity.
+  - Do not select residual representation as superior at G1.
+  - Do not use eventual trade profitability to validate the pair.
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS
+ancestry: "G1-02b targeted retrieval → PF-013 → journal full text → CL-PF-006"
+status: PROVISIONAL_G1_02

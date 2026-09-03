@@ -22,12 +22,13 @@ function Assert-Condition {
 $evidencePath = Join-Path $RepositoryRoot "registers\LITERATURE_EVIDENCE.md"
 $requirementsPath = Join-Path $RepositoryRoot "registers\DATA_REQUIREMENTS.md"
 $reconciliationPath = Join-Path $RepositoryRoot "literature\reconciliation_g1_02.md"
+$reconciliation02bPath = Join-Path $RepositoryRoot "literature\reconciliation_g1_02b.md"
 $hierarchyPath = Join-Path $RepositoryRoot "docs\G1_STAGE_HIERARCHY.md"
 $gatesPath = Join-Path $RepositoryRoot "docs\GATES.md"
 $migrationPath = Join-Path $RepositoryRoot "docs\LITERATURE_OS_MIGRATION.md"
 $libraryPath = Join-Path $RepositoryRoot "literature\library"
 
-@($evidencePath, $requirementsPath, $reconciliationPath, $hierarchyPath, $gatesPath, $migrationPath, $libraryPath) | ForEach-Object {
+@($evidencePath, $requirementsPath, $reconciliationPath, $reconciliation02bPath, $hierarchyPath, $gatesPath, $migrationPath, $libraryPath) | ForEach-Object {
     Assert-Condition (Test-Path -LiteralPath $_) "Missing required Literature OS artifact: $_"
 }
 
@@ -35,13 +36,19 @@ $claimIds = Get-TableIds $evidencePath '^\| (CL-[A-Z0-9-]+) \|'
 $claimReconIds = Get-TableIds $reconciliationPath '^\| RC-[0-9]+ \| (CL-[A-Z0-9-]+) \|'
 $dataIds = Get-TableIds $requirementsPath '^\| (DR-[0-9]+) \|'
 $dataReconIds = Get-TableIds $reconciliationPath '^\| RD-[0-9]+ \| (DR-[0-9]+) \|'
+$claim02bIds = Get-TableIds $reconciliation02bPath '^\| RC2-[0-9]+ \| (CL-[A-Z0-9-]+) \|'
+$data02bIds = Get-TableIds $reconciliation02bPath '^\| RD2-[0-9]+ \| (DR-[0-9]+) \|'
 
-Assert-Condition ($claimIds.Count -eq 15) "Expected 15 canonical Claim IDs; found $($claimIds.Count)."
+Assert-Condition ($claimIds.Count -eq 19) "Expected 19 canonical Claim IDs after G1-02b; found $($claimIds.Count)."
 Assert-Condition ($claimReconIds.Count -eq 15) "Expected 15 reconciled Claim IDs; found $($claimReconIds.Count)."
-Assert-Condition (-not (Compare-Object $claimIds $claimReconIds)) "Claim reconciliation is not one-to-one with canonical evidence IDs."
-Assert-Condition ($dataIds.Count -eq 15) "Expected 15 canonical Data Requirement IDs; found $($dataIds.Count)."
+Assert-Condition ($claim02bIds.Count -eq 4) "Expected 4 G1-02b reconciled Claim IDs; found $($claim02bIds.Count)."
+Assert-Condition (@(Compare-Object $claimReconIds $claimIds | Where-Object { $_.SideIndicator -eq '<=' }).Count -eq 0) "Baseline claim reconciliation is not a subset of canonical evidence IDs."
+Assert-Condition (@(Compare-Object $claim02bIds $claimIds | Where-Object { $_.SideIndicator -eq '<=' }).Count -eq 0) "G1-02b claim reconciliation is not a subset of canonical evidence IDs."
+Assert-Condition ($dataIds.Count -eq 16) "Expected 16 canonical Data Requirement IDs after G1-02b; found $($dataIds.Count)."
 Assert-Condition ($dataReconIds.Count -eq 15) "Expected 15 reconciled Data Requirement IDs; found $($dataReconIds.Count)."
-Assert-Condition (-not (Compare-Object $dataIds $dataReconIds)) "Data Requirement reconciliation is not one-to-one with canonical IDs."
+Assert-Condition ($data02bIds.Count -eq 1) "Expected 1 G1-02b reconciled Data Requirement ID; found $($data02bIds.Count)."
+Assert-Condition (@(Compare-Object $dataReconIds $dataIds | Where-Object { $_.SideIndicator -eq '<=' }).Count -eq 0) "Baseline data reconciliation is not a subset of canonical IDs."
+Assert-Condition (@(Compare-Object $data02bIds $dataIds | Where-Object { $_.SideIndicator -eq '<=' }).Count -eq 0) "G1-02b data reconciliation is not a subset of canonical IDs."
 
 $dataLines = Get-Content -LiteralPath $requirementsPath | Where-Object { $_ -match '^\| DR-[0-9]+ \|' }
 foreach ($line in $dataLines) {
@@ -49,13 +56,14 @@ foreach ($line in $dataLines) {
 }
 
 $reconciliationText = Get-Content -Raw -LiteralPath $reconciliationPath
-Assert-Condition ($reconciliationText -notmatch '\bLC[0-9]{4}\b') "Predecessor Claim ID found in current reconciliation control."
-Assert-Condition ($reconciliationText -notmatch '\bP[0-9]{4}\b') "Predecessor Paper ID found in current reconciliation control."
+$reconciliation02bText = Get-Content -Raw -LiteralPath $reconciliation02bPath
+Assert-Condition (($reconciliationText + $reconciliation02bText) -notmatch '\bLC[0-9]{4}\b') "Predecessor Claim ID found in current reconciliation control."
+Assert-Condition (($reconciliationText + $reconciliation02bText) -notmatch '\bP[0-9]{4}\b') "Predecessor Paper ID found in current reconciliation control."
 
 $hierarchyText = Get-Content -Raw -LiteralPath $hierarchyPath
 $gatesText = Get-Content -Raw -LiteralPath $gatesPath
 Assert-Condition ($hierarchyText -match 'G1-03.*NOT YET APPROVED/STARTED') "G1-03 must remain unauthorized during migration."
-Assert-Condition ($gatesText -match 'G1-02 COMPLETE.*G1-03 LOCKED') "Gate status must keep G1-03 locked."
+Assert-Condition ($gatesText -match 'G1-02b COMPLETE.*G1-03 LOCKED') "Gate status must keep G1-03 locked."
 
 $unexpectedLibraryFiles = @(
     Get-ChildItem -LiteralPath $libraryPath -File -Recurse |
@@ -65,9 +73,11 @@ Assert-Condition ($unexpectedLibraryFiles.Count -eq 0) "Migration must not impor
 
 [PSCustomObject]@{
     CanonicalClaims = $claimIds.Count
-    ReconciledClaims = $claimReconIds.Count
+    BaselineReconciledClaims = $claimReconIds.Count
+    G102bReconciledClaims = $claim02bIds.Count
     CanonicalDataRequirements = $dataIds.Count
-    ReconciledDataRequirements = $dataReconIds.Count
+    BaselineReconciledDataRequirements = $dataReconIds.Count
+    G102bReconciledDataRequirements = $data02bIds.Count
     DataRequirementsWithClaimLinkage = $dataLines.Count
     PredecessorIdentifiersInReconciliation = 'None'
     ImportedFullTexts = 0
