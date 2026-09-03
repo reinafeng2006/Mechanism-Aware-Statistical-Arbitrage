@@ -12,8 +12,8 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | D-005 | Event clock, state measures, labels, and resolution horizons | DEFERRED | MEASUREMENT-DESIGN — G2 |
 | D-006 | Observable indicators discriminating M0–M3 | DEFERRED | LITERATURE-INFORMED — G1; measurement follows at G2 |
 | D-007 | Trading directions, sizing, exits, and A-share feasibility | DEFERRED | IMPLEMENTATION — G4 |
-| D-008 | Exact comparator, metric, loss function, and materiality threshold | DEFERRED | STATISTICAL-DESIGN — G3; implementation inputs at G4 |
-| D-009 | Split, held-out custody, reviewer appointments, and reveal protocol | DEFERRED | STATISTICAL-DESIGN — G3 before inspection |
+| D-008 | Exact comparator construction, metric, loss function, and materiality threshold | DEFERRED | STATISTICAL-DESIGN — G3; implementation inputs at G4 |
+| D-009 | Development/held-out split, embargo, overlap, custody, and reveal protocol | DEFERRED | STATISTICAL-DESIGN — G3 before inspection |
 | D-010 | Quantitative empirical stopping thresholds | DEFERRED | STATISTICAL-DESIGN — G3 |
 | D-011 | Freeze seven-stage pipeline | APPROVED | Sponsor amendment, 2026-09-03 |
 | D-012 | Formal pair formation is company-aware, data-driven, point-in-time, reproducible, generalizable, and non-manual | APPROVED | Principle only; no factor/formula chosen |
