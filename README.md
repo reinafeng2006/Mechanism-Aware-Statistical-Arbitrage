@@ -1,7 +1,7 @@
 # Mechanism-Aware Statistical Arbitrage
 
-Status: **G0 FROZEN — G1 LITERATURE & MECHANISM EVIDENCE DESIGN ONLY**  
-No literature search or empirical work has begun.
+Status: **G0 FROZEN — G1 DISCOVERY/TRIAGE ACTIVE**  
+Literature Discovery is authorized under G1-01; empirical work remains prohibited.
 
 ## Objective
 
@@ -37,8 +37,8 @@ M0–M3 are falsifiable working hypotheses, not assumed true mechanism classes. 
 
 ## Current boundary
 
-G0 was frozen on 2026-09-03. The project is authorized only to design G1 literature questions, search plans, evidence standards, and review controls.
+G0 was frozen on 2026-09-03. G1-01 authorizes a bounded Literature Discovery/Triage checkpoint under the seven-question dependency map.
 
-Still prohibited: literature searching until researcher review of the G1 design; data acquisition; empirical inspection; formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; and parameter tuning.
+Still prohibited: substantive claim admission without lawful full text; unapproved Light/Selective Deep expansion beyond the checkpoint; data acquisition; empirical inspection; formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; and parameter tuning.
 
 See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [G0 thesis](docs/G0_ECONOMIC_THESIS.md), and [G1 literature design](docs/G1_LITERATURE_DESIGN.md).

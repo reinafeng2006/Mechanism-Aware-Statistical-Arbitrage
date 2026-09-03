@@ -1,6 +1,6 @@
 # G1 Compressed Decision Map
 
-Status: **PROPOSED FOR RESEARCHER APPROVAL — NO SEARCH AUTHORIZED**  
+Status: **APPROVED — DISCOVERY/TRIAGE AUTHORIZED 2026-09-03**  
 Audit result: **7 primary decision questions; all 26 existing questions preserved as supporting subquestions.**
 
 ## Compression principle
@@ -137,7 +137,7 @@ Search priority uses:
 5. Cross-stream synthesis and gap audit.
 6. Researcher review before any G1 conclusion is frozen or any G2 question is opened.
 
-This sequence is a proposal only. It authorizes no search.
+This sequence is approved for the first bounded Discovery/Triage checkpoint. Light and Selective Deep review remain subject to the checkpoint proposal.
 
 ## Compression audit checks
 
@@ -148,14 +148,6 @@ This sequence is a proposal only. It authorizes no search.
 - Stopping is based on decision saturation and contradiction coverage, not paper counts.
 - Downstream measurement, statistical, model, and implementation choices remain unresolved.
 
-## Approval requested
+## Approval record
 
-Approve, revise, or reject:
-
-- the seven primary questions;
-- the subquestion mapping;
-- priorities and proposed sequence;
-- decision-saturation stopping conditions; and
-- the cross-stream dependency structure.
-
-Until approval: **no literature search.**
+G1-01 was approved on 2026-09-03. Discovery/Triage is authorized in the documented dependency order. Stop at the first checkpoint with coverage, gaps, and a proposed Light/Selective Deep set.
