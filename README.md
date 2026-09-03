@@ -11,9 +11,13 @@ This is a research hypothesis, not a claim of profitability or an established ma
 
 ## Frozen conceptual pipeline
 
-`Pair Relationship → Abnormal Relative State → Mechanism Identification → Resolution Prediction → Trade / No Trade Decision`
+`Company Representation → Data-Driven Pair Formation → Normal Pair Relationship → Abnormal Relative State → Mechanism Identification → Resolution Prediction → Trade / No-Trade Decision`
 
-Any proposal that changes the order, merges stages, or lets later outcomes redefine earlier constructs requires a recorded amendment before inspection.
+The pipeline order and stage separation are G0 boundaries. Representations, variables, formulas, thresholds, algorithms, labels, and horizons are not selected at G0.
+
+## Frozen pair-formation philosophy
+
+Formal strategy pairs must be company-aware, fully data-driven, point-in-time, reproducible, and generalizable. Subjective or manual pair assignment is prohibited in the formal strategy. Company/business characteristics, factor exposures, empirical co-movement, and relationship stability are candidate information families only—not frozen factors, formulas, weights, or selection rules.
 
 ## Initial mechanism hypotheses
 
@@ -31,12 +35,10 @@ These labels are provisional hypotheses. They are neither directly observed stat
 - **C — Context/Mechanism Discrimination:** information useful for distinguishing why the dislocation occurred.
 - **R — Rejection:** evidence that weakens or invalidates the arbitrage interpretation.
 
-A candidate item may have multiple roles only when each role is separately justified and timed.
-
 ## Current boundary
 
-Permitted now: chartering, governance, gates, registers, learning protocol, and Observatory import controls.
+Permitted now: approval of the economic thesis, monetization objective, mechanism hypotheses, pair-formation philosophy, causal/point-in-time boundary, Observatory quarantine, falsifiability, and governance boundary.
 
-Prohibited now: market-data acquisition; outcome inspection; factor implementation; algorithm selection; model fitting; backtesting; performance estimation; parameter tuning; pair selection from realized returns; and any claim of empirical support.
+Prohibited now: data acquisition; empirical inspection; manual/formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; parameter tuning; and any claim of empirical support.
 
-Proceed only after the unresolved G0 decisions in [docs/G0_ECONOMIC_THESIS.md](docs/G0_ECONOMIC_THESIS.md) are answered, recorded, reviewed, and approved.
+The reduced G0 approvals and the classification of all former decision groups are in [docs/G0_ECONOMIC_THESIS.md](docs/G0_ECONOMIC_THESIS.md).
