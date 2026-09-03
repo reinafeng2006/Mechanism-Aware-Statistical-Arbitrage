@@ -29,6 +29,7 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | G0-09 | Lawful/licensed, non-MNPI, gated-claims boundary | APPROVED | User approval, 2026-09-03 |
 | G1-00 | Approve G1 literature design before search begins | SUPERSEDED | Replaced by G1-01 |
 | G1-01 | Approve seven primary G1 decision questions, 26-question mapping, priorities, dependencies, and stopping conditions | APPROVED | User approval, 2026-09-03; Discovery/Triage authorized in dependency order |
+| G1-02 | Approve Checkpoint 01 Light/Selective Deep review set, pending full-text pursuit, and B-P4 absence-aware stop | PROPOSED | Researcher review required; no Light/Deep review started |
 
 ## Required record fields for every amendment
 
