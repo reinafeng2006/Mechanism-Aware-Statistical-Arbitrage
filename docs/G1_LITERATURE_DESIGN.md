@@ -4,6 +4,10 @@ Status: **DESIGN COMPLETE — RESEARCHER REVIEW REQUIRED BEFORE SEARCH**
 Searches executed: **0**  
 Empirical work authorized: **No**
 
+## Primary decision map
+
+The controlling search and synthesis structure is the proposed seven-question map in [G1_DECISION_MAP.md](G1_DECISION_MAP.md). All 26 questions below remain unchanged as supporting subquestions. The map must receive researcher approval before search.
+
 ## G1 purpose
 
 G1 will determine what the literature supports, disputes, or leaves unresolved about:

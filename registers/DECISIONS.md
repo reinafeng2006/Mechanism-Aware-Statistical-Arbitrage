@@ -27,7 +27,8 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | G0-07 | Governance, claim separation, ancestry, held-out, determinism, and stop-rule boundary | APPROVED | User approval, 2026-09-03 |
 | G0-08 | Observatory quarantine and non-evidence boundary | APPROVED | User approval, 2026-09-03 |
 | G0-09 | Lawful/licensed, non-MNPI, gated-claims boundary | APPROVED | User approval, 2026-09-03 |
-| G1-00 | Approve G1 literature design before search begins | PROPOSED | Researcher review required; no searching authorized |
+| G1-00 | Approve G1 literature design before search begins | PROPOSED | Superseded in scope by the pending compression review; no searching authorized |
+| G1-01 | Approve seven primary G1 decision questions, 26-question mapping, priorities, dependencies, and stopping conditions | PROPOSED | Researcher review required; no searching authorized |
 
 ## Required record fields for every amendment
 
