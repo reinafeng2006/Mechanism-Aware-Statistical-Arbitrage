@@ -69,8 +69,8 @@ Assert-Condition (($reconciliationText + $reconciliation02bText) -notmatch '\bP[
 
 $hierarchyText = Get-Content -Raw -LiteralPath $hierarchyPath
 $gatesText = Get-Content -Raw -LiteralPath $gatesPath
-Assert-Condition ($hierarchyText -match 'G1-03.*NOT YET APPROVED/STARTED') "G1-03 must remain unauthorized during migration."
-Assert-Condition ($gatesText -match 'G1-02 REOPENED.*G1-03 LOCKED') "Gate status must keep G1-03 locked while G1-02 review is reopened."
+Assert-Condition ($hierarchyText -match 'G1-04.*LOCKED') "G1-04 must remain locked until explicit evidence-freeze approval."
+Assert-Condition ($gatesText -match 'G1-03 SYNTHESIS COMPLETE.*G1-04 LOCKED') "Gate status must record completed synthesis and locked G1-04."
 
 $unexpectedLibraryFiles = @(
     Get-ChildItem -LiteralPath $libraryPath -File -Recurse |
