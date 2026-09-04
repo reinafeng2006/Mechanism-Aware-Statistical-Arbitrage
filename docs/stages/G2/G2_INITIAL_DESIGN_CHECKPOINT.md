@@ -1,6 +1,6 @@
 # G2 — Initial Measurement & Timing Design Checkpoint
 
-Status: **ACTIVE — INITIALIZATION / DESIGN ONLY; G2-01 FROZEN; G2-02 NOT AUTHORIZED**
+Status: **ACTIVE — INITIALIZATION / DESIGN ONLY; G2-01 FROZEN; G2-02 PROPOSED; G2-03 NOT AUTHORIZED**
 Authority: approved G1-04 Evidence Freeze and frozen `../../decisions/G2_HANDOFF_CONTRACT.md`, 2026-09-04.
 Boundary: this checkpoint structures decisions. It selects no formula, factor, model, estimator, threshold, window, classifier, filter, provider, dataset or trading rule.
 
@@ -10,12 +10,12 @@ G2 designs measurements for a sequential belief-updating system, not a mandatory
 
 ## Dependency-ordered researcher decisions
 
-G2-01 is **APPROVED / FROZEN**. Rows 2–11 remain **UNRESOLVED — RESEARCHER DECISION REQUIRED BEFORE MEASUREMENT FREEZE**. Candidate families are preserved for comparison, not selected.
+G2-01 is **APPROVED / FROZEN**. G2-02 is **PROPOSED / AWAITING RESEARCHER APPROVAL**. Rows 3–11 remain **UNRESOLVED — RESEARCHER DECISION REQUIRED BEFORE MEASUREMENT FREEZE**. Candidate families are preserved for comparison, not selected.
 
 | Order | Decision group | Researcher decision to be resolved | Required boundary / dependency | Frozen ancestry |
 |---:|---|---|---|---|
 | 1 | Economic / signed conditional relationship semantics — **APPROVED / FROZEN** | Unified joint-conditional plus bidirectional-response framework; signed, asymmetric, pair-specific and state-dependent capability; four-object distinction; PIT and anti-circularity boundaries. | Measurement implementations remain unresolved; positive co-movement is not required; relationship validity is not trading predictability. | G2-01; D-017; CL-PF-001–007/009/010 |
-| 2 | P0/P1 pair-information architecture | Define a fair, prespecified P0 market-relationship-only design and P1 secondary company/economic-prior addition, including the permitted role of proximity. | P1 must show incremental relationship-level value beyond P0; no PnL-first retention. | D-016; CL-PF-001–007/009/010 |
+| 2 | P0/P1 pair-information architecture — **PROPOSED / AWAITING APPROVAL** | P0 simpler PIT market/statistical information architecture; P1 unchanged P0 plus separate secondary Economic/Company Relationship layer. | Same-protocol comparison; P1 requires incremental relationship-level value; no representation or metric selected. | D-016; CL-PF-001–007/009/010 |
 | 3 | N0/N1 normal-relationship specifications; N2 escalation | Specify comparable N0 and N1 design candidates under the same construct, information set, timing and validation protocol; prespecify the condition that could later authorize N2 consideration. | Depends on 1–2; N2 remains later complexity only and cannot be introduced after outcome inspection. | D-015; CL-PF-002–007/009 |
 | 4 | Pair-specific continuous abnormality | Decide which departure dimensions and uncertainty representation deserve operational candidates and how normality validity is separated from abnormality. | Depends on 3; preserve magnitude, direction, timing, residual and break as unselected possibilities. | D-015/D-017; CL-PF-002–007/009 |
 | 5 | Trigger / discriminator / sequential-updating families | Define non-overlapping measurement roles, update clocks and how continuous/uncertain evidence enters ongoing mechanism and resolution beliefs. | Depends on 4; no mandatory classifier or hard M1/M2 gates. | D-014; G1-04 clarification; CL-M1-001/003, CL-M2-001–004, CL-B4-002 |

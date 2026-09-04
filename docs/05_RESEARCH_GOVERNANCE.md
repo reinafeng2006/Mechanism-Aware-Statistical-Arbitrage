@@ -16,7 +16,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 |---|---|
 | G0 Economic Thesis | **PASS / FROZEN — 2026-09-03** |
 | G1 Literature & Mechanism Evidence | **PASS / FROZEN — 2026-09-04** |
-| G2 Measurement & Timing | **G2-01 APPROVED / FROZEN; DESIGN ONLY; G2-02 NOT AUTHORIZED** |
+| G2 Measurement & Timing | **G2-01 APPROVED / FROZEN; G2-02 PROPOSED / AWAITING RESEARCHER APPROVAL; DESIGN ONLY; G2-03 NOT AUTHORIZED** |
 | G3 Point-in-Time Data & Database | **LOCKED** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |
