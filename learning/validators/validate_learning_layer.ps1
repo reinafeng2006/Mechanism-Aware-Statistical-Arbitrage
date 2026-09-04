@@ -10,7 +10,7 @@ $forbidden = '(?<!CL-)PF-003\\b','(?<!CL-)PF-012\\b','M1-002\\b'
 foreach ($id in $forbidden) { if ($all -match $id) { throw "Prohibited non-completed-review ancestry in Learning Layer: $id" } }
 $dashboard = Get-Content -Raw (Join-Path $root 'learning/dashboard/index.html')
 foreach ($view in @('data-view="stage"','data-view="mechanism"','data-view="registry"','data-view="concept"','data-view="paper"')) { if ($dashboard -notmatch $view) { throw "Missing dashboard view: $view" } }
-foreach ($stage in @('Company Representation','Industry-Specific Relationship Prior','Pair-Specific Normal Relationship','Continuous Pair-Specific Abnormality','Sequential Mechanism & Resolution Updating','Trade / Update / Reject / Abstain')) { if ($dashboard -notmatch [regex]::Escape($stage)) { throw "Missing active architecture element: $stage" } }
+foreach ($stage in @('Company Representation','Industry-Specific Relationship Prior','Pair-Specific Normal Relationship','Multidimensional Pair-Specific Abnormality','Sequential Mechanism & Resolution Updating','Trade / Update / Reject / Abstain')) { if ($dashboard -notmatch [regex]::Escape($stage)) { throw "Missing active architecture element: $stage" } }
 if ($dashboard -notmatch 'ILLUSTRATIVE / UNAUTHORIZED FORMULA') { throw 'Unfrozen formula label missing' }
 if ($dashboard -notmatch 'Relationship / Rejection' -or $dashboard -notmatch 'Discriminator / Updating') { throw 'G2 measurement-family boundary missing' }
 foreach ($state in @('M0','M1','M2','M3','U')) { if ($dashboard -notmatch ([regex]::Escape($state) + ':\{')) { throw "Missing mechanism drill-down data: $state" } }

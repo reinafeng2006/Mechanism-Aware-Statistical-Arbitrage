@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-03 APPROVED / FROZEN — 2026-09-04**. **G2-04 PROPOSED / AWAITING RESEARCHER APPROVAL**; G2-05 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-04 APPROVED / FROZEN — 2026-09-04**. G2-05 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -11,7 +11,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 1. Economic / signed conditional relationship semantics — **APPROVED / FROZEN**.
 2. P0/P1 pair-information architecture — **APPROVED / FROZEN**.
 3. N0/N1 normal-relationship candidates and N2 escalation condition — **APPROVED / FROZEN**.
-4. Pair-specific continuous abnormality — **PROPOSED / AWAITING RESEARCHER APPROVAL**.
+4. Pair-specific continuous abnormality — **APPROVED / FROZEN**.
 5. Trigger/discriminator/sequential-updating measurement families — **UNRESOLVED**.
 6. M1 signed under-response measurement — **UNRESOLVED**.
 7. M2 pressure and proxy-contamination measurement — **UNRESOLVED**.
@@ -44,8 +44,8 @@ N0 is the Industry-Structured / Strongly Pooled normality specification, without
 
 N2 partial pooling remains **ILLUSTRATIVE / UNAUTHORIZED** and may be proposed later only if relationship-level evidence establishes a specific bias–variance, instability, sparse-history, calibration or generalization problem that N0/N1 cannot adequately address. Pooling strength is not assumed identical across industries. Final strategy PnL is not the primary selection criterion. See the formal [G2-03 Freeze Decision](decisions/G2_03_NORMAL_RELATIONSHIP_SPECIFICATIONS.md).
 
-## Active G2-04 proposal
+## Frozen G2-04 abnormality semantics
 
-Pair-specific abnormality is proposed as a potentially multidimensional state of departure of the current Observed Joint Response from the current Expected Conditional Joint Response, conceptually accounting for Relationship Uncertainty. Candidate magnitude, signed direction, timing and conditional/residual morphologies remain distinct. Relationship-change/break evidence is a parallel diagnostic channel, not a temporary-abnormality synonym.
+Pair-specific abnormality is the potentially multidimensional state of departure of the current Observed Joint Response from the current Expected Conditional Joint Response, conceptually accounting for Relationship Uncertainty. Multidimensional Abnormality State is the primary semantic object. Magnitude, signed direction, timing and conditional/residual deviation are candidate morphology families, not frozen measurements. Relationship-change/break evidence is a parallel diagnostic channel, not a temporary-abnormality synonym.
 
-A scalar or low-dimensional continuous summary is optional and subordinate. Continuous versus fixed/soft trigger versus probabilistic interpretation remains unresolved. Abnormality is a common pre-mechanism state feeding sequential M0–M3/U and resolution-belief updates; it identifies neither mechanism nor trade. See [G2-04 Working Proposal](stages/G2/G2_04_CONTINUOUS_ABNORMALITY_PROPOSAL.md).
+A scalar or low-dimensional Continuous Abnormality Summary is optional and subordinate rather than the definition itself. Trigger/probability interpretation remains deferred. Abnormality is a common pre-mechanism state feeding sequential M0–M3/U and resolution-belief updates; it identifies neither mechanism nor trade. Signed/state-dependent and anti-circularity principles remain binding. See the formal [G2-04 Freeze Decision](decisions/G2_04_CONTINUOUS_ABNORMALITY.md).

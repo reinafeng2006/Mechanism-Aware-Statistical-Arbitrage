@@ -1,10 +1,10 @@
-# G2-04 — Pair-Specific Continuous Abnormality Construct
+# G2-04 — Pair-Specific Continuous Abnormality Construct Freeze
 
-Status: **PROPOSED — AWAITING RESEARCHER APPROVAL**
+Status: **APPROVED / FROZEN — 2026-09-04**
 
 Scope: semantic design only. No formula, estimator, window, normalization, combination, weight, threshold, probability, update rule or model is selected.
 
-## Proposed governing principle
+## Frozen governing principle
 
 **Pair-specific abnormality is the state of departure of the current Observed Joint Response from the pair's current Expected Conditional Joint Response, accounting conceptually for Relationship Uncertainty.**
 
@@ -72,7 +72,7 @@ A large deviation may be compatible with either concept, both under uncertainty,
 
 This is a semantic flow, not a formula, hard gate, classifier or trade rule. Mechanism and resolution beliefs may update jointly.
 
-## FROZEN SEMANTICS — proposed
+## FROZEN SEMANTICS
 
 - Pair-specific abnormality is conditional departure of observed from expected joint/directional response, conceptually accounting for relationship uncertainty.
 - The multidimensional abnormality state is primary; candidate morphologies remain conceptually distinct.
@@ -103,6 +103,6 @@ This is a semantic flow, not a formula, hard gate, classifier or trade rule. Mec
 - Cross-pair/industry generalization and A-share machinery transferability.
 - Incremental downstream prediction and economic value only after relationship-level validity; PnL cannot define abnormality.
 
-## Approval decision
+## Approval record
 
-Researcher action required: **APPROVE, REVISE or REJECT** the governing principle, layered architecture, temporary-versus-break separation, anti-circularity implications and proposed classification. G2-05 remains unauthorized.
+The researcher approved G2-04 as proposed on 2026-09-04. The governing principle, multidimensional primary object, candidate morphology families, optional subordinate continuous summary, deferred trigger/probability interpretation, temporary-versus-break separation, common pre-mechanism role, signed/state-dependent boundary and anti-circularity implications are frozen. All measurement, normalization, weighting, dimensionality-reduction, probability, threshold, estimator, window and update choices remain unresolved exactly as proposed. G2-05 remains unauthorized.
