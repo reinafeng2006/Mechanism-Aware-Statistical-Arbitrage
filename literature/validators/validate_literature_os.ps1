@@ -24,9 +24,9 @@ $requirementsPath = Join-Path $RepositoryRoot "registers\DATA_REQUIREMENTS.md"
 $reconciliationPath = Join-Path $RepositoryRoot "literature\reconciliation_g1_02.md"
 $reconciliation02bPath = Join-Path $RepositoryRoot "literature\reconciliation_g1_02b.md"
 $reconciliationRound1bPath = Join-Path $RepositoryRoot "literature\reconciliation_g1_02_round1b.md"
-$hierarchyPath = Join-Path $RepositoryRoot "docs\G1_STAGE_HIERARCHY.md"
-$gatesPath = Join-Path $RepositoryRoot "docs\GATES.md"
-$migrationPath = Join-Path $RepositoryRoot "docs\LITERATURE_OS_MIGRATION.md"
+$hierarchyPath = Join-Path $RepositoryRoot "docs\archive\G1\G1_STAGE_HIERARCHY.md"
+$gatesPath = Join-Path $RepositoryRoot "docs\05_RESEARCH_GOVERNANCE.md"
+$migrationPath = Join-Path $RepositoryRoot "docs\archive\G1\LITERATURE_OS_MIGRATION.md"
 $libraryPath = Join-Path $RepositoryRoot "literature\library"
 
 @($evidencePath, $requirementsPath, $reconciliationPath, $reconciliation02bPath, $reconciliationRound1bPath, $hierarchyPath, $gatesPath, $migrationPath, $libraryPath) | ForEach-Object {

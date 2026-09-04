@@ -2,7 +2,7 @@
 
 Status: **QUESTION-COMPRESSION MAP PROPOSED — NO SEARCH AUTHORIZED**
 
-The exact wording of all 26 supporting questions remains authoritative in `docs/G1_LITERATURE_DESIGN.md`. The primary decision questions and their rationale are in `docs/G1_DECISION_MAP.md`.
+The exact wording of all 26 supporting questions remains authoritative in `docs/archive/G1/G1_LITERATURE_DESIGN.md`. The primary decision questions and their rationale are in `docs/archive/G1/G1_DECISION_MAP.md`.
 
 | Primary ID | Stream | Primary decision question | Supporting questions | Priority | Status |
 |---|---|---|---|---|---|

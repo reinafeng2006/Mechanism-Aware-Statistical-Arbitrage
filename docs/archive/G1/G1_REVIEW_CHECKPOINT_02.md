@@ -2,7 +2,7 @@
 
 Status: **SUPERSEDED AS A COMPLETION ASSERTION — REVIEW-DEPTH AUDIT FOUND NO CANDIDATE-SPECIFIC FULL-TEXT REVIEW ARTIFACTS**
 
-This checkpoint preserves its historical provisional notes but must not be read as evidence that Light or Selective Deep reviews were completed. See `docs/G1_02_REVIEW_DEPTH_AUDIT.md`; G1-02 is reopened and G1-03 remains unauthorized.
+This checkpoint preserves its historical provisional notes but must not be read as evidence that Light or Selective Deep reviews were completed. See `G1_02_REVIEW_DEPTH_AUDIT.md`; G1-02 is reopened and G1-03 remains unauthorized.
 
 ## Scope and stopping result
 

@@ -1,4 +1,4 @@
-# Learning Layer
+# Learning Layer — Pre-refactor Snapshot
 
 The learning layer records how knowledge changes without silently changing the frozen research protocol.
 

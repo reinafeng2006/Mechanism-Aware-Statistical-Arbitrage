@@ -1,12 +1,12 @@
-# Research Charter
+# Project Overview and Research Charter
 
 ## Research question
 
-Can company-aware, fully data-driven, point-in-time relationship priors and sequential mechanism/updating evidence improve dynamic resolution prediction and a subsequent trade/update/reject/abstain decision for abnormal relative states among A-share machinery stocks, with economic value assessed only later under realistic frictions?
+Can fully data-driven, point-in-time market-relationship evidence, optionally augmented by incrementally validated company/economic context, support sequential mechanism/resolution updating and a later trade/update/reject/abstain decision for abnormal relative states among A-share machinery stocks, with economic value assessed only later under realistic frictions?
 
 ## Active strategy architecture
 
-`Company Representation → Pair Relationship Prior → Abnormality Trigger → Sequential Mechanism Tracking + Dynamic Resolution Prediction → Trade / Update / Reject / Abstain`
+`Company Representation → Industry-Specific Relationship Prior → Pair-Specific Normal Relationship → Continuous Pair-Specific Abnormality → Sequential Mechanism & Resolution Updating → Trade / Update / Reject / Abstain`
 
 This is the active architecture under D-014. The exact G0 pipeline remains preserved as a historical freeze record and is not overwritten. Mechanism and resolution beliefs may update jointly as new PIT information arrives; neither a hard mechanism label nor a selected update model is authorized.
 
@@ -26,6 +26,8 @@ Formal strategy pair formation must be:
 
 Company/business characteristics, factor exposures, empirical co-movement, and relationship stability are candidate information families. G0 does not select factors, formulas, weights, distances, thresholds, clustering methods, learning algorithms, or refresh rules. Manual examples may be used later for exposition only and may never enter the formal strategy as assigned pairs.
 
+Under approved D-016, observed PIT market/statistical relationship evidence is primary for formal pair validity. Company/economic proximity is a secondary candidate prior/context input, not a required core factor, and may remain only after prespecified incremental relationship-level validation against P0.
+
 ## Claims are separated
 
 1. **Description:** characterize candidate information and relative states.
@@ -42,3 +44,13 @@ G0 freezes only the economic thesis and population boundary at a conceptual leve
 ## Governance principles
 
 Freeze before inspection; preserve causal timing and point-in-time information; record material decisions; separate development and held-out evidence; retain evidence ancestry; produce deterministic artifacts; predeclare stopping rules before empirical work; and prohibit retrospective relabeling using predicted outcomes.
+
+## Canonical documentation
+
+- [Economic Thesis](01_ECONOMIC_THESIS.md)
+- [Strategy Architecture](02_STRATEGY_ARCHITECTURE.md)
+- [Literature Evidence](03_LITERATURE_EVIDENCE.md)
+- [Measurement Design](04_MEASUREMENT_DESIGN.md)
+- [Research Governance](05_RESEARCH_GOVERNANCE.md)
+
+`Canonical docs = current truth`; `Stage docs = active working state`; `Archive = completed historical process`.

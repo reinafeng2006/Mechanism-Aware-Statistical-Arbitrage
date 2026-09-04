@@ -13,5 +13,5 @@ foreach ($view in @('data-view="map"','data-view="concept"','data-view="candidat
 foreach ($stage in @('Company Representation','Industry-Specific Relationship Prior','Pair-Specific Normal Relationship','Continuous Pair-Specific Abnormality','Sequential Mechanism & Resolution Updating','Trade / Update / Reject / Abstain')) { if ($dashboard -notmatch [regex]::Escape($stage)) { throw "Missing active architecture element: $stage" } }
 if ($dashboard -notmatch 'ILLUSTRATIVE / UNAUTHORIZED FORMULA') { throw 'Unfrozen formula label missing' }
 if ($dashboard -notmatch 'trigger、mechanism-discriminator、sequential-updating') { throw 'G2 measurement-family boundary missing' }
-if ((Get-Content -Raw (Join-Path $root 'docs/LEARNING_LAYER.md')) -notmatch 'never evidence sources') { throw 'Evidence boundary missing' }
+if ((Get-Content -Raw (Join-Path $root 'docs/05_RESEARCH_GOVERNANCE.md')) -notmatch 'never evidence sources') { throw 'Evidence boundary missing' }
 Write-Output 'PASS: Learning Layer is complete, bounded, and pedagogical only.'

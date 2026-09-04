@@ -13,6 +13,6 @@ foreach ($id in $ids) {
   foreach ($field in $fields) { Assert-Condition ($text -match [regex]::Escape($field)) "Missing $field in $claimId" }
   Assert-Condition ($text -match "review_completion: SELECTIVE_DEEP_VERIFIED_G1_02_ROUND_1") "Unverified completion in $claimId"
 }
-$gate = Get-Content -Raw (Join-Path $RepositoryRoot "docs\GATES.md")
-Assert-Condition ($gate -match "G1-02 REOPENED.*G1-03 LOCKED") "G1-03 must remain locked"
-[PSCustomObject]@{VerifiedSelectiveDeepReviews=$ids.Count; G103Status="LOCKED"; Result="PASS"} | Format-List
+$gate = Get-Content -Raw (Join-Path $RepositoryRoot "docs\05_RESEARCH_GOVERNANCE.md")
+Assert-Condition ($gate -match "G1 Literature & Mechanism Evidence.*PASS / FROZEN") "G1 must remain frozen after the completed review lineage"
+[PSCustomObject]@{VerifiedSelectiveDeepReviews=$ids.Count; G1Status="PASS_FROZEN"; Result="PASS"} | Format-List

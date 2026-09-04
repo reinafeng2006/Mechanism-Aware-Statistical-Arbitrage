@@ -78,7 +78,7 @@ M2 evidence can update belief only through pressure-source provenance, market/li
 
 ### Normal relationship and abnormality requirement
 
-Industry information supplies economically meaningful dimensions and relationship semantics; pair PIT history supplies the pair's actual normal relationship. N0 and N1 are competing candidates under the same prespecified construct, information set, timing and validation protocol. N2 is reserved only for a later demonstrated bias–variance or sample-efficiency problem. Abnormality is a continuous pair-specific departure candidate that can include magnitude, direction, timing, residual and break dimensions; formula, uncertainty and trigger/probability treatment are unresolved. Relationship-level evaluation precedes strategy PnL. See `docs/G2_NORMAL_RELATIONSHIP_REQUIREMENT.md`.
+Industry information supplies economically meaningful dimensions and relationship semantics; pair PIT history supplies the pair's actual normal relationship. N0 and N1 are competing candidates under the same prespecified construct, information set, timing and validation protocol. N2 is reserved only for a later demonstrated bias–variance or sample-efficiency problem. Abnormality is a continuous pair-specific departure candidate that can include magnitude, direction, timing, residual and break dimensions; formula, uncertainty and trigger/probability treatment are unresolved. Relationship-level evaluation precedes strategy PnL. See `docs/decisions/G2_NORMAL_RELATIONSHIP_REQUIREMENT.md`.
 
 ### Company/economic proximity role
 

@@ -8,7 +8,7 @@
 
 ## Original G0 record preserved
 
-G0-01 through G0-09, including the exact original thesis and seven-stage conceptual pipeline, remain unchanged in `G0_FREEZE_DECISION.md`. This is an amendment record, not a retroactive edit to G0.
+G0-01 through G0-09, including the exact original thesis and seven-stage conceptual pipeline, remain unchanged in `../archive/G0/G0_FREEZE_DECISION.md`. This is an amendment record, not a retroactive edit to G0.
 
 ## Approved operative architecture
 

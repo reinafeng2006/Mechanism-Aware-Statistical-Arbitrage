@@ -18,7 +18,7 @@ Construct semantics and PIT timing; fair P0/P1 and N0/N1 comparisons; signed con
 
 ## 4. Literature-derived requirements passed toward G3
 
-Versioned issuer text; PIT prices/returns and corporate actions; trailing factor/residual/dependence history; relationship persistence/break diagnostics; directed-link vintages; first-public news/events; audited flows and lagged holdings; official calendar/settlement context; trades/quotes/depth/turnover; fundamental announcements/forecast revisions; structural/link changes; and quarantined outcome paths. See `G1_03_DATA_REQUIREMENT_MAP.md`. DR-008 is excluded because its source is not admitted.
+Versioned issuer text; PIT prices/returns and corporate actions; trailing factor/residual/dependence history; relationship persistence/break diagnostics; directed-link vintages; first-public news/events; audited flows and lagged holdings; official calendar/settlement context; trades/quotes/depth/turnover; fundamental announcements/forecast revisions; structural/link changes; and quarantined outcome paths. See `../archive/G1/G1_03_DATA_REQUIREMENT_MAP.md`. DR-008 is excluded because its source is not admitted.
 
 ## 5. Prohibited shortcuts
 

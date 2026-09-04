@@ -1,4 +1,4 @@
-# Observatory Import Boundary
+# Observatory Import Boundary — Pre-refactor Snapshot
 
 Observatory is a separate, permanent hypothesis-discovery system.
 

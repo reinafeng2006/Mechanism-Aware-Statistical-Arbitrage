@@ -2,7 +2,7 @@
 
 Status: **SUPERSEDED AS A REVIEW-COMPLETION ASSERTION — 2026-09-03; G1-03 REMAINS LOCKED**
 
-The later review-depth audit established that the four claim records are not substitutes for candidate-specific Light/Selective Deep review artifacts. Its bounded results remain preliminary; see `docs/G1_02_REVIEW_DEPTH_AUDIT.md`.
+The later review-depth audit established that the four claim records are not substitutes for candidate-specific Light/Selective Deep review artifacts. Its bounded results remain preliminary; see `G1_02_REVIEW_DEPTH_AUDIT.md`.
 
 ## Authorization and boundary
 

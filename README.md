@@ -14,7 +14,7 @@ This is a research hypothesis, not a claim of profitability or an established ma
 
 `Company Representation → Industry-Specific Relationship Prior → Pair-Specific Normal Relationship → Continuous Pair-Specific Abnormality → Sequential Mechanism & Resolution Updating → Trade / Update / Reject / Abstain`
 
-This architecture is approved by [Amendment 001](docs/ARCHITECTURE_AMENDMENT_001.md). The original G0 seven-stage pipeline is preserved unchanged as a historical freeze record. M0–M3 are competing hypotheses; `U = Unresolved / Abstain` is an epistemic state, not a fifth mechanism. Literature evidence is not a mandatory real-time trading gate. Representations, variables, formulas, thresholds, algorithms, labels, horizons and policies remain unselected.
+This architecture is approved by [Amendment 001](docs/decisions/ARCHITECTURE_AMENDMENT_001.md). The original G0 seven-stage pipeline is preserved unchanged as a historical freeze record. M0–M3 are competing hypotheses; `U = Unresolved / Abstain` is an epistemic state, not a fifth mechanism. Literature evidence is not a mandatory real-time trading gate. Representations, variables, formulas, thresholds, algorithms, labels, horizons and policies remain unselected.
 
 ## Frozen pair-formation philosophy
 
@@ -42,4 +42,13 @@ G0 was frozen on 2026-09-03. G1-01 completed literature design, discovery and tr
 
 Still prohibited: claim admission without lawful full text; data acquisition or provider selection; database construction; empirical inspection; formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; and parameter tuning.
 
-See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [active architecture](docs/STRATEGY_ARCHITECTURE.md), [Amendment 001](docs/ARCHITECTURE_AMENDMENT_001.md), [G1 stage hierarchy](docs/G1_STAGE_HIERARCHY.md), [G1-02 review-depth audit](docs/G1_02_REVIEW_DEPTH_AUDIT.md), and [Literature OS migration](docs/LITERATURE_OS_MIGRATION.md).
+## Canonical documentation
+
+- [Project Overview](docs/00_PROJECT_OVERVIEW.md)
+- [Economic Thesis](docs/01_ECONOMIC_THESIS.md)
+- [Strategy Architecture](docs/02_STRATEGY_ARCHITECTURE.md)
+- [Literature Evidence](docs/03_LITERATURE_EVIDENCE.md)
+- [Measurement Design](docs/04_MEASUREMENT_DESIGN.md)
+- [Research Governance](docs/05_RESEARCH_GOVERNANCE.md)
+
+Formal decisions are under `docs/decisions/`, active working artifacts under `docs/stages/`, and completed process records under `docs/archive/`.

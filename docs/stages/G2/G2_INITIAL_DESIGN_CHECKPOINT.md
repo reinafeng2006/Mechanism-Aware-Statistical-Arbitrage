@@ -1,7 +1,7 @@
 # G2 — Initial Measurement & Timing Design Checkpoint
 
 Status: **ACTIVE — INITIALIZATION / DESIGN ONLY; DECISIONS UNRESOLVED**  
-Authority: approved G1-04 Evidence Freeze and frozen `G2_HANDOFF_CONTRACT.md`, 2026-09-04.  
+Authority: approved G1-04 Evidence Freeze and frozen `../../decisions/G2_HANDOFF_CONTRACT.md`, 2026-09-04.
 Boundary: this checkpoint structures decisions. It selects no formula, factor, model, estimator, threshold, window, classifier, filter, provider, dataset or trading rule.
 
 ## Governing design objective
@@ -23,12 +23,11 @@ All rows are **UNRESOLVED — RESEARCHER DECISION REQUIRED BEFORE MEASUREMENT FR
 | 7 | M2 pressure and proxy contamination | Define candidate PIT pressure-source, liquidity-state, abnormal response and rival checks, plus controls for endogenous/return-contaminated proxies. | Depends on 4–5; reversal is validation-only; volume/flow/illiquidity alone is non-identifying. | CL-M2-001–004; CL-B4-002 |
 | 8 | M0 positive rejection evidence | Define operational candidates for structural/fundamental/link-break/funding invalidation and distinguish persistent break from temporary abnormality. | Depends on 3–5; M0 cannot be assigned by elimination. | CL-M0-001; CL-PF-001/004/005 |
 | 9 | M3 non-identification constraint | Encode that unexplained residual movement cannot produce a positive M3 label and specify what, if anything, may remain descriptive context. | Depends on 6–8; absence of M1/M2/M0 evidence is not M3. | CL-M3-001; CL-PF-007; CL-B4-001 |
-| 10 | U / abstention representation | Define how ambiguity, insufficient evidence, rival explanations and measurement failure lead to continuing update, rejection or abstention without inventing a fifth mechanism. | Depends on 5–9; forced state assignment is prohibited. | Competing-mechanism Claim block in `G2_HANDOFF_CONTRACT.md` |
-| 11 | PIT timing, frequency, latency and lineage | Define decision timestamps, availability/vintage rules, update latency classes, required histories, missing/stale handling and lineage fields for every retained measurement candidate. | Cross-cuts 1–10 and must be fixed before handoff to G3; providers and acquisition remain unauthorized. | `G1_03_DATA_REQUIREMENT_MAP.md`; all linked Claim IDs except excluded DR-008 |
+| 10 | U / abstention representation | Define how ambiguity, insufficient evidence, rival explanations and measurement failure lead to continuing update, rejection or abstention without inventing a fifth mechanism. | Depends on 5–9; forced state assignment is prohibited. | Competing-mechanism Claim block in `../../decisions/G2_HANDOFF_CONTRACT.md` |
+| 11 | PIT timing, frequency, latency and lineage | Define decision timestamps, availability/vintage rules, update latency classes, required histories, missing/stale handling and lineage fields for every retained measurement candidate. | Cross-cuts 1–10 and must be fixed before handoff to G3; providers and acquisition remain unauthorized. | `../../archive/G1/G1_03_DATA_REQUIREMENT_MAP.md`; all linked Claim IDs except excluded DR-008 |
 
 ## Later G2 freeze obligations
 
 Before G2 can be frozen, the approved decisions must collectively specify construct definitions, comparable candidates, PIT timing and causal availability, trigger/discriminator/update roles, rejection/abstention handling, evidence/data lineage, and relationship-level validation design. They must preserve all alternatives and prohibitions in the G2 Handoff Contract.
 
 This checkpoint does not authorize answering these decisions through assumption. It does not activate G3 or authorize data acquisition, implementation, outcome inspection or empirical analysis.
-

@@ -34,12 +34,12 @@ foreach ($claimId in $requiredClaims) {
     Assert-Condition ($text -notmatch '\bLC[0-9]{4}\b|\bP[0-9]{4}\b') "Predecessor identifier found in $claimId"
 }
 
-$gates = Get-Content -Raw -LiteralPath (Join-Path $RepositoryRoot "docs\GATES.md")
-Assert-Condition ($gates -match "G1-02 REOPENED.*G1-03 LOCKED") "G1-03 must remain locked while G1-02 review is reopened"
+$gates = Get-Content -Raw -LiteralPath (Join-Path $RepositoryRoot "docs\05_RESEARCH_GOVERNANCE.md")
+Assert-Condition ($gates -match "G1 Literature & Mechanism Evidence.*PASS / FROZEN") "G1 must remain frozen after G1-04"
 
 [PSCustomObject]@{
     ValidatedG102bClaims = $requiredClaims.Count
     RequiredSchemaFields = $requiredFields.Count
-    G103Status = "LOCKED; G1-02 REOPENED"
+    G1Status = "PASS_FROZEN"
     Result = "PASS"
 } | Format-List

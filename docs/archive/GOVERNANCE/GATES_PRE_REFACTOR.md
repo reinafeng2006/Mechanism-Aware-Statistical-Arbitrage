@@ -1,4 +1,4 @@
-# Gate Structure
+# Gate Structure — Pre-refactor Snapshot
 
 No gate may be passed by repository activity alone. Each gate requires a recorded decision, listed artifacts, reviewer, and explicit PASS / REVISE / STOP outcome.
 

@@ -1,4 +1,4 @@
-# G0 — Economic Thesis
+# Economic Thesis — Current Frozen State
 
 Status: **FROZEN / PASS — 2026-09-03.** The approval freezes thesis and boundaries only; it does not authorize empirical work.
 
@@ -49,7 +49,7 @@ M0–M3 are falsifiable working hypotheses rather than assumed true mechanism cl
 
 ## Frozen G0 decisions
 
-G0-01 through G0-09 are APPROVED exactly as recorded in [the G0 freeze decision](G0_FREEZE_DECISION.md). No deferred item is resolved by this approval.
+G0-01 through G0-09 are APPROVED exactly as recorded in [the G0 freeze decision](archive/G0/G0_FREEZE_DECISION.md). No deferred item is resolved by this approval.
 
 ## Post-G0 boundary
 

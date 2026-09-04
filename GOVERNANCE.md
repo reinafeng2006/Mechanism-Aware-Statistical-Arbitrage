@@ -14,3 +14,7 @@
 12. Observatory imports remain quarantined discovery context and never count as project evidence.
 13. Held-out evidence, deterministic artifacts, and quantitative stopping rules must be specified at their later gates before empirical access.
 14. A governance breach triggers STOP and independent review.
+
+## Context-loading protocol
+
+Load current state from `docs/00_PROJECT_OVERVIEW.md` through `docs/05_RESEARCH_GOVERNANCE.md` in numeric order. Then load only the active artifact under `docs/stages/<stage>/` and the formal records it links under `docs/decisions/`. Use `docs/archive/` only for historical provenance; archive text must not override canonical current state.

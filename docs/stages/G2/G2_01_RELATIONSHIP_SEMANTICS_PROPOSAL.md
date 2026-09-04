@@ -85,4 +85,3 @@ If approved, G2 must later specify—before outcome inspection—how the referen
 ## Approval decision
 
 Researcher action required: **APPROVE, REVISE or REJECT** the proposed semantic object, frozen boundaries, four-object distinction and anti-circularity rule. G2-02 remains unauthorized until a separate instruction after G2-01 approval.
-

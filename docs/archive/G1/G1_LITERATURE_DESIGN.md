@@ -10,7 +10,7 @@ Its internal adaptive workflow remains:
 
 `Discovery → Triage → Light → Selective Deep → Synthesis Checkpoint`
 
-Selective Deep is decision-triggered, not mandatory. Discovery/Triage are G1-01, Light/Selective Deep are G1-02, the formal Synthesis Checkpoint and four maps are G1-03, and downstream permitted-use freeze belongs only to G1-04. See `docs/G1_STAGE_HIERARCHY.md`.
+Selective Deep is decision-triggered, not mandatory. Discovery/Triage are G1-01, Light/Selective Deep are G1-02, the formal Synthesis Checkpoint and four maps are G1-03, and downstream permitted-use freeze belongs only to G1-04. See `G1_STAGE_HIERARCHY.md`.
 
 Status: **DESIGN COMPLETE — RESEARCHER REVIEW REQUIRED BEFORE SEARCH**  
 Searches executed: **0**  
