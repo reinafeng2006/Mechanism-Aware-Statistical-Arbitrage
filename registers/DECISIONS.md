@@ -38,6 +38,7 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | D-014 | Amend the active strategy architecture to sequential mechanism/resolution updating; preserve original G0 pipeline as historical freeze | APPROVED | Researcher approval, 2026-09-04; see docs/ARCHITECTURE_AMENDMENT_001.md; no measurement/model/policy selected |
 | D-015 | Require G2 to compare N0 industry-uniform and N1 pair-specific normality under common prespecification; reserve N2 for justified later complexity; define abnormality as continuous pair-specific departure candidate | APPROVED | Researcher approval, 2026-09-04; see docs/G2_NORMAL_RELATIONSHIP_REQUIREMENT.md; no model/formula/threshold/data/result selected |
 | D-016 | Make PIT market relationship evidence primary for formal pair validity; treat company/economic proximity as secondary candidate context requiring P1 incremental validation beyond P0 | APPROVED | Researcher approval, 2026-09-04; see docs/G2_NORMAL_RELATIONSHIP_REQUIREMENT.md; no representation/model/metric/data/result selected |
+| D-017 | Require G2 signed/negative/asymmetric/state-dependent conditional pair relationships; opposite direction is not automatically abnormal or M3 | APPROVED | Researcher approval, 2026-09-04; conceptual requirement only; no formula/factor/estimator/threshold selected |
 
 ## Required record fields for every amendment
 
