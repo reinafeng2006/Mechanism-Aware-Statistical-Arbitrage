@@ -77,3 +77,7 @@ Industry information supplies economically meaningful dimensions and relationshi
 ### Company/economic proximity role
 
 PIT market relationship evidence is the primary basis for formal pair validity. Company/economic proximity is a secondary candidate prior/context variable—not a default core input—and may remain only if P1 adds prespecified OOS relationship-level value beyond P0. It can be considered as a prior, regularizer, tie-breaker, context, rejection/structural-change evidence or sparse-history aid. PF-001 still establishes only economic/product-market proximity.
+
+### Signed conditional relationships
+
+Pair validity need not imply positive or same-direction movement. The future G2 object is observed joint response versus expected signed conditional joint response; only a departure is candidate abnormality. Positive, negative, asymmetric and state-dependent relations are admissible candidates. Opposite direction alone is neither abnormal nor M3. This is **ILLUSTRATIVE / UNAUTHORIZED** and does not select a representation or estimator.

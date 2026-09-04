@@ -26,6 +26,12 @@ Company/economic proximity is **DEFINED; CANDIDATE SECONDARY PRIOR; NOT CORE; IN
 
 P1 may remain in a final design only if it demonstrates incremental **relationship-level** value beyond P0 under a prespecified OOS validation protocol. Pair validity, stability and generalization precede final strategy PnL; no metric is frozen here. PF-001 remains evidence only for economic/product-market proximity, not market relationship or trading validity.
 
+## Signed conditional relationship requirement — D-017
+
+A valid pair may exhibit a stable, estimable, signed and potentially state-dependent conditional response relationship. Validity does not require positive correlation or same-direction movement. `Observed Joint Response` versus `Expected Conditional Joint Response` gives candidate pair-specific abnormality. Opposite-direction movement is neither automatically abnormal nor M3.
+
+G2 must allow positive, negative, asymmetric and state-dependent relationships where PIT data support them. Economic Relationship Representation may include competitor, supplier/customer, upstream/downstream, substitute-product and opposite shared-shock exposure, as well as similarity. Company proximity remains secondary. M1 means insufficient movement in expected signed direction; M2 means excessive movement relative to expected conditional response regardless of sign. No formula, factor, estimator or threshold is selected.
+
 ## Required normality candidates
 
 | Candidate | Meaning | Status |
