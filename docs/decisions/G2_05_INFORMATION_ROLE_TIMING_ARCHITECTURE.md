@@ -1,7 +1,7 @@
 # G2-05 — Information Role & Timing Architecture Freeze Decision
 
-Status: **APPROVED / FROZEN**  
-Date: 2026-09-04  
+Status: **APPROVED / FROZEN**
+Date: 2026-09-04
 Boundary: semantics and governance only. No factor, formula, estimator, threshold, probability model, classifier, update rule, window, provider or trade rule is selected.
 
 ## Decision objective
