@@ -20,7 +20,7 @@ PF-001 将公司产品描述文本转成产品市场相似度与公司特定竞�
 
 ## Current project use/status
 
-可作为 G2 候选 P 层构念，须内部检验点时性与可迁移性；未选择文本表示或配对算法。
+**DEFINED · CANDIDATE SECONDARY PRIOR · NOT CORE · INCLUSION REQUIRES INCREMENTAL VALIDATION.** 可作为 prior、regularizer、tie-breaker、context、rejection/structural-change evidence 或稀疏历史辅助；P1 必须在预先定义的 relationship-level OOS 比较中超越 P0，才可保留。未选择文本表示、配对算法或指标。
 
 ## Paper / Claim ancestry
 

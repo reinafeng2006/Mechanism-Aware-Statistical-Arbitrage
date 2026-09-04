@@ -6,7 +6,7 @@ This catalog is a Learning Layer artifact. Definitions explain standard concepts
 
 | Concept / model | Standard definition and core form | Project status | Ancestry |
 |---|---|---|---|
-| Company / economic proximity | Similarity of contemporaneously available company or product-market descriptions. A generic text similarity can be written `sim(i,j) = cosine(x_i,x_j)`, where `x` is a dated company representation. | **DEFINED**; candidate information family only. | PF-001; CL-PF-001 |
+| Company / economic proximity | Similarity of contemporaneously available company or product-market descriptions. A generic text similarity can be written `sim(i,j) = cosine(x_i,x_j)`, where `x` is a dated company representation. | **DEFINED; CANDIDATE SECONDARY PRIOR; NOT CORE; INCLUSION REQUIRES INCREMENTAL VALIDATION.** | PF-001; CL-PF-001 |
 | Raw price-path distance | Distance between common-scale historical price paths: `D(i,j)=sum_t (P_i,t-P_j,t)^2`; `P` is normalized price, unitless after scaling. | **DEFINED**; candidate relationship representation. | PF-004; CL-PF-002 |
 | Return correlation | Linear co-movement of returns: `corr(r_i,r_j)=cov(r_i,r_j)/(sd(r_i)sd(r_j))`; returns are dimensionless rates. | **DEFINED**; candidate representation. | PF-005; CL-PF-009 |
 | Cointegration | Non-stationary prices may have a stationary linear combination: `z_t=p_i,t-beta p_j,t`; `z_t` is a price-level spread in the chosen scale. | **DEFINED**; candidate representation. | PF-005, PF-006; CL-PF-004, CL-PF-009 |
@@ -35,6 +35,8 @@ All formulas below are **ILLUSTRATIVE / NOT AUTHORIZED**. They communicate possi
 | N1 — Pair-Specific Normality Candidate | same construct as N0, estimated from the pair's own PIT history | **CANDIDATE / NOT SELECTED**. Must be compared fairly with N0. |
 | N2 — Hierarchical / Partial-Pooling Normality | `pair relationship = industry prior + pair-specific adjustment` | **ILLUSTRATIVE / UNAUTHORIZED** later-complexity candidate only. |
 | Continuous Pair-Specific Abnormality | degree of departure from estimated pair normal joint behavior and uncertainty | **CANDIDATE / NOT SELECTED**. Not a binary trigger. |
+| P0 — Market-Relationship-Only Pair Model | prespecified PIT market/statistical relationship information only | **CANDIDATE / NOT SELECTED**. Primary formal-pair-validity comparator. |
+| P1 — Market Relationship + Company/Economic Proximity | P0 plus proximity in a specified secondary role | **CANDIDATE / NOT SELECTED**. Requires incremental relationship-level OOS value beyond P0. |
 
 No mechanism classifier, abnormal-state formula, resolution-prediction model, factor list, pair score, threshold, or trading rule is authorized.
 
@@ -66,3 +68,7 @@ The active architecture has five displayed elements: sequential mechanism tracki
 ### Normal relationship and abnormality requirement
 
 Industry information supplies economically meaningful dimensions and relationship semantics; pair PIT history supplies the pair's actual normal relationship. N0 and N1 are competing candidates under the same prespecified construct, information set, timing and validation protocol. N2 is reserved only for a later demonstrated bias–variance or sample-efficiency problem. Abnormality is a continuous pair-specific departure candidate that can include magnitude, direction, timing, residual and break dimensions; formula, uncertainty and trigger/probability treatment are unresolved. Relationship-level evaluation precedes strategy PnL. See `docs/G2_NORMAL_RELATIONSHIP_REQUIREMENT.md`.
+
+### Company/economic proximity role
+
+PIT market relationship evidence is the primary basis for formal pair validity. Company/economic proximity is a secondary candidate prior/context variable—not a default core input—and may remain only if P1 adds prespecified OOS relationship-level value beyond P0. It can be considered as a prior, regularizer, tie-breaker, context, rejection/structural-change evidence or sparse-history aid. PF-001 still establishes only economic/product-market proximity.

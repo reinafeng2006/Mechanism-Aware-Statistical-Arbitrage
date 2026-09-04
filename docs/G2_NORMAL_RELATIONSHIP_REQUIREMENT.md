@@ -11,6 +11,21 @@
 
 This rejects both an assumed single industry-wide relationship and an unconstrained pair-specific model. It also preserves: `economic similarity ≠ statistical relationship ≠ normal relationship validity ≠ abnormality ≠ trading opportunity`.
 
+## Pair-formation evidence priority — D-016
+
+**Observed point-in-time market relationship evidence is the primary basis for formal pair validity. Company/economic proximity is a secondary candidate prior/context variable whose inclusion requires demonstrated incremental value beyond market-relationship information.**
+
+Formal pair formation must first consider reproducible market/statistical relationship information, including return co-movement, factor-adjusted/residual dependence, beta/exposure similarity, relationship stability/breakdown and other literature-supported relationship representations. No representation is selected by this requirement.
+
+Company/economic proximity is **DEFINED; CANDIDATE SECONDARY PRIOR; NOT CORE; INCLUSION REQUIRES INCREMENTAL VALIDATION**. It may later be considered as a prior, regularizer, tie-breaker, contextual support, rejection/structural-change evidence or aid when relationship history is sparse. Higher company similarity does not imply a better tradable pair.
+
+| Candidate | Meaning | Status |
+|---|---|---|
+| P0 — Market-Relationship-Only Pair Model | Formal pair validity uses prespecified PIT market/statistical relationship information. | **CANDIDATE / NOT SELECTED** |
+| P1 — Market Relationship + Company/Economic Proximity | Same P0 basis plus proximity in a specified secondary role. | **CANDIDATE / NOT SELECTED** |
+
+P1 may remain in a final design only if it demonstrates incremental **relationship-level** value beyond P0 under a prespecified OOS validation protocol. Pair validity, stability and generalization precede final strategy PnL; no metric is frozen here. PF-001 remains evidence only for economic/product-market proximity, not market relationship or trading validity.
+
 ## Required normality candidates
 
 | Candidate | Meaning | Status |
