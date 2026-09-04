@@ -42,7 +42,7 @@ $governance = Get-Content -Raw (Join-Path $RepositoryRoot 'docs\05_RESEARCH_GOVE
 Assert-Doc ($thesis -match 'FROZEN / PASS' -and $thesis -match 'M0–M3 are falsifiable working hypotheses') 'Frozen G0 thesis boundary missing.'
 Assert-Doc ($architecture -match 'Sequential Mechanism & Resolution Updating' -and $architecture -match 'U = Unresolved / Abstain') 'Active sequential architecture boundary missing.'
 Assert-Doc ($evidence -match 'G1 PASS / FROZEN' -and $evidence -match 'NOT PERMITTED FOR DESIGN JUSTIFICATION') 'G1 freeze or permission boundary missing.'
-Assert-Doc (($measurement.Contains('G2 ACTIVE — DESIGN ONLY')) -and ($measurement.Contains('G2-01 PROPOSED / AWAITING RESEARCHER APPROVAL'))) 'G2 design-only current state missing.'
+Assert-Doc (($measurement.Contains('G2 ACTIVE — DESIGN ONLY')) -and ($measurement.Contains('G2-01 APPROVED / FROZEN')) -and ($measurement.Contains('G2-02 is not authorized'))) 'G2-01 freeze or design-only boundary missing.'
 Assert-Doc ($governance -match 'G3 Point-in-Time Data & Database \| \*\*LOCKED' -and $governance -match 'Empirical work, data acquisition, implementation and outcome inspection remain unauthorized') 'Empirical authorization boundary changed.'
 Assert-Doc ($governance -match 'Canonical docs = current truth' -and $governance -match 'Stage docs = active working state' -and $governance -match 'Archive = completed historical process') 'Documentation rule missing.'
 
@@ -52,7 +52,7 @@ Assert-Doc ($governance -match 'Canonical docs = current truth' -and $governance
     BrokenMarkdownLinks = $broken.Count
     CanonicalRootDocs = $rootDocs.Count
     G1Status = 'FROZEN'
-    G2Status = 'ACTIVE_DESIGN_ONLY_G201_AWAITING_APPROVAL'
+    G2Status = 'ACTIVE_DESIGN_ONLY_G201_FROZEN_G202_NOT_AUTHORIZED'
     EmpiricalAuthorization = 'UNCHANGED_LOCKED'
     Result = 'PASS'
 } | Format-List

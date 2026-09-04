@@ -1,6 +1,6 @@
 # G2 — Initial Measurement & Timing Design Checkpoint
 
-Status: **ACTIVE — INITIALIZATION / DESIGN ONLY; DECISIONS UNRESOLVED**  
+Status: **ACTIVE — INITIALIZATION / DESIGN ONLY; G2-01 FROZEN; G2-02 NOT AUTHORIZED**
 Authority: approved G1-04 Evidence Freeze and frozen `../../decisions/G2_HANDOFF_CONTRACT.md`, 2026-09-04.
 Boundary: this checkpoint structures decisions. It selects no formula, factor, model, estimator, threshold, window, classifier, filter, provider, dataset or trading rule.
 
@@ -10,11 +10,11 @@ G2 designs measurements for a sequential belief-updating system, not a mandatory
 
 ## Dependency-ordered researcher decisions
 
-All rows are **UNRESOLVED — RESEARCHER DECISION REQUIRED BEFORE MEASUREMENT FREEZE**. Candidate families are preserved for comparison, not selected.
+G2-01 is **APPROVED / FROZEN**. Rows 2–11 remain **UNRESOLVED — RESEARCHER DECISION REQUIRED BEFORE MEASUREMENT FREEZE**. Candidate families are preserved for comparison, not selected.
 
 | Order | Decision group | Researcher decision to be resolved | Required boundary / dependency | Frozen ancestry |
 |---:|---|---|---|---|
-| 1 | Economic / signed conditional relationship semantics | Define the common economic/statistical construct vocabulary and what constitutes an expected signed, negative, asymmetric or state-dependent conditional response. | Must precede pair validity and normality measurement; positive co-movement is not required. | D-017; CL-PF-001–007/009/010 |
+| 1 | Economic / signed conditional relationship semantics — **APPROVED / FROZEN** | Unified joint-conditional plus bidirectional-response framework; signed, asymmetric, pair-specific and state-dependent capability; four-object distinction; PIT and anti-circularity boundaries. | Measurement implementations remain unresolved; positive co-movement is not required; relationship validity is not trading predictability. | G2-01; D-017; CL-PF-001–007/009/010 |
 | 2 | P0/P1 pair-information architecture | Define a fair, prespecified P0 market-relationship-only design and P1 secondary company/economic-prior addition, including the permitted role of proximity. | P1 must show incremental relationship-level value beyond P0; no PnL-first retention. | D-016; CL-PF-001–007/009/010 |
 | 3 | N0/N1 normal-relationship specifications; N2 escalation | Specify comparable N0 and N1 design candidates under the same construct, information set, timing and validation protocol; prespecify the condition that could later authorize N2 consideration. | Depends on 1–2; N2 remains later complexity only and cannot be introduced after outcome inspection. | D-015; CL-PF-002–007/009 |
 | 4 | Pair-specific continuous abnormality | Decide which departure dimensions and uncertainty representation deserve operational candidates and how normality validity is separated from abnormality. | Depends on 3; preserve magnitude, direction, timing, residual and break as unselected possibilities. | D-015/D-017; CL-PF-002–007/009 |

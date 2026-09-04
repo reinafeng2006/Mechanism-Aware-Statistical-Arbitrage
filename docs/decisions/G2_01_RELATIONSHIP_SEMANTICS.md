@@ -1,9 +1,9 @@
-# G2-01 — Economic / Signed Conditional Relationship Semantics
+# G2-01 — Economic / Signed Conditional Relationship Semantics Freeze
 
-Status: **PROPOSED — AWAITING RESEARCHER APPROVAL**  
+Status: **APPROVED / FROZEN — 2026-09-04**
 Scope: semantic object and conceptual boundaries only. No statistical representation, formula, estimator, window, threshold, distribution or validation metric is selected.
 
-## Proposed primary semantic object
+## Frozen primary semantic object
 
 A pair relationship is a **stable-enough, point-in-time estimable conditional joint/response relationship** between two securities, optionally conditioned on economically relevant market, industry and pair states. It describes the pair's currently expected joint behavior, directional responses and associated uncertainty using only information available by the decision time.
 
@@ -14,9 +14,9 @@ The primary semantic object is a **framework containing both**:
 
 These are complementary semantic views, not selected estimators. The joint view prevents the relationship from being reduced to a single direction; the directional views preserve economically meaningful lead–lag and asymmetric response questions. Neither view implies causality without separate identification evidence.
 
-## Frozen-semantic proposal
+## Frozen semantics
 
-If approved, the following become **FROZEN SEMANTICS**:
+The following are **FROZEN SEMANTICS**:
 
 - Validity means sufficiently persistent and PIT-estimable conditional behavior for the intended research use; it does not mean permanent invariance.
 - The semantic object permits positive, negative, asymmetric, state-dependent, pair-specific and gradually evolving relationships.
@@ -57,7 +57,7 @@ If approved, G2 must later specify—before outcome inspection—how the referen
 
 ## Classification of decisions
 
-### FROZEN SEMANTICS — proposed
+### FROZEN SEMANTICS
 
 - The combined joint-distribution/directional-response framework.
 - The signed, asymmetric, state-dependent, pair-specific, gradually evolving and uncertainty-aware capabilities.
@@ -82,6 +82,6 @@ If approved, G2 must later specify—before outcome inspection—how the referen
 - Whether normal-response errors, false-abnormality behavior and break detection are acceptable OOS.
 - Whether relationship validity contributes incremental resolution prediction or economic value; PnL cannot be the first validity criterion.
 
-## Approval decision
+## Approval record
 
-Researcher action required: **APPROVE, REVISE or REJECT** the proposed semantic object, frozen boundaries, four-object distinction and anti-circularity rule. G2-02 remains unauthorized until a separate instruction after G2-01 approval.
+The researcher approved this proposal without modification on 2026-09-04. G2-01 is frozen. G2-02 remains unauthorized until a separate researcher instruction. Approval freezes only the semantics and boundaries listed above; every item under `G2 MEASUREMENT DECISION — DEFER` and `EMPIRICAL VALIDATION — DEFER` remains unresolved exactly as proposed.

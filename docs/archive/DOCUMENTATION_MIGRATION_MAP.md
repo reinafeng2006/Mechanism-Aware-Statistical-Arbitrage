@@ -16,7 +16,7 @@ Created before content migration. Scope is documentation/information architectur
 | `docs/G2_NORMAL_RELATIONSHIP_REQUIREMENT.md` | `docs/decisions/G2_NORMAL_RELATIONSHIP_REQUIREMENT.md` | MOVE; D-015–D-017 provenance; consolidate in canonical 02/04 |
 | `docs/ARCHITECTURE_AMENDMENT_001.md` | `docs/decisions/ARCHITECTURE_AMENDMENT_001.md` | MOVE; formal D-014 provenance; consolidate in canonical 02 |
 | `docs/G2_INITIAL_DESIGN_CHECKPOINT.md` | `docs/stages/G2/G2_INITIAL_DESIGN_CHECKPOINT.md` | MOVE; active-stage working artifact; summarize in canonical 04 |
-| `docs/G2_01_RELATIONSHIP_SEMANTICS_PROPOSAL.md` | `docs/stages/G2/G2_01_RELATIONSHIP_SEMANTICS_PROPOSAL.md` | MOVE; active proposal remains awaiting approval; summarize in canonical 04 |
+| `docs/G2_01_RELATIONSHIP_SEMANTICS_PROPOSAL.md` | `docs/decisions/G2_01_RELATIONSHIP_SEMANTICS.md` | MOVE then FINALIZE after approval; formal G2-01 provenance; summarize in canonical 04 |
 | `docs/G0_FREEZE_DECISION.md` | `docs/archive/G0/G0_FREEZE_DECISION.md` | MOVE; historical formal freeze preserved |
 | `docs/G1_02_REVIEW_DEPTH_AUDIT.md` | `docs/archive/G1/G1_02_REVIEW_DEPTH_AUDIT.md` | MOVE |
 | `docs/G1_02_ROUND_1_PAIR_FORMATION.md` | `docs/archive/G1/G1_02_ROUND_1_PAIR_FORMATION.md` | MOVE |
