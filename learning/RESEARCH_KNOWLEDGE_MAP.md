@@ -4,6 +4,8 @@ This catalog is a Learning Layer artifact. Definitions explain standard concepts
 
 **Transition status:** G1-04 and the G2 Handoff Contract are **APPROVED / FROZEN — 2026-09-04**. G2 is **ACTIVE — INITIALIZATION / DESIGN ONLY** at its first checkpoint; eleven dependency-ordered decisions remain unresolved. Authorization permits study and operational design for continuous, uncertain sequential belief updating; it does not select a formula, model, threshold, factor or mandatory M0–M3 classifier.
 
+**Current G2 checkpoint:** G2-01 relationship semantics are **PROPOSED — AWAITING RESEARCHER APPROVAL**; G2-02 is not authorized. The proposed semantic framework combines a joint conditional distribution view with separate `i → j` and `j → i` response views. It distinguishes relationship state, relationship uncertainty, temporary abnormality, and relationship change/break, and imposes a PIT anti-circularity boundary. All mathematical notation is illustrative; no estimator is selected.
+
 ## Defined concepts / models
 
 | Concept / model | Standard definition and core form | Project status | Ancestry |
@@ -14,6 +16,8 @@ This catalog is a Learning Layer artifact. Definitions explain standard concepts
 | Cointegration | Non-stationary prices may have a stationary linear combination: `z_t=p_i,t-beta p_j,t`; `z_t` is a price-level spread in the chosen scale. | **DEFINED**; candidate representation. | PF-005, PF-006; CL-PF-004, CL-PF-009 |
 | Factor-adjusted / residual dependence | A specified control model `r_i,t=B_i f_t+e_i,t`; `e` is what that model leaves unexplained. | **DEFINED**; candidate representation. | PF-008, PF-013; CL-PF-003, CL-PF-006 |
 | Relationship stability / break | A statistical description of persistence or change in a specified relationship over time. | **DEFINED**; candidate R / rejection information. | PF-006, PF-007; CL-PF-004, CL-PF-005 |
+| Conditional joint/response relationship | The proposed semantic framework for PIT expected joint behavior, bidirectional signed responses and uncertainty conditional on available information. Illustrative only: `R_t={JointLaw(Y_i,Y_j|I_t), Response(j|i,I_t), Response(i|j,I_t), Uncertainty_t}`. | **PROPOSED SEMANTICS; NOT YET FROZEN**; no distribution or estimator selected. | D-017; G2-01 proposal; G1 frozen Claim ancestry |
+| Relationship state vs uncertainty vs abnormality vs break | State is current normal conditional behavior; uncertainty is how imprecisely it is known; abnormality is an unusual observation conditional on that reference; break is evidence that the reference itself changed. | **PROPOSED SEMANTICS; NOT YET FROZEN**; operational measurement deferred. | G2-01 proposal; CL-PF-004/005 |
 | False discovery rate (FDR) | `E[V/max(R,1)]`, where `R` is number of rejections and `V` erroneous rejections. Unit: expected proportion. | **DEFINED**; candidate statistical governance. | PF-013; CL-PF-006 |
 | Global matching / overlap control | A portfolio-level selection constraint; for example choose weighted edges with each asset used at most once. | **DEFINED**; candidate portfolio governance. | PF-010; CL-PF-010 |
 | M1 source–link–timing chain | A directional PIT link, identified source public event, coherent direction and contemporaneous peer under-response jointly support a candidate delayed-incorporation interpretation. | **PARTIALLY ANSWERED**; candidate P/C/R construct family only. | M1-001, M1-008; CL-M1-001, CL-M1-003 |
