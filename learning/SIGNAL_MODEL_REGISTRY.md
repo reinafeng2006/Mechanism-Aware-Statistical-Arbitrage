@@ -21,6 +21,16 @@ Status: **LEARNING / TRACEABILITY ONLY**. Entries are concepts or candidate meas
 
 Registry taxonomy: **signal concept ≠ candidate measurement ≠ frozen factor ≠ model output ≠ trade rule**. Candidate inputs are inventory fields, not selected providers or database specifications.
 
+## G2-05 frozen role, timing and feasibility governance
+
+Status: **APPROVED / FROZEN SEMANTICS; MEASUREMENTS UNRESOLVED**. `variable identity ≠ signal role`.
+
+Every future candidate registry record must declare: construct; Trigger/Discriminator/Sequential-Update/Rejection role(s); affected mechanism(s); justified evidentiary direction; observation and first-public/PIT timestamps; frequency; slow/medium/fast latency class; cached versus latency-critical handling; rival interpretation; contemporaneous/sequential-new/outcome-only status; Claim ancestry or `OBSERVATORY-ONLY HYPOTHESIS`; and authorization status.
+
+Existing candidate-input rows remain unchanged in substance. Their current role labels are conceptual inventory, not frozen factor assignments. Slow company context normally stays cached; a newly published event may enter a later fast decision only from its actual availability timestamp. Outcome realizations remain targets at the original decision origin. No activation, weighting or updating method is authorized.
+
+Every future candidate must also expose two independent fields: `Research Status` and `Production Feasibility Status`. The latter may be `EASY / CORE-CANDIDATE`, `MODERATE`, `HARD / OPTIONAL` or `UNAVAILABLE / RESEARCH-ONLY` and must be supported by availability, PIT reliability, coverage, frequency, acquisition, latency, computation, reproducibility, source stability, proprietary/reconstruction, cacheability and critical-path metadata. These are feasibility labels, not evidence or performance rankings. Existing rows are not retrospectively classified by this freeze.
+
 ## G2-03 normality specifications — frozen semantics
 
 | Candidate | Relationship role | What differs | What stays fixed | Status |

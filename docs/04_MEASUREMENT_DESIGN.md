@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-04 APPROVED / FROZEN — 2026-09-04**. G2-05 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-05 APPROVED / FROZEN — 2026-09-04**. G2-06 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -12,7 +12,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 2. P0/P1 pair-information architecture — **APPROVED / FROZEN**.
 3. N0/N1 normal-relationship candidates and N2 escalation condition — **APPROVED / FROZEN**.
 4. Pair-specific continuous abnormality — **APPROVED / FROZEN**.
-5. Trigger/discriminator/sequential-updating measurement families — **UNRESOLVED**.
+5. Trigger/discriminator/sequential-updating measurement families — **APPROVED / FROZEN**.
 6. M1 signed under-response measurement — **UNRESOLVED**.
 7. M2 pressure and proxy-contamination measurement — **UNRESOLVED**.
 8. M0 positive rejection evidence — **UNRESOLVED**.
@@ -49,3 +49,11 @@ N2 partial pooling remains **ILLUSTRATIVE / UNAUTHORIZED** and may be proposed l
 Pair-specific abnormality is the potentially multidimensional state of departure of the current Observed Joint Response from the current Expected Conditional Joint Response, conceptually accounting for Relationship Uncertainty. Multidimensional Abnormality State is the primary semantic object. Magnitude, signed direction, timing and conditional/residual deviation are candidate morphology families, not frozen measurements. Relationship-change/break evidence is a parallel diagnostic channel, not a temporary-abnormality synonym.
 
 A scalar or low-dimensional Continuous Abnormality Summary is optional and subordinate rather than the definition itself. Trigger/probability interpretation remains deferred. Abnormality is a common pre-mechanism state feeding sequential M0–M3/U and resolution-belief updates; it identifies neither mechanism nor trade. Signed/state-dependent and anti-circularity principles remain binding. See the formal [G2-04 Freeze Decision](decisions/G2_04_CONTINUOUS_ABNORMALITY.md).
+
+## Frozen G2-05 information-role and feasibility architecture
+
+Four non-equivalent information roles govern information use after abnormality exists: Trigger Evidence, Mechanism Discriminator Evidence, Sequential-Updating Evidence and Rejection/Rival Evidence. `variable identity ≠ signal role`: role depends on construct, hypothesis, context, decision time and PIT availability. The same information type may change role across decision times only when a genuinely new timestamped observation becomes available.
+
+Every future candidate requires construct, role, affected mechanism, theoretically supported effect direction, observation and PIT-availability timestamps, frequency, latency class, cached/critical status, rival interpretation, input/update/outcome status, evidence or Observatory ancestry and authorization metadata. Slow prior/context, medium relationship state, fast abnormality/market evidence and fast sequential updates remain distinct. No activation method, factor, formula, update rule or model is selected. See the formal [G2-05 Freeze Decision](decisions/G2_05_INFORMATION_ROLE_TIMING_ARCHITECTURE.md).
+
+Production / Data Feasibility is a separate design dimension. Every candidate must carry distinct `Research Status` and `Production Feasibility Status` records covering availability, PIT reliability, historical/universe coverage, frequency, acquisition and computation, latency, reproducibility, source stability, proprietary/reconstruction dependency, cacheability and critical-path position. The operational ladder is `EASY / CORE-CANDIDATE → MODERATE → HARD / OPTIONAL → UNAVAILABLE / RESEARCH-ONLY`; it is not an evidence or predictive-value ranking. Harder candidates require later material incremental value at their intended relationship/discrimination/prediction/economic level, and final PnL cannot first justify a difficult relationship-level variable. No candidate is rated or selected here.
