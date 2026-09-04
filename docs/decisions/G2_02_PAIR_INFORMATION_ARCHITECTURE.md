@@ -1,6 +1,6 @@
-# G2-02 — P0/P1 Pair-Information Architecture
+# G2-02 — P0/P1 Pair-Information Architecture Freeze
 
-Status: **PROPOSED — AWAITING RESEARCHER APPROVAL**
+Status: **APPROVED / FROZEN — 2026-09-04**
 
 Scope: semantic information architecture for establishing and maintaining a pair relationship prior. No estimator, representation, factor formula, pair score, threshold, update frequency, validation metric or empirical winner is selected.
 
@@ -90,9 +90,9 @@ Incremental value is not established by more features, economic plausibility alo
 - Slow P1 context is cached by default. Any fast company event must be separately timed and governed as later C/R evidence.
 - Relationship-break and structural-change information may weaken the prior or support later rejection, but cannot alone create a hard M0 gate.
 
-## 10. Proposed classification
+## 10. Frozen classification
 
-### FROZEN SEMANTICS — proposed
+### FROZEN SEMANTICS
 
 - P0 as the simpler, reproducible PIT market/statistical relationship-information architecture.
 - P1 as unchanged P0 plus a separate secondary Economic/Company Relationship layer.
@@ -110,6 +110,10 @@ All representations, estimators, variables, formulas, combinations, clocks, hist
 
 Whether any P0 specification establishes usable relationship quality; whether P1 adds OOS relationship-level value; whether signed/asymmetric/state-dependent structure is measurable; and performance on stability, calibration, generalization, false relationships, break detection, uncertainty and sparse history. Trading PnL remains later economic validation, not the first pair-architecture test.
 
-## Approval decision
+## Approval clarification
 
-Researcher action required: **APPROVE, REVISE or REJECT** this P0/P1 semantic architecture, timing roles, fair-comparison principle, incremental-value boundary and proposed classification. G2-03 remains unauthorized.
+P0/P1 incremental value must first be evaluated at the normal-relationship level. Superior downstream return prediction or strategy PnL alone cannot establish that Economic/Company Relationship information improves pair validity.
+
+## Approval record
+
+The researcher approved G2-02 on 2026-09-04 subject only to the clarification above. P0/P1 semantics, information-family separation, timing roles, exclusions, fair-comparison discipline, incremental-value boundary and no-P2 rule are frozen. All representation, estimator, factor, metric, frequency, threshold and model choices remain unresolved exactly as proposed. G2-03 remains unauthorized.

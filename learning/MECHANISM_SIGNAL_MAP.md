@@ -18,6 +18,6 @@ Drill-down: [M0](mechanisms/M0.md), [M1](mechanisms/M1.md), [M2](mechanisms/M2.m
 
 Preserved boundaries: opposite-direction movement is neither automatically abnormal nor M3; future catch-up/reversal/normalization is validation-only; relationship validity is not trading predictability; signal concept ≠ candidate measurement ≠ frozen factor ≠ model output ≠ trade rule.
 
-## G2-02 proposal implication
+## Frozen G2-02 implication
 
-The Relationship step is proposed to contain **P0**, a simpler PIT market/statistical layer whose non-equivalent information families remain separate, and optional **P1**, which adds a separately identifiable slow Economic/Company Relationship layer. Neither layer is an abnormality detector, mechanism classifier, resolution model or trade rule. Slow P1 context is normally precomputed/cached; a new company event would require separate PIT treatment as later discriminator/rejection evidence. Status: **PROPOSED / NOT FROZEN**.
+The Relationship step contains **P0**, the primary simpler PIT market/statistical layer whose five non-equivalent information families remain separate, and optional **P1**, which adds a separately identifiable slow Economic/Company Relationship layer. Neither layer is an abnormality detector, mechanism classifier, resolution model or trade rule. Slow P1 context is normally precomputed/cached; a new company event requires separate PIT treatment and later authorization as discriminator/rejection evidence. P1 requires incremental normal-relationship-level value; downstream prediction or PnL alone is insufficient. Status: **FROZEN SEMANTICS; MEASUREMENT UNRESOLVED**.
