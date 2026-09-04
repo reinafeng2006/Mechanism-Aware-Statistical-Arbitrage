@@ -7,7 +7,7 @@ G1 is the single literature and mechanism-evidence gate. The literature-review w
 ## Stage responsibility boundary
 
 - **G1 — what existing evidence says deserves measurement and why.** G1 admits and synthesizes literature claims, defines permitted downstream construct use, and records unresolved gaps. It does not operationalize measures.
-- **G2 — how those constructs will be operationally measured.** G2 defines constructs, observables, clocks, transformations, validity tests, and rejection logic. It does not select providers or acquire/build the database.
+- **G2 — how those constructs will be operationally measured.** G2 defines trigger variables, mechanism-discriminator variables and sequential-updating variables, plus constructs, clocks, transformations, validity tests and rejection logic. It decides no update-model family, provider or database through G1 alone.
 - **G3 — what point-in-time data/database is required and how it will be acquired.** G3 defines fields, vintages, source classes/providers, licensing, acquisition, storage, lineage, and database QA under the frozen G2 measurement specification. It does not inspect research outcomes.
 
 ## G1 substage hierarchy

@@ -35,6 +35,7 @@ Allowed states: PROPOSED, APPROVED, REJECTED, SUPERSEDED, DEFERRED. Only APPROVE
 | G1-02b | Targeted Gap Closure limited to outcome-independent pair validity/generalization, direct raw-versus-residual relationship evidence, and contemporaneous multi-mechanism identifiability (including positive M3 identifiability) | APPROVED | Researcher approval, 2026-09-03; no broad discovery; G1-03 remains unauthorized |
 | G1-03 | Approve Cross-Paper Evidence Synthesis and production of the four formal maps | PROPOSED | Not authorized by hierarchy normalization; provisional G1-02 tables are inputs only |
 | G1-04 | Freeze permitted downstream use and authorize G2 handoff | DEFERRED | Requires approved G1-03 synthesis checkpoint |
+| D-014 | Amend the active strategy architecture to sequential mechanism/resolution updating; preserve original G0 pipeline as historical freeze | APPROVED | Researcher approval, 2026-09-04; see docs/ARCHITECTURE_AMENDMENT_001.md; no measurement/model/policy selected |
 
 ## Required record fields for every amendment
 

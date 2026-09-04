@@ -10,11 +10,11 @@ Develop and test a potentially profitable statistical-arbitrage framework for ec
 
 This is a research hypothesis, not a claim of profitability or an established market fact.
 
-## Frozen conceptual pipeline
+## Active strategy architecture
 
-`Company Representation → Data-Driven Pair Formation → Normal Pair Relationship → Abnormal Relative State → Mechanism Identification → Resolution Prediction → Trade / No-Trade Decision`
+`Company Representation → Pair Relationship Prior → Abnormality Trigger → Sequential Mechanism Tracking + Dynamic Resolution Prediction → Trade / Update / Reject / Abstain`
 
-The pipeline order and stage separation are frozen at G0. Representations, variables, formulas, thresholds, algorithms, labels, and horizons are not selected at G0.
+This architecture is approved by [Amendment 001](docs/ARCHITECTURE_AMENDMENT_001.md). The original G0 seven-stage pipeline is preserved unchanged as a historical freeze record. M0–M3 are competing hypotheses; `U = Unresolved / Abstain` is an epistemic state, not a fifth mechanism. Literature evidence is not a mandatory real-time trading gate. Representations, variables, formulas, thresholds, algorithms, labels, horizons and policies remain unselected.
 
 ## Frozen pair-formation philosophy
 
@@ -31,10 +31,10 @@ M0–M3 are falsifiable working hypotheses, not assumed true mechanism classes. 
 
 ## Candidate-information roles
 
-- **P — Pair Relationship:** why the securities should normally move together.
-- **S — State/Dislocation:** what abnormal relative state is currently observed.
-- **C — Context/Mechanism Discrimination:** information useful for distinguishing why the dislocation occurred.
-- **R — Rejection:** evidence that weakens or invalidates the arbitrage interpretation.
+- **P — Relationship Prior:** why a pair should normally share a relationship.
+- **S — Abnormality Trigger:** evidence that the current relative state is unusual.
+- **C — Mechanism Discriminator / Updating Evidence:** contemporaneously arriving information that changes mechanism or resolution belief.
+- **R — Rejection / Rival Evidence:** structural/fundamental invalidation, competing explanations, or abstention evidence.
 
 ## Current boundary
 
@@ -42,4 +42,4 @@ G0 was frozen on 2026-09-03. G1-01 completed literature design, discovery and tr
 
 Still prohibited: claim admission without lawful full text; data acquisition or provider selection; database construction; empirical inspection; formal pair selection; factor or formula selection; measurement design; algorithm choice; model fitting; backtesting; performance estimation; and parameter tuning.
 
-See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [G1 stage hierarchy](docs/G1_STAGE_HIERARCHY.md), [G1-02 review-depth audit](docs/G1_02_REVIEW_DEPTH_AUDIT.md), and [Literature OS migration](docs/LITERATURE_OS_MIGRATION.md).
+See [G0 freeze decision](docs/G0_FREEZE_DECISION.md), [active architecture](docs/STRATEGY_ARCHITECTURE.md), [Amendment 001](docs/ARCHITECTURE_AMENDMENT_001.md), [G1 stage hierarchy](docs/G1_STAGE_HIERARCHY.md), [G1-02 review-depth audit](docs/G1_02_REVIEW_DEPTH_AUDIT.md), and [Literature OS migration](docs/LITERATURE_OS_MIGRATION.md).

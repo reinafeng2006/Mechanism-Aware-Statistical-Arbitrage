@@ -34,25 +34,25 @@ All formulas below are **ILLUSTRATIVE / NOT AUTHORIZED**. They communicate possi
 
 No mechanism classifier, abnormal-state formula, resolution-prediction model, factor list, pair score, threshold, or trading rule is authorized.
 
-## Seven-stage status
+## Active sequential architecture status
+
+The active architecture has five displayed elements: sequential mechanism tracking and dynamic resolution prediction are deliberately coupled into one element. The original seven-stage G0 map remains a preserved historical record, not the current operating map.
 
 | Pipeline stage | Knowledge status | Expected resolver |
 |---|---|---|
 | Company Representation | **PARTIALLY ANSWERED** | G2 Measurement & Timing |
-| Pair Formation | **PARTIALLY ANSWERED** | G2 Measurement & Timing |
-| Normal Relationship | **PARTIALLY ANSWERED** | G2 Measurement & Timing |
-| Abnormal Relative State | **NOT YET STUDIED** | G1 mechanism evidence, then G2 |
-| Mechanism Identification | **PARTIALLY ANSWERED for M1 only** | G1 evidence review / G2 |
-| Resolution Prediction | **NOT YET STUDIED** | G1 evidence review / G2–G4 |
-| Trade / No Trade | **NOT YET STUDIED** | G4–G9 |
+| Pair Relationship Prior | **PARTIALLY ANSWERED** | G2 Measurement & Timing |
+| Abnormality Trigger | **NOT YET STUDIED** | G1 mechanism evidence, then G2 |
+| Sequential Mechanism Tracking + Dynamic Resolution Prediction | **PARTIALLY ANSWERED for M1 evidence boundaries only** | G1 evidence review / G2–G4 |
+| Trade / Update / Reject / Abstain | **NOT YET STUDIED** | G4–G9 |
 
-### Stage 5 — Mechanism Identification: M1 detail
+### Sequential Mechanism Tracking + Dynamic Resolution Prediction: M1 detail
 
 **What is answered / defined.** Completed M1 reviews establish that lead-lag alone is not M1. A candidate delayed-incorporation interpretation needs a PIT directional economic link, an identified and time-stamped public source event/response, economically coherent direction, peer under-response by the decision time, and rival/leakage checks. Event-time provenance is conceptually distinct from a later peer response used only as validation.
 
 **Defined concepts/models.** The source–link–timing chain and the event-time-versus-outcome boundary are **DEFINED** concepts. Their logical representation is `link → source event → peer under-response → candidate M1 → later validation`; it is not a fitted model or standard statistical formula.
 
-**Candidate / unfrozen idea.** `candidate_M1 = h(link, source, timing, underresponse, rival_checks)` is **ILLUSTRATIVE / NOT AUTHORIZED**. It is a component checklist, not a classifier, factor score, formula, threshold, or M1 label.
+**Candidate / unfrozen idea.** `candidate_M1 = h(link, source, timing, underresponse, rival_checks)` and `belief_(t+1) = update(belief_t, new_PIT_evidence_(t+1))` are **ILLUSTRATIVE / NOT AUTHORIZED**. They are component/checklist forms, not a Bayesian filter, HMM, state-space model, classifier, factor score, formula, threshold or M1 label.
 
 **Potential additional candidate observables.** PIT link vintage/effective date and materiality; source identity, content/sentiment and first-public timestamp; source/peer response through decision time; peer own-news; market/industry context; pre-event peer movement; and common-ownership/trading context only where its reporting lag permits. These have differing roles and are not an approved factor list.
 

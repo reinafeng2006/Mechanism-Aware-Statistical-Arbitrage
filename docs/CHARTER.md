@@ -2,17 +2,17 @@
 
 ## Research question
 
-Can company-aware, fully data-driven, point-in-time pair formation and ex-ante mechanism information improve resolution prediction and a subsequent trade/no-trade decision for abnormal relative states among A-share machinery stocks, with economic value assessed only later under realistic frictions?
+Can company-aware, fully data-driven, point-in-time relationship priors and sequential mechanism/updating evidence improve dynamic resolution prediction and a subsequent trade/update/reject/abstain decision for abnormal relative states among A-share machinery stocks, with economic value assessed only later under realistic frictions?
 
-## Frozen conceptual pipeline
+## Active strategy architecture
 
-`Company Representation → Data-Driven Pair Formation → Normal Pair Relationship → Abnormal Relative State → Mechanism Identification → Resolution Prediction → Trade / No-Trade Decision`
+`Company Representation → Pair Relationship Prior → Abnormality Trigger → Sequential Mechanism Tracking + Dynamic Resolution Prediction → Trade / Update / Reject / Abstain`
 
-The stages and their causal order are fixed at G0. Their empirical operationalizations are not.
+This is the active architecture under D-014. The exact G0 pipeline remains preserved as a historical freeze record and is not overwritten. Mechanism and resolution beliefs may update jointly as new PIT information arrives; neither a hard mechanism label nor a selected update model is authorized.
 
 ## Unit of inquiry
 
-Conceptually, the project concerns a time-indexed company-pair state and a later decision. The exact security universe, representation, pair-formation rule, event clock, state measure, labels, horizons, and trade implementation are deferred to later gates.
+Conceptually, the project concerns a time-indexed company-pair state, a sequential evidence history and a later decision. The exact security universe, representation, relationship-prior rule, trigger, event clock, state measure, update model, horizons, and trade implementation are deferred to later gates.
 
 ## Pair-formation boundary
 
