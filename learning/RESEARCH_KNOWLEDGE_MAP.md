@@ -45,3 +45,15 @@ No mechanism classifier, abnormal-state formula, resolution-prediction model, fa
 | Mechanism Identification | **PARTIALLY ANSWERED for M1 only** | G1 evidence review / G2 |
 | Resolution Prediction | **NOT YET STUDIED** | G1 evidence review / G2–G4 |
 | Trade / No Trade | **NOT YET STUDIED** | G4–G9 |
+
+### Stage 5 — Mechanism Identification: M1 detail
+
+**What is answered / defined.** Completed M1 reviews establish that lead-lag alone is not M1. A candidate delayed-incorporation interpretation needs a PIT directional economic link, an identified and time-stamped public source event/response, economically coherent direction, peer under-response by the decision time, and rival/leakage checks. Event-time provenance is conceptually distinct from a later peer response used only as validation.
+
+**Defined concepts/models.** The source–link–timing chain and the event-time-versus-outcome boundary are **DEFINED** concepts. Their logical representation is `link → source event → peer under-response → candidate M1 → later validation`; it is not a fitted model or standard statistical formula.
+
+**Candidate / unfrozen idea.** `candidate_M1 = h(link, source, timing, underresponse, rival_checks)` is **ILLUSTRATIVE / NOT AUTHORIZED**. It is a component checklist, not a classifier, factor score, formula, threshold, or M1 label.
+
+**Potential additional candidate observables.** PIT link vintage/effective date and materiality; source identity, content/sentiment and first-public timestamp; source/peer response through decision time; peer own-news; market/industry context; pre-event peer movement; and common-ownership/trading context only where its reporting lag permits. These have differing roles and are not an approved factor list.
+
+**Deferred decisions.** G2 must define operational measurement, first-public versus effective-information timing, frequency, link/event lineage, peer-under-response and abstention/rejection rules. Later internal validation (G4 onward) must test future catch-up without leakage and test competing explanations: private/pre-release diffusion, common shocks, peer own news, risk, liquidity, stale/mismeasured links and news endogeneity. Individual causal attention state, A-share transferability and M2/M3/M0 multi-mechanism discrimination remain unresolved.
