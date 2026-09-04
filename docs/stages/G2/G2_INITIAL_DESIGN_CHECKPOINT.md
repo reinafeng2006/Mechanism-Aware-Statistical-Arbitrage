@@ -1,6 +1,6 @@
 # G2 — Initial Measurement & Timing Design Checkpoint
 
-Status: **ACTIVE — INITIALIZATION / DESIGN ONLY; G2-01/G2-02 FROZEN; G2-03 PROPOSED; G2-04 NOT AUTHORIZED**
+Status: **ACTIVE — INITIALIZATION / DESIGN ONLY; G2-01–G2-03 FROZEN; G2-04 NOT AUTHORIZED**
 Authority: approved G1-04 Evidence Freeze and frozen `../../decisions/G2_HANDOFF_CONTRACT.md`, 2026-09-04.
 Boundary: this checkpoint structures decisions. It selects no formula, factor, model, estimator, threshold, window, classifier, filter, provider, dataset or trading rule.
 
@@ -10,13 +10,13 @@ G2 designs measurements for a sequential belief-updating system, not a mandatory
 
 ## Dependency-ordered researcher decisions
 
-G2-01 and G2-02 are **APPROVED / FROZEN**. G2-03 is **PROPOSED / AWAITING RESEARCHER APPROVAL**. Rows 4–11 remain **UNRESOLVED — RESEARCHER DECISION REQUIRED BEFORE MEASUREMENT FREEZE**. Candidate families are preserved for comparison, not selected.
+G2-01 through G2-03 are **APPROVED / FROZEN**. Rows 4–11 remain **UNRESOLVED — RESEARCHER DECISION REQUIRED BEFORE MEASUREMENT FREEZE**. Candidate families are preserved for comparison, not selected.
 
 | Order | Decision group | Researcher decision to be resolved | Required boundary / dependency | Frozen ancestry |
 |---:|---|---|---|---|
 | 1 | Economic / signed conditional relationship semantics — **APPROVED / FROZEN** | Unified joint-conditional plus bidirectional-response framework; signed, asymmetric, pair-specific and state-dependent capability; four-object distinction; PIT and anti-circularity boundaries. | Measurement implementations remain unresolved; positive co-movement is not required; relationship validity is not trading predictability. | G2-01; D-017; CL-PF-001–007/009/010 |
 | 2 | P0/P1 pair-information architecture — **APPROVED / FROZEN** | P0 primary PIT market/statistical architecture; P1 unchanged P0 plus separate secondary Economic/Company Relationship layer. | Same-protocol comparison; P1 requires incremental normal-relationship-level value; downstream prediction/PnL alone is insufficient; no representation or metric selected. | G2-02; D-016; CL-PF-001–007/009/010 |
-| 3 | N0/N1 normal-relationship specifications; N2 escalation — **PROPOSED / AWAITING APPROVAL** | N0 industry-structured/strongly pooled benchmark and N1 greater pair-specific PIT-history influence target the same G2-01 object. | Same semantic/information/timing/evaluation boundary; N2 remains unauthorized absent specific unresolved bias–variance/sample-efficiency evidence. | D-015; G2-01/G2-02; CL-PF-002–007/009 |
+| 3 | N0/N1 normal-relationship specifications; N2 escalation — **APPROVED / FROZEN** | N0 industry-structured/strongly pooled specification and N1 greater pair-specific PIT parameterization target the same G2-01 object. | Frozen difference/constant dimensions; industry-varying pooling allowed; N2 unauthorized absent specific unresolved relationship-level evidence. | G2-03; D-015; G2-01/G2-02; CL-PF-002–007/009 |
 | 4 | Pair-specific continuous abnormality | Decide which departure dimensions and uncertainty representation deserve operational candidates and how normality validity is separated from abnormality. | Depends on 3; preserve magnitude, direction, timing, residual and break as unselected possibilities. | D-015/D-017; CL-PF-002–007/009 |
 | 5 | Trigger / discriminator / sequential-updating families | Define non-overlapping measurement roles, update clocks and how continuous/uncertain evidence enters ongoing mechanism and resolution beliefs. | Depends on 4; no mandatory classifier or hard M1/M2 gates. | D-014; G1-04 clarification; CL-M1-001/003, CL-M2-001–004, CL-B4-002 |
 | 6 | M1 under-response | Define candidate PIT under-response relative to the expected signed response, source/link/timing inputs, and rival-information checks. | Depends on 1, 3 and 5; future follower catch-up is validation-only. | CL-M1-001/003 |

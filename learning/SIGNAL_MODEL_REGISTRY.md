@@ -19,12 +19,12 @@ Status: **LEARNING / TRACEABILITY ONLY**. Entries are concepts or candidate meas
 
 Registry taxonomy: **signal concept ≠ candidate measurement ≠ frozen factor ≠ model output ≠ trade rule**. Candidate inputs are inventory fields, not selected providers or database specifications.
 
-## G2-03 normality candidates — proposal only
+## G2-03 normality specifications — frozen semantics
 
 | Candidate | Relationship role | What differs | What stays fixed | Status |
 |---|---|---|---|---|
-| N0 | Industry-structured / strongly pooled reference | Greater shared/common structure | G2-01 semantic target, P0/P1 layer within comparison, PIT/evaluation and outcome exclusion | PROPOSED; no identical-pair-parameter requirement |
-| N1 | Pair-specific reference | Greater pair PIT-history influence and flexibility | Same target and fair-comparison boundary as N0 | PROPOSED; not presumed superior |
-| N2 | Hierarchical / partial pooling | Conceptually shared structure + pair deviation | Requires a separately approved escalation | **ILLUSTRATIVE / UNAUTHORIZED** |
+| N0 | Industry-structured / strongly pooled reference | Greater shared/common structure | G2-01 semantic target, P0/P1 layer within comparison, PIT/evaluation and outcome exclusion | FROZEN SEMANTICS; no identical-pair-parameter requirement |
+| N1 | Pair-specific reference | Greater pair PIT parameterization and flexibility | Same target and fair-comparison boundary as N0 | FROZEN SEMANTICS; not presumed superior |
+| N2 | Hierarchical / partial pooling | Conceptually shared structure + pair deviation | Requires specific relationship-level evidence and separate approval | **ILLUSTRATIVE / UNAUTHORIZED** |
 
 Pooling strength may differ by industry. No pooling estimator, Industry Homogeneity Score, update rate, window, metric or model is selected.

@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 and G2-02 APPROVED / FROZEN — 2026-09-04**. **G2-03 PROPOSED / AWAITING RESEARCHER APPROVAL**; G2-04 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-03 APPROVED / FROZEN — 2026-09-04**. G2-04 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -10,7 +10,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 
 1. Economic / signed conditional relationship semantics — **APPROVED / FROZEN**.
 2. P0/P1 pair-information architecture — **APPROVED / FROZEN**.
-3. N0/N1 normal-relationship candidates and N2 escalation condition — **PROPOSED / AWAITING RESEARCHER APPROVAL**.
+3. N0/N1 normal-relationship candidates and N2 escalation condition — **APPROVED / FROZEN**.
 4. Pair-specific continuous abnormality — **UNRESOLVED**.
 5. Trigger/discriminator/sequential-updating measurement families — **UNRESOLVED**.
 6. M1 signed under-response measurement — **UNRESOLVED**.
@@ -38,8 +38,8 @@ P0 is the primary, simpler PIT Market-Relationship-Only architecture, preserving
 
 P1 survives only through incremental **normal-relationship-level** value over P0 under the same prespecified PIT information, timing and validation protocol. Superior downstream return prediction or strategy PnL alone cannot establish improved pair validity. No P2 may be introduced without a genuinely distinct, later-justified information architecture. No representation, metric or winner is selected. See the formal [G2-02 Freeze Decision](decisions/G2_02_PAIR_INFORMATION_ARCHITECTURE.md).
 
-## Active G2-03 proposal
+## Frozen G2-03 specifications
 
-N0 is proposed as the industry-structured/strongly pooled simpler normality benchmark, without requiring identical parameters across pairs. N1 targets the same frozen G2-01 semantic relationship object while permitting substantially greater influence from pair-specific PIT history. Allowed differences concern pooling, parameter sharing, heterogeneity, information borrowing, sparse-history behavior and adaptation scope; semantic target, information architecture, PIT/evaluation boundary, relationship-level objective, outcome exclusion and anti-circularity must remain constant.
+N0 is the Industry-Structured / Strongly Pooled normality specification, without requiring identical parameters across pairs. N1 targets the same frozen G2-01 semantic relationship object while permitting substantially greater pair-specific PIT parameterization. Differences are limited to pooling strength, parameter sharing, heterogeneity accommodation, information borrowing, sparse-history behavior and adaptation scope. Semantic target, P0/P1 information architecture, PIT boundary, evaluation period, relationship-level objective, outcome-exclusion discipline and anti-circularity remain constant.
 
-N2 partial pooling remains **ILLUSTRATIVE / UNAUTHORIZED** and may be proposed later only if a specific N0 underfit, N1 uncertainty/instability, sparse-history or relationship-level calibration/generalization problem cannot be adequately handled by N0/N1. Pooling strength must not be assumed identical across industries. See [G2-03 Working Proposal](stages/G2/G2_03_NORMAL_RELATIONSHIP_SPECIFICATIONS_PROPOSAL.md).
+N2 partial pooling remains **ILLUSTRATIVE / UNAUTHORIZED** and may be proposed later only if relationship-level evidence establishes a specific bias–variance, instability, sparse-history, calibration or generalization problem that N0/N1 cannot adequately address. Pooling strength is not assumed identical across industries. Final strategy PnL is not the primary selection criterion. See the formal [G2-03 Freeze Decision](decisions/G2_03_NORMAL_RELATIONSHIP_SPECIFICATIONS.md).

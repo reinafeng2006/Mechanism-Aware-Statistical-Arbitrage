@@ -1,6 +1,6 @@
-# G2-03 — N0/N1 Normal-Relationship Specifications and N2 Escalation Condition
+# G2-03 — N0/N1 Normal-Relationship Specifications and N2 Escalation Freeze
 
-Status: **PROPOSED — AWAITING RESEARCHER APPROVAL**
+Status: **APPROVED / FROZEN — 2026-09-04**
 
 Scope: semantics of pooling, pair specificity and complexity escalation only. No estimator, factor model, distribution, window, threshold, metric, update rate or empirical winner is selected.
 
@@ -111,9 +111,9 @@ The update window, cadence, weight, freeze interval, embargo and change-detectio
 - Materiality thresholds and the evidence required to trigger N2 authorization.
 - Interaction of P0/P1 with N0/N1 comparisons and the sequence of comparisons.
 
-## 9. Proposed classification
+## 9. Frozen classification
 
-### FROZEN SEMANTICS — proposed
+### FROZEN SEMANTICS
 
 - N0 is the industry-structured/strongly pooled simpler benchmark; identical pair parameters are not required.
 - N1 targets the same semantic object with substantially greater pair-specific PIT-history influence.
@@ -130,10 +130,10 @@ Every representation, parameterization, sharing rule, industry/state construct, 
 
 Whether N0 underfits pair heterogeneity; whether N1 is unstable or too uncertain; sparse-history behavior; industry differences; relationship-level calibration/generalization; false-abnormality and break behavior; and whether evidence justifies proposing N2. Downstream prediction/PnL alone cannot decide normal-relationship validity.
 
-## 10. Learning Layer update
+## 10. Learning Layer interpretation
 
-The Learning Layer should teach N0/N1 as the same semantic target under different pooling strengths, show shared versus pair-specific versus state-dependent versus dynamically updated dimensions, and mark N2 and its formula **ILLUSTRATIVE / UNAUTHORIZED**. It must not display a selected model or imply that greater flexibility is better.
+The Learning Layer teaches N0/N1 as the same semantic target under different pooling strengths, shows shared versus pair-specific versus state-dependent versus dynamically updated dimensions, and marks N2 and its formula **ILLUSTRATIVE / UNAUTHORIZED**. It does not display a selected model or imply that greater flexibility is better.
 
-## Approval decision
+## Approval record
 
-Researcher action required: **APPROVE, REVISE or REJECT** this N0/N1 architecture, industry-heterogeneity principle, anti-circularity implications and N2 escalation boundary. G2-04 remains unauthorized.
+The researcher approved G2-03 as proposed on 2026-09-04. N0/N1 semantics, allowed difference axes, held-constant dimensions, industry-heterogeneity principle, anti-circularity implications, N2 escalation boundary and PnL restriction are frozen. All estimator, representation, factor, window, distribution, threshold, update-rate and validation-metric choices remain unresolved exactly as proposed. G2-04 remains unauthorized.
