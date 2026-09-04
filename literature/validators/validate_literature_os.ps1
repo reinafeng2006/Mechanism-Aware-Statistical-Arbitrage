@@ -69,8 +69,9 @@ Assert-Condition (($reconciliationText + $reconciliation02bText) -notmatch '\bP[
 
 $hierarchyText = Get-Content -Raw -LiteralPath $hierarchyPath
 $gatesText = Get-Content -Raw -LiteralPath $gatesPath
-Assert-Condition ($hierarchyText -match 'G1-04.*LOCKED') "G1-04 must remain locked until explicit evidence-freeze approval."
-Assert-Condition ($gatesText -match 'G1-03 SYNTHESIS COMPLETE.*G1-04 LOCKED') "Gate status must record completed synthesis and locked G1-04."
+Assert-Condition ($hierarchyText -match 'G1-04.*APPROVED / FROZEN.*2026-09-04') "G1-04 must record explicit approval and freeze."
+Assert-Condition ($gatesText -match 'G1 Literature.*PASS / FROZEN.*2026-09-04') "G1 gate must be frozen after G1-04 approval."
+Assert-Condition ($gatesText -match 'G2 Measurement.*AUTHORIZED.*NOT YET ACTIVE.*AWAIT G1-04 MILESTONE PUSH') "G2 must await the safely pushed G1-04 milestone."
 
 $unexpectedLibraryFiles = @(
     Get-ChildItem -LiteralPath $libraryPath -File -Recurse |
@@ -90,6 +91,7 @@ Assert-Condition ($unexpectedLibraryFiles.Count -eq 0) "Migration must not impor
     DataRequirementsWithClaimLinkage = $dataLines.Count
     PredecessorIdentifiersInReconciliation = 'None'
     ImportedFullTexts = 0
-    G103Status = 'LOCKED'
+    G104Status = 'APPROVED_FROZEN'
+    G2Status = 'AUTHORIZED_AWAITING_MILESTONE_PUSH'
     Result = 'PASS'
 } | Format-List

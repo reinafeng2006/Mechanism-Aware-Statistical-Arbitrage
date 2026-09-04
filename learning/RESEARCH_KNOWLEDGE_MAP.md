@@ -2,6 +2,8 @@
 
 This catalog is a Learning Layer artifact. Definitions explain standard concepts; they do not select models or supply evidence. Project-specific status is limited to frozen G0 decisions and completed audited G1-02 Pair Formation reviews.
 
+**Transition status:** G1-04 and the G2 Handoff Contract are **APPROVED / FROZEN — 2026-09-04**. G2 is authorized but not active until the G1-04 milestone is safely pushed. Authorization permits study and operational design for continuous, uncertain sequential belief updating; it does not select a formula, model, threshold, factor or mandatory M0–M3 classifier.
+
 ## Defined concepts / models
 
 | Concept / model | Standard definition and core form | Project status | Ancestry |
