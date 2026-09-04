@@ -1,0 +1,24 @@
+claim_id: CL-M2-004
+candidate_id: M2-005
+primary_question: B-P2 | B-P4
+construct_or_mechanism: Illiquidity versus liquidity-oversupply intraday reversal
+pscr_role: [C, R]
+full_text_basis: {access_route: "https://www.sciencedirect.com/science/article/pii/S0165188922000185", access_date: "2026-09-04"}
+claim_paraphrase: Illiquidity and liquidity oversupply are competing explanations; liquidity measures and reversal do not identify M2 alone.
+exact_observable_or_method: intraday returns, turnover, size, Amihud illiquidity, later return path.
+what_identified: conditional China/US patterns consistent with distinct explanations.
+what_not_identified: trader motive, individual M2 event, contemporaneous label.
+logic_chain: {premise: "shortage and oversupply imply different dynamics", inference: "PIT liquidity context is rival evidence", final_claim: "later path validation only"}
+limitations: [China microstructure, T+1, attention/news rivals]
+point_in_time_causal_timing_limitations: later reversal-of-reversal is outcome only.
+sample_market_transferability: China/US intraday samples; no A-share machinery rule.
+competing_explanations: [attention, news, bid-ask, institutional trading]
+missing_link: observed trader motive.
+validation_test_needed: PIT liquidity/rival controls and later-only path evaluation.
+project_testability: no metric/frequency selected.
+permitted_g2_candidate_use: [liquidity-state and rival context]
+prohibited_interpretations: [illiquidity equals M2, volume equals M2]
+review_depth: SELECTIVE_DEEP
+evidence_direction: QUALIFIES
+review_artifact: literature/reviews/M2-005.md
+status: PROVISIONAL_G1_02

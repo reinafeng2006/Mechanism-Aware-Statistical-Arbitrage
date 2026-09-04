@@ -38,11 +38,11 @@ No such candidate-specific review artifact existed at audit time. Consequently n
 | M1-006 | Yes | Triage | — | — | B-P1, A-P1 | High | N/A | Light, escalate only if it changes transferability |
 | M1-007 | Yes | Triage | — | — | B-P1, B-P4 | Medium | N/A | Light |
 | M1-008 | Yes | Light | literature/reviews/M1-008.md | CL-M1-003 | B-P1, A-P1 | Medium | Yes | Complete |
-| M2-001 | Yes | Triage | — | CL-M2-001 | B-P2 | High | No | Selective Deep, linked with M2-002 |
-| M2-002 | Yes | Triage | — | CL-M2-002 | B-P2, B-P4 | High | No | Selective Deep, linked with M2-001 |
-| M2-003 | Yes | Triage | — | CL-M2-003 | B-P2 | High | No | Selective Deep |
+| M2-001 | Yes | Selective Deep | literature/reviews/M2-001.md | CL-M2-001 | B-P2 | High | Yes | Complete, linked with M2-002 |
+| M2-002 | Yes | Selective Deep | literature/reviews/M2-002.md | CL-M2-002 | B-P2, B-P4 | High | Yes | Complete, linked with M2-001 |
+| M2-003 | Yes | Selective Deep | literature/reviews/M2-003.md | CL-M2-003 | B-P2 | High | Yes | Complete |
 | M2-004 | No / pending | Discovery only | — | — | B-P2, B-P4 | Medium | N/A | Obtain full text, then Light if admitted |
-| M2-005 | Yes | Triage | — | CL-M2-004 | B-P2, B-P4 | High | No | Selective Deep |
+| M2-005 | Yes | Selective Deep | literature/reviews/M2-005.md | CL-M2-004 | B-P2, B-P4 | High | Yes | Complete |
 | M2-006 | Yes | Triage | — | — | B-P2 | Medium | N/A | Light |
 | M2-007 | Yes | Triage | — | — | B-P2 | High | N/A | Selective Deep if M2 boundary remains open |
 | M3-001 | Yes | Triage | — | CL-M3-001 | B-P3, B-P4 | High | No | Selective Deep |
@@ -55,7 +55,7 @@ No such candidate-specific review artifact existed at audit time. Consequently n
 | PF-013 | Yes | Triage | — | CL-PF-006 | A-P2, A-P3 | High | No | Selective Deep |
 | PF-014 | Yes | Triage | — | CL-PF-007 | A-P2, B-P3 | High | No | Light |
 | PF-015 | Yes | Triage | — | CL-PF-008 | A-P2, A-P3, B-P4 | High | No | Light |
-| B4-004 | Yes | Triage | — | CL-B4-002 | B-P2, B-P4 | High | No | Selective Deep |
+| B4-004 | Yes | Selective Deep | literature/reviews/B4-004.md | CL-B4-002 | B-P2, B-P4 | High | Yes | Complete |
 
 ## Claim maturity audit
 

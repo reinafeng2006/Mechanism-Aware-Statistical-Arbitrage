@@ -1,0 +1,24 @@
+claim_id: CL-M2-002
+candidate_id: M2-002
+primary_question: B-P2 | B-P4
+construct_or_mechanism: Flow-pressure proxy contamination audit
+pscr_role: [R]
+full_text_basis: {access_route: "https://onlinelibrary.wiley.com/doi/10.1111/jofi.12962", access_date: "2026-09-04"}
+claim_paraphrase: Standard outflow-pressure construction embeds realized return and cannot establish exogenous temporary pressure without decomposition.
+exact_observable_or_method: Algebraic proxy decomposition and corrected variants.
+what_identified: Return contamination in the standard measure.
+what_not_identified: Absence of all temporary pressure.
+logic_chain: {premise: "proxy embeds realized return", inference: "generic fund-flow pressure is not exogenous", final_claim: "mandatory rejection audit"}
+limitations: [quarterly reporting, alternative clean shocks not ruled out]
+point_in_time_causal_timing_limitations: contemporaneous realized-return embedding invalidates event-time use.
+sample_market_transferability: US fund setting.
+competing_explanations: [fundamentals, informed selling]
+missing_link: independently exogenous pressure source.
+validation_test_needed: proxy-contamination audit before use.
+project_testability: no current G2 variable admitted absent audit.
+permitted_g2_candidate_use: [mandatory proxy rejection test]
+prohibited_interpretations: [standard proxy, generic flow exogeneity, reversal as identification]
+review_depth: SELECTIVE_DEEP
+evidence_direction: WEAKENS
+review_artifact: literature/reviews/M2-002.md
+status: PROVISIONAL_G1_02

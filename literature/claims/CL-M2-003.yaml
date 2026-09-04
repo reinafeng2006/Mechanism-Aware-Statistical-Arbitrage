@@ -1,0 +1,24 @@
+claim_id: CL-M2-003
+candidate_id: M2-003
+primary_question: B-P2
+construct_or_mechanism: Settlement/payment-cycle institutional liquidity need
+pscr_role: [C, R]
+full_text_basis: {access_route: "https://academic.oup.com/rfs/article/33/1/75/5494694", access_date: "2026-09-04"}
+claim_paraphrase: Predetermined settlement/calendar timing can strengthen a narrow temporary-pressure source interpretation.
+exact_observable_or_method: payment/settlement calendar, institutional trading context, price/yield response.
+what_identified: recurring liquidity-related patterns under specific market rules.
+what_not_identified: arbitrary firm-level M2 or A-share timing.
+logic_chain: {premise: "cash needs and settlement timing are ex ante", inference: "calendar can strengthen source evidence", final_claim: "reversal validation only"}
+limitations: [market-specific settlement, data availability, rival news]
+point_in_time_causal_timing_limitations: calendar known ex ante; subsequent response outcome only.
+sample_market_transferability: US/global monthly cycle, not A-share specification.
+competing_explanations: [news, rebalancing, tax]
+missing_link: firm-level exposure and transferability.
+validation_test_needed: PIT calendar/context/rival tests.
+project_testability: G3 data later; no rule selected.
+permitted_g2_candidate_use: [narrow exogenous-timing context]
+prohibited_interpretations: [calendar trade rule, generic M2 label]
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS_NARROWLY
+review_artifact: literature/reviews/M2-003.md
+status: PROVISIONAL_G1_02

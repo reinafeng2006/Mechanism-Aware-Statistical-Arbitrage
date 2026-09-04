@@ -1,0 +1,24 @@
+claim_id: CL-M2-001
+candidate_id: M2-001
+primary_question: B-P2
+construct_or_mechanism: Fund-flow-linked overlapping-holdings pressure
+pscr_role: [C, R]
+full_text_basis: {access_route: "https://www.newyorkfed.org/medialibrary/media/research/conference/2005/liquidity/Coval_Stafford.pdf", access_date: "2026-09-04"}
+claim_paraphrase: Flow/overlap context can support a candidate pressure-source component, not an exogenous M2 label.
+exact_observable_or_method: Fund flows, lagged holdings overlap, price/volume response.
+what_identified: Study-specific association consistent with institutional pressure.
+what_not_identified: Forced motive, information orthogonality, individual event M2.
+logic_chain: {premise: "flows can induce overlapping-holding trades", inference: "source/overlap plus PIT rivals can update M2 belief", final_claim: "later reversal is validation only"}
+limitations: [flow endogeneity, holdings lag, US transfer]
+point_in_time_causal_timing_limitations: Flow/holdings release dates must precede decision; later reversal prohibited as input.
+sample_market_transferability: US mutual funds, 1980-2004; no A-share claim.
+competing_explanations: [informed liquidation, common news, risk, liquidity]
+missing_link: trader motive and exogeneity.
+validation_test_needed: PIT lineage and rival-information controls.
+project_testability: G3 PIT holdings/flow/market data required; no design selected.
+permitted_g2_candidate_use: [pressure-source overlap context, timing/rejection checks]
+prohibited_interpretations: [generic flow equals M2, reversal as input]
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS_WITH_LIMITS
+review_artifact: literature/reviews/M2-001.md
+status: PROVISIONAL_G1_02

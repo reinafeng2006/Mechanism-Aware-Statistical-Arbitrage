@@ -16,6 +16,7 @@ This catalog is a Learning Layer artifact. Definitions explain standard concepts
 | Global matching / overlap control | A portfolio-level selection constraint; for example choose weighted edges with each asset used at most once. | **DEFINED**; candidate portfolio governance. | PF-010; CL-PF-010 |
 | M1 source–link–timing chain | A directional PIT link, identified source public event, coherent direction and contemporaneous peer under-response jointly support a candidate delayed-incorporation interpretation. | **PARTIALLY ANSWERED**; candidate P/C/R construct family only. | M1-001, M1-008; CL-M1-001, CL-M1-003 |
 | Event-time provenance vs outcome validation | Inputs available by the decision time are distinct from later peer response used only to evaluate the prediction. | **DEFINED** timing boundary; candidate measurement family. | M1-001, M1-008; CL-M1-001, CL-M1-003 |
+| M2 pressure-source / contamination boundary | Temporary pressure requires source, liquidity-state and rival checks; standard flow proxy can embed realized return. | **PARTIALLY ANSWERED**; candidate C/R construct family only. | M2-001–005, B4-004; CL-M2-001–004, CL-B4-002 |
 
 Each definition measures its stated statistical or economic construct only. None establishes economic/trading validity, and none is **FROZEN** as the project model.
 
@@ -64,6 +65,10 @@ The active architecture has five displayed elements: sequential mechanism tracki
 **Potential additional candidate observables.** PIT link vintage/effective date and materiality; source identity, content/sentiment and first-public timestamp; source/peer response through decision time; peer own-news; market/industry context; pre-event peer movement; and common-ownership/trading context only where its reporting lag permits. These have differing roles and are not an approved factor list.
 
 **Deferred decisions.** G2 must define operational measurement, first-public versus effective-information timing, frequency, link/event lineage, peer-under-response and abstention/rejection rules. Later internal validation (G4 onward) must test future catch-up without leakage and test competing explanations: private/pre-release diffusion, common shocks, peer own news, risk, liquidity, stale/mismeasured links and news endogeneity. Individual causal attention state, A-share transferability and M2/M3/M0 multi-mechanism discrimination remain unresolved.
+
+### M2 detail
+
+M2 evidence can update belief only through pressure-source provenance, market/liquidity-state context, abnormal price/flow response and rival-information checks. Generic flow, turnover, volume, illiquidity and later reversal do not identify M2 alone. Permanent/transitory decomposition is model conditional. M1 concerns peer under-response after source information; M2 concerns possible source over-movement under pressure. G2 must define PIT pressure-source lineage, contamination checks, liquidity/quote/trade timing and the boundary between event-time inputs and later normalization validation. No model family is selected.
 
 ### Normal relationship and abnormality requirement
 
