@@ -30,14 +30,14 @@ No such candidate-specific review artifact existed at audit time. Consequently n
 | PF-010 | Yes | Triage | — | — | A-P3 | Medium | N/A | Light |
 | PF-011 | Yes | Triage | — | — | A-P2 | Low / transfer | N/A | Defer unless gap persists |
 | PF-012 | Yes (same work as PF-003) | Triage | — | — | A-P3 | High | N/A | Selective Deep section within PF-003 |
-| M1-001 | Yes | Triage | — | CL-M1-001 | B-P1, A-P1 | High | No | Selective Deep |
-| M1-002 | Yes | Triage | — | CL-M1-002 | B-P1, A-P2 | High | No | Selective Deep |
+| M1-001 | Yes | Selective Deep | literature/reviews/M1-001.md | CL-M1-001 | B-P1, A-P1 | High | Yes | Complete |
+| M1-002 | No — lawful readable full text unresolved | Source access only | literature/reviews/M1-002.md | CL-M1-002 | B-P1, A-P2 | High | No | Reopen only on lawful full text |
 | M1-003 | No / pending | Discovery only | — | — | B-P1, B-P4 | High | N/A | Obtain full text, then Selective Deep if admitted |
 | M1-004 | No / pending | Discovery only | — | — | B-P1, A-P1 | High | N/A | Obtain full text, then Selective Deep if admitted |
 | M1-005 | No / pending | Discovery only | — | — | B-P1, B-P4 | High | N/A | Obtain full text, then Selective Deep if admitted |
 | M1-006 | Yes | Triage | — | — | B-P1, A-P1 | High | N/A | Light, escalate only if it changes transferability |
 | M1-007 | Yes | Triage | — | — | B-P1, B-P4 | Medium | N/A | Light |
-| M1-008 | Yes | Triage | — | CL-M1-003 | B-P1, A-P1 | Medium | No | Light |
+| M1-008 | Yes | Light | literature/reviews/M1-008.md | CL-M1-003 | B-P1, A-P1 | Medium | Yes | Complete |
 | M2-001 | Yes | Triage | — | CL-M2-001 | B-P2 | High | No | Selective Deep, linked with M2-002 |
 | M2-002 | Yes | Triage | — | CL-M2-002 | B-P2, B-P4 | High | No | Selective Deep, linked with M2-001 |
 | M2-003 | Yes | Triage | — | CL-M2-003 | B-P2 | High | No | Selective Deep |
@@ -68,9 +68,9 @@ All current claim wording is retained exactly as substantive content, but none h
 | CL-PF-003 | PF-008 | Yes | Triage | — | No | Selective Deep |
 | CL-PF-004 | PF-006 | Yes | Triage | — | No | Selective Deep |
 | CL-PF-005 | PF-007 | Yes | Triage | — | No | Selective Deep |
-| CL-M1-001 | M1-001 | Yes | Triage | — | No | Selective Deep |
-| CL-M1-002 | M1-002 | Yes | Triage | — | No | Selective Deep |
-| CL-M1-003 | M1-008 | Yes | Triage | — | No | Light |
+| CL-M1-001 | M1-001 | Yes | Selective Deep | literature/reviews/M1-001.md | Yes | None for M1 Round 2 |
+| CL-M1-002 | M1-002 | No — unresolved | Not admitted | literature/reviews/M1-002.md | No | Lawful full text, then Selective Deep |
+| CL-M1-003 | M1-008 | Yes | Light | literature/reviews/M1-008.md | Yes | None for M1 Round 2 |
 | CL-M2-001 | M2-001 | Yes | Triage | — | No | Selective Deep, linked with CL-M2-002 |
 | CL-M2-002 | M2-002 | Yes | Triage | — | No | Selective Deep, linked with CL-M2-001 |
 | CL-M2-003 | M2-003 | Yes | Triage | — | No | Selective Deep |

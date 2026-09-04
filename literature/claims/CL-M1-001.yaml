@@ -1,0 +1,28 @@
+claim_id: CL-M1-001
+candidate_id: M1-001
+primary_question: B-P1 | A-P1
+construct_or_mechanism: Directional disclosed customer-supplier link and delayed linked-firm incorporation
+pscr_role: [P, C, R]
+full_text_basis: {access_route: "https://pages.stern.nyu.edu/~afrazzin/pdf/Economic%20Links%20and%20Predictable%20Returns%20-%20Cohen%20and%20Frazzini.pdf", source_version: "Journal of Finance 63(4), 2008", access_date: "2026-09-04", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "1977–1985; Sections II–VII", section: "limited-attention conditions, data, alternative explanations and real effects", table_figure: "customer-momentum and attention-variation tests"}
+claim_paraphrase: A PIT-valid directed economic link plus timestamped public source information can support a candidate delayed-incorporation interpretation; lead-lag or linked returns alone cannot identify M1.
+exact_observable_or_method: Material customer identity/disclosure, customer-to-supplier direction, lagged linked returns/news, common-fund ownership/trading tests and own/industry controls.
+what_identified: Average return predictability along disclosed links and evidence consistent with varying investor attention under the study design.
+what_not_identified: Individual-event attention state, causal public-information delay, A-share transfer, or a usable M1 label from lagged returns alone.
+logic_chain: {premise: {statement: "A material public customer-supplier link transmits economic shocks directionally.", status: ASSUMED}, measurement_identification: {statement: "Links, source news/returns and later linked responses are measured with reported-vintage controls.", status: ESTIMATED}, intermediate_evidence: {statement: "The paper reports controls and attention-related cross-sectional variation consistent with delayed incorporation.", status: OBSERVED}, inference: {statement: "Link plus public source provenance and unincorporated peer response is a candidate M1 chain.", status: INFERRED}, final_claim: {statement: "Only source/link/timing/rejection constructs are permitted; future follower response is validation only.", status: INFERRED}}
+limitations: ["US disclosure/reporting regime", "link staleness and matching", "monthly empirical horizon", "private information and non-attention rivals"]
+point_in_time_causal_timing_limitations: Link disclosure/effective dates and first-public source timestamps must precede decision; common ownership may be reported with lag; future follower response is prohibited from event-time input.
+sample_market_transferability: US 1980–2004; no A-share machinery validation.
+competing_explanations: ["supplier own news", "industry/common shock", "risk", "liquidity", "private information", "stale link"]
+missing_link: Individual-event evidence separating attention delay from simultaneous/private-information transmission.
+validation_test_needed: Frozen timing DAG with link-vintage, source-publication, own-news/rival checks and later-only catch-up evaluation.
+project_testability: Requires authorized PIT links/news/returns under G3; no variable formula or label is selected.
+data_requirement_ids: [DR-006, DR-007, DR-008, DR-012]
+permitted_g2_candidate_use: ["P/C directional-link construct", "source-event/timing provenance", "R-layer rival/ambiguity checks"]
+prohibited_interpretations: ["Linked return equals M1", "future follower realization as input", "common ownership as timely event variable"]
+review_depth: SELECTIVE_DEEP
+evidence_direction: SUPPORTS
+ancestry: "G1-01 candidate M1-001 → full text → G1-02 Round 2 review → CL-M1-001"
+review_artifact: literature/reviews/M1-001.md
+review_completion: SELECTIVE_DEEP_VERIFIED_G1_02_ROUND_2
+status: PROVISIONAL_G1_02

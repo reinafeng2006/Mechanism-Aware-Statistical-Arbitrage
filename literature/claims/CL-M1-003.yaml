@@ -1,0 +1,28 @@
+claim_id: CL-M1-003
+candidate_id: M1-008
+primary_question: B-P1 | A-P1
+construct_or_mechanism: Directional supply-chain link with timestamped news-sentiment propagation
+pscr_role: [P, C, R]
+full_text_basis: {access_route: "https://www.rieti.go.jp/jp/publications/dp/24e077.pdf", source_version: "RIETI DP 24-E-077, 2024", access_date: "2026-09-04", permitted_use_boundary: "Citation and researcher-authored extraction only; no redistribution."}
+source_locator: {page: "3–15", section: "data, pre/post disclosure framework, indirect supply-chain effects", table_figure: "Tables 4–5; Figures 5–9"}
+claim_paraphrase: A PIT directional link plus first-public news provenance can support a candidate M1 chain, but pre-release/private diffusion and source heterogeneity require ambiguity/rejection rather than an M1 label.
+exact_observable_or_method: Supply-chain direction/vintage, news-article sentiment and publication timing, daily source/peer closing-price changes, pre/post-window comparison.
+what_identified: Associations of source-news sentiment with own and linked-firm prices before/after news disclosure in global/Japan samples.
+what_not_identified: Clean public-information arrival, individual attention state, causal M1 label, or A-share transferability.
+logic_chain: {premise: {statement: "Supply-chain shocks can propagate directionally.", status: ASSUMED}, measurement_identification: {statement: "Link data and time-stamped news sentiment proxy source information.", status: ESTIMATED}, intermediate_evidence: {statement: "The study finds pre- and post-news linked price associations with market/sample heterogeneity.", status: OBSERVED}, inference: {statement: "Public source/event provenance improves M1 discrimination but pre-news movement signals ambiguity.", status: INFERRED}, final_claim: {statement: "Use timing/link/leakage checks as candidate C/R inputs; future catch-up is validation only.", status: INFERRED}}
+limitations: ["Daily close timing", "news-sentiment measurement", "link data backfill risk", "private-channel diffusion", "global/Japan heterogeneity"]
+point_in_time_causal_timing_limitations: First-public timestamp and link vintage are mandatory; pre-release peer movement disqualifies clean public-delay interpretation; post-event peer path is outcome only.
+sample_market_transferability: Global/Japan 2003–2016; no A-share machinery or intraday transfer claim.
+competing_explanations: ["private information", "source/peer common shock", "news endogeneity", "link mismeasurement", "market trend"]
+missing_link: Reliable distinction between first-public disclosure and economically effective/private information arrival.
+validation_test_needed: PIT news/link lineage, pre-event leakage screen, own-news/common-shock controls and later-only catch-up evaluation.
+project_testability: Requires G3 lawful timestamped news/link vintages and returns; no NLP model, provider or frequency selected.
+data_requirement_ids: [DR-006, DR-007, DR-011, DR-012]
+permitted_g2_candidate_use: ["C source/link/direction/timing constructs", "R leakage/ambiguity screen"]
+prohibited_interpretations: ["Sentiment equals M1", "post-news return labels event", "private diffusion absent"]
+review_depth: LIGHT
+evidence_direction: MIXED
+ancestry: "G1-01 candidate M1-008 → full text → G1-02 Round 2 review → CL-M1-003"
+review_artifact: literature/reviews/M1-008.md
+review_completion: LIGHT_VERIFIED_G1_02_ROUND_2
+status: PROVISIONAL_G1_02

@@ -1,0 +1,27 @@
+claim_id: CL-M1-002
+candidate_id: M1-002
+primary_question: B-P1 | A-P2
+construct_or_mechanism: Industry information diffusion / leader-follower context
+pscr_role: [C, R]
+full_text_basis: {access_route: "bounded lawful endpoint search on 2026-09-04", source_version: "not obtained", permitted_use_boundary: "No substantive use; abstract/metadata cannot substitute for full text."}
+claim_paraphrase: Preliminary triage wording is retained for traceability only and is not admitted as current-project evidence.
+exact_observable_or_method: Not verified from lawful full text.
+what_identified: Not established for this project.
+what_not_identified: Source event, individual attention state, event-time M1 label, attention/size/liquidity input, transferability, or any permitted measurement construct.
+logic_chain: {premise: {statement: "Full text is required before substantive claim admission.", status: FROZEN_GOVERNANCE}, measurement_identification: {statement: "No lawful readable full text obtained.", status: OBSERVED}, intermediate_evidence: {statement: "No substantive extraction performed.", status: OBSERVED}, inference: {statement: "No M1 evidence may be admitted.", status: INFERRED}, final_claim: {statement: "Retain only an unresolved-source record.", status: INFERRED}}
+limitations: ["unresolved source access"]
+point_in_time_causal_timing_limitations: Not assessable without full text.
+sample_market_transferability: Not assessable without full text.
+competing_explanations: Not assessable without full text.
+missing_link: Lawful full-text access.
+validation_test_needed: Re-admit and perform authorized Selective Deep review only after lawful full text is obtained.
+project_testability: No G2 construct or data requirement is admitted from this record.
+data_requirement_ids: []
+permitted_g2_candidate_use: []
+prohibited_interpretations: ["abstract or metadata as evidence", "leader-follower context equals M1", "size, neglect, or liquidity variable as current M1 input"]
+review_depth: UNRESOLVED_SOURCE_ACCESS
+evidence_direction: UNRESOLVED
+ancestry: "G1-01 candidate M1-002 → bounded lawful access attempt → unresolved source record"
+review_artifact: literature/reviews/M1-002.md
+review_completion: NOT_ADMITTED_NO_FULL_TEXT
+status: PRELIMINARY_NOT_ADMITTED
