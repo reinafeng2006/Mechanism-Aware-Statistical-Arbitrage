@@ -12,7 +12,7 @@ This is a research hypothesis, not a claim of profitability or an established ma
 
 ## Active strategy architecture
 
-`Company Representation → Pair Relationship Prior → Abnormality Trigger → Sequential Mechanism Tracking + Dynamic Resolution Prediction → Trade / Update / Reject / Abstain`
+`Company Representation → Industry-Specific Relationship Prior → Pair-Specific Normal Relationship → Continuous Pair-Specific Abnormality → Sequential Mechanism & Resolution Updating → Trade / Update / Reject / Abstain`
 
 This architecture is approved by [Amendment 001](docs/ARCHITECTURE_AMENDMENT_001.md). The original G0 seven-stage pipeline is preserved unchanged as a historical freeze record. M0–M3 are competing hypotheses; `U = Unresolved / Abstain` is an epistemic state, not a fifth mechanism. Literature evidence is not a mandatory real-time trading gate. Representations, variables, formulas, thresholds, algorithms, labels, horizons and policies remain unselected.
 

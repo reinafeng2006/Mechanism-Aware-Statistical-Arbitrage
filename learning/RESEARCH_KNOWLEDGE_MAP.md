@@ -31,6 +31,10 @@ All formulas below are **ILLUSTRATIVE / NOT AUTHORIZED**. They communicate possi
 | Stability rejection | `reject if break_risk(i,j,t) is high` | Breaks support a candidate rejection construct, not a threshold, method, or M0 interpretation. |
 | Statistical screening | `control FDR among tested relationships` | Controls statistical false discoveries under assumptions; G2 must decide testing family, assumptions and PIT process. |
 | M1 candidate interpretation | `candidate_M1 = h(link, source, timing, underresponse, rival_checks)` | **ILLUSTRATIVE / NOT AUTHORIZED**. Completed evidence motivates components, but not a causal attention label, formula or threshold. |
+| N0 — Industry-Uniform Normality Baseline | common industry schema / relationship semantics, with stronger pooling | **CANDIDATE / NOT SELECTED**. Deliberately simple benchmark; no universal pair parameter assumed. |
+| N1 — Pair-Specific Normality Candidate | same construct as N0, estimated from the pair's own PIT history | **CANDIDATE / NOT SELECTED**. Must be compared fairly with N0. |
+| N2 — Hierarchical / Partial-Pooling Normality | `pair relationship = industry prior + pair-specific adjustment` | **ILLUSTRATIVE / UNAUTHORIZED** later-complexity candidate only. |
+| Continuous Pair-Specific Abnormality | degree of departure from estimated pair normal joint behavior and uncertainty | **CANDIDATE / NOT SELECTED**. Not a binary trigger. |
 
 No mechanism classifier, abnormal-state formula, resolution-prediction model, factor list, pair score, threshold, or trading rule is authorized.
 
@@ -42,7 +46,8 @@ The active architecture has five displayed elements: sequential mechanism tracki
 |---|---|---|
 | Company Representation | **PARTIALLY ANSWERED** | G2 Measurement & Timing |
 | Pair Relationship Prior | **PARTIALLY ANSWERED** | G2 Measurement & Timing |
-| Abnormality Trigger | **NOT YET STUDIED** | G1 mechanism evidence, then G2 |
+| Pair-Specific Normal Relationship | **UNRESOLVED DESIGN REQUIREMENT RECORDED** | G2 Measurement & Timing |
+| Continuous Pair-Specific Abnormality | **UNRESOLVED DESIGN REQUIREMENT RECORDED** | G2 Measurement & Timing |
 | Sequential Mechanism Tracking + Dynamic Resolution Prediction | **PARTIALLY ANSWERED for M1 evidence boundaries only** | G1 evidence review / G2–G4 |
 | Trade / Update / Reject / Abstain | **NOT YET STUDIED** | G4–G9 |
 
@@ -57,3 +62,7 @@ The active architecture has five displayed elements: sequential mechanism tracki
 **Potential additional candidate observables.** PIT link vintage/effective date and materiality; source identity, content/sentiment and first-public timestamp; source/peer response through decision time; peer own-news; market/industry context; pre-event peer movement; and common-ownership/trading context only where its reporting lag permits. These have differing roles and are not an approved factor list.
 
 **Deferred decisions.** G2 must define operational measurement, first-public versus effective-information timing, frequency, link/event lineage, peer-under-response and abstention/rejection rules. Later internal validation (G4 onward) must test future catch-up without leakage and test competing explanations: private/pre-release diffusion, common shocks, peer own news, risk, liquidity, stale/mismeasured links and news endogeneity. Individual causal attention state, A-share transferability and M2/M3/M0 multi-mechanism discrimination remain unresolved.
+
+### Normal relationship and abnormality requirement
+
+Industry information supplies economically meaningful dimensions and relationship semantics; pair PIT history supplies the pair's actual normal relationship. N0 and N1 are competing candidates under the same prespecified construct, information set, timing and validation protocol. N2 is reserved only for a later demonstrated bias–variance or sample-efficiency problem. Abnormality is a continuous pair-specific departure candidate that can include magnitude, direction, timing, residual and break dimensions; formula, uncertainty and trigger/probability treatment are unresolved. Relationship-level evaluation precedes strategy PnL. See `docs/G2_NORMAL_RELATIONSHIP_REQUIREMENT.md`.
