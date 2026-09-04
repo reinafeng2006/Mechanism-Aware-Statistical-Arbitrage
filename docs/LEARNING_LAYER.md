@@ -2,6 +2,14 @@
 
 The learning layer records how knowledge changes without silently changing the frozen research protocol.
 
+## Evidence boundary
+
+`Evidence Layer = supports research decisions.`
+
+`Learning Layer = explains those decisions to the researcher.`
+
+Learning Cards, Paper Guides, walkthroughs, and the local dashboard are pedagogical and traceability artifacts only. They may cite current-project Paper IDs and Claim IDs, but are never evidence sources, cannot admit or amend claims, and cannot change permitted use, review depth, or a gate state. The initial backfill is limited to completed audited G1-02 Pair Formation reviews: PF-001, PF-004, PF-005, PF-006, PF-007, PF-008, PF-010, and PF-013. Discovery-only and unresolved-access papers are excluded.
+
 ## Objects
 
 - **Question ledger:** unresolved questions linked to decision, assumption, and risk IDs.

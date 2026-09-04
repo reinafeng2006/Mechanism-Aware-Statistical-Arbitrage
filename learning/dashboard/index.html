@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mechanism-Aware Statistical Arbitrage · Learning</title>
+<style>body{font:16px system-ui,"Microsoft YaHei",sans-serif;max-width:1000px;margin:32px auto;padding:0 18px;color:#172033;background:#fbfcfe}h1{margin-bottom:4px}.note{color:#506075}.tabs button{margin:12px 8px 18px 0;padding:8px 12px;border:1px solid #8190a5;border-radius:7px;background:white;cursor:pointer}.tabs button.active{background:#173d70;color:white}.card{background:white;border:1px solid #dbe2ea;border-radius:10px;padding:15px;margin:12px 0}.tag{font-size:13px;color:#36577d}details{margin-top:10px}code{background:#f2f4f7;padding:2px 4px}.warning{border-left:4px solid #be7724;padding-left:12px}</style></head>
+<body><h1>学习层 / Learning Layer</h1><p class="note">中文解释优先；保留英文技术术语。此页面仅解释当前证据层中的研究决策，<strong>不是证据来源</strong>，不能改变 claim、permitted use 或 G1 状态。</p>
+<div class="tabs"><button class="active" data-view="stage">按研究阶段</button><button data-view="concept">按概念</button><button data-view="paper">按论文</button></div><main id="app"></main>
+<script>
+const concepts=[
+['经济/公司接近性','两家公司产品相近，可能在相似经济环境中；不等于价格关系。','PF-001 · CL-PF-001','G2 候选 P 层构念；不选文本方法。'],
+['原始价格路径距离','归一化的历史价格路径接近，只描述过去共同路径。','PF-004 · CL-PF-002','保留为竞争性 relationship representation。'],
+['关系表示不是同一构念','correlation、cointegration、stochastic spread、residual 各自测量不同对象。','PF-005, PF-006 · CL-PF-004, CL-PF-009','多个表示在 G2 并列，文献未选赢家。'],
+['Residual / factor-adjusted dependence','控制共同解释成分后剩余的条件性偏离；控制模型会改变对象。','PF-008, PF-013 · CL-PF-003, CL-PF-006','候选正常关系对象，须 PIT 与内部验证。'],
+['关系稳定性与断裂','重复出现或断裂风险可当作关系仍可用的警报。','PF-006, PF-007 · CL-PF-004, CL-PF-005','候选 R/拒绝信息；不识别 M0。'],
+['FDR 多重检验','控制大量统计筛选中的平均假阳性比例，不回答经济含义。','PF-013 · CL-PF-006','候选统计治理，不是 pair validity。'],
+['Global matching / overlap','控制一只资产反复出现在多个 pair 的组合集中风险。','PF-010 · CL-PF-010','组合治理候选，不是经济关系验证。'],
+['四层有效性','economic proximity ≠ statistical dependence ≠ stability ≠ trading validity。','PF-001/004/006/007/008/010/013','防止把分层构念合成未经验证的 Pair Score。']
+];
+const papers=[
+['PF-001','经济/公司相似','产品描述文本构造相似度与竞争者网络。','支持经济接近性；不测量价格关系或交易性。','CL-PF-001'],
+['PF-004','raw distance','归一化价格路径的平方距离与形成/交易分离。','支持历史路径接近；不证明有效 pair。','CL-PF-002'],
+['PF-006','stability','协整网络边的重复出现与存活。','支持稳定性候选；不解释失效原因。','CL-PF-004'],
+['PF-007','breaks','time-frequency 特征下的关系断裂概率。','支持拒绝警报；不是 M0 识别。','CL-PF-005'],
+['PF-008','residual','sparse replication / elastic net 的残差关系。','支持条件性表示；不证明经济 link。','CL-PF-003'],
+['PF-013','FDR','因子调整后相关与 false-discovery control。','支持统计治理；不证明交易价值。','CL-PF-006']
+];
+function card(title, body, tags, more){return `<section class="card"><h2>${title}</h2><p>${body}</p><p class="tag">证据祖先：${tags}</p><details><summary>展开：当前项目边界</summary><p>${more}</p><p class="warning">教学解释不会成为 evidence，也不会替代完整审阅工件。</p></details></section>`}
+function render(v){let html='';if(v==='stage'){html=card('G1-02 · Pair Formation 已审阅学习内容','只回填 Round 1/1B 已实际完成的审阅：6 篇 Selective Deep 与 2 篇 Light。未完成或 Discovery-only 文献不在范围。','PF-001, PF-004, PF-005, PF-006, PF-007, PF-008, PF-010, PF-013','阶段产物解释了可保留的 G2 候选构念，未选择算法、阈值或 pair score。')+concepts.map(x=>card(x[0],x[1],x[2],x[3])).join('')}else if(v==='concept'){html=concepts.map(x=>card(x[0],x[1],x[2],x[3])).join('')}else{html=papers.map(p=>card(p[0]+' · Paper Guide',`为什么审阅：${p[1]}。方法：${p[2]}`,p[4],`项目相关证据与边界：${p[3]} 完整 Paper Guide 位于 learning/paper-guides/${p[0]}.md。`)).join('')}document.querySelector('#app').innerHTML=html}
+document.querySelectorAll('button').forEach(b=>b.onclick=()=>{document.querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(b.dataset.view)});render('stage');
+</script></body></html>
