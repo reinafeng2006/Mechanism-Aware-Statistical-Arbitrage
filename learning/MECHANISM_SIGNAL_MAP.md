@@ -21,3 +21,7 @@ Preserved boundaries: opposite-direction movement is neither automatically abnor
 ## Frozen G2-02 implication
 
 The Relationship step contains **P0**, the primary simpler PIT market/statistical layer whose five non-equivalent information families remain separate, and optional **P1**, which adds a separately identifiable slow Economic/Company Relationship layer. Neither layer is an abnormality detector, mechanism classifier, resolution model or trade rule. Slow P1 context is normally precomputed/cached; a new company event requires separate PIT treatment and later authorization as discriminator/rejection evidence. P1 requires incremental normal-relationship-level value; downstream prediction or PnL alone is insufficient. Status: **FROZEN SEMANTICS; MEASUREMENT UNRESOLVED**.
+
+## G2-03 proposal implication
+
+N0 and N1 would define the same expected conditional relationship semantics with different pooling strength: N0 relies more strongly on industry/common structure, while N1 permits greater pair-specific PIT-history influence. This changes the relationship reference and its uncertainty—not the meaning of abnormality or a mechanism. Industry pooling strength may differ. N2 partial pooling remains **ILLUSTRATIVE / UNAUTHORIZED** and requires separate later authorization after a specific simpler-model problem. Status: **PROPOSED / NOT FROZEN**.

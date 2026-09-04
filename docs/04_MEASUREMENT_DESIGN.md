@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 and G2-02 APPROVED / FROZEN — 2026-09-04**. G2-03 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 and G2-02 APPROVED / FROZEN — 2026-09-04**. **G2-03 PROPOSED / AWAITING RESEARCHER APPROVAL**; G2-04 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -10,7 +10,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 
 1. Economic / signed conditional relationship semantics — **APPROVED / FROZEN**.
 2. P0/P1 pair-information architecture — **APPROVED / FROZEN**.
-3. N0/N1 normal-relationship candidates and N2 escalation condition — **UNRESOLVED**.
+3. N0/N1 normal-relationship candidates and N2 escalation condition — **PROPOSED / AWAITING RESEARCHER APPROVAL**.
 4. Pair-specific continuous abnormality — **UNRESOLVED**.
 5. Trigger/discriminator/sequential-updating measurement families — **UNRESOLVED**.
 6. M1 signed under-response measurement — **UNRESOLVED**.
@@ -37,3 +37,9 @@ Distributions, estimators, factors, windows, update rates, thresholds, clocks, u
 P0 is the primary, simpler PIT Market-Relationship-Only architecture, preserving raw joint/co-movement, factor/exposure, conditional/residual, dynamic stability/breakdown and signed/asymmetric/state-dependent information as distinct, non-equivalent families rather than a Pair Score. P1 is unchanged P0 plus a separately identifiable, secondary Economic/Company Relationship layer. Slow P1 information normally remains precomputed/cached relationship context rather than entering latency-critical abnormality/mechanism paths. A newly arriving company event may only become separate timestamped discriminator/rejection evidence if later authorized.
 
 P1 survives only through incremental **normal-relationship-level** value over P0 under the same prespecified PIT information, timing and validation protocol. Superior downstream return prediction or strategy PnL alone cannot establish improved pair validity. No P2 may be introduced without a genuinely distinct, later-justified information architecture. No representation, metric or winner is selected. See the formal [G2-02 Freeze Decision](decisions/G2_02_PAIR_INFORMATION_ARCHITECTURE.md).
+
+## Active G2-03 proposal
+
+N0 is proposed as the industry-structured/strongly pooled simpler normality benchmark, without requiring identical parameters across pairs. N1 targets the same frozen G2-01 semantic relationship object while permitting substantially greater influence from pair-specific PIT history. Allowed differences concern pooling, parameter sharing, heterogeneity, information borrowing, sparse-history behavior and adaptation scope; semantic target, information architecture, PIT/evaluation boundary, relationship-level objective, outcome exclusion and anti-circularity must remain constant.
+
+N2 partial pooling remains **ILLUSTRATIVE / UNAUTHORIZED** and may be proposed later only if a specific N0 underfit, N1 uncertainty/instability, sparse-history or relationship-level calibration/generalization problem cannot be adequately handled by N0/N1. Pooling strength must not be assumed identical across industries. See [G2-03 Working Proposal](stages/G2/G2_03_NORMAL_RELATIONSHIP_SPECIFICATIONS_PROPOSAL.md).
