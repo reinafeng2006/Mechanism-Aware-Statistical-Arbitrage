@@ -25,3 +25,7 @@ The Relationship step contains **P0**, the primary simpler PIT market/statistica
 ## Frozen G2-03 implication
 
 N0 and N1 define the same expected conditional relationship semantics with bounded pooling differences: N0 relies more strongly on industry/common structure, while N1 permits greater pair-specific PIT parameterization. This changes the relationship reference and its uncertainty—not the meaning of abnormality or a mechanism. Industry pooling strength may differ. N2 partial pooling remains **ILLUSTRATIVE / UNAUTHORIZED** and requires separate later authorization after specific relationship-level evidence shows N0/N1 are inadequate. Status: **FROZEN SEMANTICS; IMPLEMENTATION UNRESOLVED**.
+
+## G2-04 proposal implication
+
+Abnormality becomes the common pre-mechanism state: the multidimensional departure of Observed Joint Response from Expected Conditional Joint Response, conceptually accounting for Relationship Uncertainty. Magnitude, signed direction, timing and conditional/residual morphologies remain visible. Relationship-change/break evidence is parallel and must not be collapsed into temporary abnormality. An optional continuous summary may later support attention/ranking; no trigger or probability is authorized. The state may feed joint sequential mechanism and resolution updates without classifying M0–M3. Status: **PROPOSED / NOT FROZEN**.
