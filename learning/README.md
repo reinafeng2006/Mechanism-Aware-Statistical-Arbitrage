@@ -7,6 +7,9 @@ The project-level catalog and stage map are in `RESEARCH_KNOWLEDGE_MAP.md`. It d
 - `cards/`: reusable Chinese-first concept explanations.
 - `paper-guides/`: guides for completed Selective Deep reviews only.
 - `walkthroughs/`: decision-critical interpretation boundaries.
-- `dashboard/index.html`: local static dashboard; open it in a browser.
+- `MECHANISM_SIGNAL_MAP.md`: cross-mechanism overview and preserved boundaries.
+- `SIGNAL_MODEL_REGISTRY.md`: traceable signal/model concepts and unresolved work.
+- `mechanisms/`: M0–M3/U drill-down artifacts.
+- `dashboard/index.html`: local static dashboard with first-class Stage, Mechanism & Signal, Registry, Concepts and Papers views.
 
 Every artifact names its Paper/Claim ancestry. That ancestry is a pointer to the Evidence Layer, not evidence supplied by the Learning Layer.

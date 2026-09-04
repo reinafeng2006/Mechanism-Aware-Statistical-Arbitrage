@@ -2,6 +2,15 @@
 
 This catalog is a Learning Layer artifact. Definitions explain standard concepts; they do not select models or supply evidence. Project-specific status is limited to frozen G0 decisions and completed audited G1-02 Pair Formation reviews.
 
+## First-class views
+
+- **Research Stage Map:** where the whole project currently stands.
+- **Mechanism & Signal Map:** how M0–M3 and epistemic U connect relationship, abnormality, sequential PIT evidence, resolution validation and possible future decisions. See `MECHANISM_SIGNAL_MAP.md`.
+- **Signal Model Registry:** cross-mechanism traceability for signal concepts and candidate measurements. See `SIGNAL_MODEL_REGISTRY.md`.
+- **Concepts / Models** and **Papers:** supporting drill-down views; neither is an evidence source.
+
+The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal concept, candidate measurement, frozen factor, model output and trade rule remain distinct.
+
 **Transition status:** G1-04 and the G2 Handoff Contract are **APPROVED / FROZEN — 2026-09-04**. G2 is **ACTIVE — INITIALIZATION / DESIGN ONLY** at its first checkpoint; eleven dependency-ordered decisions remain unresolved. Authorization permits study and operational design for continuous, uncertain sequential belief updating; it does not select a formula, model, threshold, factor or mandatory M0–M3 classifier.
 
 **Current G2 checkpoint:** G2-01 relationship semantics are **APPROVED / FROZEN — 2026-09-04**; G2-02 is not authorized. The frozen semantic framework combines a joint conditional distribution view with separate `i → j` and `j → i` response views. It permits signed, asymmetric, pair-specific and state-dependent relationships; distinguishes relationship state, relationship uncertainty, temporary abnormality, and relationship change/break; and imposes a PIT anti-circularity boundary. All mathematical notation is illustrative; no estimator is selected.
