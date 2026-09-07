@@ -16,7 +16,7 @@
 
 ## Current project status
 
-**PARTIALLY ANSWERED / CANDIDATE.** 可在 G2 设计 P/C/R 构念；没有 classifier、factor、阈值或 M1 label 被选定。
+**PARTIALLY ANSWERED / G2-06 SEMANTICS FROZEN.** G2-06 将 Expected Signed Response、Observed Response、Signed Response Gap、Response Uncertainty 与 Under-Response Evidence 分开，并保留 UR0/UR1/UR2 为 **ILLUSTRATIVE / UNAUTHORIZED** 候选。正向 orientation 表示沿预期方向移动不足，overshoot 取相反方向；near-zero 或方向不可靠时保留 U。UR2 不得重复使用已进入 Expected Response 的 conditioning information。UR0 的算术变换可能简单，但端到端 feasibility 继承 expected-response specification。`response gap ≠ M1 identification`，也不等于 M1 probability。没有 estimator、clock、factor、阈值或 M1 label 被选定。
 
 ## Paper / Claim ancestry
 
