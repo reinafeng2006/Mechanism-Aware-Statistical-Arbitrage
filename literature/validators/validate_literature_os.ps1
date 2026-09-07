@@ -71,7 +71,7 @@ $hierarchyText = Get-Content -Raw -LiteralPath $hierarchyPath
 $gatesText = Get-Content -Raw -LiteralPath $gatesPath
 Assert-Condition ($hierarchyText -match 'G1-04.*APPROVED / FROZEN.*2026-09-04') "G1-04 must record explicit approval and freeze."
 Assert-Condition ($gatesText -match 'G1 Literature.*PASS / FROZEN.*2026-09-04') "G1 gate must be frozen after G1-04 approval."
-Assert-Condition ($gatesText -match 'G2 Measurement.*G2-01 through G2-09 APPROVED / FROZEN; DESIGN ONLY; G2-10 NOT AUTHORIZED') "G2 must stop before G2-10."
+Assert-Condition ($gatesText -match 'G2 Measurement.*G2-01 through G2-10 APPROVED / FROZEN; DESIGN ONLY; G2-11 NOT AUTHORIZED') "G2 must stop before G2-11."
 
 $unexpectedLibraryFiles = @(
     Get-ChildItem -LiteralPath $libraryPath -File -Recurse |
@@ -92,6 +92,6 @@ Assert-Condition ($unexpectedLibraryFiles.Count -eq 0) "Migration must not impor
     PredecessorIdentifiersInReconciliation = 'None'
     ImportedFullTexts = 0
     G104Status = 'APPROVED_FROZEN'
-    G2Status = 'G209_APPROVED_FROZEN_G210_NOT_AUTHORIZED'
+    G2Status = 'G210_APPROVED_FROZEN_G211_NOT_AUTHORIZED'
     Result = 'PASS'
 } | Format-List

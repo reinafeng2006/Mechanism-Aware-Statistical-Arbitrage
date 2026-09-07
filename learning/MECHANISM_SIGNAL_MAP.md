@@ -49,3 +49,7 @@ Pair Rejection challenges the normal relationship; Event/Mechanism Rejection cha
 ## Frozen G2-09 M3 non-identification constraint
 
 M3 remains a preserved economic research hypothesis with weak literature ancestry, absent positive identification and blocked event-time/production use. Unexplained live abnormality routes to U. Residuals, exclusion of M0/M1/M2, opposite direction, temporary appearance and future normalization cannot create M3. Later outcome patterns may support discovery-target research only under PIT reconstruction and development/held-out separation; they cannot be promoted backward into event-time evidence. Future evidence may upgrade M3 into an identifiable candidate or reject it as unnecessary/non-distinct. Status: **APPROVED / FROZEN CONSTRAINT; DISCOVERY LATER PERMITTED, PRODUCTION BLOCKED**.
+
+## Frozen G2-10 U / Abstention representation
+
+U is a positive, dynamic PIT epistemic state, not a fifth mechanism or threshold remainder. Measurement uncertainty, information insufficiency, mechanism ambiguity, evidence conflict and data/provenance uncertainty are overlapping sources. `U ≠ M0`, `U ≠ M3`, `Abstain ≠ U`, and `No Trade ≠ U`. U0–U4 remain **ILLUSTRATIVE / UNAUTHORIZED** representation families; no probability space, transition model or decision policy is selected, and no probability simplex is required. Status: **APPROVED / FROZEN SEMANTICS; REPRESENTATION UNSELECTED**.

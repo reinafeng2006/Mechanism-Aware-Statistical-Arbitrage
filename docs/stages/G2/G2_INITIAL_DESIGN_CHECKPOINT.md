@@ -1,6 +1,6 @@
 # G2 — Initial Measurement & Timing Design Checkpoint
 
-Status: **ACTIVE — DESIGN ONLY; G2-01–G2-09 FROZEN; G2-10 NOT AUTHORIZED**
+Status: **ACTIVE — DESIGN ONLY; G2-01–G2-10 FROZEN; G2-11 NOT AUTHORIZED**
 Authority: approved G1-04 Evidence Freeze and frozen `../../decisions/G2_HANDOFF_CONTRACT.md`, 2026-09-04.
 Boundary: this checkpoint structures decisions. It selects no formula, factor, model, estimator, threshold, window, classifier, filter, provider, dataset or trading rule.
 
@@ -23,7 +23,7 @@ G2-01 through G2-04 are **APPROVED / FROZEN**. Rows 5–11 remain **UNRESOLVED �
 | 7 | M2 pressure and proxy contamination — **APPROVED / FROZEN SEMANTICS** | Nine-part decomposition; MP0–MP3 complexity/information ladder; mandatory Contamination Record; seven-time lineage; feasibility comparison. | Complexity is not evidence/identification/maturity rank; excess/volume/flow/reversal non-identifying; no candidate, proxy or formula selected. | CL-M2-001–004; CL-B4-002; G2-04/G2-05; G2-07 |
 | 8 | M0 positive rejection evidence — **APPROVED / FROZEN SEMANTICS** | Three rejection channels; seven distinct constructs; R0–R3 candidates; five-time PIT lineage; preliminary feasibility distinctions. | No Trade/U/M0 distinct; U does not default to M0; no score, classifier, threshold or rule selected. | CL-M0-001; CL-PF-001/004/005; G2-04/G2-05; G2-08 |
 | 9 | M3 non-identification constraint — **APPROVED / FROZEN** | Separate blocked production use from preserved discovery hypothesis; route live unexplained cases to U; define outcome/held-out and reopening boundaries. | Production use blocked; no M3 score/proxy/label; future evidence may upgrade or reject the hypothesis. | CL-M3-001; CL-PF-007; CL-B4-001; G1-04; G2-09 freeze |
-| 10 | U / abstention representation | Define how ambiguity, insufficient evidence, rival explanations and measurement failure lead to continuing update, rejection or abstention without inventing a fifth mechanism. | Depends on 5–9; forced state assignment is prohibited. | Competing-mechanism Claim block in `../../decisions/G2_HANDOFF_CONTRACT.md` |
+| 10 | U / abstention representation — **APPROVED / FROZEN** | U is a dynamic PIT epistemic state; separate from Abstain and No Trade; five uncertainty sources and U0–U4 candidates preserved. | No required probability simplex, threshold, transition model or decision rule; G2-11 unauthorized. | G1-04; G2-05/G2-08/G2-09; G2-10 freeze; competing-mechanism Claim block in `../../decisions/G2_HANDOFF_CONTRACT.md` |
 | 11 | PIT timing, frequency, latency and lineage | Define decision timestamps, availability/vintage rules, update latency classes, required histories, missing/stale handling and lineage fields for every retained measurement candidate. | Cross-cuts 1–10 and must be fixed before handoff to G3; providers and acquisition remain unauthorized. | `../../archive/G1/G1_03_DATA_REQUIREMENT_MAP.md`; all linked Claim IDs except excluded DR-008 |
 
 ## Later G2 freeze obligations

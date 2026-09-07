@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-09 APPROVED / FROZEN — 2026-09-07**. G2-10 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-10 APPROVED / FROZEN — 2026-09-07**. G2-11 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -17,7 +17,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 7. M2 pressure and proxy-contamination measurement — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
 8. M0 positive rejection evidence — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
 9. M3 non-identification constraint — **APPROVED / FROZEN; PRODUCTION USE BLOCKED**.
-10. U/abstention representation — **UNRESOLVED**.
+10. U/abstention representation — **APPROVED / FROZEN; REPRESENTATIONS UNSELECTED**.
 11. PIT timing, frequency, latency and data lineage — **UNRESOLVED**.
 
 The detailed active queue is in [G2 Initial Design Checkpoint](stages/G2/G2_INITIAL_DESIGN_CHECKPOINT.md).
@@ -83,3 +83,9 @@ Relationship-break, fundamental/event, structural-linkage, persistent-versus-tem
 M3 is preserved as an economic research hypothesis but positive contemporaneous identification is absent. Event-time discriminator and production signal/model use are therefore `BLOCKED — NO POSITIVE IDENTIFICATION BASIS`. Residual/unexplained abnormality, exclusion of M1/M2/M0, opposite direction, apparent temporariness and future normalization cannot generate M3.
 
 Unexplained live cases route to U. A future outcome-defined discovery sample may support research under strict PIT reconstruction, development/held-out separation and G1 reopening governance, but `M3 discovery target ≠ M3 event-time signal ≠ M3 production label`. Future evidence may either upgrade M3 into an identifiable candidate or reject it as unnecessary/non-distinct. See the [G2-09 Freeze Decision](decisions/G2_09_M3_NON_IDENTIFICATION_CONSTRAINT.md).
+
+## Frozen G2-10 U / Abstention representation
+
+U is proposed as a positive, time-indexed epistemic state for insufficiently resolved mechanism belief—not merely a residual threshold bucket. Measurement uncertainty, information insufficiency, mechanism ambiguity, evidence conflict and data/provenance uncertainty remain overlapping diagnostic sources. U is dynamic and may update with genuinely new PIT information without rewriting earlier records.
+
+`U = epistemic state`, `Abstain = decision/action`, and `No Trade = possible downstream outcome` remain separate. U neither defaults to M0/M3 nor mechanically implies Abstain or No Trade. Explicit state, unresolved mass, uncertainty-over-mechanisms, abstention-region and diagnostic-vector representations remain **ILLUSTRATIVE / UNAUTHORIZED** candidates. Mechanism/U probabilities need not sum to one absent a later authorized model. See the [G2-10 Freeze Decision](decisions/G2_10_U_ABSTENTION_REPRESENTATION.md).
