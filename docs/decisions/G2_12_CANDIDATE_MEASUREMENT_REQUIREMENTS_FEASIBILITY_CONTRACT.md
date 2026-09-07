@@ -1,6 +1,6 @@
-# G2-12 — Candidate Measurement Requirements & Feasibility Contract Proposal
+# G2-12 — Candidate Measurement Requirements & Feasibility Contract Freeze Decision
 
-Status: **PROPOSED / AWAITING RESEARCHER APPROVAL**
+Status: **APPROVED / FROZEN**
 Date: 2026-09-07
 Boundary: translate frozen candidates into feasibility-audit requirements only. No measurement, formula, model, provider, raw field, exact frequency, threshold, data source or empirical winner is selected.
 
@@ -8,9 +8,9 @@ Boundary: translate frozen candidates into feasibility-audit requirements only. 
 
 Resolve the Pre-G3 checkpoint's five linked blockers as one bounded design task by creating a versioned, one-to-one Candidate Measurement Requirement Envelope inventory, a target-universe feasibility frame, broad decision-use clock envelopes, an inheritance graph and independent Production Data Tiers.
 
-The complete proposed register is [Candidate Measurement Requirement Envelopes v0.1](../../../registers/CANDIDATE_MEASUREMENT_REQUIREMENT_ENVELOPES.md). It covers every currently authorized or explicitly preserved candidate family: P0/P1, relationship representations and governance, N0/N1/N2, abnormality and information-role families, UR0–UR2, MP0–MP3, R0–R3, M3 discovery-only context and U0–U4.
+The complete frozen register is [Candidate Measurement Requirement Envelopes v1.0](../../registers/CANDIDATE_MEASUREMENT_REQUIREMENT_ENVELOPES.md). It covers every currently authorized or explicitly preserved candidate family: P0/P1, relationship representations and governance, N0/N1/N2, abnormality and information-role families, UR0–UR2, MP0–MP3, R0–R3, M3 discovery-only context and U0–U4.
 
-## Contract rules proposed for freeze
+## Frozen contract rules
 
 1. `MINIMUM REQUIREMENT ≠ PREFERRED / ENHANCEMENT REQUIREMENT`.
 2. Missing enhancement information cannot make a simpler candidate infeasible.
@@ -55,9 +55,9 @@ The envelopes translate the 17 existing literature-derived Data Requirements, fr
 
 G3A must flag when a provider field would alter the construct, embed outcomes, lack historical vintages or require an unapproved proxy.
 
-## Proposed G3A / G3B controlled loop
+## Frozen G3A / G3B controlled loop
 
-`G3A — PIT Data / Provider Feasibility Audit` is proposed but **NOT ACTIVE**. A later authorization may permit read-only/provider capability inspection against the frozen envelopes: lawful availability, PIT/vintage support, history/universe coverage, granularity, latency, stability, lineage and expected burden.
+`G3A — PIT Data / Provider Feasibility Audit` is separately authorized after this freeze as **AUDIT-ONLY**. It may inspect provider/source capabilities, lawful availability, PIT/vintage support, history/universe coverage, granularity, latency, stability, lineage and expected burden.
 
 G3A must not acquire the formal empirical dataset, compute outcomes, select winning measurements or inspect performance.
 
@@ -65,7 +65,15 @@ The intended loop is:
 
 `G2-12 envelopes → G3A feasibility audit → return to G2 for implementable measurement specification freeze → separately authorized G3B formal acquisition`
 
-G3B remains locked. Approval of G2-12 would not activate either G3A or G3B.
+G3B remains locked. G2-12 does not authorize acquisition.
+
+## G3A feasibility-not-desirability boundary
+
+**`G3A evaluates feasibility, not desirability.`**
+
+G3A may assess lawful access, PIT/vintage integrity, history, intended-universe coverage, granularity, latency, reproducibility, stability and operational burden. It must not choose or rank candidates by alpha, infer predictive value, change Production Data Tier because a model appears attractive, use PnL, run backtests or resolve G2 measurement choices.
+
+`MP3 infeasible ≠ M2 infeasible`: dependency-aware findings must preserve simpler branches whenever only an enhancement is constrained.
 
 ## Unresolved after G2-12
 
@@ -85,9 +93,9 @@ Provider selection, physical database design, formal acquisition, ingestion and 
 
 All relationship, mechanism, resolution, prediction and economic comparisons.
 
-## Proposed classification
+## Frozen classification
 
-### FROZEN CONTRACT — proposed
+### FROZEN CONTRACT
 
 - envelope schema and v0.1 candidate inventory;
 - minimum versus enhancement boundary;
@@ -99,12 +107,14 @@ All relationship, mechanism, resolution, prediction and economic comparisons.
 - no provider convenience substitution;
 - controlled G2-12 → G3A → G2 → G3B loop.
 
-### G3A-PROPOSED / NOT ACTIVE
+### G3A-AUTHORIZED / AUDIT-ONLY
 
-Feasibility audit scope only; requires separate authorization.
+Feasibility audit scope only; no formal dataset, outcomes, model selection or performance inspection.
 
 ### G2/G3/EMPIRICAL-DEFER
 
 All concrete measurements, sources, providers, frequencies, physical schemas, data acquisition and empirical choices.
 
-Stop at **G2-12 — PROPOSED / AWAITING RESEARCHER APPROVAL**. G3A and G3B remain locked.
+## Approval record
+
+Researcher approval on 2026-09-07 freezes all 45 envelopes, minimum/enhancement distinction, universe and clock frames, dependency graph, Production Data Tiers, controlled G3A-return-to-G2-G3B loop and feasibility-not-desirability boundary exactly as documented. G3A is authorized audit-only after the milestone push; G3B remains locked.

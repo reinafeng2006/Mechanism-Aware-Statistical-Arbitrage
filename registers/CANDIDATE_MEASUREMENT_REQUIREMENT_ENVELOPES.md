@@ -1,8 +1,8 @@
 # Candidate Measurement Requirement Envelopes
 
 Contract ID: **G2-12-CMRE**
-Version: **v0.1-proposed-2026-09-07**
-Status: **PROPOSED / AWAITING RESEARCHER APPROVAL**
+Version: **v1.0-frozen-2026-09-07**
+Status: **APPROVED / FROZEN — CONTROLLED G3A INPUT**
 Authority boundary: translation of frozen G1/G2 candidates only. No measurement, field, provider, frequency, threshold, model or data source is selected.
 
 ## Reading rules
@@ -15,6 +15,7 @@ Authority boundary: translation of frozen G1/G2 candidates only. No measurement,
 - Feasibility uses G2-05 statuses and is independent of the Production Data Tier.
 - `CORE-FEASIBILITY` means the minimum production architecture depends on the information class being feasibly auditable. `OPTIONAL-ENHANCEMENT` cannot block a simpler architecture. `RESEARCH-ONLY` cannot block production.
 - All derived candidates inherit the full PIT, vintage, coverage, latency and feasibility burden of their upstream candidates.
+- **`G3A evaluates feasibility, not desirability.`** Feasibility outcomes cannot rank alpha, select a winner, change tiers for attractiveness or resolve G2 choices.
 
 ## Versioned envelopes
 

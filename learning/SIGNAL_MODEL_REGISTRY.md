@@ -4,7 +4,7 @@ Status: **LEARNING / TRACEABILITY ONLY**. Entries are concepts or candidate meas
 
 G2-11 freezes that every future registry implementation preserve the semantic lineage `raw source → source vintage → availability time → transformation/version → derived measurement → downstream use`, with distinct observation/public/available/compute/decision/outcome times. This is **APPROVED / FROZEN SEMANTICS** and selects no clock, frequency, provider or database schema.
 
-G2-12 proposes the versioned one-to-one feasibility envelopes in `registers/CANDIDATE_MEASUREMENT_REQUIREMENT_ENVELOPES.md`. Registry entries remain pedagogical summaries; the envelope register is the proposed G3A audit contract. G3A/G3B are not active.
+G2-12 freezes the versioned one-to-one feasibility envelopes in `registers/CANDIDATE_MEASUREMENT_REQUIREMENT_ENVELOPES.md`. Registry entries remain pedagogical summaries; the envelope register is the controlled G3A audit contract. `G3A evaluates feasibility, not desirability`; G3A is active audit-only and G3B remains locked.
 
 | Name | Role | Mechanisms | Intuition / attempted construct | Candidate inputs | Illustrative form | Rival / PIT / latency | Ancestry | Status / unresolved work |
 |---|---|---|---|---|---|---|---|---|

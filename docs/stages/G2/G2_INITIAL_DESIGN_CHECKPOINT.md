@@ -1,6 +1,6 @@
 # G2 — Initial Measurement & Timing Design Checkpoint
 
-Status: **ACTIVE — DESIGN ONLY; G2-01–G2-11 FROZEN; G2-12 PROPOSED / AWAITING RESEARCHER APPROVAL; G3A/G3B LOCKED**
+Status: **G2-01–G2-12 APPROVED / FROZEN; G3A ACTIVE AUDIT-ONLY; G3B LOCKED**
 Authority: approved G1-04 Evidence Freeze and frozen `../../decisions/G2_HANDOFF_CONTRACT.md`, 2026-09-04.
 Boundary: this checkpoint structures decisions. It selects no formula, factor, model, estimator, threshold, window, classifier, filter, provider, dataset or trading rule.
 
@@ -25,7 +25,7 @@ G2-01 through G2-04 are **APPROVED / FROZEN**. Rows 5–11 remain **UNRESOLVED �
 | 9 | M3 non-identification constraint — **APPROVED / FROZEN** | Separate blocked production use from preserved discovery hypothesis; route live unexplained cases to U; define outcome/held-out and reopening boundaries. | Production use blocked; no M3 score/proxy/label; future evidence may upgrade or reject the hypothesis. | CL-M3-001; CL-PF-007; CL-B4-001; G1-04; G2-09 freeze |
 | 10 | U / abstention representation — **APPROVED / FROZEN** | U is a dynamic PIT epistemic state; separate from Abstain and No Trade; five uncertainty sources and U0–U4 candidates preserved. | No required probability simplex, threshold, transition model or decision rule; G2-11 unauthorized. | G1-04; G2-05/G2-08/G2-09; G2-10 freeze; competing-mechanism Claim block in `../../decisions/G2_HANDOFF_CONTRACT.md` |
 | 11 | PIT timing, frequency, latency and lineage — **APPROVED / FROZEN** | Six-time vocabulary; frequency/latency separation; multi-speed roles; semantic lineage chain; revision rules; new-information-only updates; timing feasibility metadata. | Clocks/frequencies/providers/database unresolved; G3 locked. | `../../archive/G1/G1_03_DATA_REQUIREMENT_MAP.md`; G2-05–G2-10; G2-11 freeze; all linked Claim IDs except excluded DR-008 |
-| 12 | Candidate measurement requirements and feasibility contract — **PROPOSED** | Consolidate five pre-data blockers into versioned envelopes, universe/clock frames, dependency graph and Production Data Tiers. | Awaiting approval; no measurement/provider/frequency/source selected; G3A/G3B inactive. | G2-01–G2-11; Pre-G3 checkpoint; literature-derived Data Requirements |
+| 12 | Candidate measurement requirements and feasibility contract — **APPROVED / FROZEN** | 45 versioned envelopes, universe/clock frames, dependency graph and Production Data Tiers. | No measurement/provider/frequency/source selected; G3A audit-only; G3B locked. | G2-01–G2-11; Pre-G3 checkpoint; literature-derived Data Requirements; G2-12 freeze |
 
 ## Later G2 freeze obligations
 
