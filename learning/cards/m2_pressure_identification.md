@@ -16,4 +16,4 @@ M1：peer 可能反应不足，候选验证是 follower catch-up。M2：shocked/
 
 ## Current status / ancestry
 
-**PARTIALLY ANSWERED / CANDIDATE.** G2 必须定义 pressure-source、liquidity state、rival checks 与 strict PIT timing；不选 proxy、factor、threshold 或 model。M2-001/002/003/005, B4-004; CL-M2-001–004, CL-B4-002. 教学说明，不构成证据。
+**PARTIALLY ANSWERED / G2-07 SEMANTICS FROZEN.** G2-07 将 Expected Response、Observed Source Response、Oriented Excess Gap、Uncertainty、Pressure Source、Liquidity/Flow State、Contamination Audit、Rivals 与 downstream M2 Evidence 分开。MP0/MP1/MP2/MP3 均为 **ILLUSTRATIVE / UNAUTHORIZED** 候选，只构成 complexity/information-requirement ladder，不表示 evidence strength、identification quality 或 maturity。每个 proxy 必须记录机械 return content、endogeneity、overlap、leakage、motive ambiguity 及 identification limits。`excess move ≠ temporary pressure`；不选 proxy、factor、threshold 或 model。M2-001/002/003/005, B4-004; CL-M2-001–004, CL-B4-002. 教学说明，不构成证据。

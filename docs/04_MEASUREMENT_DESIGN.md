@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-06 APPROVED / FROZEN — 2026-09-07**. G2-07 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-07 APPROVED / FROZEN — 2026-09-07**. G2-08 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -14,7 +14,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 4. Pair-specific continuous abnormality — **APPROVED / FROZEN**.
 5. Trigger/discriminator/sequential-updating measurement families — **APPROVED / FROZEN**.
 6. M1 signed under-response measurement — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
-7. M2 pressure and proxy-contamination measurement — **UNRESOLVED**.
+7. M2 pressure and proxy-contamination measurement — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
 8. M0 positive rejection evidence — **UNRESOLVED**.
 9. M3 non-identification constraint — **UNRESOLVED**.
 10. U/abstention representation — **UNRESOLVED**.
@@ -65,3 +65,9 @@ M1 signed under-response is insufficient peer movement in the expected signed di
 UR0 raw signed gap, UR1 uncertainty-standardized gap and UR2 conditional/context-adjusted gap remain competing **ILLUSTRATIVE / UNAUTHORIZED** candidates. Signed gap may be a general abnormality morphology and, separately, an M1-specific transformation after source/link/timing and rival evidence; it cannot redefine the normal relationship. All estimators, clocks, windows, thresholds and models remain unresolved. See the formal [G2-06 Freeze Decision](decisions/G2_06_M1_SIGNED_UNDER_RESPONSE.md).
 
 The frozen semantic orientation defines positive as insufficient movement in the expected signed direction and overshoot as the opposite orientation. Near-zero or too-uncertain expected direction cannot mechanically generate M1 under-response and may remain U. UR2 must separate information already used for Normal/Expected Response, information used to measure the gap and additional discriminator/rival context; repeated conditioning is prohibited. UR0's orientation/subtraction step may be operationally easy, but its end-to-end feasibility inherits the underlying Expected Signed Response specification.
+
+## Frozen G2-07 M2 pressure and contamination architecture
+
+M2 measurement is a nine-part architecture separating Expected Signed Conditional Response, Observed Source Response, Oriented Excess-Move Gap, uncertainty, pressure-source evidence, liquidity/flow-state evidence, proxy-contamination audit, rival evidence and downstream M2 Evidence. Excess movement, volume, turnover, flow and later reversal do not identify temporary pressure or M2.
+
+MP0 excess-move diagnostic, MP1 accessible liquidity/flow context, MP2 pressure-source/contamination-audited diagnostic and MP3 difficult high-frequency permanent/transitory extension remain competing **ILLUSTRATIVE / UNAUTHORIZED** candidates. They form a complexity/information-requirement ladder, not an evidence-strength, identification-quality or model-maturity ranking; greater complexity does not imply better M2 identification. Every proxy requires a Contamination Record and seven-time PIT lineage. Transformation complexity remains separate from inherited end-to-end feasibility. See the formal [G2-07 Freeze Decision](decisions/G2_07_M2_PRESSURE_CONTAMINATION.md).
