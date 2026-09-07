@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-08 APPROVED / FROZEN — 2026-09-07**. G2-09 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-09 APPROVED / FROZEN — 2026-09-07**. G2-10 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -16,7 +16,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 6. M1 signed under-response measurement — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
 7. M2 pressure and proxy-contamination measurement — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
 8. M0 positive rejection evidence — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
-9. M3 non-identification constraint — **UNRESOLVED**.
+9. M3 non-identification constraint — **APPROVED / FROZEN; PRODUCTION USE BLOCKED**.
 10. U/abstention representation — **UNRESOLVED**.
 11. PIT timing, frequency, latency and data lineage — **UNRESOLVED**.
 
@@ -77,3 +77,9 @@ MP0 excess-move diagnostic, MP1 accessible liquidity/flow context, MP2 pressure-
 M0 requires positive rejection evidence and cannot be inferred from weak M1/M2/M3 support. Pair Rejection targets the normal relationship; Event/Mechanism Rejection targets the current episode; Decision Rejection/Abstention handles evidence insufficiency without creating M0. `No Trade ≠ M0`, `U ≠ M0`, U does not default to M0, and No Trade may later result from M0, U or economic/decision criteria.
 
 Relationship-break, fundamental/event, structural-linkage, persistent-versus-temporary, data-quality, conflict/ambiguity and downstream M0 evidence remain distinct. R0 relationship warning, R1 event rejection, R2 structural-linkage diagnostic and R3 ambiguity/quality rejection are competing **ILLUSTRATIVE / UNAUTHORIZED** candidates and are not combined into a score. See the formal [G2-08 Freeze Decision](decisions/G2_08_M0_POSITIVE_REJECTION.md).
+
+## Frozen G2-09 M3 non-identification constraint
+
+M3 is preserved as an economic research hypothesis but positive contemporaneous identification is absent. Event-time discriminator and production signal/model use are therefore `BLOCKED — NO POSITIVE IDENTIFICATION BASIS`. Residual/unexplained abnormality, exclusion of M1/M2/M0, opposite direction, apparent temporariness and future normalization cannot generate M3.
+
+Unexplained live cases route to U. A future outcome-defined discovery sample may support research under strict PIT reconstruction, development/held-out separation and G1 reopening governance, but `M3 discovery target ≠ M3 event-time signal ≠ M3 production label`. Future evidence may either upgrade M3 into an identifiable candidate or reject it as unnecessary/non-distinct. See the [G2-09 Freeze Decision](decisions/G2_09_M3_NON_IDENTIFICATION_CONSTRAINT.md).
