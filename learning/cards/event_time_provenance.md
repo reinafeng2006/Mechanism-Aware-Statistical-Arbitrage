@@ -12,7 +12,17 @@ public timestamp 不是 private information 未先传播的证明；daily close 
 
 ## Current project status
 
-**DEFINED timing principle; CANDIDATE measurement family.** G2 必须绘制 timing DAG；G3 才决定所需 PIT 数据与来源。
+**DEFINED timing principle; G2-11 SEMANTIC CONTRACT APPROVED / FROZEN.** G2-11 freezes six separate timestamps: `observation_time`, `public_time`, `available_time`, `compute_time`, `decision_time`, and `outcome_time`. Event-time inputs require `available_time ≤ decision_time`; derived inputs must also finish computation by decision time. G3 才决定 provider、实际 frequency、数据库与 acquisition。
+
+## Frequency versus latency
+
+Source/update frequency、observation granularity、publication/availability latency、computation latency 与 decision-path latency 是不同属性。低频 filing 在新发布时仍可成为 fast timestamped update；重复计算未变化数据不构成新证据。
+
+## Lineage chain
+
+`raw source → source vintage → availability time → transformation/version → derived measurement → downstream use`
+
+这条链解释一项信息为什么可合法进入某个 decision origin；它不选择数据库 schema 或 provider。
 
 ## Paper / Claim ancestry
 

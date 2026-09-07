@@ -2,6 +2,8 @@
 
 Status: **LEARNING / TRACEABILITY ONLY**. Entries are concepts or candidate measurements, never frozen factors or trade rules. All formulas/model families below are **ILLUSTRATIVE / UNAUTHORIZED**.
 
+G2-11 freezes that every future registry implementation preserve the semantic lineage `raw source → source vintage → availability time → transformation/version → derived measurement → downstream use`, with distinct observation/public/available/compute/decision/outcome times. This is **APPROVED / FROZEN SEMANTICS** and selects no clock, frequency, provider or database schema.
+
 | Name | Role | Mechanisms | Intuition / attempted construct | Candidate inputs | Illustrative form | Rival / PIT / latency | Ancestry | Status / unresolved work |
 |---|---|---|---|---|---|---|---|---|
 | P0 market relationship layer | Relationship | all | Describe PIT signed conditional dependence while keeping raw joint, exposure, conditional/residual, stability/break and signed/state families distinct | returns, exposures, residuals, stability history | `R_t=relationship(PIT history)` | representation-dependent; fast observations + medium relationship state | CL-PF-002–007/009; G2-02 | FROZEN ARCHITECTURE; measurement unresolved |

@@ -53,3 +53,7 @@ M3 remains a preserved economic research hypothesis with weak literature ancestr
 ## Frozen G2-10 U / Abstention representation
 
 U is a positive, dynamic PIT epistemic state, not a fifth mechanism or threshold remainder. Measurement uncertainty, information insufficiency, mechanism ambiguity, evidence conflict and data/provenance uncertainty are overlapping sources. `U ≠ M0`, `U ≠ M3`, `Abstain ≠ U`, and `No Trade ≠ U`. U0–U4 remain **ILLUSTRATIVE / UNAUTHORIZED** representation families; no probability space, transition model or decision policy is selected, and no probability simplex is required. Status: **APPROVED / FROZEN SEMANTICS; REPRESENTATION UNSELECTED**.
+
+## Frozen G2-11 PIT Timing & Data Lineage contract
+
+Every P/S/C/R input and every relationship, abnormality, mechanism, resolution and decision artifact must distinguish `observation_time`, `public_time`, `available_time`, `compute_time`, `decision_time` and `outcome_time`. Event-time use requires availability and completed derivation by the decision origin. Frequency, granularity and latency are different properties; slow context may create a fast update only through a genuinely new timestamped vintage. Repeated computation on unchanged inputs is not new evidence. Status: **APPROVED / FROZEN SEMANTICS; G3 LOCKED**.

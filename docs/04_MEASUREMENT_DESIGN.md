@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-10 APPROVED / FROZEN — 2026-09-07**. G2-11 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-11 APPROVED / FROZEN — 2026-09-07**. G3 remains locked. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -18,7 +18,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 8. M0 positive rejection evidence — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
 9. M3 non-identification constraint — **APPROVED / FROZEN; PRODUCTION USE BLOCKED**.
 10. U/abstention representation — **APPROVED / FROZEN; REPRESENTATIONS UNSELECTED**.
-11. PIT timing, frequency, latency and data lineage — **UNRESOLVED**.
+11. PIT timing, frequency, latency and data lineage — **APPROVED / FROZEN; IMPLEMENTATION UNSELECTED**.
 
 The detailed active queue is in [G2 Initial Design Checkpoint](stages/G2/G2_INITIAL_DESIGN_CHECKPOINT.md).
 
@@ -89,3 +89,9 @@ Unexplained live cases route to U. A future outcome-defined discovery sample may
 U is proposed as a positive, time-indexed epistemic state for insufficiently resolved mechanism belief—not merely a residual threshold bucket. Measurement uncertainty, information insufficiency, mechanism ambiguity, evidence conflict and data/provenance uncertainty remain overlapping diagnostic sources. U is dynamic and may update with genuinely new PIT information without rewriting earlier records.
 
 `U = epistemic state`, `Abstain = decision/action`, and `No Trade = possible downstream outcome` remain separate. U neither defaults to M0/M3 nor mechanically implies Abstain or No Trade. Explicit state, unresolved mass, uncertainty-over-mechanisms, abstention-region and diagnostic-vector representations remain **ILLUSTRATIVE / UNAUTHORIZED** candidates. Mechanism/U probabilities need not sum to one absent a later authorized model. See the [G2-10 Freeze Decision](decisions/G2_10_U_ABSTENTION_REPRESENTATION.md).
+
+## Frozen G2-11 PIT Timing & Data Lineage contract
+
+The frozen common timing vocabulary separates `observation_time`, `public_time`, `available_time`, `compute_time`, `decision_time` and `outcome_time`. Every event-time input requires `available_time ≤ decision_time`; a derived input must also be computed after all upstream inputs are available and before the decision origin. Frequency, observation granularity, publication latency, computation latency and total decision-path latency remain distinct.
+
+The semantic lineage chain is `raw source → source vintage → availability time → transformation/version → derived measurement → downstream use`. It freezes vintage/non-overwrite discipline, genuinely-new-information requirements for sequential updates and timing extensions to Production Feasibility while leaving clocks, frequencies, tolerances, providers and physical database design unresolved. See the [G2-11 Freeze Decision](decisions/G2_11_PIT_TIMING_DATA_LINEAGE.md).
