@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-11 APPROVED / FROZEN — 2026-09-07**. G3 remains locked. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-11 APPROVED / FROZEN — 2026-09-07**. **G2-12 PROPOSED / AWAITING RESEARCHER APPROVAL**; G3A/G3B remain locked. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -95,3 +95,7 @@ U is proposed as a positive, time-indexed epistemic state for insufficiently res
 The frozen common timing vocabulary separates `observation_time`, `public_time`, `available_time`, `compute_time`, `decision_time` and `outcome_time`. Every event-time input requires `available_time ≤ decision_time`; a derived input must also be computed after all upstream inputs are available and before the decision origin. Frequency, observation granularity, publication latency, computation latency and total decision-path latency remain distinct.
 
 The semantic lineage chain is `raw source → source vintage → availability time → transformation/version → derived measurement → downstream use`. It freezes vintage/non-overwrite discipline, genuinely-new-information requirements for sequential updates and timing extensions to Production Feasibility while leaving clocks, frequencies, tolerances, providers and physical database design unresolved. See the [G2-11 Freeze Decision](decisions/G2_11_PIT_TIMING_DATA_LINEAGE.md).
+
+## Active Pre-G3 readiness checkpoint
+
+The approved synthesis conclusion finds G2 semantically coherent but not ready for data acquisition. Its five linked blockers are consolidated into [G2-12](stages/G2/G2_12_CANDIDATE_MEASUREMENT_REQUIREMENTS_FEASIBILITY_CONTRACT_PROPOSAL.md), which proposes versioned candidate envelopes, universe/clock frames, an inheritance graph and data tiers. G3A feasibility audit and G3B acquisition remain separately gated and inactive. See the [Pre-G3 Readiness Checkpoint](stages/G2/G2_MEASUREMENT_DESIGN_SYNTHESIS_PRE_G3_READINESS_CHECKPOINT.md).

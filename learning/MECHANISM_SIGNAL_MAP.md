@@ -57,3 +57,7 @@ U is a positive, dynamic PIT epistemic state, not a fifth mechanism or threshold
 ## Frozen G2-11 PIT Timing & Data Lineage contract
 
 Every P/S/C/R input and every relationship, abnormality, mechanism, resolution and decision artifact must distinguish `observation_time`, `public_time`, `available_time`, `compute_time`, `decision_time` and `outcome_time`. Event-time use requires availability and completed derivation by the decision origin. Frequency, granularity and latency are different properties; slow context may create a fast update only through a genuinely new timestamped vintage. Repeated computation on unchanged inputs is not new evidence. Status: **APPROVED / FROZEN SEMANTICS; G3 LOCKED**.
+
+## G2-12 candidate requirement contract proposal
+
+Every retained relationship, abnormality, M1/M2/M0/U and governance candidate now has a proposed versioned feasibility envelope distinguishing minimum from enhancement information, timing capability, PIT/vintage/history/universe requirements, upstream inheritance, latency/cache role, G2-05 feasibility status, Production Data Tier and G3A questions. This does not make the candidate a factor or select a representation. G3A is proposed only as a later feasibility audit; G3B acquisition remains locked. Status: **G2-12 PROPOSED / AWAITING RESEARCHER APPROVAL**.
