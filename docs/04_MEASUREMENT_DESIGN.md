@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2-01 through G2-12 APPROVED / FROZEN — 2026-09-07**. **G3A ACTIVE / AUDIT ONLY / FEASIBILITY NOT DESIRABILITY**; G3B remains locked. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, provider, dataset or trading rule is selected.
+Status: **G2-01 through G2-12 APPROVED / FROZEN — 2026-09-07**. **G3A APPROVED / COMPLETE — FEASIBILITY ONLY**; G3B remains locked. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -98,4 +98,4 @@ The semantic lineage chain is `raw source → source vintage → availability ti
 
 ## Active Pre-G3 readiness checkpoint
 
-The approved synthesis conclusion found G2 not ready for data acquisition. G2-12 resolved the five linked pre-audit blockers through versioned candidate envelopes, universe/clock frames, an inheritance graph and data tiers. G3A is authorized audit-only under `G3A evaluates feasibility, not desirability`; G3B acquisition remains locked. See the [G2-12 Freeze Decision](decisions/G2_12_CANDIDATE_MEASUREMENT_REQUIREMENTS_FEASIBILITY_CONTRACT.md) and [Pre-G3 Readiness Checkpoint](stages/G2/G2_MEASUREMENT_DESIGN_SYNTHESIS_PRE_G3_READINESS_CHECKPOINT.md).
+The approved synthesis conclusion found G2 not ready for data acquisition. G2-12 resolved the five linked pre-audit blockers through versioned candidate envelopes, universe/clock frames, an inheritance graph and data tiers. G3A is approved and complete under `G3A evaluates feasibility, not desirability` and returned a [dependency-aware handback](stages/G3A/G3A_DEPENDENCY_AWARE_HANDBACK_TO_G2.md); G3B acquisition remains locked. See the [G2-12 Freeze Decision](decisions/G2_12_CANDIDATE_MEASUREMENT_REQUIREMENTS_FEASIBILITY_CONTRACT.md) and [Pre-G3 Readiness Checkpoint](stages/G2/G2_MEASUREMENT_DESIGN_SYNTHESIS_PRE_G3_READINESS_CHECKPOINT.md).

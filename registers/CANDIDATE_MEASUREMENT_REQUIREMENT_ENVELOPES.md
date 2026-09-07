@@ -101,9 +101,9 @@ future belief model only ──> U1/U2; future decision model only ──> U3
 
 UR0 transformation feasibility inherits Expected Response. UR1 adds uncertainty. UR2 may add only non-duplicative PIT context. MP candidates inherit Expected Response and each earlier complexity layer. R0 inherits relationship-state history. U candidates inherit the inputs whose uncertainty they summarize. N2 inherits N0/N1 and remains unauthorized.
 
-## Proposed G3A boundary
+## G3A checkpoint status
 
-`G3A — PIT Data / Provider Feasibility Audit` is **PROPOSED ONLY / NOT ACTIVE**.
+`G3A — PIT Data / Provider Feasibility Audit` is **APPROVED / COMPLETE — FEASIBILITY ONLY**. Its outputs are in `docs/stages/G3A/`; G3B remains locked.
 
 If separately authorized, G3A may inspect provider/source capabilities, lawful availability, PIT/vintage support, historical/universe coverage, attainable frequency/granularity, latency, source stability, lineage support and expected acquisition/maintenance burden against these envelopes.
 

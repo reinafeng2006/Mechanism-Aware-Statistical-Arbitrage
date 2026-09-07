@@ -35,7 +35,7 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **G2-11:** **APPROVED / FROZEN — 2026-09-07; G3 LOCKED.** The six-time vocabulary separates observation, first-public disclosure, legitimate availability, computation, decision origin and outcome. Frequency is separated from granularity and source/computation/decision-path latency. A semantic lineage chain preserves source vintage, availability, deterministic transformation, upstream IDs, derived time, permitted decision range and role/feasibility status. Actual clocks, frequencies, timestamp precision, latency tolerances, providers and database implementation remain unresolved.
 
-**G2-12:** **APPROVED / FROZEN — 2026-09-07.** The 45 versioned Candidate Measurement Requirement Envelopes, target-universe and broad clock frames, dependency/inheritance graph, and independent Production Data Tiers are the controlled G3A input. `G3A evaluates feasibility, not desirability`; it is active audit-only. G3B acquisition remains locked.
+**G2-12:** **APPROVED / FROZEN — 2026-09-07.** The 45 versioned Candidate Measurement Requirement Envelopes, target-universe and broad clock frames, dependency/inheritance graph, and independent Production Data Tiers are the controlled G3A input. `G3A evaluates feasibility, not desirability`; its feasibility-only checkpoint is approved and complete. G3B acquisition remains locked.
 
 ## Defined concepts / models
 

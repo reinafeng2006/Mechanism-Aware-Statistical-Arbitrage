@@ -1,6 +1,6 @@
 # G2 — Initial Measurement & Timing Design Checkpoint
 
-Status: **G2-01–G2-12 APPROVED / FROZEN; G3A ACTIVE AUDIT-ONLY; G3B LOCKED**
+Status: **G2-01–G2-12 APPROVED / FROZEN; G3A APPROVED / COMPLETE; G3B LOCKED**
 Authority: approved G1-04 Evidence Freeze and frozen `../../decisions/G2_HANDOFF_CONTRACT.md`, 2026-09-04.
 Boundary: this checkpoint structures decisions. It selects no formula, factor, model, estimator, threshold, window, classifier, filter, provider, dataset or trading rule.
 
