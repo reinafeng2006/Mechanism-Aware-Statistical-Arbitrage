@@ -1,6 +1,6 @@
 # Measurement Design — Current G2 State
 
-Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-07 APPROVED / FROZEN — 2026-09-07**. G2-08 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
+Status: **G2 ACTIVE — DESIGN ONLY**. **G2-01 through G2-08 APPROVED / FROZEN — 2026-09-07**. G2-09 is not authorized. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, classifier, filter, provider, dataset or trading rule is selected.
 
 ## Governing authorization
 
@@ -15,7 +15,7 @@ G2 may design measurements for a continuous and uncertain sequential belief-upda
 5. Trigger/discriminator/sequential-updating measurement families — **APPROVED / FROZEN**.
 6. M1 signed under-response measurement — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
 7. M2 pressure and proxy-contamination measurement — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
-8. M0 positive rejection evidence — **UNRESOLVED**.
+8. M0 positive rejection evidence — **APPROVED / FROZEN SEMANTICS; CANDIDATES UNSELECTED**.
 9. M3 non-identification constraint — **UNRESOLVED**.
 10. U/abstention representation — **UNRESOLVED**.
 11. PIT timing, frequency, latency and data lineage — **UNRESOLVED**.
@@ -71,3 +71,9 @@ The frozen semantic orientation defines positive as insufficient movement in the
 M2 measurement is a nine-part architecture separating Expected Signed Conditional Response, Observed Source Response, Oriented Excess-Move Gap, uncertainty, pressure-source evidence, liquidity/flow-state evidence, proxy-contamination audit, rival evidence and downstream M2 Evidence. Excess movement, volume, turnover, flow and later reversal do not identify temporary pressure or M2.
 
 MP0 excess-move diagnostic, MP1 accessible liquidity/flow context, MP2 pressure-source/contamination-audited diagnostic and MP3 difficult high-frequency permanent/transitory extension remain competing **ILLUSTRATIVE / UNAUTHORIZED** candidates. They form a complexity/information-requirement ladder, not an evidence-strength, identification-quality or model-maturity ranking; greater complexity does not imply better M2 identification. Every proxy requires a Contamination Record and seven-time PIT lineage. Transformation complexity remains separate from inherited end-to-end feasibility. See the formal [G2-07 Freeze Decision](decisions/G2_07_M2_PRESSURE_CONTAMINATION.md).
+
+## Frozen G2-08 M0 rejection architecture
+
+M0 requires positive rejection evidence and cannot be inferred from weak M1/M2/M3 support. Pair Rejection targets the normal relationship; Event/Mechanism Rejection targets the current episode; Decision Rejection/Abstention handles evidence insufficiency without creating M0. `No Trade ≠ M0`, `U ≠ M0`, U does not default to M0, and No Trade may later result from M0, U or economic/decision criteria.
+
+Relationship-break, fundamental/event, structural-linkage, persistent-versus-temporary, data-quality, conflict/ambiguity and downstream M0 evidence remain distinct. R0 relationship warning, R1 event rejection, R2 structural-linkage diagnostic and R3 ambiguity/quality rejection are competing **ILLUSTRATIVE / UNAUTHORIZED** candidates and are not combined into a score. See the formal [G2-08 Freeze Decision](decisions/G2_08_M0_POSITIVE_REJECTION.md).

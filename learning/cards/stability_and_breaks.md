@@ -20,7 +20,7 @@ PF-006 观察协整网络边的重复出现与存活；PF-007 使用时频特征
 
 ## Current project use/status
 
-可作为 G2 候选 R/拒绝信息；检测方法、阈值和结构性解释均未冻结。
+可作为冻结 G2-08 架构中 R0 Relationship-Validity Warning 的候选 ancestry，但 break warning 不等于 M0。Pair Rejection、Event Rejection 与 Decision Rejection/U 必须分开；R0–R3 均未选择，检测方法、阈值和结构性解释也未冻结。
 
 ## Paper / Claim ancestry
 
