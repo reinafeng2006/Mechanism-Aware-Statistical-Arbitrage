@@ -39,6 +39,8 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **G2B:** **APPROVED / FROZEN — 2026-09-08.** Candidate narrowing distinguishes primary/competing implementable branches, optional enhancements and research-only/blocked branches. `PRIMARY IMPLEMENTABLE ≠ SELECTED`; feasibility is not desirability; approximation gaps remain explicit; G3B acquisition is not authorized.
 
+**G3B acquisition design:** **APPROVED / FROZEN — 2026-09-08.** Four blocks cover Scope/Universe, Provider/Clock, Security/PIT and Immutable Storage/Outcome Quarantine. Fallback substitution is explicit/auditable and `stored data ≠ decision-time available data`. Provider/field resolution and formal acquisition remain separately unauthorized.
+
 ## Defined concepts / models
 
 | Concept / model | Standard definition and core form | Project status | Ancestry |

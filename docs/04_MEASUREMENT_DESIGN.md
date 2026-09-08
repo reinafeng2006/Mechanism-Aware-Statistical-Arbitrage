@@ -4,6 +4,8 @@ Status: **G2-01 through G2-12 APPROVED / FROZEN — 2026-09-07**. **G3A APPROVED
 
 `G2B — Implementable Measurement Specification Narrowing` is **APPROVED / FROZEN — 2026-09-08**. Its classifications express implementability rather than selection and do not authorize acquisition, implementation or empirical evaluation. See the [G2B Freeze Decision](decisions/G2B_IMPLEMENTABLE_MEASUREMENT_SPECIFICATION_NARROWING_FREEZE.md).
 
+`G3B — Formal PIT Data Acquisition Design` is **APPROVED / FROZEN — 2026-09-08** in four dependency-coherent blocks. Formal acquisition remains unauthorized. Fallback patching must be explicit and auditable; `stored data ≠ decision-time available data`. See the [G3B Acquisition Design Freeze](decisions/G3B_ACQUISITION_DESIGN_FREEZE.md).
+
 ## Governing authorization
 
 G2 may design measurements for a continuous and uncertain sequential belief-updating system, not a mandatory M0–M3 classifier. It must preserve sequential updating, ambiguity, positive rejection evidence and `U = Unresolved / Abstain`. See the frozen [G2 Handoff Contract](decisions/G2_HANDOFF_CONTRACT.md).

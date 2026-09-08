@@ -52,7 +52,7 @@ Assert-Doc ($governance -match 'Canonical docs = current truth' -and $governance
     BrokenMarkdownLinks = $broken.Count
     CanonicalRootDocs = $rootDocs.Count
     G1Status = 'FROZEN'
-    G2Status = 'G2B_APPROVED_FROZEN_G3A_APPROVED_COMPLETE_G3B_DESIGN_NOT_ACTIVE'
+    G2Status = 'G2B_FROZEN_G3A_COMPLETE_G3B_DESIGN_FROZEN_PROVIDER_FIELD_NOT_ACTIVE_ACQUISITION_LOCKED'
     EmpiricalAuthorization = 'UNCHANGED_LOCKED'
     Result = 'PASS'
 } | Format-List
