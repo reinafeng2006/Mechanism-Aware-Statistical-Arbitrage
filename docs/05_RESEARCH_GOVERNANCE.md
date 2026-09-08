@@ -21,6 +21,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3A PIT Data / Provider Feasibility Audit | **APPROVED / COMPLETE / FEASIBILITY NOT DESIRABILITY** |
 | G3B Formal PIT Data Acquisition Design | **APPROVED / FROZEN — 2026-09-08** |
 | G3B Formal Data Acquisition Execution | **NOT AUTHORIZED / LOCKED** |
+| G3B-01 Provider & Field Contract Resolution | **APPROVED / FROZEN — G3B-02 AUDIT AUTHORIZED** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |

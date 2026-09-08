@@ -41,6 +41,8 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **G3B acquisition design:** **APPROVED / FROZEN — 2026-09-08.** Four blocks cover Scope/Universe, Provider/Clock, Security/PIT and Immutable Storage/Outcome Quarantine. Fallback substitution is explicit/auditable and `stored data ≠ decision-time available data`. Provider/field resolution and formal acquisition remain separately unauthorized.
 
+**G3B-01:** **APPROVED / FROZEN.** Necessity-classified logical contracts C01–C09 are the controlled G3B-02 audit targets; E02/E03 may be considered for first-round co-acquisition, while E01 remains audit-authorized and acquisition-conditional on PIT qualification. **G3B-02 is audit-only; no source, physical field implementation, or formal acquisition is selected.**
+
 ## Defined concepts / models
 
 | Concept / model | Standard definition and core form | Project status | Ancestry |

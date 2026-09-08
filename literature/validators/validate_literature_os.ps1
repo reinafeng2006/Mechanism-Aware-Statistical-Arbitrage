@@ -93,6 +93,6 @@ Assert-Condition ($unexpectedLibraryFiles.Count -eq 0) "Migration must not impor
     PredecessorIdentifiersInReconciliation = 'None'
     ImportedFullTexts = 0
     G104Status = 'APPROVED_FROZEN'
-    G2Status = 'G2B_FROZEN_G3A_COMPLETE_G3B_DESIGN_FROZEN_PROVIDER_FIELD_NOT_ACTIVE_ACQUISITION_LOCKED'
+    G2Status = 'G2B_FROZEN_G3B_DESIGN_FROZEN_G3B01_PROVIDER_FIELD_FROZEN_G3B02_AUDIT_ONLY_ACQUISITION_LOCKED'
     Result = 'PASS'
 } | Format-List
