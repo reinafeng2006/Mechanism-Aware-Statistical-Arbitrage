@@ -20,6 +20,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3 Point-in-Time Data & Database | **LOCKED** |
 | G3A PIT Data / Provider Feasibility Audit | **APPROVED / COMPLETE / FEASIBILITY NOT DESIRABILITY** |
 | G3B Formal Data Acquisition | **LOCKED** |
+| G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |

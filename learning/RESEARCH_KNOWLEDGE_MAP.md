@@ -37,6 +37,8 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **G2-12:** **APPROVED / FROZEN — 2026-09-07.** The 45 versioned Candidate Measurement Requirement Envelopes, target-universe and broad clock frames, dependency/inheritance graph, and independent Production Data Tiers are the controlled G3A input. `G3A evaluates feasibility, not desirability`; its feasibility-only checkpoint is approved and complete. G3B acquisition remains locked.
 
+**G2B:** **APPROVED / FROZEN — 2026-09-08.** Candidate narrowing distinguishes primary/competing implementable branches, optional enhancements and research-only/blocked branches. `PRIMARY IMPLEMENTABLE ≠ SELECTED`; feasibility is not desirability; approximation gaps remain explicit; G3B acquisition is not authorized.
+
 ## Defined concepts / models
 
 | Concept / model | Standard definition and core form | Project status | Ancestry |

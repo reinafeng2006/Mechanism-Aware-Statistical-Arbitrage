@@ -2,6 +2,8 @@
 
 Status: **G2-01 through G2-12 APPROVED / FROZEN — 2026-09-07**. **G3A APPROVED / COMPLETE — FEASIBILITY ONLY**; G3B remains locked. No formula, factor, estimator, model, distribution, metric, threshold, window, frequency, update rate, provider, dataset or trading rule is selected.
 
+`G2B — Implementable Measurement Specification Narrowing` is **APPROVED / FROZEN — 2026-09-08**. Its classifications express implementability rather than selection and do not authorize acquisition, implementation or empirical evaluation. See the [G2B Freeze Decision](decisions/G2B_IMPLEMENTABLE_MEASUREMENT_SPECIFICATION_NARROWING_FREEZE.md).
+
 ## Governing authorization
 
 G2 may design measurements for a continuous and uncertain sequential belief-updating system, not a mandatory M0–M3 classifier. It must preserve sequential updating, ambiguity, positive rejection evidence and `U = Unresolved / Abstain`. See the frozen [G2 Handoff Contract](decisions/G2_HANDOFF_CONTRACT.md).
@@ -99,3 +101,7 @@ The semantic lineage chain is `raw source → source vintage → availability ti
 ## Active Pre-G3 readiness checkpoint
 
 The approved synthesis conclusion found G2 not ready for data acquisition. G2-12 resolved the five linked pre-audit blockers through versioned candidate envelopes, universe/clock frames, an inheritance graph and data tiers. G3A is approved and complete under `G3A evaluates feasibility, not desirability` and returned a [dependency-aware handback](stages/G3A/G3A_DEPENDENCY_AWARE_HANDBACK_TO_G2.md); G3B acquisition remains locked. See the [G2-12 Freeze Decision](decisions/G2_12_CANDIDATE_MEASUREMENT_REQUIREMENTS_FEASIBILITY_CONTRACT.md) and [Pre-G3 Readiness Checkpoint](stages/G2/G2_MEASUREMENT_DESIGN_SYNTHESIS_PRE_G3_READINESS_CHECKPOINT.md).
+
+## G2B narrowing proposal
+
+G2B evaluates semantic fit, evidence permission, G3A feasibility and production complexity without outcomes. It preserves construct integrity through `Frozen Construct → Candidate Operational Approximation → Approximation Gap`, applies simplicity only where semantic fit and permission are comparable, and keeps dependency-aware alternatives. See the [Candidate Matrix](stages/G2/G2B_IMPLEMENTABLE_CANDIDATE_MATRIX.md), [Approximation Gaps](stages/G2/G2B_APPROXIMATION_GAP_REGISTER.md), [Pruning Record](stages/G2/G2B_DEPENDENCY_AWARE_PRUNING_RECORD.md), [Competing Specifications](stages/G2/G2B_REMAINING_COMPETING_SPECIFICATIONS.md), and [Pre-G3B Handoff](stages/G2/G2B_PRE_G3B_DATA_REQUIREMENT_HANDOFF.md).

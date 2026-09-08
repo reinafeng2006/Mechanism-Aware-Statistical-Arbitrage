@@ -61,3 +61,5 @@ Every P/S/C/R input and every relationship, abnormality, mechanism, resolution a
 ## Frozen G2-12 candidate requirement contract
 
 Every retained relationship, abnormality, M1/M2/M0/U and governance candidate has a frozen versioned feasibility envelope distinguishing minimum from enhancement information, timing capability, PIT/vintage/history/universe requirements, upstream inheritance, latency/cache role, G2-05 feasibility status, Production Data Tier and G3A questions. This does not make the candidate a factor or select a representation. `G3A evaluates feasibility, not desirability`; the G3A feasibility-only checkpoint is approved and complete, and G3B remains locked. Status: **G2-12 APPROVED / FROZEN**.
+
+G2B overlays implementability without changing mechanism maturity: UR0/UR1 and MP0/MP1 remain implementable candidates/components; UR2/MP2 are optional enhancements; MP3 and M3 production use remain blocked. MP0 remains excess-move diagnosis, not M2 identification. No classification is predictive evidence. Status: **APPROVED / FROZEN — 2026-09-08**.
