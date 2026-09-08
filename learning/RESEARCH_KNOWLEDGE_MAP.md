@@ -43,6 +43,8 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **G3B-01:** **APPROVED / FROZEN.** Necessity-classified logical contracts C01–C09 are the controlled G3B-02 audit targets; E02/E03 may be considered for first-round co-acquisition, while E01 remains audit-authorized and acquisition-conditional on PIT qualification. **G3B-02 is audit-only; no source, physical field implementation, or formal acquisition is selected.**
 
+**G3B-02:** **ACCEPTED / COMPLETE.** C03/C08 have qualified canonical-candidate paths; C06 Historical Industry Membership is the only unresolved core acquisition blocker. E01 has not met event-time PIT qualification but does not block the core architecture. These are feasibility findings, not provider or model selections; G3B-03 is audit-only and formal acquisition remains locked.
+
 ## Defined concepts / models
 
 | Concept / model | Standard definition and core form | Project status | Ancestry |
