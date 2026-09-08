@@ -24,6 +24,8 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B-01 Provider & Field Contract Resolution | **APPROVED / FROZEN — G3B-02 AUDIT AUTHORIZED** |
 | G3B-02 Provider / Field / Schema / PIT Qualification Audit | **ACCEPTED / COMPLETE — AUDIT ONLY** |
 | G3B-03 C06 Historical Industry Membership Qualification Closure | **ACCEPTED / FROZEN — FORMAL ACQUISITION LOCKED** |
+| Final Formal Acquisition Proposal | **APPROVED / FROZEN — G3B-QA ONLY AUTHORIZED** |
+| G3B-QA Bounded Acquisition & Structural Validation | **ACTIVE — FULL-UNIVERSE EXPANSION LOCKED** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |

@@ -12,6 +12,8 @@ Status: **G2-01 through G2-12 APPROVED / FROZEN — 2026-09-07**. **G3A APPROVED
 
 `G3B-03 — C06 Historical Industry Membership Qualification Closure` is **ACCEPTED / FROZEN — 2026-09-08**. Official CSRC/CAPCO dated snapshots provide a qualified PIT reconstruction path when used only after publication, with taxonomy version, explicit staleness and C01 identity lineage preserved. `2013-01-07` is the earliest currently qualified C06 boundary, not the research start date. See the [Freeze Decision](decisions/G3B_03_C06_QUALIFICATION_FREEZE.md), [C06 Audit](stages/G3B/G3B_03_C06_HISTORICAL_MEMBERSHIP_AUDIT.md), [Scope Map](../registers/MACHINERY_INDUSTRY_SCOPE_MAP.md), and [Readiness Decision](stages/G3B/C06_ACQUISITION_READINESS_DECISION.md).
 
+The [Final Formal Acquisition Proposal](stages/G3B/G3B_FINAL_FORMAL_ACQUISITION_PROPOSAL.md) is **APPROVED / FROZEN — G3B-QA ONLY AUTHORIZED**. Primary 34/35 scope, date zones, daily/native-event capability, E02/E03 scope, budget boundary and source-class contracts are frozen. Full-universe expansion is unauthorized. See the [Freeze Decision](decisions/G3B_FINAL_ACQUISITION_PROPOSAL_FREEZE.md) and [QA Plan](stages/G3B/G3B_QA_ACQUISITION_PLAN.md).
+
 ## Governing authorization
 
 G2 may design measurements for a continuous and uncertain sequential belief-updating system, not a mandatory M0–M3 classifier. It must preserve sequential updating, ambiguity, positive rejection evidence and `U = Unresolved / Abstain`. See the frozen [G2 Handoff Contract](decisions/G2_HANDOFF_CONTRACT.md).

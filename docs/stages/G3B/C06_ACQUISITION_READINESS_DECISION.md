@@ -18,9 +18,9 @@ The qualifying path is official CSRC/CAPCO dated classification snapshots recons
 
 ## Researcher decisions still required before acquisition authorization
 
-1. Review only the `AMBIGUOUS-REVIEW` adjacent codes in the versioned Machinery Industry Scope Map; core 34/35 and exclusions 36/37 are recorded without outcome optimization.
-2. Approve the formal research/acquisition start date after reconciling all source histories. **2013-01-07** is only the earliest currently qualified C06 PIT boundary.
-3. Authorize a bounded formal acquisition snapshot and exact source contract in a later G3B checkpoint. Carry-forward with explicit staleness is frozen; no numerical staleness threshold is selected.
+1. Enforce the approved primary 34/35 and `OUT-OF-PRIMARY / EXTENSION-ELIGIBLE` 38/40/43 boundary without outcome optimization.
+2. Use **2013-01-07** as the formal lower acquisition boundary while preserving later G4 decisions about statistical sample roles.
+3. Execute only the separately authorized G3B-QA slice. Carry-forward with explicit staleness is frozen; no numerical staleness threshold is selected and full-universe expansion remains unauthorized.
 
 ## Readiness conclusion
 

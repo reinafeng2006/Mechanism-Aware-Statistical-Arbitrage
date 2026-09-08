@@ -45,7 +45,9 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **G3B-02:** **ACCEPTED / COMPLETE.** At that checkpoint C03/C08 had qualified canonical-candidate paths and C06 was the only unresolved core acquisition blocker. E01 did not meet event-time PIT qualification and remains non-blocking. G3B-03 subsequently closed C06 qualification; formal acquisition remains locked.
 
-**G3B-03:** **ACCEPTED / FROZEN.** Official dated CSRC/CAPCO classification snapshots support conservative as-of membership from publication time onward. Taxonomy version, snapshot age/staleness, listing/code lineage and source provenance remain explicit. A versioned scope map includes core codes 34/35, excludes 36/37, and surfaces adjacent 38/40/43 for review. `2013-01-07` is the earliest qualified C06 boundary, not the research start date; acquisition remains unauthorized.
+**G3B-03:** **ACCEPTED / FROZEN.** Official dated CSRC/CAPCO classification snapshots support conservative as-of membership from publication time onward. Taxonomy version, snapshot age/staleness, listing/code lineage and source provenance remain explicit. The primary universe is 34/35; 36/37 are excluded; 38/40/43 are out-of-primary and extension-eligible only. `2013-01-07` is the formal lower acquisition boundary.
+
+**Final acquisition design:** **APPROVED / FROZEN — G3B-QA ONLY.** Approved source classes prioritize venue-authorized raw market/security records, official CSRC/CAPCO classification snapshots and internal immutable lineage. Daily/native-event minimum capability, a 2013-01-07–2025-12-31 primary zone, POST-2025 quarantine, E02/E03 scope and strict outcome quarantine are frozen. Full-universe expansion is not authorized.
 
 ## Defined concepts / models
 
