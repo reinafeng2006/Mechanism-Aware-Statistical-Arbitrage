@@ -10,6 +10,8 @@ Status: **G2-01 through G2-12 APPROVED / FROZEN — 2026-09-07**. **G3A APPROVED
 
 `G3B-02 — Provider / Field / Schema / PIT Qualification Audit` is **ACCEPTED / COMPLETE — 2026-09-08**. C03/C08 have qualified canonical-candidate paths; C06 is the only unresolved core acquisition blocker; E01 remains conditional and non-blocking. Formal acquisition remains unauthorized. See the [Acceptance Decision](decisions/G3B_02_QUALIFICATION_AUDIT_ACCEPTANCE.md), [Qualification Audit](stages/G3B/G3B_02_PROVIDER_FIELD_SCHEMA_PIT_QUALIFICATION_AUDIT.md), [Physical-Field Mapping](stages/G3B/G3B_02_PHYSICAL_FIELD_MAPPING_MATRIX.md), and [Gap Handback](stages/G3B/G3B_02_QUALIFICATION_GAPS_AND_HANDBACK.md).
 
+`G3B-03 — C06 Historical Industry Membership Qualification Closure` is **ACCEPTED / FROZEN — 2026-09-08**. Official CSRC/CAPCO dated snapshots provide a qualified PIT reconstruction path when used only after publication, with taxonomy version, explicit staleness and C01 identity lineage preserved. `2013-01-07` is the earliest currently qualified C06 boundary, not the research start date. See the [Freeze Decision](decisions/G3B_03_C06_QUALIFICATION_FREEZE.md), [C06 Audit](stages/G3B/G3B_03_C06_HISTORICAL_MEMBERSHIP_AUDIT.md), [Scope Map](../registers/MACHINERY_INDUSTRY_SCOPE_MAP.md), and [Readiness Decision](stages/G3B/C06_ACQUISITION_READINESS_DECISION.md).
+
 ## Governing authorization
 
 G2 may design measurements for a continuous and uncertain sequential belief-updating system, not a mandatory M0–M3 classifier. It must preserve sequential updating, ambiguity, positive rejection evidence and `U = Unresolved / Abstain`. See the frozen [G2 Handoff Contract](decisions/G2_HANDOFF_CONTRACT.md).

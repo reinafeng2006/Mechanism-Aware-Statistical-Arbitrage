@@ -43,7 +43,9 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **G3B-01:** **APPROVED / FROZEN.** Necessity-classified logical contracts C01–C09 are the controlled G3B-02 audit targets; E02/E03 may be considered for first-round co-acquisition, while E01 remains audit-authorized and acquisition-conditional on PIT qualification. **G3B-02 is audit-only; no source, physical field implementation, or formal acquisition is selected.**
 
-**G3B-02:** **ACCEPTED / COMPLETE.** C03/C08 have qualified canonical-candidate paths; C06 Historical Industry Membership is the only unresolved core acquisition blocker. E01 has not met event-time PIT qualification but does not block the core architecture. These are feasibility findings, not provider or model selections; G3B-03 is audit-only and formal acquisition remains locked.
+**G3B-02:** **ACCEPTED / COMPLETE.** At that checkpoint C03/C08 had qualified canonical-candidate paths and C06 was the only unresolved core acquisition blocker. E01 did not meet event-time PIT qualification and remains non-blocking. G3B-03 subsequently closed C06 qualification; formal acquisition remains locked.
+
+**G3B-03:** **ACCEPTED / FROZEN.** Official dated CSRC/CAPCO classification snapshots support conservative as-of membership from publication time onward. Taxonomy version, snapshot age/staleness, listing/code lineage and source provenance remain explicit. A versioned scope map includes core codes 34/35, excludes 36/37, and surfaces adjacent 38/40/43 for review. `2013-01-07` is the earliest qualified C06 boundary, not the research start date; acquisition remains unauthorized.
 
 ## Defined concepts / models
 
