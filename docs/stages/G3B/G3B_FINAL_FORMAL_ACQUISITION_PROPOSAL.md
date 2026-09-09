@@ -1,8 +1,8 @@
 # Final Formal Acquisition Proposal
 
-Status: **APPROVED / FROZEN — G3B-QA ONLY AUTHORIZED**  
+Status: **APPROVED / FROZEN — SUPERSEDED AUTHORIZATION STATE RECORDED BELOW**  
 Version: **v1.0 — 2026-09-08**  
-Execution boundary: **BOUNDED QA ACQUISITION ONLY; FULL-UNIVERSE EXPANSION NOT AUTHORIZED**
+Execution boundary at original freeze: **BOUNDED QA ACQUISITION ONLY**. Full acquisition was subsequently authorized by `docs/decisions/G3B_TUSHARE_FINAL_ACQUISITION_AUTHORIZATION.md`; this historical proposal is not rewritten beyond this status pointer.
 
 This proposal converts the frozen G2B/G3B contracts into a bounded acquisition plan. All source selections below are **proposed contract selections**, not active subscriptions, downloads, feature-use permissions or empirical approvals.
 
@@ -120,8 +120,8 @@ Stop acquisition and return for review if:
 
 Expansion beyond daily/L1 EOD, the proposed date range, core 34/35 universe, or authorized E02/E03 fields requires a new decision record. Poor PnL, model preference or desire for extra factors cannot expand acquisition scope.
 
-## 10. Authorization now in force
+## 10. Original authorization boundary and superseding decision
 
-Only `G3B-QA — Bounded Formal Acquisition & Structural Validation Slice` is authorized. The slice must be selected deterministically for technical coverage across SSE/SZSE, identifier/listing/delisting, suspension/missing sessions, corporate-action lineage, C06, C07/E03, E02 and schema time consistency. It may validate structural contracts and immutable/quarantine controls only. It may not compute or inspect pair/relationship statistics, abnormality, UR/MP/R objects, mechanisms, targets, predictions, portfolios or PnL.
+At this document's original freeze, only `G3B-QA — Bounded Formal Acquisition & Structural Validation Slice` was authorized. The later formal decision `G3B_TUSHARE_FINAL_ACQUISITION_AUTHORIZATION.md` now authorizes G3B-FULL within its narrower named source/contract/date/universe boundaries. All measurement and outcome prohibitions in this document remain in force.
 
-After QA, full-universe expansion requires a new researcher approval.
+That required researcher approval was subsequently granted for G3B-FULL; any expansion beyond the later decision still requires new approval.
