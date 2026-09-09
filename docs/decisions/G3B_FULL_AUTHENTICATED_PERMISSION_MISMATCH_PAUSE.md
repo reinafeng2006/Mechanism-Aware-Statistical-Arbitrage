@@ -6,7 +6,6 @@ The formal acquisition process was stopped without deleting or overwriting any a
 
 Authenticated responses establish an effective limit of approximately one request per hour for both `stock_basic` and `daily_basic`. This evidence supersedes the earlier planning assumption of approximately one request per minute. It is an account/permission mismatch, not a schema failure, proof of data unavailability, or evidence that the research architecture is infeasible.
 
-The acquisition remains paused. No resume, permission purchase, model computation, target construction, or outcome inspection is authorized by this record.
+The researcher later confirmed a 2,120-point account balance and the bounded authenticated re-check passed consecutive `stock_basic` and `daily_basic` calls. The permission mismatch is therefore resolved at the access/throughput level. The acquisition nevertheless remains paused until a new researcher resume authorization. No model computation, target construction, or outcome inspection is authorized by this record.
 
 Partial raw preservation record (Git-ignored): `data/raw/g3b_full/tushare/full_2013_2025_v1/manifest_paused.json`.
-

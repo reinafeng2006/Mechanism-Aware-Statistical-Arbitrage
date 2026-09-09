@@ -17,6 +17,8 @@ The researcher approves the final Tushare acquisition-readiness checkpoint and a
 
 Current Tushare permission: `OPERATIONALLY SUFFICIENT BUT SLOW`.
 
+Subsequent authenticated evidence superseded the original rate assumption: G3B-FULL was safely paused after `stock_basic` and `daily_basic` returned an effective one/hour limit. The researcher then confirmed `2000+ POINT TIER CONFIRMED`, and a four-request bounded re-check passed consecutive calls to both endpoints. The acquisition is now resume eligible but remains paused pending explicit researcher authorization. Resume must continue from the preserved checkpoint and must not overwrite the eight successful C03 snapshots.
+
 `NO NEW PURCHASE / PERMISSION UPGRADE AT THIS STAGE`.
 
 ## Authorized acquisition boundary

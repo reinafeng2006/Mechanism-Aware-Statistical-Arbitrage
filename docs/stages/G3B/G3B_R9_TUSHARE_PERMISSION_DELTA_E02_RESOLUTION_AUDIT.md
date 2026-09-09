@@ -1,12 +1,12 @@
 # G3B-R9 — Tushare Permission Delta / E02 Resolution Audit
 
-Status: **E02 RESOLUTION / AWAITING RESEARCHER DECISION**
+Status: **OPTION A SELECTED / 2000+ POINT TIER CONFIRMED / PERMISSION RE-CHECK PASS**
 
 Scope: permission and acquisition-architecture audit only. No purchase, acquisition resume, measurement construction, or outcome inspection was performed.
 
 ## 1. Authenticated permission evidence
 
-The exact account points balance/tier is **UNRESOLVED — ACCOUNT-VISIBLE PERMISSION PAGE REQUIRED**. It cannot be inferred safely from public documentation or exposed through the retained acquisition payloads.
+The researcher subsequently confirmed an account-visible balance of 2,120 points, including 2,000 points purchased on 2026-09-09 and valid through 2027-09-09. The current status is `2000+ POINT TIER CONFIRMED`; no further purchase is required or authorized.
 
 What is established directly:
 
@@ -69,7 +69,6 @@ MP0 remains an excess-move diagnostic baseline; the E02-A MP1 branch remains imp
 
 Recommend **B**. It has the lowest complexity, no new source integration, and preserves the primary M2 research architecture plus the implementable E02-A/MP1 branch. Choose A only if the researcher assigns sufficient design value to retaining turnover/free-float-normalized competing specifications; the modest fee buys operational access, not PIT-vintage quality. C is inferior at this stage because it adds a difficult integration without assured broad daily denominator coverage.
 
-G3B-FULL remains safely paused. Any resume or purchase requires a new explicit researcher decision.
+The bounded authenticated re-check subsequently passed two consecutive `stock_basic` and two consecutive `daily_basic` calls. C01/E02 are no longer permission-blocked. G3B-FULL remains safely paused but is resume eligible; resumption requires a new explicit researcher decision and must continue from the preserved checkpoint.
 
-`G3B-R9 E02 RESOLUTION / AWAITING RESEARCHER DECISION`
-
+`TUSHARE 2000+ PERMISSION RE-CHECK — PASS / G3B-FULL RESUME ELIGIBLE`
