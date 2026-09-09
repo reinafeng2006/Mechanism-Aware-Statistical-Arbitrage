@@ -1,6 +1,6 @@
 # Integrated Historical Research Platform Qualification
 
-Status: **TUSHARE R8 ACCEPTED — PROPOSED PRIMARY SUBJECT TO FINAL ACQUISITION CONTRACT**
+Status: **TUSHARE PRIMARY PATH FROZEN — G3B-FULL ACQUISITION ACTIVE**
 Formal acquisition: **NOT AUTHORIZED**  
 Public-web commercial discovery: **STOPPED**
 
