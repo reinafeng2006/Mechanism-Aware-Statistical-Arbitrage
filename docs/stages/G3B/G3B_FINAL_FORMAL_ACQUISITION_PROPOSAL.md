@@ -1,6 +1,6 @@
 # Final Formal Acquisition Proposal
 
-Status: **APPROVED / FROZEN — SUPERSEDED AUTHORIZATION STATE RECORDED BELOW**  
+Status: **APPROVED / FROZEN — SUPERSEDED AUTHORIZATION STATE RECORDED BELOW**
 Version: **v1.0 — 2026-09-08**  
 Execution boundary at original freeze: **BOUNDED QA ACQUISITION ONLY**. Full acquisition was subsequently authorized by `docs/decisions/G3B_TUSHARE_FINAL_ACQUISITION_AUTHORIZATION.md`; this historical proposal is not rewritten beyond this status pointer.
 
