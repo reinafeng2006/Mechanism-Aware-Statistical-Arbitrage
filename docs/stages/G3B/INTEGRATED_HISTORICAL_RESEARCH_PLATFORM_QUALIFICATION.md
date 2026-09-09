@@ -1,6 +1,6 @@
 # Integrated Historical Research Platform Qualification
 
-Status: **EXTERNAL ACCESS / TRIAL / QUOTATION REQUIRED**  
+Status: **COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING — INSTITUTIONAL BRANCH SUSPENDED**
 Formal acquisition: **NOT AUTHORIZED**  
 Public-web commercial discovery: **STOPPED**
 
@@ -16,14 +16,18 @@ Preferred architecture:
 
 The historical platform is judged on reproducible research-database construction. It is not required to be the eventual low-latency live feed. Any future live source selection requires its own PIT, latency, reliability, licence and maintenance qualification.
 
-## Qualification priority
+## Active commercial-purchase branch
+
+The researcher has elected not to wait for university/institutional entitlement verification. The institutional branch is suspended. The next internal action occurs only after the researcher supplies non-sensitive commercial quotation or access information for an integrated platform. No new public-source discovery is authorized.
+
+## Prior qualification priority — retained as vendor context
 
 1. **CSMAR**
 2. **iFinD**
 3. **Choice**
 4. **RESSET / Wind**, only if the first three fail qualification or pricing
 
-This order is a bounded procurement workflow, not source selection. A lower-priority platform may qualify if a higher-priority one fails hard PIT/lineage requirements or is not economically obtainable.
+This order is retained as vendor context rather than an active institutional-access workflow. A commercial platform may be qualified only from an actual quote/access contract supplied by the researcher.
 
 ## Hard platform test
 
@@ -45,7 +49,13 @@ For one platform to become the primary historical research candidate it must dem
 
 `commercial-grade source ≠ automatically PIT-qualified`
 
-## External actions required — top three
+## Commercial quotation/access return required
+
+For an integrated commercial platform under consideration, return only: provider and exact quoted product/module names; quoted price/currency/term; C01/C03/C04/C05/E02/E03 coverage; stated 2013–2025 and SSE/SZSE coverage; Python/API/Data Loader/batch/export availability and limits; PIT/vintage/revision/timestamp statements; raw/unadjusted and corporate-action/adjustment semantics; licensing/storage/retention/automation restrictions; and trial or production-access status without credentials.
+
+Do not return usernames, passwords, tokens, phone numbers, personal email addresses or account screenshots.
+
+## Earlier platform-specific actions — suspended reference
 
 ### 1. CSMAR
 
@@ -59,7 +69,7 @@ Researcher-controlled action:
 
 Required evidence: entitlement/module result, exact tables/fields, coverage start, delisted-security coverage, raw-price semantics, publication/available/vintage/revision fields, export/API limits, licence and quoted term.
 
-Status: **EXTERNAL ACCESS / ENTITLEMENT / QUOTATION REQUIRED**.
+Status: **INSTITUTIONAL ENTITLEMENT BRANCH SUSPENDED / COMMERCIAL QUOTATION ACCEPTABLE**.
 
 ### 2. iFinD
 
@@ -73,7 +83,7 @@ Researcher-controlled action:
 
 Required evidence: account class, exact functions/indicators, raw/unadjusted flag semantics, corporate-action/factor ancestry, suspension/status fields, capital denominators, index constituents/weights, available-time/revision support, API limits, licence and price.
 
-Status: **EXTERNAL TRIAL / API ACCESS / QUOTATION REQUIRED**.
+Status: **COMMERCIAL QUOTATION / ACCESS REQUIRED**.
 
 ### 3. Choice
 
@@ -87,7 +97,7 @@ Researcher-controlled action:
 
 Required evidence: exact functions/fields, raw-price and adjustment semantics, historical security/status/action/capital/index coverage, first-available/vintage/revision support, API/export limits, licence and price.
 
-Status: **EXTERNAL TRIAL / API ACCESS / QUOTATION REQUIRED**.
+Status: **COMMERCIAL QUOTATION / ACCESS REQUIRED**.
 
 ## Prohibited actions and stopping rule
 
@@ -95,8 +105,8 @@ Status: **EXTERNAL TRIAL / API ACCESS / QUOTATION REQUIRED**.
 - No purchase, trial registration, personal-information submission or licence acceptance by the project agent.
 - No formal data acquisition or empirical inspection.
 - No source promotion based on marketing materials, trial availability or field count.
-- RESSET/Wind outreach starts only after a documented qualification or pricing failure for the first three, unless the researcher explicitly changes priority.
+- No vendor outreach or public-source expansion is performed internally while the commercial quotation/access record is pending.
 
-Resume only when the researcher returns non-sensitive authenticated access, trial or quotation evidence for a priority platform.
+Resume only when the researcher returns non-sensitive commercial access or quotation evidence for an integrated platform.
 
-`INTEGRATED HISTORICAL RESEARCH PLATFORM QUALIFICATION — EXTERNAL ACTION PENDING`
+`COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING`

@@ -1,16 +1,16 @@
 # G3B — External Access / Quotation Pending
 
-Status: **EXTERNAL ACCESS / QUOTATION PENDING — NO INTERNAL RESEARCH BLOCKER TO RESOLVE**  
+Status: **COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING — INSTITUTIONAL BRANCH SUSPENDED**
 As-of date: **2026-09-09**
 
 ## Boundary conclusion
 
 `Further CSMAR / RESSET qualification requires researcher-controlled institutional login, entitlement verification, or direct quotation and therefore cannot be resolved by further public-source audit.`
 
-The completed public/non-authenticated due diligence is the current internal limit. While this record is pending:
+The completed public/non-authenticated due diligence is the current internal limit. The researcher has suspended institutional-entitlement verification and elected to consider direct commercial purchase. While this record is pending:
 
 - do not conduct additional broad provider discovery;
-- do not infer institutional access from university branding, IP location or provider marketing;
+- do not pursue or wait for institutional access;
 - do not alter the frozen source hierarchy;
 - do not promote a source;
 - do not purchase, subscribe, accept paid terms or acquire formal data.
@@ -57,8 +57,8 @@ Institution and provider names are sufficient where needed to interpret entitlem
 
 ## Resume condition
 
-Internal qualification may resume only after the researcher returns at least one provider's non-sensitive entitlement or quotation result. The next internal task is a bounded contract comparison against C01/C03/C04/C05/E02/E03—not renewed broad source discovery and not acquisition.
+Internal qualification may resume only after the researcher returns a provider's non-sensitive commercial quotation or access result. The next internal task is a bounded contract comparison against C01/C03/C04/C05/E02/E03—not renewed broad source discovery and not acquisition.
 
 The controlling procurement objective is now [Integrated Historical Research Platform Qualification](INTEGRATED_HISTORICAL_RESEARCH_PLATFORM_QUALIFICATION.md), ordered CSMAR → iFinD → Choice → RESSET/Wind alternatives. Unauthenticated public-web commercial-source discovery is stopped.
 
-`G3B EXTERNAL ACCESS / QUOTATION PENDING — NO INTERNAL RESEARCH BLOCKER TO RESOLVE`
+`COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING`

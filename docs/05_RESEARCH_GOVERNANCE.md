@@ -36,7 +36,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B External Access Pending | **PENDING RESEARCHER-CONTROLLED ENTITLEMENT OR QUOTATION — NO INTERNAL RESEARCH BLOCKER** |
 | G3B-R5 Expanded Commercial Source Shortlist | **ACCEPTED / FROZEN — PUBLIC DISCOVERY CLOSED — NO PURCHASE AUTHORIZED** |
 | G3B Source Consolidation / Minimum Source Count | **APPROVED / FROZEN — HARD PIT/LINEAGE REQUIREMENTS SUPERSEDE CONSOLIDATION** |
-| Integrated Historical Research Platform Qualification | **EXTERNAL ACCESS / TRIAL / QUOTATION REQUIRED — PRIORITY CSMAR → IFIND → CHOICE** |
+| Integrated Historical Research Platform Qualification | **COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING — INSTITUTIONAL BRANCH SUSPENDED** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |
