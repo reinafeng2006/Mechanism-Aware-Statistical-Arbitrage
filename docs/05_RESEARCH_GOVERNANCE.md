@@ -30,6 +30,10 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B-QA-R2 Priority Access Execution | **INSTITUTIONAL ENTITLEMENT NOT VERIFIED / TUSHARE QA BLOCKED PENDING RESEARCHER-CONFIGURED CREDENTIAL** |
 | G3B-QA Sina bounded fallback | **COMPLETE — FALLBACK ONLY / AWAITING RESEARCHER REVIEW** |
 | G3B-QA-R3 Governance Companion Data Qualification | **COMPLETE / AWAITING RESEARCHER REVIEW** |
+| G3B-MV Minimum Viable PIT Acquisition Contract | **PROPOSED / AWAITING RESEARCHER APPROVAL — FORMAL ACQUISITION LOCKED** |
+| G3B-R4 Paid / Institutional Source Value Comparison | **ACCEPTED — EXTERNAL ACCESS / QUOTATION PENDING — NO PURCHASE AUTHORIZED** |
+| CSMAR / RESSET Access & Quotation Audit | **ACCEPTED — PUBLIC/NON-AUTHENTICATED LIMIT REACHED** |
+| G3B External Access Pending | **PENDING RESEARCHER-CONTROLLED ENTITLEMENT OR QUOTATION — NO INTERNAL RESEARCH BLOCKER** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |
