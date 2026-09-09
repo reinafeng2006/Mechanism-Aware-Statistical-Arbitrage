@@ -6,6 +6,7 @@ No research measurements or outcomes are computed.
 from __future__ import annotations
 
 import argparse
+import atexit
 import datetime as dt
 import hashlib
 import json
@@ -46,6 +47,47 @@ def exchange_code(code: str) -> str | None:
     return None
 
 
+def successful_request_ids(out: Path) -> set[str]:
+    """Return only request IDs backed by an immutable successful payload."""
+    successful: set[str] = set()
+    for path in out.glob("*.json"):
+        if "__" not in path.stem or path.name.startswith(("manifest", "stop_")):
+            continue
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if payload.get("code") == 0:
+            parts = path.stem.split("__")
+            if len(parts) >= 3:
+                successful.add(parts[2])
+    return successful
+
+
+def immutable_payload_path(out: Path, contract: str, api_name: str, rid: str) -> Path:
+    base = out / f"{contract}__{api_name}__{rid}.json"
+    if not base.exists():
+        return base
+    index = 1
+    while True:
+        candidate = out / f"{contract}__{api_name}__{rid}__retry{index}.json"
+        if not candidate.exists():
+            return candidate
+        index += 1
+
+
+def write_stop_manifest(out: Path, reason: str, event: dict) -> None:
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    record = {
+        "status": "SAFELY PAUSED — AUTOMATIC STOP",
+        "reason": reason,
+        "event": event,
+        "credential_recorded": False,
+        "resume_authorized": False,
+    }
+    (out / f"stop_{stamp}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--c06-run", required=True)
@@ -56,21 +98,30 @@ def main() -> None:
     universe = sorted(filter(None, (exchange_code(x.strip()) for x in universe_file.read_text(encoding="utf-8").splitlines())))
     out = ROOT / "data" / "raw" / "g3b_full" / "tushare" / args.run_id
     out.mkdir(parents=True, exist_ok=True)
+    lock = out.parent / f"{args.run_id}.acquisition.lock"
+    try:
+        descriptor = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
+        raise SystemExit(f"Acquisition scope is already locked: {lock}")
+    os.write(descriptor, json.dumps({"pid": os.getpid(), "run_id": args.run_id,
+                                     "started_utc": dt.datetime.now(dt.timezone.utc).isoformat()}).encode())
+    os.close(descriptor)
+    atexit.register(lambda: lock.unlink(missing_ok=True))
     journal = out / "acquisition_journal.jsonl"
 
     requests: list[tuple[str, str, dict, str, float]] = []
     basic_fields = "ts_code,symbol,name,area,industry,market,exchange,curr_type,list_status,list_date,delist_date,is_hs"
     for status in ("L", "D", "P"):
-        requests.append(("C01", "stock_basic", {"exchange": "", "list_status": status}, basic_fields, 61.0))
+        requests.append(("C01", "stock_basic", {"exchange": "", "list_status": status}, basic_fields, 0.4))
     daily_fields = "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount"
     e02_fields = "ts_code,trade_date,close,turnover_rate,turnover_rate_f,volume_ratio,total_share,float_share,free_share,total_mv,circ_mv"
     for ts_code in universe:
         params = {"ts_code": ts_code, "start_date": START, "end_date": END}
-        requests.append(("C03", "daily", params, daily_fields, 1.3))
-        requests.append(("E02", "daily_basic", params, e02_fields, 61.0))
-    requests.append(("E03-A", "index_daily", {"ts_code": "000300.SH", "start_date": START, "end_date": END}, daily_fields, 61.0))
+        requests.append(("C03", "daily", params, daily_fields, 0.4))
+        requests.append(("E02", "daily_basic", params, e02_fields, 0.4))
+    requests.append(("E03-A", "index_daily", {"ts_code": "000300.SH", "start_date": START, "end_date": END}, daily_fields, 0.4))
 
-    existing = {p.stem.split("__")[-1] for p in out.glob("*.json") if "__" in p.stem}
+    existing = successful_request_ids(out)
     completed = 0
     for contract, api_name, params, fields, delay in requests:
         rid = request_id(api_name, params, fields)
@@ -85,11 +136,8 @@ def main() -> None:
                 result = call(api_name, params, fields)
                 code = result.get("code")
                 message = result.get("msg") or ""
-                if code != 0 and ("频率" in message or "超限" in message) and attempt < 6:
-                    time.sleep(max(delay, 61.0))
-                    continue
                 encoded = json.dumps(result, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
-                path = out / f"{contract}__{api_name}__{rid}.json"
+                path = immutable_payload_path(out, contract, api_name, rid)
                 path.write_bytes(encoded)
                 data = result.get("data") or {}
                 event = {"contract": contract, "api_name": api_name, "request_id": rid, "params": params,
@@ -99,6 +147,17 @@ def main() -> None:
                          "file": path.name, "attempts": attempt, "credential_recorded": False}
                 with journal.open("a", encoding="utf-8") as handle:
                     handle.write(json.dumps(event, ensure_ascii=False) + "\n")
+                if code != 0:
+                    if "频率" in message or "超限" in message or "权限" in message or code in (2002, 40203):
+                        write_stop_manifest(out, "AUTHENTICATION / PERMISSION / RATE-LIMIT MISMATCH", event)
+                        raise SystemExit(2)
+                    write_stop_manifest(out, "SOURCE CONTRACT API ERROR", event)
+                    raise SystemExit(3)
+                missing_fields = sorted(set(fields.split(",")) - set(event["returned_fields"]))
+                if missing_fields:
+                    event["missing_required_fields"] = missing_fields
+                    write_stop_manifest(out, "UNEXPECTED SCHEMA CHANGE", event)
+                    raise SystemExit(4)
                 completed += 1
                 print(json.dumps({"completed": completed, "total": len(requests), "contract": contract, "api": api_name, "code": code, "rows": event["row_count"]}), flush=True)
                 break
