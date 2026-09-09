@@ -4,6 +4,8 @@ Status: **PROPOSED — SOURCE-ROLE / PROCUREMENT DECISION OPEN**
 
 The acquisition constraint now permits a modest cost when it materially improves PIT integrity, lineage, coverage, reproducibility or operational reliability. No purchase is authorized. The bounded comparison and conditional procurement order are recorded in [G3B-R4](G3B_R4_PAID_INSTITUTIONAL_SOURCE_VALUE_COMPARISON.md).
 
+The final bundle must also apply the frozen [Source Consolidation / Minimum Source Count](../../decisions/G3B_SOURCE_CONSOLIDATION_MINIMUM_SOURCE_COUNT.md) objective: prefer one qualified integrated C01/C03/C04/C05/E02/E03 platform plus the preserved C06 authoritative exception and documented fallbacks. Fewer sources is preferred only after hard PIT/lineage qualification.
+
 | Contract | Proposed minimum source class | Current executable state | Source role / boundary |
 |---|---|---|---|
 | C01 | Official SSE/SZSE security, listing and termination records; C06 official snapshot linkage | Public records are reachable; structured history requires bounded deterministic reconstruction | Limited canonical architecture, `QUALIFIED WITH LIMITATIONS` |

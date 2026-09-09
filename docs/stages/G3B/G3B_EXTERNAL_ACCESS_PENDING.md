@@ -24,13 +24,15 @@ The completed public/non-authenticated due diligence is the current internal lim
 
 This ordering is a due-diligence sequence, not a source selection or quality ranking beyond the already documented qualification boundaries.
 
+The researcher subsequently authorized one bounded shortlist expansion. [G3B-R5](G3B_R5_EXPANDED_COMMERCIAL_SOURCE_SHORTLIST.md) adds Wind, iFinD Quant API and Choice Quant API/Data Service without promoting any source. iFinD and Choice are prioritized for future researcher-controlled trial/schema QA; further broad discovery remains closed.
+
 ## Non-sensitive researcher return record
 
 The researcher should return only the following information for each provider actually checked:
 
 | Field | Permitted return content |
 |---|---|
-| `provider` | CSMAR or RESSET |
+| `provider` | CSMAR, RESSET, iFinD, Choice or Wind |
 | `institutional_access_exists` | yes / no / unclear |
 | `accessible_module_names` | exact database/module names shown as accessible |
 | `contract_coverage` | relevant C01/C03/C04/C05/E02/E03 coverage |
@@ -56,5 +58,7 @@ Institution and provider names are sufficient where needed to interpret entitlem
 ## Resume condition
 
 Internal qualification may resume only after the researcher returns at least one provider's non-sensitive entitlement or quotation result. The next internal task is a bounded contract comparison against C01/C03/C04/C05/E02/E03—not renewed broad source discovery and not acquisition.
+
+The controlling procurement objective is now [Integrated Historical Research Platform Qualification](INTEGRATED_HISTORICAL_RESEARCH_PLATFORM_QUALIFICATION.md), ordered CSMAR → iFinD → Choice → RESSET/Wind alternatives. Unauthenticated public-web commercial-source discovery is stopped.
 
 `G3B EXTERNAL ACCESS / QUOTATION PENDING — NO INTERNAL RESEARCH BLOCKER TO RESOLVE`

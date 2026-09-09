@@ -34,11 +34,19 @@ Compare sources neutrally on PIT/vintage integrity, historical and universe cove
 
 Each data class requires `Canonical Source + documented Fallback Source`. Missing canonical observations must not automatically trigger substitution. Every fallback substitution must be explicit, reason-coded, scoped by field/date/security, provenance-preserving, separately versioned where necessary, and auditable downstream. Provider mixing must never be invisible to later measurement or model code.
 
+### Source Consolidation / Minimum Source Count
+
+The preferred production architecture is:
+
+`one primary integrated data platform + the minimum number of authoritative exceptions + documented fallbacks`.
+
+Among architectures that satisfy hard data-integrity and PIT requirements, prefer fewer independently maintained sources. Evaluate integrated C01/C03/C04/C05/E02/E03 coverage, cross-module PIT/identifier/timestamp/calendar/corporate-action consistency, API/export and licence consistency, maintainability and `Source Fragmentation`. Never consolidate through a source that fails a hard PIT or lineage contract. The official C06 path remains a permitted authoritative exception; Sina/Tushare remain fallbacks unless separately promoted. See the [formal decision](../../decisions/G3B_SOURCE_CONSOLIDATION_MINIMUM_SOURCE_COUNT.md).
+
 `minimum capability` is the coarsest granularity preserving the frozen construct and ordering/availability semantics. `enhancement capability` is finer/richer timing whose incremental value remains unproven. No exact clock is selected.
 
 | Decision | Classification |
 |---|---|
-| Neutral criteria, conditional simplicity, canonical/fallback, no silent mixing, minimum/enhancement clock semantics | READY TO FREEZE BEFORE ACQUISITION |
+| Neutral criteria, conditional simplicity, canonical/fallback, no silent mixing, minimum/enhancement clock semantics, source-consolidation preference and fragmentation risk | READY TO FREEZE BEFORE ACQUISITION |
 | Source identity, license, price, stability and coverage | PROVIDER-AUDIT INFORMED |
 | Field meaning, native timestamps, schema continuity and attainable clocks | FIELD/SCHEMA AUDIT INFORMED |
 | Final contracts, credentials, quotas and refresh operations | DEFER UNTIL FORMAL ACQUISITION |

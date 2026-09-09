@@ -34,6 +34,9 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B-R4 Paid / Institutional Source Value Comparison | **ACCEPTED — EXTERNAL ACCESS / QUOTATION PENDING — NO PURCHASE AUTHORIZED** |
 | CSMAR / RESSET Access & Quotation Audit | **ACCEPTED — PUBLIC/NON-AUTHENTICATED LIMIT REACHED** |
 | G3B External Access Pending | **PENDING RESEARCHER-CONTROLLED ENTITLEMENT OR QUOTATION — NO INTERNAL RESEARCH BLOCKER** |
+| G3B-R5 Expanded Commercial Source Shortlist | **ACCEPTED / FROZEN — PUBLIC DISCOVERY CLOSED — NO PURCHASE AUTHORIZED** |
+| G3B Source Consolidation / Minimum Source Count | **APPROVED / FROZEN — HARD PIT/LINEAGE REQUIREMENTS SUPERSEDE CONSOLIDATION** |
+| Integrated Historical Research Platform Qualification | **EXTERNAL ACCESS / TRIAL / QUOTATION REQUIRED — PRIORITY CSMAR → IFIND → CHOICE** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |
