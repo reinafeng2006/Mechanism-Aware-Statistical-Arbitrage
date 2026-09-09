@@ -1,6 +1,6 @@
 # Integrated Historical Research Platform Qualification
 
-Status: **COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING — INSTITUTIONAL BRANCH SUSPENDED**
+Status: **R6 ACCEPTED / FROZEN — G3B-R7 JQDATA AUTHENTICATED ACCESS PENDING**
 Formal acquisition: **NOT AUTHORIZED**  
 Public-web commercial discovery: **STOPPED**
 
@@ -19,6 +19,8 @@ The historical platform is judged on reproducible research-database construction
 ## Active commercial-purchase branch
 
 The researcher has elected not to wait for university/institutional entitlement verification. The institutional branch is suspended. The next internal action occurs only after the researcher supplies non-sensitive commercial quotation or access information for an integrated platform. No new public-source discovery is authorized.
+
+One bounded exception was subsequently authorized for JQData, Tushare, BaoStock and source-specific AKShare paths. [G3B-R6](G3B_R6_LOW_COST_INTEGRATED_SOURCE_QUALIFICATION.md) is accepted and frozen. JQData is the provisional best low-cost integrated candidate, and [G3B-R7](G3B_R7_JQDATA_AUTHENTICATED_QUALIFICATION_CONTRACT.md) is the only authorized next qualification task. Broad discovery remains closed.
 
 ## Prior qualification priority — retained as vendor context
 

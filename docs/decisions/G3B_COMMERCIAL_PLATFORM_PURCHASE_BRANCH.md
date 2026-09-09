@@ -1,11 +1,11 @@
 # G3B Commercial Platform Purchase Branch
 
-Decision status: **ACTIVE — COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING**  
+Decision status: **PAUSED — BOUNDED LOW-COST INTEGRATED SOURCE RECONSIDERATION COMPLETE**
 Decision date: **2026-09-09**
 
 ## Researcher decision
 
-The researcher will not wait for university or institutional entitlement verification and is willing to purchase an integrated historical research data platform directly. The institutional-entitlement branch is **SUSPENDED**. It is not rejected permanently, but no internal work should wait on or pursue it under the current branch.
+The researcher will not wait for university or institutional entitlement verification and is willing to purchase an integrated historical research data platform directly. The institutional-entitlement branch remains **SUSPENDED**. The direct purchase branch is now paused, not revoked, while researcher-specified low-cost candidates are reconsidered under [G3B Low-Cost Integrated Source Reconsideration](G3B_LOW_COST_INTEGRATED_RECONSIDERATION.md).
 
 ## Preserved acquisition objective
 
@@ -28,4 +28,4 @@ Commercial purchase, vendor reputation and integrated coverage do not waive PIT 
 - Do not purchase, register a trial, accept terms or acquire data automatically.
 - Resume internal qualification only after the researcher provides non-sensitive commercial quotation or access information for an integrated platform.
 
-`COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING`
+`DIRECT COMMERCIAL PURCHASE BRANCH PAUSED / LOW-COST RECONSIDERATION AWAITING REVIEW`

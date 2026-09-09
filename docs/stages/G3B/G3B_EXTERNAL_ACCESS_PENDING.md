@@ -1,6 +1,6 @@
 # G3B — External Access / Quotation Pending
 
-Status: **COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING — INSTITUTIONAL BRANCH SUSPENDED**
+Status: **G3B-R7 JQDATA AUTHENTICATED ACCESS PENDING**
 As-of date: **2026-09-09**
 
 ## Boundary conclusion
@@ -8,6 +8,8 @@ As-of date: **2026-09-09**
 `Further CSMAR / RESSET qualification requires researcher-controlled institutional login, entitlement verification, or direct quotation and therefore cannot be resolved by further public-source audit.`
 
 The completed public/non-authenticated due diligence is the current internal limit. The researcher has suspended institutional-entitlement verification and elected to consider direct commercial purchase. While this record is pending:
+
+The researcher later authorized one bounded exception for JQData, Tushare, BaoStock and source-specific AKShare paths. That exception is complete; broad provider discovery remains closed.
 
 - do not conduct additional broad provider discovery;
 - do not pursue or wait for institutional access;
@@ -61,4 +63,4 @@ Internal qualification may resume only after the researcher returns a provider's
 
 The controlling procurement objective is now [Integrated Historical Research Platform Qualification](INTEGRATED_HISTORICAL_RESEARCH_PLATFORM_QUALIFICATION.md), ordered CSMAR → iFinD → Choice → RESSET/Wind alternatives. Unauthenticated public-web commercial-source discovery is stopped.
 
-`COMMERCIAL PLATFORM PURCHASE / ACCESS PENDING`
+`G3B-R7 JQDATA AUTHENTICATED QUALIFICATION / AWAITING RESEARCHER ACCESS`
