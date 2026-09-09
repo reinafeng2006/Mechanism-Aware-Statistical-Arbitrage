@@ -20,7 +20,11 @@ foreach ($m in $mapped) {
 }
 
 $broken = @()
-Get-ChildItem $RepositoryRoot -Recurse -File -Filter '*.md' | ForEach-Object {
+$markdownRoots = @('docs', 'literature', 'learning', 'registers') | ForEach-Object { Join-Path $RepositoryRoot $_ }
+$markdownFiles = @($markdownRoots | ForEach-Object { Get-ChildItem -LiteralPath $_ -Recurse -File -Filter '*.md' })
+$readme = Join-Path $RepositoryRoot 'README.md'
+if (Test-Path -LiteralPath $readme) { $markdownFiles += Get-Item -LiteralPath $readme }
+$markdownFiles | ForEach-Object {
     $file = $_
     $text = Get-Content -Raw -LiteralPath $file.FullName
     foreach ($match in [regex]::Matches($text, '\[[^\]]*\]\(([^)]+)\)')) {

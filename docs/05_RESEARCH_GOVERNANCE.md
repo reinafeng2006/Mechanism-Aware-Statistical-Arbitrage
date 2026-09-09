@@ -41,7 +41,8 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B-R7 JQData Authenticated Qualification | **PAUSED — ACCESS COST EXCEEDS RESEARCHER BUDGET** |
 | G3B-R8 Tushare Authenticated Integrated QA | **ACCEPTED / COMPLETE — PROPOSED PRIMARY SUBJECT TO FINAL ACQUISITION CONTRACT** |
 | G3B Tushare Final Acquisition Readiness | **APPROVED / FROZEN — G3B-FULL AUTHORIZED** |
-| G3B-FULL Formal PIT Historical Acquisition | **ACTIVE — ACQUISITION/STRUCTURAL QA ONLY** |
+| G3B-FULL Formal PIT Historical Acquisition | **SAFELY PAUSED — AUTHENTICATED PERMISSION MISMATCH** |
+| G3B-R9 Tushare Permission Delta / E02 Resolution Audit | **COMPLETE / AWAITING RESEARCHER DECISION — NO PURCHASE OR RESUME AUTHORIZED** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |

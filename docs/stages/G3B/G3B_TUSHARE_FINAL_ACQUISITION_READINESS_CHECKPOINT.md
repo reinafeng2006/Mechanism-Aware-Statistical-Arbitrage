@@ -2,6 +2,8 @@
 
 Status: **APPROVED / FROZEN**
 Formal acquisition: **G3B-FULL AUTHORIZED**
+
+> **Superseded execution assumption:** subsequent authenticated G3B-FULL requests established approximately one request/hour for `stock_basic` and `daily_basic`, superseding this checkpoint's one-request/minute planning assumption. G3B-FULL is now `SAFELY PAUSED — AUTHENTICATED PERMISSION MISMATCH`; see `G3B_R9_TUSHARE_PERMISSION_DELTA_E02_RESOLUTION_AUDIT.md`. The source authorization and governance boundaries remain historical freeze records, but execution must not resume without a new decision.
 Platform status: **TUSHARE PRIMARY INTEGRATED HISTORICAL PLATFORM — CURRENTLY QUALIFIED PATHS ONLY**
 
 ## 1. Accepted R8 contract status
