@@ -1,8 +1,8 @@
 # G3B-R8 — Tushare Authenticated Integrated-Platform QA Checkpoint
 
-Status: **ACCEPTED / COMPLETE**  
-Evidence class: **AUDIT/QA — NON-EMPIRICAL**  
-Formal acquisition: **NOT AUTHORIZED**  
+Status: **ACCEPTED / COMPLETE**
+Evidence class: **AUDIT/QA — NON-EMPIRICAL**
+Formal acquisition: **NOT AUTHORIZED**
 Source promotion: **NOT AUTHORIZED**
 
 ## Scope and credential boundary

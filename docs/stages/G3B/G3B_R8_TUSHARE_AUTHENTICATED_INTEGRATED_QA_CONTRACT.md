@@ -1,7 +1,7 @@
 # G3B-R8 — Tushare Authenticated Integrated-Platform QA
 
-Status: **ACCEPTED / COMPLETE**  
-Formal acquisition: **NOT AUTHORIZED**  
+Status: **ACCEPTED / COMPLETE**
+Formal acquisition: **NOT AUTHORIZED**
 Higher-tier purchase: **NOT AUTHORIZED**
 
 ## Objective

@@ -1,6 +1,6 @@
 # G3B Tushare Integrated-Candidate Reopening
 
-Decision status: **R8 ACCEPTED — PROPOSED PRIMARY SUBJECT TO FINAL ACQUISITION CONTRACT**  
+Decision status: **R8 ACCEPTED — PROPOSED PRIMARY SUBJECT TO FINAL ACQUISITION CONTRACT**
 Decision date: **2026-09-09**
 
 The researcher paused JQData R7 because required access exceeds the acceptable budget and reopened only Tushare as a bounded integrated-platform candidate.
