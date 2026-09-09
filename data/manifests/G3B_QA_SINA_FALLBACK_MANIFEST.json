@@ -1,0 +1,32 @@
+{
+  "manifest_id": "G3B-QA-SINA-FALLBACK-CHECKPOINT-2026-09-09",
+  "status": "AUDIT/QA — FALLBACK ONLY — NON-EMPIRICAL",
+  "canonical_approval": false,
+  "scope": {
+    "securities": ["sz000157", "sz000404", "sh600031", "sh600055"],
+    "benchmark": "sh000300",
+    "date_slices": [["2013-01-07", "2013-01-11"], ["2025-12-29", "2025-12-31"]]
+  },
+  "snapshots": [
+    {
+      "path": "data/raw/g3b_qa/sina_fallback_qa_v1",
+      "manifest_sha256": "7F88547AAB6B2AF8CD3AAE9083AD706FE8BF2CC5E59819A39E42E7CA90E09ED3",
+      "request_count": 17,
+      "all_http_200": true,
+      "use_status": "AUDIT/QA"
+    },
+    {
+      "path": "data/raw/g3b_qa/sina_fallback_qa_v1_repeat",
+      "manifest_sha256": "AFFCE17955C620673816955198246BDBD4F194E6A71B6D28133D47FDE844182D",
+      "request_count": 17,
+      "all_http_200": true,
+      "use_status": "AUDIT/QA — REPRODUCIBILITY REPEAT"
+    }
+  ],
+  "reproducibility": {
+    "identical_raw_response_hashes": 17,
+    "compared_raw_responses": 17,
+    "result": "PASS FOR IMMEDIATE REPEAT ONLY"
+  },
+  "note": "Raw payloads are Git-ignored and immutable. The first generated raw manifest contains an incorrect derived factor-date summary caused by a local parser assumption; raw factor payloads and hashes are unaffected. The checkpoint uses the raw d/f schema and records the correction without overwriting either snapshot."
+}

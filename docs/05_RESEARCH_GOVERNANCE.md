@@ -27,6 +27,8 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | Final Formal Acquisition Proposal | **APPROVED / FROZEN — G3B-QA ONLY AUTHORIZED** |
 | G3B-QA Bounded Acquisition & Structural Validation | **PARTIALLY COMPLETE / BLOCKED BY AUTHORIZED MARKET-DATA ACCESS — FULL-UNIVERSE EXPANSION LOCKED** |
 | G3B-QA-R1 Authorized Market-Data Access Resolution | **COMPLETE / AWAITING RESEARCHER DECISION** |
+| G3B-QA-R2 Priority Access Execution | **INSTITUTIONAL ENTITLEMENT NOT VERIFIED / TUSHARE QA BLOCKED PENDING RESEARCHER-CONFIGURED CREDENTIAL** |
+| G3B-QA Sina bounded fallback | **COMPLETE — FALLBACK ONLY / AWAITING RESEARCHER REVIEW** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |
