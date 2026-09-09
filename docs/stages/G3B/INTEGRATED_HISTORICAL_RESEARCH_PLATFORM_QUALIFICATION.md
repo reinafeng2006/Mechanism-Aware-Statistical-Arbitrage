@@ -1,6 +1,6 @@
 # Integrated Historical Research Platform Qualification
 
-Status: **R6 ACCEPTED / FROZEN — G3B-R7 JQDATA AUTHENTICATED ACCESS PENDING**
+Status: **TUSHARE R8 ACCEPTED — PROPOSED PRIMARY SUBJECT TO FINAL ACQUISITION CONTRACT**
 Formal acquisition: **NOT AUTHORIZED**  
 Public-web commercial discovery: **STOPPED**
 
@@ -20,7 +20,7 @@ The historical platform is judged on reproducible research-database construction
 
 The researcher has elected not to wait for university/institutional entitlement verification. The institutional branch is suspended. The next internal action occurs only after the researcher supplies non-sensitive commercial quotation or access information for an integrated platform. No new public-source discovery is authorized.
 
-One bounded exception was subsequently authorized for JQData, Tushare, BaoStock and source-specific AKShare paths. [G3B-R6](G3B_R6_LOW_COST_INTEGRATED_SOURCE_QUALIFICATION.md) is accepted and frozen. JQData is the provisional best low-cost integrated candidate, and [G3B-R7](G3B_R7_JQDATA_AUTHENTICATED_QUALIFICATION_CONTRACT.md) is the only authorized next qualification task. Broad discovery remains closed.
+One bounded exception was subsequently authorized for JQData, Tushare, BaoStock and source-specific AKShare paths. [G3B-R6](G3B_R6_LOW_COST_INTEGRATED_SOURCE_QUALIFICATION.md) remains accepted and frozen, [G3B-R7](G3B_R7_JQDATA_AUTHENTICATED_QUALIFICATION_CONTRACT.md) is paused because its access cost exceeds the researcher's budget, and the bounded [G3B-R8 QA](G3B_R8_TUSHARE_AUTHENTICATED_QA_CHECKPOINT.md) is complete awaiting researcher review. Broad discovery remains closed.
 
 ## Prior qualification priority — retained as vendor context
 

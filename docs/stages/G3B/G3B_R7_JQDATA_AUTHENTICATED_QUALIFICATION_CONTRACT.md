@@ -1,6 +1,6 @@
 # G3B-R7 — JQData Authenticated Integrated-Platform Qualification
 
-Status: **AUTHORIZED / AUTHENTICATED ACCESS REQUIRED — QA NOT STARTED**  
+Status: **PAUSED — ACCESS COST EXCEEDS RESEARCHER BUDGET**
 Formal acquisition: **NOT AUTHORIZED**  
 Platform purchase: **NOT AUTHORIZED**
 
@@ -116,4 +116,4 @@ No purchase, full-history acquisition, source promotion, pair construction, rela
 
 No authenticated access has been supplied in the current project context. Therefore the QA has not started and all authenticated hard tests remain unresolved.
 
-`G3B-R7 JQDATA AUTHENTICATED QUALIFICATION / AWAITING RESEARCHER ACCESS`
+`G3B-R7 JQDATA AUTHENTICATED QUALIFICATION PAUSED / TUSHARE R8 ACTIVE`

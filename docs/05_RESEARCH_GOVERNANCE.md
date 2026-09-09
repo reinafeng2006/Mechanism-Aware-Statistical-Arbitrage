@@ -38,7 +38,8 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B Source Consolidation / Minimum Source Count | **APPROVED / FROZEN — HARD PIT/LINEAGE REQUIREMENTS SUPERSEDE CONSOLIDATION** |
 | Integrated Historical Research Platform Qualification | **DIRECT PURCHASE BRANCH PAUSED — LOW-COST RECONSIDERATION AWAITING REVIEW** |
 | G3B-R6 Low-Cost Integrated Source Qualification | **ACCEPTED / FROZEN — JQDATA PROVISIONAL BEST LOW-COST INTEGRATED** |
-| G3B-R7 JQData Authenticated Qualification | **AUTHORIZED / AUTHENTICATED ACCESS REQUIRED — QA NOT STARTED** |
+| G3B-R7 JQData Authenticated Qualification | **PAUSED — ACCESS COST EXCEEDS RESEARCHER BUDGET** |
+| G3B-R8 Tushare Authenticated Integrated QA | **ACCEPTED / COMPLETE — PROPOSED PRIMARY SUBJECT TO FINAL ACQUISITION CONTRACT** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **LOCKED** |
 | G5 Implementation Readiness | **LOCKED** |

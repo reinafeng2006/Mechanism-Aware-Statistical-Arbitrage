@@ -1,6 +1,6 @@
 # G3B — External Access / Quotation Pending
 
-Status: **G3B-R7 JQDATA AUTHENTICATED ACCESS PENDING**
+Status: **G3B-R8 ACCEPTED / FINAL ACQUISITION CONTRACT PENDING**
 As-of date: **2026-09-09**
 
 ## Boundary conclusion
@@ -63,4 +63,6 @@ Internal qualification may resume only after the researcher returns a provider's
 
 The controlling procurement objective is now [Integrated Historical Research Platform Qualification](INTEGRATED_HISTORICAL_RESEARCH_PLATFORM_QUALIFICATION.md), ordered CSMAR → iFinD → Choice → RESSET/Wind alternatives. Unauthenticated public-web commercial-source discovery is stopped.
 
-`G3B-R7 JQDATA AUTHENTICATED QUALIFICATION / AWAITING RESEARCHER ACCESS`
+Authenticated access became available and the bounded R8 run is recorded in [G3B-R8 QA checkpoint](G3B_R8_TUSHARE_AUTHENTICATED_QA_CHECKPOINT.md). No credential, formal acquisition or source promotion is recorded here.
+
+`G3B-R8 TUSHARE AUTHENTICATED QA ACCEPTED / FINAL ACQUISITION CONTRACT PENDING`
