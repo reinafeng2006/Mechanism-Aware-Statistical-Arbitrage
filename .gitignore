@@ -1,3 +1,10 @@
 # User-managed literature full texts are local, immutable process inputs.
 literature/library/*
 !literature/library/.gitkeep
+
+# Formal acquisition payloads remain local and immutable; manifests/reports are versioned separately.
+data/raw/
+data/outcomes/
+data/extensions/
+data/post_2025/
+data/qa_work/

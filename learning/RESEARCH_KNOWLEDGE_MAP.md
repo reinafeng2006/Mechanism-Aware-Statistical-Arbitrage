@@ -47,7 +47,7 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **G3B-03:** **ACCEPTED / FROZEN.** Official dated CSRC/CAPCO classification snapshots support conservative as-of membership from publication time onward. Taxonomy version, snapshot age/staleness, listing/code lineage and source provenance remain explicit. The primary universe is 34/35; 36/37 are excluded; 38/40/43 are out-of-primary and extension-eligible only. `2013-01-07` is the formal lower acquisition boundary.
 
-**Final acquisition design:** **APPROVED / FROZEN — G3B-QA ONLY.** Approved source classes prioritize venue-authorized raw market/security records, official CSRC/CAPCO classification snapshots and internal immutable lineage. Daily/native-event minimum capability, a 2013-01-07–2025-12-31 primary zone, POST-2025 quarantine, E02/E03 scope and strict outcome quarantine are frozen. Full-universe expansion is not authorized.
+**Final acquisition design:** **APPROVED / FROZEN — G3B-QA ONLY.** Approved source classes prioritize venue-authorized raw market/security records, official CSRC/CAPCO classification snapshots and internal immutable lineage. Daily/native-event minimum capability, a 2013-01-07–2025-12-31 primary zone, POST-2025 quarantine, E02/E03 scope and strict outcome quarantine are frozen. G3B-QA is **PARTIALLY COMPLETE / BLOCKED BY AUTHORIZED MARKET-DATA ACCESS**; its C03 condition is access/budget, not strategy infeasibility. The access-resolution audit found no currently verified authorized route and awaits researcher choice. Full-universe expansion is not authorized.
 
 ## Defined concepts / models
 
