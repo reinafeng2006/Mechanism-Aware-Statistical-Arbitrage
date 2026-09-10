@@ -43,7 +43,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B Tushare Final Acquisition Readiness | **APPROVED / FROZEN — G3B-FULL AUTHORIZED** |
 | G3B-FULL Formal PIT Historical Acquisition | **STRUCTURAL RESOLUTION ACCEPTED / DATASET NOT FROZEN** |
 | G3B-C1 Structural Data Contract Amendment | **APPROVED / FROZEN — NO DATASET OR MEASUREMENT AUTHORIZATION** |
-| G3B-F2 Core Dataset Freeze Readiness | **INITIALIZED / AUDIT ONLY — DATASET NOT FROZEN** |
+| G3B-F2 Core Dataset Freeze Readiness | **CLOSURE COMPLETE / CORE DATASET ELIGIBLE FOR FREEZE — RESEARCHER FREEZE DECISION REQUIRED / DATASET NOT FROZEN** |
 | G3B-R9 Tushare Permission Delta / E02 Resolution Audit | **OPTION A SELECTED — 2000+ POINT TIER CONFIRMED / NO ADDITIONAL PURCHASE** |
 | G3B-R9 Tushare Authenticated Permission Re-check | **PASS — C01/E02 ACCESS BLOCKER RESOLVED / PIT-VINTAGE LIMITATIONS PRESERVED** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
