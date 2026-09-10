@@ -41,7 +41,9 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B-R7 JQData Authenticated Qualification | **PAUSED — ACCESS COST EXCEEDS RESEARCHER BUDGET** |
 | G3B-R8 Tushare Authenticated Integrated QA | **ACCEPTED / COMPLETE — PROPOSED PRIMARY SUBJECT TO FINAL ACQUISITION CONTRACT** |
 | G3B Tushare Final Acquisition Readiness | **APPROVED / FROZEN — G3B-FULL AUTHORIZED** |
-| G3B-FULL Formal PIT Historical Acquisition | **STRUCTURAL RESOLUTION COMPLETE / C04-C05 FAIL / AWAITING DATASET FREEZE DECISION** |
+| G3B-FULL Formal PIT Historical Acquisition | **STRUCTURAL RESOLUTION ACCEPTED / DATASET NOT FROZEN** |
+| G3B-C1 Structural Data Contract Amendment | **APPROVED / FROZEN — NO DATASET OR MEASUREMENT AUTHORIZATION** |
+| G3B-F2 Core Dataset Freeze Readiness | **INITIALIZED / AUDIT ONLY — DATASET NOT FROZEN** |
 | G3B-R9 Tushare Permission Delta / E02 Resolution Audit | **OPTION A SELECTED — 2000+ POINT TIER CONFIRMED / NO ADDITIONAL PURCHASE** |
 | G3B-R9 Tushare Authenticated Permission Re-check | **PASS — C01/E02 ACCESS BLOCKER RESOLVED / PIT-VINTAGE LIMITATIONS PRESERVED** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
@@ -62,6 +64,10 @@ Description, prediction, intervention and economic validation are separate claim
 ## Point-in-time and causal discipline
 
 Only information lawfully available by the decision time may enter an event-time design. Future catch-up, reversal, convergence or normalization is outcome-only validation. Material artifacts must be deterministic; development and held-out evidence remain separated; stopping rules must be frozen before their relevant empirical inspection.
+
+## Dataset freeze and measurement eligibility
+
+`Core Dataset Structural Freeze ≠ Candidate Measurement Authorization`. Raw-data preservation does not make every observation eligible. `CORPORATE_ACTION STATUS UNRESOLVED` and `UNKNOWN MISSINGNESS` are durable downstream controls: freeze and transformation cannot clear or silently recode them. Candidate computation must enforce the approved C04/C05 eligibility rule with traceable rule/version lineage. `raw observation exists ≠ observation eligible for every measurement`.
 
 ## Observatory quarantine
 

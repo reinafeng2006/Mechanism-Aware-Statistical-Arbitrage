@@ -18,4 +18,15 @@ Status: **APPROVED / FROZEN — 2026-09-08**
 | Structural-linkage rejection | Static/delayed company relationship context | May detect changes late and miss unreported relationship evolution |
 | U epistemic uncertainty | U0 plus U4 diagnostics | Does not quantify belief mass, calibrated uncertainty or an abstention policy |
 
+## Proposed G3B-C1 data-qualification additions
+
+Status: **APPROVED / FROZEN BY G3B-C1 — 2026-09-10**. These rows preserve the frozen constructs and add acquisition-derived gaps; they do not authorize measurements. Their C04/C05 states must propagate and cannot be cleared by dataset freeze or transformation.
+
+| Frozen construct | Candidate operational approximation | Approximation gap |
+|---|---|---|
+| Clean raw security response | Available C03 raw/unadjusted observation | Authoritative C04 coverage is incomplete; observations may carry `CORPORATE_ACTION STATUS UNRESOLVED` and cannot automatically be treated as genuine abnormality |
+| Continuous historical response path | Observed C03 sessions | 49,568 candidate security-sessions remain `UNKNOWN MISSINGNESS`; absence is neither a suspension nor a zero return and requires a candidate-specific rule |
+| Historical security identity | Versioned `601313.SH → 601360.SH` identifier lineage | Same-security identifier continuity does not establish economic relationship continuity or authorize automatic price-history splicing |
+| Adjusted-price representation | Provider-produced adjustment factors | Historical PIT corporate-action vintage/revision lineage is not qualified; adjusted specifications remain constrained/not authorized |
+
 Approximation records do not authorize proxies or redefine constructs. Each gap remains visible in later specifications and validation.
