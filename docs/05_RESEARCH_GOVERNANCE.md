@@ -58,6 +58,8 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4-03C Candidate Comparison, Common Support & Selection Rules | **APPROVED / FROZEN — CS2 + SR0→SR1; NON-FORCED WINNER / NO COMPUTATION** |
 | G4-04 Statistical Metrics, Aggregation, Threshold & Multiplicity Protocol | **APPROVED / FROZEN — GOVERNANCE ARCHITECTURE ONLY; NUMERICAL RULES UNRESOLVED** |
 | G4-04A Stage-Specific Metric & Decision-Threshold Specification | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
+| G4-04A1 Relationship Representation & Validity Metrics | **APPROVED / FROZEN — LOSS ARCHITECTURE AND FOUR-LEVEL AGGREGATION SEMANTICS** |
+| G4-04A1a PIT Scale & Aggregation Specification | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
