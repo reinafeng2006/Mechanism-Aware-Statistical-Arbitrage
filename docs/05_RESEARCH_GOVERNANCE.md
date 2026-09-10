@@ -41,13 +41,13 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B-R7 JQData Authenticated Qualification | **PAUSED — ACCESS COST EXCEEDS RESEARCHER BUDGET** |
 | G3B-R8 Tushare Authenticated Integrated QA | **ACCEPTED / COMPLETE — PROPOSED PRIMARY SUBJECT TO FINAL ACQUISITION CONTRACT** |
 | G3B Tushare Final Acquisition Readiness | **APPROVED / FROZEN — G3B-FULL AUTHORIZED** |
-| G3B-FULL Formal PIT Historical Acquisition | **STRUCTURAL RESOLUTION ACCEPTED / DATASET NOT FROZEN** |
+| G3B-FULL Formal PIT Historical Acquisition | **COMPLETE / FROZEN — CORE-DATASET-FREEZE-V1** |
 | G3B-C1 Structural Data Contract Amendment | **APPROVED / FROZEN — NO DATASET OR MEASUREMENT AUTHORIZATION** |
-| G3B-F2 Core Dataset Freeze Readiness | **CLOSURE COMPLETE / CORE DATASET ELIGIBLE FOR FREEZE — RESEARCHER FREEZE DECISION REQUIRED / DATASET NOT FROZEN** |
+| G3B-F2 Core Dataset Freeze Readiness | **COMPLETE / PASS — CORE DATASET FREEZE APPROVED** |
 | G3B-R9 Tushare Permission Delta / E02 Resolution Audit | **OPTION A SELECTED — 2000+ POINT TIER CONFIRMED / NO ADDITIONAL PURCHASE** |
 | G3B-R9 Tushare Authenticated Permission Re-check | **PASS — C01/E02 ACCESS BLOCKER RESOLVED / PIT-VINTAGE LIMITATIONS PRESERVED** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
-| G4 Statistical Protocol Freeze | **LOCKED** |
+| G4 Statistical Protocol Freeze | **ACTIVE: INITIALIZATION / DESIGN ONLY — DECISION QUEUE AWAITING RESEARCHER REVIEW** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |

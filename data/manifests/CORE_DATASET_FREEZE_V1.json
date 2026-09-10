@@ -1,0 +1,60 @@
+{
+  "freeze_id": "CORE-DATASET-FREEZE-V1",
+  "version": "1.0.0",
+  "status": "APPROVED_FROZEN",
+  "freeze_timestamp_utc": "2026-09-10T04:00:11Z",
+  "qualified_state_git_commit": "2abf9e3e1c82b90f8af8614062b73fb6939774c2",
+  "date_range": ["2013-01-07", "2025-12-31"],
+  "pit_universe": {
+    "market": "A-share SSE/SZSE primary scope",
+    "industry_codes": ["34", "35"],
+    "membership_rule": "latest actually published official classification available at decision time, joined to C01 listing/identifier history",
+    "staleness_rule": "carry forward with explicit classification age/stale-gap; period labels are never availability dates",
+    "authoritative_exception": "official historical C06 classification snapshots"
+  },
+  "source_contracts": {
+    "C01": "Tushare acquired master plus authoritative identifier-history resolution; PASS WITH LIMITATIONS",
+    "C03": "Tushare raw/unadjusted daily observations; PASS WITH LIMITATIONS",
+    "C04": "official disclosure/action lineage; AUTHORITATIVE COVERAGE INCOMPLETE",
+    "C05": "official SSE/SZSE suspension/trading status; AUTHORITATIVE COVERAGE INCOMPLETE",
+    "C06": "official historical industry snapshots; PASS WITH LIMITATIONS",
+    "E02": "Tushare daily_basic; PASS WITH LIMITATIONS including PIT/vintage lineage",
+    "E03-A": "Tushare benchmark history; PASS WITH LIMITATIONS",
+    "E03-B": "EXCLUDED; blocks specific competing specifications only"
+  },
+  "bound_artifacts": [
+    {"path": "data/qa_work/g3b_f2/security_date_eligibility/v1/manifest.json", "sha256": "1D33FB0C33968FC397D26FEE66E612376EA22AE758EBD57080E79BE6FF9A74B4", "bytes": 1780},
+    {"path": "data/qa_work/g3b_f2/security_date_eligibility/v1/security_date_eligibility_sidecar_v1.csv.gz", "sha256": "A4418E69EDAF92CE0A16DCE72FD6551DA245CF182252528CCB5224768EA9705A", "bytes": 8561696},
+    {"path": "data/qa_work/g3b_full/c06/20260909T081518Z/parse_report.json", "sha256": "44B4546AE451F7A4877343D2F244E725D9FF43A8E6AD0C8EFDD00D75FC0D6CE4", "bytes": 2939},
+    {"path": "data/qa_work/g3b_full/c06/20260909T081518Z/primary_membership.jsonl", "sha256": "288C5BBB457439B88E4D23A6E821D864A4F53A4AF401241C642B48EEBBECBBE4", "bytes": 11188450},
+    {"path": "data/qa_work/g3b_full/c06/20260909T081518Z/security_union.txt", "sha256": "10E13AC8843366F5331F276124ED959A4AE69C5788491A480AC35FE4FCB3D7A6", "bytes": 6886},
+    {"path": "data/qa_work/g3b_full/tushare/full_2013_2025_v1/normalized_content_manifest.json", "sha256": "3945F20A692D7B27C9AAFAAA5C307592930DA42C1C0A6C63D40CC408A599DA2D", "bytes": 773322},
+    {"path": "data/qa_work/g3b_full/tushare/full_2013_2025_v1/structural_validation_report.json", "sha256": "8BCACF86F339AADEC5728DFFC3AEB6CFC0A43DF066689C36614D4D0F865A98B5", "bytes": 3602},
+    {"path": "data/raw/g3b_full/structural_resolution/601313_tushare_probe_v1/daily.json", "sha256": "E13DE4AC48A10C139C4B87553E10F8049E236E120DF74CB92F77BEEC35DF6BAA", "bytes": 75179},
+    {"path": "data/raw/g3b_full/tushare/full_2013_2025_v1/acquisition_journal.jsonl", "sha256": "700BE08A989A0FE63FF1FD44B47693E666A9EBC7CDEDF0C4FE21C4A001AD3479", "bytes": 1887140},
+    {"path": "data/raw/g3b_full/tushare/full_2013_2025_v1/manifest.json", "sha256": "AB8F27B4D5CA419BE5FCB00406DF58B71A6489C34846A578983C5D8C19CE5776", "bytes": 2769744},
+    {"path": "registers/G3B_IDENTIFIER_HISTORY_RESOLUTION_REGISTER.jsonl", "sha256": "6AC6FCD61CE0707EA0D8774093B0A69830F83C8EA1FD1421BB2E75F86D48C8E8", "bytes": 1398}
+  ],
+  "root_fingerprint": {
+    "algorithm": "SHA-256",
+    "canonicalization": "sort bound_artifacts by path; concatenate path + TAB + uppercase sha256 + LF as UTF-8; hash resulting bytes",
+    "value": "3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616"
+  },
+  "sidecar": {
+    "schema_version": "SECURITY_DATE_ELIGIBILITY_SIDECAR_V1",
+    "eligibility_rule_version": "G3B-C1-C04-C05-ELIGIBILITY-V1",
+    "generator": "tools/g3b_f2_build_security_date_eligibility.py:v1",
+    "rows": 1575837,
+    "normal_trading_observed": 1526269,
+    "unknown_missingness": 49568,
+    "c04_state": "CORPORATE_ACTION STATUS UNRESOLVED",
+    "universal_eligible_field": false
+  },
+  "identifier_rule": "security identifier continuity != economic relationship continuity; 601313.SH -> 601360.SH is lineage only and does not authorize series splicing",
+  "downstream_eligibility_contract": "core structural freeze does not authorize a candidate or observation; candidate masks require the frozen sidecar plus a frozen candidate eligibility rule/version",
+  "incident_lineage": "877 duplicate-success groups retained; raw request_id metadata differs, normalized fields/items content has zero mismatches; single-writer control is required",
+  "mutation_policy": "never overwrite this version; corrections, companion data, identity changes, or source revisions require a new version or explicit amendment with ancestry to CORE-DATASET-FREEZE-V1",
+  "outcome_quarantine": "event-time inputs and outcome/validation artifacts remain physically/logically separated; no outcome artifact is bound to this freeze",
+  "measurement_authorized": false,
+  "empirical_computation_authorized": false
+}

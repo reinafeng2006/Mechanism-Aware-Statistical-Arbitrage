@@ -49,6 +49,10 @@ The five mechanism/state drill-down artifacts are under `mechanisms/`. Signal co
 
 **Final acquisition design:** **APPROVED / FROZEN — G3B-QA ONLY.** Approved source classes prioritize venue-authorized raw market/security records, official CSRC/CAPCO classification snapshots and internal immutable lineage. Daily/native-event minimum capability, a 2013-01-07–2025-12-31 primary zone, POST-2025 quarantine, E02/E03 scope and strict outcome quarantine are frozen. G3B-QA is **PARTIALLY COMPLETE / BLOCKED BY AUTHORIZED MARKET-DATA ACCESS**; its C03 condition is access/budget, not strategy infeasibility. The access-resolution audit found no currently verified authorized route and awaits researcher choice. Full-universe expansion is not authorized.
 
+**Core Dataset Freeze V1:** **APPROVED / FROZEN — 2026-09-10.** `CORE-DATASET-FREEZE-V1` binds immutable raw acquisition, C01/C03/C06/E02/E03-A provenance, normalized duplicate checks, C04/C05 gaps, and the 1,575,837-row Security-Date Eligibility Sidecar under root fingerprint `3952FC92…C3616`. `Core Dataset Structural Freeze ≠ Candidate Measurement Authorization`; 49,568 sessions remain `UNKNOWN MISSINGNESS`, and C04 remains `CORPORATE_ACTION STATUS UNRESOLVED`. Dataset V1 cannot be silently rewritten.
+
+**G4:** **ACTIVE: INITIALIZATION / DESIGN ONLY.** G4 now has a dependency-ordered statistical-protocol decision queue. It has not computed a statistic, selected a candidate, constructed a target, or opened held-out evidence.
+
 ## Defined concepts / models
 
 | Concept / model | Standard definition and core form | Project status | Ancestry |

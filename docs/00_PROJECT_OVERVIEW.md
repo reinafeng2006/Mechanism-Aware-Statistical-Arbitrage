@@ -45,6 +45,12 @@ G0 freezes only the economic thesis and population boundary at a conceptual leve
 
 Freeze before inspection; preserve causal timing and point-in-time information; record material decisions; separate development and held-out evidence; retain evidence ancestry; produce deterministic artifacts; predeclare stopping rules before empirical work; and prohibit retrospective relabeling using predicted outcomes.
 
+## Current stage
+
+`CORE-DATASET-FREEZE-V1` is the canonical immutable pre-empirical dataset state. It preserves the 2013-01-07–2025-12-31 primary 34/35 machinery universe, raw/unadjusted C03 observations, C01/C06 lineage, E02/E03-A limitations, unresolved C04/C05 states, manifests, hashes, and acquisition incidents under root fingerprint `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616`.
+
+G3B is **COMPLETE / FROZEN**. G4 is **ACTIVE: INITIALIZATION / DESIGN ONLY**. Dataset freeze does not authorize candidate measurement or statistical computation.
+
 ## Canonical documentation
 
 - [Economic Thesis](01_ECONOMIC_THESIS.md)
