@@ -50,6 +50,9 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4 Statistical Protocol Freeze | **ACTIVE: INITIALIZATION / DESIGN ONLY — DECISION QUEUE AWAITING RESEARCHER REVIEW** |
 | G4-01 Observation, Window & Pair Eligibility Protocol | **APPROVED / FROZEN — ALL NUMERICAL DECISIONS DEFERRED / NO COMPUTATION** |
 | G4-02 Temporal Partition, Development/Held-Out & Information Boundary | **APPROVED / FROZEN — NUMERICAL AND STRUCTURAL PARTITIONS UNRESOLVED / NO COMPUTATION** |
+| G4-03 Numerical Sample, Temporal Partition & Validation Architecture | **ACCEPTED AS THREE-BLOCK DECISION SCAFFOLD — NO CANDIDATE SELECTED** |
+| G4-03A Sample & Estimation Geometry | **APPROVED / FROZEN — NUMERICAL TOLERANCES AND SUPPORT THRESHOLDS UNRESOLVED / NO COMPUTATION** |
+| G4-03B Temporal Validation Architecture Selection | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
