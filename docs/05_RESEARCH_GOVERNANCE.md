@@ -48,6 +48,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G3B-R9 Tushare Authenticated Permission Re-check | **PASS — C01/E02 ACCESS BLOCKER RESOLVED / PIT-VINTAGE LIMITATIONS PRESERVED** |
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **ACTIVE: INITIALIZATION / DESIGN ONLY — DECISION QUEUE AWAITING RESEARCHER REVIEW** |
+| G4-01 Observation, Window & Pair Eligibility Protocol | **APPROVED / FROZEN — ALL NUMERICAL DECISIONS DEFERRED / NO COMPUTATION** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
