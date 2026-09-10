@@ -60,7 +60,8 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4-04A Stage-Specific Metric & Decision-Threshold Specification | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
 | G4-04A1 Relationship Representation & Validity Metrics | **APPROVED / FROZEN — LOSS ARCHITECTURE AND FOUR-LEVEL AGGREGATION SEMANTICS** |
 | G4-04A1a PIT Scale & Aggregation Specification | **APPROVED / FROZEN — PS0 PRIMARY; AG1 + AG2 GUARDRAIL / NO COMPUTATION** |
-| G4-04A1b Exact Scale Estimator & Hierarchical Aggregation Statistics | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
+| G4-04A1b Exact Scale Estimator & Hierarchical Aggregation Statistics | **APPROVED / FROZEN — MAD + SD ROBUSTNESS + MEDIAN HIERARCHY + AG2** |
+| G4-04A1c Scale-Quality & Severe-Failure Numerical Thresholds | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
