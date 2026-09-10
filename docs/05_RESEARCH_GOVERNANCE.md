@@ -53,7 +53,8 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4-03 Numerical Sample, Temporal Partition & Validation Architecture | **ACCEPTED AS THREE-BLOCK DECISION SCAFFOLD — NO CANDIDATE SELECTED** |
 | G4-03A Sample & Estimation Geometry | **APPROVED / FROZEN — NUMERICAL TOLERANCES AND SUPPORT THRESHOLDS UNRESOLVED / NO COMPUTATION** |
 | G4-03B Temporal Validation Architecture Selection | **APPROVED / FROZEN — TP2 PRIMARY; TP3 DIAGNOSTIC; TP1/TP0 ROBUSTNESS ONLY** |
-| G4-03B2 Calendar Geometry & Nested Fold Design | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
+| G4-03B2 Calendar Geometry & Nested Fold Design | **APPROVED / FROZEN — CG2 PRIMARY; 2013–2014 WARM-UP; 2015–2023 DEVELOPMENT; 2024–2025 SEALED** |
+| G4-03B3 Nested Fold Count, Origin Structure & Boundary Geometry | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
