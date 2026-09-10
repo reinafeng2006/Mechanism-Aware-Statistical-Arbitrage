@@ -49,6 +49,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G2B Implementable Measurement Specification Narrowing | **APPROVED / FROZEN — 2026-09-08** |
 | G4 Statistical Protocol Freeze | **ACTIVE: INITIALIZATION / DESIGN ONLY — DECISION QUEUE AWAITING RESEARCHER REVIEW** |
 | G4-01 Observation, Window & Pair Eligibility Protocol | **APPROVED / FROZEN — ALL NUMERICAL DECISIONS DEFERRED / NO COMPUTATION** |
+| G4-02 Temporal Partition, Development/Held-Out & Information Boundary | **APPROVED / FROZEN — NUMERICAL AND STRUCTURAL PARTITIONS UNRESOLVED / NO COMPUTATION** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
