@@ -1,8 +1,13 @@
 # G3B Core Dataset Freeze V1
 
-Decision: **APPROVED / FROZEN — 2026-09-10**  
-Freeze ID: `CORE-DATASET-FREEZE-V1`  
-Qualified-state Git commit: `2abf9e3e1c82b90f8af8614062b73fb6939774c2`  
+Decision: **APPROVED / FROZEN — 2026-09-10**
+
+Freeze ID: `CORE-DATASET-FREEZE-V1`
+
+Qualified-state Git commit: `2abf9e3e1c82b90f8af8614062b73fb6939774c2`
+
+Freeze-execution Git commit: `64f4bdc5ab0058e7adc8209be0c9923ac8487fd8`
+
 Freeze timestamp: `2026-09-10T04:00:11Z`
 
 The researcher approved structural freeze of the exact G3B-F2-qualified core. The machine-readable authority is [Core Dataset Freeze Manifest V1](../../data/manifests/CORE_DATASET_FREEZE_V1.json).

@@ -4,6 +4,7 @@
   "status": "APPROVED_FROZEN",
   "freeze_timestamp_utc": "2026-09-10T04:00:11Z",
   "qualified_state_git_commit": "2abf9e3e1c82b90f8af8614062b73fb6939774c2",
+  "freeze_execution_git_commit": "64f4bdc5ab0058e7adc8209be0c9923ac8487fd8",
   "date_range": ["2013-01-07", "2025-12-31"],
   "pit_universe": {
     "market": "A-share SSE/SZSE primary scope",
