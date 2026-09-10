@@ -1,6 +1,6 @@
-# G4-04A1a PIT Scale & Aggregation Specification Proposal
+# G4-04A1a PIT Scale & Aggregation Architecture Freeze
 
-Status: **PROPOSED / AWAITING RESEARCHER REVIEW**
+Status: **G4-04A1a APPROVED / FROZEN — 2026-09-10**
 Boundary: numerical-protocol design only. No frozen-data inspection, statistic, candidate loss computation, or outcome access.
 
 ## Objective
@@ -21,29 +21,37 @@ Every candidate scale must:
 
 ## Bounded scale candidates
 
-### PS0 — Robust historical response scale
+### PS0 — Primary: robust historical response scale
 
-A pre-origin robust dispersion functional of the observed directional response target, such as a later-specified median-absolute-deviation family. It limits domination by historical extremes but requires a frozen consistency factor and minimum-support rule.
+A pre-origin robust dispersion functional of the **same observed directional response quantity that the frozen expected conditional response predicts**. For `i -> j`, PS0 scales historical PIT realizations of the `j` response coordinate defined relative to the authorized `i` source/state and response interval; for `j -> i`, it separately scales the corresponding `i` response coordinate. It does not substitute source-stock volatility, an unrelated market-volatility series, or candidate forecast residuals.
 
-### PS1 — Quadratic historical response scale
+The historical directional response may later use a preregistered candidate-neutral PIT location and robust dispersion functional, such as a median-absolute-deviation family. Exact location, dispersion, consistency factor, support history, and update rule remain unresolved. PS0 is proposed as primary because it is PIT, candidate-neutral, robust, interpretable, and operationally simple.
 
-A pre-origin standard-deviation/RMS family for the same directional target. It aligns naturally with squared loss but is more sensitive to extremes and relationship breaks.
+### PS1 — Preregistered robustness: quadratic historical response scale
 
-### PS2 — Candidate-neutral conditional response scale
+A pre-origin standard-deviation/RMS family for exactly the same directional response quantity, response interval, candidate-neutral location convention, and PIT history contract used by PS0. It changes sensitivity to historical extremes rather than changing the economic scale object. Separate `i -> j` and `j -> i` construction remains mandatory where directional semantics differ.
 
-A common pre-origin scale conditional on an already-authorized market/industry state, applied identically to all representations. It may better respect state dependence but adds a conditioning specification and must not repeat candidate-specific modeling.
+### PS2 — Optional / not primary: candidate-neutral conditional response scale
 
-All formulas and estimator details are **ILLUSTRATIVE / UNAUTHORIZED**. No scale candidate is preferred here. A fixed arbitrary constant or candidate-reported forecast uncertainty is not admissible as the cross-representation scale.
+A common pre-origin scale conditional on an already-authorized, preregistered market/industry information set, applied identically to all representations. The conditioning information set must be independent of the candidate representation being evaluated and frozen before outcomes. PS2 cannot become primary because conditioning improves realized rankings.
 
-## Zero/near-zero scale candidates
+`normalization must not become a hidden second relationship model`.
 
-Preserve a bounded choice among:
+All formulas and estimator details remain unresolved. The frozen roles are PS0 primary, PS1 preregistered robustness, and PS2 optional/non-primary. A fixed arbitrary constant, unrelated source-security volatility, or candidate-reported forecast uncertainty is not admissible as the cross-representation scale.
+
+## Scale quality and zero/near-zero state
+
+Create an explicit structural state:
+
+`SCALE QUALITY / NEAR-ZERO SCALE`.
+
+When the candidate-neutral PIT scale is undefined, weakly supported, unreliable, or near zero, scaled-loss eligibility must be resolved explicitly. An arbitrary fixed epsilon floor is prohibited as a computational convenience. Preserve a bounded later choice among:
 
 - mark the directional observation undefined for scaled-loss comparison and retain the exclusion reason;
 - apply a preregistered candidate-neutral floor derived without outcome inspection;
 - route the record to a separate unscaled diagnostic stratum without allowing it into the primary scaled estimand.
 
-No floor or rule is selected.
+Any numerical minimum-scale rule or candidate-neutral floor must be preregistered and frozen before computation. No floor or rule is selected.
 
 ## Four-level aggregation contract
 
@@ -63,13 +71,15 @@ Use a rule that prevents observation-rich pairs from receiving automatic row-cou
 
 Aggregate semiannual inner origins and OF4 folds only through the frozen multidimensional evidence vector: central effect, direction consistency, dispersion, severe failure, and support. No compensatory scalar or result-selected fold weighting is permitted.
 
-## Bounded aggregation architectures
+## Frozen aggregation architecture
 
-- **AG0 — equal-unit hierarchy:** equal weight at each applicable direction/pair level, with separate dispersion/failure/support reporting;
-- **AG1 — robust hierarchical summary:** robust central functional at observation and pair levels, without discarding the separate evidence vector;
-- **AG2 — non-compensatory directional/pair hierarchy:** advancement requires both directional and pair-level adequacy conditions before temporal aggregation.
+- **AG1 — PRIMARY: robust hierarchical aggregation.** Preserve the order `observations -> direction -> pair -> temporal origin/fold`. Retain both directional summaries before pair aggregation. At the representation-comparison layer, equal-pair influence is preferred so longer histories do not create automatic row-count dominance; another weight requires preregistered structural justification.
+- **AG2 — NON-COMPENSATORY GUARDRAIL.** Detect preregistered severe directional or pair failures that AG1's robust center cannot erase. AG2 is a guardrail applied alongside AG1, not an independent winner-selection score.
+- **AG0 — SIMPLE SENSITIVITY / REFERENCE.** An equal-unit/simple hierarchy used only under the registered sensitivity budget, never chosen retrospectively to obtain a preferred ranking.
 
-These are candidate architectures, not a Cartesian menu of independently selectable choices. Any permitted hybrid must be enumerated explicitly in the Search Budget before access.
+The primary path is `AG1 + AG2 guardrail`. AG1 must not erase directional asymmetry, and OF4 evidence remains the non-compensatory vector `{magnitude, directional consistency, dispersion, severe failure, support}` rather than one scalar. Equal-pair influence is the preferred representation-comparison principle unless a later preregistered structural justification authorizes another implementation. Any permitted sensitivity or hybrid must be enumerated explicitly in the Search Budget before access.
+
+PS1, PS2, AG0, and any aggregation sensitivity remain outside opportunistic primary selection. The primary scale/aggregation architecture cannot be selected retrospectively according to which candidate ranking it produces.
 
 ## CS2 and dependency rules
 
@@ -80,16 +90,18 @@ These are candidate architectures, not a Cartesian menu of independently selecta
 
 ## Decisions required
 
-1. select PS0, PS1, or PS2 and define its exact estimator/history contract;
-2. select zero/near-zero/undefined-scale handling;
-3. choose Level 1 central, dispersion, failure, and support summaries;
-4. choose the Level 2 directional-to-pair rule;
-5. choose Level 3 pair weighting/distribution rule;
-6. choose Level 4 inner/outer aggregation semantics;
-7. select AG0, AG1, AG2, or one explicitly enumerated bounded hybrid;
-8. freeze candidate-neutral scale and aggregation versions before computation;
-9. hand numerical meaningful-effect, uncertainty, severe-failure, and multiplicity thresholds to later G4-04A decisions.
+1. approve, revise, or reject PS0 primary / PS1 robustness / PS2 optional roles;
+2. select PS0 robust location/dispersion estimator, consistency convention, support history, and update rule;
+3. select PS1 quadratic estimator and confirm identical response/history/location semantics;
+4. select `SCALE QUALITY / NEAR-ZERO SCALE` numerical rule and eligibility consequence;
+5. choose AG1 Level 1 central, dispersion, failure, and support summaries;
+6. choose AG1 Level 2 directional-to-pair rule without erasing asymmetry;
+7. choose equal-pair influence or another structurally justified Level 3 rule;
+8. choose Level 4 inner/outer vector summaries without scalar collapse;
+9. define AG2 severe directional/pair failure conditions;
+10. freeze scale, aggregation, sensitivity, and Search Budget versions before computation;
+11. hand meaningful-effect, uncertainty, severe-failure, and multiplicity thresholds to later G4-04A decisions.
 
 No scale estimator, floor, aggregation statistic, weighting rule, threshold, or computation is selected here.
 
-`G4-04A1a PIT SCALE & AGGREGATION SPECIFICATION PROPOSED / AWAITING RESEARCHER REVIEW`
+`G4-04A1a APPROVED / FROZEN`
