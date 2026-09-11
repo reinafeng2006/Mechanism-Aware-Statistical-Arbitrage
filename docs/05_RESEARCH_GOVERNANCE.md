@@ -65,7 +65,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4-04A2 N0/N1 & P0/P1 Incremental Relationship-Value Metrics | **APPROVED / FROZEN — PAIRED DELTA-LOSS + DISTINCT N/P FAMILIES / NO COMPUTATION** |
 | G4-04A3 Continuous Abnormality Metric Specification | **APPROVED / FROZEN — DIRECTIONAL PRIMITIVES + MULTICHANNEL MECHANISM-NEUTRAL STATE** |
 | G4-04A4 M1/M2/M0/U Mechanism-Evidence Metric Specification | **APPROVED / FROZEN — APPEND-ONLY EVIDENCE + COMPETING/AMBIGUOUS STATES / NO COMPUTATION** |
-| G4-04A5 Resolution / Outcome Target & Validation Specification | **PROPOSED / AWAITING RESEARCHER REVIEW — OUTCOMES SEALED / NO COMPUTATION** |
+| G4-04A5 Resolution / Outcome Target & Validation Specification | **APPROVED / FROZEN — EVENT-TIME-ANCHORED MULTIDIMENSIONAL CONTINUOUS OUTCOMES / OUTCOMES SEALED / NO COMPUTATION** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
