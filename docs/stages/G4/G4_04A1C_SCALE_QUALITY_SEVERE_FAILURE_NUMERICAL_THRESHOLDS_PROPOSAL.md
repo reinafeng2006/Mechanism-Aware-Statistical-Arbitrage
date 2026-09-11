@@ -1,87 +1,102 @@
-# G4-04A1c Scale-Quality & Severe-Failure Numerical Thresholds Proposal
+# G4-04A1c Hard Failure Rules & Continuous Evidence Semantics Freeze
 
-Status: **G4-04A1c NUMERICAL THRESHOLDS PROPOSED / AWAITING RESEARCHER REVIEW**
-Boundary: bounded pre-empirical cutoff design only. No frozen-data inspection, statistic, loss computation, outcome access, or A2 work.
+Status: **G4-04A1c APPROVED / FROZEN — 2026-09-11**
+Boundary: pre-empirical rule semantics only. No frozen-data inspection, computation, outcome access, or A2 work.
 
-## Objective
+## Accepted audit conclusion
 
-Choose only the numerical cutoffs required to execute the frozen MAD/SD scale and median-vector/AG2 architecture. Values are protocol-design candidates, not empirical estimates. No new metric or aggregation branch is introduced.
+The threshold-justification audit and its conclusion **NEITHER JUSTIFIABLE AS CURRENTLY SPECIFIED** are accepted. CUT-CONSERVATIVE and CUT-PERMISSIVE are rejected as primary protocol bundles. No third bundle is created.
 
-## SQ — Relative scale-quality cutoff
+## Frozen governing principles
 
-For each direction and origin, define candidate-neutral relative scale quality conceptually as:
+`absence of a defensible natural/preregistered threshold must not be repaired by inventing a design-convention cutoff`.
 
-`Q_scale = directional_MAD / PIT_cross_pair_median_directional_MAD`
+`continuous evidence need not be discretized merely because the selection protocol ultimately requires a decision`.
 
-The reference uses only candidate-neutral, pre-origin eligible pairs with identical response semantics. Candidate cutoffs:
+`thresholds encode preregistered failure/adequacy semantics; thresholds must not be chosen to achieve a desired candidate survival rate`.
 
-- **SQ05:** require `Q_scale >= 0.05`;
-- **SQ10:** require `Q_scale >= 0.10`.
+SR1 may retain continuous, partially ordered evidence and return `INSUFFICIENT DIFFERENTIATION`, `NON-DOMINATED / BOTH SURVIVE`, or `NO CANDIDATE ADVANCES` without manufacturing a cutoff or winner.
 
-Below the selected cutoff, scaled loss is unavailable and reason-coded `SCALE QUALITY / NEAR-ZERO SCALE`; no epsilon replacement occurs. The cross-pair reference's minimum support and fallback when undefined must also be frozen.
+## 1. Scale quality
 
-## MS — Estimator-support cutoff
+Remove SQ05 and SQ10 from the primary protocol. Hard scaled-loss failure is limited to:
 
-For MAD and SD within the already-authorized H63/H126/H252/H504 history, propose only:
+- scale unavailable;
+- scale non-finite;
+- mathematically degenerate zero scale;
+- failure of the preregistered mathematical minimum estimator-support requirement.
 
-- **MS80:** at least 80% of the candidate's nominal eligible directional observations plus its frozen minimum synchronized-history contract;
-- **MS90:** at least 90% plus the same contract.
+Near-zero but nondegenerate scale remains a continuous `SCALE QUALITY / NEAR-ZERO SCALE` diagnostic. It does not trigger epsilon replacement or automatic exclusion. A later hard boundary requires independent justification and freeze before outcome inspection. The diagnostic remains candidate-neutral and PIT.
 
-This threshold governs scale estimability only and cannot recode `UNKNOWN MISSINGNESS` or other eligibility states.
+## 2. Estimator support
 
-## SF0 — Absolute adequacy failure cutoff
+Remove MS80 and MS90 from the primary protocol. Distinguish:
 
-Using the pair-direction-origin median absolute scaled loss, propose:
+- **minimum mathematical estimator support:** the smallest structurally defined support under which MAD/SD and their required response history can be computed as specified; eligible to act as an SR0 hard requirement;
+- **statistical precision/support quality:** additional history, completeness, dispersion precision, and representativeness; continuous SR1 evidence or candidate-specific support metadata.
 
-- **SF0-2:** severe absolute failure when the value exceeds 2.0 scale units;
-- **SF0-3:** severe absolute failure when it exceeds 3.0 scale units.
+Desirable precision cannot be promoted to SR0 by selecting an arbitrary completion percentage.
 
-This is an SR1/AG2 use-quality guardrail, not automatically an SR0 structural failure.
+## 3. Common support
 
-## SF1 — Comparative reversal cutoff
+Remove SF2-50 and SF2-70 as hard model-admissibility or attribution thresholds. Report common-support retention continuously under CS2, together with native support and exclusion reasons.
 
-Define the common-support loss difference so positive means the candidate is worse than its preregistered comparator. Propose:
+`insufficient comparable support limits attribution scope; it does not by itself imply model invalidity`.
 
-- **SF1-10:** severe reversal at a deterioration of at least 10% of comparator loss;
-- **SF1-20:** severe reversal at a deterioration of at least 20%.
+Use claim-scope states without numerical boundaries in A1c:
 
-The denominator must be candidate-neutral and have a frozen zero/near-zero rule. Absolute loss difference must also be reported so a percentage alone cannot create a failure on a negligible base.
+- `BROAD COMPARABLE-SUPPORT EVIDENCE`;
+- `LIMITED COMPARABLE-SUPPORT EVIDENCE`;
+- `INSUFFICIENT SUPPORT FOR COMPARATIVE CLAIM`.
 
-## SF2 — Structural/support cutoff
+These are claim-scope dispositions, not model-validity states. Any numerical mapping requires separate ex-ante justification.
 
-For common-support retention relative to the smaller named candidate-native support, propose:
+## 4. Comparative reversal
 
-- **SF2-50:** structural support failure below 50%;
-- **SF2-70:** structural support failure below 70%.
+Remove SF1-10 and SF1-20 as hard vetoes. A sign crossing or ordinary adverse point estimate is not a severe reversal.
 
-Candidate-native coverage remains separately reported. SF2 does not recode exclusions or make low coverage equivalent to poor predictive performance.
+Preserve as continuous SR1/AG2 evidence: adverse absolute and relative deterioration; uncertainty; direction and temporal occurrence; common/native support; and scale quality.
 
-## Temporal severe-failure allowance
+`SEVERE COMPARATIVE REVERSAL` requires both materially adverse absolute deterioration and adequate denominator/scale/uncertainty quality under a separately frozen rule. Until then, no numerical comparative-reversal veto operates.
 
-For four annual outer folds, propose:
+## 5. Absolute adequacy
 
-- **TF0:** zero severe AG2 fold failures permitted for `DOMINANT / ADVANCES`;
-- **TF1:** at most one severe fold failure may retain `NON-DOMINATED / BOTH SURVIVE`, but cannot yield `DOMINANT / ADVANCES`.
+Remove SF0-2 and SF0-3 as hard failures. PIT-scaled loss remains continuous SR1/AG2 evidence because no independently established natural failure boundary currently exists.
 
-One exceptional positive fold cannot offset a severe failure. Directional consistency and dispersion remain separate evidence; candidate cutoffs for them are deferred until their exact statistics are frozen, rather than inventing incompatible thresholds here.
+A future hard boundary is permitted only if it has an independently interpretable relationship/use failure meaning frozen before outcomes. It cannot duplicate weak relative SR1 performance or become an SR0 failure merely because error is unfavorable.
 
-## Coherent cutoff bundles
+## 6. OF4 severe-failure count
 
-To avoid a Cartesian search, propose only:
+Freeze the protocol-level temporal rule:
 
-- **CUT-CONSERVATIVE:** SQ10 + MS90 + SF0-2 + SF1-10 + SF2-70 + TF0;
-- **CUT-PERMISSIVE:** SQ05 + MS80 + SF0-3 + SF1-20 + SF2-50 + TF1.
+`two or more genuinely severe outer-fold failures among OF4 are incompatible with ADVANCES / DOMINANT status`.
 
-These bundles encode different strictness philosophies and are not performance-selectable. Researcher approval must select one or explicitly revise it before computation; components cannot be mixed opportunistically.
+- `0` severe failures: no failure-count veto; advancement still requires the full SR1 vector.
+- `1` severe failure: advancement remains unresolved and requires the full SR1 vector.
+- `>=2` severe failures: the candidate cannot receive `ADVANCES / DOMINANT` under the primary protocol.
 
-## Remaining decisions
+This is a temporal-robustness veto, not automatic candidate invalidation. It cannot operate until the underlying severe-failure definition is independently justified and frozen. Ordinary adverse point estimates do not count as severe failures.
 
-1. select or revise one coherent cutoff bundle;
-2. freeze the cross-pair reference support and undefined-reference rule;
-3. confirm whether SF1 requires both relative and absolute deterioration conditions;
-4. freeze the consequence mapping from each AG2 failure type to SR1 dispositions;
-5. later freeze exact direction-consistency and dispersion statistics/cutoffs before execution.
+## 7. SR1 without arbitrary thresholds
 
-All values remain **PROPOSED / UNAUTHORIZED**. No data access or computation is authorized.
+SR1 compares the continuous evidence vector through the frozen hierarchy:
 
-`G4-04A1c NUMERICAL THRESHOLDS PROPOSED / AWAITING RESEARCHER REVIEW`
+1. common-support incremental quality and uncertainty;
+2. temporal direction, dispersion, and independently justified severe failures;
+3. native coverage/deployability;
+4. production/data complexity as a later discriminator.
+
+Partial ordering permits `DOMINANT / ADVANCES`, `NON-DOMINATED / BOTH SURVIVE`, `INSUFFICIENT DIFFERENTIATION`, or `NO CANDIDATE ADVANCES`. Lack of a hard cutoff or unique winner is a valid protocol result.
+
+## Remaining bounded decisions
+
+1. define minimum mathematical support for MAD/SD from estimator mathematics and frozen response-history semantics;
+2. define continuous scale-quality reporting and undefined/zero-scale reason codes;
+3. define claim-scope states without arbitrary percentage boundaries, or retain them as narrative evidence states;
+4. independently justify any future absolute-adequacy or severe comparative-reversal definition;
+5. define the severe-fold event before activating the OF4 count veto;
+6. freeze continuous evidence reporting, uncertainty, and partial-order comparison implementation.
+
+No numerical threshold bundle, epsilon, hard loss cutoff, support percentage, comparative-reversal veto, computation, or A2 work is authorized.
+
+`G4-04A1c APPROVED / FROZEN`
