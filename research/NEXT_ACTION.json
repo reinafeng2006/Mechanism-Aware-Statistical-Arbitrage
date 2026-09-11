@@ -1,0 +1,47 @@
+{
+  "schema_version": "REA-ACTION-1.0",
+  "action": {
+    "action_id": "NONE",
+    "name": "NONE",
+    "status": "NONE",
+    "execution_state": "STOPPED_RESEARCHER_DECISION_REQUIRED",
+    "objective": "The authorized G4-05 pre-empirical autonomous block is complete. Await the consolidated researcher decision.",
+    "prerequisites": [
+      "CORE-DATASET-FREEZE-V1 fingerprint verified",
+      "G4-05A approved and frozen",
+      "G4-05B1 approved and frozen",
+      "2024-2025 held-out sealed"
+    ],
+    "allowed_scope": [],
+    "forbidden_scope": [
+      "scientific selection among competing equations or estimators",
+      "feature-set change or new construct",
+      "P1 data acquisition or provider addition",
+      "model fitting or empirical distribution and coverage inspection",
+      "relationship, abnormality, mechanism, target, return, or PnL computation",
+      "Search-Budget modification",
+      "2024-2025 held-out access",
+      "A6 initialization or work"
+    ],
+    "dataset_access": "DENIED",
+    "empirical_result_visibility": "DENIED",
+    "held_out_access": "SEALED_DENIED",
+    "commit_permitted": false,
+    "commit_scope": "The completed action's mechanical closeout commit is recorded in AGENT_STATE/AGENT_RUN_LOG; no successor commit is authorized.",
+    "push_permitted": false,
+    "push_reason": "No destination and branch were explicitly bound in this action contract.",
+    "required_validators": [
+      "literature/validators/validate_literature_os.ps1",
+      "literature/validators/validate_documentation_architecture.ps1",
+      "learning/validators/validate_learning_layer.ps1",
+      "tools/validate_core_dataset_freeze.py",
+      "research/validate_agent_control.ps1",
+      "git diff --check"
+    ],
+    "completion_condition": "Researcher resolves or defers the bounded decisions in G4_05_CONSOLIDATED_RESEARCHER_CHECKPOINT.md and authorizes exactly one successor action.",
+    "mandatory_stop_conditions": [
+      "Any work before a successor action is explicitly authorized",
+      "Any empirical computation or held-out access"
+    ]
+  }
+}

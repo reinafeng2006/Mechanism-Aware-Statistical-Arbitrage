@@ -1,0 +1,55 @@
+# G4-05B2 R2 Exact Equation and Estimator Proposal
+
+Status: **BOUNDED PROPOSAL / AWAITING CONSOLIDATED RESEARCHER DECISION**
+Boundary: no data inspection or fitting. B1 constructs and transformations are unchanged.
+
+## Matched P0 anchor
+
+For direction `i -> j`, let `mu^P0_ij,t` be the frozen matched R0-LIN or R1 expected response under a named representation, factor set, N overlay, H/U tuple, eligibility rule, and temporal origin. R2 adds only PIT B1 P1 state.
+
+## Bounded exact alternatives
+
+### `R2-LI` — level/intercept conditioning
+
+`y_j,t = alpha_ij + a'z_ij,t- + beta_ij x_i,t + gamma'f_t + epsilon_ij,t`.
+
+Tests whether company/pair state shifts expected response level while transmission slope stays matched to P0. OLS with intercept is the primary estimator.
+
+### `R2-LS` — slope conditioning
+
+`y_j,t = alpha_ij + [beta_ij + b'w_ij,t-]x_i,t + gamma'f_t + epsilon_ij,t`.
+
+Tests whether company/pair state changes source-to-peer transmission. OLS with intercept is primary; only frozen source-response interactions may enter.
+
+### `R2-LIS` — parsimonious level-and-slope conditioning
+
+`y_j,t = alpha_ij + a'z_ij,t- + [beta_ij + b'w_ij,t-]x_i,t + gamma'f_t + epsilon_ij,t`.
+
+Tests both channels but requires a researcher-frozen minimal assignment of B1 bundles to `z` versus `w`; no feature may occupy both roles automatically.
+
+### `R2-RIDGE` — regularized matched design
+
+For the selected linear equation only:
+
+`theta_hat(lambda)=argmin_theta sum_s (y_j,s-X_ij,s theta)^2 + lambda||P theta||_2^2`,
+
+where `P` leaves the intercept unpenalized and penalty candidates are selected only inside frozen inner development. Ridge is the sole proposed regularization family. Elastic net and R2-N remain deferred, not alternative rescue paths.
+
+## Fixed implementation semantics
+
+- reverse direction is estimated separately with directed transformations rebuilt;
+- company state is the latest qualifying vintage available before the decision origin;
+- carry-forward does not create a daily update;
+- the same P0 target, factors, representation, N overlay, H/U, scale, and support are retained;
+- output is pre-decision `mu_j|i,t` plus feature-vintage/support and separate uncertainty metadata;
+- A3 receives the point expectation only; uncertainty never scales departure;
+- B1 data absence makes R2 unavailable, not zero or P0-equivalent.
+
+## Existing tuple envelope preserved
+
+No Search Budget is changed. The previously registered geometry IDs remain: `R2L-126W`, `R2L-252M`, `R2R-126W`, `R2R-252M`, and conditional `R2N-252M`. This proposal recommends closing R2-N initially but does not enact that scientific choice.
+
+## Decision point
+
+Selection among `R2-LI`, `R2-LS`, and `R2-LIS`, the exact minimal feature-role allocation, whether Ridge executes, and whether R2-N closes are scientific choices. All R2 candidates remain `NOT COMPUTATION-AUTHORIZED`.
+

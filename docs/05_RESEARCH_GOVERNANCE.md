@@ -71,6 +71,7 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4-05B R2 Company-Characteristic-Conditioned Relationship Specification | **CLARIFIED / AWAITING RESEARCHER APPROVAL — ORDERED R2-L/R2-R/R2-N LADDER / NO FITTING** |
 | G4-05B1 Company Feature Set & PIT Data Contract | **APPROVED / FROZEN — FIVE-CONSTRUCT P1 FUNDAMENTALS CONTRACT / ENHANCEMENT LAYER REQUIRED / NO ACQUISITION OR FITTING** |
 | G4-05B1 Feature Coherence & Non-Redundancy Audit | **ACCEPTED / INCORPORATED — E02/C06 REMAIN P0 / DIRECTED LINKAGE DEFERRED** |
+| G4-05 Autonomous Pre-Empirical Advancement | **AUTONOMOUS BLOCK COMPLETE / CONSOLIDATED RESEARCHER DECISION REQUIRED — NO EMPIRICAL ACCESS** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |

@@ -1,0 +1,34 @@
+{
+  "schema_version": "G4-05-MODEL-CONTRACT-1.0",
+  "status": "TEMPLATE_NOT_COMPUTATION_AUTHORIZED",
+  "required_bindings": [
+    "candidate_id",
+    "relationship_family",
+    "equation_version",
+    "directional_target_version",
+    "p_layer_version",
+    "n_overlay_version",
+    "feature_role_bindings",
+    "pit_input_contract",
+    "estimator_version",
+    "regularization_version",
+    "eligibility_rule_version",
+    "history_h",
+    "refresh_u",
+    "search_budget_entry",
+    "uncertainty_output_contract",
+    "a3_interface_version",
+    "production_feasibility_status"
+  ],
+  "hard_prohibitions": [
+    "unbound or unresolved candidate execution",
+    "full-sample estimation or residualization",
+    "same-decision self-absorption",
+    "implicit representation-to-forecast bridge",
+    "P0 information re-expression as P1 increment",
+    "silent N/P/R axis change in matched comparison",
+    "candidate-specific uncertainty as A3 point scale",
+    "outcome or held-out access"
+  ],
+  "computation_gate": "DENIED_UNTIL_ALL_BINDINGS_FROZEN_AND_RESEARCHER_AUTHORIZED"
+}
