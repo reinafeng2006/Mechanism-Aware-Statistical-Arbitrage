@@ -66,6 +66,9 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4-04A3 Continuous Abnormality Metric Specification | **APPROVED / FROZEN — DIRECTIONAL PRIMITIVES + MULTICHANNEL MECHANISM-NEUTRAL STATE** |
 | G4-04A4 M1/M2/M0/U Mechanism-Evidence Metric Specification | **APPROVED / FROZEN — APPEND-ONLY EVIDENCE + COMPETING/AMBIGUOUS STATES / NO COMPUTATION** |
 | G4-04A5 Resolution / Outcome Target & Validation Specification | **APPROVED / FROZEN — EVENT-TIME-ANCHORED MULTIDIMENSIONAL CONTINUOUS OUTCOMES / OUTCOMES SEALED / NO COMPUTATION** |
+| G4-05 Relationship Model, Factor & Estimator Registry | **CLARIFIED / AWAITING RESEARCHER APPROVAL — ORTHOGONAL R/N/P AXES / ALL ENTRIES NOT COMPUTATION-AUTHORIZED** |
+| G4-05A R0/R1 Statistical & Common-Factor Relationship Specification | **APPROVED / FROZEN — EXPLICIT R0-LIN BRIDGE + FIXED R1 FACTOR-COMPARISON SEQUENCE / NO FITTING** |
+| G4-05B R2 Company-Characteristic-Conditioned Relationship Specification | **PROPOSED / AWAITING RESEARCHER REVIEW — DESIGN ONLY / NO FITTING** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
