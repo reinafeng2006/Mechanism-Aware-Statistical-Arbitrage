@@ -63,7 +63,8 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4-04A1b Exact Scale Estimator & Hierarchical Aggregation Statistics | **APPROVED / FROZEN — MAD + SD ROBUSTNESS + MEDIAN HIERARCHY + AG2** |
 | G4-04A1c Hard Failure Rules & Continuous Evidence Semantics | **APPROVED / FROZEN — HARD FAILURES + CONTINUOUS EVIDENCE / PRIOR BUNDLES REMOVED** |
 | G4-04A2 N0/N1 & P0/P1 Incremental Relationship-Value Metrics | **APPROVED / FROZEN — PAIRED DELTA-LOSS + DISTINCT N/P FAMILIES / NO COMPUTATION** |
-| G4-04A3 Continuous Abnormality Metric Specification | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
+| G4-04A3 Continuous Abnormality Metric Specification | **APPROVED / FROZEN — DIRECTIONAL PRIMITIVES + MULTICHANNEL MECHANISM-NEUTRAL STATE** |
+| G4-04A4 M1/M2/M0/U Mechanism-Evidence Metric Specification | **PROPOSED / AWAITING RESEARCHER REVIEW — NO DATA ACCESS OR COMPUTATION** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
