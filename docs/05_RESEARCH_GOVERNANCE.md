@@ -68,7 +68,9 @@ Future checkpoints belong under `docs/stages/<stage>/`. No new top-level documen
 | G4-04A5 Resolution / Outcome Target & Validation Specification | **APPROVED / FROZEN — EVENT-TIME-ANCHORED MULTIDIMENSIONAL CONTINUOUS OUTCOMES / OUTCOMES SEALED / NO COMPUTATION** |
 | G4-05 Relationship Model, Factor & Estimator Registry | **CLARIFIED / AWAITING RESEARCHER APPROVAL — ORTHOGONAL R/N/P AXES / ALL ENTRIES NOT COMPUTATION-AUTHORIZED** |
 | G4-05A R0/R1 Statistical & Common-Factor Relationship Specification | **APPROVED / FROZEN — EXPLICIT R0-LIN BRIDGE + FIXED R1 FACTOR-COMPARISON SEQUENCE / NO FITTING** |
-| G4-05B R2 Company-Characteristic-Conditioned Relationship Specification | **PROPOSED / AWAITING RESEARCHER REVIEW — DESIGN ONLY / NO FITTING** |
+| G4-05B R2 Company-Characteristic-Conditioned Relationship Specification | **CLARIFIED / AWAITING RESEARCHER APPROVAL — ORDERED R2-L/R2-R/R2-N LADDER / NO FITTING** |
+| G4-05B1 Company Feature Set & PIT Data Contract | **APPROVED / FROZEN — FIVE-CONSTRUCT P1 FUNDAMENTALS CONTRACT / ENHANCEMENT LAYER REQUIRED / NO ACQUISITION OR FITTING** |
+| G4-05B1 Feature Coherence & Non-Redundancy Audit | **ACCEPTED / INCORPORATED — E02/C06 REMAIN P0 / DIRECTED LINKAGE DEFERRED** |
 | G5 Implementation Readiness | **LOCKED** |
 | G6 Development Evidence | **LOCKED** |
 | G7 Held-Out Authorization | **LOCKED** |
