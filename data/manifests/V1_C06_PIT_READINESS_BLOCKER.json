@@ -1,0 +1,309 @@
+{
+  "audit_id": "V1-C06-PIT-READINESS-BLOCKER-1.0",
+  "status": "FAIL_MATERIAL_C06_AVAILABILITY_TIME_CONTRACT_MISMATCH",
+  "scope": "STRUCTURAL_ONLY_NO_MARKET_OR_OUTCOME_ACCESS",
+  "ancestry": {
+    "dataset": "CORE-DATASET-FREEZE-V1",
+    "root_fingerprint": "3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616",
+    "c06_artifact": "data/qa_work/g3b_full/c06/20260909T081518Z/primary_membership.jsonl",
+    "c06_sha256": "288C5BBB457439B88E4D23A6E821D864A4F53A4AF401241C642B48EEBBECBBE4"
+  },
+  "frozen_contract_expectation": {
+    "earliest_qualified_boundary": "2013-01-07",
+    "rule": "use each historical snapshot only from its true publication/available time",
+    "prohibition": "period labels and current/archive-page dates may not backfill publication time"
+  },
+  "observed_artifact": {
+    "rows": 15886,
+    "snapshot_titles": 45,
+    "null_publication_rows": 1125,
+    "dated_publications_min": "2019-09-04",
+    "snapshots_2012q4_through_2019q2": 28,
+    "historical_snapshot_publication_records": [
+      {
+        "snapshot_title": "2012年4季度上市公司行业分类结果",
+        "labelled_period": "2012Q4",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 229
+      },
+      {
+        "snapshot_title": "2013年1季度上市公司行业分类结果",
+        "labelled_period": "2013Q1",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 228
+      },
+      {
+        "snapshot_title": "2013年2季度上市公司行业分类结果",
+        "labelled_period": "2013Q2",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 225
+      },
+      {
+        "snapshot_title": "2013年3季度上市公司行业分类结果",
+        "labelled_period": "2013Q3",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 224
+      },
+      {
+        "snapshot_title": "2013年4季度上市公司行业分类结果",
+        "labelled_period": "2013Q4",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 225
+      },
+      {
+        "snapshot_title": "2014年1季度上市公司行业分类结果",
+        "labelled_period": "2014Q1",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 232
+      },
+      {
+        "snapshot_title": "2014年2季度上市公司行业分类结果",
+        "labelled_period": "2014Q2",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 231
+      },
+      {
+        "snapshot_title": "2014年3季度上市公司行业分类结果",
+        "labelled_period": "2014Q3",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 234
+      },
+      {
+        "snapshot_title": "2014年4季度上市公司行业分类结果",
+        "labelled_period": "2014Q4",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 242
+      },
+      {
+        "snapshot_title": "2015年1季度上市公司行业分类结果",
+        "labelled_period": "2015Q1",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 249
+      },
+      {
+        "snapshot_title": "2015年2季度上市公司行业分类结果",
+        "labelled_period": "2015Q2",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 263
+      },
+      {
+        "snapshot_title": "2015年3季度上市公司行业分类结果",
+        "labelled_period": "2015Q3",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 262
+      },
+      {
+        "snapshot_title": "2015年4季度上市公司行业分类结果",
+        "labelled_period": "2015Q4",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 264
+      },
+      {
+        "snapshot_title": "2015年4季度上市公司行业分类结果.",
+        "labelled_period": "2015Q4",
+        "publication_dates": [
+          "NULL"
+        ],
+        "rows": 264
+      },
+      {
+        "snapshot_title": "2016年1季度上市公司行业分类结果",
+        "labelled_period": "2016Q1",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 268
+      },
+      {
+        "snapshot_title": "2016年2季度上市公司行业分类结果",
+        "labelled_period": "2016Q2",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 273
+      },
+      {
+        "snapshot_title": "2016年3季度上市公司行业分类结果",
+        "labelled_period": "2016Q3",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 282
+      },
+      {
+        "snapshot_title": "2016年4季度上市公司行业分类结果",
+        "labelled_period": "2016Q4",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 290
+      },
+      {
+        "snapshot_title": "2017年1季度上市公司行业分类结果",
+        "labelled_period": "2017Q1",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 304
+      },
+      {
+        "snapshot_title": "2017年2季度上市公司行业分类结果",
+        "labelled_period": "2017Q2",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 310
+      },
+      {
+        "snapshot_title": "2017年3季度上市公司行业分类结果",
+        "labelled_period": "2017Q3",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 314
+      },
+      {
+        "snapshot_title": "2017年4季度上市公司行业分类结果",
+        "labelled_period": "2017Q4",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 326
+      },
+      {
+        "snapshot_title": "2018年1季度上市公司行业分类结果",
+        "labelled_period": "2018Q1",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 327
+      },
+      {
+        "snapshot_title": "2018年2季度上市公司行业分类结果",
+        "labelled_period": "2018Q2",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 323
+      },
+      {
+        "snapshot_title": "2018年3季度上市公司行业分类结果",
+        "labelled_period": "2018Q3",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 326
+      },
+      {
+        "snapshot_title": "2018年4季度上市公司行业分类结果",
+        "labelled_period": "2018Q4",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 331
+      },
+      {
+        "snapshot_title": "2019年1季度上市公司行业分类结果",
+        "labelled_period": "2019Q1",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 336
+      },
+      {
+        "snapshot_title": "2019年2季度上市公司行业分类结果",
+        "labelled_period": "2019Q2",
+        "publication_dates": [
+          "2019-09-04"
+        ],
+        "rows": 338
+      }
+    ]
+  },
+  "inner_origin_check": [
+    {
+      "calendar_boundary": "2015-01-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2015-07-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2016-01-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2016-07-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2017-01-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2017-07-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2018-01-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2018-07-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2019-01-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    },
+    {
+      "calendar_boundary": "2019-07-01",
+      "any_captured_snapshot_available_strictly_before_origin": false,
+      "latest_captured_publication_before_origin": null
+    }
+  ],
+  "finding": "The frozen C06 normalized artifact does not preserve true historical publication/available dates for the pre-2019 snapshot sequence. Under its own captured dates, none of the 2015-2019 semiannual inner boundaries has an available C06 snapshot. PAIR-A therefore cannot be constructed without an explicit versioned C06 availability-time correction/amendment.",
+  "non_actions": [
+    "no publication date inferred from period label",
+    "no archive-page date treated as original availability",
+    "no current membership backfill",
+    "no pair counts or market values computed",
+    "no frozen artifact mutated"
+  ]
+}

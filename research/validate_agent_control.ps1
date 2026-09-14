@@ -25,7 +25,8 @@ $contract = Get-Content -Raw -LiteralPath $contractPath | ConvertFrom-Json
 $allowedGates = @(
     'DENIED_UNTIL_ALL_BINDINGS_FROZEN_AND_RESEARCHER_AUTHORIZED',
     'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION',
-    'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN'
+    'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN',
+    'PAUSED_C06_AVAILABILITY_TIME_CONTRACT_MISMATCH'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -41,6 +42,12 @@ if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOC
 if ($contract.computation_gate -eq 'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN') {
     if ($next.action.action_id -ne 'NONE') { throw 'Pair-universe pause must not retain an executable action.' }
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'Pair-universe pause must deny empirical visibility.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
+if ($contract.computation_gate -eq 'PAUSED_C06_AVAILABILITY_TIME_CONTRACT_MISMATCH') {
+    if ($next.action.action_id -ne 'NONE') { throw 'C06 availability-time pause must not retain an executable action.' }
+    if ($next.action.dataset_access -ne 'DENIED_PENDING_C06_AVAILABILITY_TIME_AMENDMENT') { throw 'C06 pause must deny dataset access.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'C06 pause must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
 }
 

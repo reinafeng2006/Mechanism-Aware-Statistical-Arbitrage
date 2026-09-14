@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 — PAIR-A INNER DEVELOPMENT` |
-| Stage status | `AUTHORIZED / ACTIVE — PROTOCOL PUBLICATION PRECEDES EMPIRICAL ACCESS` |
+| Current stage | `V1 PHASE 1 — PRE-COMPUTATION STRUCTURAL VALIDATION` |
+| Stage status | `SAFELY PAUSED — MATERIAL C06 AVAILABILITY-TIME CONTRACT MISMATCH` |
 | Latest frozen decision | `PAIR-A COMPLETE PIT ALL-PAIRS — APPROVED / FROZEN FOR V1` |
-| Current substage | publish PAIR-A freeze, then implement and execute only 2015–2019 inner development from the validated C04-A checkpoint |
+| Current substage | PAIR-A published; computation stopped before market access because the frozen C06 normalized artifact cannot reconstruct PIT membership at 2015–2019 inner origins |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `2015–2019 INNER DEVELOPMENT ONLY` after PAIR-A freeze publication; 2013–2014 may supply formation history only; OF4 and held-out remain denied |
-| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` — active |
-| Last validation state | Prior C04-A/pause checkpoint PASS; PAIR-A freeze validation and publication pending |
-| Latest local commit | `31df68ae8a1caefad965daf9150055af717bbd21` — C04-A validation and pair-universe checkpoint |
-| Remote state observed | `origin/main` at `31df68ae8a1caefad965daf9150055af717bbd21` |
-| Researcher action required | `NO` until PRE-OUTER gate or a genuine integrity/computational blocker |
+| Computation authorization | `PAUSED / DENIED` pending a versioned C06 availability-time resolution; OF4 and held-out remain denied |
+| Current authorized action | `NONE` — PAIR-A successor action stopped at a mandatory data-integrity boundary |
+| Last validation state | `PASS` closeout: expected C06 blocker reproduced deterministically; core/C04/agent/V1/documentation/Learning Layer validators and `git diff --check` passed; blocker-report SHA-256 `DAC22FD9171F6AAAB8E87FF9182A2AF7DA6241B725C416704DF3B93559D4C1FB` |
+| Latest local commit | `f6d7e9c` — PAIR-A freeze published before the audit |
+| Remote state observed | `origin/main` at `f6d7e9c` |
+| Researcher action required | `YES` — authorize a versioned C06 availability-time amendment, restrict the temporal scope, or stop V1 |
 
 ## Verified frozen chain relevant to activation
 
@@ -49,3 +49,7 @@ At initialization, `.venv/` is untracked and unrelated. It must remain excluded 
 ## V1 Phase 1 bounded acquisition and integrity stop
 
 The approved C04-A descendant calendar is acquired and validated under `C04-A-OFFICIAL-CALENDAR-V1`: 195 immutable official raw artifacts, 1,929 normalized action/exclusion records, zero acquisition failures, and no authoritative-clean claim. The frozen core fingerprint is unchanged. Phase 1 fitting stopped before empirical access because the candidate pair universe/formation rule remains scientifically unresolved. See [the consolidated blocker checkpoint](../docs/stages/G4/V1_PHASE1_PAIR_UNIVERSE_INTEGRITY_BLOCKER.md).
+
+## PAIR-A resolution and C06 integrity stop
+
+PAIR-A was frozen and published as commit `f6d7e9c`. Before any pair count or market-value access, the bound C06 artifact failed its PIT availability-time readiness audit: the pre-2019 snapshot sequence does not preserve true historical publication dates, so no 2015–2019 inner origin can be populated under the artifact's own timestamps. The frozen core was not mutated. See [the C06 integrity checkpoint](../docs/stages/G4/V1_PHASE1_C06_AVAILABILITY_INTEGRITY_BLOCKER.md).

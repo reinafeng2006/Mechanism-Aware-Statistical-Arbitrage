@@ -96,3 +96,10 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Frozen pair identity: unordered `{i,j}` with separate `i -> j` and `j -> i` channels; cross-code `34`/`35` pairs allowed.
 - Empirical boundary: 2013–2014 formation reserve only; 2015–2019 inner development only; OF4 2020–2023 and held-out 2024–2025 denied.
 - Current disposition: PAIR-A freeze validation/publication precedes any empirical access.
+- Protocol publication: PAIR-A freeze committed as `f6d7e9c` and pushed normally to `origin/main` before empirical access.
+- Structural C06 readiness audit: the bound C06 artifact hash matches the freeze, but its normalized availability metadata does not. It contains 15,886 rows/45 snapshot titles, 1,125 null publication dates, and assigns `2019-09-04` to dated 2012Q4–2019Q2 snapshot records.
+- Inner-origin consequence: all ten 2015–2019 January/July calendar boundaries lack a captured C06 snapshot available strictly before the origin under the artifact's own dates.
+- Empirical boundary honored: no market observation, realized pair count, model fit, abnormality, target, return, PnL, OF4, or held-out value was accessed.
+- Mandatory stop: no date was inferred from a period label or archive page; the frozen C06 artifact and core fingerprint were not mutated.
+- Completion disposition: `GENUINE INTEGRITY BLOCKER / C06 AVAILABILITY-TIME AMENDMENT REQUIRED`; successor action reset to `NONE`.
+- Closeout validation: expected C06 audit exit `2` reproduced the same blocker; core freeze, C04-A, agent-control, V1-gate, literature, documentation, Learning Layer, and whitespace validators passed. Blocker-report SHA-256: `DAC22FD9171F6AAAB8E87FF9182A2AF7DA6241B725C416704DF3B93559D4C1FB`.

@@ -1,11 +1,11 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
-    "name": "Freeze PAIR-A and execute V1 Phase 1 inner development",
-    "status": "AUTHORIZED",
-    "execution_state": "ACTIVE",
-    "objective": "Publish the PAIR-A complete-PIT-all-pairs freeze, implement exact frozen V1 specifications, and execute/checksum only 2015-2019 semiannual inner-development outputs before stopping at PRE-OUTER.",
+    "action_id": "NONE",
+    "name": "NONE",
+    "status": "NONE",
+    "execution_state": "STOPPED_RESEARCHER_DECISION_REQUIRED",
+    "objective": "PAIR-A is frozen and published. Phase 1 is stopped before empirical access because the bound C06 artifact lacks valid historical publication/available times for 2015-2019 PIT universe construction.",
     "prerequisites": [
       "CORE-DATASET-FREEZE-V1 fingerprint verified",
       "C04-A-OFFICIAL-CALENDAR-V1 validated",
@@ -13,48 +13,39 @@
       "PAIR-A complete PIT all-pairs selected by the researcher",
       "2024-2025 held-out sealed"
     ],
-    "allowed_scope": [
-      "freeze, validate, commit, and normally push PAIR-A to the authorized origin main",
-      "materialize deterministic PIT candidate pair membership with unordered identity and two directional channels",
-      "vectorization, batching, caching, shared sufficient statistics, safe parallelism, and deterministic checkpoints without semantic approximation",
-      "implement the frozen seven relationship tuples, eligibility, A1-A6, and G5 interfaces",
-      "use 2013-2014 only as formation reserve and compute/inspect only 2015-2019 semiannual inner-development evidence",
-      "write immutable outputs, manifests, checksums, tests, validators, and PRE-OUTER checkpoint",
-      "normal non-force commits and pushes of in-scope protocol, implementation, and inner-development artifacts"
-    ],
+    "allowed_scope": [],
     "forbidden_scope": [
-      "any pair screen, rank, Top-K, same-C06-code restriction, approximation, or reduction of PAIR-A",
-      "use realized pair counts, support, performance, or outcomes to revise PAIR-A",
-      "new model, estimator, metric, threshold, feature, provider, Search-Budget, sensitivity, or semantic choice",
-      "P1 acquisition or R2/R5 execution",
+      "infer, backfill, or substitute C06 publication/available dates",
+      "mutate CORE-DATASET-FREEZE-V1 or its bound C06 artifact",
+      "construct pair membership or inspect realized pair counts",
+      "model fitting or any market, relationship, abnormality, mechanism, target, return, or PnL computation",
       "OF4 2020-2023 access",
       "2024-2025 held-out access",
-      "C04-A reacquisition or overwrite",
-      "post-hoc scientific repair or trading-policy change"
+      "new data acquisition or source access",
+      "any scientific, dataset-version, or temporal amendment without researcher authorization"
     ],
-    "dataset_access": "CORE_V1_PLUS_C04_A_RESTRICTED_TO_2013_2019_ROLE_GUARD",
-    "empirical_result_visibility": "2015_2019_INNER_ONLY",
+    "dataset_access": "DENIED_PENDING_C06_AVAILABILITY_TIME_AMENDMENT",
+    "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": true,
-    "commit_scope": "PAIR-A freeze, exact Phase 1 implementation, immutable inner outputs/manifests, validators, state/log, and PRE-OUTER checkpoint only.",
-    "push_permitted": true,
-    "push_reason": "Researcher explicitly authorized normal push to the already-authorized Mechanism-Aware-Statistical-Arbitrage origin main; force and history rewriting remain prohibited.",
+    "commit_permitted": false,
+    "commit_scope": "The stopped action permits its own structural-audit closeout commit; no successor mutation is authorized.",
+    "push_permitted": false,
+    "push_reason": "The stopped action permits its own normal closeout push; no successor push is authorized.",
     "required_validators": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
       "learning/validators/validate_learning_layer.ps1",
       "tools/validate_core_dataset_freeze.py",
       "tools/validate_v1_c04_calendar.py",
+      "tools/validate_v1_c06_pit_readiness.py (expected integrity-blocker exit 2)",
       "research/validate_agent_control.ps1",
       "git diff --check"
     ],
-    "completion_condition": "Validated immutable 2015-2019 inner-development outputs are materialized and PRE-OUTER V1 GATE is produced, or an exact integrity/computational blocker is recorded.",
+    "completion_condition": "Researcher authorizes a bounded versioned C06 availability-time amendment, selects a temporal-scope amendment, or stops V1.",
     "mandatory_stop_conditions": [
-      "Any attempted OF4 or held-out access",
-      "Any need to reduce or approximate PAIR-A",
-      "Any unresolved numerical or scientific semantic required for execution",
-      "Any deterministic-regeneration, source-contract, identity, or C04 integrity failure",
-      "Exact PAIR-A remains infeasible after authorized engineering optimization"
+      "Any work before a successor action is explicitly authorized",
+      "Any empirical, OF4, or held-out access",
+      "Any silent C06 timestamp repair or frozen-artifact mutation"
     ]
   }
 }
