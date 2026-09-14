@@ -24,12 +24,18 @@ if ($state -notmatch 'SEALED') { throw 'Agent state does not preserve the held-o
 $contract = Get-Content -Raw -LiteralPath $contractPath | ConvertFrom-Json
 $allowedGates = @(
     'DENIED_UNTIL_ALL_BINDINGS_FROZEN_AND_RESEARCHER_AUTHORIZED',
-    'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION'
+    'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION',
+    'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
     if ($next.action.action_id -ne 'V1-PHASE1-C04-INNER-EXECUTION-V1') { throw 'Inner authorization lacks the matching active action.' }
     if ($next.action.empirical_result_visibility -ne '2015_2019_INNER_ONLY') { throw 'Inner authorization has an invalid visibility boundary.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
+if ($contract.computation_gate -eq 'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN') {
+    if ($next.action.action_id -ne 'NONE') { throw 'Pair-universe pause must not retain an executable action.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'Pair-universe pause must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
 }
 

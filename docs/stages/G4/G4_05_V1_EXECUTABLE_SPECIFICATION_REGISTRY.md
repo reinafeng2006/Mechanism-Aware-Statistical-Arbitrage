@@ -29,15 +29,15 @@ For security `k`, the one-session signed response candidate is simple close-to-c
 
 `r_k,t = P_k,t / P_k,t-1 - 1`.
 
-This formula is not executable until a C04 rule qualifies both endpoints and the intervening interval. V1 proposes:
+This formula is executable only under the frozen C04-A descendant rule for both endpoints and the intervening interval. V1 requires:
 
 - endpoints must be valid observed raw/unadjusted C03 closes tied to stable C01 identity;
 - both endpoint sessions must be `NORMAL TRADING OBSERVED`; `UNKNOWN MISSINGNESS`, suspension, resumption ambiguity, identifier transition, nonpositive/nonfinite price, or a nonconsecutive eligible-session interval makes the response unavailable;
-- an authoritative C04 action calendar must establish whether an action/distribution affects the interval; unresolved action status is not clean;
+- an official C04-A action calendar must establish whether an identified action/distribution affects the interval; identified affected intervals are excluded, while a retained interval is labelled only `NO IDENTIFIED ACTION UNDER V1 CALENDAR`, never `AUTHORITATIVELY ACTION-CLEAN`;
 - no forward fill, zero return, synthetic adjustment, Tushare/Sina adjustment-factor substitution, or economic splicing across `601313.SH -> 601360.SH`;
 - every exclusion retains C04/C05/identity reason and rule version.
 
-The minimum V1 C04 proposal is an authoritative action-event exclusion contract, not a canonical adjusted-price construction. If authoritative coverage cannot establish a complete no-action state for an interval, that interval remains unavailable. This is a hard pre-computation data decision.
+The frozen V1 C04-A rule is an official action-event exclusion contract, not a canonical adjusted-price construction and not proof of complete action cleanliness. Actions without a defensible effective/ex date remain unresolved and cannot silently qualify an interval. The underlying core-sidecar C04 state remains unresolved; the descendant calendar adds only bounded V1 exclusion evidence.
 
 ## Exact estimator mathematics common to V1
 
@@ -110,4 +110,4 @@ No mechanism probability or forced class is proposed. Evidence can support, oppo
 
 ## Computation gate
 
-The researcher froze the seven tuples, R3-A, R4-A, SCI-A and TRADE-A. Phase 1 computation remains conditional on construction/validation of the C04-A descendant exclusion layer and structural binding of the E03-A benchmark identity. Only 2015–2019 semiannual inner development is authorized; OF4 and held-out access remain denied.
+The researcher froze the seven tuples, R3-A, R4-A, SCI-A and TRADE-A. The C04-A descendant exclusion layer is now acquired and structurally validated under manifest `C04-A-OFFICIAL-CALENDAR-V1`; the E03-A benchmark identity is structurally bound. Phase 1 computation remains stopped because the pair universe/formation rule is not frozen. Only 2015–2019 semiannual inner development may become executable after that scientific blocker is resolved; OF4 and held-out access remain denied.

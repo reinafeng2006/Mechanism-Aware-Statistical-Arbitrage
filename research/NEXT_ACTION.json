@@ -1,55 +1,47 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-PHASE1-C04-INNER-EXECUTION-V1",
-    "name": "V1 Phase 1 implementation, bounded C04-A, and 2015-2019 inner development",
-    "status": "AUTHORIZED",
-    "execution_state": "ACTIVE",
-    "objective": "Freeze and publish the approved V1 protocols, acquire/construct only the conservative C04-A descendant layer, implement the frozen V1 scientific/trading pipeline, execute only authorized 2015-2019 semiannual inner development, and stop before OF4.",
+    "action_id": "NONE",
+    "name": "NONE",
+    "status": "NONE",
+    "execution_state": "STOPPED_RESEARCHER_DECISION_REQUIRED",
+    "objective": "C04-A is complete and validated. Await a researcher-frozen candidate pair-universe/formation rule before any Phase 1 fitting or empirical access.",
     "prerequisites": [
       "CORE-DATASET-FREEZE-V1 fingerprint verified",
-      "G4-05A approved and frozen",
-      "G4-05B1 approved and frozen",
+      "C04-A-OFFICIAL-CALENDAR-V1 validated",
+      "V1 seven-tuple protocol published",
       "2024-2025 held-out sealed"
     ],
-    "allowed_scope": [
-      "commit and push the frozen pre-computation scientific/trading protocol to origin main without force",
-      "bounded official C04-A action-calendar acquisition and immutable descendant exclusion layer",
-      "implementation of the frozen seven model tuples, eligibility, temporal folds, A1-A6, and G5",
-      "2015-2019 semiannual inner-development computation and interpretation only",
-      "immutable outputs, manifests, checksums, tests, validators, engineering-only repairs, and PRE-OUTER gate"
-    ],
+    "allowed_scope": [],
     "forbidden_scope": [
-      "new model, feature, mechanism, outcome, temporal, metric, sensitivity, or provider family",
-      "feature-set change outside explicit V1 exclusions",
-      "P1 data acquisition, new provider, or C04 adjusted-price substitution",
-      "model fitting, empirical distribution inspection, or result inspection outside the authorized 2015-2019 inner-development region and frozen V1 tuples",
-      "OF4 2020-2023 computation or inspection",
-      "Search-Budget modification",
+      "infer or select a pair universe, pair screen, pair rank, K, tie rule, or cross-code restriction",
+      "model fitting or empirical distribution, pair-count, coverage, or outcome inspection",
+      "relationship, abnormality, mechanism, target, return, or PnL computation",
+      "OF4 2020-2023 access",
       "2024-2025 held-out access",
-      "new or altered scientific/trading semantic choice"
+      "C04-A reacquisition or overwrite",
+      "new model, feature, provider, Search-Budget, or scientific-semantic choice"
     ],
-    "dataset_access": "CORE_V1_PLUS_AUTHORIZED_C04_DESCENDANT",
-    "empirical_result_visibility": "2015_2019_INNER_ONLY",
+    "dataset_access": "DENIED_PENDING_PAIR_UNIVERSE_DECISION",
+    "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": true,
-    "commit_scope": "Frozen pre-computation protocol and later Phase 1 engineering/inner artifacts only; exclude credentials, ignored raw secrets, .venv, OF4 and held-out artifacts.",
-    "push_permitted": true,
-    "push_reason": "Researcher explicitly authorized normal non-force push to the already authorized GitHub repository main branch.",
+    "commit_permitted": false,
+    "commit_scope": "No successor work is authorized after the completed C04-A/blocker closeout commit.",
+    "push_permitted": false,
+    "push_reason": "The completed action permits its own normal closeout push; no successor push is authorized.",
     "required_validators": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
       "learning/validators/validate_learning_layer.ps1",
       "tools/validate_core_dataset_freeze.py",
+      "tools/validate_v1_c04_calendar.py",
       "research/validate_agent_control.ps1",
       "git diff --check"
     ],
-    "completion_condition": "Validated immutable inner-development scientific and trading outputs are materialized and the PRE-OUTER V1 gate is produced.",
+    "completion_condition": "Researcher freezes one pair-universe/formation alternative and explicitly authorizes a successor Phase 1 action.",
     "mandatory_stop_conditions": [
-      "Any need to change frozen scientific semantics",
-      "Any C04 source-contract or acquisition integrity failure",
-      "Any OF4 or held-out access attempt",
-      "Any unrecoverable implementation or deterministic-regeneration failure"
+      "Any work before a successor action is explicitly authorized",
+      "Any empirical computation or temporal-region access"
     ]
   }
 }

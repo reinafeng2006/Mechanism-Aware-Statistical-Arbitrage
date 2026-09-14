@@ -63,6 +63,13 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Frozen C04-A semantics: identified action intervals are excluded; absence from the bounded V1 calendar is recorded only as `NO IDENTIFIED ACTION UNDER V1 CALENDAR`, never as authoritative action cleanliness.
 - Empirical boundary: after protocol publication and C04-A validation, only 2015–2019 inner development is authorized; OF4 2020–2023 and sealed 2024–2025 remain prohibited.
 - Current disposition: protocol freeze validation and publication in progress; no acquisition or computation has begun in this run.
+- Protocol publication: committed as `a67e07dad40aa7aa43e434e492409cdcb79d8053` and pushed normally to `origin/main`; no force or history rewrite.
+- C04-A execution: completed from official SSE/SZSE archives under `C04-A-OFFICIAL-CALENDAR-V1`; 195 raw artifacts, 1,929 normalized action/exclusion records, zero unresolved effective dates in acquired rows, and zero request failures. The calendar and exclusion hashes are `61215BB425880B02A5E11F1C8DE2CE613BE73E15C31FD876AD85282E810E3E69` and `B63188E35EF76A3B8E5DAE4F02FE68CE2033ED5554113DBE30CEF3B3C993F910`.
+- C04 semantics: core C04 state was not mutated; `NO IDENTIFIED ACTION UNDER V1 CALENDAR` was not recoded as authoritative cleanliness; no adjusted-price substitute was used.
+- Pre-fitting audit: found no frozen candidate pair-universe/formation rule. Repository decisions explicitly defer the pair universe and permit R0-DIST screening only under a later authorized pair rule.
+- Mandatory stop: Phase 1 model fitting and all empirical access stopped before execution. OF4 and held-out remained inaccessible.
+- Completion disposition: `GENUINE INTEGRITY BLOCKER / RESEARCHER DECISION REQUIRED`; successor action reset to `NONE`.
+- Closeout validation: **PASS** — C04-A source/hash/schema validator, V1 paused-gate validator, agent control, Literature OS, documentation architecture, Learning Layer, core dataset fingerprint, JSON contracts, and `git diff --check`. Core root remains `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616`; public C04 manifest SHA-256 is `402741A7BF767FD56508AC957DE12D2B422E2B0B80F30ABE0B47C03255AC267A`.
 
 ## RUN-G405-PARTIAL-20260914-01
 

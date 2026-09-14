@@ -22,6 +22,18 @@ $gate = Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/stages/G4/PRE_COMPU
 $action = Get-Content -Raw -LiteralPath (Join-Path $repo 'research/NEXT_ACTION.json') | ConvertFrom-Json
 $contract = Get-Content -Raw -LiteralPath (Join-Path $repo 'research/G5_TRADING_V1_CONTRACT.json') | ConvertFrom-Json
 
+$activeInner = (
+    $action.action.action_id -eq 'V1-PHASE1-C04-INNER-EXECUTION-V1' -and
+    $action.action.empirical_result_visibility -eq '2015_2019_INNER_ONLY' -and
+    $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
+)
+$pairUniversePause = (
+    $action.action.action_id -eq 'NONE' -and
+    $action.action.empirical_result_visibility -eq 'DENIED' -and
+    $action.action.dataset_access -eq 'DENIED_PENDING_PAIR_UNIVERSE_DECISION' -and
+    $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
+)
+
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
     ($registry -match 'R5-EG-ECM.*NO V1 EXECUTION'),
@@ -31,13 +43,15 @@ $checks = @(
     ($gate -match 'PRE-COMPUTATION \+ TRADING-PROTOCOL V1 GATE — APPROVED / FROZEN'),
     ($gate -match 'C04-A'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($action.action.empirical_result_visibility -eq '2015_2019_INNER_ONLY'),
-    ($action.action.action_id -eq 'V1-PHASE1-C04-INNER-EXECUTION-V1'),
-    ($contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'),
+    ($activeInner -or $pairUniversePause),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
 
 if ($checks -contains $false) { throw 'V1 pre-computation gate invariant failed.' }
 
-Write-Output 'PASS: V1 protocol is frozen; only conditional 2015-2019 inner development is authorized, while OF4 and held-out access remain denied.'
+if ($pairUniversePause) {
+    Write-Output 'PASS: V1 protocol remains frozen; Phase 1 is safely paused pending a frozen pair-universe rule, and all empirical/OF4/held-out access is denied.'
+} else {
+    Write-Output 'PASS: V1 protocol is frozen; only conditional 2015-2019 inner development is authorized, while OF4 and held-out access remain denied.'
+}
