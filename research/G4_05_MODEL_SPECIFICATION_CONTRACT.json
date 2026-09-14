@@ -100,6 +100,6 @@
     "contract_id": "V1-R4-CF-A-CF-B-1.0",
     "status": "CF_A_PASSED_BOUND_TO_PHASE1"
   },
-  "a6_training_geometry": {"contract_id": "V1-A6-TG-A-1.0", "status": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION"},
-  "computation_gate": "A6_TG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION"
+  "a6_training_geometry": {"contract_id": "V1-A6-TG-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
+  "computation_gate": "AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION"
 }

@@ -1,34 +1,37 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-A6-TG-A-PUBLICATION-V1",
-    "name": "Publish A6-TG-A before Phase 1 resume",
+    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
+    "name": "Execute A6-TG-A and CF-A-bound V1 Phase 1",
     "status": "AUTHORIZED",
-    "execution_state": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
-    "objective": "Publish the researcher-selected A6-TG-A geometry and role guard before resuming inner computation.",
+    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
+    "objective": "Execute and checksum complete PAIR-A R0/R1/R3/R4 and inner A1-A6/G5 under all published frozen contracts.",
     "prerequisites": [
       "CF-A benchmark disposition and inner-only role guard published",
       "V1-PHASE1-INNER-INPUT-1.0 checksum-bound",
-      "Researcher explicitly selected A6-TG-A"
+      "A6-TG-A published at commit 1d1e1ea"
     ],
     "allowed_scope": [
-      "write and validate A6-TG-A contract",
-      "commit and push the pre-computation freeze to the authorized main branch"
+      "execute complete PAIR-A R0/R1/R3/R4 with CF-A monthly Q/R and daily states",
+      "execute only 2015-2019 inner A1-A6/G5 under A6-TG-A",
+      "materialize immutable/checksummed outputs and PRE-OUTER checkpoint",
+      "normal non-force commits and pushes"
     ],
     "forbidden_scope": [
-      "model fitting or empirical-result inspection before publication",
+      "pair screening, approximation, or PAIR-A reduction",
+      "unregistered equation, weighting, temporal, or estimator change",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_A6_TG_A_PUBLICATION",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "CORE_V1_PLUS_C04_A_PLUS_C06_AMENDMENT_PLUS_EXEC_A_RESTRICTED_2013_2019",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "A6-TG-A freeze is validated and published before inner computation resumes.",
+    "completion_condition": "Validated immutable 2015-2019 inner outputs and PRE-OUTER checkpoint, or a genuine new integrity/computational blocker.",
     "mandatory_stop_conditions": [
-      "Any attempt to fit or inspect results before A6-TG-A publication",
+      "Any semantic change beyond published contracts",
       "Any OF4 or held-out access"
     ]
   }

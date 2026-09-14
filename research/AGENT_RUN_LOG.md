@@ -157,3 +157,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Built checksum-bound `V1-PHASE1-INNER-INPUT-1.0` from frozen core/C04-A/C06-amendment inputs; no model fit, relationship statistic, outcome, OF4, or held-out access occurred.
 - Mandatory stop: the exact A6 semiannual training/first-prediction/pooling/weighting geometry is not frozen. Continuing would select a temporal and estimator semantics that the high-level CG2 record explicitly left unresolved.
 - Researcher selected `A6-TG-A`: expanding prior completed-inner training, first prediction at 2015H2, target-specific maturity, candidate/component/horizon/PV fits, and equal-total-pair fitting weights. Publication guard denies empirical access until the freeze commit is pushed.
+- A6-TG-A published at commit `1d1e1ea`; the role guard now permits only 2015–2019 inner computation under the frozen complete PAIR-A contracts.
