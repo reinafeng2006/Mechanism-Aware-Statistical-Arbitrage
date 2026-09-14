@@ -1,29 +1,43 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "Await PAIR-A/R4 computational-feasibility decision",
-    "status": "RESEARCHER_DECISION_REQUIRED",
-    "execution_state": "PAUSED_BEFORE_EMPIRICAL_ACCESS",
-    "objective": "Preserve complete PAIR-A and frozen EXEC-A while exact daily pair-specific R4 PIT-ML is computationally infeasible within the V1 deadline.",
-    "prerequisites": [],
-    "allowed_scope": [],
+    "action_id": "V1-R4-CONDITIONAL-COMPUTE-V1",
+    "name": "Publish and benchmark conditional CF-A/CF-B",
+    "status": "AUTHORIZED",
+    "execution_state": "CONTRACT_PUBLICATION_THEN_SYNTHETIC_BENCHMARK",
+    "objective": "Publish the frozen monthly-Q/R/daily-state CF-A contract, benchmark it without empirical data, and activate pre-authorized CF-B automatically if infeasible.",
+    "prerequisites": [
+      "Researcher selected conditional CF-A with CF-B feasibility fallback",
+      "PAIR-A and V1-EXECUTABLE-SEMANTICS-A1 frozen",
+      "No empirical, OF4, or held-out access before benchmark"
+    ],
+    "allowed_scope": [
+      "publish the conditional R4 compute contract",
+      "use structural counts and synthetic kernels for runtime/memory/storage profiling",
+      "install benchmark-only compiled numerical dependencies under ignored data/qa_work",
+      "activate CF-A or pre-authorized CF-B from feasibility only",
+      "normal non-force commits and pushes",
+      "continue Phase 1 R0/R1/R3 automatically if CF-B activates"
+    ],
     "forbidden_scope": [
-      "all empirical dataset access",
+      "all empirical dataset access before benchmark disposition and guard publication",
       "any pair screening, approximation, or PAIR-A reduction",
       "silent R4 clock, variance-sharing, estimator, or model change",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_PAIRA_R4_COMPUTE_DECISION",
+    "dataset_access": "STRUCTURAL_COUNTS_AND_SYNTHETIC_KERNELS_ONLY",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": false,
-    "push_permitted": false,
-    "completion_condition": "Researcher selects a bounded R4 computational-feasibility resolution.",
+    "commit_permitted": true,
+    "commit_scope": "Conditional contract, synthetic benchmark, feasibility disposition, implementation/inner artifacts, state/log, and PRE-OUTER or new blocker only.",
+    "push_permitted": true,
+    "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
+    "completion_condition": "CF-A benchmark passes and Phase 1 completes including R4, or CF-B activates and Phase 1 completes R0/R1/R3, or a new blocker affects R0/R1/R3/overall design.",
     "mandatory_stop_conditions": [
-      "Any empirical, OF4, or held-out access",
-      "Any unapproved semantic or compute-scope change"
+      "Any empirical access before benchmark disposition is published",
+      "Any PAIR-A reduction or R4 semantic change beyond the frozen monthly Q/R clock",
+      "Any OF4 or held-out access"
     ]
   }
 }

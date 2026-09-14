@@ -96,5 +96,9 @@
     "status": "PUBLISHED_BOUND_TO_PHASE1",
     "empirical_information_used": false
   },
-  "computation_gate": "PAUSED_PAIRA_R4_COMPUTATIONAL_FEASIBILITY"
+  "r4_conditional_compute_contract": {
+    "contract_id": "V1-R4-CF-A-CF-B-1.0",
+    "status": "QUALIFIED_PENDING_PUBLICATION_AND_SYNTHETIC_BENCHMARK"
+  },
+  "computation_gate": "R4_CONDITIONAL_CONTRACT_PENDING_PUBLICATION"
 }

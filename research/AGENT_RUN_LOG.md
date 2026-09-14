@@ -141,3 +141,11 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Engineering conclusion: vectorization/batching cannot eliminate the frozen pair-specific daily ML objectives. The workload is infeasible within the V1 deadline in the current environment without a scientific clock/sharing amendment or material dedicated compute.
 - Mandatory stop: no pair screening, approximation, R4 clock substitution, market value, return, fit, outcome, PnL, OF4, or held-out access occurred.
 - Completion disposition: `GENUINE COMPUTATIONAL BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.
+
+## 2026-09-14 — RUN-V1-CFA-CFB-20260914-01
+
+- Authority: researcher selected monthly-Q/R CF-A with daily U1D state updates and pre-authorized CF-B solely on computational infeasibility.
+- Base commit: `ea044ce666da934dc2952c1ad0b6a459bdaea6eb`; remote matched; unrelated `.venv/` excluded.
+- Single-writer lock acquired before canonical mutation.
+- Pre-benchmark state: empirical access denied; only the existing structural geometry and synthetic kernels are authorized.
+- Conditional contract: `V1-R4-CF-A-CF-B-1.0`; no pair screening, sampling, lower-frequency state update, result-driven change, OF4, or held-out access.

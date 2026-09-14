@@ -1,0 +1,27 @@
+{
+  "schema_version": "V1-R4-CONDITIONAL-COMPUTE-1.0",
+  "contract_id": "V1-R4-CF-A-CF-B-1.0",
+  "status": "APPROVED_FROZEN_PRE_BENCHMARK",
+  "primary": {
+    "path": "CF-A",
+    "pair_universe": "COMPLETE_PIT_ALL_PAIRS",
+    "state_update": "U1D",
+    "qr_reestimate": "U1M_FIRST_CANDIDATE_ELIGIBLE_EXCHANGE_SESSION",
+    "qr_information": "STRICTLY_BEFORE_MONTHLY_ORIGIN",
+    "within_month": "DETERMINISTIC_CARRY_FORWARD",
+    "model": "R4_RW_UNCHANGED"
+  },
+  "benchmark": {
+    "inputs": "STRUCTURAL_COUNTS_AND_SYNTHETIC_KERNELS_ONLY",
+    "required": ["monthly_pair_direction_fits", "optimizer_evaluations", "kalman_steps", "wall_clock", "memory", "storage", "restart"],
+    "pass_rule": "CONSERVATIVE_PROJECTED_COMPLETION_WITHIN_REMAINING_V1_DEADLINE_WITH_RESTART_MARGIN"
+  },
+  "fallback": {
+    "path": "CF-B",
+    "trigger": "COMPUTATIONAL_RUNTIME_OR_RESOURCE_INFEASIBILITY_ONLY",
+    "R4": "V1_COMPUTATION_DEFERRED_V2",
+    "execute": ["R0", "R1", "R3"],
+    "scientific_inference": "NONE"
+  },
+  "prohibited": ["PAIR_SCREENING", "PAIR_SAMPLING", "LOWER_FREQUENCY_STATE_UPDATE", "OUTCOME_DRIVEN_CHANGE", "ALTERNATIVE_R4_FAMILY", "OF4_ACCESS", "HELD_OUT_ACCESS"]
+}
