@@ -1,8 +1,8 @@
 {
   "manifest_id": "V1-PAIR-A-STRUCTURAL-FEASIBILITY-1.0",
-  "status": "COMPUTATIONAL_FEASIBILITY BLOCKER — STRUCTURAL COUNTS ONLY",
+  "status": "STRUCTURAL COMPUTE GEOMETRY — CF-A BENCHMARK PASSED",
   "source_report": "data/qa_work/v1/phase1/structural_feasibility_v1.json",
-  "source_report_sha256": "B15FBFDB96670912D4B98D0B13952A377030B19E002A8265F322C3CA8103A6C9",
+  "source_report_sha256": "9934D4122F5736B2D4CCD0DEA2F9AF936C72355C00B244E79E8EE1ABE2F95EC1",
   "input_scope": [
     "C06 membership and C06-AVAILABILITY-AMENDMENT-V1",
     "Security-Date Eligibility Sidecar structural states",
@@ -27,9 +27,12 @@
   "r4_geometry": {
     "required_pair_direction_daily_ml_fits": 87407322,
     "minimum_kalman_state_steps_per_single_likelihood_sweep": 5506661286,
+    "cf_a_monthly_origins": 60,
+    "cf_a_monthly_pair_direction_ml_fits": 4285028,
+    "cf_a_minimum_kalman_state_steps_per_likelihood_sweep": 269956764,
     "optimizer_iterations_not_included": true,
-    "current_environment_optimizer_stack": "NO SCIPY/STATSMODELS/SKLEARN/NUMBA/JAX/TORCH AVAILABLE IN PROJECT RUNTIME",
-    "disposition": "INFEASIBLE_WITHIN_V1_DEADLINE_WITHOUT_SEMANTIC_CHANGE_OR_MATERIAL_COMPUTE"
+    "benchmark_optimizer_stack": "SCIPY_1.18.1_IN_IGNORED_QA_SCRATCH_RUNTIME",
+    "disposition": "CF_A_FEASIBLE_WITH_MONTHLY_QR_AND_DAILY_STATE_CONTRACT"
   },
   "scientific_interpretation": "Counts describe computation geometry only; membership in PAIR-A is not pair validity or performance evidence.",
   "pair_screening_performed": false

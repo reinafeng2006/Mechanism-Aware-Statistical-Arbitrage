@@ -149,3 +149,7 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Single-writer lock acquired before canonical mutation.
 - Pre-benchmark state: empirical access denied; only the existing structural geometry and synthetic kernels are authorized.
 - Conditional contract: `V1-R4-CF-A-CF-B-1.0`; no pair screening, sampling, lower-frequency state update, result-driven change, OF4, or held-out access.
+- Synthetic benchmark: 4,000 fixed-seed H63 fits, 8 worker processes, median 9 objective evaluations, 1,471.75 aggregate fits/second, 100% numerically valid synthetic fits.
+- CF-A projection: 4,285,028 monthly pair-direction fits, approximately 0.81 hour at measured throughput; approximately 5.6 GB uncompressed daily-state records at 64 bytes each.
+- Disposition: `CF-A PASSED / R4 INCLUDED IN V1`; CF-B not triggered. Decision used computational feasibility only.
+- Publication guard: no empirical dataset access is permitted until the benchmark disposition commit is pushed.

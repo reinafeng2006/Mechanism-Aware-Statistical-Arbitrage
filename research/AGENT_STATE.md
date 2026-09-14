@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 R4 CONDITIONAL COMPUTE CONTRACT` |
-| Stage status | `AUTHORIZED — PUBLICATION THEN SYNTHETIC BENCHMARK` |
+| Current stage | `V1 R4 CF-A BENCHMARK DISPOSITION` |
+| Stage status | `CF-A PASSED / PUBLICATION REQUIRED BEFORE EMPIRICAL ACCESS` |
 | Latest frozen decision | `V1-EXECUTABLE-SEMANTICS-A1 — APPROVED / FROZEN` |
-| Current substage | publish CF-A monthly Q/R + U1D state contract; benchmark; automatically choose CF-A/CF-B by feasibility |
+| Current substage | publish synthetic benchmark pass and CF-A-bound Phase 1 role guard |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | structural counts and synthetic kernels only until benchmark disposition is published |
-| Current authorized action | `V1-R4-CONDITIONAL-COMPUTE-V1` |
-| Last validation state | structural-only PAIR-A geometry: 46,463,558 inner pair-dates; exact R4 requires 87,407,322 daily pair-direction ML fits |
-| Latest local commit | `790ca825f002e9db82543e2163cf6b4378b3fa1b` — amended C06 Phase 1 guard published |
-| Remote state observed | `origin/main` at `790ca825f002e9db82543e2163cf6b4378b3fa1b` |
-| Researcher action required | `NO`; CF-B fallback is pre-authorized on runtime/resource infeasibility |
+| Computation authorization | denied until CF-A pass disposition is published; then 2015–2019 inner only |
+| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
+| Last validation state | CF-A synthetic benchmark PASS: 4,285,028 monthly fits project to 0.81 hour at measured 8-worker throughput |
+| Latest local commit | `50dad55` — conditional R4 compute contract published |
+| Remote state observed | `origin/main` at `50dad55` |
+| Researcher action required | `NO`; publish disposition then resume Phase 1 |
 
 ## Verified frozen chain relevant to activation
 

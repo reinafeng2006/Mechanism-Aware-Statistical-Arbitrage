@@ -33,6 +33,7 @@ $allowedGates = @(
     ,'EXEC_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
     ,'PAUSED_PAIRA_R4_COMPUTATIONAL_FEASIBILITY'
     ,'R4_CONDITIONAL_CONTRACT_PENDING_PUBLICATION'
+    ,'CF_A_PASSED_PENDING_DISPOSITION_PUBLICATION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -97,6 +98,14 @@ if ($contract.computation_gate -eq 'R4_CONDITIONAL_CONTRACT_PENDING_PUBLICATION'
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'R4 contract publication must deny empirical visibility.' }
     if ($next.action.dataset_access -ne 'STRUCTURAL_COUNTS_AND_SYNTHETIC_KERNELS_ONLY') { throw 'R4 benchmark scope is too broad.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
+if ($contract.computation_gate -eq 'CF_A_PASSED_PENDING_DISPOSITION_PUBLICATION') {
+    if ($next.action.action_id -ne 'V1-PAIR-A-PHASE1-INNER-EXECUTION-V1') { throw 'CF-A disposition publication action is not bound.' }
+    if ($next.action.execution_state -ne 'CF_A_PASSED_PENDING_DISPOSITION_PUBLICATION') { throw 'CF-A disposition publication state mismatch.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED_UNTIL_CF_A_DISPOSITION_PUBLICATION') { throw 'CF-A disposition publication must deny empirical visibility.' }
+    if ($next.action.dataset_access -ne 'DENIED_UNTIL_CF_A_DISPOSITION_PUBLICATION') { throw 'CF-A disposition publication must deny empirical dataset access.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($contract.r4_conditional_compute_contract.status -ne 'CF_A_PASSED_BOUND_TO_PHASE1') { throw 'CF-A pass is not bound to Phase 1.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

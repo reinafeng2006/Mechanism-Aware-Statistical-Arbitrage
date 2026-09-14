@@ -1,7 +1,7 @@
 {
   "schema_version": "V1-R4-CONDITIONAL-COMPUTE-1.0",
   "contract_id": "V1-R4-CF-A-CF-B-1.0",
-  "status": "APPROVED_FROZEN_PRE_BENCHMARK",
+  "status": "CF_A_PASSED_PHASE1_AUTHORIZED",
   "primary": {
     "path": "CF-A",
     "pair_universe": "COMPLETE_PIT_ALL_PAIRS",
@@ -21,7 +21,10 @@
     "trigger": "COMPUTATIONAL_RUNTIME_OR_RESOURCE_INFEASIBILITY_ONLY",
     "R4": "V1_COMPUTATION_DEFERRED_V2",
     "execute": ["R0", "R1", "R3"],
-    "scientific_inference": "NONE"
+    "scientific_inference": "NONE",
+    "triggered": false
   },
+  "benchmark_manifest": "data/manifests/V1_R4_CF_A_SYNTHETIC_BENCHMARK.json",
+  "disposition": "CF-A",
   "prohibited": ["PAIR_SCREENING", "PAIR_SAMPLING", "LOWER_FREQUENCY_STATE_UPDATE", "OUTCOME_DRIVEN_CHANGE", "ALTERNATIVE_R4_FAMILY", "OF4_ACCESS", "HELD_OUT_ACCESS"]
 }

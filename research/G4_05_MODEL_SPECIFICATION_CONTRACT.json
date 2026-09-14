@@ -98,7 +98,7 @@
   },
   "r4_conditional_compute_contract": {
     "contract_id": "V1-R4-CF-A-CF-B-1.0",
-    "status": "QUALIFIED_PENDING_PUBLICATION_AND_SYNTHETIC_BENCHMARK"
+    "status": "CF_A_PASSED_BOUND_TO_PHASE1"
   },
-  "computation_gate": "R4_CONDITIONAL_CONTRACT_PENDING_PUBLICATION"
+  "computation_gate": "CF_A_PASSED_PENDING_DISPOSITION_PUBLICATION"
 }

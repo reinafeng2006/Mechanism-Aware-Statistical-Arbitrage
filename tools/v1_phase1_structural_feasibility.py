@@ -129,6 +129,13 @@ def main() -> None:
         prior_normal = current
 
     totals = {key: sum(y[key] for y in yearly.values()) for key in next(iter(yearly.values()))}
+    first_month_rows = []
+    seen_months = set()
+    for row in rows:
+        month = row[0][:7]
+        if month not in seen_months:
+            seen_months.add(month)
+            first_month_rows.append(row)
     report = {
         "audit_id": "V1-PAIR-A-STRUCTURAL-FEASIBILITY-1.0",
         "scope": "C06/sidecar/C04 structural states only; no prices, returns, fits, outcomes, OF4, or held-out",
@@ -138,6 +145,9 @@ def main() -> None:
         "inner_totals": totals,
         "semiannual_origins": origin_report,
         "r4_required_pair_direction_daily_ml_fits": 2 * totals["h63_pair_dates"],
+        "r4_cf_a_monthly_pair_direction_ml_fits": 2 * sum(r[3] for r in first_month_rows),
+        "r4_cf_a_monthly_origins": len(first_month_rows),
+        "r4_cf_a_minimum_kalman_state_steps_per_likelihood_sweep": 2 * sum(r[3] for r in first_month_rows) * 63,
         "r4_minimum_kalman_state_steps_per_likelihood_sweep": 2 * totals["h63_pair_dates"] * 63,
         "r3_monthly_pair_direction_membership_fits_upper_geometry": 2 * sum(r[4] for r in rows if date.fromisoformat(r[0]).day <= 7),
         "interpretation": "Counts are structural computational geometry, not model performance or pair validity.",

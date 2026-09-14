@@ -19,6 +19,9 @@ def main() -> None:
         report["inner_totals"]["candidate_pair_dates"] == manifest["inner_geometry"]["candidate_pair_dates"],
         report["r4_required_pair_direction_daily_ml_fits"] == manifest["r4_geometry"]["required_pair_direction_daily_ml_fits"],
         report["r4_minimum_kalman_state_steps_per_likelihood_sweep"] == manifest["r4_geometry"]["minimum_kalman_state_steps_per_single_likelihood_sweep"],
+        report["r4_cf_a_monthly_origins"] == manifest["r4_geometry"]["cf_a_monthly_origins"],
+        report["r4_cf_a_monthly_pair_direction_ml_fits"] == manifest["r4_geometry"]["cf_a_monthly_pair_direction_ml_fits"],
+        report["r4_cf_a_minimum_kalman_state_steps_per_likelihood_sweep"] == manifest["r4_geometry"]["cf_a_minimum_kalman_state_steps_per_likelihood_sweep"],
         report["scope"].endswith("no prices, returns, fits, outcomes, OF4, or held-out"),
         manifest["pair_screening_performed"] is False,
     ]
