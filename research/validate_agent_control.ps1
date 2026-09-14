@@ -37,6 +37,7 @@ $allowedGates = @(
     ,'PAUSED_A6_TRAINING_GEOMETRY_NOT_FROZEN'
     ,'A6_TG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
     ,'PAUSED_DECISION_CADENCE_EPISODE_ADMISSION_NOT_FROZEN'
+    ,'DC_A_EP_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -126,6 +127,12 @@ if ($contract.computation_gate -eq 'PAUSED_DECISION_CADENCE_EPISODE_ADMISSION_NO
     if ($next.action.action_id -ne 'NONE') { throw 'Decision-cadence pause must not retain an executable action.' }
     if ($next.action.dataset_access -ne 'DENIED_PENDING_DECISION_CADENCE_EPISODE_ADMISSION') { throw 'Decision-cadence pause must deny dataset access.' }
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'Decision-cadence pause must deny empirical visibility.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
+if ($contract.computation_gate -eq 'DC_A_EP_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION') {
+    if ($next.action.action_id -ne 'V1-DC-A-EP-A-PUBLICATION-V1') { throw 'DC-A + EP-A publication action is not bound.' }
+    if ($next.action.dataset_access -ne 'DENIED_UNTIL_DC_A_EP_A_PUBLICATION') { throw 'DC-A + EP-A publication must deny dataset access.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'DC-A + EP-A publication must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
 }
 

@@ -101,5 +101,6 @@
     "status": "CF_A_PASSED_BOUND_TO_PHASE1"
   },
   "a6_training_geometry": {"contract_id": "V1-A6-TG-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
-  "computation_gate": "PAUSED_DECISION_CADENCE_EPISODE_ADMISSION_NOT_FROZEN"
+  "decision_episode_semantics": {"contract_id": "V1-DC-A-EP-A-1.0", "status": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION"},
+  "computation_gate": "DC_A_EP_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION"
 }

@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / DECISION CADENCE` |
-| Stage status | `SAFELY PAUSED — SCIENTIFIC-INTEGRITY DECISION REQUIRED` |
+| Stage status | `DC-A + EP-A SELECTED — PUBLICATION REQUIRED BEFORE RESUME` |
 | Latest frozen decision | `V1-EXECUTABLE-SEMANTICS-A1 — APPROVED / FROZEN` |
-| Current substage | A6-TG-A published; decision-event cadence and active-episode admission unresolved |
+| Current substage | publish daily decision-event and one-active-episode semantics |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | denied pending cadence/episode decision; OF4 and final held-out denied |
-| Current authorized action | `NONE` |
+| Computation authorization | denied until DC-A + EP-A publication; OF4 and final held-out denied |
+| Current authorized action | `V1-DC-A-EP-A-PUBLICATION-V1` |
 | Last validation state | A6-TG-A and its role guard published; no model fit or outcome computed |
 | Latest local commit | `c1ee845` — A6-TG-A inner execution guard published |
 | Remote state observed | `origin/main` at `c1ee845` |
-| Researcher action required | `YES`; select DC-A/B/C and EP-A/B/C |
+| Researcher action required | `NO`; publish DC-A + EP-A then resume inner computation |
 
 ## Verified frozen chain relevant to activation
 

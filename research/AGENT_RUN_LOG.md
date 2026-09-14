@@ -159,3 +159,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Researcher selected `A6-TG-A`: expanding prior completed-inner training, first prediction at 2015H2, target-specific maturity, candidate/component/horizon/PV fits, and equal-total-pair fitting weights. Publication guard denies empirical access until the freeze commit is pushed.
 - A6-TG-A published at commit `1d1e1ea`; the role guard now permits only 2015–2019 inner computation under the frozen complete PAIR-A contracts.
 - Pre-fit integrity stop: market/abnormality decision-event cadence and active G5 episode re-entry/admission semantics are not frozen. No model fit, abnormality, target, PnL, OF4, or held-out result was inspected.
+- Researcher selected `DC-A + EP-A`: daily candidate-eligible event records, independent model refresh clocks, and one active episode per unordered pair × policy channel with blocked re-entry metadata. Publication guard denies empirical access until pushed.
