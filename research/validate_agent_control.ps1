@@ -50,13 +50,14 @@ if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOC
     if ($next.action.empirical_result_visibility -ne '2015_2019_INNER_ONLY') { throw 'Inner authorization has an invalid visibility boundary.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($next.action.action_id -eq 'V1-PAIR-A-PHASE1-INNER-EXECUTION-V1') {
-        if ($next.action.dataset_access -ne 'CORE_V1_PLUS_C04_A_PLUS_C06_AMENDMENT_PLUS_EXEC_A_RESTRICTED_2013_2019') { throw 'PAIR-A inner action lacks the C06 plus EXEC-A dataset guard.' }
+        if ($next.action.dataset_access -notin @('CORE_V1_PLUS_C04_A_PLUS_C06_AMENDMENT_PLUS_EXEC_A_RESTRICTED_2013_2019','FROZEN_2013_2014_WARMUP_INPUT_PLUS_2015_2019_INNER_ONLY')) { throw 'PAIR-A inner action lacks the frozen warm-up plus inner-only dataset guard.' }
         if ($contract.pair_universe.construction -ne 'COMPLETE_PIT_ALL_PAIRS_C06_34_35') { throw 'PAIR-A construction is not bound.' }
         if ($contract.pair_universe.pre_screening -ne 'PROHIBITED') { throw 'PAIR-A pre-screen prohibition is not bound.' }
         if ($contract.c06_availability_amendment.status -ne 'QUALIFIED_ALL_REQUIRED_INNER_ORIGINS') { throw 'PAIR-A inner action lacks qualified C06 availability lineage.' }
         if ($contract.executable_semantics_amendment.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published EXEC-A semantics.' }
         if ($contract.decision_episode_semantics.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published DC-A/EP-A semantics.' }
         if ($contract.directional_collision_semantics.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published DECA-A semantics.' }
+        if ($contract.a6_c06_stale_gap.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published SG-A semantics.' }
     }
 }
 if ($contract.computation_gate -eq 'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN') {

@@ -1,36 +1,42 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-SG-A-PUBLICATION-V1",
-    "name": "Publish researcher-approved SG-A structural stale-gap semantics",
+    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
+    "name": "Continue V1 Phase 1 from frozen relationship outputs through A3/A5/A6/G5",
     "status": "AUTHORIZED",
-    "execution_state": "SG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
-    "objective": "Validate, commit, and push the already-approved SG-A freeze before resuming inner computation.",
+    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
+    "objective": "Use the preserved relationship checkpoint and published SG-A rule to materialize checksummed A3, A5, A6, and G5 inner-development artifacts.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
       "No A3/A5/A6/G5 result or OF4/held-out information inspected",
-      "Researcher approved SG-A without reopening scientific semantics"
+      "SG-A published and bound to Phase 1",
+      "All prior PAIR-A, EXEC-A, CF-A, A6-TG-A, DC-A, EP-A, and DECA-A contracts published"
     ],
     "allowed_scope": [
-      "SG-A decision/contract/validator publication",
-      "normal non-force commit and push to authorized main"
+      "read 2013-2014 solely as frozen formation/warm-up input without producing evaluation evidence",
+      "derive A3 abnormality records for 2015-2019 inner only without relationship recomputation",
+      "derive A5 continuous resolution components at O1/O5/O10/O20 for 2015-2019 inner only",
+      "fit A6 only under expanding completed-inner A6-TG-A",
+      "execute frozen G5 inner simulation and materialize immutable/checksummed outputs",
+      "normal non-force commits and pushes"
     ],
     "forbidden_scope": [
-      "A3/A5/A6/G5 computation before SG-A publication",
-      "any alteration to approved SG-A semantics",
+      "R0/R1/R3/R4 recomputation",
+      "2013-2014 evaluation evidence or empirical-result visibility",
+      "scientific or trading semantic change",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_SG_A_PUBLICATION",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "FROZEN_2013_2014_WARMUP_INPUT_PLUS_2015_2019_INNER_ONLY",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "SG-A freeze is validated and published; inner-only action guard may then be restored mechanically.",
+    "completion_condition": "Validated immutable A3/A5/A6/G5 inner outputs and PRE-OUTER checkpoint, or a genuine new integrity blocker.",
     "mandatory_stop_conditions": [
-      "Any empirical access before SG-A publication",
+      "Any semantic change beyond published contracts",
       "Any OF4 or held-out access"
     ]
   }

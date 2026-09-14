@@ -189,3 +189,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Published the relationship-output checkpoint and associated pause/integrity lineage as commit `fc5693d`; ignored `.venv/`, cache files, and immutable raw outputs were not committed.
 - Frozen SG-A as a regime-aware structural missed-publication-opportunity state distinct from continuous classification age. No day-count threshold, empirical distribution, result, OF4, or held-out information informed the rule.
 - Publication guard denies A3/A5/A6/G5 dataset access until the SG-A freeze commit is pushed.
+- SG-A freeze published as commit `599d7a3`; the inner-only action guard is restored without rebuilding or recomputing the preserved relationship outputs. The guard distinguishes 2013–2014 formation/warm-up input from 2015–2019 inner empirical visibility.
