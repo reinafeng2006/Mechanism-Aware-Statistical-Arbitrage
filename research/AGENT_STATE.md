@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 / DECA-A PUBLICATION` |
-| Stage status | `ACTIVE — PUBLICATION GUARD / EMPIRICAL ACCESS DENIED` |
-| Latest frozen decision | `V1-DECA-A-1.0 — APPROVED / FROZEN` |
-| Current substage | validate and publish DECA-A before restoring 2015–2019 inner execution |
+| Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
+| Stage status | `ACTIVE — 2015–2019 INNER ONLY` |
+| Latest frozen decision | `V1-DECA-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
+| Current substage | complete PAIR-A R0/R1/R3/R4 then A1–A6/G5 under DECA-A |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `DENIED UNTIL DECA-A PUBLICATION`; OF4 and final held-out denied |
-| Current authorized action | `V1-DECA-A-PUBLICATION-V1` |
-| Last validation state | DECA-A selected before empirical access; publication validation pending |
-| Latest local commit | `5cae0a9` — directional collision blocker published |
-| Remote state observed | `origin/main` at `5cae0a9` |
-| Researcher action required | `NO`; publish then resume authorized inner-only execution |
+| Computation authorization | `2015–2019 INNER ONLY`; OF4 and final held-out denied |
+| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
+| Last validation state | DECA-A published as `8354438`; existing inner input remains checksum-bound |
+| Latest local commit | `8354438` — DECA-A freeze published |
+| Remote state observed | `origin/main` at `8354438` |
+| Researcher action required | `NO`; continue to PRE-OUTER gate or genuine blocker |
 
 ## Verified frozen chain relevant to activation
 

@@ -173,3 +173,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Frozen collision rule: exactly one eligible direction opens an EP-A episode; simultaneous same-channel bidirectional eligibility creates `DIRECTIONAL ENTRY CONFLICT` and no new position.
 - Interpretation boundary: conflict is not M0, not U by definition, and not model failure; both directional scientific records remain unchanged.
 - Publication guard: no dataset, fit, abnormality, target, PnL, OF4, or held-out access is permitted until the DECA-A commit is published.
+- DECA-A freeze published as commit `8354438` on `main`; the existing inner-only action is restored without rebuilding `V1-PHASE1-INNER-INPUT-1.0`.

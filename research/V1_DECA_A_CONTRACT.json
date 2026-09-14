@@ -1,7 +1,7 @@
 {
   "schema_version": "V1-DIRECTIONAL-COLLISION-1.0",
   "contract_id": "V1-DECA-A-1.0",
-  "status": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+  "status": "PUBLISHED_BOUND_TO_PHASE1",
   "identity": ["UNORDERED_PAIR", "POLICY_CHANNEL", "DECISION_EVENT"],
   "single_direction_eligible": "OPEN_CORRESPONDING_EP_A_EPISODE",
   "both_directions_eligible": "DIRECTIONAL_ENTRY_CONFLICT_NO_NEW_POSITION",
@@ -32,4 +32,3 @@
   "future_only": ["DECA-B", "DECA-C"],
   "empirical_information_used_to_freeze": false
 }
-

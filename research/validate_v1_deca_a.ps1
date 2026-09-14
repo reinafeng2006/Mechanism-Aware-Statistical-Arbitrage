@@ -25,4 +25,3 @@ if ($decision -notmatch 'DIRECTIONAL ENTRY CONFLICT' -or $decision -notmatch 'ex
 if ($contract.empirical_information_used_to_freeze -ne $false) { throw 'DECA-A cannot be outcome-informed.' }
 
 Write-Output 'PASS: DECA-A deterministically blocks same-channel bidirectional collisions without changing scientific records or active episodes.'
-

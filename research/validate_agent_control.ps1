@@ -53,6 +53,8 @@ if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOC
         if ($contract.pair_universe.pre_screening -ne 'PROHIBITED') { throw 'PAIR-A pre-screen prohibition is not bound.' }
         if ($contract.c06_availability_amendment.status -ne 'QUALIFIED_ALL_REQUIRED_INNER_ORIGINS') { throw 'PAIR-A inner action lacks qualified C06 availability lineage.' }
         if ($contract.executable_semantics_amendment.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published EXEC-A semantics.' }
+        if ($contract.decision_episode_semantics.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published DC-A/EP-A semantics.' }
+        if ($contract.directional_collision_semantics.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published DECA-A semantics.' }
     }
 }
 if ($contract.computation_gate -eq 'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN') {

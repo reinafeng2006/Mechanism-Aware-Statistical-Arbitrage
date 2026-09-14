@@ -1,38 +1,38 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-DECA-A-PUBLICATION-V1",
-    "name": "Publish frozen DECA-A before empirical resume",
+    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
+    "name": "Execute fully bound V1 Phase 1 inner development",
     "status": "AUTHORIZED",
-    "execution_state": "DECA_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
-    "objective": "Validate, commit, and normally push the frozen DECA-A contract before restoring the existing 2015-2019 inner-only execution action.",
+    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
+    "objective": "Execute and checksum complete PAIR-A R0/R1/R3/R4 and inner A1-A6/G5 under all published contracts, including DECA-A.",
     "prerequisites": [
-      "V1-DC-A-EP-A-1.0 published",
-      "Researcher selected DECA-A before empirical inspection",
-      "V1-PHASE1-INNER-INPUT-1.0 remains checksum-bound"
+      "CF-A benchmark disposition and inner-only role guard published",
+      "V1-PHASE1-INNER-INPUT-1.0 checksum-bound",
+      "A6-TG-A, DC-A + EP-A, and DECA-A published"
     ],
     "allowed_scope": [
-      "write DECA-A decision/contract/validators and mechanical registry updates",
-      "run structural validators",
-      "normal non-force commit and push to the authorized main branch",
-      "after publication restore the previously authorized 2015-2019 inner execution action without rebuilding input"
+      "execute complete PAIR-A R0/R1/R3/R4",
+      "execute only 2015-2019 daily inner events and A1-A6/G5",
+      "materialize immutable/checksummed outputs and PRE-OUTER checkpoint",
+      "normal non-force commits and pushes"
     ],
     "forbidden_scope": [
-      "dataset or empirical-result access before publication",
-      "directional arbitration outside DECA-A",
+      "pair screening, sampling, or PAIR-A reduction",
+      "unregistered semantic or estimator change",
       "input rebuild",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_DECA_A_PUBLICATION",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "CORE_V1_PLUS_C04_A_PLUS_C06_AMENDMENT_PLUS_EXEC_A_RESTRICTED_2013_2019",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "DECA-A publication verified on main and prior inner-only action restored with DECA-A bound.",
+    "completion_condition": "Validated immutable 2015-2019 inner outputs and PRE-OUTER checkpoint, or a genuine new integrity/computational blocker.",
     "mandatory_stop_conditions": [
-      "Any validation or publication failure",
+      "Any semantic change beyond published contracts",
       "Any OF4 or held-out access"
     ]
   }

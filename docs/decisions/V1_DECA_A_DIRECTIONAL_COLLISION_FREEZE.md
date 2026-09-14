@@ -1,7 +1,7 @@
 # V1 DECA-A Directional Collision Freeze
 
 Date: 2026-09-14
-Status: **APPROVED / FROZEN / PENDING PUBLICATION**
+Status: **APPROVED / FROZEN / PUBLISHED / BOUND TO PHASE 1**
 Contract: `V1-DECA-A-1.0`
 
 ## Frozen rule
@@ -23,4 +23,3 @@ If an EP-A episode is already active, its existing `BLOCKED RE-ENTRY` semantics 
 Conflict events remain diagnostic metadata. Their count/rate may be reported when the governing result-inspection contract permits, but cannot be used to redesign this rule after inspection.
 
 This decision was frozen before model fitting, abnormality, target, trade/PnL, OF4, or held-out inspection.
-
