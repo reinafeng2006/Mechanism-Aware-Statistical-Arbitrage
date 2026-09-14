@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `ACTIVE — A3/A5/A6/G5 2015–2019 INNER ONLY` |
+| Stage status | `PAUSED — MP1 PIT REFERENCE WINDOW NOT FROZEN` |
 | Latest frozen decision | `V1-RT3-A-1.0 — PUBLISHED / AUGMENTATION QUALIFIED` |
-| Current substage | original relationship outputs preserved; continue A3/A5/A6/G5 using the versioned RT3 state companion |
+| Current substage | pre-A3/A5/A6/G5 executable audit; MP1 denominator geometry requires researcher selection |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `2015–2019 INNER ONLY`; 2013–2014 is formation/warm-up input only; OF4 and final held-out denied |
-| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
+| Computation authorization | `DENIED PENDING MP1 REFERENCE CONTRACT`; OF4 and final held-out denied |
+| Current authorized action | `NONE` |
 | Last validation state | RT3 augmentation 70/70 `PASS_EXACT`, zero mismatches, published as `c2ccc43` |
 | Latest local commit | `c2ccc43` — qualified RT3 state augmentation published |
 | Remote state observed | `origin/main` at `c2ccc43` |
-| Researcher action required | `NO`; continue to PRE-OUTER gate or genuine blocker |
+| Researcher action required | `YES`; choose bounded MP1 PIT median reference-window/support/update semantics |
 
 ## Verified frozen chain relevant to activation
 
