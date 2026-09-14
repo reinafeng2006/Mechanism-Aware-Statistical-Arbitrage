@@ -194,3 +194,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Pre-computation schema audit found that the immutable relationship partitions preserve current expected responses but not the event-time equation/state needed to evaluate frozen A5 RT3 at future realized inputs. No relationship value was inspected.
 - Mandatory stop: constant-current-expectation substitution, silent RT3 omission, or relationship-state recomputation would change or exceed the active contract. No A3/A5/A6/G5 artifact was computed.
 - Completion disposition: `GENUINE SCIENTIFIC/DATA-LINEAGE BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.
+- Researcher selected `RT3-A`: deterministic no-overwrite relationship-state augmentation with full shared-field replay equivalence. Publication guard denies replay until the contract commit is pushed.

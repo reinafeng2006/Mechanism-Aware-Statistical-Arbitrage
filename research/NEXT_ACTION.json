@@ -1,37 +1,39 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "No autonomous action",
-    "status": "RESEARCHER_ACTION_REQUIRED",
-    "execution_state": "PAUSED_A5_RT3_RELATIONSHIP_STATE_NOT_MATERIALIZED",
-    "objective": "Await an authorized resolution for the missing event-time relationship state required by frozen A5 RT3.",
+    "action_id": "V1-RT3-A-PUBLICATION-V1",
+    "name": "Publish researcher-approved RT3-A state-augmentation contract",
+    "status": "AUTHORIZED",
+    "execution_state": "RT3_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "objective": "Validate and publish RT3-A before any deterministic replay.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
       "No A3/A5/A6/G5 result or OF4/held-out information inspected",
       "SG-A published and bound to Phase 1",
       "All prior PAIR-A, EXEC-A, CF-A, A6-TG-A, DC-A, EP-A, DECA-A, and SG-A contracts published",
-      "Existing relationship partitions and hashes preserved"
+      "Existing relationship partitions and hashes preserved",
+      "Researcher selected RT3-A"
     ],
     "allowed_scope": [
-      "none pending researcher decision"
+      "RT3-A decision/contract publication",
+      "normal non-force commit and push"
     ],
     "forbidden_scope": [
-      "R0/R1/R3/R4 recomputation or state augmentation",
+      "relationship replay before RT3-A publication",
       "A3/A5/A6/G5 computation or empirical-result inspection",
       "constant-current-mu substitution for frozen RT3",
       "silent RT3 omission or target amendment",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_A5_RT3_RELATIONSHIP_STATE_RESOLUTION",
+    "dataset_access": "DENIED_UNTIL_RT3_A_PUBLICATION",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": false,
-    "push_permitted": false,
+    "commit_permitted": true,
+    "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Researcher authorizes RT3-A, RT3-B, or RT3-C and supplies a replacement action contract where required.",
+    "completion_condition": "RT3-A is published; a mechanical augmentation-only action may then activate.",
     "mandatory_stop_conditions": [
       "Any data or empirical access before RT3 resolution",
       "Any OF4 or held-out access"

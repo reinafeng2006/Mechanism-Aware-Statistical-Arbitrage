@@ -43,6 +43,7 @@ $allowedGates = @(
     ,'PAUSED_A6_C06_STALE_GAP_INDICATOR_NOT_FROZEN'
     ,'SG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
     ,'PAUSED_A5_RT3_RELATIONSHIP_STATE_NOT_MATERIALIZED'
+    ,'RT3_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -175,6 +176,13 @@ if ($contract.computation_gate -eq 'PAUSED_A5_RT3_RELATIONSHIP_STATE_NOT_MATERIA
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'RT3 pause must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($contract.a6_c06_stale_gap.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'RT3 pause regressed SG-A publication.' }
+}
+if ($contract.computation_gate -eq 'RT3_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION') {
+    if ($next.action.action_id -ne 'V1-RT3-A-PUBLICATION-V1') { throw 'RT3-A publication action mismatch.' }
+    if ($next.action.dataset_access -ne 'DENIED_UNTIL_RT3_A_PUBLICATION') { throw 'RT3-A publication must deny dataset access.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'RT3-A publication must deny empirical visibility.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($contract.rt3_state_augmentation.status -ne 'FROZEN_PENDING_PUBLICATION') { throw 'RT3-A contract binding mismatch.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

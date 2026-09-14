@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 / A5 RT3 STATE SUFFICIENCY` |
-| Stage status | `SAFELY PAUSED — GENUINE INTEGRITY BLOCKER` |
+| Current stage | `V1 PHASE 1 / RT3-A PUBLICATION GUARD` |
+| Stage status | `RT3-A FROZEN — PUBLICATION PENDING` |
 | Latest frozen decision | `V1-SG-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | relationship outputs preserved; event-time parameter/state companion required for frozen RT3 |
+| Current substage | publish RT3-A before relationship-state replay |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `DENIED PENDING RT3 RELATIONSHIP-STATE RESOLUTION`; OF4 and final held-out denied |
-| Current authorized action | `NONE` |
-| Last validation state | SG-A and inner guard published; immutable relationship schema lacks RT3 event-time mapping state |
+| Computation authorization | `DENIED UNTIL RT3-A PUBLICATION`; OF4 and final held-out denied |
+| Current authorized action | `V1-RT3-A-PUBLICATION-V1` |
+| Last validation state | RT3-A frozen with original-output no-overwrite and equivalence gate |
 | Latest local commit | `34697ff` — SG-A inner execution guard published |
 | Remote state observed | `origin/main` at `34697ff` |
-| Researcher action required | `YES`; resolve RT3-A, RT3-B, or RT3-C |
+| Researcher action required | `NO`; publish RT3-A then execute bounded deterministic augmentation |
 
 ## Verified frozen chain relevant to activation
 
