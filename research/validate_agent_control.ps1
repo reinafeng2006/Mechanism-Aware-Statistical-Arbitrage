@@ -37,8 +37,10 @@ if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOC
     if ($next.action.empirical_result_visibility -ne '2015_2019_INNER_ONLY') { throw 'Inner authorization has an invalid visibility boundary.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($next.action.action_id -eq 'V1-PAIR-A-PHASE1-INNER-EXECUTION-V1') {
+        if ($next.action.dataset_access -ne 'CORE_V1_PLUS_C04_A_PLUS_C06_AVAILABILITY_AMENDMENT_RESTRICTED_TO_2013_2019_ROLE_GUARD') { throw 'PAIR-A inner action lacks the amended C06 dataset guard.' }
         if ($contract.pair_universe.construction -ne 'COMPLETE_PIT_ALL_PAIRS_C06_34_35') { throw 'PAIR-A construction is not bound.' }
         if ($contract.pair_universe.pre_screening -ne 'PROHIBITED') { throw 'PAIR-A pre-screen prohibition is not bound.' }
+        if ($contract.c06_availability_amendment.status -ne 'QUALIFIED_ALL_REQUIRED_INNER_ORIGINS') { throw 'PAIR-A inner action lacks qualified C06 availability lineage.' }
     }
 }
 if ($contract.computation_gate -eq 'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN') {

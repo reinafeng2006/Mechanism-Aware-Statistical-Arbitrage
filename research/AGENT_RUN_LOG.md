@@ -114,3 +114,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Immutable lineage: `CORE-DATASET-FREEZE-V1` and base C06 hash remain unchanged; descendant amendment root is `C53FC338A47B4CD1E5D83E3F945D47544D0211D9338B6006499E08CC76D2E95F`.
 - Access boundary: OF4 2020–2023 not accessed; 2024–2025 held-out sealed; no market, model, abnormality, mechanism, target, return, or PnL value inspected.
 - Disposition: amendment qualified and locally frozen; protocol publication precedes the already-authorized Phase 1 resume.
+- Publication: amendment commit `0f8585c` was pushed normally to `origin/main`; the Phase 1 action was then reactivated with an explicit `CORE-DATASET-FREEZE-V1 + C04-A + C06-AVAILABILITY-AMENDMENT-V1` role guard before empirical access.
