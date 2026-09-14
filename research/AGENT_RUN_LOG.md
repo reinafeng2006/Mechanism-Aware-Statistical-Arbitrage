@@ -164,3 +164,12 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Pre-fit deterministic stop: EP-A's uniqueness key excludes direction, while both preserved directional records can qualify simultaneously for the same policy channel. No frozen arbitration rule permits choosing, combining, stacking, netting, resetting, or replacing the episode.
 - Integrity boundary honored: no model fit, abnormality, target, trade/PnL, OF4, or held-out information was computed or inspected.
 - Completion disposition: `GENUINE SCIENTIFIC/TRADING SEMANTICS BLOCKER / RESEARCHER DECISION REQUIRED`; successor action reset to `NONE`.
+
+## 2026-09-14 — RUN-V1-DECA-A-PHASE1-20260914-01
+
+- Authority: researcher selected `DECA-A`, authorized freeze/publication and normal push, and directed resume from the existing checksum-bound inner input.
+- Base commit: `5cae0a9bf92c0635c8abdd9b626478a6f7e1907f`; unrelated `.venv/` remains excluded.
+- Single-writer lock acquired before canonical mutation.
+- Frozen collision rule: exactly one eligible direction opens an EP-A episode; simultaneous same-channel bidirectional eligibility creates `DIRECTIONAL ENTRY CONFLICT` and no new position.
+- Interpretation boundary: conflict is not M0, not U by definition, and not model failure; both directional scientific records remain unchanged.
+- Publication guard: no dataset, fit, abnormality, target, PnL, OF4, or held-out access is permitted until the DECA-A commit is published.

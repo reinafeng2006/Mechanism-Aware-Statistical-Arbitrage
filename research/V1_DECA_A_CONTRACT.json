@@ -1,0 +1,35 @@
+{
+  "schema_version": "V1-DIRECTIONAL-COLLISION-1.0",
+  "contract_id": "V1-DECA-A-1.0",
+  "status": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+  "identity": ["UNORDERED_PAIR", "POLICY_CHANNEL", "DECISION_EVENT"],
+  "single_direction_eligible": "OPEN_CORRESPONDING_EP_A_EPISODE",
+  "both_directions_eligible": "DIRECTIONAL_ENTRY_CONFLICT_NO_NEW_POSITION",
+  "scientific_directional_records": "PRESERVE_UNCHANGED",
+  "interpretation_nonclaims": ["NOT_M0", "NOT_U_BY_DEFINITION", "NOT_MODEL_FAILURE"],
+  "active_episode_interaction": "EXISTING_BLOCKED_REENTRY_SEMANTICS_CONTROL_NO_MUTATION",
+  "conflict_effects": {
+    "new_position": false,
+    "pnl": false,
+    "trade_count": false,
+    "exposure": false,
+    "anchor_reset": false,
+    "exit_clock_reset": false,
+    "episode_replacement": false
+  },
+  "reporting": "RETAIN_DIAGNOSTIC_EVENT_METADATA",
+  "forbidden_v1": [
+    "DIRECTIONAL_RANKING",
+    "STRONGER_SIGNAL_SELECTION",
+    "MAGNITUDE_TIE_BREAK",
+    "FIRST_OBSERVED_PRIORITY",
+    "RANDOM_TIE_BREAK",
+    "BIDIRECTIONAL_TWO_LEG_REPLACEMENT",
+    "POST_INSPECTION_RULE_REDESIGN",
+    "OF4_ACCESS",
+    "HELD_OUT_ACCESS"
+  ],
+  "future_only": ["DECA-B", "DECA-C"],
+  "empirical_information_used_to_freeze": false
+}
+

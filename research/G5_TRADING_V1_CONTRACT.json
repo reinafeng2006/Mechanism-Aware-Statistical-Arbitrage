@@ -27,5 +27,8 @@
     "U_definitionally_no_trade": false,
     "mechanism_identification_claim": false
   },
+  "decision_episode_contract": "V1-DC-A-EP-A-1.0",
+  "directional_collision_contract": "V1-DECA-A-1.0",
+  "directional_collision_disposition": "DIRECTIONAL_ENTRY_CONFLICT_NO_NEW_POSITION",
   "forbidden": ["SAME_CLOSE_EXECUTION", "FORCED_TRADE", "SILENT_FILL", "UNLIMITED_LEVERAGE", "PNL_TO_UPSTREAM_SELECTION", "POST_HOC_DIRECTION_CHANGE", "HELD_OUT_ACCESS"]
 }

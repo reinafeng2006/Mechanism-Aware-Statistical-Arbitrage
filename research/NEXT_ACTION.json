@@ -1,36 +1,38 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "No autonomous action",
-    "status": "RESEARCHER_ACTION_REQUIRED",
-    "execution_state": "PAUSED_DIRECTIONAL_EPISODE_COLLISION_NOT_FROZEN",
-    "objective": "Await a frozen deterministic rule for simultaneous same-channel dual-direction entry eligibility under EP-A.",
+    "action_id": "V1-DECA-A-PUBLICATION-V1",
+    "name": "Publish frozen DECA-A before empirical resume",
+    "status": "AUTHORIZED",
+    "execution_state": "DECA_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "objective": "Validate, commit, and normally push the frozen DECA-A contract before restoring the existing 2015-2019 inner-only execution action.",
     "prerequisites": [
-      "CF-A benchmark disposition and inner-only role guard published",
-      "V1-PHASE1-INNER-INPUT-1.0 checksum-bound",
-      "A6-TG-A and inner-only role guard published",
-      "DC-A + EP-A published at commit 02d39d7",
-      "No model fit, abnormality, target, PnL, OF4, or held-out result inspected"
+      "V1-DC-A-EP-A-1.0 published",
+      "Researcher selected DECA-A before empirical inspection",
+      "V1-PHASE1-INNER-INPUT-1.0 remains checksum-bound"
     ],
     "allowed_scope": [
-      "none pending researcher decision"
+      "write DECA-A decision/contract/validators and mechanical registry updates",
+      "run structural validators",
+      "normal non-force commit and push to the authorized main branch",
+      "after publication restore the previously authorized 2015-2019 inner execution action without rebuilding input"
     ],
     "forbidden_scope": [
-      "model fitting or empirical-result inspection",
-      "independent selection of a directional collision rule",
+      "dataset or empirical-result access before publication",
+      "directional arbitration outside DECA-A",
+      "input rebuild",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_DIRECTIONAL_EPISODE_COLLISION_RULE",
+    "dataset_access": "DENIED_UNTIL_DECA_A_PUBLICATION",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": false,
-    "push_permitted": false,
+    "commit_permitted": true,
+    "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Researcher freezes a deterministic same-channel dual-direction collision rule and authorizes a replacement action.",
+    "completion_condition": "DECA-A publication verified on main and prior inner-only action restored with DECA-A bound.",
     "mandatory_stop_conditions": [
-      "Any attempted empirical access before the collision rule is frozen",
+      "Any validation or publication failure",
       "Any OF4 or held-out access"
     ]
   }

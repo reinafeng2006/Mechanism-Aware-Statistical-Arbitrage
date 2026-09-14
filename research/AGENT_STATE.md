@@ -6,26 +6,28 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 / G5 DIRECTIONAL EPISODE COLLISION` |
-| Stage status | `SAFELY PAUSED — RESEARCHER DECISION REQUIRED` |
-| Latest frozen decision | `V1-DC-A-EP-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | DC-A + EP-A published; same-channel simultaneous dual-direction admission rule unresolved |
+| Current stage | `V1 PHASE 1 / DECA-A PUBLICATION` |
+| Stage status | `ACTIVE — PUBLICATION GUARD / EMPIRICAL ACCESS DENIED` |
+| Latest frozen decision | `V1-DECA-A-1.0 — APPROVED / FROZEN` |
+| Current substage | validate and publish DECA-A before restoring 2015–2019 inner execution |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `DENIED PENDING DIRECTIONAL EPISODE COLLISION RULE`; OF4 and final held-out denied |
-| Current authorized action | `NONE` |
-| Last validation state | DC-A + EP-A published; deterministic pre-fit collision audit stopped before empirical access |
-| Latest local commit | this directional-collision checkpoint commit; parent `2531e11` |
-| Remote state observed | `origin/main` at `2531e11` before this authorized checkpoint push |
-| Researcher action required | `YES`; select and freeze DECA-A, DECA-B, or DECA-C |
+| Computation authorization | `DENIED UNTIL DECA-A PUBLICATION`; OF4 and final held-out denied |
+| Current authorized action | `V1-DECA-A-PUBLICATION-V1` |
+| Last validation state | DECA-A selected before empirical access; publication validation pending |
+| Latest local commit | `5cae0a9` — directional collision blocker published |
+| Remote state observed | `origin/main` at `5cae0a9` |
+| Researcher action required | `NO`; publish then resume authorized inner-only execution |
 
 ## Verified frozen chain relevant to activation
 
 ## DC-A / EP-A directional episode collision stop
 
 The mandatory pre-fit deterministic audit found that both frozen directional records (`i -> j` and `j -> i`) can simultaneously satisfy the same M1 or M2 policy channel for one unordered pair and session. EP-A permits only one active episode for that unordered pair × channel, while the frozen protocol prohibits stacking, episode-layer netting, reset/replacement, and contains no direction-priority or conflict rule. Selecting a direction in software would create a new scientific/trading semantic. Phase 1 therefore remains paused before fitting or outcome inspection. See [the bounded G5 blocker checkpoint](../docs/stages/G5/V1_DIRECTIONAL_EPISODE_COLLISION_INTEGRITY_BLOCKER.md).
+
+Researcher resolution: `DECA-A` is approved. Exactly one eligible direction opens its EP-A episode; simultaneous same-channel bidirectional eligibility creates `DIRECTIONAL ENTRY CONFLICT` and no new position while preserving both scientific records. Publication must precede empirical resume.
 
 - G3B and `CORE-DATASET-FREEZE-V1`: frozen;
 - G4-01 through G4-04A5: approved/frozen as recorded in canonical governance and decision files;
