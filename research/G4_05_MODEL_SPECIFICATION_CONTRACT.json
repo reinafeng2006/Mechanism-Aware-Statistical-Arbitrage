@@ -104,5 +104,5 @@
   "decision_episode_semantics": {"contract_id": "V1-DC-A-EP-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
   "directional_collision_semantics": {"contract_id": "V1-DECA-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
   "a6_c06_stale_gap": {"contract_id": "V1-SG-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
-  "computation_gate": "AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION"
+  "computation_gate": "PAUSED_A5_RT3_RELATIONSHIP_STATE_NOT_MATERIALIZED"
 }

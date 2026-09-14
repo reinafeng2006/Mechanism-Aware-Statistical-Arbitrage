@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `ACTIVE — A3/A5/A6/G5 2015–2019 INNER ONLY` |
+| Current stage | `V1 PHASE 1 / A5 RT3 STATE SUFFICIENCY` |
+| Stage status | `SAFELY PAUSED — GENUINE INTEGRITY BLOCKER` |
 | Latest frozen decision | `V1-SG-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | R0/R1/R3/R4 preserved; continue A3/A5/A6/G5 from relationship checkpoint |
+| Current substage | relationship outputs preserved; event-time parameter/state companion required for frozen RT3 |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `2015–2019 INNER ONLY`; 2013–2014 is formation/warm-up input only; OF4 and final held-out denied |
-| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
-| Last validation state | SG-A published as `599d7a3`; relationship outputs remain checksum-bound |
-| Latest local commit | `599d7a3` — SG-A freeze published |
-| Remote state observed | `origin/main` at `599d7a3` |
-| Researcher action required | `NO`; continue to PRE-OUTER gate or genuine blocker |
+| Computation authorization | `DENIED PENDING RT3 RELATIONSHIP-STATE RESOLUTION`; OF4 and final held-out denied |
+| Current authorized action | `NONE` |
+| Last validation state | SG-A and inner guard published; immutable relationship schema lacks RT3 event-time mapping state |
+| Latest local commit | `34697ff` — SG-A inner execution guard published |
+| Remote state observed | `origin/main` at `34697ff` |
+| Researcher action required | `YES`; resolve RT3-A, RT3-B, or RT3-C |
 
 ## Verified frozen chain relevant to activation
 
