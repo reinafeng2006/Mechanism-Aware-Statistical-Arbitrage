@@ -199,7 +199,7 @@ def main() -> None:
         "held_out_accessed": False,
         "pair_screening": False,
     }
-    MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"manifest_id": manifest["manifest_id"], "artifact_sha256": manifest["artifact_sha256"],
                       "date_count": n_t, "security_count": n_s, "result": "PASS"}))
 

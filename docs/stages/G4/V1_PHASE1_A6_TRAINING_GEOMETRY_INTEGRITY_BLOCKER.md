@@ -1,6 +1,6 @@
 # V1 Phase 1 A6 Training-Geometry Integrity Blocker
 
-Date: 2026-09-14  
+Date: 2026-09-14
 Status: **GENUINE SCIENTIFIC-INTEGRITY BLOCKER / RESEARCHER DECISION REQUIRED**
 
 ## Completed before the stop
