@@ -2,6 +2,8 @@
 
 Status: **SCI-A APPROVED / FROZEN FOR V1 — INNER DEVELOPMENT ONLY**
 
+Executable design-matrix binding: `V1-EXECUTABLE-SEMANTICS-A1`. The exact ordered PV0/PV-M1/PV-M2/PV-BOTH columns, optional-value indicator encoding, mandatory-value exclusion, full-rank disposition, and no-future-target rule in that amendment are frozen before empirical access and supersede any residual ambiguity in the information-set descriptions below.
+
 ## Estimand and scientific boundary
 
 A6 asks whether event-time-frozen abnormality and admissible mechanism-evidence channels improve prediction of the frozen A5 continuous resolution vector at O1/O5/O10/O20, relative to a relationship/abnormality-only baseline, under matched CS2 support.

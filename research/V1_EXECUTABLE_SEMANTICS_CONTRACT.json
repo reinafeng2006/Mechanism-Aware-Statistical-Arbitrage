@@ -1,0 +1,67 @@
+{
+  "schema_version": "V1-EXECUTABLE-SEMANTICS-1.0",
+  "amendment_id": "V1-EXECUTABLE-SEMANTICS-A1",
+  "status": "APPROVED_FROZEN_BEFORE_EMPIRICAL_ACCESS",
+  "scale": {
+    "PS0": "1.4826_TIMES_FINITE_SAMPLE_MAD",
+    "PS1": "SAMPLE_SD_DDOF_1",
+    "minimum_finite_observations": 2,
+    "hard_failures": ["UNAVAILABLE", "NON_FINITE", "EXACT_ZERO", "MATHEMATICALLY_UNSUPPORTED"],
+    "epsilon_or_precision_cutoff": "PROHIBITED"
+  },
+  "r1_mi": {
+    "industry_factor_binding": "EACH_LEG_OWN_CONTEMPORANEOUS_PIT_C06_INDUSTRY",
+    "pair_exclusion": "EXCLUDE_BOTH_PAIR_SECURITIES",
+    "cross_34_35_blend": "PROHIBITED"
+  },
+  "r3": {
+    "strata": ["34x34", "35x35", "34x35"],
+    "direction_assignment": "SAME_UNORDERED_STRATUM_SEPARATE_DIRECTIONAL_FITS",
+    "N0": "PAIR_COVARIANCE_EXACTLY_ZERO_STRATUM_OLS",
+    "N1": "GAUSSIAN_REML_UNSTRUCTURED_RANDOM_INTERCEPT_SLOPE",
+    "optimizer": "L_BFGS_SINGLE_PATH_MAXITER_1000_RTOL_1E_8",
+    "boundary": "VALID_CONVERGED_BOUNDARY_RECORDED_NOT_FAILED",
+    "fallback": "PROHIBITED"
+  },
+  "r4": {
+    "variance_unit": "PAIR_DIRECTION_SPECIFIC",
+    "estimator": "GAUSSIAN_PREDICTION_ERROR_ML",
+    "optimizer": "L_BFGS_B_Q_GE_0_R_GE_0_SINGLE_PATH_MAXITER_1000_RTOL_1E_8",
+    "optimizer_start": "R_EQUALS_STATIC_RESIDUAL_VARIANCE_Q_EQUALS_0_01_TIMES_R",
+    "state_initialization": "MATCHED_STATIC_OLS_INTERCEPT_SLOPE_AND_SLOPE_VARIANCE",
+    "state_clock": "ELIGIBLE_TRADING_SESSION",
+    "pit_order": "PREDICT_THEN_EVALUATE_THEN_UPDATE",
+    "boundary": "VALID_CONVERGED_BOUNDARY_RECORDED_NOT_FAILED",
+    "fallback": "PROHIBITED"
+  },
+  "refresh": {
+    "U1D": "EACH_CANDIDATE_ELIGIBLE_SESSION",
+    "U1W": "FIRST_CANDIDATE_ELIGIBLE_EXCHANGE_SESSION_OF_ISO_WEEK",
+    "U1M": "FIRST_CANDIDATE_ELIGIBLE_EXCHANGE_SESSION_OF_CALENDAR_MONTH",
+    "H": "MOST_RECENT_SYNCHRONIZED_CANDIDATE_ELIGIBLE_OBSERVATIONS_STRICTLY_BEFORE_PREDICTION"
+  },
+  "a6": {
+    "estimator": "OLS_WITH_INTERCEPT",
+    "pv0_column_count": 23,
+    "state_encoding": "INDEPENDENT_BOOLEAN_INDICATORS_NOT_EXCLUSIVE_CLASS",
+    "optional_numeric_missing": "ZERO_PLUS_AVAILABILITY_INDICATOR",
+    "mandatory_numeric_missing": "ROW_UNAVAILABLE",
+    "pv_m1_additions": 6,
+    "pv_m2_additions": 11,
+    "pv_both": "EXACT_UNION_NO_INTERACTIONS_DIAGNOSTIC_ONLY",
+    "targets": "RT0_RT1_RT2_RT3_SEPARATE_BY_O1_O5_O10_O20",
+    "future_target_as_predictor": "PROHIBITED",
+    "silent_column_drop": "PROHIBITED"
+  },
+  "g5": {
+    "m1_gate": "VALID_NONZERO_DIRECTION_AND_UR0_GT_0_WITHOUT_REJECTION_INVALIDITY_CONFLICT_OR_ELIGIBILITY_BLOCK",
+    "m2_gate": "VALID_NONZERO_MP0_AND_PRIMARY_AMOUNT_LOG_RATIO_GT_0_WITHOUT_REJECTION_INVALIDITY_FUTURE_LEAKAGE_CONFLICT_OR_ELIGIBILITY_BLOCK",
+    "extra_abnormality_threshold": "PROHIBITED",
+    "u_equals_no_trade": false,
+    "forced_trade": "PROHIBITED",
+    "mechanism_identification_claim": "PROHIBITED"
+  },
+  "empirical_information_used_to_freeze": false,
+  "of4_access": "DENIED",
+  "held_out_access": "SEALED_DENIED"
+}

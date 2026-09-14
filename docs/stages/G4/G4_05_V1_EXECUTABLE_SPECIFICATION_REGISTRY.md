@@ -2,6 +2,8 @@
 
 Status: **APPROVED / FROZEN FOR V1 — PHASE 1 INNER DEVELOPMENT ONLY**
 
+Executable-semantics binding: `V1-EXECUTABLE-SEMANTICS-A1`, approved and frozen before empirical access. Its finite-sample scale rules, leg-specific R1-MI factors, unordered R3 strata, R3/R4 numerical-state contract, exact A6 matrix, and G5 entry-state mapping are controlling where this earlier registry left an implementation choice open.
+
 This registry closes V1 scope without fitting. It preserves the frozen R/P/N axes, A1–A5 interfaces, CS2, SR0→SR1, TP2/CG2/OF4, the Search Budget, and the sealed 2024–2025 held-out region.
 
 ## V1 scope disposition
@@ -111,3 +113,5 @@ No mechanism probability or forced class is proposed. Evidence can support, oppo
 ## Computation gate
 
 The researcher froze the seven tuples, R3-A, R4-A, SCI-A and TRADE-A. The C04-A descendant exclusion layer is acquired and structurally validated under manifest `C04-A-OFFICIAL-CALENDAR-V1`; the E03-A benchmark identity is structurally bound. `PAIR-A — COMPLETE PIT ALL-PAIRS` is the frozen V1 candidate universe: every contemporaneously PIT-eligible unordered pair in C06 scope `34 + 35`, including cross-code pairs, is evaluated through two separate directional channels with no pre-screening. Only 2015–2019 semiannual inner development is authorized; OF4 and held-out access remain denied.
+
+All E1–E6 implementation gaps are closed by [the V1 executable-semantics amendment](../../decisions/V1_EXECUTABLE_SEMANTICS_AMENDMENT_FREEZE.md). No library default may supersede that amendment.

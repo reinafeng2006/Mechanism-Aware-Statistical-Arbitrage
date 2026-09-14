@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 — EXECUTABLE-SEMANTICS INTEGRITY GATE` |
-| Stage status | `SAFELY PAUSED BEFORE EMPIRICAL ACCESS / RESEARCHER DECISION REQUIRED` |
-| Latest frozen decision | `PAIR-A COMPLETE PIT ALL-PAIRS — APPROVED / FROZEN FOR V1` |
-| Current substage | consolidated E1–E6 executable-semantics closure required before bounded inner execution |
+| Current stage | `V1 EXEC-A — PROTOCOL PUBLICATION` |
+| Stage status | `QUALIFIED / PUBLICATION REQUIRED BEFORE EMPIRICAL ACCESS` |
+| Latest frozen decision | `V1-EXECUTABLE-SEMANTICS-A1 — APPROVED / FROZEN` |
+| Current substage | validate and publish E1–E6 amendment; then reactivate bounded inner execution |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `PAUSED`; 2013–2014 formation reserve, 2015–2019 inner, OF4 and held-out all inaccessible until an executable-semantics amendment is authorized |
-| Current authorized action | `NONE` |
-| Last validation state | `PASS` C06-FIX-A and amended Phase 1 guards; executable-statement audit found E1–E6 unresolved before any empirical access |
+| Computation authorization | `DENIED UNTIL EXEC-A PUBLICATION`; afterward only 2015–2019 inner under the pre-existing authorization |
+| Current authorized action | `V1-EXEC-A-AMENDMENT-V1` |
+| Last validation state | EXEC-A E1–E6 frozen without empirical access; full validation pending publication |
 | Latest local commit | `790ca825f002e9db82543e2163cf6b4378b3fa1b` — amended C06 Phase 1 guard published |
 | Remote state observed | `origin/main` at `790ca825f002e9db82543e2163cf6b4378b3fa1b` |
-| Researcher action required | `YES`; select a bounded executable-semantics closure in the consolidated checkpoint |
+| Researcher action required | `NO`; EXEC-A publication and bounded Phase 1 resumption are authorized |
 
 ## Verified frozen chain relevant to activation
 

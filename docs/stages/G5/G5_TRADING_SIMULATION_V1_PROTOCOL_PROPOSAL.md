@@ -2,6 +2,8 @@
 
 Status: **TRADE-A APPROVED / FROZEN FOR V1 — PNL LOCKED UNTIL C04-A + INNER ACTION**
 
+Executable entry-state binding: `V1-EXECUTABLE-SEMANTICS-A1`. The exact threshold-free M1/M2 eligibility maps in that amendment define V1 directional economic-probe eligibility; they do not assert mechanism identification.
+
 ## Role and non-interference
 
 Trading Simulation V1 tests whether scientifically admissible event-time information can map into economic value through a minimal interpretable policy. It is downstream validation only:
@@ -29,9 +31,13 @@ No abnormality is forced to trade. Missingness is never repaired, filled, or ass
 
 When a preregistered M1-supporting evidence state is present and no blocking rival/quality state applies, hold the peer/follower in `sign(g_j,t)` direction, where `g_j,t = mu_j|i,t - y_j,t`. The source leg is zero in the minimal policy. This is a directional economic test of peer catch-up, not proof of M1.
 
+For V1, “M1-supporting evidence state” is exactly the `TV1-M1 ELIGIBLE` conjunction frozen in `V1-EXECUTABLE-SEMANTICS-A1`; `UR0 > 0` is a morphology-based directional probe condition, not an M1 label or probability.
+
 ### `TV1-M2` — source normalization policy
 
 When a preregistered M2-supporting evidence state is present with mandatory contamination metadata and no blocking rival/quality state, hold the source in `-sign(e_i,t)` direction. The peer leg is zero in the minimal policy. This tests source normalization separately from M1.
+
+For V1, “M2-supporting evidence state” is exactly the `TV1-M2 ELIGIBLE` conjunction frozen in `V1-EXECUTABLE-SEMANTICS-A1`; positive primary amount context is a preregistered activity condition and is not proof of exogenous pressure.
 
 ### `TV1-COMB` — coexistence handling
 

@@ -91,5 +91,10 @@
     "membership_content_unchanged": true,
     "activation_rule": "FIRST_PROJECT_DECISION_CLOCK_STRICTLY_AFTER_QUALIFIED_PUBLICATION_DATE"
   },
-  "computation_gate": "PAUSED_EXECUTABLE_SEMANTICS_NOT_CLOSED"
+  "executable_semantics_amendment": {
+    "amendment_id": "V1-EXECUTABLE-SEMANTICS-A1",
+    "status": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "empirical_information_used": false
+  },
+  "computation_gate": "EXEC_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION"
 }

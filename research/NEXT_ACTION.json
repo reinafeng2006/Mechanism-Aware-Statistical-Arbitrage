@@ -1,29 +1,40 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "Await executable-semantics researcher decision",
-    "status": "RESEARCHER_DECISION_REQUIRED",
-    "execution_state": "PAUSED_BEFORE_EMPIRICAL_ACCESS",
-    "objective": "Preserve the frozen V1, PAIR-A, C04-A, C06 amendment, dataset, and temporal guards while the exact E1-E6 executable semantics are unresolved.",
-    "prerequisites": [],
-    "allowed_scope": [],
+    "action_id": "V1-EXEC-A-AMENDMENT-V1",
+    "name": "Publish frozen EXEC-A semantics before empirical access",
+    "status": "AUTHORIZED",
+    "execution_state": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "objective": "Validate, commit, and push V1-EXECUTABLE-SEMANTICS-A1 before reactivating bounded 2015-2019 inner computation.",
+    "prerequisites": [
+      "Researcher selected EXEC-A and supplied E1-E6 clarifications",
+      "C04-A and C06-AVAILABILITY-AMENDMENT-V1 validated",
+      "CORE-DATASET-FREEZE-V1 fingerprint verified",
+      "No empirical, OF4, or held-out access occurred before freeze"
+    ],
+    "allowed_scope": [
+      "freeze and validate E1-E6 executable semantics",
+      "update V1 registries, governance, state, and validators",
+      "normal non-force commit and push to origin main",
+      "reactivate the already-authorized Phase 1 only after publication"
+    ],
     "forbidden_scope": [
-      "all dataset access",
-      "all empirical inspection or computation",
-      "scientific-semantic selection by implementation default",
+      "all empirical dataset access before publication",
+      "any semantic change outside E1-E6",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_EXECUTABLE_SEMANTICS_AMENDMENT",
+    "dataset_access": "DENIED_UNTIL_EXEC_A_PROTOCOL_PUBLICATION",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": false,
-    "push_permitted": false,
-    "completion_condition": "Researcher authorizes a versioned executable-semantics amendment or explicitly narrows the execution scope.",
+    "commit_permitted": true,
+    "commit_scope": "V1-EXECUTABLE-SEMANTICS-A1, bound registries/contracts, validators, and agent state/log only.",
+    "push_permitted": true,
+    "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
+    "completion_condition": "EXEC-A amendment validates and is published before the Phase 1 empirical gate is reactivated.",
     "mandatory_stop_conditions": [
-      "Any attempt to infer E1-E6 from software defaults",
-      "Any market, pair-count, model, outcome, PnL, OF4, or held-out access"
+      "Any validator or frozen-fingerprint failure",
+      "Any empirical, OF4, or held-out access before publication"
     ]
   }
 }

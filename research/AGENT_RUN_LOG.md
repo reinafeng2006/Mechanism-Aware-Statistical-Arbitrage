@@ -126,3 +126,12 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Empirical boundary honored: no C03/E02/E03-A value, return, realized pair count, fit, abnormality, target, PnL, OF4, or held-out information was read or computed.
 - Dataset/frozen state: `CORE-DATASET-FREEZE-V1`, C04-A, C06 amendment, PAIR-A and all G4/G5 frozen decisions remain unchanged.
 - Completion disposition: `GENUINE INTEGRITY BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.
+
+## 2026-09-14 — RUN-V1-EXECA-PHASE1-20260914-01
+
+- Authority: researcher selected `EXEC-A`, supplied E1–E6 clarifications, authorized normal validation/commit/push, and reauthorized the existing Phase 1 2015–2019 inner workflow after protocol publication.
+- Base commit: `3220fa98eb49241a747b980fd5535b582fee66d8`; `origin/main` matched; unrelated `.venv/` remained excluded.
+- Single-writer lock: acquired before canonical state mutation.
+- Frozen amendment: `V1-EXECUTABLE-SEMANTICS-A1` closes finite-sample MAD/SD, R1-MI leg factors, unordered R3 strata, single-path R3/R4 estimation/boundary states, exact A6 columns/state encoding, and deterministic G5 entry eligibility.
+- Anti-contamination state: amendment authored before any C03/E02/E03-A value, return, pair count, fit, abnormality, target, PnL, OF4, or held-out inspection.
+- Current disposition: validation and protocol publication precede any empirical access.
