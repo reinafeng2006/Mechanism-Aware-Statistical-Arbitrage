@@ -137,3 +137,7 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Current disposition: validation and protocol publication precede any empirical access.
 - Protocol publication: `V1-EXECUTABLE-SEMANTICS-A1` committed as `6ea7a6b` and pushed normally to `origin/main` before any empirical access.
 - Phase 1 transition: the active dataset guard now binds `CORE-DATASET-FREEZE-V1 + C04-A + C06-AVAILABILITY-AMENDMENT-V1 + V1-EXECUTABLE-SEMANTICS-A1`, restricted to 2013–2019 roles.
+- Structural feasibility audit: using only C06 membership/availability, sidecar structural states, and C04 dates, complete PAIR-A produces 46,463,558 inner pair-dates; exact R4 H63/U1D requires 87,407,322 pair-direction daily ML fits and at least 5,506,661,286 Kalman steps for one likelihood sweep before optimizer iterations.
+- Engineering conclusion: vectorization/batching cannot eliminate the frozen pair-specific daily ML objectives. The workload is infeasible within the V1 deadline in the current environment without a scientific clock/sharing amendment or material dedicated compute.
+- Mandatory stop: no pair screening, approximation, R4 clock substitution, market value, return, fit, outcome, PnL, OF4, or held-out access occurred.
+- Completion disposition: `GENUINE COMPUTATIONAL BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.

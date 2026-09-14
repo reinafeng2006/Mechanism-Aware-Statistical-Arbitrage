@@ -1,45 +1,29 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
-    "name": "Execute EXEC-A-bound V1 Phase 1 inner development",
-    "status": "AUTHORIZED",
-    "execution_state": "ACTIVE",
-    "objective": "Implement the frozen seven tuples and execute/checksum only 2015-2019 semiannual inner-development outputs under PAIR-A, C04-A, C06-AVAILABILITY-AMENDMENT-V1, and V1-EXECUTABLE-SEMANTICS-A1.",
-    "prerequisites": [
-      "V1-EXECUTABLE-SEMANTICS-A1 published as commit 6ea7a6b",
-      "C04-A and C06-AVAILABILITY-AMENDMENT-V1 validated",
-      "CORE-DATASET-FREEZE-V1 fingerprint verified",
-      "2024-2025 held-out remains sealed"
-    ],
-    "allowed_scope": [
-      "implement exact frozen relationship, A1-A6, and G5 specifications",
-      "construct complete PIT all-pairs with no screening",
-      "use 2013-2014 only as formation reserve and compute/inspect only 2015-2019 inner development",
-      "write immutable outputs, manifests, checksums, tests, validators, and PRE-OUTER checkpoint",
-      "normal non-force commit and push of in-scope artifacts"
-    ],
+    "action_id": "NONE",
+    "name": "Await PAIR-A/R4 computational-feasibility decision",
+    "status": "RESEARCHER_DECISION_REQUIRED",
+    "execution_state": "PAUSED_BEFORE_EMPIRICAL_ACCESS",
+    "objective": "Preserve complete PAIR-A and frozen EXEC-A while exact daily pair-specific R4 PIT-ML is computationally infeasible within the V1 deadline.",
+    "prerequisites": [],
+    "allowed_scope": [],
     "forbidden_scope": [
-      "any scientific-semantic change or library-default substitution",
+      "all empirical dataset access",
       "any pair screening, approximation, or PAIR-A reduction",
-      "R2, R5, P1 acquisition, or new provider",
+      "silent R4 clock, variance-sharing, estimator, or model change",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "CORE_V1_PLUS_C04_A_PLUS_C06_AMENDMENT_PLUS_EXEC_A_RESTRICTED_2013_2019",
-    "empirical_result_visibility": "2015_2019_INNER_ONLY",
+    "dataset_access": "DENIED_PENDING_PAIRA_R4_COMPUTE_DECISION",
+    "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": true,
-    "commit_scope": "Exact Phase 1 implementation, immutable 2015-2019 inner outputs/manifests, validators, state/log, and PRE-OUTER checkpoint only.",
-    "push_permitted": true,
-    "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Validated immutable 2015-2019 inner outputs and PRE-OUTER checkpoint, or an exact integrity/computational blocker.",
+    "commit_permitted": false,
+    "push_permitted": false,
+    "completion_condition": "Researcher selects a bounded R4 computational-feasibility resolution.",
     "mandatory_stop_conditions": [
-      "Any attempted OF4 or held-out access",
-      "Any need to reduce or approximate PAIR-A",
-      "Any unresolved scientific semantic not closed by EXEC-A",
-      "Any deterministic, identity, C04, C06, or numerical-integrity failure",
-      "Exact PAIR-A infeasible after authorized engineering optimization"
+      "Any empirical, OF4, or held-out access",
+      "Any unapproved semantic or compute-scope change"
     ]
   }
 }

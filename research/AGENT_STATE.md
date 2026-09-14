@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 — EXEC-A-BOUND INNER DEVELOPMENT` |
-| Stage status | `AUTHORIZED / ACTIVE — 2015–2019 INNER ONLY` |
+| Current stage | `V1 PHASE 1 — PAIR-A/R4 COMPUTATIONAL FEASIBILITY GATE` |
+| Stage status | `SAFELY PAUSED BEFORE EMPIRICAL ACCESS / RESEARCHER DECISION REQUIRED` |
 | Latest frozen decision | `V1-EXECUTABLE-SEMANTICS-A1 — APPROVED / FROZEN` |
-| Current substage | deterministic implementation, feasibility audit, and bounded inner execution |
+| Current substage | exact daily pair-specific R4 PIT-ML infeasible under complete PAIR-A within V1 deadline |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `2015–2019 INNER ONLY`; 2013–2014 formation reserve; OF4 and held-out denied |
-| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
-| Last validation state | `PASS`; EXEC-A published as `6ea7a6b` before empirical access |
+| Computation authorization | `PAUSED / DENIED` pending explicit R4 feasibility resolution; OF4 and held-out denied |
+| Current authorized action | `NONE` |
+| Last validation state | structural-only PAIR-A geometry: 46,463,558 inner pair-dates; exact R4 requires 87,407,322 daily pair-direction ML fits |
 | Latest local commit | `790ca825f002e9db82543e2163cf6b4378b3fa1b` — amended C06 Phase 1 guard published |
 | Remote state observed | `origin/main` at `790ca825f002e9db82543e2163cf6b4378b3fa1b` |
-| Researcher action required | `NO`; bounded Phase 1 execution is authorized |
+| Researcher action required | `YES`; select CF-A, CF-B, CF-C, or CF-STOP |
 
 ## Verified frozen chain relevant to activation
 

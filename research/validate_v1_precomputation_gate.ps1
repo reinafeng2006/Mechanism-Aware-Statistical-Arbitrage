@@ -65,6 +65,12 @@ $execAPublication = (
     $action.action.dataset_access -eq 'DENIED_UNTIL_EXEC_A_PROTOCOL_PUBLICATION' -and
     $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
 )
+$r4FeasibilityPause = (
+    $action.action.action_id -eq 'NONE' -and
+    $action.action.empirical_result_visibility -eq 'DENIED' -and
+    $action.action.dataset_access -eq 'DENIED_PENDING_PAIRA_R4_COMPUTE_DECISION' -and
+    $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -76,14 +82,16 @@ $checks = @(
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
 
 if ($checks -contains $false) { throw 'V1 pre-computation gate invariant failed.' }
 
-if ($execAPublication) {
+if ($r4FeasibilityPause) {
+    Write-Output 'PASS: V1/PAIR-A/EXEC-A remain frozen; Phase 1 is paused before empirical access on exact R4 computational feasibility.'
+} elseif ($execAPublication) {
     Write-Output 'PASS: EXEC-A is qualified for publication; all empirical, OF4, and held-out access remains denied until its commit is pushed.'
 } elseif ($executableSemanticsPause) {
     Write-Output 'PASS: V1, PAIR-A, C04-A, and C06 amendment remain frozen; Phase 1 is paused before empirical access pending executable scientific semantics.'
