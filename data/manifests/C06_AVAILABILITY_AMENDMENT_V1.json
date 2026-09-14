@@ -1,0 +1,35 @@
+{
+  "amendment_id": "C06-AVAILABILITY-AMENDMENT-V1",
+  "amendment_root_fingerprint": "C53FC338A47B4CD1E5D83E3F945D47544D0211D9338B6006499E08CC76D2E95F",
+  "ancestor_dataset": "CORE-DATASET-FREEZE-V1",
+  "ancestor_root_fingerprint": "3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616",
+  "artifacts": {
+    "generator": "tools/v1_c06_availability_amendment.py",
+    "pit_origin_validation": "data/amendments/c06/C06_AVAILABILITY_AMENDMENT_V1/pit_origin_validation.json",
+    "snapshot_register": "data/amendments/c06/C06_AVAILABILITY_AMENDMENT_V1/snapshot_availability_register.jsonl"
+  },
+  "base_membership_sha256": "288C5BBB457439B88E4D23A6E821D864A4F53A4AF401241C642B48EEBBECBBE4",
+  "constructible_inner_origins": 10,
+  "frozen_base_membership_unchanged": true,
+  "generator_sha256": "35341BE6370ED24C57C268DA8F529B4E3094032879338671B63CA5F6D9C7660A",
+  "logical_snapshots_accounted": 42,
+  "old_archive_migration_date_retained_as_availability": 0,
+  "old_archive_migration_date_rows_corrected": 7456,
+  "old_null_publication_rows_accounted": 1125,
+  "pit_origin_validation_sha256": "9762DF95030C7A078934C6D8392D6462893DD834C48DD127AD24B3AAF248BD67",
+  "prohibitions": [
+    "no period-label or period-end backdating",
+    "no archive/current-page modification date used as publication time",
+    "no inferred neighboring dates",
+    "no membership, taxonomy, identity, scope, PAIR-A, or scientific-semantic change",
+    "no empirical, OF4, or held-out access"
+  ],
+  "required_inner_origins": 10,
+  "scope": "PUBLICATION_AND_AVAILABLE_TIME_METADATA_ONLY",
+  "snapshot_register_sha256": "FA9A527B180A303F094E52F7258A552CCC1261660746283319250C0A1272B03A",
+  "snapshot_titles_accounted": 45,
+  "source_standard": "IMMUTABLE_FIRST_PARTY_CSRC_CAPCO_VISIBLE_PAGE_PUBLICATION_RECORDS",
+  "status": "QUALIFIED_ALL_REQUIRED_INNER_ORIGINS",
+  "time_precision_rule": "date-only evidence becomes usable at the first project decision clock strictly after the date",
+  "unresolved_snapshot_identifiers": []
+}

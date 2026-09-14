@@ -103,3 +103,14 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Mandatory stop: no date was inferred from a period label or archive page; the frozen C06 artifact and core fingerprint were not mutated.
 - Completion disposition: `GENUINE INTEGRITY BLOCKER / C06 AVAILABILITY-TIME AMENDMENT REQUIRED`; successor action reset to `NONE`.
 - Closeout validation: expected C06 audit exit `2` reproduced the same blocker; core freeze, C04-A, agent-control, V1-gate, literature, documentation, Learning Layer, and whitespace validators passed. Blocker-report SHA-256: `DAC22FD9171F6AAAB8E87FF9182A2AF7DA6241B725C416704DF3B93559D4C1FB`.
+
+## 2026-09-14 — RUN-V1-C06-FIX-A-20260914-01
+
+- Researcher authorization: `C06-FIX-A — VERSIONED AVAILABILITY-TIME AMENDMENT`, granted before any empirical relationship, pair-count, return, outcome, or PnL inspection.
+- Source use: immutable first-party CSRC/CAPCO detail-page captures already present in the official C06 acquisition run; no new provider, market data, or empirical source was accessed and no reacquisition was necessary.
+- Amendment result: all 45 frozen titles registered as 42 logical snapshots; all 1,125 null-date rows accounted; 7,456 archive-migration-date rows corrected through independently preserved visible first-party dates; zero snapshot remained unresolved.
+- Duplicate-title control: 2015Q4, 2020Q4, and 2021Q3 variants have identical normalized membership-content hashes; membership contents were neither changed nor collapsed.
+- PIT geometry: all ten frozen 2015–2019 semiannual inner origins are structurally constructible using a qualified snapshot published strictly before the origin; no membership or pair count was inspected.
+- Immutable lineage: `CORE-DATASET-FREEZE-V1` and base C06 hash remain unchanged; descendant amendment root is `C53FC338A47B4CD1E5D83E3F945D47544D0211D9338B6006499E08CC76D2E95F`.
+- Access boundary: OF4 2020–2023 not accessed; 2024–2025 held-out sealed; no market, model, abnormality, mechanism, target, return, or PnL value inspected.
+- Disposition: amendment qualified and locally frozen; protocol publication precedes the already-authorized Phase 1 resume.

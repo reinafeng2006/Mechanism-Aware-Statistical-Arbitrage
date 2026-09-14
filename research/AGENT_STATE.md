@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 — PRE-COMPUTATION STRUCTURAL VALIDATION` |
-| Stage status | `SAFELY PAUSED — MATERIAL C06 AVAILABILITY-TIME CONTRACT MISMATCH` |
+| Current stage | `V1 C06-FIX-A — VERSIONED AVAILABILITY-TIME AMENDMENT` |
+| Stage status | `QUALIFIED / FROZEN LOCALLY — PROTOCOL PUBLICATION PENDING` |
 | Latest frozen decision | `PAIR-A COMPLETE PIT ALL-PAIRS — APPROVED / FROZEN FOR V1` |
-| Current substage | PAIR-A published; computation stopped before market access because the frozen C06 normalized artifact cannot reconstruct PIT membership at 2015–2019 inner origins |
+| Current substage | C06 availability amendment passed all structural checks; publish its immutable binding before Phase 1 resumes |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `PAUSED / DENIED` pending a versioned C06 availability-time resolution; OF4 and held-out remain denied |
-| Current authorized action | `NONE` — PAIR-A successor action stopped at a mandatory data-integrity boundary |
-| Last validation state | `PASS` closeout: expected C06 blocker reproduced deterministically; core/C04/agent/V1/documentation/Learning Layer validators and `git diff --check` passed; blocker-report SHA-256 `DAC22FD9171F6AAAB8E87FF9182A2AF7DA6241B725C416704DF3B93559D4C1FB` |
+| Computation authorization | `DENIED DURING AMENDMENT`; Phase 1 may resume only after all ten inner origins pass and the amendment is published; OF4 and held-out remain denied |
+| Current authorized action | `V1-C06-AVAILABILITY-AMENDMENT-V1` |
+| Last validation state | `PASS` C06-FIX-A: 45/45 titles, 1,125/1,125 null-date rows accounted, zero unresolved snapshots, 10/10 inner origins constructible; amendment root `C53FC338A47B4CD1E5D83E3F945D47544D0211D9338B6006499E08CC76D2E95F` |
 | Latest local commit | `f6d7e9c` — PAIR-A freeze published before the audit |
 | Remote state observed | `origin/main` at `f6d7e9c` |
-| Researcher action required | `YES` — authorize a versioned C06 availability-time amendment, restrict the temporal scope, or stop V1 |
+| Researcher action required | `NO`; normal amendment commit/push and Phase 1 resumption are already authorized |
 
 ## Verified frozen chain relevant to activation
 

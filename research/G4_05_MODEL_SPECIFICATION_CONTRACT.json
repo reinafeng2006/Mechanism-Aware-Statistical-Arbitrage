@@ -83,5 +83,13 @@
       "PAIR_C": "NOT_SELECTED_FOR_V1"
     }
   },
-  "computation_gate": "PAUSED_C06_AVAILABILITY_TIME_CONTRACT_MISMATCH"
+  "c06_availability_amendment": {
+    "amendment_id": "C06-AVAILABILITY-AMENDMENT-V1",
+    "ancestor_dataset": "CORE-DATASET-FREEZE-V1",
+    "amendment_root_fingerprint": "C53FC338A47B4CD1E5D83E3F945D47544D0211D9338B6006499E08CC76D2E95F",
+    "status": "QUALIFIED_ALL_REQUIRED_INNER_ORIGINS",
+    "membership_content_unchanged": true,
+    "activation_rule": "FIRST_PROJECT_DECISION_CLOCK_STRICTLY_AFTER_QUALIFIED_PUBLICATION_DATE"
+  },
+  "computation_gate": "C06_AMENDMENT_QUALIFIED_PENDING_PROTOCOL_PUBLICATION"
 }

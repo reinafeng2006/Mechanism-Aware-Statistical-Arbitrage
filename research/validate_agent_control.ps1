@@ -26,7 +26,9 @@ $allowedGates = @(
     'DENIED_UNTIL_ALL_BINDINGS_FROZEN_AND_RESEARCHER_AUTHORIZED',
     'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION',
     'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN',
-    'PAUSED_C06_AVAILABILITY_TIME_CONTRACT_MISMATCH'
+    'PAUSED_C06_AVAILABILITY_TIME_CONTRACT_MISMATCH',
+    'C06_AVAILABILITY_AMENDMENT_ACTIVE_NO_EMPIRICAL_ACCESS',
+    'C06_AMENDMENT_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -49,6 +51,19 @@ if ($contract.computation_gate -eq 'PAUSED_C06_AVAILABILITY_TIME_CONTRACT_MISMAT
     if ($next.action.dataset_access -ne 'DENIED_PENDING_C06_AVAILABILITY_TIME_AMENDMENT') { throw 'C06 pause must deny dataset access.' }
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'C06 pause must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
+if ($contract.computation_gate -eq 'C06_AVAILABILITY_AMENDMENT_ACTIVE_NO_EMPIRICAL_ACCESS') {
+    if ($next.action.action_id -ne 'V1-C06-AVAILABILITY-AMENDMENT-V1') { throw 'C06 amendment action is not bound.' }
+    if ($next.action.dataset_access -ne 'C06_METADATA_AND_MEMBERSHIP_STRUCTURE_ONLY') { throw 'C06 amendment dataset access is too broad.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'C06 amendment must deny empirical visibility.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
+if ($contract.computation_gate -eq 'C06_AMENDMENT_QUALIFIED_PENDING_PROTOCOL_PUBLICATION') {
+    if ($next.action.action_id -ne 'V1-C06-AVAILABILITY-AMENDMENT-V1') { throw 'Qualified C06 amendment is not bound to its publication action.' }
+    if ($next.action.execution_state -ne 'QUALIFIED_PENDING_PROTOCOL_PUBLICATION') { throw 'Qualified C06 amendment publication state mismatch.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'No empirical visibility is permitted before amendment publication.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($contract.c06_availability_amendment.status -ne 'QUALIFIED_ALL_REQUIRED_INNER_ORIGINS') { throw 'C06 amendment qualification is not bound.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'
