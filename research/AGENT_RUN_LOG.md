@@ -115,3 +115,14 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Access boundary: OF4 2020–2023 not accessed; 2024–2025 held-out sealed; no market, model, abnormality, mechanism, target, return, or PnL value inspected.
 - Disposition: amendment qualified and locally frozen; protocol publication precedes the already-authorized Phase 1 resume.
 - Publication: amendment commit `0f8585c` was pushed normally to `origin/main`; the Phase 1 action was then reactivated with an explicit `CORE-DATASET-FREEZE-V1 + C04-A + C06-AVAILABILITY-AMENDMENT-V1` role guard before empirical access.
+
+## 2026-09-14 — RUN-V1-PHASE1-EXECUTABLE-AUDIT-01
+
+- Run type: mandatory pre-access executable-statement audit under the reactivated PAIR-A Phase 1 action.
+- Base/published guard commit: `790ca825f002e9db82543e2163cf6b4378b3fa1b` on `origin/main`.
+- C06 prerequisite: amendment root `C53FC338A47B4CD1E5D83E3F945D47544D0211D9338B6006499E08CC76D2E95F`; ten of ten 2015–2019 semiannual origins structurally constructible.
+- Audit result: E1–E6 remain scientifically material and executable-unbound: finite-sample scale conventions/support, R1-MI cross-code factor binding, R3 cross-code hierarchy, R3/R4 estimator/convergence details, A6 design-matrix encoding, and G5 evidence-to-entry semantics.
+- Mandatory stop rationale: the active action explicitly requires stopping if any numerical or scientific semantic needed for execution is unresolved. Filling these through library defaults would alter losses, support, pooling, residualization, predictive equations or mechanism/trading semantics.
+- Empirical boundary honored: no C03/E02/E03-A value, return, realized pair count, fit, abnormality, target, PnL, OF4, or held-out information was read or computed.
+- Dataset/frozen state: `CORE-DATASET-FREEZE-V1`, C04-A, C06 amendment, PAIR-A and all G4/G5 frozen decisions remain unchanged.
+- Completion disposition: `GENUINE INTEGRITY BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.

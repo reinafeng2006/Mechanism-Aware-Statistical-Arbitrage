@@ -1,64 +1,29 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
-    "name": "Execute V1 Phase 1 inner development",
-    "status": "AUTHORIZED",
-    "execution_state": "ACTIVE",
-    "objective": "Implement the exact frozen V1 specifications and execute/checksum only 2015-2019 semiannual inner-development outputs under PAIR-A and C06-AVAILABILITY-AMENDMENT-V1 before stopping at PRE-OUTER.",
-    "prerequisites": [
-      "CORE-DATASET-FREEZE-V1 fingerprint verified",
-      "C04-A-OFFICIAL-CALENDAR-V1 validated",
-      "V1 seven-tuple protocol published",
-      "PAIR-A complete PIT all-pairs selected by the researcher",
-      "C06-AVAILABILITY-AMENDMENT-V1 qualified and published",
-      "2024-2025 held-out sealed"
-    ],
-    "allowed_scope": [
-      "materialize deterministic PIT candidate-pair membership with unordered identity and two directional channels",
-      "join unchanged C06 membership contents to C06-AVAILABILITY-AMENDMENT-V1",
-      "vectorization, batching, caching, shared sufficient statistics, safe parallelism, and deterministic checkpoints without semantic approximation",
-      "implement the frozen seven relationship tuples, eligibility, A1-A6, and G5 interfaces",
-      "use 2013-2014 only as formation reserve and compute/inspect only 2015-2019 semiannual inner-development evidence",
-      "write immutable outputs, manifests, checksums, tests, validators, and PRE-OUTER checkpoint",
-      "normal non-force commits and pushes of in-scope implementation and inner-development artifacts"
-    ],
+    "action_id": "NONE",
+    "name": "Await executable-semantics researcher decision",
+    "status": "RESEARCHER_DECISION_REQUIRED",
+    "execution_state": "PAUSED_BEFORE_EMPIRICAL_ACCESS",
+    "objective": "Preserve the frozen V1, PAIR-A, C04-A, C06 amendment, dataset, and temporal guards while the exact E1-E6 executable semantics are unresolved.",
+    "prerequisites": [],
+    "allowed_scope": [],
     "forbidden_scope": [
-      "mutate CORE-DATASET-FREEZE-V1 or its bound C06 artifact",
-      "change or regenerate C06-AVAILABILITY-AMENDMENT-V1 under different rules",
-      "any pair screen, rank, Top-K, same-C06-code restriction, approximation, or reduction of PAIR-A",
-      "use realized pair counts, support, performance, or outcomes to revise PAIR-A",
-      "new model, estimator, metric, threshold, feature, provider, Search-Budget, sensitivity, or semantic choice",
-      "P1 acquisition or R2/R5 execution",
+      "all dataset access",
+      "all empirical inspection or computation",
+      "scientific-semantic selection by implementation default",
       "OF4 2020-2023 access",
-      "2024-2025 held-out access",
-      "C04-A reacquisition or overwrite",
-      "post-hoc scientific repair or trading-policy change"
+      "2024-2025 held-out access"
     ],
-    "dataset_access": "CORE_V1_PLUS_C04_A_PLUS_C06_AVAILABILITY_AMENDMENT_RESTRICTED_TO_2013_2019_ROLE_GUARD",
-    "empirical_result_visibility": "2015_2019_INNER_ONLY",
+    "dataset_access": "DENIED_PENDING_EXECUTABLE_SEMANTICS_AMENDMENT",
+    "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": true,
-    "commit_scope": "Exact Phase 1 implementation, immutable 2015-2019 inner outputs/manifests, validators, state/log, and PRE-OUTER checkpoint only.",
-    "push_permitted": true,
-    "push_reason": "Researcher explicitly authorized normal commit/push after C06-FIX-A validation; destination remains the authorized origin main and force/history rewriting are prohibited.",
-    "required_validators": [
-      "literature/validators/validate_literature_os.ps1",
-      "literature/validators/validate_documentation_architecture.ps1",
-      "learning/validators/validate_learning_layer.ps1",
-      "tools/validate_core_dataset_freeze.py",
-      "tools/validate_v1_c04_calendar.py",
-      "tools/validate_v1_c06_availability_amendment.py",
-      "research/validate_agent_control.ps1",
-      "git diff --check"
-    ],
-    "completion_condition": "Validated immutable 2015-2019 inner-development outputs are materialized and PRE-OUTER V1 GATE is produced, or an exact integrity/computational blocker is recorded.",
+    "commit_permitted": false,
+    "push_permitted": false,
+    "completion_condition": "Researcher authorizes a versioned executable-semantics amendment or explicitly narrows the execution scope.",
     "mandatory_stop_conditions": [
-      "Any attempted OF4 or held-out access",
-      "Any need to reduce or approximate PAIR-A",
-      "Any unresolved numerical or scientific semantic required for execution",
-      "Any deterministic-regeneration, source-contract, identity, C04, or C06 integrity failure",
-      "Exact PAIR-A remains infeasible after authorized engineering optimization"
+      "Any attempt to infer E1-E6 from software defaults",
+      "Any market, pair-count, model, outcome, PnL, OF4, or held-out access"
     ]
   }
 }

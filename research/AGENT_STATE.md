@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 — PAIR-A INNER DEVELOPMENT` |
-| Stage status | `AUTHORIZED / ACTIVE — 2015–2019 INNER ONLY` |
+| Current stage | `V1 PHASE 1 — EXECUTABLE-SEMANTICS INTEGRITY GATE` |
+| Stage status | `SAFELY PAUSED BEFORE EMPIRICAL ACCESS / RESEARCHER DECISION REQUIRED` |
 | Latest frozen decision | `PAIR-A COMPLETE PIT ALL-PAIRS — APPROVED / FROZEN FOR V1` |
-| Current substage | exact frozen-specification implementation and computational-feasibility audit precede bounded inner execution |
+| Current substage | consolidated E1–E6 executable-semantics closure required before bounded inner execution |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `2015–2019 INNER DEVELOPMENT ONLY`; 2013–2014 is formation reserve; OF4 and held-out remain denied |
-| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
-| Last validation state | `PASS` C06-FIX-A: 45/45 titles, 1,125/1,125 null-date rows accounted, zero unresolved snapshots, 10/10 inner origins constructible; amendment root `C53FC338A47B4CD1E5D83E3F945D47544D0211D9338B6006499E08CC76D2E95F` |
-| Latest local commit | `0f8585c` — versioned C06 availability amendment frozen and published |
-| Remote state observed | `origin/main` at `0f8585c` |
-| Researcher action required | `NO`; normal amendment commit/push and Phase 1 resumption are already authorized |
+| Computation authorization | `PAUSED`; 2013–2014 formation reserve, 2015–2019 inner, OF4 and held-out all inaccessible until an executable-semantics amendment is authorized |
+| Current authorized action | `NONE` |
+| Last validation state | `PASS` C06-FIX-A and amended Phase 1 guards; executable-statement audit found E1–E6 unresolved before any empirical access |
+| Latest local commit | `790ca825f002e9db82543e2163cf6b4378b3fa1b` — amended C06 Phase 1 guard published |
+| Remote state observed | `origin/main` at `790ca825f002e9db82543e2163cf6b4378b3fa1b` |
+| Researcher action required | `YES`; select a bounded executable-semantics closure in the consolidated checkpoint |
 
 ## Verified frozen chain relevant to activation
 
@@ -53,3 +53,7 @@ The approved C04-A descendant calendar is acquired and validated under `C04-A-OF
 ## PAIR-A resolution and C06 integrity stop
 
 PAIR-A was frozen and published as commit `f6d7e9c`. Before any pair count or market-value access, the bound C06 artifact failed its PIT availability-time readiness audit: the pre-2019 snapshot sequence does not preserve true historical publication dates, so no 2015–2019 inner origin can be populated under the artifact's own timestamps. The frozen core was not mutated. See [the C06 integrity checkpoint](../docs/stages/G4/V1_PHASE1_C06_AVAILABILITY_INTEGRITY_BLOCKER.md).
+
+## C06-FIX-A completion and executable-semantics stop
+
+`C06-AVAILABILITY-AMENDMENT-V1` qualified all ten frozen inner origins and was published without mutating the core dataset or C06 membership. The subsequent pre-access executable-statement audit found six unresolved scientific/numerical bindings required to implement A1, R1-MI, R3/R4, A6 and G5 without choosing semantics through software defaults. Phase 1 stopped before reading market data, pair counts, fits, outcomes or PnL. See [the consolidated executable-semantics checkpoint](../docs/stages/G4/V1_PHASE1_EXECUTABLE_SEMANTICS_INTEGRITY_BLOCKER.md).
