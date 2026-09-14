@@ -1,0 +1,33 @@
+{
+  "schema_version": "V1-A6-TRAINING-GEOMETRY-1.0",
+  "contract_id": "V1-A6-TG-A-1.0",
+  "status": "APPROVED_FROZEN_PENDING_PUBLICATION",
+  "blocks": {
+    "2015H1": "TRAINING_EVIDENCE_ONLY",
+    "first_prediction": "2015H2",
+    "later_training": "EXPANDING_PRIOR_COMPLETED_INNER_BLOCKS"
+  },
+  "label_admission": [
+    "BLOCK_FULLY_ENDED",
+    "EXACT_HORIZON_FULLY_MATURED",
+    "TARGET_HORIZON_CENSORING_AUTHORIZED",
+    "AVAILABLE_BEFORE_PREDICTION_ORIGIN"
+  ],
+  "fitting_unit": ["RELATIONSHIP_CANDIDATE", "RESOLUTION_COMPONENT", "HORIZON", "PV_INFORMATION_SET"],
+  "pair_direction_specific_models": false,
+  "fitting_weights": "EQUAL_TOTAL_PER_UNORDERED_PAIR_ROWS_DIVIDE_PAIR_WEIGHT",
+  "direction_identity_preserved": true,
+  "forbidden": [
+    "ROLLING_A6_WINDOW",
+    "A6_HISTORY_HYPERPARAMETER",
+    "PAIR_SPECIFIC_A6_MODEL",
+    "ALTERNATIVE_ROW_WEIGHTING",
+    "SAMPLE_SIZE_THRESHOLD",
+    "HORIZON_POOLING",
+    "PARTIAL_LABEL_IMPUTATION",
+    "HORIZON_SUBSTITUTION",
+    "OF4_ACCESS",
+    "HELD_OUT_ACCESS"
+  ],
+  "empirical_information_used_to_freeze": false
+}

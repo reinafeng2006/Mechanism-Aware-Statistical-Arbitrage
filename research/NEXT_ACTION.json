@@ -1,33 +1,34 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "No autonomous action",
-    "status": "RESEARCHER_ACTION_REQUIRED",
-    "execution_state": "PAUSED_A6_TRAINING_GEOMETRY_NOT_FROZEN",
-    "objective": "Await a frozen A6 inner-training geometry before any model fitting or outcome construction.",
+    "action_id": "V1-A6-TG-A-PUBLICATION-V1",
+    "name": "Publish A6-TG-A before Phase 1 resume",
+    "status": "AUTHORIZED",
+    "execution_state": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "objective": "Publish the researcher-selected A6-TG-A geometry and role guard before resuming inner computation.",
     "prerequisites": [
       "CF-A benchmark disposition and inner-only role guard published",
       "V1-PHASE1-INNER-INPUT-1.0 checksum-bound",
-      "No relationship model, abnormality, target, PnL, OF4, or held-out result inspected"
+      "Researcher explicitly selected A6-TG-A"
     ],
     "allowed_scope": [
-      "none pending researcher decision"
+      "write and validate A6-TG-A contract",
+      "commit and push the pre-computation freeze to the authorized main branch"
     ],
     "forbidden_scope": [
-      "model fitting or empirical-result inspection",
-      "independent choice of A6 training, pooling, first-prediction, or weighting geometry",
+      "model fitting or empirical-result inspection before publication",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_A6_TRAINING_GEOMETRY_DECISION",
+    "dataset_access": "DENIED_UNTIL_A6_TG_A_PUBLICATION",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": false,
-    "push_permitted": false,
-    "completion_condition": "Researcher freezes A6 training geometry and activates a replacement action.",
+    "commit_permitted": true,
+    "push_permitted": true,
+    "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
+    "completion_condition": "A6-TG-A freeze is validated and published before inner computation resumes.",
     "mandatory_stop_conditions": [
-      "Any attempt to fit or inspect results before replacement authorization",
+      "Any attempt to fit or inspect results before A6-TG-A publication",
       "Any OF4 or held-out access"
     ]
   }
