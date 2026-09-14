@@ -135,3 +135,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Frozen amendment: `V1-EXECUTABLE-SEMANTICS-A1` closes finite-sample MAD/SD, R1-MI leg factors, unordered R3 strata, single-path R3/R4 estimation/boundary states, exact A6 columns/state encoding, and deterministic G5 entry eligibility.
 - Anti-contamination state: amendment authored before any C03/E02/E03-A value, return, pair count, fit, abnormality, target, PnL, OF4, or held-out inspection.
 - Current disposition: validation and protocol publication precede any empirical access.
+- Protocol publication: `V1-EXECUTABLE-SEMANTICS-A1` committed as `6ea7a6b` and pushed normally to `origin/main` before any empirical access.
+- Phase 1 transition: the active dataset guard now binds `CORE-DATASET-FREEZE-V1 + C04-A + C06-AVAILABILITY-AMENDMENT-V1 + V1-EXECUTABLE-SEMANTICS-A1`, restricted to 2013–2019 roles.

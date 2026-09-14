@@ -93,8 +93,8 @@
   },
   "executable_semantics_amendment": {
     "amendment_id": "V1-EXECUTABLE-SEMANTICS-A1",
-    "status": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "status": "PUBLISHED_BOUND_TO_PHASE1",
     "empirical_information_used": false
   },
-  "computation_gate": "EXEC_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION"
+  "computation_gate": "AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION"
 }
