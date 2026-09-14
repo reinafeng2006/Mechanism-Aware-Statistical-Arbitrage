@@ -1,7 +1,7 @@
 {
   "schema_version": "V1-DECISION-EPISODE-1.0",
   "contract_id": "V1-DC-A-EP-A-1.0",
-  "status": "APPROVED_FROZEN_PENDING_PUBLICATION",
+  "status": "PUBLISHED_BOUND_TO_PHASE1",
   "decision_event_cadence": "EACH_CANDIDATE_ELIGIBLE_SESSION",
   "refresh_independence": true,
   "episode_identity": ["UNORDERED_PAIR", "POLICY_CHANNEL"],

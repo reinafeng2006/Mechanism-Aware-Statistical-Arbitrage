@@ -1,35 +1,38 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-DC-A-EP-A-PUBLICATION-V1",
-    "name": "Publish DC-A + EP-A before Phase 1 resume",
+    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
+    "name": "Execute fully bound V1 Phase 1 inner development",
     "status": "AUTHORIZED",
-    "execution_state": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
-    "objective": "Publish the researcher-selected daily event and one-active-episode semantics before resuming computation.",
+    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
+    "objective": "Execute and checksum complete PAIR-A R0/R1/R3/R4 and inner A1-A6/G5 under all published contracts.",
     "prerequisites": [
       "CF-A benchmark disposition and inner-only role guard published",
       "V1-PHASE1-INNER-INPUT-1.0 checksum-bound",
       "A6-TG-A and inner-only role guard published",
-      "Researcher explicitly selected DC-A + EP-A"
+      "DC-A + EP-A published at commit 02d39d7"
     ],
     "allowed_scope": [
-      "write and validate DC-A + EP-A contract",
-      "commit and push the pre-computation freeze to the authorized main branch"
+      "execute complete PAIR-A R0/R1/R3/R4",
+      "execute only 2015-2019 daily inner events and A1-A6/G5",
+      "materialize immutable/checksummed outputs and PRE-OUTER checkpoint",
+      "normal non-force commits and pushes"
     ],
     "forbidden_scope": [
-      "model fitting or empirical-result inspection before publication",
+      "pair screening, sampling, or PAIR-A reduction",
+      "unregistered semantic or estimator change",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_DC_A_EP_A_PUBLICATION",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "CORE_V1_PLUS_C04_A_PLUS_C06_AMENDMENT_PLUS_EXEC_A_RESTRICTED_2013_2019",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "DC-A + EP-A is validated and published before inner computation resumes.",
+    "completion_condition": "Validated immutable 2015-2019 inner outputs and PRE-OUTER checkpoint, or a genuine new integrity/computational blocker.",
     "mandatory_stop_conditions": [
-      "Any attempt to fit or inspect results before DC-A + EP-A publication",
+      "Any semantic change beyond published contracts",
       "Any OF4 or held-out access"
     ]
   }

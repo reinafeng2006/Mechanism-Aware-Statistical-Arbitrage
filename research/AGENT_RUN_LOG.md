@@ -160,3 +160,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - A6-TG-A published at commit `1d1e1ea`; the role guard now permits only 2015–2019 inner computation under the frozen complete PAIR-A contracts.
 - Pre-fit integrity stop: market/abnormality decision-event cadence and active G5 episode re-entry/admission semantics are not frozen. No model fit, abnormality, target, PnL, OF4, or held-out result was inspected.
 - Researcher selected `DC-A + EP-A`: daily candidate-eligible event records, independent model refresh clocks, and one active episode per unordered pair × policy channel with blocked re-entry metadata. Publication guard denies empirical access until pushed.
+- DC-A + EP-A published at commit `02d39d7`; the inner-only role guard now permits Phase 1 computation from the existing checksum-bound input.
