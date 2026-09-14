@@ -1,7 +1,7 @@
 # V1 Phase 1 Executable-Semantics Integrity Blocker
 
-Status: **PHASE 1 SAFELY PAUSED BEFORE EMPIRICAL ACCESS / RESEARCHER DECISION REQUIRED**  
-Date: 2026-09-14  
+Status: **PHASE 1 SAFELY PAUSED BEFORE EMPIRICAL ACCESS / RESEARCHER DECISION REQUIRED**
+Date: 2026-09-14
 Trigger: mandatory stop in `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` for an unresolved numerical or scientific semantic required for execution.
 
 ## Completed before the stop
