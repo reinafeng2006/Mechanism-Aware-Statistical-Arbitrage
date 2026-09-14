@@ -1,42 +1,33 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
-    "name": "Execute CF-A and EXEC-A-bound V1 Phase 1",
-    "status": "AUTHORIZED",
-    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
-    "objective": "Publish the synthetic CF-A pass disposition, then execute/checksum complete PAIR-A R0/R1/R3/R4 and inner A1-A6/G5 under the frozen contracts.",
+    "action_id": "NONE",
+    "name": "No autonomous action",
+    "status": "RESEARCHER_ACTION_REQUIRED",
+    "execution_state": "PAUSED_A6_TRAINING_GEOMETRY_NOT_FROZEN",
+    "objective": "Await a frozen A6 inner-training geometry before any model fitting or outcome construction.",
     "prerequisites": [
-      "CF-A synthetic benchmark passed on runtime/resource feasibility",
-      "PAIR-A and V1-EXECUTABLE-SEMANTICS-A1 frozen",
-      "No empirical, OF4, or held-out access occurred during benchmark"
+      "CF-A benchmark disposition and inner-only role guard published",
+      "V1-PHASE1-INNER-INPUT-1.0 checksum-bound",
+      "No relationship model, abnormality, target, PnL, OF4, or held-out result inspected"
     ],
     "allowed_scope": [
-      "publish the CF-A benchmark disposition before empirical access",
-      "execute complete PAIR-A R0/R1/R3/R4 with CF-A monthly Q/R and daily states",
-      "execute only 2015-2019 inner A1-A6/G5",
-      "materialize immutable/checksummed outputs and PRE-OUTER checkpoint",
-      "normal non-force commits and pushes",
-      "use deterministic partitioning, caching, safe parallelism, and checkpoint/restart"
+      "none pending researcher decision"
     ],
     "forbidden_scope": [
-      "all empirical dataset access before CF-A disposition and role guard publication",
-      "any pair screening, approximation, or PAIR-A reduction",
-      "silent R4 clock, variance-sharing, estimator, or model change",
+      "model fitting or empirical-result inspection",
+      "independent choice of A6 training, pooling, first-prediction, or weighting geometry",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "CORE_V1_PLUS_C04_A_PLUS_C06_AMENDMENT_PLUS_EXEC_A_RESTRICTED_2013_2019",
-    "empirical_result_visibility": "2015_2019_INNER_ONLY",
+    "dataset_access": "DENIED_PENDING_A6_TRAINING_GEOMETRY_DECISION",
+    "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": true,
-    "commit_scope": "Conditional contract, synthetic benchmark, feasibility disposition, implementation/inner artifacts, state/log, and PRE-OUTER or new blocker only.",
-    "push_permitted": true,
-    "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Validated immutable 2015-2019 inner outputs including R4 and PRE-OUTER checkpoint, or a new blocker affecting overall validity.",
+    "commit_permitted": false,
+    "push_permitted": false,
+    "completion_condition": "Researcher freezes A6 training geometry and activates a replacement action.",
     "mandatory_stop_conditions": [
-      "Any empirical access before CF-A disposition is published",
-      "Any PAIR-A reduction or R4 semantic change beyond the frozen monthly Q/R clock",
+      "Any attempt to fit or inspect results before replacement authorization",
       "Any OF4 or held-out access"
     ]
   }

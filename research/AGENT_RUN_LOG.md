@@ -154,3 +154,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Disposition: `CF-A PASSED / R4 INCLUDED IN V1`; CF-B not triggered. Decision used computational feasibility only.
 - Publication guard: no empirical dataset access is permitted until the benchmark disposition commit is pushed.
 - CF-A benchmark disposition published as commit `0a0f832`; the active role guard now permits only 2015–2019 inner-development access. OF4 and held-out remain denied.
+- Built checksum-bound `V1-PHASE1-INNER-INPUT-1.0` from frozen core/C04-A/C06-amendment inputs; no model fit, relationship statistic, outcome, OF4, or held-out access occurred.
+- Mandatory stop: the exact A6 semiannual training/first-prediction/pooling/weighting geometry is not frozen. Continuing would select a temporal and estimator semantics that the high-level CG2 record explicitly left unresolved.
