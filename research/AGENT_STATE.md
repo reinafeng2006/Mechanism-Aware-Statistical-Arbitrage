@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 R4 CF-A BENCHMARK DISPOSITION` |
-| Stage status | `CF-A PASSED / PUBLICATION REQUIRED BEFORE EMPIRICAL ACCESS` |
+| Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
+| Stage status | `ACTIVE — 2015–2019 INNER ONLY` |
 | Latest frozen decision | `V1-EXECUTABLE-SEMANTICS-A1 — APPROVED / FROZEN` |
-| Current substage | publish synthetic benchmark pass and CF-A-bound Phase 1 role guard |
+| Current substage | deterministic complete PAIR-A R0/R1/R3/R4 implementation and inner computation |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | denied until CF-A pass disposition is published; then 2015–2019 inner only |
+| Computation authorization | `2015–2019 INNER ONLY`; OF4 and final held-out denied |
 | Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
-| Last validation state | CF-A synthetic benchmark PASS: 4,285,028 monthly fits project to 0.81 hour at measured 8-worker throughput |
-| Latest local commit | `50dad55` — conditional R4 compute contract published |
-| Remote state observed | `origin/main` at `50dad55` |
-| Researcher action required | `NO`; publish disposition then resume Phase 1 |
+| Last validation state | CF-A disposition published at `0a0f832`; R4 included in V1 under monthly Q/R plus daily state contract |
+| Latest local commit | `0a0f832` — CF-A feasibility pass published |
+| Remote state observed | `origin/main` at `0a0f832` |
+| Researcher action required | `NO`; continue to PRE-OUTER gate or genuine blocker |
 
 ## Verified frozen chain relevant to activation
 

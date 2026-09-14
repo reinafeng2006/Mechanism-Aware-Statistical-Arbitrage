@@ -153,3 +153,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - CF-A projection: 4,285,028 monthly pair-direction fits, approximately 0.81 hour at measured throughput; approximately 5.6 GB uncompressed daily-state records at 64 bytes each.
 - Disposition: `CF-A PASSED / R4 INCLUDED IN V1`; CF-B not triggered. Decision used computational feasibility only.
 - Publication guard: no empirical dataset access is permitted until the benchmark disposition commit is pushed.
+- CF-A benchmark disposition published as commit `0a0f832`; the active role guard now permits only 2015–2019 inner-development access. OF4 and held-out remain denied.

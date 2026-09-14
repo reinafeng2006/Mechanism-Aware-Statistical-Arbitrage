@@ -4,7 +4,7 @@
     "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
     "name": "Execute CF-A and EXEC-A-bound V1 Phase 1",
     "status": "AUTHORIZED",
-    "execution_state": "CF_A_PASSED_PENDING_DISPOSITION_PUBLICATION",
+    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
     "objective": "Publish the synthetic CF-A pass disposition, then execute/checksum complete PAIR-A R0/R1/R3/R4 and inner A1-A6/G5 under the frozen contracts.",
     "prerequisites": [
       "CF-A synthetic benchmark passed on runtime/resource feasibility",
@@ -26,8 +26,8 @@
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_CF_A_DISPOSITION_PUBLICATION",
-    "empirical_result_visibility": "DENIED_UNTIL_CF_A_DISPOSITION_PUBLICATION",
+    "dataset_access": "CORE_V1_PLUS_C04_A_PLUS_C06_AMENDMENT_PLUS_EXEC_A_RESTRICTED_2013_2019",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "commit_scope": "Conditional contract, synthetic benchmark, feasibility disposition, implementation/inner artifacts, state/log, and PRE-OUTER or new blocker only.",
