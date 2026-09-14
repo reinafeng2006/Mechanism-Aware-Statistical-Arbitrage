@@ -22,7 +22,15 @@ if ($state -notmatch '3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE
 if ($state -notmatch 'SEALED') { throw 'Agent state does not preserve the held-out seal.' }
 
 $contract = Get-Content -Raw -LiteralPath $contractPath | ConvertFrom-Json
-if ($contract.computation_gate -ne 'DENIED_UNTIL_ALL_BINDINGS_FROZEN_AND_RESEARCHER_AUTHORIZED') { throw 'Model computation gate is not closed.' }
+$allowedGates = @(
+    'DENIED_UNTIL_ALL_BINDINGS_FROZEN_AND_RESEARCHER_AUTHORIZED',
+    'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION'
+)
+if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
+if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
+    if ($next.action.action_id -ne 'V1-PHASE1-C04-INNER-EXECUTION-V1') { throw 'Inner authorization lacks the matching active action.' }
+    if ($next.action.empirical_result_visibility -ne '2015_2019_INNER_ONLY') { throw 'Inner authorization has an invalid visibility boundary.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'
-

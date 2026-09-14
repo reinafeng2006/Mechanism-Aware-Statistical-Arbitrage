@@ -1,80 +1,66 @@
-# G4-05 Consolidated Researcher Checkpoint
+# G4-05 Executable-Specification Checkpoint
 
-Status: **RESEARCHER DECISION REQUIRED**
-Action completed: `G4-05-PREEMPIRICAL-ADVANCEMENT-V1`
+Status: **SUPERSEDED BY FIVE-DAY V1 CONSOLIDATED GATE / PRESERVED AS PRIOR LINEAGE**
 
-## Autonomous work completed
+Current controlling checkpoint: [Pre-Computation + Trading-Protocol V1 Gate](PRE_COMPUTATION_TRADING_PROTOCOL_V1_GATE.md). The alternatives below are preserved as the immediate predecessor analysis and do not create a second active approval gate.
+Action: `G4-05-PARTIAL-APPROVAL-CLARIFICATION-V1`
 
-- converted frozen G4-05A/B1 consequences into explicit dependencies and model-contract bindings;
-- audited the P1 fundamentals enhancement requirements without acquisition or provider expansion;
-- prepared bounded exact R2 linear/regularized alternatives;
-- prepared bounded R3 Gaussian hierarchical alternatives and N0/N1 mapping;
-- prepared bounded R4 interpretable Kalman/state-space alternatives;
-- prepared bounded R5 Engle-Granger/ECM architecture and C04 blocker;
-- completed R0–R5 overlap, identifiability, PIT, and Search-Budget audit;
-- added a machine-readable model contract and non-empirical control validator.
+## Autonomously completed
 
-No data values, empirical distributions, candidate coverage, fitted outputs, relationships, abnormality, mechanism evidence, targets, returns, PnL, or held-out observations were accessed.
+- propagated the approved `R2-LIS` / OLS / Ridge disposition and locked R2-N as deferred, non-rescue architecture;
+- clarified the approved-in-principle P0 Gaussian empirical-Bayes R3 family without adding a hierarchy;
+- clarified the approved-in-principle static-intercept/random-walk-slope R4 family without adding dynamic families;
+- registered R5-EG-ECM as blocked by qualified C04 and price construction and kept VECM deferred;
+- completed the existing-source, public-documentation P1 field/PIT audit without calling endpoints, acquiring data, or adding a provider;
+- updated model/governance contracts while preserving the computation and held-out locks.
 
-## Consolidated scientific decisions
+Validation: **PASS** — Literature OS, documentation architecture, Learning Layer, core-dataset freeze/fingerprint, agent control, model-contract JSON, and `git diff --check`.
 
-### Decision 1 — R2 initial equation and complexity
+`CORE-DATASET-FREEZE-V1` remains the governing dataset; no frozen artifact was modified. No model, empirical distribution, candidate coverage, relationship, abnormality, mechanism evidence, target, return, PnL, or held-out value was inspected.
 
-Alternatives:
+## Decision 1 — R3 executable empirical-Bayes contract
 
-1. `R2-LI`: intercept/level conditioning only — simplest attribution, but cannot test transmission heterogeneity.
-2. `R2-LS`: slope conditioning only — closest to the relationship-strength estimand, but omits level state.
-3. `R2-LIS`: minimal split level-and-slope conditioning — richer and economically aligned, but needs a strict feature-role assignment.
-4. Defer R2 until P1 field qualification — avoids premature equation freeze but delays all R2 work.
+Choose one bounded bundle; all retain P0-only, Gaussian random intercept/random slope, PIT C06 grouping, origin-specific re-estimation, and pre-response prediction.
 
-Agent recommendation: select `R2-LIS` as the bounded primary equation, assign only clearly justified features to each channel, retain OLS as primary, Ridge as the sole regularized challenger, and defer R2-N. Rationale: it directly separates state-level shifts from transmission changes without introducing nonlinear search.
+1. `R3-A — REML + N-ZERO` (recommended): REML variance components; group-level unstructured intercept/slope covariance; group observation variance; N0 fixes pair deviation to zero and N1 estimates it; singular/boundary fits become explicit unavailable/quality states. Cleanest N0→N1 attribution and reduced fixed-effect variance bias, but N0 is a sharp complete-pooling reference.
+2. `R3-B — ML + N-ZERO`: same matched contrast with marginal ML. Simpler likelihood comparison, but variance components can be more downward-biased in limited groups.
+3. `R3-C — REML + N-STRENGTH`: both N0/N1 retain pair deviations under preregistered stronger/weaker shrinkage. More graded pooling contrast, but requires a scientifically justified shrinkage-strength rule and creates a less transparent N estimand.
 
-Dependency: R2 remains non-executable until the P1 fundamentals layer is qualified/acquired/frozen. The equation choice can be made now; acquisition cannot.
+For all bundles, C06 taxonomy-versioned industry codes define the only initial hierarchy; taxonomy changes are preserved rather than arithmetically merged. Pair-specific observation variances and P1 predictors remain deferred. The executable H/U subset and calibration implementation may be deferred to the final finite tuple binding, but they must be frozen before fitting.
 
-### Decision 2 — R3 hierarchy
+Recommendation rationale: `R3-A` most directly isolates the frozen N0→N1 question without adding a shrinkage-strength tuning axis.
 
-Alternatives:
+## Decision 2 — R4 executable variance, initialization, and clock contract
 
-1. random intercept only;
-2. random slope only;
-3. random intercept and slope with Gaussian empirical-Bayes partial pooling;
-4. defer R3 P1 conditioning and retain P0 hierarchy only.
+Choose one bounded bundle; all retain static intercept, random-walk slope, Kalman filtering, pre-response prediction, no smoothing for event-time output, and R4-MR deferred.
 
-Agent recommendation: use Gaussian empirical-Bayes random intercept and slope as the bounded R3-P0 primary; preserve N0/N1 as stronger-versus-weaker shrinkage; defer P1 predictors of heterogeneity. This tests the frozen pooling question without confounding it with unavailable fundamentals.
+1. `R4-A — PIT-ML + matched-static initialization + batched refresh` (recommended): estimate `Q/R` within each authorized formation set; initialize from the matched R0/R1 static fit and its uncertainty; U1W/U1M batch measurement updates at scheduled refreshes; evolve in eligible-trading time. This best preserves the meaning of refresh cadence and avoids a new variance grid, but needs explicit boundary/singular-fit states.
+2. `R4-B — fixed ex-ante variance regime`: use independently justified fixed `Q/R` and the same initializer/clock. Most reproducible and lowest search freedom, but no defensible numerical variance rule currently exists.
+3. `R4-C — bounded inner-selected variance regimes`: select from a very small preregistered `Q/R` menu inside inner development. More adaptive, but consumes Search Budget and risks making state flexibility a hidden tuning axis.
 
-Dependency: exact group hierarchy, covariance structure, and shrinkage contrast must be frozen; this decision can proceed without P1 data.
+The alternative sequential-filter-but-publish-on-refresh interpretation is not recommended because it makes U1W/U1M informationally closer to U1D. Shared versus pair-specific variances, exact finite H/U execution subset, and uncertainty calibration remain later bindings.
 
-### Decision 3 — R4 state evolution
+Recommendation rationale: `R4-A` is the lowest-complexity executable contract that estimates its necessary noise scales while preserving the already frozen cadence separation.
 
-Alternatives:
+## Decision 3 — next P1 qualification action
 
-1. `R4-RW` random-walk intercept and slope;
-2. `R4-RW` time-varying slope only with static intercept;
-3. `R4-MR` mean-reverting state challenger;
-4. defer R4 execution while retaining its registry entry.
+The current audit found `daily_basic.total_mv` `QUALIFIED WITH LIMITATIONS` as a dated market-state field. Every accounting-derived B1 construct is `UNRESOLVED`: present schemas expose candidate fields, but public documents do not prove historical first-public/available-time, immutable superseded vintages, restatement ancestry, or stable as-of-query behavior.
 
-Agent recommendation: select a static intercept plus random-walk slope as the primary interpretable state model; retain R4-MR only as a registered, non-executed challenger unless independently justified. This isolates dynamic transmission while limiting state dimension and self-absorption risk.
+1. authorize a bounded authenticated schema/vintage qualification against the existing Tushare and authoritative-disclosure architecture only (recommended); no acquisition and no provider addition;
+2. require an authoritative disclosure-vintage reconstruction contract before any authenticated Tushare audit;
+3. defer P1 qualification and keep all R2 computation blocked.
 
-Dependency: Q/R estimation, initialization, missing-update rule, and executable H/U subset remain later numerical specifications.
+Recommendation rationale: option 1 can establish whether the existing architecture is usable without committing to acquisition. If it fails, option 2 becomes the explicit lineage path rather than an improvised provider substitution.
 
-### Decision 4 — R5 disposition under C04 limitation
+## Deferred matters that need no present decision
 
-Alternatives:
-
-1. retain R5 but mark it blocked pending authoritative C04/price-object qualification;
-2. authorize later evaluation only on a separately qualified C04-clean subset;
-3. close R5 from the initial executable candidate set while preserving it as research-only;
-4. commission a new dataset amendment (not currently authorized).
-
-Agent recommendation: retain `R5-EG-ECM` as a registered blocked candidate and reject/defer VECM; do not amend the dataset or build adjusted series now. R5 is conceptually distinct, but current C04 governance prevents responsible execution.
-
-Dependency: the choice can be frozen now; execution requires a separately approved C04 path.
-
-## Data decision nested under R2
-
-After the R2 equation decision, authorize either: (a) a bounded authenticated field/PIT qualification of the already established source architecture for the five frozen P1 constructs, with no acquisition; or (b) defer R2 data qualification. No new provider or acquisition is implied.
+- R2 exact B1 feature-to-level/slope allocation remains deferred until P1 fields qualify; R2 fitting stays blocked.
+- R4-MR and R2-N stay deferred and cannot be activated by poor primary results.
+- R5-EG-ECM stays blocked; no C04 work or price construction is authorized.
+- A6 and all empirical work stay locked.
 
 ## Exact next action after approval
 
-Record the four selections in G4-05B2/C/D/E freeze-or-defer decisions; then, only if separately authorized, initialize a `P1 FUNDAMENTALS FIELD / PIT QUALIFICATION` audit. G4-05 remains computation-locked and A6 remains prohibited.
+Record the chosen R3 and R4 executable bundles, or their explicit deferral. If P1 audit option 1 is authorized, perform only authenticated field/schema/vintage behavior checks against the existing source architecture and return a P1 enhancement acquisition-readiness proposal. Then freeze no executable candidate until every required equation, PIT, estimator, N/P, H/U, uncertainty, and Search-Budget binding is complete.
 
+`G4-05 EXECUTABLE-SPECIFICATION CHECKPOINT / RESEARCHER DECISION REQUIRED`

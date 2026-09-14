@@ -1,35 +1,41 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "NONE",
-    "status": "NONE",
-    "execution_state": "STOPPED_RESEARCHER_DECISION_REQUIRED",
-    "objective": "The authorized G4-05 pre-empirical autonomous block is complete. Await the consolidated researcher decision.",
+    "action_id": "V1-PHASE1-C04-INNER-EXECUTION-V1",
+    "name": "V1 Phase 1 implementation, bounded C04-A, and 2015-2019 inner development",
+    "status": "AUTHORIZED",
+    "execution_state": "ACTIVE",
+    "objective": "Freeze and publish the approved V1 protocols, acquire/construct only the conservative C04-A descendant layer, implement the frozen V1 scientific/trading pipeline, execute only authorized 2015-2019 semiannual inner development, and stop before OF4.",
     "prerequisites": [
       "CORE-DATASET-FREEZE-V1 fingerprint verified",
       "G4-05A approved and frozen",
       "G4-05B1 approved and frozen",
       "2024-2025 held-out sealed"
     ],
-    "allowed_scope": [],
+    "allowed_scope": [
+      "commit and push the frozen pre-computation scientific/trading protocol to origin main without force",
+      "bounded official C04-A action-calendar acquisition and immutable descendant exclusion layer",
+      "implementation of the frozen seven model tuples, eligibility, temporal folds, A1-A6, and G5",
+      "2015-2019 semiannual inner-development computation and interpretation only",
+      "immutable outputs, manifests, checksums, tests, validators, engineering-only repairs, and PRE-OUTER gate"
+    ],
     "forbidden_scope": [
-      "scientific selection among competing equations or estimators",
-      "feature-set change or new construct",
-      "P1 data acquisition or provider addition",
-      "model fitting or empirical distribution and coverage inspection",
-      "relationship, abnormality, mechanism, target, return, or PnL computation",
+      "new model, feature, mechanism, outcome, temporal, metric, sensitivity, or provider family",
+      "feature-set change outside explicit V1 exclusions",
+      "P1 data acquisition, new provider, or C04 adjusted-price substitution",
+      "model fitting, empirical distribution inspection, or result inspection outside the authorized 2015-2019 inner-development region and frozen V1 tuples",
+      "OF4 2020-2023 computation or inspection",
       "Search-Budget modification",
       "2024-2025 held-out access",
-      "A6 initialization or work"
+      "new or altered scientific/trading semantic choice"
     ],
-    "dataset_access": "DENIED",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "CORE_V1_PLUS_AUTHORIZED_C04_DESCENDANT",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": false,
-    "commit_scope": "The completed action's mechanical closeout commit is recorded in AGENT_STATE/AGENT_RUN_LOG; no successor commit is authorized.",
-    "push_permitted": false,
-    "push_reason": "No destination and branch were explicitly bound in this action contract.",
+    "commit_permitted": true,
+    "commit_scope": "Frozen pre-computation protocol and later Phase 1 engineering/inner artifacts only; exclude credentials, ignored raw secrets, .venv, OF4 and held-out artifacts.",
+    "push_permitted": true,
+    "push_reason": "Researcher explicitly authorized normal non-force push to the already authorized GitHub repository main branch.",
     "required_validators": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -38,10 +44,12 @@
       "research/validate_agent_control.ps1",
       "git diff --check"
     ],
-    "completion_condition": "Researcher resolves or defers the bounded decisions in G4_05_CONSOLIDATED_RESEARCHER_CHECKPOINT.md and authorizes exactly one successor action.",
+    "completion_condition": "Validated immutable inner-development scientific and trading outputs are materialized and the PRE-OUTER V1 gate is produced.",
     "mandatory_stop_conditions": [
-      "Any work before a successor action is explicitly authorized",
-      "Any empirical computation or held-out access"
+      "Any need to change frozen scientific semantics",
+      "Any C04 source-contract or acquisition integrity failure",
+      "Any OF4 or held-out access attempt",
+      "Any unrecoverable implementation or deterministic-regeneration failure"
     ]
   }
 }

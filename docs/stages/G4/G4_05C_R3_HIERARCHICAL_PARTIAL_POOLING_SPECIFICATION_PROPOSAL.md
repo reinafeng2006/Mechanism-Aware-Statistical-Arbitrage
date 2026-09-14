@@ -1,53 +1,68 @@
-# G4-05C R3 Hierarchical / Partial-Pooling Specification Proposal
+# G4-05C R3 Hierarchical / Partial-Pooling Specification Clarification
 
-Status: **BOUNDED PROPOSAL / AWAITING CONSOLIDATED RESEARCHER DECISION**
-Boundary: no data inspection or fitting.
+Status: **FAMILY APPROVED IN PRINCIPLE / EXECUTABLE ESTIMATOR CLARIFIED BUT NOT FROZEN**
+Boundary: no data inspection or fitting; no additional hierarchical family.
 
-## Estimand and orthogonal N axis
+## Approved family and estimand
 
-R3 asks whether sharing information across a preregistered group while retaining pair deviations improves PIT directional relationship estimation. R3 is the hierarchical mathematical family; it is not N1. N0/N1 remains the orthogonal degree-of-heterogeneity contrast inside the same hierarchy.
+R3 asks whether information sharing across a preregistered PIT group, while retaining pair deviations, improves directional relationship estimation. R3 is a representation family, not N1. The initial scope is P0-only, with Gaussian empirical-Bayes random intercept and random slope.
 
-For pair `ij` in PIT group `g`:
+For direction `i -> j`, pair `ij`, and PIT group `g`:
 
 `y_ij,t = alpha_ij + beta_ij x_i,t + gamma'f_t + epsilon_ij,t`,
 
-`[alpha_ij,beta_ij]' = [alpha_g,beta_g]' + B z_ij,t- + b_ij`.
+`[alpha_ij,beta_ij]' = [alpha_g,beta_g]' + b_ij`,
 
-### `R3-G` — Gaussian partial pooling primary candidate
+`b_ij ~ N(0,Omega_g)`, `epsilon_ij,t ~ N(0,sigma^2_e,g)`.
 
-`b_ij ~ N(0,Sigma_b)` and `epsilon_ij,t ~ N(0,sigma^2_ij)` with group/pair hyperparameters estimated only from authorized formation information. N0 uses stronger shrinkage/shared structure; N1 is the mandatory weaker-shrinkage/pair-deviation challenger under matched equation, P layer, H/U, and support.
+`R3-P1` is outside initial execution and may be proposed only after a qualified P1 enhancement layer. No Bayesian challenger or additional grouping family is introduced.
 
-Primary estimator candidate: empirical-Bayes/marginal-likelihood Gaussian mixed model. One fully Bayesian Gaussian challenger may be retained only if prior, computation, convergence, and uncertainty contracts are frozen; it is not automatically authorized.
+## Variance components and hyperparameters
 
-### P0 and optional P1 versions
+Two bounded implementations of the same Gaussian family remain for selection:
 
-`R3-P0` uses C06 group structure and complete P0 information only. `R3-P1` may allow frozen B1 characteristics to explain part of `B z_ij`, but only after the P1 enhancement layer qualifies. A P1 hierarchy cannot alter the N contrast or group definition while claiming feature increment.
+1. `R3-ML`: maximize Gaussian marginal likelihood inside each authorized formation set;
+2. `R3-REML`: use restricted marginal likelihood for `Omega_g` and observation variance while separating fixed-effect estimation.
 
-## PIT and identity rules
+The covariance parameterization, whether observation variance may be pair-specific, singular/boundary-fit handling, and any deterministic variance regularization remain unresolved. They cannot use an evaluated outer response, later outer fold, or held-out information.
 
-- group membership uses the C06 snapshot available at the origin, with taxonomy/version, age, and stale-gap state;
-- no future membership or outcome-based regrouping;
-- `601313.SH -> 601360.SH` lineage does not assert economic relationship continuity;
-- pair deviations are estimated only on candidate-eligible formation observations;
-- hyperparameters and pair states are frozen before the evaluated response;
-- new groups, pooling levels, or priors cannot be added after results.
+## Shrinkage and N0/N1 semantics
 
-## Bounded geometry
+The empirical-Bayes pair effect is the conditional Gaussian mean/mode under origin-specific estimated hyperparameters. N0/N1 is an orthogonal matched pooling contrast. The contract must select exactly one of:
 
-Existing envelope only: `(H126,U1W)`, `(H252,U1M)`, and conditional `(H504,U1M)` where an independently approved support contract justifies H504. This proposal adds no tuple and does not select which execute.
+- `N-ZERO`: N0 fixes pair-deviation covariance to zero; N1 estimates nonzero random-intercept/random-slope covariance; or
+- `N-STRENGTH`: N0 and N1 use the same nonzero covariance family with preregistered stronger versus weaker shrinkage constraints.
 
-## Outputs and A3 interface
+These are alternatives, not simultaneous search branches. The contrast must hold fixed equation, P layer, group taxonomy, fixed effects, target, H/U, eligibility, and PIT information. Shrinkage intensity is neither relationship validity nor mechanism evidence.
 
-Each direction emits a pre-decision posterior/empirical-Bayes expected response, group and pair parameter versions, shrinkage diagnostics, effective support, and separately calibrated uncertainty. A3 uses only the point expectation for departure. Shrinkage amount cannot be interpreted as relationship validity or mechanism evidence.
+## Outer-origin re-estimation and U refresh
 
-## Scientific decisions required
+At every outer origin, fixed effects, variance components, and pair conditional states are re-estimated solely from information authorized before that origin. Within an outer fold, an authorized U refresh may rerun the same frozen procedure using only newly elapsed eligible information; future-origin fits cannot be reused. Automatic temporal updating under a frozen rule is not manual retuning.
 
-1. Gaussian empirical-Bayes versus separately justified Bayesian implementation;
-2. exact grouping hierarchy and treatment of taxonomy changes;
-3. whether random intercept, random slope, or both are authorized;
-4. exact N0/N1 shrinkage parameterization and fair matched contrast;
-5. whether P1 explains heterogeneity in the initial R3 budget or is deferred;
-6. mathematical support, prior/regularization, H/U execution, and uncertainty rules.
+Existing tuple envelope only: `(H126,U1W)`, `(H252,U1M)`, and conditional `(H504,U1M)` where an independently approved support contract justifies H504. No tuple is added or selected here.
+
+## PIT ordering
+
+For a response evaluated at `t`:
+
+1. obtain C06 group/taxonomy state and candidate-eligible formation records whose availability precedes `t`;
+2. estimate or retrieve the outer-origin/U-authorized hyperparameters;
+3. form empirical-Bayes pair states and the pre-response predictive distribution;
+4. emit the directional expected response before observing the response being evaluated;
+5. only afterward may the response enter a later authorized refresh.
+
+Taxonomy/version, classification age and stale-gap state propagate. Future membership, outcome-based regrouping, and economic splicing of `601313.SH -> 601360.SH` are prohibited.
+
+## Uncertainty output and A3 interface
+
+The record must separate fixed-effect uncertainty, pair random-effect conditional uncertainty, variance-component estimation uncertainty where available, observation noise, and total predictive uncertainty. Plug-in empirical-Bayes intervals that omit hyperparameter uncertainty must say so. A1 assesses calibration separately. A3 receives only the pre-decision point expectation; uncertainty cannot scale point abnormality.
+
+## Consolidated researcher decisions still required
+
+1. `R3-ML` versus `R3-REML`;
+2. covariance/observation-variance structure and singular-boundary handling;
+3. `N-ZERO` versus `N-STRENGTH` matched N0/N1 semantics;
+4. exact C06 grouping hierarchy across taxonomy changes;
+5. executable H/U subset and uncertainty/calibration implementation.
 
 R3 remains `NOT COMPUTATION-AUTHORIZED`.
-

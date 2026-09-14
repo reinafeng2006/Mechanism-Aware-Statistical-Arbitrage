@@ -1,6 +1,6 @@
 # G4-05B2 R2 Exact Equation and Estimator Proposal
 
-Status: **BOUNDED PROPOSAL / AWAITING CONSOLIDATED RESEARCHER DECISION**
+Status: **R2-LIS + OLS/RIDGE APPROVED / V1 NOT DATA-READY / PRESERVED FOR V2**
 Boundary: no data inspection or fitting. B1 constructs and transformations are unchanged.
 
 ## Matched P0 anchor
@@ -21,19 +21,21 @@ Tests whether company/pair state shifts expected response level while transmissi
 
 Tests whether company/pair state changes source-to-peer transmission. OLS with intercept is primary; only frozen source-response interactions may enter.
 
-### `R2-LIS` — parsimonious level-and-slope conditioning
+### `R2-LIS` — approved initial parsimonious level-and-slope conditioning
 
 `y_j,t = alpha_ij + a'z_ij,t- + [beta_ij + b'w_ij,t-]x_i,t + gamma'f_t + epsilon_ij,t`.
 
 Tests both channels but requires a researcher-frozen minimal assignment of B1 bundles to `z` versus `w`; no feature may occupy both roles automatically.
 
-### `R2-RIDGE` — regularized matched design
+### `R2-RIDGE` — approved sole regularized challenger
 
 For the selected linear equation only:
 
 `theta_hat(lambda)=argmin_theta sum_s (y_j,s-X_ij,s theta)^2 + lambda||P theta||_2^2`,
 
-where `P` leaves the intercept unpenalized and penalty candidates are selected only inside frozen inner development. Ridge is the sole proposed regularization family. Elastic net and R2-N remain deferred, not alternative rescue paths.
+where `P` leaves the intercept unpenalized and penalty candidates are selected only inside frozen inner development. OLS is primary and Ridge is the sole regularized challenger. Elastic net is outside the initial architecture.
+
+`R2-N` is `DEFERRED / NOT REJECTED / NOT INITIAL EXECUTION`. Poor R2-LIS results cannot activate it. Activation requires a separately preregistered functional-form inadequacy rationale and explicit researcher authorization before the relevant outcomes are inspected.
 
 ## Fixed implementation semantics
 
@@ -47,9 +49,8 @@ where `P` leaves the intercept unpenalized and penalty candidates are selected o
 
 ## Existing tuple envelope preserved
 
-No Search Budget is changed. The previously registered geometry IDs remain: `R2L-126W`, `R2L-252M`, `R2R-126W`, `R2R-252M`, and conditional `R2N-252M`. This proposal recommends closing R2-N initially but does not enact that scientific choice.
+No Search Budget is changed. The previously registered geometry IDs remain: `R2L-126W`, `R2L-252M`, `R2R-126W`, `R2R-252M`, and conditional `R2N-252M`. The R2-N tuple is retained only as deferred registry ancestry and is not authorized to execute.
 
-## Decision point
+## Remaining execution gates
 
-Selection among `R2-LI`, `R2-LS`, and `R2-LIS`, the exact minimal feature-role allocation, whether Ridge executes, and whether R2-N closes are scientific choices. All R2 candidates remain `NOT COMPUTATION-AUTHORIZED`.
-
+The exact minimal B1 feature-to-`z`/`w` allocation, logical/physical PIT fields, P1 enhancement version, Ridge penalty menu and inner-selection rule, and executable H/U tuples remain scientific decisions. The existing-source audit did not qualify the five accounting-derived constructs, and market capitalization alone is not a coherent substitute for the frozen P1 information set. R2 is therefore `V1 NOT DATA-READY`; it remains `NOT COMPUTATION-AUTHORIZED` and is preserved for V2 without weakening PIT requirements.

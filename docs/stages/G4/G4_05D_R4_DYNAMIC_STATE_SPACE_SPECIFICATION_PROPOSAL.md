@@ -1,52 +1,74 @@
-# G4-05D R4 Dynamic / State-Space Specification Proposal
+# G4-05D R4 Dynamic / State-Space Specification Clarification
 
-Status: **BOUNDED PROPOSAL / AWAITING CONSOLIDATED RESEARCHER DECISION**
+Status: **PRIMARY ARCHITECTURE APPROVED IN PRINCIPLE / EXECUTABLE VARIANCE-CLOCK CONTRACT NOT FROZEN**
 Boundary: interpretable linear dynamics only; no fitting or data inspection.
 
-## Estimand
+## Approved primary architecture
 
-R4 asks whether an interpretable, PIT-filtered evolution of relationship parameters improves the expected directional response relative to a matched static relationship, without allowing the evaluated abnormal observation to erase its own departure.
+R4 asks whether PIT-filtered evolution of the transmission slope improves directional expected response relative to a matched static relationship without letting an evaluated observation erase its own departure.
 
-Observation equation:
+`R4-RW` uses a static intercept and random-walk slope:
 
-`y_j,t = alpha_ij,t + beta_ij,t x_i,t + gamma'f_t + epsilon_ij,t`, `epsilon_t ~ N(0,R)`.
+`y_j,t = alpha_ij + beta_ij,t x_i,t + gamma'f_t + epsilon_ij,t`, `epsilon_ij,t ~ N(0,R_ij)`,
 
-### `R4-RW` — local random-walk state
+`beta_ij,t = beta_ij,t-1 + eta_ij,t`, `eta_ij,t ~ N(0,Q_ij)`.
 
-`theta_ij,t = theta_ij,t-1 + eta_ij,t`, `eta_t ~ N(0,Q)`.
+The primary estimator is the linear-Gaussian Kalman filter. `R4-MR`, with `beta_ij,t-mu_g = phi(beta_ij,t-1-mu_g)+eta_ij,t`, is `REGISTERED / DEFERRED / NOT INITIAL EXECUTION`. No HMM, regime-switching, particle-filter, nonlinear, or black-box state-space family is authorized.
 
-Tests gradual parameter drift with no fixed long-run mean. Primary estimator candidate: linear-Gaussian Kalman filter with pre-decision prediction followed by post-observation state update.
+## State and observation variance
 
-### `R4-MR` — mean-reverting state challenger
+`Q_ij` governs permitted slope evolution; `R_ij` governs observation noise. They are not interchangeable tuning parameters. Three bounded treatments remain for researcher selection:
 
-`theta_ij,t-mu_g = Phi(theta_ij,t-1-mu_g) + eta_ij,t`, with preregistered stable `Phi`.
+1. fixed ex ante under a separately justified deterministic rule;
+2. PIT maximum-likelihood estimation inside each authorized formation set;
+3. a very small preregistered set of variance regimes selected only by the frozen inner procedure.
 
-Tests whether parameter changes are temporary deviations around a shared state. This is the sole bounded dynamic challenger; no switching regimes, trees, neural nets, particle-filter zoo, or outcome-triggered state specification is authorized.
+No unrestricted grid or outer-fold retuning is permitted. Shared/group versus pair-specific `Q/R`, boundary estimates, and regularization remain unresolved.
 
-## Ordering and clock contract
+## Initialization
 
-At decision time: (1) carry/filter state using information through the prior authorized update; (2) form `mu_j|i,t` before observing the peer response being evaluated; (3) compute A3 departure; (4) only then may the observation update the state for a later decision. This ordering applies under U1D.
+At each outer origin, initialize static `alpha_ij`, prior slope mean `m_beta,0`, and prior slope variance `P_beta,0` solely from the authorized PIT formation history. Two bounded initializers remain:
 
-Market evaluation cadence is distinct from state/relationship refresh. Missing or ineligible observations generate an explicit no-measurement/update state under a later frozen rule; they are not zero innovations.
+- matched static R0/R1 directional estimate plus its estimation uncertainty; or
+- group-pooled P0 initializer under a separately frozen N overlay.
 
-## N/P and geometry
+Diffuse initialization is not assumed and would require a finite preregistered variance. Initializer choice may not depend on outer results.
 
-N0 may share `Q/R/Phi` or group states; N1 may permit pair deviations under an identical state equation. P0 is primary. P1 state conditioners require the B1 enhancement and a separate matched incremental specification.
+## U cadence and state time
 
-Existing envelope only: `(H63,U1D)`, `(H126,U1W)`, `(H252,U1M)`, and conditional `(H504,U1M)`. State initialization, covariance estimation, and which tuple IDs execute remain unresolved; no grid expansion is authorized.
+Market/abnormality evaluation cadence is distinct from relationship refresh:
 
-## Outputs
+- `U1D`: after an observation has been evaluated, an eligible measurement may update the filter for the next decision;
+- `U1W`/`U1M` primary clarification: daily predictions use the last authorized filtered state plus state evolution, while measurement updates are batched only at scheduled weekly/monthly refreshes using information then available;
+- a sequential-filter-but-publish-on-refresh interpretation creates a different information path and requires explicit selection; it cannot be silently substituted.
 
-Pre-decision directional forecast, filtered/predicted parameter state, covariance and innovation-quality state, initialization/version metadata, and support/eligibility. Forecast uncertainty is a separate calibration channel, not A3 scaling.
+Missing or ineligible observations cause prediction without measurement update and retain their reason state; they are not zero innovations. Whether `Q` accumulates in calendar time or eligible-trading time must be frozen before execution.
 
-## Scientific decisions required
+Existing tuple envelope only: `(H63,U1D)`, `(H126,U1W)`, `(H252,U1M)`, and conditional `(H504,U1M)`. No tuple is added or selected here.
 
-1. R4-RW primary versus R4-MR challenger status/execution;
-2. which parameters vary: intercept, slope, or both;
-3. `Q/R/Phi` estimation/regularization and finite inner-selection budget;
-4. state initialization and missing-observation update rule;
-5. N0/N1 sharing structure and P0/P1 boundary;
-6. executable H/U tuple subset and uncertainty calibration.
+## PIT filtering and prediction order
+
+For an evaluated response at `t`:
+
+1. use only the last authorized filtered state and information available strictly before the response;
+2. perform the state prediction and emit `mu_j|i,t`;
+3. after the response arrives, compute A3 departure against that frozen prediction;
+4. only then may the response enter a later authorized measurement update.
+
+Filtered and one-step-ahead predicted states must be separately labelled. Smoothing with future observations is prohibited for event-time output. This order applies even under U1D.
+
+## N/P and uncertainty
+
+N0 may share variance/state structure; N1 may permit pair deviations only under an otherwise identical state equation, initializer, H/U, target, support, and PIT path. P0 is initial. P1 requires the separately qualified B1 enhancement and a matched incremental specification.
+
+Output includes the pre-decision point forecast, predicted/filtered slope state, covariance, innovation-quality state, initialization/version metadata, eligibility, and separate predictive uncertainty. Uncertainty is a calibration channel, not A3 scaling.
+
+## Consolidated researcher decisions still required
+
+1. fixed, PIT-estimated, or bounded inner-selected `Q/R`, including shared versus pair-specific structure;
+2. matched-static versus group-pooled initializer and finite prior-variance rule;
+3. batched `U1W/U1M` measurement updates versus the separately defined sequential-filter interpretation;
+4. calendar-time versus eligible-trading-time state evolution;
+5. N0/N1 sharing structure, executable H/U subset, and uncertainty calibration.
 
 R4 remains `NOT COMPUTATION-AUTHORIZED`.
-

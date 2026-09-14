@@ -1,0 +1,22 @@
+{
+  "schema_version": "G5-TRADING-V1-PROPOSAL-1.0",
+  "status": "FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL",
+  "upstream_chain": ["RELATIONSHIP", "ABNORMALITY", "MECHANISM_EVIDENCE", "RESOLUTION_PREDICTION"],
+  "primary_policy": {
+    "entry": "ENTRY_STATE_NO_ADDITIONAL_THRESHOLD",
+    "m1_direction": "SIGN_OF_EVENT_TIME_REMAINING_PEER_GAP",
+    "m2_direction": "OPPOSITE_EVENT_TIME_SOURCE_EXCESS",
+    "exit": "FIRST_ORIGIN_ANCHORED_ZERO_CROSSING_OR_10_ELIGIBLE_SESSIONS",
+    "sizing": "EQUAL_NOTIONAL",
+    "execution": "NEXT_ELIGIBLE_OPEN",
+    "gross_exposure_cap": 1.0,
+    "security_exposure_cap": 0.1,
+    "leverage": "NONE",
+    "cash_return": 0.0
+  },
+  "transaction_cost_bps_one_way": {"primary": 10, "sensitivities": [5, 20]},
+  "c04_states": ["IDENTIFIED_ACTION_V1_INTERVAL_EXCLUDED", "NO_IDENTIFIED_ACTION_UNDER_V1_CALENDAR"],
+  "c04_nonclaim": "NO_IDENTIFIED_ACTION_IS_NOT_AUTHORITATIVELY_ACTION_CLEAN",
+  "hard_dependencies": ["VALIDATED_C04_V1_EXCLUSION_LAYER", "C05_AND_UNKNOWN_MISSINGNESS_RULE", "INNER_DEVELOPMENT_AUTHORIZATION"],
+  "forbidden": ["SAME_CLOSE_EXECUTION", "FORCED_TRADE", "SILENT_FILL", "UNLIMITED_LEVERAGE", "PNL_TO_UPSTREAM_SELECTION", "POST_HOC_DIRECTION_CHANGE", "HELD_OUT_ACCESS"]
+}
