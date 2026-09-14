@@ -161,3 +161,6 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Pre-fit integrity stop: market/abnormality decision-event cadence and active G5 episode re-entry/admission semantics are not frozen. No model fit, abnormality, target, PnL, OF4, or held-out result was inspected.
 - Researcher selected `DC-A + EP-A`: daily candidate-eligible event records, independent model refresh clocks, and one active episode per unordered pair × policy channel with blocked re-entry metadata. Publication guard denies empirical access until pushed.
 - DC-A + EP-A published at commit `02d39d7`; the inner-only role guard now permits Phase 1 computation from the existing checksum-bound input.
+- Pre-fit deterministic stop: EP-A's uniqueness key excludes direction, while both preserved directional records can qualify simultaneously for the same policy channel. No frozen arbitration rule permits choosing, combining, stacking, netting, resetting, or replacing the episode.
+- Integrity boundary honored: no model fit, abnormality, target, trade/PnL, OF4, or held-out information was computed or inspected.
+- Completion disposition: `GENUINE SCIENTIFIC/TRADING SEMANTICS BLOCKER / RESEARCHER DECISION REQUIRED`; successor action reset to `NONE`.
