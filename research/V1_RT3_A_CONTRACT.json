@@ -1,7 +1,7 @@
 {
   "schema_version": "V1-RT3-A-CONTRACT-1.0",
   "decision_id": "V1-RT3-A-1.0",
-  "status": "FROZEN_PENDING_PUBLICATION",
+  "status": "PUBLISHED_STATE_AUGMENTATION_ACTIVE",
   "ancestor_relationship_manifest": "V1-PHASE1-RELATIONSHIP-OUTPUTS-2.0",
   "ancestor_input_manifest": "V1-PHASE1-INNER-INPUT-1.0",
   "scope": "2015_2019_INNER_RELATIONSHIP_STATE_AUGMENTATION_ONLY",

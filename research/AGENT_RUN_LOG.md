@@ -195,3 +195,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Mandatory stop: constant-current-expectation substitution, silent RT3 omission, or relationship-state recomputation would change or exceed the active contract. No A3/A5/A6/G5 artifact was computed.
 - Completion disposition: `GENUINE SCIENTIFIC/DATA-LINEAGE BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.
 - Researcher selected `RT3-A`: deterministic no-overwrite relationship-state augmentation with full shared-field replay equivalence. Publication guard denies replay until the contract commit is pushed.
+- RT3-A freeze published as commit `ac9a179`; augmentation-only replay guard activated before any replay access.

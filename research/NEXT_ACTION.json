@@ -1,11 +1,11 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-RT3-A-PUBLICATION-V1",
-    "name": "Publish researcher-approved RT3-A state-augmentation contract",
+    "action_id": "V1-RT3-A-RELATIONSHIP-STATE-AUGMENTATION-V1",
+    "name": "Deterministically replay frozen relationships into a versioned RT3 state companion",
     "status": "AUTHORIZED",
-    "execution_state": "RT3_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
-    "objective": "Validate and publish RT3-A before any deterministic replay.",
+    "execution_state": "RT3_A_STATE_AUGMENTATION_ACTIVE_NO_INTERPRETATION",
+    "objective": "Generate minimal event-time relationship state and prove all shared replay fields equivalent to immutable relationship outputs.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
@@ -16,24 +16,26 @@
       "Researcher selected RT3-A"
     ],
     "allowed_scope": [
-      "RT3-A decision/contract publication",
-      "normal non-force commit and push"
+      "read only frozen 2013-2014 formation inputs and 2015-2019 inner relationship inputs",
+      "deterministic replay of the seven frozen relationship tuples",
+      "write immutable model-specific state companions and equivalence manifests",
+      "normal non-force commit and push after complete equivalence"
     ],
     "forbidden_scope": [
-      "relationship replay before RT3-A publication",
+      "overwrite or mutation of existing relationship outputs",
       "A3/A5/A6/G5 computation or empirical-result inspection",
       "constant-current-mu substitution for frozen RT3",
       "silent RT3 omission or target amendment",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_RT3_A_PUBLICATION",
+    "dataset_access": "FROZEN_WARMUP_PLUS_2015_2019_RELATIONSHIP_REPLAY_ONLY",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "RT3-A is published; a mechanical augmentation-only action may then activate.",
+    "completion_condition": "All state companions are checksum-bound and all shared fields pass partition equivalence, or an equivalence blocker is recorded.",
     "mandatory_stop_conditions": [
       "Any data or empirical access before RT3 resolution",
       "Any OF4 or held-out access"

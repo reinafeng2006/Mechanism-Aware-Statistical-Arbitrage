@@ -104,6 +104,6 @@
   "decision_episode_semantics": {"contract_id": "V1-DC-A-EP-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
   "directional_collision_semantics": {"contract_id": "V1-DECA-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
   "a6_c06_stale_gap": {"contract_id": "V1-SG-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
-  "rt3_state_augmentation": {"contract_id": "V1-RT3-A-1.0", "status": "FROZEN_PENDING_PUBLICATION"},
-  "computation_gate": "RT3_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION"
+  "rt3_state_augmentation": {"contract_id": "V1-RT3-A-1.0", "status": "PUBLISHED_STATE_AUGMENTATION_ACTIVE"},
+  "computation_gate": "RT3_A_STATE_AUGMENTATION_ACTIVE_NO_INTERPRETATION"
 }
