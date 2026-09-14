@@ -23,7 +23,7 @@ $action = Get-Content -Raw -LiteralPath (Join-Path $repo 'research/NEXT_ACTION.j
 $contract = Get-Content -Raw -LiteralPath (Join-Path $repo 'research/G5_TRADING_V1_CONTRACT.json') | ConvertFrom-Json
 
 $activeInner = (
-    $action.action.action_id -eq 'V1-PHASE1-C04-INNER-EXECUTION-V1' -and
+    @('V1-PHASE1-C04-INNER-EXECUTION-V1', 'V1-PAIR-A-PHASE1-INNER-EXECUTION-V1') -contains $action.action.action_id -and
     $action.action.empirical_result_visibility -eq '2015_2019_INNER_ONLY' -and
     $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
 )
@@ -42,6 +42,7 @@ $checks = @(
     ($trading -match 'TC10'),
     ($gate -match 'PRE-COMPUTATION \+ TRADING-PROTOCOL V1 GATE — APPROVED / FROZEN'),
     ($gate -match 'C04-A'),
+    ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
     ($activeInner -or $pairUniversePause),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),

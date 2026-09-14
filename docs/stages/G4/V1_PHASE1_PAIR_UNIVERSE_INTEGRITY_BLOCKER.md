@@ -1,6 +1,6 @@
 # V1 Phase 1 Pair-Universe Integrity Blocker
 
-Status: **GENUINE INTEGRITY BLOCKER / RESEARCHER DECISION REQUIRED**
+Status: **RESOLVED — PAIR-A APPROVED / FROZEN**
 
 Date: 2026-09-14
 
@@ -53,4 +53,8 @@ The decision cannot be deferred if Phase 1 relationship fitting is to begin. C04
 
 Create one successor action that freezes the chosen pair-universe/formation rule, updates the comparison/multiplicity contracts mechanically, implements a temporal access guard that materializes only the authorized 2013–2019 formation/development inputs, and then resumes the already-authorized 2015–2019 inner-development pipeline from the preserved C04-A checkpoint.
 
-`V1 PHASE 1 SAFELY PAUSED / PAIR-UNIVERSE DECISION REQUIRED`
+## Researcher resolution
+
+The researcher selected `PAIR-A — COMPLETE PIT ALL-PAIRS` on 2026-09-14. The binding contract is [V1 Candidate Pair Universe Freeze](../../decisions/V1_PAIR_UNIVERSE_FREEZE.md). PAIR-B and PAIR-C are not selected for V1. Phase 1 may resume under the successor action without screening or pair reduction.
+
+`V1 PHASE 1 PAIR-UNIVERSE BLOCKER RESOLVED`

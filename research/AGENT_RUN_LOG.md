@@ -86,3 +86,13 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Commit/push: prohibited by the action contract; neither attempted. Working changes remain uncommitted for researcher review.
 - Completion disposition: `G4-05 EXECUTABLE-SPECIFICATION CHECKPOINT / RESEARCHER DECISION REQUIRED`.
 - Successor action: `NONE`.
+
+## RUN-V1-PAIRA-PHASE1-20260914-01
+
+- Run type: PAIR-A protocol freeze followed by authorized V1 Phase 1 inner-development execution.
+- Authority: researcher selected `PAIR-A — COMPLETE PIT ALL-PAIRS`, prohibited pre-screening and same-code restriction, authorized normal commit/push, and resumed the existing 2015–2019 inner-development action.
+- Base commit: `31df68ae8a1caefad965daf9150055af717bbd21`.
+- Single-writer lock: acquired before canonical state mutation.
+- Frozen pair identity: unordered `{i,j}` with separate `i -> j` and `j -> i` channels; cross-code `34`/`35` pairs allowed.
+- Empirical boundary: 2013–2014 formation reserve only; 2015–2019 inner development only; OF4 2020–2023 and held-out 2024–2025 denied.
+- Current disposition: PAIR-A freeze validation/publication precedes any empirical access.

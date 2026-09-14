@@ -1,34 +1,44 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "NONE",
-    "status": "NONE",
-    "execution_state": "STOPPED_RESEARCHER_DECISION_REQUIRED",
-    "objective": "C04-A is complete and validated. Await a researcher-frozen candidate pair-universe/formation rule before any Phase 1 fitting or empirical access.",
+    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
+    "name": "Freeze PAIR-A and execute V1 Phase 1 inner development",
+    "status": "AUTHORIZED",
+    "execution_state": "ACTIVE",
+    "objective": "Publish the PAIR-A complete-PIT-all-pairs freeze, implement exact frozen V1 specifications, and execute/checksum only 2015-2019 semiannual inner-development outputs before stopping at PRE-OUTER.",
     "prerequisites": [
       "CORE-DATASET-FREEZE-V1 fingerprint verified",
       "C04-A-OFFICIAL-CALENDAR-V1 validated",
       "V1 seven-tuple protocol published",
+      "PAIR-A complete PIT all-pairs selected by the researcher",
       "2024-2025 held-out sealed"
     ],
-    "allowed_scope": [],
+    "allowed_scope": [
+      "freeze, validate, commit, and normally push PAIR-A to the authorized origin main",
+      "materialize deterministic PIT candidate pair membership with unordered identity and two directional channels",
+      "vectorization, batching, caching, shared sufficient statistics, safe parallelism, and deterministic checkpoints without semantic approximation",
+      "implement the frozen seven relationship tuples, eligibility, A1-A6, and G5 interfaces",
+      "use 2013-2014 only as formation reserve and compute/inspect only 2015-2019 semiannual inner-development evidence",
+      "write immutable outputs, manifests, checksums, tests, validators, and PRE-OUTER checkpoint",
+      "normal non-force commits and pushes of in-scope protocol, implementation, and inner-development artifacts"
+    ],
     "forbidden_scope": [
-      "infer or select a pair universe, pair screen, pair rank, K, tie rule, or cross-code restriction",
-      "model fitting or empirical distribution, pair-count, coverage, or outcome inspection",
-      "relationship, abnormality, mechanism, target, return, or PnL computation",
+      "any pair screen, rank, Top-K, same-C06-code restriction, approximation, or reduction of PAIR-A",
+      "use realized pair counts, support, performance, or outcomes to revise PAIR-A",
+      "new model, estimator, metric, threshold, feature, provider, Search-Budget, sensitivity, or semantic choice",
+      "P1 acquisition or R2/R5 execution",
       "OF4 2020-2023 access",
       "2024-2025 held-out access",
       "C04-A reacquisition or overwrite",
-      "new model, feature, provider, Search-Budget, or scientific-semantic choice"
+      "post-hoc scientific repair or trading-policy change"
     ],
-    "dataset_access": "DENIED_PENDING_PAIR_UNIVERSE_DECISION",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "CORE_V1_PLUS_C04_A_RESTRICTED_TO_2013_2019_ROLE_GUARD",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": false,
-    "commit_scope": "No successor work is authorized after the completed C04-A/blocker closeout commit.",
-    "push_permitted": false,
-    "push_reason": "The completed action permits its own normal closeout push; no successor push is authorized.",
+    "commit_permitted": true,
+    "commit_scope": "PAIR-A freeze, exact Phase 1 implementation, immutable inner outputs/manifests, validators, state/log, and PRE-OUTER checkpoint only.",
+    "push_permitted": true,
+    "push_reason": "Researcher explicitly authorized normal push to the already-authorized Mechanism-Aware-Statistical-Arbitrage origin main; force and history rewriting remain prohibited.",
     "required_validators": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -38,10 +48,13 @@
       "research/validate_agent_control.ps1",
       "git diff --check"
     ],
-    "completion_condition": "Researcher freezes one pair-universe/formation alternative and explicitly authorizes a successor Phase 1 action.",
+    "completion_condition": "Validated immutable 2015-2019 inner-development outputs are materialized and PRE-OUTER V1 GATE is produced, or an exact integrity/computational blocker is recorded.",
     "mandatory_stop_conditions": [
-      "Any work before a successor action is explicitly authorized",
-      "Any empirical computation or temporal-region access"
+      "Any attempted OF4 or held-out access",
+      "Any need to reduce or approximate PAIR-A",
+      "Any unresolved numerical or scientific semantic required for execution",
+      "Any deterministic-regeneration, source-contract, identity, or C04 integrity failure",
+      "Exact PAIR-A remains infeasible after authorized engineering optimization"
     ]
   }
 }

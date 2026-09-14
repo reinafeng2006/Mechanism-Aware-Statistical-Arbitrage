@@ -72,5 +72,16 @@
     ,"nonlinear R2 activation without independent preregistered functional-form inadequacy rationale and researcher authorization"
     ,"R5 price construction or fitting before qualified C04 contract"
   ],
-  "computation_gate": "PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN"
+  "pair_universe": {
+    "version": "V1-PAIR-A-1.0",
+    "identity": "UNORDERED_PAIR_TWO_DIRECTIONAL_CHANNELS",
+    "construction": "COMPLETE_PIT_ALL_PAIRS_C06_34_35",
+    "cross_code_34_35": "ALLOWED",
+    "pre_screening": "PROHIBITED",
+    "alternatives": {
+      "PAIR_B": "NOT_SELECTED_FOR_V1",
+      "PAIR_C": "NOT_SELECTED_FOR_V1"
+    }
+  },
+  "computation_gate": "AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION"
 }

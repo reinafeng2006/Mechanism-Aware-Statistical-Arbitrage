@@ -29,9 +29,14 @@ $allowedGates = @(
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
-    if ($next.action.action_id -ne 'V1-PHASE1-C04-INNER-EXECUTION-V1') { throw 'Inner authorization lacks the matching active action.' }
+    $authorizedInnerActions = @('V1-PHASE1-C04-INNER-EXECUTION-V1', 'V1-PAIR-A-PHASE1-INNER-EXECUTION-V1')
+    if ($authorizedInnerActions -notcontains $next.action.action_id) { throw 'Inner authorization lacks the matching active action.' }
     if ($next.action.empirical_result_visibility -ne '2015_2019_INNER_ONLY') { throw 'Inner authorization has an invalid visibility boundary.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($next.action.action_id -eq 'V1-PAIR-A-PHASE1-INNER-EXECUTION-V1') {
+        if ($contract.pair_universe.construction -ne 'COMPLETE_PIT_ALL_PAIRS_C06_34_35') { throw 'PAIR-A construction is not bound.' }
+        if ($contract.pair_universe.pre_screening -ne 'PROHIBITED') { throw 'PAIR-A pre-screen prohibition is not bound.' }
+    }
 }
 if ($contract.computation_gate -eq 'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN') {
     if ($next.action.action_id -ne 'NONE') { throw 'Pair-universe pause must not retain an executable action.' }

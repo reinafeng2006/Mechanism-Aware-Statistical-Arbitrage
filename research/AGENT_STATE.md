@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 — PRE-INNER STRUCTURAL EXECUTION` |
-| Stage status | `SAFELY PAUSED — GENUINE PAIR-UNIVERSE INTEGRITY BLOCKER` |
-| Latest frozen decision | `V1 PRE-COMPUTATION SCIENTIFIC & TRADING PROTOCOL — APPROVED / FROZEN` |
-| Current substage | C04-A acquired/validated; relationship fitting not begun because the candidate pair universe/formation rule is not frozen |
+| Current stage | `V1 PHASE 1 — PAIR-A INNER DEVELOPMENT` |
+| Stage status | `AUTHORIZED / ACTIVE — PROTOCOL PUBLICATION PRECEDES EMPIRICAL ACCESS` |
+| Latest frozen decision | `PAIR-A COMPLETE PIT ALL-PAIRS — APPROVED / FROZEN FOR V1` |
+| Current substage | publish PAIR-A freeze, then implement and execute only 2015–2019 inner development from the validated C04-A checkpoint |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | Phase 1 fitting is `PAUSED`; 2015–2019 is the only permissible future empirical region after the pair-universe blocker is resolved; OF4 and held-out remain denied |
-| Current authorized action | `NONE` — prior action stopped at its mandatory scientific-integrity boundary |
-| Last validation state | **PASS** on 2026-09-14: C04-A hashes/schema/source rules, V1 protocol pause, agent control, Literature OS, documentation architecture, Learning Layer, core fingerprint, JSON parsing, and `git diff --check` |
-| Latest local commit | `a67e07dad40aa7aa43e434e492409cdcb79d8053` — frozen V1 pre-computation/trading protocol |
-| Remote state observed | `origin/main` at `a67e07dad40aa7aa43e434e492409cdcb79d8053` |
-| Researcher action required | `YES` — freeze one bounded candidate pair-universe/formation rule before any model fitting |
+| Computation authorization | `2015–2019 INNER DEVELOPMENT ONLY` after PAIR-A freeze publication; 2013–2014 may supply formation history only; OF4 and held-out remain denied |
+| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` — active |
+| Last validation state | Prior C04-A/pause checkpoint PASS; PAIR-A freeze validation and publication pending |
+| Latest local commit | `31df68ae8a1caefad965daf9150055af717bbd21` — C04-A validation and pair-universe checkpoint |
+| Remote state observed | `origin/main` at `31df68ae8a1caefad965daf9150055af717bbd21` |
+| Researcher action required | `NO` until PRE-OUTER gate or a genuine integrity/computational blocker |
 
 ## Verified frozen chain relevant to activation
 
