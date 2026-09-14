@@ -41,6 +41,7 @@ $allowedGates = @(
     ,'PAUSED_DIRECTIONAL_EPISODE_COLLISION_NOT_FROZEN'
     ,'DECA_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
     ,'PAUSED_A6_C06_STALE_GAP_INDICATOR_NOT_FROZEN'
+    ,'SG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -157,6 +158,14 @@ if ($contract.computation_gate -eq 'PAUSED_A6_C06_STALE_GAP_INDICATOR_NOT_FROZEN
     if ($next.action.dataset_access -ne 'DENIED_PENDING_A6_C06_STALE_GAP_RULE') { throw 'A6 stale-gap pause must deny dataset access.' }
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'A6 stale-gap pause must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
+if ($contract.computation_gate -eq 'SG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION') {
+    if ($next.action.action_id -ne 'V1-SG-A-PUBLICATION-V1') { throw 'SG-A publication action mismatch.' }
+    if ($next.action.execution_state -ne 'SG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION') { throw 'SG-A publication state mismatch.' }
+    if ($next.action.dataset_access -ne 'DENIED_UNTIL_SG_A_PUBLICATION') { throw 'SG-A publication guard must deny dataset access.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'SG-A publication guard must deny empirical visibility.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($contract.a6_c06_stale_gap.status -ne 'FROZEN_PENDING_PUBLICATION') { throw 'SG-A contract status mismatch.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

@@ -1,0 +1,36 @@
+{
+  "schema_version": "V1-SG-A-CONTRACT-1.0",
+  "decision_id": "V1-SG-A-1.0",
+  "status": "FROZEN_PENDING_PUBLICATION",
+  "ancestor_dataset": "CORE-DATASET-FREEZE-V1",
+  "c06_availability_ancestor": "C06-AVAILABILITY-AMENDMENT-V1",
+  "continuous_age": "ELAPSED_TIME_SINCE_ACTIVE_PIT_SNAPSHOT_AVAILABLE",
+  "boolean_state": "STRUCTURAL_MISSED_EXPECTED_OFFICIAL_UPDATE_OPPORTUNITY",
+  "state_values": [0, 1],
+  "qualification_values": ["QUALIFIED", "UNRESOLVED"],
+  "true_rule": [
+    "active PIT classification is carried forward",
+    "authoritative historical regime establishes a subsequent expected update opportunity and normal official publication sequence",
+    "qualified successor should already have become available by decision time",
+    "no qualified successor is genuinely available by decision time"
+  ],
+  "false_rule": "qualified regime and publication sequence establish that no expected update opportunity was missed",
+  "unresolved_rule": "regime, expected opportunity, or defensible availability implication cannot be established",
+  "regime_awareness": {
+    "2012_regime": "AUTHORITATIVE_QUARTERLY_SEQUENCE",
+    "2023_regime": "AUTHORITATIVE_SEMIANNUAL_SEQUENCE",
+    "intervening_or_unproven_state": "UNRESOLVED_NOT_RETROFITTED"
+  },
+  "prohibitions": [
+    "empirical or fixed day-count threshold",
+    "sample-quantile or performance calibration",
+    "period-end or archive-date substitution for availability",
+    "fabricated zero or one under unresolved regime",
+    "replacement of continuous classification age",
+    "change to any other PV0 field",
+    "relationship output recomputation"
+  ],
+  "empirical_information_used": false,
+  "of4_accessed": false,
+  "held_out_accessed": false
+}

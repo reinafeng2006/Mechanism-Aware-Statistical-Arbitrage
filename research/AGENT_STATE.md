@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 / A6 STALE-GAP SEMANTICS` |
-| Stage status | `SAFELY PAUSED — RESEARCHER DECISION REQUIRED` |
-| Latest frozen decision | `V1-DECA-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | R0/R1/R3/R4 materialized; A6 PV0 column 16 definition unresolved |
+| Current stage | `V1 PHASE 1 / SG-A PUBLICATION GUARD` |
+| Stage status | `SG-A FROZEN — PUBLICATION PENDING` |
+| Latest frozen decision | `V1-SG-A-1.0 — FROZEN / PUBLICATION PENDING` |
+| Current substage | R0/R1/R3/R4 preserved and verified; SG-A must publish before A3/A5/A6/G5 resume |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `DENIED PENDING A6 C06 STALE-GAP RULE`; OF4 and final held-out denied |
-| Current authorized action | `NONE` |
-| Last validation state | 70 relationship partitions materialized; structural manifest validation pending |
-| Latest local commit | `b63dc2b` — DECA-A inner execution guard published |
-| Remote state observed | `origin/main` at `b63dc2b` |
-| Researcher action required | `YES`; select SG-A, SG-B, or SG-C |
+| Computation authorization | `DENIED UNTIL SG-A PUBLICATION`; OF4 and final held-out denied |
+| Current authorized action | `V1-SG-A-PUBLICATION-V1` |
+| Last validation state | 70 relationship partitions verified against SHA-256 manifest; SG-A structurally frozen |
+| Latest local commit | `fc5693d` — relationship-output checkpoint published |
+| Remote state observed | `origin/main` at `fc5693d` |
+| Researcher action required | `NO`; publish already-approved SG-A, then resume bounded inner execution |
 
 ## Verified frozen chain relevant to activation
 

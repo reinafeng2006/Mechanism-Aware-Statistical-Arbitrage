@@ -180,3 +180,12 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Mandatory stop before A3/A5/A6/G5: PV0 column 16 requires a Boolean C06 stale-gap indicator, but the frozen protocol explicitly leaves its threshold/numerical effect unresolved. No software default, always-zero encoding, silent column drop, or empirical cutoff was applied.
 - Empirical boundary: relationship outputs were materialized but not interpreted or compared; no abnormality, resolution target, A6 fit, trade/PnL, OF4, or held-out information was inspected.
 - Completion disposition: `GENUINE EXECUTABLE DESIGN-MATRIX BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.
+
+## 2026-09-14 — RUN-V1-SG-A-RECOVERY-20260914-02
+
+- Authority: researcher approved `SG-A` and authorized one bounded infrastructure recovery, publication, and inner-pipeline continuation transaction.
+- Verified no active writer owned persisted lock `RUN-V1-SG-A-PHASE1-20260914-01`; recovered it through the documented single-writer procedure.
+- Verified all 70 previously materialized R0/R1/R3/R4 relationship partitions against their recorded SHA-256 values without recomputing any relationship model. Manifest SHA-256 at recovery: `BF78CDD6B55694FAECF36FF743B3C7206930FC4189A26271B57AEB7712D820D0`.
+- Published the relationship-output checkpoint and associated pause/integrity lineage as commit `fc5693d`; ignored `.venv/`, cache files, and immutable raw outputs were not committed.
+- Frozen SG-A as a regime-aware structural missed-publication-opportunity state distinct from continuous classification age. No day-count threshold, empirical distribution, result, OF4, or held-out information informed the rule.
+- Publication guard denies A3/A5/A6/G5 dataset access until the SG-A freeze commit is pushed.

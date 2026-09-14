@@ -103,5 +103,6 @@
   "a6_training_geometry": {"contract_id": "V1-A6-TG-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
   "decision_episode_semantics": {"contract_id": "V1-DC-A-EP-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
   "directional_collision_semantics": {"contract_id": "V1-DECA-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
-  "computation_gate": "PAUSED_A6_C06_STALE_GAP_INDICATOR_NOT_FROZEN"
+  "a6_c06_stale_gap": {"contract_id": "V1-SG-A-1.0", "status": "FROZEN_PENDING_PUBLICATION"},
+  "computation_gate": "SG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION"
 }

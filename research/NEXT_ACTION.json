@@ -1,34 +1,36 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "No autonomous action",
-    "status": "RESEARCHER_ACTION_REQUIRED",
-    "execution_state": "PAUSED_A6_C06_STALE_GAP_INDICATOR_NOT_FROZEN",
-    "objective": "Await a frozen executable definition for PV0 column 16, the C06 stale-gap indicator.",
+    "action_id": "V1-SG-A-PUBLICATION-V1",
+    "name": "Publish researcher-approved SG-A structural stale-gap semantics",
+    "status": "AUTHORIZED",
+    "execution_state": "SG_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "objective": "Validate, commit, and push the already-approved SG-A freeze before resuming inner computation.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
-      "No A3/A5/A6/G5 result or OF4/held-out information inspected"
+      "No A3/A5/A6/G5 result or OF4/held-out information inspected",
+      "Researcher approved SG-A without reopening scientific semantics"
     ],
     "allowed_scope": [
-      "none pending researcher decision"
+      "SG-A decision/contract/validator publication",
+      "normal non-force commit and push to authorized main"
     ],
     "forbidden_scope": [
-      "A3/A5/A6/G5 computation or empirical-result inspection",
-      "software-default stale-gap definition",
+      "A3/A5/A6/G5 computation before SG-A publication",
+      "any alteration to approved SG-A semantics",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_A6_C06_STALE_GAP_RULE",
+    "dataset_access": "DENIED_UNTIL_SG_A_PUBLICATION",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
-    "commit_permitted": false,
-    "push_permitted": false,
+    "commit_permitted": true,
+    "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Researcher freezes a stale-gap rule or a versioned A6 matrix amendment and authorizes a replacement action.",
+    "completion_condition": "SG-A freeze is validated and published; inner-only action guard may then be restored mechanically.",
     "mandatory_stop_conditions": [
-      "Any empirical access before the stale-gap rule is frozen",
+      "Any empirical access before SG-A publication",
       "Any OF4 or held-out access"
     ]
   }
