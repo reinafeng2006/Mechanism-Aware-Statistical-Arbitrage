@@ -124,6 +124,13 @@ $decaAPublication = (
     $action.action.empirical_result_visibility -eq 'DENIED' -and
     $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
 )
+$a6StaleGapPause = (
+    $action.action.action_id -eq 'NONE' -and
+    $action.action.execution_state -eq 'PAUSED_A6_C06_STALE_GAP_INDICATOR_NOT_FROZEN' -and
+    $action.action.dataset_access -eq 'DENIED_PENDING_A6_C06_STALE_GAP_RULE' -and
+    $action.action.empirical_result_visibility -eq 'DENIED' -and
+    $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -135,14 +142,16 @@ $checks = @(
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
 
 if ($checks -contains $false) { throw 'V1 pre-computation gate invariant failed.' }
 
-if ($decaAPublication) {
+if ($a6StaleGapPause) {
+    Write-Output 'PASS: all inner relationship outputs are structurally materialized; A6 is paused on the unfrozen C06 stale-gap indicator while empirical, OF4, and held-out access is denied.'
+} elseif ($decaAPublication) {
     Write-Output 'PASS: DECA-A is frozen pending publication; empirical, OF4, and held-out access remains denied.'
 } elseif ($directionalEpisodePause) {
     Write-Output 'PASS: Phase 1 is paused before fitting on the unresolved same-channel dual-direction episode collision; empirical, OF4, and held-out access is denied.'

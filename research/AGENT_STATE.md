@@ -6,20 +6,20 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `ACTIVE — 2015–2019 INNER ONLY` |
+| Current stage | `V1 PHASE 1 / A6 STALE-GAP SEMANTICS` |
+| Stage status | `SAFELY PAUSED — RESEARCHER DECISION REQUIRED` |
 | Latest frozen decision | `V1-DECA-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | complete PAIR-A R0/R1/R3/R4 then A1–A6/G5 under DECA-A |
+| Current substage | R0/R1/R3/R4 materialized; A6 PV0 column 16 definition unresolved |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `2015–2019 INNER ONLY`; OF4 and final held-out denied |
-| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
-| Last validation state | DECA-A published as `8354438`; existing inner input remains checksum-bound |
-| Latest local commit | `8354438` — DECA-A freeze published |
-| Remote state observed | `origin/main` at `8354438` |
-| Researcher action required | `NO`; continue to PRE-OUTER gate or genuine blocker |
+| Computation authorization | `DENIED PENDING A6 C06 STALE-GAP RULE`; OF4 and final held-out denied |
+| Current authorized action | `NONE` |
+| Last validation state | 70 relationship partitions materialized; structural manifest validation pending |
+| Latest local commit | `b63dc2b` — DECA-A inner execution guard published |
+| Remote state observed | `origin/main` at `b63dc2b` |
+| Researcher action required | `YES`; select SG-A, SG-B, or SG-C |
 
 ## Verified frozen chain relevant to activation
 

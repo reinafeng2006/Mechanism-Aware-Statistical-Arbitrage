@@ -40,6 +40,7 @@ $allowedGates = @(
     ,'DC_A_EP_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
     ,'PAUSED_DIRECTIONAL_EPISODE_COLLISION_NOT_FROZEN'
     ,'DECA_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
+    ,'PAUSED_A6_C06_STALE_GAP_INDICATOR_NOT_FROZEN'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -149,6 +150,12 @@ if ($contract.computation_gate -eq 'DECA_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATIO
     if ($next.action.action_id -ne 'V1-DECA-A-PUBLICATION-V1') { throw 'DECA-A publication guard action mismatch.' }
     if ($next.action.dataset_access -ne 'DENIED_UNTIL_DECA_A_PUBLICATION') { throw 'DECA-A publication guard must deny dataset access.' }
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'DECA-A publication guard must deny empirical visibility.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+}
+if ($contract.computation_gate -eq 'PAUSED_A6_C06_STALE_GAP_INDICATOR_NOT_FROZEN') {
+    if ($next.action.action_id -ne 'NONE') { throw 'A6 stale-gap pause must not retain an executable action.' }
+    if ($next.action.dataset_access -ne 'DENIED_PENDING_A6_C06_STALE_GAP_RULE') { throw 'A6 stale-gap pause must deny dataset access.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'A6 stale-gap pause must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
 }
 

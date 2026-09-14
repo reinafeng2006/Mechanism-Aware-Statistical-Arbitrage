@@ -174,3 +174,9 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Interpretation boundary: conflict is not M0, not U by definition, and not model failure; both directional scientific records remain unchanged.
 - Publication guard: no dataset, fit, abnormality, target, PnL, OF4, or held-out access is permitted until the DECA-A commit is published.
 - DECA-A freeze published as commit `8354438` on `main`; the existing inner-only action is restored without rebuilding `V1-PHASE1-INNER-INPUT-1.0`.
+- DECA-A inner execution guard published as commit `b63dc2b` before inner data access.
+- Executed the frozen complete PAIR-A R0-DIST, R0-CORR, R0-LIN, R1-M, R1-MI, R3 N0/N1, and R4 CF-A candidates over 2015–2019 only; 70 candidate × half-year partitions were atomically materialized and checksum-bound.
+- Engineering incident lineage: an initial R0/R1 trial used pair-local first-availability refresh rather than the frozen global calendar refresh. Those ignored artifacts remain retained and explicitly non-qualified; no values were interpreted. Corrected V2 outputs use global U1W/U1M origins and were regenerated without overwrite.
+- Mandatory stop before A3/A5/A6/G5: PV0 column 16 requires a Boolean C06 stale-gap indicator, but the frozen protocol explicitly leaves its threshold/numerical effect unresolved. No software default, always-zero encoding, silent column drop, or empirical cutoff was applied.
+- Empirical boundary: relationship outputs were materialized but not interpreted or compared; no abnormality, resolution target, A6 fit, trade/PnL, OF4, or held-out information was inspected.
+- Completion disposition: `GENUINE EXECUTABLE DESIGN-MATRIX BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.
