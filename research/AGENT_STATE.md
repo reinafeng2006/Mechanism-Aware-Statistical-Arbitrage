@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / RT3-A STATE AUGMENTATION` |
-| Stage status | `ACTIVE — REPLAY / NO INTERPRETATION` |
-| Latest frozen decision | `V1-SG-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | deterministic state augmentation and common-field equivalence gate |
+| Stage status | `QUALIFIED — PUBLICATION PENDING / NO DOWNSTREAM USE` |
+| Latest frozen decision | `V1-RT3-A-1.0 — PUBLISHED CONTRACT / AUGMENTATION QUALIFIED` |
+| Current substage | publish immutable state augmentation and equivalence manifest |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `RELATIONSHIP REPLAY ONLY / NO INTERPRETATION`; OF4 and final held-out denied |
-| Current authorized action | `V1-RT3-A-RELATIONSHIP-STATE-AUGMENTATION-V1` |
-| Last validation state | RT3-A published as `ac9a179`; augmentation guard active |
-| Latest local commit | `34697ff` — SG-A inner execution guard published |
-| Remote state observed | `origin/main` at `34697ff` |
-| Researcher action required | `NO`; execute augmentation to equivalence gate |
+| Computation authorization | `PUBLICATION ONLY`; downstream A3/A5/A6/G5 remains denied until augmentation commit is pushed; OF4 and final held-out denied |
+| Current authorized action | `V1-RT3-A-PUBLISH-QUALIFIED-AUGMENTATION-V1` |
+| Last validation state | 70/70 partitions `PASS_EXACT`; zero shared-field mismatches |
+| Latest local commit | `116c874` — RT3-A augmentation-only guard published |
+| Remote state observed | `origin/main` at `116c874` |
+| Researcher action required | `NO`; publish qualified augmentation, then restore inner-only downstream action |
 
 ## Verified frozen chain relevant to activation
 

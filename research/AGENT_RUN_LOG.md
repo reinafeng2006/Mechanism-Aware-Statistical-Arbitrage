@@ -196,3 +196,6 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Completion disposition: `GENUINE SCIENTIFIC/DATA-LINEAGE BLOCKER / RESEARCHER DECISION REQUIRED`; successor action set to `NONE`.
 - Researcher selected `RT3-A`: deterministic no-overwrite relationship-state augmentation with full shared-field replay equivalence. Publication guard denies replay until the contract commit is pushed.
 - RT3-A freeze published as commit `ac9a179`; augmentation-only replay guard activated before any replay access.
+- RT3-A deterministic replay completed for all seven frozen candidates and all ten 2015–2019 half-year partitions. All 70 partitions regenerated every shared relationship-output field exactly; total mismatch count is zero.
+- Wrote only new no-overwrite state companions under `V1-RT3-RELATIONSHIP-STATE-AUGMENTATION-1.0`; original `V1-PHASE1-RELATIONSHIP-OUTPUTS-2.0` payloads and hashes remain unchanged.
+- No performance, ranking, abnormality, target, A6, trading, PnL, OF4, or held-out information was inspected. Downstream use is guarded until the qualified augmentation is published.

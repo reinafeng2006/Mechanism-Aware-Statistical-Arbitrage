@@ -173,7 +173,10 @@ $checks = @(
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
 
-if ($checks -contains $false) { throw 'V1 pre-computation gate invariant failed.' }
+if ($checks -contains $false) {
+    $failedIndexes = for ($index = 0; $index -lt $checks.Count; $index++) { if (-not $checks[$index]) { $index } }
+    throw "V1 pre-computation gate invariant failed at check indexes: $($failedIndexes -join ',')."
+}
 
 if ($rt3AActive) {
     Write-Output 'PASS: RT3-A permits only deterministic relationship-state replay with no interpretation; OF4 and held-out remain denied.'

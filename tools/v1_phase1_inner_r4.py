@@ -110,4 +110,47 @@ def main():
    arr=np.concatenate(chunks) if chunks else np.empty(0,DT);tmp=final.with_suffix('.tmp.npy');np.save(tmp,arr,allow_pickle=False);os.replace(tmp,final)
    meta={'candidate':'V1-R4-63D','partition':label,'rows':len(arr),'sha256':sha(final),'input_sha256':EXPECTED,'monthly_fits':monthly,'elapsed_seconds':time.perf_counter()-started,'of4_accessed':False,'held_out_accessed':False}
    marker.write_text(json.dumps(meta,sort_keys=True,indent=2)+'\n',encoding='utf-8');print(json.dumps({'candidate':meta['candidate'],'partition':label,'rows':len(arr),'sha256':meta['sha256'],'elapsed_seconds':meta['elapsed_seconds'],'monthly_origins':len(monthly)}),flush=True)
-if __name__=='__main__':main()
+def augment_state():
+ workers=min(8,max(1,(os.cpu_count() or 4)//2));set_num_threads(max(1,(os.cpu_count() or 4)-workers))
+ if sha(INPUT)!=EXPECTED:raise RuntimeError('input checksum mismatch')
+ d=np.load(INPUT,allow_pickle=False);dates=np.char.decode(d['dates']);r=d['response'];member=d['pair_member'];nsec=r.shape[1]
+ state_root=ROOT/'data/qa_work/v1/phase1/rt3_state_v1/V1-R4-63D';state_root.mkdir(parents=True,exist_ok=True)
+ sdt=np.dtype([('date_ix','<u2'),('a','<u2'),('b','<u2'),('state_ab','u1'),('state_ba','u1'),('alpha_ab','<f8'),('beta_ab','<f8'),('p_ab','<f8'),('q_ab','<f8'),('r_ab','<f8'),('alpha_ba','<f8'),('beta_ba','<f8'),('p_ba','<f8'),('q_ba','<f8'),('r_ba','<f8')])
+ active=np.zeros((nsec,nsec),bool);alpha=np.full((nsec,nsec,2),np.nan);beta=np.full_like(alpha,np.nan);pv=np.full_like(alpha,np.nan);qv=np.full_like(alpha,np.nan);rv=np.full_like(alpha,np.nan);states=np.zeros((nsec,nsec,2),np.uint8)
+ ps0a=np.full((nsec,nsec),np.nan);ps0b=np.full_like(ps0a,np.nan);ps1a=np.full_like(ps0a,np.nan);ps1b=np.full_like(ps0a,np.nan);current_month=-1
+ periods=[(f'{y}H{s}',f'{y}{"0101" if s==1 else "0701"}',f'{y}{"0630" if s==1 else "1231"}') for y in range(2015,2020) for s in (1,2)];summary=[]
+ with concurrent.futures.ProcessPoolExecutor(max_workers=workers) as pool:
+  for label,lo,hi in periods:
+   final=state_root/f'{label}.npy';marker=state_root/f'{label}.complete.json'
+   if final.exists() or marker.exists():raise RuntimeError('state no-overwrite conflict')
+   original=np.load(OUT/f'{label}.npy',allow_pickle=False,mmap_mode='r');cursor=0;chunks=[]
+   for t in np.flatnonzero((dates>=lo)&(dates<=hi)):
+    pp=pairs(member[t]);month=int(dates[t][:6])
+    if month!=current_month:
+     seq,sc=sequences(pp,int(t),r,member);ok=np.isfinite(sc[:,0])&np.isfinite(sc[:,1]);use=pp[ok];seq=seq[ok];sc=sc[ok]
+     active[:]=False;alpha[:]=np.nan;beta[:]=np.nan;pv[:]=np.nan;qv[:]=np.nan;rv[:]=np.nan;states[:]=0
+     batch=256;tasks=[(seq[k:k+batch,:,0],seq[k:k+batch,:,1]) for k in range(0,len(seq),batch)];results=list(pool.map(fit_chunk,tasks,chunksize=1));fits=np.vstack(results) if results else np.empty((0,8))
+     for pos,(a,b) in enumerate(use):
+      ab=fits[2*pos];ba=fits[2*pos+1]
+      if ab[7]>0 and ba[7]>0:
+       a=int(a);b=int(b);active[a,b]=True;alpha[a,b]=[ab[0],ba[0]];beta[a,b]=[ab[1],ba[1]];pv[a,b]=[ab[2],ba[2]];qv[a,b]=[ab[3],ba[3]];rv[a,b]=[ab[4],ba[4]];states[a,b]=[int(ab[7]),int(ba[7])];ps0a[a,b],ps0b[a,b],ps1a[a,b],ps1b[a,b]=sc[pos]
+     current_month=month
+    ai,bi=np.nonzero(active);pv[ai,bi]+=qv[ai,bi];cur=active[pp[:,0],pp[:,1]] if len(pp) else np.empty(0,bool);use=pp[cur]
+    if len(use):
+     a=use[:,0];b=use[:,1];xa=r[t,a];xb=r[t,b];muab=alpha[a,b,0]+beta[a,b,0]*xa;muba=alpha[a,b,1]+beta[a,b,1]*xb;sdab=np.sqrt(np.maximum(0.,xa*xa*pv[a,b,0]+rv[a,b,0]));sdba=np.sqrt(np.maximum(0.,xb*xb*pv[a,b,1]+rv[a,b,1]))
+     rec=np.empty(len(use),DT);rec['date_ix']=t;rec['a']=a;rec['b']=b;rec['support']=63;rec['state_ab']=states[a,b,0];rec['state_ba']=states[a,b,1];rec['mu_ab']=muab;rec['mu_ba']=muba;rec['ps0_a']=ps0a[a,b];rec['ps0_b']=ps0b[a,b];rec['ps1_a']=ps1a[a,b];rec['ps1_b']=ps1b[a,b];rec['predsd_ab']=sdab;rec['predsd_ba']=sdba
+     old=original[cursor:cursor+len(rec)]
+     for name in DT.names:
+      same=np.array_equal(rec[name],old[name],equal_nan=True) if rec[name].dtype.kind=='f' else np.array_equal(rec[name],old[name])
+      if not same:raise RuntimeError(f'R4 equivalence mismatch {label}/{name}')
+     cursor+=len(rec)
+     sr=np.empty(len(use),sdt);sr['date_ix']=t;sr['a']=a;sr['b']=b;sr['state_ab']=states[a,b,0];sr['state_ba']=states[a,b,1];sr['alpha_ab']=alpha[a,b,0];sr['beta_ab']=beta[a,b,0];sr['p_ab']=pv[a,b,0];sr['q_ab']=qv[a,b,0];sr['r_ab']=rv[a,b,0];sr['alpha_ba']=alpha[a,b,1];sr['beta_ba']=beta[a,b,1];sr['p_ba']=pv[a,b,1];sr['q_ba']=qv[a,b,1];sr['r_ba']=rv[a,b,1];chunks.append(sr)
+     eab=xb-muab;k=pv[a,b,0]*xa/(xa*xa*pv[a,b,0]+rv[a,b,0]);beta[a,b,0]+=k*eab;pv[a,b,0]=np.maximum(0.,(1-k*xa)*pv[a,b,0]);eba=xa-muba;k=pv[a,b,1]*xb/(xb*xb*pv[a,b,1]+rv[a,b,1]);beta[a,b,1]+=k*eba;pv[a,b,1]=np.maximum(0.,(1-k*xb)*pv[a,b,1])
+   if cursor!=len(original):raise RuntimeError(f'R4 row mismatch {label}')
+   arr=np.concatenate(chunks) if chunks else np.empty(0,sdt);tmp=final.with_suffix('.tmp.npy');np.save(tmp,arr,allow_pickle=False);os.replace(tmp,final)
+   meta={'candidate':'V1-R4-63D','partition':label,'rows':len(arr),'sha256':sha(final),'ancestor_sha256':sha(OUT/f'{label}.npy'),'shared_rows_verified':cursor,'shared_field_mismatches':0,'equivalence':'PASS_EXACT','of4_accessed':False,'held_out_accessed':False};marker.write_text(json.dumps(meta,sort_keys=True,indent=2)+'\n',encoding='utf-8');summary.append(meta);print(json.dumps({'candidate':'V1-R4-63D','partition':label,'state_rows':len(arr),'equivalence':'PASS_EXACT','sha256':meta['sha256']}),flush=True)
+ (state_root/'summary.json').write_text(json.dumps({'schema':'RT3-STATE-R4-1.0','partitions':summary},sort_keys=True,indent=2)+'\n',encoding='utf-8')
+
+if __name__=='__main__':
+ if '--augment-state' in sys.argv:augment_state()
+ else:main()

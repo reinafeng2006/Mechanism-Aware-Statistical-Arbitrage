@@ -158,4 +158,56 @@ def main():
   meta={'candidate':'V1-R3-252M','partition':label,'rows':len(arr),'sha256':sha(final),'input_sha256':EXPECTED,'elapsed_seconds':time.perf_counter()-started,'hyperparameter_uncertainty':'OMITTED_LABELLED','of4_accessed':False,'held_out_accessed':False}
   marker.write_text(json.dumps(meta,sort_keys=True,indent=2)+'\n',encoding='utf-8');print(json.dumps({k:meta[k] for k in ('candidate','partition','rows','sha256','elapsed_seconds')}),flush=True)
 
-if __name__=='__main__':main()
+def augment_state():
+ set_num_threads(max(1,(os.cpu_count() or 4)-2))
+ if sha(INPUT)!=EXPECTED:raise RuntimeError('input checksum mismatch')
+ d=np.load(INPUT,allow_pickle=False);dates=np.char.decode(d['dates']);r=d['response'];member=d['pair_member'];ind=d['industry']
+ state_root=ROOT/'data/qa_work/v1/phase1/rt3_state_v1/V1-R3-252M';state_root.mkdir(parents=True,exist_ok=True)
+ sdt=np.dtype([('date_ix','<u2'),('a','<u2'),('b','<u2'),('stratum','u1'),('state','u1'),('params','<f8',(24,))])
+ cache={};active=-1;periods=[(f'{y}H{s}',f'{y}{"0101" if s==1 else "0701"}',f'{y}{"0630" if s==1 else "1231"}') for y in range(2015,2020) for s in (1,2)]
+ summary=[]
+ for label,lo,hi in periods:
+  final=state_root/f'{label}.npy';marker=state_root/f'{label}.complete.json'
+  if final.exists() or marker.exists():raise RuntimeError('state no-overwrite conflict')
+  original=np.load(OUT/f'{label}.npy',allow_pickle=False,mmap_mode='r');cursor=0;state_chunks=[]
+  for t in np.flatnonzero((dates>=lo)&(dates<=hi)):
+   pp=pairs(member[t]);key=int(dates[t][:6]);ids=(pp[:,0].astype(np.int32)*r.shape[1]+pp[:,1]).astype(np.int32)
+   if key!=active:
+    st=stats(pp,int(t),252,r,member);ok=np.isfinite(st[:,0]);new={};strata=np.where((ind[t,pp[:,0]]==34)&(ind[t,pp[:,1]]==34),0,np.where((ind[t,pp[:,0]]==35)&(ind[t,pp[:,1]]==35),1,2))
+    srows=[]
+    for g in (0,1,2):
+     loc=np.flatnonzero(ok&(strata==g))
+     if len(loc)<2:continue
+     ss=st[loc];fits=[reml_fit(ss,dn) for dn in (0,1)]
+     if any(x is None for x in fits):continue
+     n0=[ols_fixed(ss,dn)[0] for dn in (0,1)]
+     for q,pos in enumerate(loc):
+      row=np.full(20,np.nan);row[0]=g;row[1]=st[pos,0];row[2:6]=st[pos,6:10]
+      for dn,base in ((0,6),(1,13)):
+       beta,blup,post,R,boundary=fits[dn];coef=beta+blup[q];row[base]=coef[0];row[base+1]=coef[1];row[base+2]=R;row[base+3]=post[q,0,0];row[base+4]=post[q,0,1];row[base+5]=post[q,1,1];row[base+6]=1. if boundary else 0.
+      new[int(ids[pos])]=(row,n0[0].copy(),n0[1].copy());srows.append((t,int(pp[pos,0]),int(pp[pos,1]),g,1|(2 if row[12] or row[19] else 0),np.r_[row,n0[0],n0[1]]))
+    if srows:state_chunks.append(np.array(srows,dtype=sdt))
+    cache=new;active=key
+   recs=[]
+   for pos,k in enumerate(ids.tolist()):
+    item=cache.get(int(k))
+    if item is None:continue
+    row,n0ab,n0ba=item;a=int(pp[pos,0]);b=int(pp[pos,1]);ra=r[t,a];rb=r[t,b]
+    if not(math.isfinite(ra) and math.isfinite(rb)):continue
+    pab=math.sqrt(max(0.,row[8]+row[9]+2*ra*row[10]+ra*ra*row[11]));pba=math.sqrt(max(0.,row[15]+row[16]+2*rb*row[17]+rb*rb*row[18]))
+    recs.append((t,a,b,int(row[1]),int(row[0]),1|(2 if row[12] or row[19] else 0),row[6]+row[7]*ra,row[13]+row[14]*rb,n0ab[0]+n0ab[1]*ra,n0ba[0]+n0ba[1]*rb,row[2],row[3],row[4],row[5],pab,pba))
+   if recs:
+    rec=np.array(recs,dtype=DT);old=original[cursor:cursor+len(rec)]
+    for name in DT.names:
+     if rec[name].dtype.kind=='f':same=np.array_equal(rec[name],old[name],equal_nan=True)
+     else:same=np.array_equal(rec[name],old[name])
+     if not same:raise RuntimeError(f'R3 equivalence mismatch {label}/{name}')
+    cursor+=len(rec)
+  if cursor!=len(original):raise RuntimeError(f'R3 row mismatch {label}')
+  arr=np.concatenate(state_chunks) if state_chunks else np.empty(0,sdt);tmp=final.with_suffix('.tmp.npy');np.save(tmp,arr,allow_pickle=False);os.replace(tmp,final)
+  meta={'candidate':'V1-R3-252M','partition':label,'rows':len(arr),'sha256':sha(final),'ancestor_sha256':sha(OUT/f'{label}.npy'),'shared_rows_verified':cursor,'shared_field_mismatches':0,'equivalence':'PASS_EXACT','of4_accessed':False,'held_out_accessed':False};marker.write_text(json.dumps(meta,sort_keys=True,indent=2)+'\n',encoding='utf-8');summary.append(meta);print(json.dumps({'candidate':'V1-R3-252M','partition':label,'state_rows':len(arr),'equivalence':'PASS_EXACT','sha256':meta['sha256']}),flush=True)
+ (state_root/'summary.json').write_text(json.dumps({'schema':'RT3-STATE-R3-1.0','partitions':summary},sort_keys=True,indent=2)+'\n',encoding='utf-8')
+
+if __name__=='__main__':
+ if '--augment-state' in sys.argv:augment_state()
+ else:main()
