@@ -61,6 +61,7 @@ if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOC
         if ($contract.decision_episode_semantics.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published DC-A/EP-A semantics.' }
         if ($contract.directional_collision_semantics.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published DECA-A semantics.' }
         if ($contract.a6_c06_stale_gap.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published SG-A semantics.' }
+        if ($contract.rt3_state_augmentation.status -ne 'PUBLISHED_AUGMENTATION_QUALIFIED') { throw 'PAIR-A inner action lacks the qualified RT3 state augmentation.' }
     }
 }
 if ($contract.computation_gate -eq 'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN') {

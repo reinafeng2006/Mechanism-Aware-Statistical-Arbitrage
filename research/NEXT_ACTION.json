@@ -1,11 +1,11 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-RT3-A-PUBLICATION-V1",
-    "name": "Publish the checksum-bound qualified RT3 relationship-state augmentation",
+    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
+    "name": "Continue V1 Phase 1 from frozen relationship outputs through A3/A5/A6/G5",
     "status": "AUTHORIZED",
-    "execution_state": "QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
-    "objective": "Publish the immutable augmentation manifest and exact-equivalence implementation before downstream use.",
+    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
+    "objective": "Use the preserved relationship checkpoint, published SG-A rule, and qualified RT3 state augmentation to materialize checksummed A3, A5, A6, and G5 inner-development artifacts.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
@@ -14,28 +14,34 @@
       "All prior PAIR-A, EXEC-A, CF-A, A6-TG-A, DC-A, EP-A, DECA-A, and SG-A contracts published",
       "Existing relationship partitions and hashes preserved",
       "Researcher selected RT3-A",
-      "All 70 augmentation partitions passed exact shared-field equivalence"
+      "All 70 augmentation partitions passed exact shared-field equivalence",
+      "RT3 state augmentation published and qualified for downstream use"
     ],
     "allowed_scope": [
-      "validate augmentation and ancestor hashes without recomputation",
-      "commit the replay implementation and immutable augmentation manifest",
-      "normal non-force push to authorized main"
+      "read 2013-2014 solely as frozen formation/warm-up input without producing evaluation evidence",
+      "derive A3 abnormality records for 2015-2019 inner only without relationship recomputation",
+      "derive A5 continuous resolution components at O1/O5/O10/O20 using the event-time RT3 state companion",
+      "fit A6 only under expanding completed-inner A6-TG-A",
+      "execute frozen G5 inner simulation and materialize immutable/checksummed outputs",
+      "normal non-force commits and pushes"
     ],
     "forbidden_scope": [
       "overwrite or mutation of existing relationship outputs",
-      "additional replay or A3/A5/A6/G5 computation or empirical-result inspection before publication",
+      "R0/R1/R3/R4 recomputation",
+      "2013-2014 evaluation evidence or empirical-result visibility",
+      "scientific or trading semantic change",
       "constant-current-mu substitution for frozen RT3",
       "silent RT3 omission or target amendment",
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_RT3_A_PUBLICATION",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "FROZEN_2013_2014_WARMUP_INPUT_PLUS_2015_2019_INNER_ONLY",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Qualified augmentation commit is pushed normally before any downstream consumer is enabled.",
+    "completion_condition": "Validated immutable A3/A5/A6/G5 inner outputs and PRE-OUTER checkpoint, or a genuine new integrity blocker.",
     "mandatory_stop_conditions": [
       "Any data or empirical access before RT3 resolution",
       "Any OF4 or held-out access"

@@ -199,3 +199,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - RT3-A deterministic replay completed for all seven frozen candidates and all ten 2015–2019 half-year partitions. All 70 partitions regenerated every shared relationship-output field exactly; total mismatch count is zero.
 - Wrote only new no-overwrite state companions under `V1-RT3-RELATIONSHIP-STATE-AUGMENTATION-1.0`; original `V1-PHASE1-RELATIONSHIP-OUTPUTS-2.0` payloads and hashes remain unchanged.
 - No performance, ranking, abnormality, target, A6, trading, PnL, OF4, or held-out information was inspected. Downstream use is guarded until the qualified augmentation is published.
+- Qualified RT3 augmentation and exact-equivalence implementation published as commit `c2ccc43` on `main`. The inner-only downstream action is restored with RT3 lineage bound; original relationship outputs will not be recomputed.
