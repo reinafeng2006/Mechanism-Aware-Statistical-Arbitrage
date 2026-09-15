@@ -214,3 +214,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Execution stopped before A3. No software alias, additional reference, or entry-gate amendment was inferred; relationship and RT3 artifacts remain unchanged.
 - Researcher selected `MP1-I-A`: a versioned ratio-native descendant replaces only the unsupported separate amount/volume normalization interface and uses `MP1_ratio_log_state > 0` in the existing M2 conjunction.
 - Publication guard denies data access until the MP1-I-A descendant contracts are validated and pushed. No empirical information informed the amendment.
+- MP1-I-A ratio-native interface amendment published as commit `b33c9b2`; all legacy frozen records remain preserved as ancestry.
+- Began the authorized documentation-only consolidated executable unresolved-field scan before any A3/A5/A6/G5 computation.

@@ -1,11 +1,11 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-MP1-I-A-PUBLICATION-V1",
-    "name": "Publish the researcher-approved MP1-I-A ratio-native executable interface",
+    "action_id": "V1-EXECUTABLE-UNRESOLVED-FIELD-SCAN-V1",
+    "name": "Scan A3/A5/A6/G5 executable contracts for unresolved fields",
     "status": "AUTHORIZED",
-    "execution_state": "MP1_I_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
-    "objective": "Publish the versioned ratio-native A6 PV-M2 and G5 interface amendment before executable scanning or empirical access.",
+    "execution_state": "EXECUTABLE_UNRESOLVED_FIELD_SCAN_ACTIVE_NO_EMPIRICAL_ACCESS",
+    "objective": "Complete one documentation-only consolidated scan and either restore inner execution or issue one blocker checkpoint.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
@@ -19,7 +19,9 @@
       "MP1-A published and bound to Phase 1"
     ],
     "allowed_scope": [
-      "write and validate the versioned MP1-I-A descendant contracts",
+      "read frozen A3/A5/A6/G5 contracts without data access",
+      "resolve only mechanically implied field bindings",
+      "write one consolidated blocker if substantive semantics remain",
       "normal non-force commit and push to authorized main"
     ],
     "forbidden_scope": [
@@ -32,13 +34,13 @@
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_MP1_I_A_PUBLICATION",
+    "dataset_access": "CONTRACT_DOCUMENTATION_ONLY",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "MP1-I-A descendant contract commit is pushed before executable scanning and inner computation resume.",
+    "completion_condition": "All executable fields are mechanically bound, or one consolidated researcher checkpoint records all substantive gaps.",
     "mandatory_stop_conditions": [
       "Any material scientific or data-integrity mismatch",
       "Any OF4 or held-out access"
