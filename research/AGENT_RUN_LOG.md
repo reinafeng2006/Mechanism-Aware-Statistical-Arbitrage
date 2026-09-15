@@ -222,3 +222,11 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Publication guard denies all data access until the versioned closure is validated and pushed. Existing relationship and RT3 artifacts remain immutable.
 - EV-A-V1, FD-A and ER-A closure published as commit `4b14550`.
 - Final machine-readable executable-field audit passed with zero unresolved estimand, target or trading-policy fields. `V1 EXECUTABLE SEMANTICS CLOSED`; restoring 2015-2019 inner-only execution without relationship/RT3 recomputation.
+
+## 2026-09-15 — RUN-V1-EV-A-V1-INNER-20260915-02
+
+- Published EV-A-V1/FD-A/ER-A and final executable-field closure were verified at base commit `f2fde2f`.
+- Generated A3/A5 inner artifacts without recomputing the immutable relationship or RT3 ancestors. A first unpublished generation was removed after validation detected year-level rather than semiannual target censoring.
+- Regenerated all 70 partitions with O1/O5/O10/O20 constrained to the same semiannual inner role. SHA-256, ancestry, row shape and boundary-censoring validation passed.
+- The workspace approval control rejected two attempts to globally hardcode unqualified evidence fields as unavailable because that would predetermine A6/G5 dispositions without a source-bound row mapping. No workaround was attempted.
+- Paused before A6/G5. No OF4 or held-out access; no relationship/RT3 recomputation; no result interpretation.

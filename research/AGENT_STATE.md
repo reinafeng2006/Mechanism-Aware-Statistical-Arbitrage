@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `ACTIVE — INNER A3/A5/A6/G5 EXECUTION` |
+| Stage status | `PAUSED — EV-A ROW-LEVEL MAPPING INTEGRITY BLOCKER` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | execute A3 → A5 → A6 → G5 from immutable relationship/RT3 checkpoints |
+| Current substage | corrected A3/A5 complete and validated; A6/G5 blocked before row-level EV-A mapping |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `AUTHORIZED — 2015–2019 INNER ONLY`; OF4 and final held-out denied |
-| Current authorized action | `V1-PAIR-A-PHASE1-INNER-EXECUTION-V1` |
-| Last validation state | RT3 augmentation 70/70 `PASS_EXACT`, zero mismatches, published as `c2ccc43` |
-| Latest local commit | `5fdfec8` — MP1-A freeze published |
-| Remote state observed | `origin/main` at `5fdfec8` |
-| Researcher action required | `NO`; continue until pre-outer gate or genuine blocker |
+| Computation authorization | `PAUSED BEFORE A6/G5`; OF4 and final held-out denied |
+| Current authorized action | `NONE — EV-A row mapping decision required` |
+| Last validation state | A3/A5 70/70 hashes, ancestry, shapes and semiannual censoring `PASS` |
+| Latest local commit | pending validated A3/A5 checkpoint commit |
+| Remote state observed | `origin/main` at `f2fde2f` before this checkpoint |
+| Researcher action required | `YES`; select bounded EV-A row-level source/disposition mapping |
 
 ## Verified frozen chain relevant to activation
 
