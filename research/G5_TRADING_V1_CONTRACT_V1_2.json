@@ -1,0 +1,17 @@
+{
+  "schema_version": "G5-TRADING-V1-1.2",
+  "contract_id": "G5-TRADING-V1-1.2-MP1-I-A",
+  "ancestor": "G5-TRADING-V1-1.1",
+  "amendment": "V1-MP1-I-A-1.0",
+  "status": "FROZEN_PENDING_PUBLICATION",
+  "unchanged_semantics": "ALL_G5_V1_SEMANTICS_EXCEPT_MP1_POSITIVE_STATE_INTERFACE",
+  "entry_state": {
+    "M2": "VALID_NONZERO_MP0_AND_MP1_RATIO_AVAILABLE_AND_MP1_RATIO_LOG_STATE_GT_0_WITHOUT_REJECTION_INVALIDITY_FUTURE_LEAKAGE_CONFLICT_OR_ELIGIBILITY_BLOCK",
+    "MP1_alone_is_M2": false,
+    "MP1_alone_creates_trade": false,
+    "additional_threshold": "NONE"
+  },
+  "interpretation": "AMOUNT_DIVIDED_BY_VOLUME_IS_TRANSACTION_PRICE_REFERENCE_STATE_PROXY_NOT_PURE_LIQUIDITY_PRESSURE",
+  "of4_access": "DENIED",
+  "held_out_access": "SEALED_DENIED"
+}

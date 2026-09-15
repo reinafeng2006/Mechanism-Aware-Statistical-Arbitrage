@@ -106,5 +106,6 @@
   "a6_c06_stale_gap": {"contract_id": "V1-SG-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
   "rt3_state_augmentation": {"contract_id": "V1-RT3-A-1.0", "status": "PUBLISHED_AUGMENTATION_QUALIFIED", "manifest_id": "V1-RT3-RELATIONSHIP-STATE-AUGMENTATION-1.0", "common_output_equivalence": "PASS_EXACT", "shared_field_mismatch_count": 0},
   "mp1_reference": {"contract_id": "V1-MP1-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
-  "computation_gate": "PAUSED_MP1_EXECUTABLE_INTERFACE_CONFLICT"
+  "mp1_executable_interface": {"contract_id": "V1-MP1-I-A-1.0", "status": "FROZEN_PENDING_PUBLICATION", "executable_semantics": "V1-EXECUTABLE-SEMANTICS-A1-MP1-I-A", "g5_contract": "G5-TRADING-V1-1.2-MP1-I-A"},
+  "computation_gate": "MP1_I_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION"
 }

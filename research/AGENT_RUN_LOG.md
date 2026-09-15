@@ -212,3 +212,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Restoring the existing 2015–2019 inner-only action with RT3 augmentation and MP1-A lineage bound; R0/R1/R3/R4 recomputation remains prohibited.
 - Pre-execution contract audit found a scientifically material interface conflict: MP1-A defines one `amount/volume` ratio reference, while frozen EXEC-A defines separate amount and volume log-ratio fields and gates M2 on positive amount normalization. No data or empirical result was inspected.
 - Execution stopped before A3. No software alias, additional reference, or entry-gate amendment was inferred; relationship and RT3 artifacts remain unchanged.
+- Researcher selected `MP1-I-A`: a versioned ratio-native descendant replaces only the unsupported separate amount/volume normalization interface and uses `MP1_ratio_log_state > 0` in the existing M2 conjunction.
+- Publication guard denies data access until the MP1-I-A descendant contracts are validated and pushed. No empirical information informed the amendment.

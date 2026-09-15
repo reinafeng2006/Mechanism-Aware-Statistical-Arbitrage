@@ -1,11 +1,11 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "Researcher decision required for MP1 executable interface",
-    "status": "BLOCKED",
-    "execution_state": "PAUSED_MP1_EXECUTABLE_INTERFACE_CONFLICT",
-    "objective": "Preserve all immutable relationship and RT3 artifacts while resolving the conflict between ratio-native MP1-A and the frozen separate amount/volume PV-M2 and amount-gate semantics.",
+    "action_id": "V1-MP1-I-A-PUBLICATION-V1",
+    "name": "Publish the researcher-approved MP1-I-A ratio-native executable interface",
+    "status": "AUTHORIZED",
+    "execution_state": "MP1_I_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "objective": "Publish the versioned ratio-native A6 PV-M2 and G5 interface amendment before executable scanning or empirical access.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
@@ -18,7 +18,10 @@
       "RT3 state augmentation published and qualified for downstream use",
       "MP1-A published and bound to Phase 1"
     ],
-    "allowed_scope": [],
+    "allowed_scope": [
+      "write and validate the versioned MP1-I-A descendant contracts",
+      "normal non-force commit and push to authorized main"
+    ],
     "forbidden_scope": [
       "overwrite or mutation of existing relationship outputs",
       "R0/R1/R3/R4 recomputation",
@@ -29,13 +32,13 @@
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_MP1_INTERFACE_DECISION",
+    "dataset_access": "DENIED_UNTIL_MP1_I_A_PUBLICATION",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Researcher freezes one consistent MP1-A to PV-M2/G5 executable interface or explicitly amends V1 scope.",
+    "completion_condition": "MP1-I-A descendant contract commit is pushed before executable scanning and inner computation resume.",
     "mandatory_stop_conditions": [
       "Any material scientific or data-integrity mismatch",
       "Any OF4 or held-out access"

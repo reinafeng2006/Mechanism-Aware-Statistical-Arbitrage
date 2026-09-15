@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `PAUSED — MP1 EXECUTABLE INTERFACE CONFLICT` |
+| Stage status | `MP1-I-A FROZEN — PUBLICATION PENDING` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | pre-A3 contract audit; ratio-native MP1-A conflicts with frozen separate amount/volume PV-M2 and amount gate |
+| Current substage | publish versioned ratio-native A6/G5 interface amendment before executable scan |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `DENIED PENDING MP1 INTERFACE DECISION`; OF4 and final held-out denied |
-| Current authorized action | `NONE` |
+| Computation authorization | `DENIED UNTIL MP1-I-A PUBLICATION`; OF4 and final held-out denied |
+| Current authorized action | `V1-MP1-I-A-PUBLICATION-V1` |
 | Last validation state | RT3 augmentation 70/70 `PASS_EXACT`, zero mismatches, published as `c2ccc43` |
 | Latest local commit | `5fdfec8` — MP1-A freeze published |
 | Remote state observed | `origin/main` at `5fdfec8` |
-| Researcher action required | `YES`; resolve MP1-A ratio reference versus frozen PV-M2/G5 amount-and-volume interface |
+| Researcher action required | `NO`; publish MP1-I-A, scan executable fields, then continue if complete |
 
 ## Verified frozen chain relevant to activation
 

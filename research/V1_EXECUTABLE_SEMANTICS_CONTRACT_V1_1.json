@@ -1,0 +1,22 @@
+{
+  "schema_version": "V1-EXECUTABLE-SEMANTICS-1.1",
+  "contract_id": "V1-EXECUTABLE-SEMANTICS-A1-MP1-I-A",
+  "ancestor": "V1-EXECUTABLE-SEMANTICS-A1",
+  "amendment": "V1-MP1-I-A-1.0",
+  "status": "FROZEN_PENDING_PUBLICATION",
+  "unchanged_semantics": "ALL_V1_EXECUTABLE_SEMANTICS_EXCEPT_MP1_INTERFACE",
+  "a6": {
+    "pv0_column_count": 23,
+    "pv_m1_additions": 6,
+    "pv_m2_additions_ordered": ["MP0", "MP1_ratio_log_state", "MP1_ratio_available", "mechanical_return_content", "cause_proxy_overlap", "endogeneity", "overlapping_windows", "future_leakage", "flow_motive_ambiguity"],
+    "pv_m2_addition_count": 9,
+    "pv_both": "EXACT_UNION_NO_INTERACTIONS_DIAGNOSTIC_ONLY"
+  },
+  "g5": {
+    "m2_gate": "VALID_NONZERO_MP0_AND_MP1_RATIO_AVAILABLE_AND_MP1_RATIO_LOG_STATE_GT_0_WITHOUT_REJECTION_INVALIDITY_FUTURE_LEAKAGE_CONFLICT_OR_ELIGIBILITY_BLOCK",
+    "extra_threshold": "PROHIBITED",
+    "mp1_alone_creates_trade": false
+  },
+  "of4_access": "DENIED",
+  "held_out_access": "SEALED_DENIED"
+}
