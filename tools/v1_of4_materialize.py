@@ -208,7 +208,8 @@ def compress_finalize(input_hash: str, shard: int = 0, shards: int = 1) -> None:
     manifest = {"manifest_id": "V1-PO-C-OF4-RELATIONSHIP-STAGE-1.0", "status": "IMMUTABLE_COMPLETE_CHECKSUMMED", "po_c_commit": "7fcfd3c9da73c388b3e1ba9219000c6dd2e5c27b", "input_sha256": input_hash, "physical_root": str(OF4), "scientific_identity_independent_of_physical_location": True, "candidate_count": 7, "annual_folds": YEARS, "payload_count": len(records), "payloads": records, "relationship_protocol": "FROZEN_PAIR_A_R0_R1_R3_R4", "a3_a5": "AUTHORIZED_MORPHOLOGY_MATERIALIZED", "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED", "retuning": "NONE", "interpretation": "NONE_BEFORE_THIS_MANIFEST", "held_out": "2024_2025_SEALED_NOT_ACCESSED", "materialization": "TEMPORARY_WRITE_VALIDATE_CHECKSUM_ATOMIC_FINALIZE", "compression": "DETERMINISTIC_LOSSLESS"}
     FINAL_MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     temp = FINAL_MANIFEST.with_suffix(".tmp")
-    temp.write_text(json.dumps(manifest, sort_keys=True, indent=2) + "\n", encoding="utf-8")
+    with temp.open("w", encoding="utf-8", newline="\n") as stream:
+        stream.write(json.dumps(manifest, sort_keys=True, indent=2) + "\n")
     os.replace(temp, FINAL_MANIFEST)
     print(json.dumps({"manifest_id": manifest["manifest_id"], "payload_count": len(records), "result": "PASS", "values_disclosed": False}))
 
