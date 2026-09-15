@@ -192,6 +192,13 @@ $executableFieldScan = (
     $action.action.empirical_result_visibility -eq 'DENIED' -and
     $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
 )
+$consolidatedExecutablePause = (
+    $action.action.action_id -eq 'NONE' -and
+    $action.action.execution_state -eq 'PAUSED_CONSOLIDATED_EXECUTABLE_FIELD_SEMANTICS' -and
+    $action.action.dataset_access -eq 'DENIED_PENDING_CONSOLIDATED_EXECUTABLE_FIELD_DECISION' -and
+    $action.action.empirical_result_visibility -eq 'DENIED' -and
+    $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -203,7 +210,7 @@ $checks = @(
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
@@ -213,7 +220,9 @@ if ($checks -contains $false) {
     throw "V1 pre-computation gate invariant failed at check indexes: $($failedIndexes -join ',')."
 }
 
-if ($executableFieldScan) {
+if ($consolidatedExecutablePause) {
+    Write-Output 'PASS: MP1-I-A is published; downstream execution is paused at one consolidated executable-field checkpoint.'
+} elseif ($executableFieldScan) {
     Write-Output 'PASS: MP1-I-A is published; the executable field scan is documentation-only and empirical access remains denied.'
 } elseif ($mp1IApublication) {
     Write-Output 'PASS: MP1-I-A ratio-native descendant is frozen pending publication; empirical access remains denied.'

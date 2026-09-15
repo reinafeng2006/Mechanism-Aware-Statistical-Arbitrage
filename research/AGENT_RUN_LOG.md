@@ -216,3 +216,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Publication guard denies data access until the MP1-I-A descendant contracts are validated and pushed. No empirical information informed the amendment.
 - MP1-I-A ratio-native interface amendment published as commit `b33c9b2`; all legacy frozen records remain preserved as ancestry.
 - Began the authorized documentation-only consolidated executable unresolved-field scan before any A3/A5/A6/G5 computation.
+- Consolidated scan closed A3/A5/MP1 lineage mechanically but found unresolved A6 evidence/U/contamination encodings, G5 maximum pending-fill delay, and economic annualization clock. These change predictors, trading eligibility, execution or reported PnL and were not inferred in software.
+- No dataset or empirical result was accessed. Execution remains stopped at one consolidated checkpoint; relationship and RT3 artifacts remain unchanged.

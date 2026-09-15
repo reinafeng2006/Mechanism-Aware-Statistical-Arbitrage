@@ -50,6 +50,7 @@ $allowedGates = @(
     ,'PAUSED_MP1_EXECUTABLE_INTERFACE_CONFLICT'
     ,'MP1_I_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
     ,'EXECUTABLE_UNRESOLVED_FIELD_SCAN_ACTIVE_NO_EMPIRICAL_ACCESS'
+    ,'PAUSED_CONSOLIDATED_EXECUTABLE_FIELD_SEMANTICS'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -234,6 +235,13 @@ if ($contract.computation_gate -eq 'EXECUTABLE_UNRESOLVED_FIELD_SCAN_ACTIVE_NO_E
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'Executable scan must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($contract.mp1_executable_interface.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'MP1-I-A publication binding mismatch.' }
+}
+if ($contract.computation_gate -eq 'PAUSED_CONSOLIDATED_EXECUTABLE_FIELD_SEMANTICS') {
+    if ($next.action.action_id -ne 'NONE') { throw 'Executable-field pause must not retain an executable action.' }
+    if ($next.action.dataset_access -ne 'DENIED_PENDING_CONSOLIDATED_EXECUTABLE_FIELD_DECISION') { throw 'Executable-field pause must deny dataset access.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'Executable-field pause must deny empirical visibility.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($contract.mp1_executable_interface.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'MP1-I-A publication regressed.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'
