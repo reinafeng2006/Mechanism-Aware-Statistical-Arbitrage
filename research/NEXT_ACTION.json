@@ -1,25 +1,31 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-MP1-A-PUBLICATION-V1",
-    "name": "Publish the researcher-approved MP1-A reference contract",
+    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
+    "name": "Continue V1 Phase 1 from frozen relationship outputs through A3/A5/A6/G5",
     "status": "AUTHORIZED",
-    "execution_state": "MP1_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
-    "objective": "Publish common candidate-neutral H126/U1W MP1 reference semantics before downstream empirical access.",
+    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
+    "objective": "Use the preserved relationship checkpoint, published SG-A and MP1-A rules, and qualified RT3 state augmentation to materialize checksummed A3, A5, A6, and G5 inner-development artifacts.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
       "No A3/A5/A6/G5 result or OF4/held-out information inspected",
       "SG-A published and bound to Phase 1",
-      "All prior PAIR-A, EXEC-A, CF-A, A6-TG-A, DC-A, EP-A, DECA-A, and SG-A contracts published",
+      "All prior PAIR-A, EXEC-A, CF-A, A6-TG-A, DC-A, EP-A, DECA-A, SG-A, and MP1-A contracts published",
       "Existing relationship partitions and hashes preserved",
       "Researcher selected RT3-A",
       "All 70 augmentation partitions passed exact shared-field equivalence",
-      "RT3 state augmentation published and qualified for downstream use"
+      "RT3 state augmentation published and qualified for downstream use",
+      "MP1-A published and bound to Phase 1"
     ],
     "allowed_scope": [
-      "write and validate the MP1-A decision and contract",
-      "normal non-force commit and push to authorized main"
+      "read 2013-2014 solely as frozen formation/warm-up input without producing evaluation evidence",
+      "derive A3 abnormality records for 2015-2019 inner only without relationship recomputation",
+      "derive A5 continuous resolution components at O1/O5/O10/O20 using the event-time RT3 state companion",
+      "construct MP1 using the published common H126/U1W PIT reference",
+      "fit A6 only under expanding completed-inner A6-TG-A",
+      "execute frozen G5 inner simulation and materialize immutable/checksummed outputs",
+      "normal non-force commits and pushes"
     ],
     "forbidden_scope": [
       "overwrite or mutation of existing relationship outputs",
@@ -31,15 +37,15 @@
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_MP1_A_PUBLICATION",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "FROZEN_2013_2014_WARMUP_INPUT_PLUS_2015_2019_INNER_ONLY",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "MP1-A protocol commit is pushed before inner computation resumes.",
+    "completion_condition": "Validated immutable A3/A5/A6/G5 inner outputs and PRE-OUTER checkpoint, or a genuine new integrity blocker.",
     "mandatory_stop_conditions": [
-      "Any data or empirical access before RT3 resolution",
+      "Any material scientific or data-integrity mismatch",
       "Any OF4 or held-out access"
     ]
   }

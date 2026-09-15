@@ -208,3 +208,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Base commit: `5f1d9e3`; local and `origin/main` matched; unrelated `.venv/` and cache artifacts remain excluded.
 - Frozen rule: median of the most recent 126 qualified, finite, positive `amount/volume` observations strictly before the first authorized eligible ISO-week refresh; common across R0/R1/R3/R4 and carried within week.
 - Publication guard: no empirical access resumes until the MP1-A contract commit is pushed. OF4 and held-out remain denied.
+- MP1-A freeze published as commit `5fdfec8`; the common H126/U1W reference is bound to Phase 1.
+- Restoring the existing 2015–2019 inner-only action with RT3 augmentation and MP1-A lineage bound; R0/R1/R3/R4 recomputation remains prohibited.

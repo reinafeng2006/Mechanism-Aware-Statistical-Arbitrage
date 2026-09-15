@@ -1,7 +1,7 @@
 {
   "schema_version": "V1-MP1-A-CONTRACT-1.0",
   "decision_id": "V1-MP1-A-1.0",
-  "status": "FROZEN_PENDING_PUBLICATION",
+  "status": "PUBLISHED_BOUND_TO_PHASE1",
   "reference_object": "AMOUNT_DIVIDED_BY_VOLUME",
   "estimator": "MEDIAN",
   "history": "MOST_RECENT_126_QUALIFIED_OBSERVATIONS",
