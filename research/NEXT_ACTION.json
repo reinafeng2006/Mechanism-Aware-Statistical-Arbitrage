@@ -1,11 +1,11 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-EV-A-V1-FD-A-ER-A-PUBLICATION-V1",
-    "name": "Publish the approved conservative executable-field closure",
+    "action_id": "V1-PAIR-A-PHASE1-INNER-EXECUTION-V1",
+    "name": "Continue V1 Phase 1 from frozen relationship outputs through A3/A5/A6/G5",
     "status": "AUTHORIZED",
-    "execution_state": "EV_A_V1_FD_A_ER_A_QUALIFIED_PENDING_PUBLICATION",
-    "objective": "Publish the versioned EV-A-V1, FD-A, and ER-A closure before final field audit or empirical access.",
+    "execution_state": "ACTIVE_2015_2019_INNER_ONLY",
+    "objective": "Use preserved relationship/RT3 checkpoints and the closed executable semantics to materialize checksummed A3/A5/A6/G5 inner outputs.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
@@ -18,7 +18,7 @@
       "RT3 state augmentation published and qualified for downstream use",
       "MP1-A published and bound to Phase 1"
     ],
-    "allowed_scope": ["write and validate the approved versioned closure", "normal non-force commit and push to authorized main"],
+    "allowed_scope": ["read 2013-2014 solely as formation/warm-up input", "derive A3 for 2015-2019 inner only", "derive A5 RT0-RT3 at O1/O5/O10/O20", "fit A6 under A6-TG-A", "execute frozen G5 inner simulation", "materialize immutable outputs and manifests", "normal non-force commit and push"],
     "forbidden_scope": [
       "overwrite or mutation of existing relationship outputs",
       "R0/R1/R3/R4 recomputation",
@@ -29,13 +29,13 @@
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_UNTIL_EXECUTABLE_CLOSURE_PUBLICATION",
-    "empirical_result_visibility": "DENIED",
+    "dataset_access": "FROZEN_2013_2014_WARMUP_INPUT_PLUS_2015_2019_INNER_ONLY",
+    "empirical_result_visibility": "2015_2019_INNER_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Closure commit is pushed before final executable-field audit and inner execution.",
+    "completion_condition": "Validated immutable A3/A5/A6/G5 inner outputs and PRE-OUTER checkpoint, or genuine integrity blocker.",
     "mandatory_stop_conditions": [
       "Any material scientific or data-integrity mismatch",
       "Any OF4 or held-out access"

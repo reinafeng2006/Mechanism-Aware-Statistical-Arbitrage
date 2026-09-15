@@ -220,3 +220,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - No dataset or empirical result was accessed. Execution remains stopped at one consolidated checkpoint; relationship and RT3 artifacts remain unchanged.
 - Researcher explicitly approved the conservative EV-A-V1 field mapping, including `M1_evidence_unavailable`, three-state contamination/U/M0 semantics, and the invalidity/break split, plus FD-A and ER-A.
 - Publication guard denies all data access until the versioned closure is validated and pushed. Existing relationship and RT3 artifacts remain immutable.
+- EV-A-V1, FD-A and ER-A closure published as commit `4b14550`.
+- Final machine-readable executable-field audit passed with zero unresolved estimand, target or trading-policy fields. `V1 EXECUTABLE SEMANTICS CLOSED`; restoring 2015-2019 inner-only execution without relationship/RT3 recomputation.

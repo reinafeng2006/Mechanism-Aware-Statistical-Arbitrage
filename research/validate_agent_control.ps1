@@ -70,6 +70,8 @@ if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOC
         if ($contract.a6_c06_stale_gap.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published SG-A semantics.' }
         if ($contract.rt3_state_augmentation.status -ne 'PUBLISHED_AUGMENTATION_QUALIFIED') { throw 'PAIR-A inner action lacks the qualified RT3 state augmentation.' }
         if ($contract.mp1_reference.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published MP1-A semantics.' }
+        if ($contract.mp1_executable_interface.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PAIR-A inner action lacks published MP1-I-A semantics.' }
+        if ($contract.downstream_executable_closure.status -ne 'PUBLISHED_BOUND_TO_PHASE1' -or $contract.downstream_executable_closure.final_field_audit -ne 'PASS') { throw 'PAIR-A inner action lacks the final executable closure.' }
     }
 }
 if ($contract.computation_gate -eq 'PAUSED_PAIR_UNIVERSE_FORMATION_RULE_NOT_FROZEN') {

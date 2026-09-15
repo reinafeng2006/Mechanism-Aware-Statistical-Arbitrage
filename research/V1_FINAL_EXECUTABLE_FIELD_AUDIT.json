@@ -1,0 +1,19 @@
+{
+  "schema_version": "V1-FINAL-EXECUTABLE-FIELD-AUDIT-1.0",
+  "audit_id": "V1-FINAL-EXECUTABLE-FIELD-AUDIT-1.0",
+  "status": "PASS",
+  "empirical_access": false,
+  "layers": {
+    "A3": {"directional_departure": "BOUND", "candidate_neutral_scale": "BOUND", "scale_failure": "BOUND", "same_decision_order": "BOUND"},
+    "A5": {"RT0_RT1_RT2_RT3": "BOUND", "horizons": [1,5,10,20], "event_time_state": "RT3_A_QUALIFIED", "target_censoring": "BOUND"},
+    "A6_PV0": {"column_count": 32, "three_state_evidence": "BOUND", "u_dimensions": 5, "m0": "POSITIVE_OR_UNAVAILABLE", "invalidity_break_split": "BOUND"},
+    "A6_PV_M1": {"addition_count": 7, "unavailable_field": "M1_evidence_unavailable", "morphology_is_not_evidence": true},
+    "A6_PV_M2": {"addition_count": 15, "mp1": "RATIO_NATIVE_H126_U1W", "contamination_dimensions": 6, "three_state_contamination": "BOUND"},
+    "G5": {"m1_m2_are_directional_probes_not_identification": true, "execution": "NEXT_ELIGIBLE_OPEN_ONLY", "failed_execution": "EXECUTION_UNAVAILABLE", "annualization_sessions": 252}
+  },
+  "current_v1_limitations": ["NO_QUALIFIED_CONTEXTUAL_M1_IDENTIFICATION_SOURCE_IMPLIES_M1_EVIDENCE_UNAVAILABLE", "NO_EXHAUSTIVE_NEGATIVE_M0_SOURCE_IMPLIES_ORDINARY_NO_RECORD_M0_UNAVAILABLE", "NO_QUALIFIED_RELATIONSHIP_BREAK_CONTRACT_IMPLIES_BREAK_EVIDENCE_UNAVAILABLE", "NO_EXHAUSTIVE_FLOW_MOTIVE_CONTRACT_IMPLIES_FLOW_MOTIVE_AMBIGUITY_UNAVAILABLE"],
+  "unresolved_estimand_target_or_trading_policy_fields": [],
+  "declaration": "V1 EXECUTABLE SEMANTICS CLOSED",
+  "of4_access": "DENIED",
+  "held_out_access": "SEALED_DENIED"
+}
