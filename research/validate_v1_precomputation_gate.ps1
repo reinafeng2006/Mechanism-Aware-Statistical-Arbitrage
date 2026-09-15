@@ -199,6 +199,13 @@ $consolidatedExecutablePause = (
     $action.action.empirical_result_visibility -eq 'DENIED' -and
     $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
 )
+$executableClosurePublication = (
+    $action.action.action_id -eq 'V1-EV-A-V1-FD-A-ER-A-PUBLICATION-V1' -and
+    $action.action.execution_state -eq 'EV_A_V1_FD_A_ER_A_QUALIFIED_PENDING_PUBLICATION' -and
+    $action.action.dataset_access -eq 'DENIED_UNTIL_EXECUTABLE_CLOSURE_PUBLICATION' -and
+    $action.action.empirical_result_visibility -eq 'DENIED' -and
+    $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -210,7 +217,7 @@ $checks = @(
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
@@ -220,7 +227,9 @@ if ($checks -contains $false) {
     throw "V1 pre-computation gate invariant failed at check indexes: $($failedIndexes -join ',')."
 }
 
-if ($consolidatedExecutablePause) {
+if ($executableClosurePublication) {
+    Write-Output 'PASS: EV-A-V1, FD-A, and ER-A are frozen pending publication; empirical access remains denied.'
+} elseif ($consolidatedExecutablePause) {
     Write-Output 'PASS: MP1-I-A is published; downstream execution is paused at one consolidated executable-field checkpoint.'
 } elseif ($executableFieldScan) {
     Write-Output 'PASS: MP1-I-A is published; the executable field scan is documentation-only and empirical access remains denied.'

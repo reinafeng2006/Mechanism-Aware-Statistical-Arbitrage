@@ -1,0 +1,38 @@
+{
+  "schema_version": "V1-EXECUTABLE-CLOSURE-1.0",
+  "contract_id": "V1-EXECUTABLE-CLOSURE-EV-A-V1-FD-A-ER-A-1.0",
+  "status": "FROZEN_PENDING_PUBLICATION",
+  "ancestry": ["G4-04A4", "V1-EXECUTABLE-SEMANTICS-A1-MP1-I-A", "A6-PV0-PV-M1-PV-M2", "G5-TRADING-V1-1.2-MP1-I-A"],
+  "three_state_encoding": {"ABSENT": [0,0], "PRESENT": [1,0], "UNAVAILABLE": [0,1], "INVALID": [1,1]},
+  "general_rules": ["NOT_OBSERVED_NE_ABSENT", "MISSING_UNQUALIFIED_NE_ABSENT", "UNAVAILABLE_NE_ZERO", "MORPHOLOGY_NE_MECHANISM_EVIDENCE"],
+  "pv0": {
+    "frozen_prefix_columns": 16,
+    "u_dimensions": ["measurement_uncertainty", "information_insufficiency", "mechanism_ambiguity", "evidence_conflict", "data_provenance_uncertainty"],
+    "u_encoding": "PRESENT_AND_UNAVAILABLE_PER_DIMENSION",
+    "m0_fields": ["M0_present", "M0_unavailable"],
+    "m0_no_record": "UNAVAILABLE_WITHOUT_EXHAUSTIVE_NEGATIVE_COVERAGE",
+    "invalidity_fields": ["mechanical_or_data_invalidity_present", "mechanical_or_data_invalidity_unavailable"],
+    "break_fields": ["relationship_break_evidence_present", "relationship_break_evidence_unavailable"],
+    "relationship_break_without_qualified_contract": "UNAVAILABLE",
+    "column_count": 32
+  },
+  "pv_m1": {
+    "numeric_fields": ["UR0_over_PS0_peer", "UR1_value_or_zero", "UR1_available"],
+    "state_fields": ["M1_support", "M1_oppose", "M1_ambiguous", "M1_evidence_unavailable"],
+    "addition_count": 7,
+    "morphology_alone_sets_support": false,
+    "no_qualified_contextual_source": "M1_EVIDENCE_UNAVAILABLE"
+  },
+  "pv_m2": {
+    "numeric_fields": ["MP0", "MP1_ratio_log_state", "MP1_ratio_available"],
+    "contamination_dimensions": ["mechanical_return_content", "cause_proxy_overlap", "endogeneity", "overlapping_windows", "future_leakage", "flow_motive_ambiguity"],
+    "contamination_encoding": "PRESENT_AND_UNAVAILABLE_PER_DIMENSION",
+    "addition_count": 15,
+    "mp0_mp1_presence_sets_flow_motive_ambiguity": false
+  },
+  "fd_a": {"execution_opportunity": "NEXT_ELIGIBLE_OPEN_ONLY", "failure": "EXECUTION_UNAVAILABLE", "carry_forward": false, "delayed_fill_search_budget": "NONE", "unavailable_effects": {"trade": false, "pnl": false, "turnover": false, "exposure": false, "episode": false}},
+  "er_a": {"sessions_per_year": 252, "role": "REPORTING_ONLY_NOT_SELECTION", "raw_outputs": ["cumulative_return", "realized_duration_support", "raw_pnl", "net_pnl", "trade_count", "turnover", "maximum_drawdown"]},
+  "empirical_information_used": false,
+  "of4_access": "DENIED",
+  "held_out_access": "SEALED_DENIED"
+}

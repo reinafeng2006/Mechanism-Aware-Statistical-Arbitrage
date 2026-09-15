@@ -218,3 +218,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Began the authorized documentation-only consolidated executable unresolved-field scan before any A3/A5/A6/G5 computation.
 - Consolidated scan closed A3/A5/MP1 lineage mechanically but found unresolved A6 evidence/U/contamination encodings, G5 maximum pending-fill delay, and economic annualization clock. These change predictors, trading eligibility, execution or reported PnL and were not inferred in software.
 - No dataset or empirical result was accessed. Execution remains stopped at one consolidated checkpoint; relationship and RT3 artifacts remain unchanged.
+- Researcher explicitly approved the conservative EV-A-V1 field mapping, including `M1_evidence_unavailable`, three-state contamination/U/M0 semantics, and the invalidity/break split, plus FD-A and ER-A.
+- Publication guard denies all data access until the versioned closure is validated and pushed. Existing relationship and RT3 artifacts remain immutable.

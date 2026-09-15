@@ -11,6 +11,8 @@
     "MP1_alone_creates_trade": false,
     "additional_threshold": "NONE"
   },
+  "execution": {"opportunity": "NEXT_ELIGIBLE_OPEN_ONLY", "failure": "EXECUTION_UNAVAILABLE", "carry_forward": false, "delayed_fill_budget": "NONE"},
+  "reporting": {"annualization_sessions": 252, "annualization_role": "REPORTING_ONLY_NOT_SELECTION", "raw_nonannualized_required": true},
   "interpretation": "AMOUNT_DIVIDED_BY_VOLUME_IS_TRANSACTION_PRICE_REFERENCE_STATE_PROXY_NOT_PURE_LIQUIDITY_PRESSURE",
   "of4_access": "DENIED",
   "held_out_access": "SEALED_DENIED"

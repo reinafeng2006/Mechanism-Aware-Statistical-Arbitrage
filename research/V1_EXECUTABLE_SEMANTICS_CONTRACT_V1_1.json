@@ -6,16 +6,22 @@
   "status": "PUBLISHED_BOUND_TO_PHASE1",
   "unchanged_semantics": "ALL_V1_EXECUTABLE_SEMANTICS_EXCEPT_MP1_INTERFACE",
   "a6": {
-    "pv0_column_count": 23,
-    "pv_m1_additions": 6,
-    "pv_m2_additions_ordered": ["MP0", "MP1_ratio_log_state", "MP1_ratio_available", "mechanical_return_content", "cause_proxy_overlap", "endogeneity", "overlapping_windows", "future_leakage", "flow_motive_ambiguity"],
-    "pv_m2_addition_count": 9,
+    "field_closure": "V1-EXECUTABLE-CLOSURE-EV-A-V1-FD-A-ER-A-1.0",
+    "pv0_column_count": 32,
+    "pv0_state_encoding": "PRESENT_AND_UNAVAILABLE_PER_PROPOSITION",
+    "pv_m1_additions_ordered": ["UR0_over_PS0_peer", "UR1_value_or_zero", "UR1_available", "M1_support", "M1_oppose", "M1_ambiguous", "M1_evidence_unavailable"],
+    "pv_m1_additions": 7,
+    "pv_m2_additions_ordered": ["MP0", "MP1_ratio_log_state", "MP1_ratio_available", "mechanical_return_content_present", "mechanical_return_content_unavailable", "cause_proxy_overlap_present", "cause_proxy_overlap_unavailable", "endogeneity_present", "endogeneity_unavailable", "overlapping_windows_present", "overlapping_windows_unavailable", "future_leakage_present", "future_leakage_unavailable", "flow_motive_ambiguity_present", "flow_motive_ambiguity_unavailable"],
+    "pv_m2_addition_count": 15,
     "pv_both": "EXACT_UNION_NO_INTERACTIONS_DIAGNOSTIC_ONLY"
   },
   "g5": {
     "m2_gate": "VALID_NONZERO_MP0_AND_MP1_RATIO_AVAILABLE_AND_MP1_RATIO_LOG_STATE_GT_0_WITHOUT_REJECTION_INVALIDITY_FUTURE_LEAKAGE_CONFLICT_OR_ELIGIBILITY_BLOCK",
     "extra_threshold": "PROHIBITED",
-    "mp1_alone_creates_trade": false
+    "mp1_alone_creates_trade": false,
+    "execution": "NEXT_ELIGIBLE_OPEN_ONLY_NO_DELAY",
+    "execution_failure": "EXECUTION_UNAVAILABLE",
+    "annualization_sessions": 252
   },
   "of4_access": "DENIED",
   "held_out_access": "SEALED_DENIED"
