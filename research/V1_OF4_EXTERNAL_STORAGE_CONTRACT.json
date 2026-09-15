@@ -1,7 +1,7 @@
 {
   "schema_version": "V1-OF4-EXTERNAL-STORAGE-1.0",
   "decision_id": "V1-OF4-EXTERNAL-STORAGE",
-  "status": "QUALIFIED_PENDING_PUBLICATION",
+  "status": "PUBLISHED_BOUND_TO_PO_C",
   "physical_artifact_root": "D:\\MechanismAwareStatArbData",
   "of4_payload_root": "D:\\MechanismAwareStatArbData\\OF4",
   "preflight": {

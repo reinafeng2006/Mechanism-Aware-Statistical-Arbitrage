@@ -1,44 +1,23 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-PO-C-EXTERNAL-STORAGE-PUBLICATION",
-    "name": "Publish PO-C storage audit and external storage authorization",
+    "action_id": "V1-PO-C-RELATIONSHIP-OF4-EXECUTION",
+    "name": "Execute frozen PO-C relationship-stage OF4",
     "status": "AUTHORIZED",
-    "execution_state": "OF4_EXTERNAL_STORAGE_QUALIFIED_PENDING_PUBLICATION",
-    "objective": "Publish the completed C-drive capacity audit and qualified D-drive external storage contract before any 2020-2023 access.",
-    "prerequisites": [
-      "DECA-A published",
-      "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
-      "No A3/A5/A6/G5 result or OF4/held-out information inspected",
-      "SG-A published and bound to Phase 1",
-      "All prior PAIR-A, EXEC-A, CF-A, A6-TG-A, DC-A, EP-A, DECA-A, SG-A, and MP1-A contracts published",
-      "Existing relationship partitions and hashes preserved",
-      "Researcher selected RT3-A",
-      "All 70 augmentation partitions passed exact shared-field equivalence",
-      "RT3 state augmentation published and qualified for downstream use",
-      "MP1-A published and bound to Phase 1"
-    ],
-    "allowed_scope": ["validate PO-C", "validate storage contracts", "commit and push governance only"],
-    "forbidden_scope": [
-      "overwrite or mutation of existing relationship outputs",
-      "R0/R1/R3/R4 recomputation",
-      "2013-2014 evaluation evidence or empirical-result visibility",
-      "scientific or trading semantic change",
-      "constant-current-mu substitution for frozen RT3",
-      "silent RT3 omission or target amendment",
-      "OF4 2020-2023 access",
-      "2024-2025 held-out access"
-    ],
-    "dataset_access": "DENIED_UNTIL_EXTERNAL_STORAGE_PUBLICATION",
-    "empirical_result_visibility": "DENIED",
+    "execution_state": "AUTHORIZED_2020_2023_RELATIONSHIP_OF4",
+    "objective": "Materialize, validate and checksum the frozen 2020-2023 relationship-stage OF4 and authorized A3/A5 morphology, then apply the frozen relationship-level evaluation protocol without retuning and stop at the pre-held-out V1 gate.",
+    "prerequisites": ["PO-C published at 7fcfd3c", "External storage contract published and preflight passed", "CORE-DATASET-FREEZE-V1 fingerprint verified", "Existing relationship, RT3 and A3/A5 artifacts verified immutable", "A6 and G5 remain V1 non-estimable and not executed"],
+    "allowed_scope": ["read frozen 2013-2019 formation and development ancestry", "read only 2020-2023 OF4 market and qualified PIT inputs", "execute frozen PAIR-A R0/R1/R3/R4 specifications", "materialize frozen RT3 state and authorized A3/A5 morphology", "apply frozen A1 CS2 SR0-to-SR1 aggregation multiplicity and severe-failure rules", "write deterministic losslessly compressed OF4 payloads under D:\\MechanismAwareStatArbData\\OF4", "write repository manifests hashes lineage governance validators and implementation", "commit and push governance code and manifests to origin main"],
+    "forbidden_scope": ["overwrite mutation move or deletion of existing core inner relationship RT3 or A3/A5 artifacts", "Top-K sampling pair-universe reduction field deletion lossy rounding or year reduction", "retuning candidate model equation estimator feature H U Search Budget eligibility metric threshold aggregation multiplicity or severe-failure rules", "A6 redesign execution or interpretation", "G5 execution trade turnover or PnL creation", "2024-2025 held-out access", "scientific semantic modification"],
+    "dataset_access": "FROZEN_2013_2019_ANCESTRY_PLUS_2020_2023_OF4_ONLY",
+    "empirical_result_visibility": "METADATA_HASHES_ONLY_UNTIL_ALL_OF4_ARTIFACTS_ARE_FINALIZED_AND_CHECKSUMMED_THEN_FROZEN_RELATIONSHIP_PROTOCOL_ONLY",
     "held_out_access": "SEALED_DENIED",
+    "external_storage_root": "D:\\MechanismAwareStatArbData\\OF4",
+    "materialization_contract": "TEMPORARY_WRITE_VALIDATE_CHECKSUM_ATOMIC_FINALIZE_DETERMINISTIC_LOSSLESS",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "PO-C, the storage audit and external storage contract are published before relationship-only OF4 execution.",
-    "mandatory_stop_conditions": [
-      "Any material scientific or data-integrity mismatch",
-      "Any OF4 or held-out access"
-    ]
+    "completion_condition": "All authorized 2020-2023 relationship RT3 A3/A5 and frozen evaluation artifacts are finalized checksummed validated and published; NEXT_ACTION is NONE at PRE-HELD-OUT V1 GATE.",
+    "mandatory_stop_conditions": ["Committed-state reconstruction or immutable integrity failure", "External storage preflight or atomic-finalization failure", "A new decision would change scientific semantics", "Any command requires 2024-2025 held-out access"]
   }
 }

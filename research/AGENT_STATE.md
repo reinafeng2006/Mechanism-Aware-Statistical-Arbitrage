@@ -7,18 +7,18 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `PO-C PUBLISHED — EXTERNAL STORAGE PUBLICATION GUARD BEFORE OF4` |
+| Stage status | `PO-C PUBLISHED — RELATIONSHIP-STAGE OF4 EXECUTION ACTIVE` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | publish completed C-drive audit and qualified D-drive storage contract; then execute OF4 |
+| Current substage | execute and checksum frozen 2020–2023 relationship-stage OF4; A6/G5 excluded |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `DENIED UNTIL EXTERNAL STORAGE CONTRACT PUBLICATION`; held-out denied |
-| Current authorized action | `V1-PO-C-EXTERNAL-STORAGE-PUBLICATION` |
+| Computation authorization | `2013–2019 ancestry + 2020–2023 relationship OF4 ONLY`; held-out denied |
+| Current authorized action | `V1-PO-C-RELATIONSHIP-OF4-EXECUTION` |
 | Last validation state | D-drive external OF4 root writable with 808,974,237,696 free bytes; projected safe peak 49,723,741,022 bytes |
-| Latest local commit | `7fcfd3c` — PO-C published |
-| Remote state observed | `origin/main` at `f2fde2f` before this checkpoint |
+| Latest local commit | `4d793d1` — external OF4 storage governance published |
+| Remote state observed | `origin/main` at `4d793d1` before OF4 activation |
 | Researcher action required | `NO`; PO-C selected |
 
 ## Verified frozen chain relevant to activation

@@ -5,6 +5,7 @@ $po = Get-Content -Raw (Join-Path $PSScriptRoot 'V1_PO_C_CONTRACT.json') | Conve
 if ($po.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PO-C publication binding missing.' }
 if ($audit.original_disposition -ne 'FAIL_UNSAFE_CAPACITY_ON_C_DRIVE') { throw 'Original storage blocker not preserved.' }
 if ($audit.scientific_access -ne 'NO_OF4_MARKET_VALUES_OR_OUTCOMES_ACCESSED') { throw 'Preflight crossed scientific access boundary.' }
+if ($storage.status -notin @('QUALIFIED_PENDING_PUBLICATION','PUBLISHED_BOUND_TO_PO_C')) { throw 'External storage publication state is invalid.' }
 if ($storage.preflight.status -ne 'PASS') { throw 'External storage preflight failed.' }
 if ([int64]$storage.preflight.free_bytes -lt [int64]$storage.preflight.minimum_required_free_bytes) { throw 'External free space below 60 GB.' }
 if ([int64]$storage.preflight.free_bytes -lt [int64]$storage.preflight.projected_safe_peak_bytes) { throw 'Projected peak does not fit.' }
