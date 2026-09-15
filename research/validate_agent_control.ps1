@@ -47,6 +47,7 @@ $allowedGates = @(
     ,'RT3_A_STATE_AUGMENTATION_ACTIVE_NO_INTERPRETATION'
     ,'PAUSED_MP1_PIT_REFERENCE_WINDOW_NOT_FROZEN'
     ,'MP1_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION'
+    ,'PAUSED_MP1_EXECUTABLE_INTERFACE_CONFLICT'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -209,6 +210,14 @@ if ($contract.computation_gate -eq 'MP1_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'MP1-A publication must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($contract.mp1_reference.status -ne 'FROZEN_PENDING_PUBLICATION') { throw 'MP1-A contract binding mismatch.' }
+}
+if ($contract.computation_gate -eq 'PAUSED_MP1_EXECUTABLE_INTERFACE_CONFLICT') {
+    if ($next.action.action_id -ne 'NONE') { throw 'MP1 interface conflict must not retain an executable action.' }
+    if ($next.action.dataset_access -ne 'DENIED_PENDING_MP1_INTERFACE_DECISION') { throw 'MP1 interface conflict must deny dataset access.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'MP1 interface conflict must deny empirical visibility.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($contract.mp1_reference.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'MP1-A publication regressed.' }
+    if ($contract.rt3_state_augmentation.status -ne 'PUBLISHED_AUGMENTATION_QUALIFIED') { throw 'RT3 qualification regressed.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

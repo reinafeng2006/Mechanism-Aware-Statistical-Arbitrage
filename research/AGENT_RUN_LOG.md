@@ -210,3 +210,5 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Publication guard: no empirical access resumes until the MP1-A contract commit is pushed. OF4 and held-out remain denied.
 - MP1-A freeze published as commit `5fdfec8`; the common H126/U1W reference is bound to Phase 1.
 - Restoring the existing 2015–2019 inner-only action with RT3 augmentation and MP1-A lineage bound; R0/R1/R3/R4 recomputation remains prohibited.
+- Pre-execution contract audit found a scientifically material interface conflict: MP1-A defines one `amount/volume` ratio reference, while frozen EXEC-A defines separate amount and volume log-ratio fields and gates M2 on positive amount normalization. No data or empirical result was inspected.
+- Execution stopped before A3. No software alias, additional reference, or entry-gate amendment was inferred; relationship and RT3 artifacts remain unchanged.
