@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `EV-MAP-B APPROVED — PUBLICATION GUARD BEFORE INNER RESUME` |
+| Stage status | `PRE-OUTER V1 GATE — RESEARCHER DECISION REQUIRED` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | publish EV-MAP-B; then resume A6/G5 from validated A3/A5 |
+| Current substage | inner execution structurally complete; OF4 remains denied |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `DENIED UNTIL EV-MAP-B PUBLICATION`; OF4 and final held-out denied |
-| Current authorized action | `V1-EV-MAP-B-PUBLICATION` |
-| Last validation state | A3/A5 70/70 hashes, ancestry, shapes and semiannual censoring `PASS` |
-| Latest local commit | pending validated A3/A5 checkpoint commit |
+| Computation authorization | `PAUSED AT PRE-OUTER GATE`; OF4 and final held-out denied |
+| Current authorized action | `NONE — PRE-OUTER researcher decision required` |
+| Last validation state | EV-MAP-B 70/70 row audits; 4,032 A6 estimability dispositions; G5 admission gate `PASS` |
+| Latest local commit | pending inner completion/pre-outer checkpoint commit |
 | Remote state observed | `origin/main` at `f2fde2f` before this checkpoint |
-| Researcher action required | `NO`; EV-MAP-B explicitly selected |
+| Researcher action required | `YES`; select pre-outer disposition |
 
 ## Verified frozen chain relevant to activation
 

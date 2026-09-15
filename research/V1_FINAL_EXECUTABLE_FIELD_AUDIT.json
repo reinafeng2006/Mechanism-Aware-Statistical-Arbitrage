@@ -2,6 +2,7 @@
   "schema_version": "V1-FINAL-EXECUTABLE-FIELD-AUDIT-1.0",
   "audit_id": "V1-FINAL-EXECUTABLE-FIELD-AUDIT-1.0",
   "status": "PASS",
+  "ev_map_b": "PUBLISHED_BOUND_TO_PHASE1_WITH_SOURCE_QUALIFIED_ROW_LEVEL_EXCEPTIONS",
   "empirical_access": false,
   "layers": {
     "A3": {"directional_departure": "BOUND", "candidate_neutral_scale": "BOUND", "scale_failure": "BOUND", "same_decision_order": "BOUND"},

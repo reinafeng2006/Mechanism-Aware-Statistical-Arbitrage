@@ -1,7 +1,7 @@
 {
   "schema_version": "V1-EV-MAP-B-1.0",
   "decision_id": "EV-MAP-B",
-  "status": "FROZEN_PENDING_PUBLICATION",
+  "status": "PUBLISHED_BOUND_TO_PHASE1",
   "governing_rule": "UNSUPPORTED_QUALIFIED_EVIDENCE_PROPOSITION_IS_UNAVAILABLE_FOR_V1_NOT_ALL_FIELDS",
   "three_state_rule": {"present": "QUALIFIED_PIT_POSITIVE", "absent": "QUALIFIED_EXHAUSTIVE_NEGATIVE", "unavailable": "NEITHER_DETERMINATION_IS_QUALIFIED"},
   "global_unavailable": ["M1_contextual_support_opposition_ambiguity", "flow_motive_identification", "endogeneity_exogeneity_identification", "M0_positive_and_exhaustive_negative", "relationship_break_evidence"],

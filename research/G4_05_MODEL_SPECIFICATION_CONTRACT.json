@@ -108,6 +108,6 @@
   "mp1_reference": {"contract_id": "V1-MP1-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1"},
   "mp1_executable_interface": {"contract_id": "V1-MP1-I-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1", "executable_semantics": "V1-EXECUTABLE-SEMANTICS-A1-MP1-I-A", "g5_contract": "G5-TRADING-V1-1.2-MP1-I-A"},
   "downstream_executable_closure": {"contract_id": "V1-EXECUTABLE-CLOSURE-EV-A-V1-FD-A-ER-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1", "final_field_audit": "PASS"},
-  "ev_map_b": {"decision_id": "EV-MAP-B", "status": "FROZEN_PENDING_PUBLICATION", "claim_scope": "MECHANISM_MOTIVATED_PROBES_NOT_FULL_CAUSAL_IDENTIFICATION"},
-  "computation_gate": "EV_MAP_B_QUALIFIED_PENDING_PUBLICATION"
+  "ev_map_b": {"decision_id": "EV-MAP-B", "status": "PUBLISHED_BOUND_TO_PHASE1", "claim_scope": "MECHANISM_MOTIVATED_PROBES_NOT_FULL_CAUSAL_IDENTIFICATION"},
+  "computation_gate": "PRE_OUTER_V1_GATE_RESEARCHER_DECISION_REQUIRED"
 }

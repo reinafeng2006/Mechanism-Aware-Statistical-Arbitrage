@@ -231,3 +231,8 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - The workspace approval control rejected two attempts to globally hardcode unqualified evidence fields as unavailable because that would predetermine A6/G5 dispositions without a source-bound row mapping. No workaround was attempted.
 - Paused before A6/G5. No OF4 or held-out access; no relationship/RT3 recomputation; no result interpretation.
 - Researcher selected `EV-MAP-B` with source-qualified row-level exceptions. Publication guard activated before any A6/G5 data access.
+- EV-MAP-B published as commit `a1bbdb6`; inner-only access restored from the validated A3/A5 checkpoint.
+- Audited 70 partitions and 273,371,732 relationship-event rows under qualified row-level exceptions. No relationship, RT3 or A3/A5 artifact was recomputed.
+- All 4,032 A6 fitting problems were unavailable under the frozen full-rank/no-column-drop contract because explicit global-unavailable fields remain constant alongside the intercept.
+- G5 admitted no directional probe because the frozen unresolved evidence-conflict/quality gate remained active; no episode, trade, turnover or PnL was created.
+- Stopped at the pre-outer gate. OF4 and held-out were not accessed and no performance result was interpreted.
