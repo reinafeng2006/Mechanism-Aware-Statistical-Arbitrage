@@ -53,6 +53,7 @@ $allowedGates = @(
     ,'PAUSED_CONSOLIDATED_EXECUTABLE_FIELD_SEMANTICS'
     ,'EV_A_V1_FD_A_ER_A_QUALIFIED_PENDING_PUBLICATION'
     ,'PAUSED_EV_A_ROW_LEVEL_MAPPING_NOT_BOUND'
+    ,'EV_MAP_B_QUALIFIED_PENDING_PUBLICATION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -260,6 +261,12 @@ if ($contract.computation_gate -eq 'PAUSED_EV_A_ROW_LEVEL_MAPPING_NOT_BOUND') {
     if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'EV-A row-mapping pause must deny empirical visibility.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if (-not (Test-Path -LiteralPath (Join-Path $repoRoot 'data/manifests/V1_INNER_A3_A5.json'))) { throw 'Validated A3/A5 checkpoint manifest missing.' }
+}
+if ($contract.computation_gate -eq 'EV_MAP_B_QUALIFIED_PENDING_PUBLICATION') {
+    if ($next.action.action_id -ne 'V1-EV-MAP-B-PUBLICATION') { throw 'EV-MAP-B publication action mismatch.' }
+    if ($next.action.dataset_access -ne 'DENIED_UNTIL_EV_MAP_B_PUBLICATION') { throw 'EV-MAP-B publication guard must deny data access.' }
+    if ($next.action.empirical_result_visibility -ne 'DENIED') { throw 'EV-MAP-B publication guard must deny result visibility.' }
+    if ($contract.ev_map_b.status -ne 'FROZEN_PENDING_PUBLICATION') { throw 'EV-MAP-B contract binding mismatch.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

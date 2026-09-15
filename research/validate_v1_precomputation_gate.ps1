@@ -212,6 +212,12 @@ $evRowMappingPause = (
     $action.action.dataset_access -eq 'DENIED_PENDING_EV_A_ROW_MAPPING_DECISION' -and
     $action.action.empirical_result_visibility -eq 'DENIED'
 )
+$evMapBPublication = (
+    $action.action.action_id -eq 'V1-EV-MAP-B-PUBLICATION' -and
+    $action.action.execution_state -eq 'EV_MAP_B_QUALIFIED_PENDING_PUBLICATION' -and
+    $action.action.dataset_access -eq 'DENIED_UNTIL_EV_MAP_B_PUBLICATION' -and
+    $action.action.empirical_result_visibility -eq 'DENIED'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -223,7 +229,7 @@ $checks = @(
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication -or $evRowMappingPause),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication -or $evRowMappingPause -or $evMapBPublication),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
@@ -233,7 +239,9 @@ if ($checks -contains $false) {
     throw "V1 pre-computation gate invariant failed at check indexes: $($failedIndexes -join ',')."
 }
 
-if ($evRowMappingPause) {
+if ($evMapBPublication) {
+    Write-Output 'PASS: EV-MAP-B is frozen pending publication; A6/G5 data access remains denied.'
+} elseif ($evRowMappingPause) {
     Write-Output 'PASS: corrected A3/A5 is preserved; A6/G5 access is denied pending source-bound EV-A row mapping.'
 } elseif ($executableClosurePublication) {
     Write-Output 'PASS: EV-A-V1, FD-A, and ER-A are frozen pending publication; empirical access remains denied.'

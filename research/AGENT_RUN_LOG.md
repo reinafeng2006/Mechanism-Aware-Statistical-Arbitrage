@@ -230,3 +230,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Regenerated all 70 partitions with O1/O5/O10/O20 constrained to the same semiannual inner role. SHA-256, ancestry, row shape and boundary-censoring validation passed.
 - The workspace approval control rejected two attempts to globally hardcode unqualified evidence fields as unavailable because that would predetermine A6/G5 dispositions without a source-bound row mapping. No workaround was attempted.
 - Paused before A6/G5. No OF4 or held-out access; no relationship/RT3 recomputation; no result interpretation.
+- Researcher selected `EV-MAP-B` with source-qualified row-level exceptions. Publication guard activated before any A6/G5 data access.

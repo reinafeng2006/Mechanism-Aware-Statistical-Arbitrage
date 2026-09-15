@@ -1,0 +1,29 @@
+{
+  "schema_version": "V1-EV-MAP-B-1.0",
+  "decision_id": "EV-MAP-B",
+  "status": "FROZEN_PENDING_PUBLICATION",
+  "governing_rule": "UNSUPPORTED_QUALIFIED_EVIDENCE_PROPOSITION_IS_UNAVAILABLE_FOR_V1_NOT_ALL_FIELDS",
+  "three_state_rule": {"present": "QUALIFIED_PIT_POSITIVE", "absent": "QUALIFIED_EXHAUSTIVE_NEGATIVE", "unavailable": "NEITHER_DETERMINATION_IS_QUALIFIED"},
+  "global_unavailable": ["M1_contextual_support_opposition_ambiguity", "flow_motive_identification", "endogeneity_exogeneity_identification", "M0_positive_and_exhaustive_negative", "relationship_break_evidence"],
+  "row_level_qualified": {
+    "future_leakage": "COMPLETE_INPUT_LINEAGE_AT_EVENT_CUTOFF",
+    "mechanical_return_content": "FROZEN_FORMULA_LINEAGE",
+    "overlapping_windows": "EXACT_INTERVAL_GEOMETRY",
+    "mechanical_or_data_invalidity": "MODEL_SCALE_ELIGIBILITY_AND_PIT_STATE",
+    "data_provenance_uncertainty": "C04_C05_C06_IDENTIFIER_VINTAGE_TIMESTAMP_PIT_STATE",
+    "information_insufficiency": "REQUIRED_INPUT_AVAILABILITY_BY_PROPOSITION",
+    "cause_proxy_overlap": "FROZEN_ROLE_ASSIGNMENT_AUDIT_WHERE_COMPLETE"
+  },
+  "m1": {"morphology_is_identification": false, "unsupported_state": "M1_evidence_unavailable=1; support=oppose=ambiguous=0"},
+  "m2": {"MP0_MP1_are_identification": false, "unsupported_causal_fields": "UNAVAILABLE"},
+  "m0": {"absence_of_m1_m2_is_m0": false, "v1_state_without_qualified_positive_or_exhaustive_negative": "UNAVAILABLE"},
+  "a6": {"unavailable_indicators_are_authorized_predictors": true, "silent_drop": false, "rank_contract": "FULL_RANK_FAILURE_MAKES_SPECIFICATION_UNAVAILABLE"},
+  "g5": {"M1_channel_name": "M1-MOTIVATED DIRECTIONAL PROBE", "M2_channel_name": "M2-MOTIVATED DIRECTIONAL PROBE", "profit_is_identification": false},
+  "claim_scope": "V1_EVALUATES_MECHANISM_MOTIVATED_MORPHOLOGY_AND_EVIDENCE_PROBES_NOT_FULL_CAUSAL_IDENTIFICATION_WHERE_SOURCES_ARE_UNAVAILABLE",
+  "new_source_acquisition": "DENIED_V1_REGISTER_V2_ONLY",
+  "FD_A": "NEXT_ELIGIBLE_OPEN_ONLY_NO_DELAY",
+  "ER_A": "252_SESSION_REPORTING_PLUS_RAW_NONANNUALIZED",
+  "empirical_information_used": false,
+  "of4_access": "DENIED",
+  "held_out_access": "SEALED_DENIED"
+}

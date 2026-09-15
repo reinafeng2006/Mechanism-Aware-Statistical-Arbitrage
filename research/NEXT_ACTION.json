@@ -1,11 +1,11 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "V1 EV-A row-level evidence mapping decision",
-    "status": "RESEARCHER_DECISION_REQUIRED",
-    "execution_state": "PAUSED_AFTER_VALIDATED_A3_A5_BEFORE_A6_G5",
-    "objective": "Bind approved EV-A-V1 truth semantics to qualified row-level source/exhaustiveness rules before A6/G5 execution.",
+    "action_id": "V1-EV-MAP-B-PUBLICATION",
+    "name": "Publish approved EV-MAP-B before A6/G5 resume",
+    "status": "AUTHORIZED",
+    "execution_state": "EV_MAP_B_QUALIFIED_PENDING_PUBLICATION",
+    "objective": "Publish the researcher-approved EV-MAP-B source-qualified conservative mapping before restoring inner-only access.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
@@ -18,7 +18,7 @@
       "RT3 state augmentation published and qualified for downstream use",
       "MP1-A published and bound to Phase 1"
     ],
-    "allowed_scope": [],
+    "allowed_scope": ["validate EV-MAP-B contracts", "commit and push EV-MAP-B governance only"],
     "forbidden_scope": [
       "overwrite or mutation of existing relationship outputs",
       "R0/R1/R3/R4 recomputation",
@@ -29,13 +29,13 @@
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_EV_A_ROW_MAPPING_DECISION",
+    "dataset_access": "DENIED_UNTIL_EV_MAP_B_PUBLICATION",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Researcher selects a bounded EV-A row-level mapping disposition.",
+    "completion_condition": "EV-MAP-B publication, then restore validated A3/A5 checkpoint for inner A6/G5.",
     "mandatory_stop_conditions": [
       "Any material scientific or data-integrity mismatch",
       "Any OF4 or held-out access"
