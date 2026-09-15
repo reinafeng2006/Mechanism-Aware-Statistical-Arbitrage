@@ -1,0 +1,16 @@
+{
+  "schema_version": "V1-PO-C-1.0",
+  "decision_id": "PO-C",
+  "status": "FROZEN_PENDING_PUBLICATION",
+  "scope": "RELATIONSHIP_STAGE_OF4_ONLY_2020_2023",
+  "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED",
+  "non_interpretation": "A6_G5_NON_ESTIMABILITY_IS_NOT_POOR_MECHANISM_MODEL_OR_TRADING_PERFORMANCE",
+  "outer_folds": [2020, 2021, 2022, 2023],
+  "retuning": "PROHIBITED",
+  "a3_a5": "AUTHORIZED_WITHOUT_A6_G5",
+  "claim_boundary": "ABNORMALITY_AND_RESOLUTION_MORPHOLOGY_ARE_NOT_MECHANISM_IDENTIFICATION",
+  "materialization": "IMMUTABLE_BEFORE_INTERPRETATION",
+  "winner": "NOT_FORCED",
+  "v2_only": ["A6_estimability_redesign", "evidence_source_enrichment", "mechanism_identification_expansion", "G5_trading_simulation", "P1_fundamentals", "alternative_evidence_mapping"],
+  "held_out_access": "SEALED_DENIED"
+}

@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `PRE-OUTER V1 GATE — RESEARCHER DECISION REQUIRED` |
+| Stage status | `PO-C APPROVED — PUBLICATION GUARD BEFORE OF4` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | inner execution structurally complete; OF4 remains denied |
+| Current substage | publish PO-C; then perform mandatory OF4 storage gate |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `PAUSED AT PRE-OUTER GATE`; OF4 and final held-out denied |
-| Current authorized action | `NONE — PRE-OUTER researcher decision required` |
+| Computation authorization | `DENIED UNTIL PO-C PUBLICATION`; held-out denied |
+| Current authorized action | `V1-PO-C-PUBLICATION` |
 | Last validation state | EV-MAP-B 70/70 row audits; 4,032 A6 estimability dispositions; G5 admission gate `PASS` |
 | Latest local commit | pending inner completion/pre-outer checkpoint commit |
 | Remote state observed | `origin/main` at `f2fde2f` before this checkpoint |
-| Researcher action required | `YES`; select pre-outer disposition |
+| Researcher action required | `NO`; PO-C selected |
 
 ## Verified frozen chain relevant to activation
 

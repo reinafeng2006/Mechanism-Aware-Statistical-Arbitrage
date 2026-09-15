@@ -236,3 +236,4 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - All 4,032 A6 fitting problems were unavailable under the frozen full-rank/no-column-drop contract because explicit global-unavailable fields remain constant alongside the intercept.
 - G5 admitted no directional probe because the frozen unresolved evidence-conflict/quality gate remained active; no episode, trade, turnover or PnL was created.
 - Stopped at the pre-outer gate. OF4 and held-out were not accessed and no performance result was interpreted.
+- Researcher selected `PO-C`: relationship-stage OF4 only. A6/G5 remain V1 non-estimable/not executed. A stale lock from the capacity-failed attempt was recovered only after its recorded PID was verified inactive.
