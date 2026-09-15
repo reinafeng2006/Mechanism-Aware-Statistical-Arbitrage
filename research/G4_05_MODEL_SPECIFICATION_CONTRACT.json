@@ -110,5 +110,5 @@
   "downstream_executable_closure": {"contract_id": "V1-EXECUTABLE-CLOSURE-EV-A-V1-FD-A-ER-A-1.0", "status": "PUBLISHED_BOUND_TO_PHASE1", "final_field_audit": "PASS"},
   "ev_map_b": {"decision_id": "EV-MAP-B", "status": "PUBLISHED_BOUND_TO_PHASE1", "claim_scope": "MECHANISM_MOTIVATED_PROBES_NOT_FULL_CAUSAL_IDENTIFICATION"},
   "po_c": {"decision_id": "PO-C", "status": "PUBLISHED_BOUND_TO_PHASE1", "scope": "RELATIONSHIP_STAGE_OF4_ONLY_2020_2023"},
-  "computation_gate": "AUTHORIZED_2020_2023_RELATIONSHIP_OF4"
+  "computation_gate": "PRE_HELD_OUT_V1_GATE_RESEARCHER_DECISION_REQUIRED"
 }

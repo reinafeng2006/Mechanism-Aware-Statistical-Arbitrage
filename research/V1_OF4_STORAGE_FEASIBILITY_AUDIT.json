@@ -24,5 +24,12 @@
   },
   "original_disposition": "FAIL_UNSAFE_CAPACITY_ON_C_DRIVE",
   "resolution": "EXTERNAL_STORAGE_AUTHORIZED_AND_PREFLIGHT_PASSED",
+  "actual_materialization": {
+    "payload_count": 112,
+    "uncompressed_bytes": 142810708252,
+    "deterministic_losslessly_compressed_bytes": 88461879645,
+    "manifest_status": "IMMUTABLE_COMPLETE_CHECKSUMMED",
+    "projection_variance_disposition": "PROJECTION_UNDERESTIMATED_SIZE_BUT_EXTERNAL_CAPACITY_REMAINED_SAFE"
+  },
   "held_out_access": "SEALED_DENIED"
 }

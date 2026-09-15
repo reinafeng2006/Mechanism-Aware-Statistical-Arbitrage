@@ -58,6 +58,7 @@ $allowedGates = @(
     ,'PO_C_QUALIFIED_PENDING_PUBLICATION'
     ,'OF4_EXTERNAL_STORAGE_QUALIFIED_PENDING_PUBLICATION'
     ,'AUTHORIZED_2020_2023_RELATIONSHIP_OF4'
+    ,'PRE_HELD_OUT_V1_GATE_RESEARCHER_DECISION_REQUIRED'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -297,6 +298,12 @@ if ($contract.computation_gate -eq 'AUTHORIZED_2020_2023_RELATIONSHIP_OF4') {
     if ($next.action.dataset_access -ne 'FROZEN_2013_2019_ANCESTRY_PLUS_2020_2023_OF4_ONLY') { throw 'PO-C OF4 dataset role mismatch.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($contract.po_c.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PO-C publication binding mismatch.' }
+}
+if ($contract.computation_gate -eq 'PRE_HELD_OUT_V1_GATE_RESEARCHER_DECISION_REQUIRED') {
+    if ($next.action.action_id -ne 'NONE') { throw 'Pre-held-out gate must have no active action.' }
+    if ($next.action.execution_state -ne 'PRE_HELD_OUT_V1_GATE_A1_SCALE_BINDING_REQUIRED') { throw 'Pre-held-out A1 gate state mismatch.' }
+    if ($next.action.dataset_access -ne 'DENIED_PENDING_A1_COMMON_SCALE_RESEARCHER_DECISION') { throw 'A1 gate must deny dataset access.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

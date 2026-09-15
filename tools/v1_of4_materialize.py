@@ -81,6 +81,7 @@ def transform_sources(input_hash: str | None = None) -> dict[str, Path]:
     src = replace_required(src, 'OUT = ROOT / "data/qa_work/v1/phase1/inner_outputs_v2/relationships"', f'OUT = Path({repr(str(REL))})', 1)
     src = replace_required(src, 'PUBLIC_MANIFEST = ROOT / "data/manifests/V1_PHASE1_RELATIONSHIP_OUTPUTS.json"', f'PUBLIC_MANIFEST = Path({repr(str(INTERMEDIATE_MANIFEST))})', 1)
     src = replace_required(src, 'EXPECTED_INPUT_HASH = "360E6E20E359BFF58F66E8E05FCD43E762160B3F47F24B59318E4EBF041F3916"', f'EXPECTED_INPUT_HASH = "{input_hash}"', 1)
+    src = replace_required(src, 'if dates[-1]>"20191231": raise RuntimeError("input role exceeds authorized 2019 boundary")', 'if dates[-1]>"20231231": raise RuntimeError("input role exceeds authorized 2023 boundary")', 1)
     old = 'periods=[(f"{y}H{s}",f"{y}{\'0101\' if s==1 else \'0701\'}",f"{y}{\'0630\' if s==1 else \'1231\'}") for y in range(2015,2020) for s in (1,2)]'
     src = replace_required(src, old, annual_double, 1)
     src = replace_required(src, 'len(entries)<50', 'len(entries)<20', 1)
@@ -96,7 +97,7 @@ def transform_sources(input_hash: str | None = None) -> dict[str, Path]:
         src = replace_required(src, f'OUT=ROOT/"data/qa_work/v1/phase1/inner_outputs_v2/relationships/{candidate}"', f'OUT=Path({repr(str(REL / candidate))})', 1)
         src = replace_required(src, 'EXPECTED="360E6E20E359BFF58F66E8E05FCD43E762160B3F47F24B59318E4EBF041F3916"', f'EXPECTED="{input_hash}"', 1)
         src = replace_required(src, "periods=[(f'{y}H{s}',f'{y}{\"0101\" if s==1 else \"0701\"}',f'{y}{\"0630\" if s==1 else \"1231\"}') for y in range(2015,2020) for s in (1,2)]", annual_single)
-        src = replace_required(src, "ROOT/'data/qa_work/v1/phase1/rt3_state_v1", f"Path({repr(str(STATE))})")
+        src = replace_required(src, f"ROOT/'data/qa_work/v1/phase1/rt3_state_v1/{candidate}'", f"Path({repr(str(STATE / candidate))})", 1)
         src = replace_required(src, "'of4_accessed':False", "'of4_accessed':True")
         paths[key] = write_runner(filename, src)
 
@@ -149,17 +150,41 @@ def relationship_manifest(input_hash: str) -> None:
     os.replace(temp, INTERMEDIATE_MANIFEST)
 
 
-def compress_finalize(input_hash: str) -> None:
-    payloads = sorted(list(REL.glob("*/*.npy")) + list(STATE.glob("*/*.npy")) + list(A3A5.glob("*/*.npy")))
+def compress_finalize(input_hash: str, shard: int = 0, shards: int = 1) -> None:
+    roots = (REL, STATE, A3A5)
+    logical = {p for root in roots for p in root.glob("*/*.npy")}
+    logical.update(Path(str(p)[:-3]) for root in roots for p in root.glob("*/*.npy.gz"))
+    payloads = sorted(logical)
     if len(payloads) != 28 + 28 + 56:
         raise RuntimeError(f"expected 112 OF4 payloads, found {len(payloads)}")
+    if shards < 1 or shard < 0 or shard >= shards:
+        raise RuntimeError("invalid compression shard")
+    payloads = [path for index, path in enumerate(payloads) if index % shards == shard]
     records = []
     for source in payloads:
-        raw_hash = sha(source)
         final = source.with_suffix(source.suffix + ".gz")
         temp = final.with_suffix(final.suffix + ".tmp")
-        if final.exists():
-            raise RuntimeError(f"no-overwrite compressed artifact conflict: {final}")
+        checkpoint = final.with_suffix(final.suffix + ".complete.json")
+        if final.exists() or checkpoint.exists():
+            if not (final.exists() and checkpoint.exists()):
+                raise RuntimeError(f"incomplete compressed checkpoint: {final}")
+            record = json.loads(checkpoint.read_text(encoding="utf-8"))
+            if sha(final) != record["sha256"]:
+                raise RuntimeError(f"compressed checkpoint hash mismatch: {final}")
+            verify = hashlib.sha256()
+            with gzip.open(final, "rb") as inp:
+                for chunk in iter(lambda: inp.read(8 << 20), b""):
+                    verify.update(chunk)
+            if verify.hexdigest().upper() != record["raw_sha256"]:
+                raise RuntimeError(f"compressed checkpoint roundtrip mismatch: {final}")
+            if source.exists():
+                source.unlink()
+            records.append(record)
+            continue
+        if not source.exists():
+            raise RuntimeError(f"missing uncompressed source: {source}")
+        raw_hash = sha(source)
+        raw_bytes = source.stat().st_size
         with source.open("rb") as inp, temp.open("wb") as raw_out:
             with gzip.GzipFile(filename="", mode="wb", fileobj=raw_out, compresslevel=9, mtime=0) as out:
                 shutil.copyfileobj(inp, out, 8 << 20)
@@ -171,8 +196,15 @@ def compress_finalize(input_hash: str) -> None:
             raise RuntimeError(f"lossless validation failed: {source}")
         compressed_hash = sha(temp)
         os.replace(temp, final)
-        records.append({"logical_path": source.relative_to(OF4).as_posix(), "physical_relative_path": final.relative_to(OF4).as_posix(), "raw_sha256": raw_hash, "sha256": compressed_hash, "raw_bytes": source.stat().st_size, "compressed_bytes": final.stat().st_size, "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY", "validation": "LOSSLESS_ROUNDTRIP_PASS"})
+        record = {"logical_path": source.relative_to(OF4).as_posix(), "physical_relative_path": final.relative_to(OF4).as_posix(), "raw_sha256": raw_hash, "sha256": compressed_hash, "raw_bytes": raw_bytes, "compressed_bytes": final.stat().st_size, "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY", "validation": "LOSSLESS_ROUNDTRIP_PASS"}
+        checkpoint_temp = checkpoint.with_suffix(".tmp")
+        checkpoint_temp.write_text(json.dumps(record, sort_keys=True, indent=2) + "\n", encoding="utf-8")
+        os.replace(checkpoint_temp, checkpoint)
+        records.append(record)
         source.unlink()
+    if shards != 1:
+        print(json.dumps({"compression_shard": shard, "shards": shards, "payload_count": len(records), "result": "PASS", "values_disclosed": False}))
+        return
     manifest = {"manifest_id": "V1-PO-C-OF4-RELATIONSHIP-STAGE-1.0", "status": "IMMUTABLE_COMPLETE_CHECKSUMMED", "po_c_commit": "7fcfd3c9da73c388b3e1ba9219000c6dd2e5c27b", "input_sha256": input_hash, "physical_root": str(OF4), "scientific_identity_independent_of_physical_location": True, "candidate_count": 7, "annual_folds": YEARS, "payload_count": len(records), "payloads": records, "relationship_protocol": "FROZEN_PAIR_A_R0_R1_R3_R4", "a3_a5": "AUTHORIZED_MORPHOLOGY_MATERIALIZED", "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED", "retuning": "NONE", "interpretation": "NONE_BEFORE_THIS_MANIFEST", "held_out": "2024_2025_SEALED_NOT_ACCESSED", "materialization": "TEMPORARY_WRITE_VALIDATE_CHECKSUM_ATOMIC_FINALIZE", "compression": "DETERMINISTIC_LOSSLESS"}
     FINAL_MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     temp = FINAL_MANIFEST.with_suffix(".tmp")
@@ -185,6 +217,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("stage", choices=("prepare", "relationships", "state", "a3a5", "compress", "all"))
     parser.add_argument("--candidate", choices=CANDIDATES)
+    parser.add_argument("--shard", type=int, default=0)
+    parser.add_argument("--shards", type=int, default=1)
     args = parser.parse_args()
     OF4.mkdir(parents=True, exist_ok=True)
     paths = transform_sources()
@@ -232,7 +266,7 @@ def main() -> None:
         relationship_manifest(input_hash)
         run(paths["a3a5"])
     if args.stage in ("compress", "all"):
-        compress_finalize(input_hash)
+        compress_finalize(input_hash, args.shard, args.shards)
 
 
 if __name__ == "__main__":

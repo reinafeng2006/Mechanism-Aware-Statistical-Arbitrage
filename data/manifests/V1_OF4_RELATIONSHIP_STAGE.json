@@ -1,0 +1,1146 @@
+{
+  "a3_a5": "AUTHORIZED_MORPHOLOGY_MATERIALIZED",
+  "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED",
+  "annual_folds": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+  ],
+  "candidate_count": 7,
+  "compression": "DETERMINISTIC_LOSSLESS",
+  "held_out": "2024_2025_SEALED_NOT_ACCESSED",
+  "input_sha256": "5F3439DEA89AABE1CDA34D133B2575008CE527CE72ABB9E20CD784B64254A295",
+  "interpretation": "NONE_BEFORE_THIS_MANIFEST",
+  "manifest_id": "V1-PO-C-OF4-RELATIONSHIP-STAGE-1.0",
+  "materialization": "TEMPORARY_WRITE_VALIDATE_CHECKSUM_ATOMIC_FINALIZE",
+  "payload_count": 112,
+  "payloads": [
+    {
+      "compressed_bytes": 211025545,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0C-126W/2020.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0C-126W/2020.a3.npy.gz",
+      "raw_bytes": 223307360,
+      "raw_sha256": "1E6067A5ABAB04AA6828C724D2E9B96585AAE583F3923A6219D3D479E5C03AA1",
+      "sha256": "F588AE0A7ABD6EC717358639D598BF05D9FD7D9B4A10FEA5FF7A4E8804438757",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1299914345,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0C-126W/2020.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0C-126W/2020.a5.npy.gz",
+      "raw_bytes": 2233072448,
+      "raw_sha256": "F13B7C56851DD7F46690C467ABE825A446BCAE46F4299DBEF0670F2942F6EEB2",
+      "sha256": "C3C6FB3EB8E077486571E326B980B17768972F88E505072FE406A4BD6AF29B22",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 268767188,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0C-126W/2021.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0C-126W/2021.a3.npy.gz",
+      "raw_bytes": 284557920,
+      "raw_sha256": "35959CF1438E4A7627D15346E7A9D59DA2D5BCE29122AC41940ABFA1B23EC5F7",
+      "sha256": "8949B4912896A4CE4E2A8E69D480ADF03ABC260AD04A3541E1D9AE6864E91B11",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1661602834,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0C-126W/2021.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0C-126W/2021.a5.npy.gz",
+      "raw_bytes": 2845578048,
+      "raw_sha256": "DADEB4A687E5E9740D6A7DE9B47615A68E7DA17C54541A8D5769E4BD4749540B",
+      "sha256": "315824F40304A7E516CF5D90D42B853A0D59304400BAC5A032B66C3A4DDF9EB7",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 359741496,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0C-126W/2022.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0C-126W/2022.a3.npy.gz",
+      "raw_bytes": 381449728,
+      "raw_sha256": "50902134DEE677894E325F2336F23AE81B32F91F23971CB3E46A5A8C91DDEAF3",
+      "sha256": "86AD8D7368731374B9F75CEFEB6FAB35BEA6023938899A05DB1D1A927A0BA2A7",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2241289024,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0C-126W/2022.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0C-126W/2022.a5.npy.gz",
+      "raw_bytes": 3814496128,
+      "raw_sha256": "E9EFADB7C9D7E7E7A52F15369A0C03C0B1D83B13C74C35D7037B32F35F29C891",
+      "sha256": "5A7A623D1CD598AA0C9F5D7FB5BB76524C6D61507A27925D296A8B154E8AC7CE",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 375440558,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0C-126W/2023.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0C-126W/2023.a3.npy.gz",
+      "raw_bytes": 398034240,
+      "raw_sha256": "A901CB0F7D8BC9F801FAB54FFFB2E403259535414DB9C2B887E0F8465662F537",
+      "sha256": "FA2EC1147DEE7D63A79AC17D1C2341073E2B0892B54A287D61EFB824CCDC0830",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2344761945,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0C-126W/2023.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0C-126W/2023.a5.npy.gz",
+      "raw_bytes": 3980341248,
+      "raw_sha256": "FA4118D243E686A44158544138F660EBDAB3A5D26D60E71EC295C61D33246769",
+      "sha256": "B7EAB68948694913E6CB5BF51C8A130EF526CF72B85C11F0DCDDBBADD2E62063",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 185749334,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0D-252M/2020.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0D-252M/2020.a3.npy.gz",
+      "raw_bytes": 196419536,
+      "raw_sha256": "6469C96305946B5C031F98D886C35A49AB7C8A0F22C450057B68023C0A6A2688",
+      "sha256": "AB34BB6CFEFD818D494DC61D251209FD1CC9228F1D7FA2295ED6AE61D34EB71A",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1160836583,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0D-252M/2020.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0D-252M/2020.a5.npy.gz",
+      "raw_bytes": 1964194208,
+      "raw_sha256": "95FF48BB0D59222B66502E06739E7D7AC74A49227D04E8911D12EF2EBBFBAAAE",
+      "sha256": "9EF9691B781DF9891918C04FAB2E13A93C683CF163EB779B2DC935FB96BBCDDB",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 225685478,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0D-252M/2021.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0D-252M/2021.a3.npy.gz",
+      "raw_bytes": 238754176,
+      "raw_sha256": "074BE624F02B80A80F3A628814AF6623C03B998AAF74E33432C5F1C0C67B6800",
+      "sha256": "07D034E0009370D6A842E13C5964620E4436FBF92EC811D6E9FAD1CADD37D9A6",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1393855990,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0D-252M/2021.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0D-252M/2021.a5.npy.gz",
+      "raw_bytes": 2387540608,
+      "raw_sha256": "59029AF81DD38C770D0884869D2E487D8EE0D7E30EE89464BDAEDFD60BC7708F",
+      "sha256": "CD0B8FE16F204C70E0DD6AFD0D8DCBBB4C2813E8B3BEBD93FD3BE1453936A306",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 306524229,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0D-252M/2022.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0D-252M/2022.a3.npy.gz",
+      "raw_bytes": 325313376,
+      "raw_sha256": "FCEAC747E22AAEAFF114C687CED489C8CB56374CEB8E0846B6705A982BAA2061",
+      "sha256": "4DC5107FADECAA97618D24A1B925F723E55E1227FDC6BC8A6F7F1AD397FDCCE1",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1898323128,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0D-252M/2022.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0D-252M/2022.a5.npy.gz",
+      "raw_bytes": 3253132608,
+      "raw_sha256": "518D58C91E1D90412373BEF5F584FCCD5E88931541834CC3E9B706D7195A38B9",
+      "sha256": "F2CFA1084E5E09697CF2E2009C8D69F9094454308E45369A703F711E633F05CD",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 374840008,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0D-252M/2023.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0D-252M/2023.a3.npy.gz",
+      "raw_bytes": 397332912,
+      "raw_sha256": "E0C15CC6A1C1648906BA2C286564B1AB6B40866167C91879261E97FD8F2EA0E8",
+      "sha256": "FD66B3BDA64E0D439C5D8503789443244FDA1B209B77E77F960730DA2FA78572",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2348545842,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0D-252M/2023.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0D-252M/2023.a5.npy.gz",
+      "raw_bytes": 3973327968,
+      "raw_sha256": "068AD89AA1651EB255465139D70AC22425D530DA705D62D90BF47A60A15D0DE2",
+      "sha256": "FD042E97B23FBFD97FE66B23D64F4CC423A37704B665B07D08A2F5F846F21AA3",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 211025545,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0L-126W/2020.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0L-126W/2020.a3.npy.gz",
+      "raw_bytes": 223307360,
+      "raw_sha256": "1E6067A5ABAB04AA6828C724D2E9B96585AAE583F3923A6219D3D479E5C03AA1",
+      "sha256": "F588AE0A7ABD6EC717358639D598BF05D9FD7D9B4A10FEA5FF7A4E8804438757",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1299914345,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0L-126W/2020.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0L-126W/2020.a5.npy.gz",
+      "raw_bytes": 2233072448,
+      "raw_sha256": "F13B7C56851DD7F46690C467ABE825A446BCAE46F4299DBEF0670F2942F6EEB2",
+      "sha256": "C3C6FB3EB8E077486571E326B980B17768972F88E505072FE406A4BD6AF29B22",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 268767188,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0L-126W/2021.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0L-126W/2021.a3.npy.gz",
+      "raw_bytes": 284557920,
+      "raw_sha256": "35959CF1438E4A7627D15346E7A9D59DA2D5BCE29122AC41940ABFA1B23EC5F7",
+      "sha256": "8949B4912896A4CE4E2A8E69D480ADF03ABC260AD04A3541E1D9AE6864E91B11",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1661602834,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0L-126W/2021.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0L-126W/2021.a5.npy.gz",
+      "raw_bytes": 2845578048,
+      "raw_sha256": "DADEB4A687E5E9740D6A7DE9B47615A68E7DA17C54541A8D5769E4BD4749540B",
+      "sha256": "315824F40304A7E516CF5D90D42B853A0D59304400BAC5A032B66C3A4DDF9EB7",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 359741496,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0L-126W/2022.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0L-126W/2022.a3.npy.gz",
+      "raw_bytes": 381449728,
+      "raw_sha256": "50902134DEE677894E325F2336F23AE81B32F91F23971CB3E46A5A8C91DDEAF3",
+      "sha256": "86AD8D7368731374B9F75CEFEB6FAB35BEA6023938899A05DB1D1A927A0BA2A7",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2241289024,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0L-126W/2022.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0L-126W/2022.a5.npy.gz",
+      "raw_bytes": 3814496128,
+      "raw_sha256": "E9EFADB7C9D7E7E7A52F15369A0C03C0B1D83B13C74C35D7037B32F35F29C891",
+      "sha256": "5A7A623D1CD598AA0C9F5D7FB5BB76524C6D61507A27925D296A8B154E8AC7CE",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 375440558,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0L-126W/2023.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R0L-126W/2023.a3.npy.gz",
+      "raw_bytes": 398034240,
+      "raw_sha256": "A901CB0F7D8BC9F801FAB54FFFB2E403259535414DB9C2B887E0F8465662F537",
+      "sha256": "FA2EC1147DEE7D63A79AC17D1C2341073E2B0892B54A287D61EFB824CCDC0830",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2344761945,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R0L-126W/2023.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R0L-126W/2023.a5.npy.gz",
+      "raw_bytes": 3980341248,
+      "raw_sha256": "FA4118D243E686A44158544138F660EBDAB3A5D26D60E71EC295C61D33246769",
+      "sha256": "B7EAB68948694913E6CB5BF51C8A130EF526CF72B85C11F0DCDDBBADD2E62063",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 210978925,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1M-126W/2020.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R1M-126W/2020.a3.npy.gz",
+      "raw_bytes": 223307360,
+      "raw_sha256": "A95F47E6F768E0595C814B8EC23588DC22FF6C5348C0D1466AB9EA09208E82A4",
+      "sha256": "8B065C3CECF16674465A01682BD36643844D1CA70E5A3D644E5939347C1097A2",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1293888511,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1M-126W/2020.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R1M-126W/2020.a5.npy.gz",
+      "raw_bytes": 2233072448,
+      "raw_sha256": "984AF6BA19F8CA9FA692CF35A433EAAE73A48E1D8BE80AE189E2A8B7D47F9277",
+      "sha256": "BCE1EA50615F9A25131916DCD387B263A33ED559F775C721E972FE83CFA60136",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 268633553,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1M-126W/2021.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R1M-126W/2021.a3.npy.gz",
+      "raw_bytes": 284557920,
+      "raw_sha256": "F367E6ABE803BC09EDFE0DC2A0CAF1135F346A29CC8A9B60928FCEE1C2203F83",
+      "sha256": "C2D44B5475555DA8D0D723408BA16A8FC84641FEC8D14C2F651463D1071CE81A",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1659760485,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1M-126W/2021.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R1M-126W/2021.a5.npy.gz",
+      "raw_bytes": 2845578048,
+      "raw_sha256": "DEF61D0C183719BD6DB162927F61876BE89AECFC0067FEFAA0F5746A6B24C070",
+      "sha256": "62884E7CE61DB2EE083861314263DA72EC9EEA9C92D5F5D3AC77339367A97F57",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 359534779,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1M-126W/2022.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R1M-126W/2022.a3.npy.gz",
+      "raw_bytes": 381449728,
+      "raw_sha256": "DA4B421A4354C7F3395B742A257B05A33A0B120140DA37332BE22426475EECC9",
+      "sha256": "B2A030DF1C3125287023031C912B4C326BD417E2122E4D639CA96CDEFA7CE760",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2236435259,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1M-126W/2022.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R1M-126W/2022.a5.npy.gz",
+      "raw_bytes": 3814496128,
+      "raw_sha256": "3D50674324E9D5217DCB89369FC2EA81041811AB376C396083782CA70E2A5655",
+      "sha256": "08C13AF430BA4448B348BF1462BE603E28C1B811381446D5363343C9EEED534F",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 375609693,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1M-126W/2023.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R1M-126W/2023.a3.npy.gz",
+      "raw_bytes": 398034240,
+      "raw_sha256": "9B2E2AF11B64DDFAEB59EFAD9EE3249A130C5EA65C829E2E2E4EB0C877373532",
+      "sha256": "4F7FC69779C1C5533B3BC7ACE7D49BD7A76A2E7E19CFF27096B913B24B7446E4",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2342822306,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1M-126W/2023.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R1M-126W/2023.a5.npy.gz",
+      "raw_bytes": 3980341248,
+      "raw_sha256": "D2CC829D97CDA247BF44B9D5B378FCA66E7F0438584AB08D7EA4829257E45F5F",
+      "sha256": "C265823FFBB853DABB886756B4D3764BCC99BEABEC2FEE4507DD3A69BCD07156",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 211097783,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1MI-126W/2020.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R1MI-126W/2020.a3.npy.gz",
+      "raw_bytes": 223307360,
+      "raw_sha256": "C66D4BB9A7A7A99292850ECBAB86F849E32C977CF61AE58B70D08200B46170FC",
+      "sha256": "C2A84CDB9601A80D79CF1235ABC10C386EF2F6B05DBB018E4182094D69159AA9",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1291788462,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1MI-126W/2020.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R1MI-126W/2020.a5.npy.gz",
+      "raw_bytes": 2233072448,
+      "raw_sha256": "E852A8EC24A56BB24D0B3FF1D82199CF1BF2EA87EAA97C6E0FFE72A1F2A1A5D5",
+      "sha256": "29927045BDDE94916A9E21CA2ADCDB40C1E261CD9CB10860B2E4C02FE607C12A",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 268830194,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1MI-126W/2021.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R1MI-126W/2021.a3.npy.gz",
+      "raw_bytes": 284557920,
+      "raw_sha256": "43ED1451B399387B72467D3B6C9CCBB68B14FA63ECFC68561E259B41672AE977",
+      "sha256": "ED291027CA3C92D527098757C68A2325F472636F5FF06382198D7646F20A82DA",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1654685599,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1MI-126W/2021.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R1MI-126W/2021.a5.npy.gz",
+      "raw_bytes": 2845578048,
+      "raw_sha256": "B9B2360CCD30CF53B113B4B1B3A09DB4E1DF715BCF033613402375C9782CB917",
+      "sha256": "9CB8CBA4CABAF86DCF6D7CCD7B2F8FCBDB1962C4E0BDD2400B40FEBF971EC671",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 360166271,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1MI-126W/2022.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R1MI-126W/2022.a3.npy.gz",
+      "raw_bytes": 381449728,
+      "raw_sha256": "9B18942B0376C95AB9822D017D5F6CF6FAA1AA96A2CE44F094AD26C817D3ED6D",
+      "sha256": "729307D125D5B08179D58687F680F4FC54857C84A3851C934DC42DF5B1C23BC2",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2230042875,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1MI-126W/2022.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R1MI-126W/2022.a5.npy.gz",
+      "raw_bytes": 3814496128,
+      "raw_sha256": "D045FA12673D9420E43190F1FCD0F2C5A0380365141D0E7572A91D3D2531C414",
+      "sha256": "D68008EC37CD162EF20C7CF0C73FC2A086DE7F7B88A0BAA53D97E5E22C9C0CE7",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 376117427,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1MI-126W/2023.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R1MI-126W/2023.a3.npy.gz",
+      "raw_bytes": 398034240,
+      "raw_sha256": "5019DA92720B2F4D0586C50005D1D8F124E32DA21F8A8B630A2BFF22E42416F4",
+      "sha256": "6B29535C4D324B6A58A8E1E5266A1BBEDAD7AECB55F01D45083A4918135CD390",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2336039809,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R1MI-126W/2023.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R1MI-126W/2023.a5.npy.gz",
+      "raw_bytes": 3980341248,
+      "raw_sha256": "C7B6C53E05F8BFD5CE45CD453A17C157DAFDB98ABD52AF8132A44FD1E1D8601F",
+      "sha256": "DBD2D373377A05AC25BBE4FDE8324F648774853B94112A73C8DB28299E26E140",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 185672646,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R3-252M/2020.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R3-252M/2020.a3.npy.gz",
+      "raw_bytes": 196419536,
+      "raw_sha256": "7587B19FCDD5F221973E59A902AFCA39B75854BE1E8421A2971C0B1E59B785C9",
+      "sha256": "40A06D0122007EE7E0A7DFA98CA28C79280BEEA4294F4FABBE5C8D8501750AD7",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1160630132,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R3-252M/2020.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R3-252M/2020.a5.npy.gz",
+      "raw_bytes": 1964194208,
+      "raw_sha256": "9ABC92389B2363183351CDF04EB9E00D7B9AB80CADF2184DB50F933C85EB1C2E",
+      "sha256": "1446A9AC78770658BC69FF2B8FD7780B185A460CADE3CEA8BC9555D0B2727FA1",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 225653419,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R3-252M/2021.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R3-252M/2021.a3.npy.gz",
+      "raw_bytes": 238754176,
+      "raw_sha256": "204A4F32605F48DA500A5E16BFC7711EB54E76C0BE4D520C5F19BF08BD90E8BF",
+      "sha256": "0E22B52B59741AAC0164D2D4CAD5DD197A6670DDE93AC1ACFBFF7797B2718716",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1393603737,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R3-252M/2021.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R3-252M/2021.a5.npy.gz",
+      "raw_bytes": 2387540608,
+      "raw_sha256": "8012DCA5DC761E33E0EEEE5D2482093E2EC2B6BC3C21D28AC925CE2B8F360F6D",
+      "sha256": "98732652925DA167850B08D4C30DC75E8EC5BF430FD8F421AE761846243C9B36",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 306462522,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R3-252M/2022.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R3-252M/2022.a3.npy.gz",
+      "raw_bytes": 325313376,
+      "raw_sha256": "21A2529CB7759BC29EE761B6AF336878C83F2E627D7296A355A3DA1F53CCA56F",
+      "sha256": "49644A7C598CAF9CC799259B41DCC1C5B06BE6FCC444263CFA9EC919256C7496",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1897804471,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R3-252M/2022.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R3-252M/2022.a5.npy.gz",
+      "raw_bytes": 3253132608,
+      "raw_sha256": "2857FFCC927A854DEE1BFBAA75084F9609EC70CC56FFB0C7823340D1476EA374",
+      "sha256": "B08BCF621F37BCC4CE1B02F3ECF826282F2B42483697CEB8B446A4FECC4AC74F",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 374730846,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R3-252M/2023.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R3-252M/2023.a3.npy.gz",
+      "raw_bytes": 397332912,
+      "raw_sha256": "DAC128B3A6A43F56E2219FBE1239859954ABDE8F24B0113CB1825523E199CF9B",
+      "sha256": "5962627BEC4C5B8979B6B945E6764914E190ABFE61D407EE5AA7B43A97DCD06B",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2347988056,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R3-252M/2023.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R3-252M/2023.a5.npy.gz",
+      "raw_bytes": 3973327968,
+      "raw_sha256": "9550781C94688F0201720659C7990990E5DED67A34BFA238F566EC0E0339AD50",
+      "sha256": "1A0D5461B98DC48C527E7A3F4738C9062B7FC8F47EBC65E3E7AADB806B019A70",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 221661371,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R4-63D/2020.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R4-63D/2020.a3.npy.gz",
+      "raw_bytes": 234506016,
+      "raw_sha256": "95499F1D9A7D96EF0158B0DB0F9580CC19A39CFC1EB2C4C7FC4F504381B0AD0B",
+      "sha256": "2202844D79A54CC5BB5AF74E83BF01B997FD02835111408161C62E509E81ACAA",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1361915672,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R4-63D/2020.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R4-63D/2020.a5.npy.gz",
+      "raw_bytes": 2345059008,
+      "raw_sha256": "62ABA294313DF4FD47C3EC2D884826D364877F31C49537AA75C8DBF8D6EF196D",
+      "sha256": "CBAA02E7A1B70C429D8EF65A4CE5C8182898F163FBC49A74D49FFE532051CE2A",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 290744846,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R4-63D/2021.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R4-63D/2021.a3.npy.gz",
+      "raw_bytes": 307782480,
+      "raw_sha256": "235736FF1F610A4F6AFD7C91D00B55A5BE1F039E995FBD33D85C04BC7F243905",
+      "sha256": "8712748E833932E9331C5DEF324EC972BA7FD34985B7B57BBC748CA7590084A5",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1795299816,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R4-63D/2021.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R4-63D/2021.a5.npy.gz",
+      "raw_bytes": 3077823648,
+      "raw_sha256": "AF54FFF8A55EECE3F253F9B31969B0536F31D22C5A23E6FD23EB91006E14D4D7",
+      "sha256": "6805F194BD4719308FE8714AFD49149038F85EDA6A03D4D7C0BB66F8D7DD2797",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 370628132,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R4-63D/2022.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R4-63D/2022.a3.npy.gz",
+      "raw_bytes": 392741680,
+      "raw_sha256": "F25A5DF24CD40AB0446B58A42F9AF9D6B37CC4C80A0FB80BD8EC4B66BD6CFBC0",
+      "sha256": "381B9BF21947BB7D259BB33B2EC445D9C77FCEC267D2743E4A1D141D92A9E557",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2309088085,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R4-63D/2022.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R4-63D/2022.a5.npy.gz",
+      "raw_bytes": 3927415648,
+      "raw_sha256": "16B72F1C66AE297BD963384888487BA255C0B4CE533510226D0390E38F6A2388",
+      "sha256": "96FF3B6DD54D506D466315BDB7761D93035769D3E6F6538BBEE5747900B0AF33",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 375042703,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R4-63D/2023.a3.npy",
+      "physical_relative_path": "a3_a5/V1-R4-63D/2023.a3.npy.gz",
+      "raw_bytes": 397278192,
+      "raw_sha256": "6DB4A30B27832CC4B065D6934B7A3CFF42FB444F16C02867C412F19C92915944",
+      "sha256": "3B137B06CBFC29F4BFF589C57D41375E3B3E067F3BB9FF55BA57C1E903102E8E",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2339271037,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "a3_a5/V1-R4-63D/2023.a5.npy",
+      "physical_relative_path": "a3_a5/V1-R4-63D/2023.a5.npy.gz",
+      "raw_bytes": 3972780768,
+      "raw_sha256": "2F189604D82FCA8A8AA18FF610B325225E10560BE8ADADB05787A4D03F02CDCB",
+      "sha256": "BFD8313C9759AB7CBD2EC56B8B201C87CBDF20FACD4F8640804B9694D2B09CAD",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 412835838,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0C-126W/2020.npy",
+      "physical_relative_path": "relationships/V1-R0C-126W/2020.npy.gz",
+      "raw_bytes": 628051974,
+      "raw_sha256": "0A9CEA62EAC58D56243D25AFAAA72D16F02A4868F73044299D0D8ED6FD1DBBAF",
+      "sha256": "574F98970C65A9A319DB3339BCBFA95F395C667532BBD87D5047CED93F6567E8",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 523576516,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0C-126W/2021.npy",
+      "physical_relative_path": "relationships/V1-R0C-126W/2021.npy.gz",
+      "raw_bytes": 800319174,
+      "raw_sha256": "AD8F7E1D14B59A25537F8E783A016EC77AD11AB8C2800419238532948121963E",
+      "sha256": "8E757BD088DCDDA0AD44CE6F3E933AC7AD81687FE4252535D838666A11E7DC62",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 705556348,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0C-126W/2022.npy",
+      "physical_relative_path": "relationships/V1-R0C-126W/2022.npy.gz",
+      "raw_bytes": 1072827384,
+      "raw_sha256": "84861ED77F98D3B9D27992A6AA3D31C9E1F122A8EE2743F9A5561931B8D400D7",
+      "sha256": "EC110D52F27ABD08C60E20DC1AA5680481111B901429B09FBEEABE418EDCFC78",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 734168112,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0C-126W/2023.npy",
+      "physical_relative_path": "relationships/V1-R0C-126W/2023.npy.gz",
+      "raw_bytes": 1119471324,
+      "raw_sha256": "F06B75F114F465D50865038E467B3C3B4F45A577B00056E0DF2120AF51E55652",
+      "sha256": "EA85A76C59F52D4066E0D66C4B129A63DD44BB336CB6E96BEF8C9DA4484E16F3",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 382873276,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0D-252M/2020.npy",
+      "physical_relative_path": "relationships/V1-R0D-252M/2020.npy.gz",
+      "raw_bytes": 552429969,
+      "raw_sha256": "24C260405C4C361DE902F6EC92F19D60B7D98E0D828C547C407B979BE9468F59",
+      "sha256": "D7EBAAAE58E6A1B5C8AFF5DA6F43463C3662341BE9C07D240B6A09B7F5F736F6",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 444221918,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0D-252M/2021.npy",
+      "physical_relative_path": "relationships/V1-R0D-252M/2021.npy.gz",
+      "raw_bytes": 671496144,
+      "raw_sha256": "05510C208196FD4879837834E8D885A33DDD41B6A5197368D9F5FF66D4F8F6E2",
+      "sha256": "9BCF80C46A9AF2757071DC58994C5B0D271E964E844FE99AA9FA5E48A563ADD1",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 606439141,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0D-252M/2022.npy",
+      "physical_relative_path": "relationships/V1-R0D-252M/2022.npy.gz",
+      "raw_bytes": 914943894,
+      "raw_sha256": "4CB4F7FD2818C1803F04E7879231BC010E6D080F07E042D79FC78D7ABECF3B07",
+      "sha256": "7CB95CF3A9083520F206A9D02A1229E5CB90A78BF1665B1499B838E2EA8CD140",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 738731922,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0D-252M/2023.npy",
+      "physical_relative_path": "relationships/V1-R0D-252M/2023.npy.gz",
+      "raw_bytes": 1117498839,
+      "raw_sha256": "1A9CF805167DBE21D61852E4D8D5D2B25BD23A3A74BBF3C0B8683B33B9C51F1D",
+      "sha256": "62ACA04CB3AA9599DCEB237B0B7C9D4C38F787C5CE838145B6FCD1554607E577",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 360977673,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0L-126W/2020.npy",
+      "physical_relative_path": "relationships/V1-R0L-126W/2020.npy.gz",
+      "raw_bytes": 628051974,
+      "raw_sha256": "03FBF006B854C081498019D2CABE8A8CD7EEB5033C7F91CFCBAB9743D487811E",
+      "sha256": "EE75D8A06DCB2C316A44AADE460AEB5AA61FCF674488FAE9C0A053D8B8A371D5",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 457403948,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0L-126W/2021.npy",
+      "physical_relative_path": "relationships/V1-R0L-126W/2021.npy.gz",
+      "raw_bytes": 800319174,
+      "raw_sha256": "7C1454E3CE87D2582FB93095E11DECBC88ACF8A5C24A343B0FDEA95D65C16B86",
+      "sha256": "1D46D42975D2C2DBA5CEB45C3727CE465F6269632BA49E8403E633D54FA71A7F",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 616900176,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0L-126W/2022.npy",
+      "physical_relative_path": "relationships/V1-R0L-126W/2022.npy.gz",
+      "raw_bytes": 1072827384,
+      "raw_sha256": "3E538854C475767FC7E434FD5A799CF3815A9C8401F13CDC19BF11379F8E8FBE",
+      "sha256": "BA892B7DF6B09A7951F6A2E46D25BC53474C0035A1A13707DBFB32775ECBA57D",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 641191016,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R0L-126W/2023.npy",
+      "physical_relative_path": "relationships/V1-R0L-126W/2023.npy.gz",
+      "raw_bytes": 1119471324,
+      "raw_sha256": "E85F46148988BA26D5B417A79A164B2F926B1FB2A458EE8DC8FD2C3B80DF090B",
+      "sha256": "1D13091BD4833C4200578D0C3B83B8EB462298D7227D4DF580BF93F4562A0CB0",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 354395185,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R1M-126W/2020.npy",
+      "physical_relative_path": "relationships/V1-R1M-126W/2020.npy.gz",
+      "raw_bytes": 628051974,
+      "raw_sha256": "68E6ABD88D24D8F0867B29C8B181510B8CB14700B67F6FF9C5FE556B99BC42E7",
+      "sha256": "08140AA550F6C861D6F1AD2C8189709FF2E2565297000A4CDA6F21174679D018",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 454113758,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R1M-126W/2021.npy",
+      "physical_relative_path": "relationships/V1-R1M-126W/2021.npy.gz",
+      "raw_bytes": 800319174,
+      "raw_sha256": "42EB1C3AD38304D523C87F4E1561FE8E4B3D5A8EB86EA43842EB0E8B2D7BA116",
+      "sha256": "5C4976C3EEC3FEA25E6CC716839C1ACBB547D55A267387C5DBDE33C1FCB793C4",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 610184272,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R1M-126W/2022.npy",
+      "physical_relative_path": "relationships/V1-R1M-126W/2022.npy.gz",
+      "raw_bytes": 1072827384,
+      "raw_sha256": "3D486A0FCB54CED80BEDCD4E5684C9977876C2D6C85620577E0AA3E764146A74",
+      "sha256": "1357F5DCD622D18309169A1076F3E12BE7A19727D1E3693D78DF831ECF0FABD6",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 634922072,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R1M-126W/2023.npy",
+      "physical_relative_path": "relationships/V1-R1M-126W/2023.npy.gz",
+      "raw_bytes": 1119471324,
+      "raw_sha256": "ED700BE53427C07AAD6112E5977EEB91BF3E24732C60A5FC1390F8D7D4FF5C7F",
+      "sha256": "92E4B29E7E891B38124E14BC4AD491C70CC5BA4944B0A8D7CEC7CB51BE3C234E",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 351485862,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R1MI-126W/2020.npy",
+      "physical_relative_path": "relationships/V1-R1MI-126W/2020.npy.gz",
+      "raw_bytes": 628051974,
+      "raw_sha256": "21298C8CF9F964ADD1BC512ECB32937D8C095C3AF0EF8A83E3AFDFCE1A268200",
+      "sha256": "A50BE12491A4D548309E30462C2B2670B31001A697BF1AD09D5EB17B15B5B7ED",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 447422790,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R1MI-126W/2021.npy",
+      "physical_relative_path": "relationships/V1-R1MI-126W/2021.npy.gz",
+      "raw_bytes": 800319174,
+      "raw_sha256": "ABCB632FC62140D048D914479758D46F5D3DB7D1910CF213C8152F66A131864E",
+      "sha256": "1F039E5E8912CC28D9D008664A7141B2734512ACA4F87EAE1415E83C5559BD05",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 599581973,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R1MI-126W/2022.npy",
+      "physical_relative_path": "relationships/V1-R1MI-126W/2022.npy.gz",
+      "raw_bytes": 1072827384,
+      "raw_sha256": "5845C15FB61CD96E5D7C360C6AF041982005CF03CED2B0708A0DFCFE6673CD8A",
+      "sha256": "22FD585D7451D35221BE4705E38F8206AC26C31121DE0FB8E0A04DF2A2F87411",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 624286247,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R1MI-126W/2023.npy",
+      "physical_relative_path": "relationships/V1-R1MI-126W/2023.npy.gz",
+      "raw_bytes": 1119471324,
+      "raw_sha256": "D01304C9DF653D4BCFAE69FC92083B5E0016DC2EF64BA6858C7EE14B5BCC4062",
+      "sha256": "10BC7E1EC3E68F88DA32DD8A568BD0C5655ECC8B195FC388E0EBB98C7E4F5191",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 354467317,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R3-252M/2020.npy",
+      "physical_relative_path": "relationships/V1-R3-252M/2020.npy.gz",
+      "raw_bytes": 613811098,
+      "raw_sha256": "4EF15FD89B0D6E008C4B9A77832497D15594682A54B1B41F26AE4748C28E9AD2",
+      "sha256": "1859D691601BE636AEBCB87417FE11B39AF7FBFB5ADF25A9924929B0C130484F",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 401526039,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R3-252M/2021.npy",
+      "physical_relative_path": "relationships/V1-R3-252M/2021.npy.gz",
+      "raw_bytes": 746106848,
+      "raw_sha256": "59332266C664124C6255BEAFC1D5AA7049A6171B7537BA5C31AFEDC80E3929DE",
+      "sha256": "CE3A5F2178F60CF27D619DBE4EC61B70AEDD2CC497143D3630485F924CA97A09",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 546391016,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R3-252M/2022.npy",
+      "physical_relative_path": "relationships/V1-R3-252M/2022.npy.gz",
+      "raw_bytes": 1016604348,
+      "raw_sha256": "6122EEFBCB025C3BB76F35D5EE2D7F20880C3D91DF80D0CA8BF70E28365417BE",
+      "sha256": "51BE9A1EF687D26924611FE23DD56A3BD3BC40C9941D67B84724958F2683AAC2",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 663671653,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R3-252M/2023.npy",
+      "physical_relative_path": "relationships/V1-R3-252M/2023.npy.gz",
+      "raw_bytes": 1241665398,
+      "raw_sha256": "963687294264940234F34ECD2BF7202CFEDE95A9CED3991F7429868AE8526106",
+      "sha256": "186B358C1417291E3A4FDC50144BA74ABB09581185BD05551AE8FB7DB57C771D",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 371593951,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R4-63D/2020.npy",
+      "physical_relative_path": "relationships/V1-R4-63D/2020.npy.gz",
+      "raw_bytes": 615578340,
+      "raw_sha256": "A1455F13A9E636980898846AB55D62B96C249F4C3E4F6861F97455EF00BFF976",
+      "sha256": "FE6752EC5B58AE69F88810A4F2DF6F60C4755BAEA3AF773AE62B9C8B34866C2A",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 486980627,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R4-63D/2021.npy",
+      "physical_relative_path": "relationships/V1-R4-63D/2021.npy.gz",
+      "raw_bytes": 807929058,
+      "raw_sha256": "2BB1E3CA5B210F13FD9E5C1F21B02F5F1BD8D00CA41E24F6C0134A199B117722",
+      "sha256": "6FFF6844682ED637F42841D092DCCAC6E7F3BBCC94280346E4633537C8A2F523",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 625400304,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R4-63D/2022.npy",
+      "physical_relative_path": "relationships/V1-R4-63D/2022.npy.gz",
+      "raw_bytes": 1030946958,
+      "raw_sha256": "90DF4527BF0637C0496D8D91A2ABB3C33CE691E2B4333CDB730339A89FC3C45E",
+      "sha256": "7FAAAC15C3D2F87B21872F56A701A70C1D8816DCE6BF4454B7534164B3250798",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 630433128,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "relationships/V1-R4-63D/2023.npy",
+      "physical_relative_path": "relationships/V1-R4-63D/2023.npy.gz",
+      "raw_bytes": 1042855302,
+      "raw_sha256": "8886098A89EC5EE4A055D5CBF085E85CCE53B4629FC95029C25DB4987A1B998A",
+      "sha256": "0B7A8756C63486F797207EC0959EBB10769A1B5718BE805FAFFBAACCECB0EB0C",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 266254760,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0C-126W/2020.npy",
+      "physical_relative_path": "rt3_state/V1-R0C-126W/2020.npy.gz",
+      "raw_bytes": 553111776,
+      "raw_sha256": "1F24E80CC538224F66F7F8790E056F94EB359BA0BC8F36B99FBF5CC9F710A4BF",
+      "sha256": "5A1E888747B72AB8A15717B5420C06BCA1E91FBF874065A3376F428533F6C683",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 340925045,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0C-126W/2021.npy",
+      "physical_relative_path": "rt3_state/V1-R0C-126W/2021.npy.gz",
+      "raw_bytes": 703719721,
+      "raw_sha256": "9A5CFFCF5ACCCDE5D74CC8E058A6594372D1BE7554B04B337108BE0DDD138324",
+      "sha256": "46AAAF823A88B501DC515B3AC18D9E32A6EDC23CE52D78C13FC28AC13E73FB3A",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 444032438,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0C-126W/2022.npy",
+      "physical_relative_path": "rt3_state/V1-R0C-126W/2022.npy.gz",
+      "raw_bytes": 910519751,
+      "raw_sha256": "01611A87B97CD4B89EF5DDF81C222600938F453691B072736DD8CF5C06D25E50",
+      "sha256": "59837CEABD6A17A19572E830867552CFD95C0B2A1FE5CBFB714E93CFEEBC2F82",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 463905350,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0C-126W/2023.npy",
+      "physical_relative_path": "rt3_state/V1-R0C-126W/2023.npy.gz",
+      "raw_bytes": 951362016,
+      "raw_sha256": "A1AD337A89DD0721FAE1A7A08909042E31DC0F0E467F0C57C4BF18D78F9A27E5",
+      "sha256": "D241A869F80533BF4333083FEF7A492B3BE44F26167C58D7E1E85F2C931F45B9",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 59117819,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0D-252M/2020.npy",
+      "physical_relative_path": "rt3_state/V1-R0D-252M/2020.npy.gz",
+      "raw_bytes": 113008431,
+      "raw_sha256": "126DF7E06C3B9ED214FDF86F5BDC6E0F48C62471559E22FE0EAE83A987ABB314",
+      "sha256": "A6CC47544B91691C0F3787242A2CA93D9A259B2B709A38A1DF0536BF7203B608",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 66654041,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0D-252M/2021.npy",
+      "physical_relative_path": "rt3_state/V1-R0D-252M/2021.npy.gz",
+      "raw_bytes": 136680106,
+      "raw_sha256": "6807C8A5A6604445D630BB04BDAB304E2B7550A3B8C43F6BA856EFB84F9ADB71",
+      "sha256": "CD3D65F653A23B83BDF2B94E53A873CF211F8E893E558E1CB3A1C485B3E52148",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 91677900,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0D-252M/2022.npy",
+      "physical_relative_path": "rt3_state/V1-R0D-252M/2022.npy.gz",
+      "raw_bytes": 186514296,
+      "raw_sha256": "DCD2EE1AD0A788F2D57CBF2F1AAE8F27E326A31A56F91ED9C797BBE330811640",
+      "sha256": "B09E95A3DE59170A28256B8F525B7C67C866C594AF60065723D10B98D50869B8",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 112063272,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0D-252M/2023.npy",
+      "physical_relative_path": "rt3_state/V1-R0D-252M/2023.npy.gz",
+      "raw_bytes": 228282671,
+      "raw_sha256": "989441F23D8F71A3BCE6B1449AC004F3E5071549507802D290F07AFB32F0D28D",
+      "sha256": "35FD89589122D0DFD4D71E42A9C5FA6304EE3E08ABF46AD9CF85401D5A9F121C",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 244415148,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0L-126W/2020.npy",
+      "physical_relative_path": "rt3_state/V1-R0L-126W/2020.npy.gz",
+      "raw_bytes": 553111776,
+      "raw_sha256": "E989C607D39F15FBC555CF55A46FE9D62A1541EA3A97E890D96FABC15F9490BC",
+      "sha256": "DBE56AD3C809F58F1332F60CD9C0FD346B759409ED629A8689E3429583E601A3",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 312508340,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0L-126W/2021.npy",
+      "physical_relative_path": "rt3_state/V1-R0L-126W/2021.npy.gz",
+      "raw_bytes": 703719721,
+      "raw_sha256": "C9AF460A0C41A955B8670A3A03B5CB315981E9D311027F036166B5FB8BC16D79",
+      "sha256": "05DBE0394D07028DF81101667679EFEC791C3C4CDC761338694EDC15422338AE",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 407661729,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0L-126W/2022.npy",
+      "physical_relative_path": "rt3_state/V1-R0L-126W/2022.npy.gz",
+      "raw_bytes": 910519751,
+      "raw_sha256": "5C67491C89F2BA152A779EEDA5F56AEAD5A6BCD7EB88B2D86CF465BBECDC1268",
+      "sha256": "07EC91C3BBBCED2AA8ACFC656D2C96EE2FE02D4BCB3403E7457E01F66204C4A0",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 425616911,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R0L-126W/2023.npy",
+      "physical_relative_path": "rt3_state/V1-R0L-126W/2023.npy.gz",
+      "raw_bytes": 951362016,
+      "raw_sha256": "D4F33A7FB43B876D7948C68F62A2FC60CE0698EC22B6A7B1DBE6DA581DAFF0AF",
+      "sha256": "01AD5DE230122EFD928817F9CEB7F2DA7D15A8C36BE5A7CAA21AEA75DA9FC95D",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 278856848,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R1M-126W/2020.npy",
+      "physical_relative_path": "rt3_state/V1-R1M-126W/2020.npy.gz",
+      "raw_bytes": 553111776,
+      "raw_sha256": "2345DF85F8375541D812D9C934FE83BFC0407BC597F41BB024922D6FD114F31C",
+      "sha256": "E05C22996D5535BF4B09233249CA1B7AE926773FE5B38F68BB7E08B408496050",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 356409891,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R1M-126W/2021.npy",
+      "physical_relative_path": "rt3_state/V1-R1M-126W/2021.npy.gz",
+      "raw_bytes": 703719721,
+      "raw_sha256": "BBF3FA253A9EADE632ADECD81295556279EB33FC5FD997FD10CC81FD57776429",
+      "sha256": "A9C6CFCD57518E597E6740220C0382C59E7B3FE89EA3C99A4F0C6F462FC1CD03",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 463990327,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R1M-126W/2022.npy",
+      "physical_relative_path": "rt3_state/V1-R1M-126W/2022.npy.gz",
+      "raw_bytes": 910519751,
+      "raw_sha256": "C5BBCFCF5AB8E5991A49423145C62D43587DD892141834FEE9760C5A9EB1A19C",
+      "sha256": "F632C897B210E6319BD47C266DBAC119DC1C6349A75C2ED1D02F48309DB4840A",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 484005045,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R1M-126W/2023.npy",
+      "physical_relative_path": "rt3_state/V1-R1M-126W/2023.npy.gz",
+      "raw_bytes": 951362016,
+      "raw_sha256": "A051245BA9B4E87E1213E28E01D954F0B247283408CA859B86B041B58717B28A",
+      "sha256": "71F9A58B85B85DE4BFF1E6468C937107AC7C239CC6090AE442A01E130739C201",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 360803691,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R1MI-126W/2020.npy",
+      "physical_relative_path": "rt3_state/V1-R1MI-126W/2020.npy.gz",
+      "raw_bytes": 553111776,
+      "raw_sha256": "3B17B4B623B9A8813E4886F853105DBF5D20B7787C09B406D0C4AC62B27F4CBC",
+      "sha256": "B5D93E6AAD83445572CE8F97DB1B3B5341D240EA1DC726AD118710C6F955B80E",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 460499318,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R1MI-126W/2021.npy",
+      "physical_relative_path": "rt3_state/V1-R1MI-126W/2021.npy.gz",
+      "raw_bytes": 703719721,
+      "raw_sha256": "187162C3E85697B415C72D0252A63B65272F12440688E9F1D591129BD42AD910",
+      "sha256": "820359467EA9E7A0E8EEA6439F157BF7EDBEFD8E7E9AD185319F1A9626026490",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 597282151,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R1MI-126W/2022.npy",
+      "physical_relative_path": "rt3_state/V1-R1MI-126W/2022.npy.gz",
+      "raw_bytes": 910519751,
+      "raw_sha256": "11AAC0C8E3F10DEE9C015C84F9E235F86045E9D9B2D8A48020A9736065DC54ED",
+      "sha256": "E41624E84E709A2081A98FEC3FE4D50FEA84F3E470BF62149099D83BD9E7B322",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 622690675,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R1MI-126W/2023.npy",
+      "physical_relative_path": "rt3_state/V1-R1MI-126W/2023.npy.gz",
+      "raw_bytes": 951362016,
+      "raw_sha256": "FABC3A01EF28361939106285BC75F3E951E87C82B43B5287633FDF964B8321C2",
+      "sha256": "8246F40B67A4055420F5BCAD68F560DDEB0D71032A3E3BC8A4C7F550068D0F7B",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 49564142,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R3-252M/2020.npy",
+      "physical_relative_path": "rt3_state/V1-R3-252M/2020.npy.gz",
+      "raw_bytes": 122171256,
+      "raw_sha256": "53955226CD4DDAEB88CF359F5FC99B512BF6AA3662B74F08663754C1592C5CA5",
+      "sha256": "164AF78D1CE8898ECA9A7FFAAE0F4FE337456B3B94B5B85403F43E3C38477ADD",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 50826986,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R3-252M/2021.npy",
+      "physical_relative_path": "rt3_state/V1-R3-252M/2021.npy.gz",
+      "raw_bytes": 147762256,
+      "raw_sha256": "9CCB3DFA06415C1489E0957D4B15539D42216FDFFB2ABEB130AC90DC2B19B841",
+      "sha256": "AB5E9CF814FA9323CD6A8EFD632BD5B97B568503987117DDBBAB0B95E9AB7AB9",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 70697391,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R3-252M/2022.npy",
+      "physical_relative_path": "rt3_state/V1-R3-252M/2022.npy.gz",
+      "raw_bytes": 201637056,
+      "raw_sha256": "D31018E2CA3363C26B842E1398822D264606D3F61E78EC8F501C0E4CB255C558",
+      "sha256": "7CFC32CADC36F063EECDB7CE09B32EFEBF1F4230AF104F02B92248934871E73B",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 84320849,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R3-252M/2023.npy",
+      "physical_relative_path": "rt3_state/V1-R3-252M/2023.npy.gz",
+      "raw_bytes": 246792056,
+      "raw_sha256": "74C5339F08FD9E1A33DB1CB041843C45CAD49326842A09A298C3A4979B590873",
+      "sha256": "B3EA0D18064E2440BBAACA44D7CB9E9E39418C74C440D171F7163D0031E9E06D",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1181060055,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R4-63D/2020.npy",
+      "physical_relative_path": "rt3_state/V1-R4-63D/2020.npy.gz",
+      "raw_bytes": 1289782768,
+      "raw_sha256": "CCE0A117BF6A1D3C22080EF77FCC22E791ED9F7A8557F39B036C657E21281A22",
+      "sha256": "FCFE32F2FBDB5B82967C61F02A28609B1E5C233404BCADAC08E1658EBB9DC8E8",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1550284304,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R4-63D/2021.npy",
+      "physical_relative_path": "rt3_state/V1-R4-63D/2021.npy.gz",
+      "raw_bytes": 1692803320,
+      "raw_sha256": "84BAF70ACD3D42F7FC8B1792F414CA810BE1305287C02B8342CD9C5195C21E35",
+      "sha256": "09BAAE748722321F0A79D64F3C237B3A963103DB8439136C33943C0724D1AF3A",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 1979917825,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R4-63D/2022.npy",
+      "physical_relative_path": "rt3_state/V1-R4-63D/2022.npy.gz",
+      "raw_bytes": 2160078920,
+      "raw_sha256": "177F802022D2C035EB538DAE3FFC23C9B83DCBC184AB85A9A1B5B6FE525689EC",
+      "sha256": "2FFE2A289EF3CD639C2E8F04EA2F7849869497FE380264F7F1A25C9E226B41B9",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    },
+    {
+      "compressed_bytes": 2002029432,
+      "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
+      "logical_path": "rt3_state/V1-R4-63D/2023.npy",
+      "physical_relative_path": "rt3_state/V1-R4-63D/2023.npy.gz",
+      "raw_bytes": 2185029736,
+      "raw_sha256": "FCCFFB66A3681F711605BF68C676D88B62C7E412DD2135BA5144B158D7CA07E8",
+      "sha256": "A1A520038F51C3B2AB8CBC5B067D0F94CC5E852782DD4256E8F73828201B175F",
+      "validation": "LOSSLESS_ROUNDTRIP_PASS"
+    }
+  ],
+  "physical_root": "D:\\MechanismAwareStatArbData\\OF4",
+  "po_c_commit": "7fcfd3c9da73c388b3e1ba9219000c6dd2e5c27b",
+  "relationship_protocol": "FROZEN_PAIR_A_R0_R1_R3_R4",
+  "retuning": "NONE",
+  "scientific_identity_independent_of_physical_location": true,
+  "status": "IMMUTABLE_COMPLETE_CHECKSUMMED"
+}

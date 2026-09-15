@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `PO-C PUBLISHED — RELATIONSHIP-STAGE OF4 EXECUTION ACTIVE` |
+| Stage status | `PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | execute and checksum frozen 2020–2023 relationship-stage OF4; A6/G5 excluded |
+| Current substage | OF4 materialized/checksummed; A1 common-scale binding unresolved before interpretation |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `2013–2019 ancestry + 2020–2023 relationship OF4 ONLY`; held-out denied |
-| Current authorized action | `V1-PO-C-RELATIONSHIP-OF4-EXECUTION` |
-| Last validation state | D-drive external OF4 root writable with 808,974,237,696 free bytes; projected safe peak 49,723,741,022 bytes |
-| Latest local commit | `4d793d1` — external OF4 storage governance published |
-| Remote state observed | `origin/main` at `4d793d1` before OF4 activation |
-| Researcher action required | `NO`; PO-C selected |
+| Computation authorization | `PAUSED BEFORE A1/CS2/SR0→SR1 INTERPRETATION`; held-out denied |
+| Current authorized action | `NONE — A1 common-scale researcher binding required` |
+| Last validation state | 112/112 OF4 payloads deterministic-lossless/checksummed; 142,810,708,252 raw bytes; 88,461,879,645 compressed bytes |
+| Latest local commit | `fb9a72e` — deterministic OF4 materializer published |
+| Remote state observed | `origin/main` at `fb9a72e` before final materialization checkpoint |
+| Researcher action required | `YES`; freeze a common A1 scaling history or decline comparative A1 claims |
 
 ## Verified frozen chain relevant to activation
 
