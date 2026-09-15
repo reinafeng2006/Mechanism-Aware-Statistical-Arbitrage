@@ -1,7 +1,7 @@
 {
   "schema_version": "V1-PO-C-1.0",
   "decision_id": "PO-C",
-  "status": "FROZEN_PENDING_PUBLICATION",
+  "status": "PUBLISHED_BOUND_TO_PHASE1",
   "scope": "RELATIONSHIP_STAGE_OF4_ONLY_2020_2023",
   "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED",
   "non_interpretation": "A6_G5_NON_ESTIMABILITY_IS_NOT_POOR_MECHANISM_MODEL_OR_TRADING_PERFORMANCE",

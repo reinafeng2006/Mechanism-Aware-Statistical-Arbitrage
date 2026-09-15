@@ -230,6 +230,12 @@ $poCPublication = (
     $action.action.dataset_access -eq 'DENIED_UNTIL_PO_C_PUBLICATION' -and
     $action.action.held_out_access -eq 'SEALED_DENIED'
 )
+$externalStoragePublication = (
+    $action.action.action_id -eq 'V1-PO-C-EXTERNAL-STORAGE-PUBLICATION' -and
+    $action.action.execution_state -eq 'OF4_EXTERNAL_STORAGE_QUALIFIED_PENDING_PUBLICATION' -and
+    $action.action.dataset_access -eq 'DENIED_UNTIL_EXTERNAL_STORAGE_PUBLICATION' -and
+    $action.action.held_out_access -eq 'SEALED_DENIED'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -241,7 +247,7 @@ $checks = @(
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication -or $evRowMappingPause -or $evMapBPublication -or $preOuterGate -or $poCPublication),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication -or $evRowMappingPause -or $evMapBPublication -or $preOuterGate -or $poCPublication -or $externalStoragePublication),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
@@ -251,7 +257,9 @@ if ($checks -contains $false) {
     throw "V1 pre-computation gate invariant failed at check indexes: $($failedIndexes -join ',')."
 }
 
-if ($poCPublication) {
+if ($externalStoragePublication) {
+    Write-Output 'PASS: PO-C and qualified external storage are pending publication; no OF4 or held-out access is permitted yet.'
+} elseif ($poCPublication) {
     Write-Output 'PASS: PO-C is frozen pending publication; no OF4 or held-out access is permitted yet.'
 } elseif ($preOuterGate) {
     Write-Output 'PASS: inner EV-MAP-B/A6/G5 execution is complete; OF4 and held-out remain denied at the pre-outer gate.'

@@ -1,0 +1,31 @@
+{
+  "schema_version": "V1-OF4-EXTERNAL-STORAGE-1.0",
+  "decision_id": "V1-OF4-EXTERNAL-STORAGE",
+  "status": "QUALIFIED_PENDING_PUBLICATION",
+  "physical_artifact_root": "D:\\MechanismAwareStatArbData",
+  "of4_payload_root": "D:\\MechanismAwareStatArbData\\OF4",
+  "preflight": {
+    "exists": true,
+    "writable": true,
+    "free_bytes": 808974237696,
+    "minimum_required_free_bytes": 60000000000,
+    "projected_safe_peak_bytes": 49723741022,
+    "status": "PASS"
+  },
+  "semantics": "PHYSICAL_STORAGE_LOCATION_IS_NOT_SCIENTIFIC_ARTIFACT_IDENTITY",
+  "materialization": "TEMPORARY_WRITE_VALIDATE_CHECKSUM_ATOMIC_FINALIZE",
+  "compression": "DETERMINISTIC_LOSSLESS",
+  "partitioning": "YEAR_X_CANDIDATE_X_AUTHORIZED_PARTITION",
+  "storage_only_prohibitions": [
+    "TOP_K",
+    "SAMPLING",
+    "PAIR_UNIVERSE_REDUCTION",
+    "FIELD_DELETION",
+    "LOSSY_ROUNDING",
+    "YEAR_REDUCTION",
+    "SCIENTIFIC_SEMANTIC_MODIFICATION"
+  ],
+  "git_payload_policy": "LARGE_OF4_PAYLOADS_NOT_COMMITTED",
+  "existing_artifacts": "UNCHANGED_IN_PLACE",
+  "held_out": "SEALED_NOT_CREATED_NOT_ACCESSED"
+}

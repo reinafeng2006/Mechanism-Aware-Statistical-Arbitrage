@@ -56,6 +56,7 @@ $allowedGates = @(
     ,'EV_MAP_B_QUALIFIED_PENDING_PUBLICATION'
     ,'PRE_OUTER_V1_GATE_RESEARCHER_DECISION_REQUIRED'
     ,'PO_C_QUALIFIED_PENDING_PUBLICATION'
+    ,'OF4_EXTERNAL_STORAGE_QUALIFIED_PENDING_PUBLICATION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -283,6 +284,12 @@ if ($contract.computation_gate -eq 'PO_C_QUALIFIED_PENDING_PUBLICATION') {
     if ($next.action.dataset_access -ne 'DENIED_UNTIL_PO_C_PUBLICATION') { throw 'PO-C publication must deny OF4 access.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($contract.po_c.status -ne 'FROZEN_PENDING_PUBLICATION') { throw 'PO-C contract binding mismatch.' }
+}
+if ($contract.computation_gate -eq 'OF4_EXTERNAL_STORAGE_QUALIFIED_PENDING_PUBLICATION') {
+    if ($next.action.action_id -ne 'V1-PO-C-EXTERNAL-STORAGE-PUBLICATION') { throw 'External storage publication action mismatch.' }
+    if ($next.action.dataset_access -ne 'DENIED_UNTIL_EXTERNAL_STORAGE_PUBLICATION') { throw 'External storage publication must deny OF4 access.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($contract.po_c.status -ne 'PUBLISHED_BOUND_TO_PHASE1') { throw 'PO-C publication binding mismatch.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

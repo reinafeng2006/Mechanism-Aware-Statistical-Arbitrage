@@ -1,0 +1,28 @@
+{
+  "schema_version": "V1-OF4-STORAGE-GATE-1.0",
+  "audit_id": "V1-OF4-STORAGE-FEASIBILITY-20260915",
+  "status": "RESOLVED_BY_AUTHORIZED_EXTERNAL_STORAGE",
+  "scientific_access": "NO_OF4_MARKET_VALUES_OR_OUTCOMES_ACCESSED",
+  "basis": {
+    "method": "2019 inner structural run-rate scaled by 970 official OF4 trading-session metadata; component byte densities from immutable inner artifacts; compression ratios from 256 MiB raw-byte serialization samples",
+    "inner_relationship_rows": 273371732,
+    "2019_relationship_rows": 85208074,
+    "2019_trading_sessions": 244,
+    "of4_trading_sessions": 970,
+    "projected_logical_rows": 338737015
+  },
+  "projection_bytes": {
+    "uncompressed_total": 88221512657,
+    "compressed_total": 35473741022,
+    "temporary_atomic_write_peak": 2500000000,
+    "manifest_checksum_overhead": 250000000,
+    "restart_checkpoint_overhead": 1500000000,
+    "minimum_free_space_reserve": 10000000000,
+    "minimum_safe_free_space_required": 49723741022,
+    "c_drive_observed_free_space": 24861487104,
+    "c_drive_shortfall": 24862253918
+  },
+  "original_disposition": "FAIL_UNSAFE_CAPACITY_ON_C_DRIVE",
+  "resolution": "EXTERNAL_STORAGE_AUTHORIZED_AND_PREFLIGHT_PASSED",
+  "held_out_access": "SEALED_DENIED"
+}
