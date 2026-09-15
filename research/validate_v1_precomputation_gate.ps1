@@ -164,6 +164,13 @@ $mp1ReferencePause = (
     $action.action.empirical_result_visibility -eq 'DENIED' -and
     $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
 )
+$mp1APublication = (
+    $action.action.action_id -eq 'V1-MP1-A-PUBLICATION-V1' -and
+    $action.action.execution_state -eq 'MP1_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION' -and
+    $action.action.dataset_access -eq 'DENIED_UNTIL_MP1_A_PUBLICATION' -and
+    $action.action.empirical_result_visibility -eq 'DENIED' -and
+    $contract.status -eq 'FROZEN_PHASE1_INNER_AUTHORIZED_C04_CONDITIONAL'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -175,7 +182,7 @@ $checks = @(
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
@@ -185,7 +192,9 @@ if ($checks -contains $false) {
     throw "V1 pre-computation gate invariant failed at check indexes: $($failedIndexes -join ',')."
 }
 
-if ($mp1ReferencePause) {
+if ($mp1APublication) {
+    Write-Output 'PASS: MP1-A is frozen pending publication; downstream empirical access remains denied.'
+} elseif ($mp1ReferencePause) {
     Write-Output 'PASS: RT3 augmentation is published and preserved; downstream execution is paused before MP1 on an unfrozen PIT reference-window contract.'
 } elseif ($rt3AActive) {
     Write-Output 'PASS: RT3-A permits only deterministic relationship-state replay with no interpretation; OF4 and held-out remain denied.'

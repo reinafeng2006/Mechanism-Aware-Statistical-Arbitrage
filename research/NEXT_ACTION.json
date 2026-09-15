@@ -1,11 +1,11 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "Researcher decision required for MP1 PIT reference-window semantics",
-    "status": "BLOCKED",
-    "execution_state": "PAUSED_MP1_PIT_REFERENCE_WINDOW_NOT_FROZEN",
-    "objective": "Preserve all immutable relationship and RT3 state outputs while awaiting one ex-ante MP1 reference-window decision.",
+    "action_id": "V1-MP1-A-PUBLICATION-V1",
+    "name": "Publish the researcher-approved MP1-A reference contract",
+    "status": "AUTHORIZED",
+    "execution_state": "MP1_A_QUALIFIED_PENDING_PROTOCOL_PUBLICATION",
+    "objective": "Publish common candidate-neutral H126/U1W MP1 reference semantics before downstream empirical access.",
     "prerequisites": [
       "DECA-A published",
       "Seven relationship candidates materialized as 70 immutable 2015-2019 inner partitions",
@@ -17,7 +17,10 @@
       "All 70 augmentation partitions passed exact shared-field equivalence",
       "RT3 state augmentation published and qualified for downstream use"
     ],
-    "allowed_scope": [],
+    "allowed_scope": [
+      "write and validate the MP1-A decision and contract",
+      "normal non-force commit and push to authorized main"
+    ],
     "forbidden_scope": [
       "overwrite or mutation of existing relationship outputs",
       "R0/R1/R3/R4 recomputation",
@@ -28,13 +31,13 @@
       "OF4 2020-2023 access",
       "2024-2025 held-out access"
     ],
-    "dataset_access": "DENIED_PENDING_MP1_PIT_REFERENCE_WINDOW_DECISION",
+    "dataset_access": "DENIED_UNTIL_MP1_A_PUBLICATION",
     "empirical_result_visibility": "DENIED",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Researcher freezes one MP1 PIT reference-window/support/update contract or explicitly amends V1 scope.",
+    "completion_condition": "MP1-A protocol commit is pushed before inner computation resumes.",
     "mandatory_stop_conditions": [
       "Any data or empirical access before RT3 resolution",
       "Any OF4 or held-out access"

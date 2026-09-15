@@ -1,0 +1,16 @@
+{
+  "schema_version": "V1-MP1-A-CONTRACT-1.0",
+  "decision_id": "V1-MP1-A-1.0",
+  "status": "FROZEN_PENDING_PUBLICATION",
+  "reference_object": "AMOUNT_DIVIDED_BY_VOLUME",
+  "estimator": "MEDIAN",
+  "history": "MOST_RECENT_126_QUALIFIED_OBSERVATIONS",
+  "refresh": "FIRST_AUTHORIZED_ELIGIBLE_ISO_WEEK_POINT",
+  "within_week": "DETERMINISTIC_CARRY_FORWARD",
+  "pit_order": "STRICTLY_BEFORE_REFRESH_ORIGIN",
+  "cross_candidate": "COMMON_R0_R1_R3_R4",
+  "insufficient_support": "UNAVAILABLE_NO_SHORTENING_OR_FALLBACK",
+  "not_selected_v1": ["MP1-B-H63-U1D", "MP1-C-EXPANDING"],
+  "of4_access": "DENIED",
+  "held_out_access": "SEALED_DENIED"
+}

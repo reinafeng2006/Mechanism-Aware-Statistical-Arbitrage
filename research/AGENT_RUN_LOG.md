@@ -201,3 +201,10 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - No performance, ranking, abnormality, target, A6, trading, PnL, OF4, or held-out information was inspected. Downstream use is guarded until the qualified augmentation is published.
 - Qualified RT3 augmentation and exact-equivalence implementation published as commit `c2ccc43` on `main`. The inner-only downstream action is restored with RT3 lineage bound; original relationship outputs will not be recomputed.
 - Post-publication executable audit found that MP1's required `median_PIT(amount/volume)` has no frozen historical support window or refresh rule. Because this value enters PV-M2 and the deterministic M2 trade gate, selecting a default would alter scientific/trading semantics. No A3/A5/A6/G5 value was computed or inspected; execution paused with RT3 and all original relationship artifacts preserved.
+
+## 2026-09-15 — RUN-V1-MP1-A-INNER-20260915-01
+
+- Authority: researcher selected `MP1-A — COMMON H126 / U1W PIT REFERENCE` and authorized publication plus continuation from the qualified RT3 checkpoint.
+- Base commit: `5f1d9e3`; local and `origin/main` matched; unrelated `.venv/` and cache artifacts remain excluded.
+- Frozen rule: median of the most recent 126 qualified, finite, positive `amount/volume` observations strictly before the first authorized eligible ISO-week refresh; common across R0/R1/R3/R4 and carried within week.
+- Publication guard: no empirical access resumes until the MP1-A contract commit is pushed. OF4 and held-out remain denied.

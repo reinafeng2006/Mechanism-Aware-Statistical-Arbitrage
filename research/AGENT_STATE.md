@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `PAUSED — MP1 PIT REFERENCE WINDOW NOT FROZEN` |
-| Latest frozen decision | `V1-RT3-A-1.0 — PUBLISHED / AUGMENTATION QUALIFIED` |
-| Current substage | pre-A3/A5/A6/G5 executable audit; MP1 denominator geometry requires researcher selection |
+| Stage status | `MP1-A FROZEN — PUBLICATION PENDING` |
+| Latest frozen decision | `V1-MP1-A-1.0 — RESEARCHER APPROVED / FROZEN` |
+| Current substage | publish MP1-A before restoring A3/A5/A6/G5 inner execution |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `DENIED PENDING MP1 REFERENCE CONTRACT`; OF4 and final held-out denied |
-| Current authorized action | `NONE` |
+| Computation authorization | `DENIED UNTIL MP1-A PUBLICATION`; OF4 and final held-out denied |
+| Current authorized action | `V1-MP1-A-PUBLICATION-V1` |
 | Last validation state | RT3 augmentation 70/70 `PASS_EXACT`, zero mismatches, published as `c2ccc43` |
 | Latest local commit | `c2ccc43` — qualified RT3 state augmentation published |
 | Remote state observed | `origin/main` at `c2ccc43` |
-| Researcher action required | `YES`; choose bounded MP1 PIT median reference-window/support/update semantics |
+| Researcher action required | `NO`; publish MP1-A then resume existing inner-only action |
 
 ## Verified frozen chain relevant to activation
 
