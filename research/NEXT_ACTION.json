@@ -4,7 +4,7 @@
     "action_id": "V1-A1-H126-CANDIDATE-NEUTRAL-AMENDMENT",
     "name": "Researcher-operated checkpointable H126 synthesis",
     "status": "READY_FOR_RESEARCHER_OPERATED_EXECUTION",
-    "execution_state": "READY_FOR_EXTERNAL_SYNTHESIS_EXECUTION",
+    "execution_state": "PARTIAL_READY_FOR_EXTERNAL_SYNTHESIS_RESUME",
     "objective": "Researcher runs the deterministic checkpointable H126 A1/CS2 synthesis outside Codex; Codex may inspect status or validate but must not start the long run.",
     "prerequisites": ["V1-A1-H126-CN-1.0 published before empirical access", "immutable inner and OF4 manifests validate", "CORE-DATASET-FREEZE-V1 validates", "no prior comparative-result inspection"],
     "allowed_scope": ["researcher-operated external H126 synthesis", "read-only status", "checksum validation", "frozen A1/CS2/SR0-to-SR1 pre-held-out synthesis"],

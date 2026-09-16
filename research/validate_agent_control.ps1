@@ -322,7 +322,7 @@ if ($contract.computation_gate -eq 'AUTHORIZED_A1_H126_PRE_HELD_OUT_EXECUTION') 
     if ($contract.a1_candidate_neutral_scale.status -ne 'PUBLISHED_BOUND_TO_PRE_HELD_OUT_V1') { throw 'H126 amendment is not published.' }
 }
 if ($contract.computation_gate -eq 'A1_H126_EXTERNAL_SYNTHESIS_READY') {
-    if ($next.action.execution_state -ne 'READY_FOR_EXTERNAL_SYNTHESIS_EXECUTION') { throw 'External H126 runner readiness state mismatch.' }
+    if ($next.action.execution_state -notin @('READY_FOR_EXTERNAL_SYNTHESIS_EXECUTION','PARTIAL_READY_FOR_EXTERNAL_SYNTHESIS_RESUME')) { throw 'External H126 runner readiness state mismatch.' }
     if ($next.action.dataset_access -ne 'EXTERNAL_RUNNER_ONLY_IMMUTABLE_H126_LAYER_INNER_AND_OF4') { throw 'External H126 runner dataset boundary mismatch.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($contract.a1_candidate_neutral_scale.status -ne 'PUBLISHED_BOUND_TO_PRE_HELD_OUT_V1') { throw 'H126 amendment is not published.' }

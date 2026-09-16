@@ -9,17 +9,17 @@ Basis: repository records and Git state verified during initialization; prompt a
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
 | Stage status | `READY FOR EXTERNAL SYNTHESIS EXECUTION` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | 98-partition H126 layer validated; checkpointable external synthesis runner ready |
+| Current substage | 98-partition H126 layer validated; external synthesis checkpoint 1/406, ready to resume |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
 | Computation authorization | `RESEARCHER-OPERATED EXTERNAL SYNTHESIS ONLY`; Codex must not start long run; held-out denied |
 | Current authorized action | `V1-A1-H126-CANDIDATE-NEUTRAL-AMENDMENT` |
-| Last validation state | 98/98 H126 partitions; 823,205,593 records; immutable ancestors PASS; no materialization temp files |
+| Last validation state | 98/98 H126 partitions; first exact support unit checksum/roundtrip PASS; 1/406 checkpointed; resume skip PASS |
 | Latest local commit | `48e3b19` — H126 pre-held-out execution activation |
 | Remote state observed | `origin/main` at `48e3b19` before external-runner checkpoint publication |
-| Researcher action required | `YES`; start the external checkpointable synthesis runner |
+| Researcher action required | `YES`; resume the external checkpointable synthesis runner |
 
 ## Verified frozen chain relevant to activation
 

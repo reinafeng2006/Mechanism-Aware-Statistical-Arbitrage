@@ -15,6 +15,8 @@ if "v1_a1_h126_synthesis_batch.py" not in ps: missing.append("batch runner targe
 if "Refusing non-batch H126 entrypoint" not in ps: missing.append("materializer rejection guard")
 if "Add-Content -LiteralPath $log" not in ps: missing.append("pre-invocation logging")
 if "Set-Location -LiteralPath $repo" in ps: missing.append("unbalanced working-directory mutation")
+for invariant in ('dest.parent.mkdir(parents=True, exist_ok=True)', 'with raw.open("wb") as stream:', 'np.save(stream, common, allow_pickle=False)', 'finally:', 'transient.unlink()'):
+    if invariant not in py: missing.append(invariant)
 if missing: raise SystemExit(f"FAIL: missing runner invariants: {missing}")
 spec = importlib.util.spec_from_file_location("batch", ROOT / "tools/v1_a1_h126_synthesis_batch.py")
 batch = importlib.util.module_from_spec(spec); spec.loader.exec_module(batch)

@@ -1,6 +1,6 @@
 # V1 A1 H126 External Synthesis Execution Checkpoint
 
-Status: **READY FOR EXTERNAL SYNTHESIS EXECUTION — 2026-09-16**
+Status: **1/406 CHECKPOINTED / READY FOR EXTERNAL SYNTHESIS RESUME — 2026-09-16**
 
 The candidate-neutral H126 scale/loss layer is complete and independently revalidated: 98/98 partitions, 823,205,593 paired-direction physical records, zero temporary materialization files, and no held-out access. The immutable relationship, RT3, A3/A5, and OF4 ancestors revalidated without scientific-result inspection.
 
@@ -37,4 +37,6 @@ The benchmark retained no scientific statistic, exposed no result value, and acc
 
 Codex must not start the long runner. The researcher may start it in an independent PowerShell terminal. `status`, `run`, `resume`, and `validate` are supported. Completion does not authorize 2024–2025 access and returns the project to `PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED`.
 
-`READY FOR EXTERNAL SYNTHESIS EXECUTION`
+Atomic-write smoke validation completed the exact `support__inner__2015H1` unit under the frozen calculation. Its finalized SHA-256 is `FBABD47A7ED54AD98B79C130980BFAE6553A94D7921C66689EB9BDA230EFC31E`; lossless reload, atomic rename, manifest registration, and no-temp checks passed. A bounded `resume --through-unit support__inner__2015H1` preserved both hash and timestamp, proving that a valid completed unit is skipped. Progress is legitimately `1/406` and must be continued with `resume`, not `run`.
+
+`1/406 CHECKPOINTED / READY FOR EXTERNAL SYNTHESIS RESUME`

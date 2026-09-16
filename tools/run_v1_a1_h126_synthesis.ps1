@@ -17,16 +17,30 @@ try {
     }
     Push-Location -LiteralPath $repo
     try {
-        & $python $batchRunner $Command 2>&1 | ForEach-Object {
-            $line = [string]$_
-            Write-Output $line
-            $line | Add-Content -LiteralPath $log -Encoding utf8
+        $startInfo = [System.Diagnostics.ProcessStartInfo]::new()
+        $startInfo.FileName = $python
+        $startInfo.Arguments = "`"$batchRunner`" $Command"
+        $startInfo.UseShellExecute = $false
+        $startInfo.RedirectStandardOutput = $true
+        $startInfo.RedirectStandardError = $true
+        $startInfo.CreateNoWindow = $true
+        $process = [System.Diagnostics.Process]::new()
+        $process.StartInfo = $startInfo
+        if (-not $process.Start()) { throw 'Failed to start H126 synthesis batch process' }
+        $stdout = $process.StandardOutput.ReadToEnd()
+        $stderr = $process.StandardError.ReadToEnd()
+        $process.WaitForExit()
+        $pythonExitCode = $process.ExitCode
+        foreach ($text in @($stdout, $stderr)) {
+            if (-not [string]::IsNullOrEmpty($text)) {
+                Write-Output $text.TrimEnd()
+                $text | Add-Content -LiteralPath $log -Encoding utf8
+            }
         }
-        $pythonExitCode = $LASTEXITCODE
     } finally {
         Pop-Location
     }
-    if ($pythonExitCode -ne 0) { throw "H126 synthesis batch runner failed with exit code $pythonExitCode" }
+    if ($pythonExitCode -ne 0) { throw "H126 synthesis batch runner failed with exit code $pythonExitCode; see $log" }
 } catch {
     "[$(Get-Date -Format o)] STARTUP_OR_RUN_FAILURE: $($_.Exception.Message)" | Add-Content -LiteralPath $log -Encoding utf8
     throw

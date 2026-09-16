@@ -134,17 +134,28 @@ def support_unit(spec: dict, dest: Path) -> None:
         valid = np.isfinite(arr["loss_abs_ab"]) & np.isfinite(arr["loss_abs_ba"])
         current = keys(arr)[valid]
         common = current if common is None else np.intersect1d(common, current, assume_unique=True)
-    raw = dest.with_suffix(".tmp.npy")
-    tmp = dest.with_suffix(".tmp.gz")
-    np.save(raw, common, allow_pickle=False)
-    with raw.open("rb") as inp, tmp.open("wb") as raw_out:
-        with gzip.GzipFile(filename="", mode="wb", fileobj=raw_out, compresslevel=9, mtime=0) as out:
-            shutil.copyfileobj(inp, out, 8 << 20)
-    with gzip.open(tmp, "rb") as stream:
-        check = np.load(stream, allow_pickle=False)
-    if not np.array_equal(common, check):
-        raise RuntimeError("support unit roundtrip failure")
-    os.replace(tmp, dest); raw.unlink()
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    raw = dest.with_name(dest.name + ".tmp.npy")
+    tmp = dest.with_name(dest.name + ".tmp.gz")
+    for transient in (raw, tmp):
+        if transient.exists():
+            transient.unlink()
+    try:
+        # Passing a file handle prevents NumPy from altering the exact temp path.
+        with raw.open("wb") as stream:
+            np.save(stream, common, allow_pickle=False)
+        with raw.open("rb") as inp, tmp.open("wb") as raw_out:
+            with gzip.GzipFile(filename="", mode="wb", fileobj=raw_out, compresslevel=9, mtime=0) as out:
+                shutil.copyfileobj(inp, out, 8 << 20)
+        with gzip.open(tmp, "rb") as stream:
+            check = np.load(stream, allow_pickle=False)
+        if not np.array_equal(common, check):
+            raise RuntimeError("support unit roundtrip failure")
+        os.replace(tmp, dest)
+    finally:
+        for transient in (raw, tmp):
+            if transient.exists():
+                transient.unlink()
 
 
 def align(arr: np.ndarray, common: np.ndarray) -> np.ndarray:
@@ -212,12 +223,19 @@ def finalize(progress: dict) -> None:
     write_json_atomic(FINAL, out)
 
 
-def run(resume: bool) -> None:
+def run(resume: bool, through_unit: str | None = None) -> None:
     progress = initialize(); verify_completed(progress)
+    if not resume and progress["completed"]:
+        raise RuntimeError("completed checkpoints exist; use resume")
+    valid_ids = {spec["id"] for spec in unit_specs()}
+    if through_unit is not None and through_unit not in valid_ids:
+        raise RuntimeError(f"unknown bounded stop unit: {through_unit}")
     progress["state"] = "RUNNING"; write_json_atomic(PROGRESS, progress)
     for spec in unit_specs():
         uid, dest = spec["id"], unit_path(spec)
         if uid in progress["units"]:
+            if uid == through_unit:
+                break
             continue
         if dest.exists():
             raise RuntimeError(f"unregistered unit exists: {dest}")
@@ -229,6 +247,12 @@ def run(resume: bool) -> None:
                "runtime_seconds": time.perf_counter() - started}
         progress["units"][uid] = rec; progress["completed"] = len(progress["units"])
         write_json_atomic(PROGRESS, progress)
+        if uid == through_unit:
+            break
+    if through_unit is not None:
+        progress["state"] = "PARTIAL_READY"
+        write_json_atomic(PROGRESS, progress)
+        return
     finalize(progress); progress["state"] = "COMPLETE"; progress["final_sha256"] = sha(FINAL)
     write_json_atomic(PROGRESS, progress)
 
@@ -280,8 +304,11 @@ def dry_run() -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("command", choices=("status", "run", "resume", "validate", "benchmark", "dry-run")); args = parser.parse_args()
-    {"status": status, "run": lambda: run(False), "resume": lambda: run(True), "validate": validate, "benchmark": benchmark, "dry-run": dry_run}[args.command]()
+    parser = argparse.ArgumentParser(); parser.add_argument("command", choices=("status", "run", "resume", "validate", "benchmark", "dry-run", "smoke-one")); parser.add_argument("--through-unit"); args = parser.parse_args()
+    first = "support__inner__2015H1"
+    {"status": status, "run": lambda: run(False, args.through_unit), "resume": lambda: run(True, args.through_unit),
+     "validate": validate, "benchmark": benchmark, "dry-run": dry_run,
+     "smoke-one": lambda: run(False, first)}[args.command]()
 
 
 if __name__ == "__main__": main()
