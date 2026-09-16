@@ -11,6 +11,8 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Prohibitions: no relationship/RT3/expected-response/A3/A5 recomputation; no A6/G5 execution; no 2024–2025 access.
 - Single-writer lock: acquired before canonical mutation.
 - Current disposition: amendment frozen pending publication; empirical access remains denied.
+- Publication: amendment and publication guard committed as `938a43a` and pushed normally to canonical `origin/main` before empirical access.
+- Execution transition: the active guard now permits only immutable 2013–2023 ancestry, 2015–2019 inner evidence, and 2020–2023 OF4 evidence for the versioned H126 scale/loss layer and frozen synthesis; held-out remains denied.
 
 ## RUN-INIT-20260911-01
 
