@@ -18,6 +18,8 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Architecture transition: monolithic interactive synthesis is disabled. A 406-unit external runner freezes exact all-candidate common support, exact within-pair/equal-pair medians, separate inner/OF4 temporal medians, atomic unit finalization, per-unit hashes, resume verification, non-recomputation of valid units, and metadata-only progress.
 - Benchmark: fixed-prefix structural benchmark processed 700,000 rows in 2.80 seconds without retaining scientific values. Conservative external projection is 2–4 hours, 2.5–4.0 GiB peak RAM, and less than 0.5 GiB peak temporary storage.
 - Disposition: `READY FOR EXTERNAL SYNTHESIS EXECUTION`; Codex did not start the external runner.
+- Launcher repair: researcher reported a stale/mismatched launcher invoking the materializer CLI (`{build}`) rather than the committed batch CLI. Inspection of commit `8ebf1f3` confirmed the intended 406-unit engine exists as `tools/v1_a1_h126_synthesis_batch.py` and the committed launcher names it. The launcher was hardened to resolve/log absolute paths before invocation, reject the materializer entrypoint, set/restore the repository working directory, and log startup failures. A no-unit `dry-run` contract check was added. No synthesis/build unit or held-out data was accessed.
+- Smoke/recovery result: absolute-path `status` from `C:\WINDOWS\system32`, CLI help, and `dry-run` all targeted the batch engine and executed zero units. A stale `RUNNING`/0-of-406 progress state with an empty unit map and no Python owner was reset mechanically to `READY`; no unit or scientific value was created.
 
 ## RUN-INIT-20260911-01
 

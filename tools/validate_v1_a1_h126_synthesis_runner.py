@@ -11,6 +11,10 @@ required = ["os.replace", "sha(dest)", "verify_completed(progress)", "np.interse
 missing = [item for item in required if item not in py]
 for command in ("status", "run", "resume", "validate"):
     if command not in ps: missing.append(command)
+if "v1_a1_h126_synthesis_batch.py" not in ps: missing.append("batch runner target")
+if "Refusing non-batch H126 entrypoint" not in ps: missing.append("materializer rejection guard")
+if "Add-Content -LiteralPath $log" not in ps: missing.append("pre-invocation logging")
+if "Set-Location -LiteralPath $repo" in ps: missing.append("unbalanced working-directory mutation")
 if missing: raise SystemExit(f"FAIL: missing runner invariants: {missing}")
 spec = importlib.util.spec_from_file_location("batch", ROOT / "tools/v1_a1_h126_synthesis_batch.py")
 batch = importlib.util.module_from_spec(spec); spec.loader.exec_module(batch)

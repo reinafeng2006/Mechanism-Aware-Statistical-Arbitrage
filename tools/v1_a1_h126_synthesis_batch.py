@@ -264,9 +264,24 @@ def benchmark() -> None:
                       "scientific_values_exposed": False, "held_out_accessed": False}))
 
 
+def dry_run() -> None:
+    """Validate wiring and checkpoint contract without executing a unit."""
+    progress = initialize()
+    verify_completed(progress)
+    specs = unit_specs()
+    if len(specs) != 406 or sum(x["kind"] == "support" for x in specs) != 14 or sum(x["kind"] == "summary" for x in specs) != 98 or sum(x["kind"] == "comparison" for x in specs) != 294:
+        raise RuntimeError("bounded unit registry mismatch")
+    if FINAL.exists() and progress["state"] != "COMPLETE":
+        raise RuntimeError("final artifact exists without COMPLETE checkpoint state")
+    print(json.dumps({"dry_run": "PASS", "state": progress["state"], "completed": progress["completed"],
+                      "unit_count": progress["unit_count"], "support_units": 14, "summary_units": 98,
+                      "comparison_units": 294, "units_executed": 0, "scientific_values_exposed": False,
+                      "held_out_accessed": False}))
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(); parser.add_argument("command", choices=("status", "run", "resume", "validate", "benchmark")); args = parser.parse_args()
-    {"status": status, "run": lambda: run(False), "resume": lambda: run(True), "validate": validate, "benchmark": benchmark}[args.command]()
+    parser = argparse.ArgumentParser(); parser.add_argument("command", choices=("status", "run", "resume", "validate", "benchmark", "dry-run")); args = parser.parse_args()
+    {"status": status, "run": lambda: run(False), "resume": lambda: run(True), "validate": validate, "benchmark": benchmark, "dry-run": dry_run}[args.command]()
 
 
 if __name__ == "__main__": main()
