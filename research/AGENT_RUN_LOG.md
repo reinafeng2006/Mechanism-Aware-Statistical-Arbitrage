@@ -13,6 +13,11 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Current disposition: amendment frozen pending publication; empirical access remains denied.
 - Publication: amendment and publication guard committed as `938a43a` and pushed normally to canonical `origin/main` before empirical access.
 - Execution transition: the active guard now permits only immutable 2013–2023 ancestry, 2015–2019 inner evidence, and 2020–2023 OF4 evidence for the versioned H126 scale/loss layer and frozen synthesis; held-out remains denied.
+- Recovery checkpoint: 98/98 H126 partitions and 823,205,593 records rehashed PASS; relationship, RT3, A3/A5 and OF4 ancestors revalidated; no H126 materialization temporary files and no held-out access.
+- Interrupted output: an unexpected atomically complete but unpublished synthesis JSON existed with SHA-256 `61B9F64846377881E11A65162AC780BA8A33656C3E63544167CA5E6D2D90D480`; it was not interpreted or adopted and was moved intact to hash-named external quarantine.
+- Architecture transition: monolithic interactive synthesis is disabled. A 406-unit external runner freezes exact all-candidate common support, exact within-pair/equal-pair medians, separate inner/OF4 temporal medians, atomic unit finalization, per-unit hashes, resume verification, non-recomputation of valid units, and metadata-only progress.
+- Benchmark: fixed-prefix structural benchmark processed 700,000 rows in 2.80 seconds without retaining scientific values. Conservative external projection is 2–4 hours, 2.5–4.0 GiB peak RAM, and less than 0.5 GiB peak temporary storage.
+- Disposition: `READY FOR EXTERNAL SYNTHESIS EXECUTION`; Codex did not start the external runner.
 
 ## RUN-INIT-20260911-01
 

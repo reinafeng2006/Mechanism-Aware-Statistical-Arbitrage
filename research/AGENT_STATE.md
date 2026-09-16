@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED` |
+| Stage status | `READY FOR EXTERNAL SYNTHESIS EXECUTION` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | H126 amendment published; candidate-neutral inner/OF4 scale-loss construction authorized |
+| Current substage | 98-partition H126 layer validated; checkpointable external synthesis runner ready |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `AUTHORIZED A1 H126 PRE-HELD-OUT EXECUTION`; held-out denied |
+| Computation authorization | `RESEARCHER-OPERATED EXTERNAL SYNTHESIS ONLY`; Codex must not start long run; held-out denied |
 | Current authorized action | `V1-A1-H126-CANDIDATE-NEUTRAL-AMENDMENT` |
-| Last validation state | 112/112 OF4 payloads deterministic-lossless/checksummed; 142,810,708,252 raw bytes; 88,461,879,645 compressed bytes |
-| Latest local commit | `fb9a72e` — deterministic OF4 materializer published |
-| Remote state observed | `origin/main` at `fb9a72e` before final materialization checkpoint |
-| Researcher action required | `NO` for H126 layer and pre-held-out synthesis; required again after completion |
+| Last validation state | 98/98 H126 partitions; 823,205,593 records; immutable ancestors PASS; no materialization temp files |
+| Latest local commit | `48e3b19` — H126 pre-held-out execution activation |
+| Remote state observed | `origin/main` at `48e3b19` before external-runner checkpoint publication |
+| Researcher action required | `YES`; start the external checkpointable synthesis runner |
 
 ## Verified frozen chain relevant to activation
 

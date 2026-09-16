@@ -61,6 +61,7 @@ $allowedGates = @(
     ,'PRE_HELD_OUT_V1_GATE_RESEARCHER_DECISION_REQUIRED'
     ,'A1_H126_AMENDMENT_QUALIFIED_PENDING_PUBLICATION'
     ,'AUTHORIZED_A1_H126_PRE_HELD_OUT_EXECUTION'
+    ,'A1_H126_EXTERNAL_SYNTHESIS_READY'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -317,6 +318,12 @@ if ($contract.computation_gate -eq 'A1_H126_AMENDMENT_QUALIFIED_PENDING_PUBLICAT
 if ($contract.computation_gate -eq 'AUTHORIZED_A1_H126_PRE_HELD_OUT_EXECUTION') {
     if ($next.action.action_id -ne 'V1-A1-H126-CANDIDATE-NEUTRAL-AMENDMENT') { throw 'H126 execution action mismatch.' }
     if ($next.action.dataset_access -ne 'IMMUTABLE_2013_2023_ANCESTRY_INNER_2015_2019_AND_OF4_2020_2023_ONLY') { throw 'H126 execution dataset role mismatch.' }
+    if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
+    if ($contract.a1_candidate_neutral_scale.status -ne 'PUBLISHED_BOUND_TO_PRE_HELD_OUT_V1') { throw 'H126 amendment is not published.' }
+}
+if ($contract.computation_gate -eq 'A1_H126_EXTERNAL_SYNTHESIS_READY') {
+    if ($next.action.execution_state -ne 'READY_FOR_EXTERNAL_SYNTHESIS_EXECUTION') { throw 'External H126 runner readiness state mismatch.' }
+    if ($next.action.dataset_access -ne 'EXTERNAL_RUNNER_ONLY_IMMUTABLE_H126_LAYER_INNER_AND_OF4') { throw 'External H126 runner dataset boundary mismatch.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($contract.a1_candidate_neutral_scale.status -ne 'PUBLISHED_BOUND_TO_PRE_HELD_OUT_V1') { throw 'H126 amendment is not published.' }
 }
