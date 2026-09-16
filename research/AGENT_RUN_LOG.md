@@ -2,6 +2,16 @@
 
 Append-only log schema: `REA-RUN-LOG-1.0`
 
+## RUN-V1-A1-H126-AMENDMENT-20260916-01
+
+- Authority: researcher approved versioned `V1-A1-H126-CN-1.0` before any A1 comparative-result inspection or held-out access.
+- Canonical binding: candidate-neutral H126 qualified-PIT response history; PS0 `1.4826 × MAD`; PS1 sample SD `ddof=1`; at least two finite observations; only unavailable, non-finite, exact-zero, or mathematically unsupported scales hard-fail.
+- Separation: relationship-estimation histories remain H63/H126/H252; candidate-native scale fields remain immutable diagnostics and are not canonical for cross-candidate A1 loss.
+- Scope: publish amendment first, then materialize/checksum the derived inner 2015–2019 and OF4 2020–2023 scale/loss layer and perform frozen pre-held-out synthesis without retuning.
+- Prohibitions: no relationship/RT3/expected-response/A3/A5 recomputation; no A6/G5 execution; no 2024–2025 access.
+- Single-writer lock: acquired before canonical mutation.
+- Current disposition: amendment frozen pending publication; empirical access remains denied.
+
 ## RUN-INIT-20260911-01
 
 - Run type: bounded control-framework initialization.

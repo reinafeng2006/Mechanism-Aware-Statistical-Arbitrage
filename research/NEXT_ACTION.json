@@ -1,21 +1,21 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "Pre-held-out V1 A1 common-scale gate",
-    "status": "RESEARCHER_DECISION_REQUIRED",
-    "execution_state": "PRE_HELD_OUT_V1_GATE_A1_SCALE_BINDING_REQUIRED",
-    "objective": "Researcher freezes one candidate-neutral common A1 scaling history for CS2 attribution, declines comparative A1 claims, or closes V1 without held-out access.",
-    "prerequisites": ["PO-C OF4 materialization complete and checksummed", "No A1 loss or candidate ranking inspected", "A6 and G5 remain V1 non-estimable and not executed", "2024-2025 held-out remains sealed"],
-    "allowed_scope": [],
-    "forbidden_scope": ["A1 CS2 SR0-to-SR1 computation or interpretation", "candidate-specific denominator substitution for common-support attribution", "retuning or scientific semantic change", "A6 or G5 execution", "2024-2025 held-out access", "mutation of completed OF4 payloads"],
-    "dataset_access": "DENIED_PENDING_A1_COMMON_SCALE_RESEARCHER_DECISION",
-    "empirical_result_visibility": "DENIED_PENDING_RESEARCHER_GATE",
+    "action_id": "V1-A1-H126-CANDIDATE-NEUTRAL-AMENDMENT",
+    "name": "Publish and execute candidate-neutral H126 A1 scale/loss amendment",
+    "status": "AUTHORIZED",
+    "execution_state": "A1_H126_AMENDMENT_QUALIFIED_PENDING_PUBLICATION",
+    "objective": "Publish V1-A1-H126-CN-1.0, then derive and validate the versioned inner and OF4 scale/loss layer and perform the frozen pre-held-out A1/CS2/SR0-to-SR1 synthesis.",
+    "prerequisites": ["V1-A1-H126-CN-1.0 published before empirical access", "immutable inner and OF4 manifests validate", "CORE-DATASET-FREEZE-V1 validates", "no prior comparative-result inspection"],
+    "allowed_scope": ["H126 scale/loss construction for 2015-2019 inner and 2020-2023 OF4", "checksum and lineage validation", "frozen A1/CS2/SR0-to-SR1 pre-held-out synthesis"],
+    "forbidden_scope": ["relationship RT3 expected-response A3 or A5 recomputation", "candidate-native denominator substitution", "retuning or Search Budget change", "A6 or G5 execution", "2024-2025 held-out access", "mutation of immutable ancestors"],
+    "dataset_access": "DENIED_UNTIL_A1_H126_AMENDMENT_PUBLICATION",
+    "empirical_result_visibility": "DENIED_UNTIL_LAYER_CHECKSUMMED_THEN_PRE_HELD_OUT_SYNTHESIS_AUTHORIZED",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "Researcher selects and explicitly authorizes a bounded pre-held-out disposition.",
-    "mandatory_stop_conditions": ["Any attempt to infer scale history from OF4 results", "Any A6 G5 or held-out access", "Any mutation of immutable OF4 ancestors"]
+    "completion_condition": "H126 layer and pre-held-out synthesis are checksummed and control state returns to PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED.",
+    "mandatory_stop_conditions": ["immutable ancestor mismatch", "need for a new scientific semantic", "any A6 G5 or 2024-2025 access", "attempt to mutate immutable ancestors"]
   }
 }

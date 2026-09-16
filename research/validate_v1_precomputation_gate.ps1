@@ -248,6 +248,11 @@ $preHeldOutA1Gate = (
     $action.action.dataset_access -eq 'DENIED_PENDING_A1_COMMON_SCALE_RESEARCHER_DECISION' -and
     $action.action.held_out_access -eq 'SEALED_DENIED'
 )
+$h126Amendment = (
+    $action.action.action_id -eq 'V1-A1-H126-CANDIDATE-NEUTRAL-AMENDMENT' -and
+    $action.action.execution_state -in @('A1_H126_AMENDMENT_QUALIFIED_PENDING_PUBLICATION','AUTHORIZED_A1_H126_PRE_HELD_OUT_EXECUTION') -and
+    $action.action.held_out_access -eq 'SEALED_DENIED'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -259,7 +264,7 @@ $checks = @(
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
     ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication -or $evRowMappingPause -or $evMapBPublication -or $preOuterGate -or $poCPublication -or $externalStoragePublication -or $poCOf4Execution -or $preHeldOutA1Gate),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication -or $evRowMappingPause -or $evMapBPublication -or $preOuterGate -or $poCPublication -or $externalStoragePublication -or $poCOf4Execution -or $preHeldOutA1Gate -or $h126Amendment),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
@@ -269,7 +274,9 @@ if ($checks -contains $false) {
     throw "V1 pre-computation gate invariant failed at check indexes: $($failedIndexes -join ',')."
 }
 
-if ($preHeldOutA1Gate) {
+if ($h126Amendment) {
+    Write-Output 'PASS: H126 candidate-neutral A1 amendment is bounded to pre-held-out execution; held-out remains denied.'
+} elseif ($preHeldOutA1Gate) {
     Write-Output 'PASS: OF4 materialization is complete; A1 comparison and held-out access are denied pending the common-scale researcher decision.'
 } elseif ($poCOf4Execution) {
     Write-Output 'PASS: frozen PO-C relationship-only 2020-2023 OF4 is active; A6/G5 and held-out remain denied.'
