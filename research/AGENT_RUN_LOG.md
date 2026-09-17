@@ -328,3 +328,10 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Frozen calculations remain exact common support, exact median, equal-pair influence, candidate-neutral H126, native-support reporting, squared-loss robustness and separate 2024/2025 aggregation.
 - Structural validation and external-root dry-run passed with zero scientific units executed and no scientific values exposed.
 - State: `READY FOR RESEARCHER-OPERATED REDUCED-SUPPORT EXECUTION`.
+
+## 2026-09-17 — CODEX-SUPERVISED REDUCED-SUPPORT COMPLETION
+
+- Researcher directly authorized Codex to launch, supervise, repair and resume the existing reduced-support pipeline through completion. The long interactive execution restriction is waived for this checkpointed run only; R4-2025 remains prohibited.
+- Preflight found no Python execution tree. The first R0-D/2024 A3/A5 unit was finalized but not recorded in orchestration progress: the A3/A5 verifier erroneously required a nonexistent combined `.npy` filename. Corrected dispatch to verify the actual A3/A5 files first; both existing hashes pass and this unit will be skipped.
+- Added candidate-level H126 checkpoints, retained raw ancestors after compression, and routed wrapper scratch/native threads to bounded D:-based execution. Full stderr capture no longer stops at the first native error line.
+- No scientific values inspected; frozen-core validation passes. Scientific equations and aggregations are unchanged.

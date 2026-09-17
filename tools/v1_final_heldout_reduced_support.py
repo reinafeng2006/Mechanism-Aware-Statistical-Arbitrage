@@ -81,23 +81,23 @@ def artifact(root: Path, candidate: str, fold: str, suffix: str = ".npy") -> Pat
 
 
 def verify_checkpoint(root: Path, candidate: str, fold: str, kind: str) -> None:
-    path = artifact(root, candidate, fold)
-    if not path.is_file(): raise RuntimeError(f"missing {kind} checkpoint: {candidate}/{fold}")
-    if path.suffix == ".gz":
-        marker = path.with_suffix(path.suffix + ".complete.json")
-        key = "sha256"
-    else:
-        marker = root / candidate / f"{fold}.complete.json"
-        key = "sha256" if kind != "a3a5" else None
     if kind == "a3a5":
         marker = root / candidate / f"{fold}.complete.json"
         meta = json.loads(marker.read_text(encoding="utf-8"))
         for tag in ("a3", "a5"):
             item = artifact(root, candidate, fold, f".{tag}.npy")
-            expected = meta[f"{tag}_sha256"] if item.suffix != ".gz" else json.loads(item.with_suffix(item.suffix + ".complete.json").read_text(encoding="utf-8"))["raw_sha256"]
+            expected = meta[f"{tag}_sha256"]
+            if item.suffix == ".gz":
+                compressed = json.loads(item.with_suffix(item.suffix + ".complete.json").read_text(encoding="utf-8"))
+                if sha(item) != compressed["sha256"] or compressed["raw_sha256"] != expected:
+                    raise RuntimeError(f"{tag} compressed lineage mismatch: {candidate}/{fold}")
             actual = sha(item) if item.suffix != ".gz" else compressed_raw_sha(item)
             if actual != expected: raise RuntimeError(f"{tag} hash mismatch: {candidate}/{fold}")
         return
+    path = artifact(root, candidate, fold)
+    if not path.is_file(): raise RuntimeError(f"missing {kind} checkpoint: {candidate}/{fold}")
+    marker = path.with_suffix(path.suffix + ".complete.json") if path.suffix == ".gz" else root / candidate / f"{fold}.complete.json"
+    key = "sha256"
     if not marker.is_file(): raise RuntimeError(f"missing {kind} marker: {candidate}/{fold}")
     meta = json.loads(marker.read_text(encoding="utf-8"))
     actual = sha(path)
@@ -150,7 +150,7 @@ def compress_one(source: Path) -> dict:
            "raw_sha256": raw_hash, "sha256": sha(final), "raw_bytes": raw_bytes,
            "compressed_bytes": final.stat().st_size, "compression": "GZIP_DEFLATE_LEVEL9_MTIME0_FILENAME_EMPTY",
            "validation": "LOSSLESS_ROUNDTRIP_PASS"}
-    atomic_json(marker, rec); source.unlink(); return rec
+    atomic_json(marker, rec); return rec
 
 
 def compress_all() -> None:
@@ -169,8 +169,23 @@ def compress_all() -> None:
 def layer_fold(fold: str) -> list[dict]:
     import v1_a1_h126_candidate_neutral as layer
     layer.EXT, layer.OF4_REL, layer.CANDIDATES = LAYER, REL, CANDIDATES
+    records = []
     with np.load(INPUT, allow_pickle=False) as source:
-        return layer.build_partition("heldout", fold, source["response"])
+        response = source["response"]
+        for candidate in CANDIDATES:
+            checkpoint = CONTROL / f"reduced_h126_{fold}_{candidate}.json"
+            if checkpoint.exists():
+                rec = json.loads(checkpoint.read_text(encoding="utf-8"))
+                if sha(Path(rec["physical_path"])) != rec["sha256"]:
+                    raise RuntimeError("completed H126 candidate hash mismatch")
+            else:
+                final = LAYER / "heldout" / candidate / f"{fold}.npy.gz"
+                if final.exists(): raise RuntimeError(f"unverified H126 artifact requires recovery: {final}")
+                layer.CANDIDATES = [candidate]
+                rec = layer.build_partition("heldout", fold, response)[0]
+                atomic_json(checkpoint, rec)
+            records.append(rec)
+    return records
 
 
 def configure_synthesis():
@@ -229,7 +244,12 @@ def execute(resume: bool) -> None:
     for candidate in CANDIDATES:
         for fold in FOLDS:
             name = f"a3a5:{candidate}:{fold}"
-            if name not in p["completed_stages"]: run_a3a5(candidate, fold); p["completed_stages"].append(name); save(p)
+            if name not in p["completed_stages"]:
+                if (A3A5 / candidate / f"{fold}.complete.json").exists():
+                    verify_checkpoint(A3A5, candidate, fold, "a3a5")
+                else:
+                    run_a3a5(candidate, fold)
+                p["completed_stages"].append(name); save(p)
             else: verify_checkpoint(A3A5, candidate, fold, "a3a5")
     if "compress" not in p["completed_stages"]: compress_all(); p["completed_stages"].append("compress"); save(p)
     records = []
