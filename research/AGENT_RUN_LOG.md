@@ -294,3 +294,12 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Repaired static/R3/R4 resume to hash-verify and skip valid checkpoints and fail closed on partial/mismatched artifacts. Added ordered-future R4 execution with timeout, child-liveness/exit-code reporting and explicit failure propagation; numerical task batches and result order are unchanged.
 - Synthetic abrupt-worker test and structural resume-plan validation pass without executing a scientific unit or exposing scientific values. Held-out access-event hash remains unchanged.
 - Disposition: `HELD-OUT R4 RESUME REPAIRED / READY AT R4-2025`; long computation remains researcher-operated.
+## 2026-09-17 — RUN-V1-HELDOUT-R4-ROOTCAUSE-REPAIR-20260917-01
+
+- Authority: researcher classified the second R4-2025 worker-pool loss as recurrent, prohibited blind resume, and authorized root-cause audit plus semantics-preserving checkpointed execution repair.
+- Confirmed and terminated only the stalled held-out tree: batch PID 5516, materializer PID 16808 and R4 coordinator PID 11212. All eight workers were already absent; no unrelated Python process was present.
+- Preserved relationship 14/14 and canonical RT3 13/14. R4-2024 remains hash-valid, `PASS_EXACT`, with zero shared-field mismatches. R4-2025 remains canonically missing with no misleading temporary file; downstream stages remain unstarted.
+- Diagnosed Windows commit pressure in an unbounded execution shape: Windows event 26 recorded virtual memory minimum too low; the stranded coordinator retained approximately 3.26 GB RSS; eight native workers had no BLAS/OpenMP cap; eager futures and full-year state chunks accumulated; pagefile and TEMP/TMP were C:-backed while D: had ample capacity. No access violation, Python task exception, D:-capacity, permission, path or serialization defect was evidenced.
+- Repaired only the execution engine: four single-threaded workers, four-block maximum in flight, worker recycling, explicit abrupt-exit propagation, ordered 256-pair block checkpoints, monthly state checkpoints, streaming annual assembly, hash-verified skip and D:-resident TEMP/TMP/cache/checkpoints.
+- Bounded actual-path proof completed 10 frozen R4-2025 fit blocks. All hashes pass; repeated bounded resume skipped completed blocks; peak aggregate Python working set was approximately 414 MB; C: free-space delta was negligible; no month or canonical R4-2025 output was finalized and no scientific value was disclosed.
+- Scientific semantics impact: `NONE`. Long R4-2025 execution remains researcher-operated.

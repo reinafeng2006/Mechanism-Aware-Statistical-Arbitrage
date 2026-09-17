@@ -141,6 +141,12 @@ def transform_sources(input_hash: str | None = None) -> dict[str, Path]:
 def run(path: Path, *args: str) -> None:
     env = os.environ.copy()
     env["NUMBA_CACHE_DIR"] = str(OF4 / "_numba_cache")
+    scratch = OF4 / "_temp"
+    scratch.mkdir(parents=True, exist_ok=True)
+    env["TEMP"] = env["TMP"] = str(scratch)
+    for name in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS", "BLIS_NUM_THREADS"):
+        env[name] = "1"
+    env.setdefault("V1_R4_WORKERS", "4")
     subprocess.run([sys.executable, str(path), *args], cwd=ROOT, env=env, check=True)
 
 

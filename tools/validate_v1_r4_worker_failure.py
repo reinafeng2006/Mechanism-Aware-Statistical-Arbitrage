@@ -16,7 +16,19 @@ def main() -> None:
         elapsed = time.monotonic() - started
         if "R4 worker failure" not in str(exc) or elapsed > 30:
             raise RuntimeError("abrupt-worker failure was not propagated promptly") from exc
-        print(f"PASS: synthetic abrupt worker exit propagated explicitly in {elapsed:.2f}s; scientific units executed=0.")
+        pass
+    else:
+        raise RuntimeError("synthetic abrupt worker exit did not fail")
+    try:
+        with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
+            one = pool.submit(r4.synthetic_abrupt_worker_exit, None)
+            two = pool.submit(r4.synthetic_abrupt_worker_exit, None)
+            r4.await_block_futures(pool, [(0, None, None, None, one, None, None), (1, None, None, None, two, None, None)], "synthetic/checkpointed")
+    except RuntimeError as exc:
+        total = time.monotonic() - started
+        if not any(token in str(exc) for token in ("R4 worker failure", "R4 worker terminated")) or total > 30:
+            raise RuntimeError("checkpointed abrupt-worker failure was not propagated promptly") from exc
+        print(f"PASS: legacy and checkpointed abrupt worker exits propagated explicitly in {total:.2f}s; scientific units executed=0.")
         return
     raise RuntimeError("synthetic abrupt worker exit did not fail")
 
