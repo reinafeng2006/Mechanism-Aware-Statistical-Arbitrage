@@ -31,6 +31,7 @@ INNER_PARTS = [f"{year}H{half}" for year in range(2015, 2020) for half in (1, 2)
 OF4_PARTS = [str(year) for year in range(2020, 2024)]
 VERSION = "V1-A1-H126-CN-SCALE-LOSS-1.0"
 ELIGIBILITY = "PAIR-A+C04-A+C05+C06-AVAILABILITY-AMENDMENT-V1+V1-EXECUTABLE-SEMANTICS-A1"
+CHUNK_ROWS = 250000
 
 DT = np.dtype([
     ("date_ix", "<u2"), ("a", "<u2"), ("b", "<u2"), ("ancestor_row", "<u4"),
@@ -91,6 +92,39 @@ def atomic_compress(array: np.ndarray, final: Path) -> dict:
     return record
 
 
+def fill_rows(arr, out, response, scales, skey, order, start):
+    akey = key(arr)
+    pos = np.searchsorted(skey, akey)
+    matched = pos < len(skey)
+    matched[matched] &= skey[pos[matched]] == akey[matched]
+    out["date_ix"], out["a"], out["b"] = arr["date_ix"], arr["a"], arr["b"]
+    out["ancestor_row"] = np.arange(start, start + len(arr), dtype=np.uint32)
+    for name in ("ps0_a", "ps0_b", "ps1_a", "ps1_b", "loss_abs_ab", "loss_abs_ba", "loss_sq_ab", "loss_sq_ba"):
+        out[name] = np.nan
+    if np.any(matched):
+        ix = np.flatnonzero(matched)
+        src = scales[order[pos[ix]]]
+        for name in ("ps0_a", "ps0_b", "ps1_a", "ps1_b"):
+            out[name][ix] = src[name]
+        mu_ab = arr["mu_n1_ab"] if "mu_n1_ab" in arr.dtype.names else arr["mu_ab"]
+        mu_ba = arr["mu_n1_ba"] if "mu_n1_ba" in arr.dtype.names else arr["mu_ba"]
+        observed_b = response[arr["date_ix"][ix], arr["b"][ix]]
+        observed_a = response[arr["date_ix"][ix], arr["a"][ix]]
+        ps0a, ps0b, ps1a, ps1b = (out[n][ix].astype(np.float64) for n in ("ps0_a", "ps0_b", "ps1_a", "ps1_b"))
+        eab = observed_b - mu_ab[ix].astype(np.float64)
+        eba = observed_a - mu_ba[ix].astype(np.float64)
+        valid_ab = np.isfinite(eab) & np.isfinite(ps0b) & np.isfinite(ps1b) & (ps0b != 0) & (ps1b != 0)
+        valid_ba = np.isfinite(eba) & np.isfinite(ps0a) & np.isfinite(ps1a) & (ps0a != 0) & (ps1a != 0)
+        j = ix[valid_ab]
+        out["loss_abs_ab"][j] = np.abs(eab[valid_ab]) / ps0b[valid_ab]
+        out["loss_sq_ab"][j] = (eab[valid_ab] / ps1b[valid_ab]) ** 2
+        j = ix[valid_ba]
+        out["loss_abs_ba"][j] = np.abs(eba[valid_ba]) / ps0a[valid_ba]
+        out["loss_sq_ba"][j] = (eba[valid_ba] / ps1a[valid_ba]) ** 2
+    out["scale_state_ab"] = np.isfinite(out["loss_abs_ab"])
+    out["scale_state_ba"] = np.isfinite(out["loss_abs_ba"])
+
+
 def build_partition(role: str, part: str, response: np.ndarray) -> list[dict]:
     scale_path = relationship_path(role, "V1-R0C-126W", part)
     scales = load_array(scale_path)
@@ -101,39 +135,17 @@ def build_partition(role: str, part: str, response: np.ndarray) -> list[dict]:
     for candidate in CANDIDATES:
         ancestor = relationship_path(role, candidate, part)
         arr = load_array(ancestor)
-        akey = key(arr)
-        pos = np.searchsorted(skey, akey)
-        matched = pos < len(skey)
-        matched[matched] &= skey[pos[matched]] == akey[matched]
-        out = np.empty(len(arr), DT)
-        out["date_ix"], out["a"], out["b"] = arr["date_ix"], arr["a"], arr["b"]
-        out["ancestor_row"] = np.arange(len(arr), dtype=np.uint32)
-        for name in ("ps0_a", "ps0_b", "ps1_a", "ps1_b", "loss_abs_ab", "loss_abs_ba", "loss_sq_ab", "loss_sq_ba"):
-            out[name] = np.nan
-        if np.any(matched):
-            ix = np.flatnonzero(matched)
-            src = scales[order[pos[ix]]]
-            for name in ("ps0_a", "ps0_b", "ps1_a", "ps1_b"):
-                out[name][ix] = src[name]
-            mu_ab = arr["mu_n1_ab"] if "mu_n1_ab" in arr.dtype.names else arr["mu_ab"]
-            mu_ba = arr["mu_n1_ba"] if "mu_n1_ba" in arr.dtype.names else arr["mu_ba"]
-            observed_b = response[arr["date_ix"][ix], arr["b"][ix]]
-            observed_a = response[arr["date_ix"][ix], arr["a"][ix]]
-            ps0a, ps0b, ps1a, ps1b = (out[n][ix].astype(np.float64) for n in ("ps0_a", "ps0_b", "ps1_a", "ps1_b"))
-            eab = observed_b - mu_ab[ix].astype(np.float64)
-            eba = observed_a - mu_ba[ix].astype(np.float64)
-            valid_ab = np.isfinite(eab) & np.isfinite(ps0b) & np.isfinite(ps1b) & (ps0b != 0) & (ps1b != 0)
-            valid_ba = np.isfinite(eba) & np.isfinite(ps0a) & np.isfinite(ps1a) & (ps0a != 0) & (ps1a != 0)
-            j = ix[valid_ab]
-            out["loss_abs_ab"][j] = np.abs(eab[valid_ab]) / ps0b[valid_ab]
-            out["loss_sq_ab"][j] = (eab[valid_ab] / ps1b[valid_ab]) ** 2
-            j = ix[valid_ba]
-            out["loss_abs_ba"][j] = np.abs(eba[valid_ba]) / ps0a[valid_ba]
-            out["loss_sq_ba"][j] = (eba[valid_ba] / ps1a[valid_ba]) ** 2
-        out["scale_state_ab"] = np.isfinite(out["loss_abs_ab"])
-        out["scale_state_ba"] = np.isfinite(out["loss_abs_ba"])
         final = EXT / role / candidate / f"{part}.npy.gz"
+        final.parent.mkdir(parents=True, exist_ok=True)
+        work = final.with_name(final.name + '.work.npy')
+        out = np.lib.format.open_memmap(work, mode='w+', dtype=DT, shape=(len(arr),))
+        for start in range(0, len(arr), CHUNK_ROWS):
+            end = min(start + CHUNK_ROWS, len(arr))
+            fill_rows(arr[start:end], out[start:end], response, scales, skey, order, start)
+        out.flush()
         rec = atomic_compress(out, final)
+        out._mmap.close(); del out
+        work.unlink()
         rec.update({"role": role, "candidate": candidate, "partition": part,
                     "ancestor_artifact": str(ancestor), "ancestor_sha256": sha(ancestor),
                     "scale_lineage_artifact": str(scale_path), "scale_lineage_sha256": sha(scale_path),

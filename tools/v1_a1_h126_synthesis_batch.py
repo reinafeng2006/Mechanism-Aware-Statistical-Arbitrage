@@ -50,8 +50,23 @@ def layer_path(role: str, candidate: str, fold: str) -> Path:
 
 
 def load_layer(role: str, candidate: str, fold: str) -> np.ndarray:
-    with gzip.open(layer_path(role, candidate, fold), "rb") as stream:
-        return np.load(stream, allow_pickle=False)
+    source = layer_path(role, candidate, fold)
+    manifest = json.loads(LAYER_MANIFEST.read_text(encoding='utf-8'))
+    records = [x for x in manifest['records'] if x['role'] == role and x['candidate'] == candidate and x['partition'] == fold]
+    if len(records) != 1: raise RuntimeError('layer identity binding mismatch')
+    record = records[0]
+    if sha(source) != record['sha256']: raise RuntimeError('immutable layer hash mismatch')
+    cache = WORK_ROOT / '_input_cache' / role / candidate / f'{fold}.npy'
+    if cache.exists():
+        if sha(cache) != record['raw_sha256']: raise RuntimeError('noncanonical input cache hash mismatch')
+    else:
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        temp = cache.with_name(cache.name + '.tmp')
+        with gzip.open(source, 'rb') as inp, temp.open('wb') as out:
+            shutil.copyfileobj(inp, out, 8 << 20)
+        if sha(temp) != record['raw_sha256']: raise RuntimeError('layer lossless cache validation failed')
+        os.replace(temp, cache)
+    return np.load(cache, mmap_mode='r', allow_pickle=False)
 
 
 def keys(arr: np.ndarray) -> np.ndarray:

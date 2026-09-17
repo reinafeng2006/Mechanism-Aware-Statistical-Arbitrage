@@ -20,6 +20,14 @@ def audit_input():
 
 def audit_r4():
     root = r.STATE / 'V1-R4-63D'
+    for fold in ('2024', '2025'):
+        ancestor = r.REL / 'V1-R4-63D' / f'{fold}.npy'
+        record = json.loads(ancestor.with_suffix('.complete.json').read_text())
+        assert r.sha(ancestor) == record['sha256'], 'immutable R4 relationship hash mismatch'
+    state = json.loads((root / '2024.complete.json').read_text())
+    assert r.sha(root / '2024.npy') == state['sha256'], 'immutable R4-2024 state hash mismatch'
+    assert state['equivalence'] == 'PASS_EXACT' and state['shared_field_mismatches'] == 0
+    assert state['ancestor_sha256'] == r.sha(r.REL / 'V1-R4-63D' / '2024.npy')
     markers = sorted((root / '_engineering').rglob('*block-*.complete.json'))
     assert len(markers) == 524, 'R4 engineering block count changed'
     for marker in markers:
