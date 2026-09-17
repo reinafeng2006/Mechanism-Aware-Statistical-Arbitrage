@@ -16,6 +16,7 @@ import shutil
 import subprocess
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import numpy as np
@@ -154,12 +155,16 @@ def compress_one(source: Path) -> dict:
 
 
 def compress_all() -> None:
-    records = []
+    sources = []
     for candidate in CANDIDATES:
         for fold in FOLDS:
             for root, suffix in ((REL, ".npy"), (STATE, ".npy"), (A3A5, ".a3.npy"), (A3A5, ".a5.npy")):
                 raw = root / candidate / f"{fold}{suffix}"
-                records.append(compress_one(raw))
+                sources.append(raw)
+    # Independent lossless byte streams: concurrency cannot change a payload.
+    # map preserves the original deterministic manifest order.
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        records = list(pool.map(compress_one, sources))
     atomic_json(STAGE_MANIFEST, {"manifest_id": VERSION + "-PAYLOADS", "status": "IMMUTABLE_COMPLETE_CHECKSUMMED",
         "candidate_count": 6, "annual_folds": FOLDS, "payload_count": 48, "payloads": records,
         "excluded_candidate": "V1-R4-63D", "h4": "COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION",

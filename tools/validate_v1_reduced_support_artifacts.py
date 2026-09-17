@@ -25,6 +25,8 @@ def main():
     p = r.load_progress()
     assert p['state'] == 'COMPLETE', 'pipeline incomplete'
     r.preflight()
+    with np.load(r.INPUT, allow_pickle=False) as source:
+        dates = np.char.decode(source['dates'])
     stage = json.loads(r.STAGE_MANIFEST.read_text())
     assert len(stage['payloads']) == 48
     for rec in stage['payloads']:
@@ -43,6 +45,15 @@ def main():
             for tag, shape in [('a3', (rows, 4)), ('a5', (rows, 2, 4, 5))]:
                 array = np.load(r.A3A5 / candidate / f'{fold}.{tag}.npy', mmap_mode='r', allow_pickle=False)
                 assert array.shape == shape and array.dtype == np.dtype('<f4'), 'A3/A5 schema mismatch'
+            rel = np.load(r.REL / candidate / f'{fold}.npy', mmap_mode='r', allow_pickle=False)
+            for start in range(0, rows, 100000):
+                end = min(rows, start + 100000)
+                t = rel['date_ix'][start:end].astype(np.intp)
+                assert np.all((dates[t] >= fold+'0101') & (dates[t] <= fold+'1231')), 'fold role mismatch'
+                for h, horizon in enumerate((1, 5, 10, 20)):
+                    invalid = (t+horizon >= len(dates)) | (dates[np.minimum(t+horizon, len(dates)-1)] > fold+'1231')
+                    assert not np.any(np.isfinite(array[start:end][invalid, :, h, :])), 'A5 target crosses fold boundary'
+            del rel, array
     layer = json.loads(r.LAYER_MANIFEST.read_text())
     expected = {(c, f) for c in r.CANDIDATES for f in r.FOLDS}
     assert {(x['candidate'], x['partition']) for x in layer['records']} == expected
@@ -63,6 +74,10 @@ def main():
         assert Path(rec['path']) == syn.unit_path(spec)
         assert r.sha(syn.unit_path(spec)) == rec['sha256']
         assert syn.unit_path(spec).stat().st_size == rec['bytes']
+        if spec['kind'] != 'support':
+            metadata = json.loads(syn.unit_path(spec).read_text())
+            for field in ('role', 'fold', 'candidate', 'left', 'right'):
+                if field in spec: assert metadata[field] == spec[field], 'synthesis unit identity mismatch'
     assert r.sha(r.FINAL) == p['final_sha256'] == sp['final_sha256']
     receipt = {'validation_id': 'V1-REDUCED-SUPPORT-FINAL-INTEGRITY-1.0', 'result': 'PASS',
                'a3a5_units': 12, 'compressed_payloads': 48, 'h126_partitions': 12, 'synthesis_units': 44,
