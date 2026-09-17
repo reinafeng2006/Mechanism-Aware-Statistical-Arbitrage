@@ -63,6 +63,34 @@ def fit_chunk(args):
  for i in range(len(xa)):
   out[2*i]=fit_one((xa[i],xb[i]));out[2*i+1]=fit_one((xb[i],xa[i]))
  return out
+def run_fit_tasks(pool,tasks,context,worker=fit_chunk):
+ futures=[pool.submit(worker,task) for task in tasks];pending=set(futures);deadline=time.monotonic()+3600.;results={}
+ while pending:
+  if time.monotonic()>=deadline:
+   for future in pending:future.cancel()
+   raise RuntimeError(f'R4 worker timeout context={context} pending={len(pending)}')
+  done,pending=concurrent.futures.wait(pending,timeout=5.,return_when=concurrent.futures.FIRST_EXCEPTION)
+  for future in done:
+   try:results[futures.index(future)]=future.result()
+   except BaseException as exc:
+    for item in pending:item.cancel()
+    raise RuntimeError(f'R4 worker failure context={context} pending={len(pending)} cause={type(exc).__name__}: {exc}') from exc
+  workers_state=getattr(pool,'_processes',{}) or {}
+  dead=[(process.pid,process.exitcode) for process in workers_state.values() if process.exitcode is not None]
+  if dead and pending:
+   for future in pending:future.cancel()
+   raise RuntimeError(f'R4 worker terminated context={context} dead={dead} pending={len(pending)}')
+ return [results[index] for index in range(len(futures))]
+def synthetic_abrupt_worker_exit(_):
+ os._exit(91)
+def valid_state_checkpoint(final,marker,candidate,label,ancestor):
+ if not final.exists() and not marker.exists():return None
+ if not(final.exists() and marker.exists()):raise RuntimeError(f'incomplete state checkpoint {candidate}/{label}')
+ meta=json.loads(marker.read_text(encoding='utf-8'))
+ required=(meta.get('candidate')==candidate and meta.get('partition')==label and meta.get('equivalence')=='PASS_EXACT' and
+           meta.get('shared_field_mismatches')==0 and sha(final)==meta.get('sha256') and sha(ancestor)==meta.get('ancestor_sha256'))
+ if not required:raise RuntimeError(f'state checkpoint validation failed {candidate}/{label}')
+ return meta
 def pairs(mask):
  ids=np.flatnonzero(mask);i,j=np.triu_indices(len(ids),1);return np.column_stack((ids[i],ids[j])).astype(np.int16)
 def main():
@@ -85,7 +113,7 @@ def main():
      seq,sc=sequences(pp,int(t),r,member);ok=np.isfinite(sc[:,0])&np.isfinite(sc[:,1]);use=pp[ok];seq=seq[ok];sc=sc[ok]
      active[:]=False;alpha[:]=np.nan;beta[:]=np.nan;pv[:]=np.nan;qv[:]=np.nan;rv[:]=np.nan;states[:]=0
      batch=256;tasks=[(seq[k:k+batch,:,0],seq[k:k+batch,:,1]) for k in range(0,len(seq),batch)]
-     results=list(pool.map(fit_chunk,tasks,chunksize=1));fits=np.vstack(results) if results else np.empty((0,8))
+     results=run_fit_tasks(pool,tasks,f'relationship/{label}/{month}');fits=np.vstack(results) if results else np.empty((0,8))
      for pos,(a,b) in enumerate(use):
       ab=fits[2*pos];ba=fits[2*pos+1]
       if ab[7]>0 and ba[7]>0:
@@ -122,14 +150,16 @@ def augment_state():
  with concurrent.futures.ProcessPoolExecutor(max_workers=workers) as pool:
   for label,lo,hi in periods:
    final=state_root/f'{label}.npy';marker=state_root/f'{label}.complete.json'
-   if final.exists() or marker.exists():raise RuntimeError('state no-overwrite conflict')
+   prior=valid_state_checkpoint(final,marker,'V1-R4-63D',label,OUT/f'{label}.npy')
+   if prior is not None:
+    summary.append(prior);continue
    original=np.load(OUT/f'{label}.npy',allow_pickle=False,mmap_mode='r');cursor=0;chunks=[]
    for t in np.flatnonzero((dates>=lo)&(dates<=hi)):
     pp=pairs(member[t]);month=int(dates[t][:6])
     if month!=current_month:
      seq,sc=sequences(pp,int(t),r,member);ok=np.isfinite(sc[:,0])&np.isfinite(sc[:,1]);use=pp[ok];seq=seq[ok];sc=sc[ok]
      active[:]=False;alpha[:]=np.nan;beta[:]=np.nan;pv[:]=np.nan;qv[:]=np.nan;rv[:]=np.nan;states[:]=0
-     batch=256;tasks=[(seq[k:k+batch,:,0],seq[k:k+batch,:,1]) for k in range(0,len(seq),batch)];results=list(pool.map(fit_chunk,tasks,chunksize=1));fits=np.vstack(results) if results else np.empty((0,8))
+     batch=256;tasks=[(seq[k:k+batch,:,0],seq[k:k+batch,:,1]) for k in range(0,len(seq),batch)];results=run_fit_tasks(pool,tasks,f'state/{label}/{month}');fits=np.vstack(results) if results else np.empty((0,8))
      for pos,(a,b) in enumerate(use):
       ab=fits[2*pos];ba=fits[2*pos+1]
       if ab[7]>0 and ba[7]>0:

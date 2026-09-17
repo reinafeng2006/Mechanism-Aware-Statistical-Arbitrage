@@ -168,7 +168,13 @@ def augment_state():
  summary=[]
  for label,lo,hi in periods:
   final=state_root/f'{label}.npy';marker=state_root/f'{label}.complete.json'
-  if final.exists() or marker.exists():raise RuntimeError('state no-overwrite conflict')
+  if final.exists() or marker.exists():
+   if not(final.exists() and marker.exists()):raise RuntimeError(f'incomplete state checkpoint V1-R3-252M/{label}')
+   meta=json.loads(marker.read_text(encoding='utf-8'))
+   valid=(meta.get('candidate')=='V1-R3-252M' and meta.get('partition')==label and meta.get('equivalence')=='PASS_EXACT' and
+          meta.get('shared_field_mismatches')==0 and sha(final)==meta.get('sha256') and sha(OUT/f'{label}.npy')==meta.get('ancestor_sha256'))
+   if not valid:raise RuntimeError(f'state checkpoint validation failed V1-R3-252M/{label}')
+   summary.append(meta);continue
   original=np.load(OUT/f'{label}.npy',allow_pickle=False,mmap_mode='r');cursor=0;state_chunks=[]
   for t in np.flatnonzero((dates>=lo)&(dates<=hi)):
    pp=pairs(member[t]);key=int(dates[t][:6]);ids=(pp[:,0].astype(np.int32)*r.shape[1]+pp[:,1]).astype(np.int32)

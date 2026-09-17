@@ -285,3 +285,12 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Built a researcher-operated checkpointed runner with `status/run/resume/validate`, deterministic 2024/2025 partitions, atomic/checksummed materialization, 58-unit H126 synthesis, hash-verified resume, and metadata-only progress.
 - The runner creates a write-once checksum-bound access event before reading any held-out byte. Source-binding generation and dry-run passed with zero units executed; the access event does not yet exist and held-out remains unaccessed.
 - `A6/G5 = V1 NON-ESTIMABLE / NOT EXECUTED` remains an evidence/data-availability limitation and is not reopened.
+## 2026-09-17 — RUN-V1-HELDOUT-R4-RESUME-REPAIR-20260917-01
+
+- Authority: researcher confirmed the R4-2025 worker-pool stall, terminated coordinator PID 11204, and authorized engineering-only resume repair without scientific recomputation or semantic change.
+- Ownership audit identified PIDs 48240 and 32004 as the orphaned `state` materializer and final-held-out batch parent from the same run. Only those confirmed remnants were terminated; no unrelated process was touched.
+- Preserved and rehashed all valid held-out RT3 work. Static 10/10, R3 2/2 and R4-2024 validate against payload and ancestor hashes, exact-equivalence markers and zero shared-field mismatches. R4-2025 has no payload, marker or temp artifact.
+- Diagnosed an abrupt eight-worker loss on the synchronous R4 `pool.map` path. Child exit codes were no longer recoverable; no scientific exception or confirmed resource-exhaustion event was established. The old path lacked timeout/liveness failure propagation.
+- Repaired static/R3/R4 resume to hash-verify and skip valid checkpoints and fail closed on partial/mismatched artifacts. Added ordered-future R4 execution with timeout, child-liveness/exit-code reporting and explicit failure propagation; numerical task batches and result order are unchanged.
+- Synthetic abrupt-worker test and structural resume-plan validation pass without executing a scientific unit or exposing scientific values. Held-out access-event hash remains unchanged.
+- Disposition: `HELD-OUT R4 RESUME REPAIRED / READY AT R4-2025`; long computation remains researcher-operated.

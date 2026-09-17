@@ -262,7 +262,7 @@ $h126Amendment = (
 $finalHeldout = (
     $action.action.action_id -eq 'V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION' -and
     $action.action.status -eq 'AUTHORIZED' -and
-    $action.action.execution_state -eq 'HELDOUT_RUNNER_PREPARATION_AUTHORIZED_ACCESS_NOT_YET_OPENED' -and
+    $action.action.execution_state -in @('HELDOUT_RUNNER_PREPARATION_AUTHORIZED_ACCESS_NOT_YET_OPENED','HELDOUT_R4_RESUME_READY_AT_2025') -and
     $action.action.dataset_access -eq 'ONE_TIME_2024_2025_FINAL_HELDOUT_VIA_CHECKPOINTED_EXTERNAL_RUNNER_ONLY' -and
     $action.action.held_out_access -eq 'AUTHORIZED_ONE_TIME_ACCESS_EVENT_REQUIRED_BEFORE_FIRST_READ'
 )

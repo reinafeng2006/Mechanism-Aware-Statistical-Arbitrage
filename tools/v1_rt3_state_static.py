@@ -47,7 +47,13 @@ def main():
   cdir=OUT/cid;cdir.mkdir(exist_ok=True);cache={};active=-1
   for label,lo,hi in periods:
    final=cdir/f'{label}.npy';marker=cdir/f'{label}.complete.json'
-   if final.exists() or marker.exists():raise RuntimeError(f'no-overwrite conflict {cid}/{label}')
+   if final.exists() or marker.exists():
+    if not(final.exists() and marker.exists()):raise RuntimeError(f'incomplete state checkpoint {cid}/{label}')
+    meta=json.loads(marker.read_text(encoding='utf-8'))
+    valid=(meta.get('candidate')==cid and meta.get('partition')==label and meta.get('equivalence')=='PASS_EXACT' and
+           meta.get('shared_field_mismatches')==0 and sha(final)==meta.get('sha256') and sha(REL/cid/f'{label}.npy')==meta.get('ancestor_sha256'))
+    if not valid:raise RuntimeError(f'state checkpoint validation failed {cid}/{label}')
+    summary.append(meta);continue
    original=np.load(REL/cid/f'{label}.npy',allow_pickle=False,mmap_mode='r');cursor=0;states=[];mismatch=0;bad=''
    for t in np.flatnonzero((dates>=lo)&(dates<=hi)):
     pairs=rel.pairs_for(member[t]);pkey=int(month[t] if cadence==2 else week[t]);keys=(pairs[:,0].astype(np.int32)*response.shape[1]+pairs[:,1]).astype(np.int32)
