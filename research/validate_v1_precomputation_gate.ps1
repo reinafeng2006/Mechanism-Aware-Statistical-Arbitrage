@@ -259,6 +259,13 @@ $h126Amendment = (
     $action.action.execution_state -in @('A1_H126_AMENDMENT_QUALIFIED_PENDING_PUBLICATION','AUTHORIZED_A1_H126_PRE_HELD_OUT_EXECUTION','READY_FOR_EXTERNAL_SYNTHESIS_EXECUTION','PARTIAL_READY_FOR_EXTERNAL_SYNTHESIS_RESUME') -and
     $action.action.held_out_access -eq 'SEALED_DENIED'
 )
+$finalHeldout = (
+    $action.action.action_id -eq 'V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION' -and
+    $action.action.status -eq 'AUTHORIZED' -and
+    $action.action.execution_state -eq 'HELDOUT_RUNNER_PREPARATION_AUTHORIZED_ACCESS_NOT_YET_OPENED' -and
+    $action.action.dataset_access -eq 'ONE_TIME_2024_2025_FINAL_HELDOUT_VIA_CHECKPOINTED_EXTERNAL_RUNNER_ONLY' -and
+    $action.action.held_out_access -eq 'AUTHORIZED_ONE_TIME_ACCESS_EVENT_REQUIRED_BEFORE_FIRST_READ'
+)
 
 $checks = @(
     ($registry -match 'R2-LIS.*V1 NOT DATA-READY'),
@@ -269,8 +276,8 @@ $checks = @(
     ($gate -match 'PRE-COMPUTATION \+ TRADING-PROTOCOL V1 GATE — APPROVED / FROZEN'),
     ($gate -match 'C04-A'),
     ((Get-Content -Raw -LiteralPath (Join-Path $repo 'docs/decisions/V1_PAIR_UNIVERSE_FREEZE.md')) -match 'PAIR-A COMPLETE PIT ALL-PAIRS'),
-    ($action.action.held_out_access -eq 'SEALED_DENIED'),
-    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication -or $evRowMappingPause -or $evMapBPublication -or $preOuterGate -or $poCPublication -or $externalStoragePublication -or $poCOf4Execution -or $preHeldOutA1Gate -or $preHeldOutEvidenceGate -or $h126Amendment),
+    ($action.action.held_out_access -eq 'SEALED_DENIED' -or $finalHeldout),
+    ($activeInner -or $pairUniversePause -or $c06AvailabilityPause -or $c06AmendmentActive -or $c06AmendmentQualified -or $executableSemanticsPause -or $execAPublication -or $r4FeasibilityPause -or $r4Conditional -or $cfADispositionPublication -or $a6TrainingGeometryPause -or $a6TgaPublication -or $decisionCadencePause -or $dcAEpAPublication -or $directionalEpisodePause -or $decaAPublication -or $a6StaleGapPause -or $sgAPublication -or $rt3StatePause -or $rt3APublication -or $rt3AActive -or $mp1ReferencePause -or $mp1APublication -or $mp1InterfacePause -or $mp1IApublication -or $executableFieldScan -or $consolidatedExecutablePause -or $executableClosurePublication -or $evRowMappingPause -or $evMapBPublication -or $preOuterGate -or $poCPublication -or $externalStoragePublication -or $poCOf4Execution -or $preHeldOutA1Gate -or $preHeldOutEvidenceGate -or $h126Amendment -or $finalHeldout),
     ($contract.forbidden -contains 'PNL_TO_UPSTREAM_SELECTION'),
     ($contract.forbidden -contains 'HELD_OUT_ACCESS')
 )
@@ -280,7 +287,9 @@ if ($checks -contains $false) {
     throw "V1 pre-computation gate invariant failed at check indexes: $($failedIndexes -join ',')."
 }
 
-if ($preHeldOutEvidenceGate) {
+if ($finalHeldout) {
+    Write-Output 'PASS: final 2024-2025 held-out confirmation is authorized only through the write-once external runner; A6/G5 remain excluded.'
+} elseif ($preHeldOutEvidenceGate) {
     Write-Output 'PASS: validated H126 synthesis is frozen at the pre-held-out researcher decision gate; all further data access is denied.'
 } elseif ($h126Amendment) {
     Write-Output 'PASS: H126 candidate-neutral A1 amendment is bounded to pre-held-out execution; held-out remains denied.'

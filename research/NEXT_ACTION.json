@@ -1,21 +1,21 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "NONE",
-    "name": "Pre-held-out V1 researcher decision gate",
-    "status": "RESEARCHER_DECISION_REQUIRED",
-    "execution_state": "PRE_HELD_OUT_V1_GATE_RESEARCHER_DECISION_REQUIRED",
-    "objective": "Preserve the validated H126 A1/CS2 pre-held-out evidence checkpoint and await an explicit researcher decision before any successor action.",
-    "prerequisites": ["V1-A1-H126-CN-1.0 published before empirical access", "immutable inner and OF4 manifests validate", "CORE-DATASET-FREEZE-V1 validates", "no prior comparative-result inspection"],
-    "allowed_scope": ["read-only inspection of the frozen pre-held-out researcher checkpoint", "checksum validation", "control-framework maintenance explicitly requested by the researcher"],
-    "forbidden_scope": ["relationship RT3 expected-response A3 or A5 recomputation", "candidate-native denominator substitution", "retuning or Search Budget change", "A6 or G5 execution", "2024-2025 held-out access", "mutation of immutable ancestors"],
-    "dataset_access": "DENIED_PENDING_PRE_HELD_OUT_RESEARCHER_DECISION",
-    "empirical_result_visibility": "FROZEN_AGGREGATION_LEVEL_CHECKPOINT_ONLY",
-    "held_out_access": "SEALED_DENIED",
+    "action_id": "V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION",
+    "name": "Final 2024-2025 held-out confirmatory evaluation",
+    "status": "AUTHORIZED",
+    "execution_state": "HELDOUT_RUNNER_PREPARATION_AUTHORIZED_ACCESS_NOT_YET_OPENED",
+    "objective": "Publish the frozen C1-C4 confirmation contract, validate a deterministic checkpointed external runner, and permit one-time researcher-operated 2024-2025 held-out materialization and H126 A1/CS2 confirmation.",
+    "prerequisites": ["commit 27be564 pre-held-out checkpoint accepted", "V1-A1-H126-CN-1.0 published", "immutable inner and OF4 manifests validate", "CORE-DATASET-FREEZE-V1 validates", "R0-C/R0-L lineage audit passes before access"],
+    "allowed_scope": ["non-empirical runner construction and validation", "one-time 2024-2025 held-out relationship RT3 A3 A5 materialization", "candidate-neutral H126 A1/CS2 layer", "frozen C1-C4 aggregation", "read-only checksum validation and final checkpoint construction"],
+    "forbidden_scope": ["retuning or Search Budget change", "candidate/reference rebinding", "new metric threshold aggregation multiplicity or winner rule", "candidate reduction", "A6 or G5 execution", "post-access scientific-semantic amendment", "mutation of immutable ancestors"],
+    "dataset_access": "ONE_TIME_2024_2025_FINAL_HELDOUT_VIA_CHECKPOINTED_EXTERNAL_RUNNER_ONLY",
+    "empirical_result_visibility": "DENIED_DURING_MATERIALIZATION_FINAL_FROZEN_AGGREGATES_ONLY_AFTER_COMPLETE_VALIDATION",
+    "held_out_access": "AUTHORIZED_ONE_TIME_ACCESS_EVENT_REQUIRED_BEFORE_FIRST_READ",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "A separately authorized successor action is frozen and published; 2024-2025 remains inaccessible unless explicitly and separately authorized.",
-    "mandatory_stop_conditions": ["immutable ancestor mismatch", "need for a new scientific semantic", "any A6 G5 or 2024-2025 access", "attempt to mutate immutable ancestors"]
+    "completion_condition": "All held-out units and hashes validate and FINAL V1 HELD-OUT EVIDENCE CHECKPOINT is constructed; then stop for final researcher interpretation.",
+    "mandatory_stop_conditions": ["R0-C/R0-L implementation alias error", "immutable ancestor mismatch", "need for a new scientific semantic", "access-event creation failure", "attempted A6/G5 execution", "attempt to mutate immutable ancestors"]
   }
 }

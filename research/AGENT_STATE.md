@@ -7,19 +7,19 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED` |
+| Stage status | `FINAL HELD-OUT AUTHORIZED / EXTERNAL EXECUTION PREPARATION` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | H126 candidate-neutral layer validated; external synthesis 406/406 and canonical A1/CS2 evidence checkpoint finalized |
+| Current substage | C1-C4 confirmatory questions frozen; R0-C/R0-L lineage audit PASS; checkpointed external held-out runner prepared; access not yet opened |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
-| Held-out status | `SEALED / NOT ACCESSED / ACCESS NOT AUTHORIZED`, 2024-01-01 through 2025-12-31 |
-| Computation authorization | `NONE`; frozen aggregation-level checkpoint inspection only; held-out denied |
-| Current authorized action | `NONE` |
+| Held-out status | `AUTHORIZED ONE-TIME / NOT YET ACCESSED`; write-once access event required before first read |
+| Computation authorization | `RESEARCHER-OPERATED EXTERNAL FINAL HELD-OUT ONLY`; frozen relationship/RT3/A3/A5 and H126 A1/CS2 protocols |
+| Current authorized action | `V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION` |
 | Last validation state | 98/98 H126 partitions; 406/406 synthesis units; unit/final hashes, exact common-support structure, equal-pair medians, temporal separation and immutable ancestors PASS |
 | Latest local commit | `dcc00e9` — external H126 runner engineering repair before checkpoint finalization |
 | Remote state observed | `origin/main` matched `dcc00e9` before this checkpoint transaction |
-| Researcher action required | `YES`; decide the separately authorized successor at the pre-held-out gate |
+| Researcher action required | `YES`; launch the independent external runner after publication |
 
 ## Verified frozen chain relevant to activation
 

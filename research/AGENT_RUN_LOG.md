@@ -275,3 +275,13 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Constructed the aggregation-level researcher checkpoint under frozen SR0→SR1 semantics. No p-value, confidence interval, multiplicity quantity, severe-failure threshold, ranking rule or winner was invented.
 - Preserved `A6/G5 = V1 NON-ESTIMABLE / NOT EXECUTED`; 2024–2025 was not accessed.
 - Successor action reset to `NONE`; computation stops at `PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED`.
+## 2026-09-17 — RUN-V1-FINAL-HELDOUT-AUTH-20260917-01
+
+- Authority: researcher accepted pre-held-out checkpoint commit `27be564`, froze confirmatory questions C1–C4, and authorized one-time 2024–2025 final-held-out access under unchanged V1 protocols.
+- Interpretation remains descriptive: no significance claim, effect threshold, multiplicity amendment, forced rank or unique winner is introduced.
+- Non-empirical R0-C/R0-L audit PASS: distinct candidate IDs and Pearson representation lineage are preserved, while both intentionally consume the identical H126/U1W OLS directional bridge evaluated by A1. Exact A1 equality is specification-consistent, not implementation aliasing.
+- Frozen bindings: C1 R1-M versus R0-L; C2 R1-MI versus R1-M; C3 R3 versus R0-D; C4 R4 versus R0-L. The complete seven-candidate architecture remains active.
+- External storage `D:\MechanismAwareStatArbData\FINAL_HELDOUT_V1` passed a write/read/hash/delete probe with 697,176,506,368 bytes free at preflight.
+- Built a researcher-operated checkpointed runner with `status/run/resume/validate`, deterministic 2024/2025 partitions, atomic/checksummed materialization, 58-unit H126 synthesis, hash-verified resume, and metadata-only progress.
+- The runner creates a write-once checksum-bound access event before reading any held-out byte. Source-binding generation and dry-run passed with zero units executed; the access event does not yet exist and held-out remains unaccessed.
+- `A6/G5 = V1 NON-ESTIMABLE / NOT EXECUTED` remains an evidence/data-availability limitation and is not reopened.

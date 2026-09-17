@@ -62,6 +62,7 @@ $allowedGates = @(
     ,'A1_H126_AMENDMENT_QUALIFIED_PENDING_PUBLICATION'
     ,'AUTHORIZED_A1_H126_PRE_HELD_OUT_EXECUTION'
     ,'A1_H126_EXTERNAL_SYNTHESIS_READY'
+    ,'AUTHORIZED_FINAL_2024_2025_HELDOUT_EXTERNAL_EXECUTION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -326,6 +327,14 @@ if ($contract.computation_gate -eq 'A1_H126_EXTERNAL_SYNTHESIS_READY') {
     if ($next.action.dataset_access -ne 'EXTERNAL_RUNNER_ONLY_IMMUTABLE_H126_LAYER_INNER_AND_OF4') { throw 'External H126 runner dataset boundary mismatch.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
     if ($contract.a1_candidate_neutral_scale.status -ne 'PUBLISHED_BOUND_TO_PRE_HELD_OUT_V1') { throw 'H126 amendment is not published.' }
+}
+if ($contract.computation_gate -eq 'AUTHORIZED_FINAL_2024_2025_HELDOUT_EXTERNAL_EXECUTION') {
+    if ($next.action.action_id -ne 'V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION') { throw 'Final held-out action mismatch.' }
+    if ($next.action.status -ne 'AUTHORIZED') { throw 'Final held-out action is not authorized.' }
+    if ($next.action.dataset_access -ne 'ONE_TIME_2024_2025_FINAL_HELDOUT_VIA_CHECKPOINTED_EXTERNAL_RUNNER_ONLY') { throw 'Final held-out dataset boundary mismatch.' }
+    if ($next.action.held_out_access -ne 'AUTHORIZED_ONE_TIME_ACCESS_EVENT_REQUIRED_BEFORE_FIRST_READ') { throw 'Final held-out access-event guard mismatch.' }
+    if ($contract.final_heldout.status -ne 'AUTHORIZED_ACCESS_NOT_YET_OPENED') { throw 'Final held-out contract status mismatch.' }
+    if ($contract.final_heldout.a6_g5 -ne 'V1_NON_ESTIMABLE_NOT_EXECUTED') { throw 'A6/G5 disposition changed.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'
