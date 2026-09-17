@@ -4,7 +4,7 @@
     "action_id": "V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION",
     "name": "Final 2024-2025 held-out confirmatory evaluation",
     "status": "AUTHORIZED",
-    "execution_state": "HELDOUT_R4_CHECKPOINTED_RESUME_READY_AT_2025",
+    "execution_state": "HELDOUT_R4_COMPUTATION_INCOMPLETE_REDUCED_SUPPORT_PLAN_ACTIVE",
     "objective": "Publish the frozen C1-C4 confirmation contract, validate a deterministic checkpointed external runner, and permit one-time researcher-operated 2024-2025 held-out materialization and H126 A1/CS2 confirmation.",
     "prerequisites": ["commit 27be564 pre-held-out checkpoint accepted", "V1-A1-H126-CN-1.0 published", "immutable inner and OF4 manifests validate", "CORE-DATASET-FREEZE-V1 validates", "R0-C/R0-L lineage audit passes before access"],
     "allowed_scope": ["non-empirical runner construction and validation", "one-time 2024-2025 held-out relationship RT3 A3 A5 materialization", "candidate-neutral H126 A1/CS2 layer", "frozen C1-C4 aggregation", "read-only checksum validation and final checkpoint construction"],

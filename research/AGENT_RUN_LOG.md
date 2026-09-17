@@ -303,3 +303,18 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Repaired only the execution engine: four single-threaded workers, four-block maximum in flight, worker recycling, explicit abrupt-exit propagation, ordered 256-pair block checkpoints, monthly state checkpoints, streaming annual assembly, hash-verified skip and D:-resident TEMP/TMP/cache/checkpoints.
 - Bounded actual-path proof completed 10 frozen R4-2025 fit blocks. All hashes pass; repeated bounded resume skipped completed blocks; peak aggregate Python working set was approximately 414 MB; C: free-space delta was negligible; no month or canonical R4-2025 output was finalized and no scientific value was disclosed.
 - Scientific semantics impact: `NONE`. Long R4-2025 execution remains researcher-operated.
+## 2026-09-17 — RUN-V1-R4-DEADLINE-MONITOR-ARM-20260917-01
+
+- Authority: researcher approved a temporary computation-only deadline monitor for the immutable cutoff `2026-09-17 19:56:07 +08:00`; no performance- or result-dependent stop is permitted.
+- Monitor ID: `temporary-r4-cutoff-monitor`; temporary two-minute heartbeat; removal/disable required after R4 finalization or deadline handling.
+- Bound root identity: PID 54480, created `2026-09-17 17:46:38 +08:00`, executing `tools/v1_final_heldout_batch.py resume` at commit `7c25a66450c9a04486b9b6c4d7ccaafdac002b27`. Only descendants with verified parent ancestry and held-out command identity may be targeted.
+- Arming checkpoint: 10 R4-2025 engineering block markers, all SHA-256 valid; zero month markers; no canonical R4-2025 final. Progress hash `795449724308E489FF7A21C628AC70F3E05B096319DCD18A9D202DC9D2EA86D8`; held-out access-event hash `E7D129135BF189655A5279301069FEA002344FA249F54A59D117C816E6831714`.
+- At arming, the verified descendant tree was performing a non-writing R4 relationship integrity pass. The active run was not interrupted, duplicated or modified.
+## 2026-09-17 — RUN-V1-R4-DEADLINE-ACTION-20260917-01
+
+- Fixed cutoff reached: `2026-09-17 19:56:07 +08:00`. R4-2025 had not finalized and the verified tree was structurally stalled.
+- Re-verified bound coordinator PID 54480 and descendant ancestry, then stopped only seven held-out Python processes at `19:57:27 +08:00`; no unrelated process was targeted.
+- Preserved and SHA-256 validated 524/524 R4-2025 pair-block engineering checkpoints. Zero monthly checkpoints exist; no canonical payload, canonical marker or temporary artifact was promoted. Held-out access-event hash remains `E7D129135BF189655A5279301069FEA002344FA249F54A59D117C816E6831714`.
+- Recorded `H4 FINAL HELD-OUT = COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION`, reason solely `FINAL-DAY COMPUTATIONAL-BUDGET EXHAUSTION`. No H4 support inference is permitted.
+- Activated `V1-FINAL-HELDOUT-REDUCED-SUPPORT-1.0`: preserve inner/OF4 R4 separately; exclude unavailable R4-2025 only where mathematically required; continue exact H1/H2/H3/H5 and final closure without imputation, approximation or semantic change.
+- Scientific values inspected: `NONE`.

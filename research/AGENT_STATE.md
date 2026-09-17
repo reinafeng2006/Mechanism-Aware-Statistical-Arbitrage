@@ -9,17 +9,17 @@ Basis: repository records and Git state verified during initialization; prompt a
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
 | Stage status | `FINAL HELD-OUT AUTHORIZED / EXTERNAL EXECUTION PREPARATION` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
-| Current substage | Held-out access opened; 13/14 RT3 checkpoints valid; recurrent R4-2025 commit-pressure failure repaired with D:-resident block/month checkpointing; resume ready |
+| Current substage | R4-2025 stopped at final-day deadline; H4 final-held-out computation-incomplete; reduced-support downstream plan active for H1/H2/H3/H5 |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
 | Computation authorization | `RESEARCHER-OPERATED EXTERNAL FINAL HELD-OUT ONLY`; frozen relationship/RT3/A3/A5 and H126 A1/CS2 protocols |
 | Current authorized action | `V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION` |
-| Last validation state | Existing held-out static 10/10, R3 2/2 and R4-2024 RT3 checkpoints hash/equivalence PASS; 10 bounded R4-2025 engineering blocks hash-valid; R4-2025 canonical final missing; downstream not started |
+| Last validation state | R4-2024 canonical PASS; 524/524 R4-2025 engineering blocks hash-valid; 0 months; no canonical/temp R4-2025 payload; access-event hash unchanged |
 | Latest local commit | `dcc00e9` — external H126 runner engineering repair before checkpoint finalization |
 | Remote state observed | `origin/main` matched `dcc00e9` before this checkpoint transaction |
-| Researcher action required | `YES`; resume the independent checkpointed runner at R4-2025 after repair publication |
+| Researcher action required | `NO`; continue versioned reduced-support downstream plan and final closure |
 
 ## Verified frozen chain relevant to activation
 
