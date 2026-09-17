@@ -88,6 +88,7 @@ def main():
     sp = json.loads(syn.PROGRESS.read_text())
     specs = syn.unit_specs()
     assert set(sp['units']) == {s['id'] for s in specs} and sp['completed'] == 44
+    assert sp['held_out_accessed'] is True, 'held-out synthesis access metadata mismatch'
     assert sp['layer_manifest_sha256'] == r.sha(r.LAYER_MANIFEST)
     for spec in specs:
         rec = sp['units'][spec['id']]

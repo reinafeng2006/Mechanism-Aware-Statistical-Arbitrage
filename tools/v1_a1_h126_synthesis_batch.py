@@ -124,7 +124,8 @@ def initialize() -> dict:
         return progress
     progress = {"progress_id": "V1-A1-H126-SYNTHESIS-CHECKPOINT-1.0", "state": "READY",
                 "layer_manifest_sha256": layer_hash, "unit_count": len(specs), "completed": 0,
-                "scientific_values_exposed": False, "held_out_accessed": False, "units": {}}
+                "scientific_values_exposed": False,
+                "held_out_accessed": any(role == "heldout" for role, _ in FOLDS), "units": {}}
     write_json_atomic(PROGRESS, progress)
     return progress
 
