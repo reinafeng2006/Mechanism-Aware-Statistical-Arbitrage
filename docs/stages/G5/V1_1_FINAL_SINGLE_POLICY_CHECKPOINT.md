@@ -18,6 +18,8 @@ Original `A6/G5 = V1 NON-ESTIMABLE / NOT EXECUTED` remains unchanged. A morpholo
 
 Later freezes supersede obsolete alternatives in older proposal prose: no next-close entry fallback, no extra entry threshold, no fixed-ten-session-only exit, and no risk-normalized sizing branch. Final-held-out research access did not itself authorize trading PnL.
 
+The descendant would reuse the frozen A3/A5 event-time morphology, source/peer identities and anchors. The separate H126 A1 loss amendment does not authorize rewriting A3/A5 scales or targets. In particular, T02 explicitly asks whether *unavailable* mechanism/conflict evidence may remain an annotated limitation rather than the original G5 admission block. That is a researcher decision; no software default can make it so.
+
 ## Already frozen; do not reopen for performance
 
 | Field | Inherited rule |

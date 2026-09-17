@@ -17,6 +17,9 @@ BINDINGS = {
     'H4': ('Dynamic adaptation', 'V1-R0L-126W', 'V1-R4-63D'),
 }
 H4 = 'COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION'
+ANCESTOR_MANIFESTS = {name: r.ROOT / 'data/manifests' / (name+'.json') for name in (
+    'V1_PHASE1_RELATIONSHIP_OUTPUTS', 'V1_RT3_RELATIONSHIP_STATE_AUGMENTATION',
+    'V1_INNER_A3_A5', 'V1_OF4_RELATIONSHIP_STAGE', 'V1_A1_H126_CANDIDATE_NEUTRAL')}
 
 
 def number(x):
@@ -92,6 +95,9 @@ def main():
     out = {'checkpoint_id': 'V1-FINAL-H1-H5-REDUCED-SUPPORT-EVIDENCE-1.0',
            'status': 'RESEARCH_EVIDENCE_COMPLETE_TRADING_POLICY_DECISION_REQUIRED',
            'scientific_results_are_descriptive': True,
+           'core_freeze': {'id': 'CORE-DATASET-FREEZE-V1',
+                          'fingerprint': '3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616'},
+           'immutable_ancestor_manifest_sha256': {name: r.sha(path) for name,path in ANCESTOR_MANIFESTS.items()},
            'support_architecture': {'inner_of4_candidates': 7, 'heldout_candidates': 6,
                                     'r4_excluded_reason': 'COMPUTATION_INCOMPLETE_NOT_ADVERSE_EVIDENCE'},
            'source_hashes': {'inner_of4_a1': OLD_HASH, 'heldout_a1': r.sha(r.FINAL),
@@ -106,7 +112,10 @@ def main():
            'multiplicity': 'NO_NEW_PROCEDURE_OR_THRESHOLD_NO_SIGNIFICANCE_CLAIMS',
            'severe_failure': 'NO_NUMERICAL_SEVERE_FAILURE_THRESHOLD_FROZEN_NO_INVENTED_FLAG',
            'ranking': 'NO_UNIQUE_WINNER_FORCED', 'trading_pnl_accessed': False}
-    r.atomic_json(OUT, out)
+    if OUT.exists():
+        if json.loads(OUT.read_text()) != out: raise RuntimeError('evidence manifest no-overwrite conflict')
+    else:
+        r.atomic_json(OUT, out)
     lines = ['# FINAL H1–H5 HELD-OUT EVIDENCE CHECKPOINT', '',
         'Status: **FINAL RESEARCH EVIDENCE / TRADING V1.1 SINGLE DECISION REQUIRED**.', '',
         'The original seven-candidate architecture is preserved as design history. Final held-out evidence uses the authorized **six-candidate** exact intersection because R4-2025 is computationally missing. It is not seven-candidate confirmation. Inner and OF4 retain their original seven-candidate intersections; support changes prohibit treating between-role magnitudes as a controlled change in performance.', '',
@@ -194,7 +203,11 @@ def main():
         'Next and only researcher decision: [Trading V1.1 consolidated policy package](../G5/V1_1_FINAL_SINGLE_POLICY_CHECKPOINT.md). No trading PnL has been computed/inspected, and no final V1 conclusions or release tag are asserted before that decision and its authorized economic execution.', '',
         '`FINAL H1–H5 HELD-OUT EVIDENCE COMPLETE / TRADING V1.1 SINGLE DECISION REQUIRED`', '']
     DOC.parent.mkdir(parents=True, exist_ok=True)
-    temp = DOC.with_suffix('.md.tmp'); temp.write_text('\n'.join(lines), encoding='utf-8'); temp.replace(DOC)
+    text = '\n'.join(lines)
+    if DOC.exists():
+        if DOC.read_text(encoding='utf-8') != text: raise RuntimeError('evidence document no-overwrite conflict')
+    else:
+        temp = DOC.with_suffix('.md.tmp'); temp.write_text(text, encoding='utf-8'); temp.replace(DOC)
     print(json.dumps({'result': 'PASS', 'evidence_manifest_sha256': r.sha(OUT), 'document_sha256': r.sha(DOC),
                       'trading_pnl_accessed': False, 'r4_execution': False}))
 

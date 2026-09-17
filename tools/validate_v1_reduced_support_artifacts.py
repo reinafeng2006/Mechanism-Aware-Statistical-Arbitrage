@@ -49,12 +49,22 @@ def main():
         dates = np.char.decode(source['dates'])
     stage = json.loads(r.STAGE_MANIFEST.read_text())
     assert len(stage['payloads']) == 48
+    raw_hashes = {x['logical_path']: x['raw_sha256'] for x in stage['payloads']}
     for rec in stage['payloads']:
         path = r.EXT / rec['physical_relative_path']
         assert r.sha(path) == rec['sha256'], 'compressed hash mismatch'
         assert r.compressed_raw_sha(path) == rec['raw_sha256'], 'lossless hash mismatch'
         raw = r.EXT / rec['logical_path']
         if raw.exists(): assert r.sha(raw) == rec['raw_sha256'], 'raw ancestor changed'
+        family = Path(rec['logical_path']).parts[0]
+        if family in ('relationships', 'rt3_state'):
+            original = json.loads(raw.with_suffix('.complete.json').read_text())
+            assert original['sha256'] == rec['raw_sha256'], 'original checkpoint lineage mismatch'
+            assert original['held_out_accessed'] is True
+            if family == 'rt3_state':
+                assert original['equivalence'] == 'PASS_EXACT' and original['shared_field_mismatches'] == 0
+                relation_key = f"relationships/{original['candidate']}/{original['partition']}.npy"
+                assert original['ancestor_sha256'] == raw_hashes[relation_key], 'RT3 ancestry mismatch'
     for candidate in r.CANDIDATES:
         for fold in r.FOLDS:
             r.verify_checkpoint(r.A3A5, candidate, fold, 'a3a5')

@@ -47,7 +47,7 @@ def main():
                 'directions': {d: {f'O{h}': {c: cell for c in e.h5.COMPONENTS} for h in e.h5.HORIZONS} for d in ('AB','BA')}})
         e.r.atomic_json(target, {'results':h5results})
         e.r.atomic_json(receipt, {'result':'PASS', 'final_sha256': e.r.sha(final)})
-        with patch.multiple(e, OLD=old, OLD_HASH=e.r.sha(old), OUT=out, DOC=doc), \
+        with patch.multiple(e, OLD=old, OLD_HASH=e.r.sha(old), OUT=out, DOC=doc, ANCESTOR_MANIFESTS={'synthetic':old}), \
              patch.multiple(e.r, CONTROL=root, FINAL=final, ACCESS=old), \
              patch.multiple(e.h5, FINAL=target, validate=lambda: None):
             e.main()
@@ -56,6 +56,9 @@ def main():
             assert result['hypotheses']['H1']['heldout']['loss_abs_ab']['negative_folds'] == 2
             assert len(result['h5_native_component_temporal_vectors']) == 800
             assert 'TRADING V1.1 SINGLE DECISION REQUIRED' in doc.read_text(encoding='utf-8')
+            times = (out.stat().st_mtime_ns, doc.stat().st_mtime_ns)
+            e.main()
+            assert times == (out.stat().st_mtime_ns, doc.stat().st_mtime_ns), 'valid report was rewritten'
             e.r.atomic_json(receipt, {'result':'PASS', 'final_sha256':'invalid'})
             try: e.main()
             except AssertionError: pass
