@@ -38,21 +38,28 @@ def extract(source, left, right, role):
     result = {}
     for field in r.FIELDS:
         vals = [x['metrics'][field]['right_minus_left_equal_pair_median'] for x in items]
-        assert all(v is not None and np.isfinite(v) for v in vals)
-        center = float(np.median(vals))
         recorded = source['temporal_median_vector']['pairwise'][left+'__'+right]
         if role != 'heldout': recorded = recorded[role]
-        assert center == recorded[field]['temporal_median_of_fold_equal_pair_median_differences']
+        center = recorded[field]['temporal_median_of_fold_equal_pair_median_differences']
+        valid = [bool(v is not None and np.isfinite(v)) for v in vals]
+        if all(valid):
+            assert float(np.median(vals)) == center
+        else:
+            # Preserve the canonical unavailable aggregate. Never drop a fold,
+            # impute it, or manufacture a finite temporal estimate for display.
+            assert center is None or not np.isfinite(center)
+            center = None
         result[field] = {'temporal_median': center,
                          'fold_vector': [{'fold': x['fold'], 'difference': v,
                                           'pair_count': x['metrics'][field]['pair_count'],
                                           'observation_count': x['metrics'][field]['observation_count']}
                                          for x, v in zip(items, vals)],
-                         'negative_folds': sum(v < 0 for v in vals),
-                         'zero_folds': sum(v == 0 for v in vals),
-                         'positive_folds': sum(v > 0 for v in vals),
+                         'negative_folds': sum(ok and v < 0 for v,ok in zip(vals,valid)),
+                         'zero_folds': sum(ok and v == 0 for v,ok in zip(vals,valid)),
+                         'positive_folds': sum(ok and v > 0 for v,ok in zip(vals,valid)),
+                         'unavailable_folds': sum(not ok for ok in valid),
                          'fold_count': len(vals),
-                         'fold_range': [min(vals), max(vals)],
+                         'fold_range': [min(vals), max(vals)] if all(valid) else [None,None],
                          'dispersion_note': 'Range and complete frozen fold vector; no new decision cutoff.'}
     return result
 
@@ -129,9 +136,11 @@ def main():
         if hyp == 'H4': disposition = H4
         else:
             h = result['heldout']
-            lower = all(h['loss_abs_'+d]['temporal_median'] < 0 for d in ('ab', 'ba'))
-            higher = all(h['loss_abs_'+d]['temporal_median'] > 0 for d in ('ab', 'ba'))
-            disposition = ('Lower descriptive central loss in both directions' if lower else
+            available = all(h['loss_abs_'+d]['temporal_median'] is not None for d in ('ab','ba'))
+            lower = available and all(h['loss_abs_'+d]['temporal_median'] < 0 for d in ('ab', 'ba'))
+            higher = available and all(h['loss_abs_'+d]['temporal_median'] > 0 for d in ('ab', 'ba'))
+            disposition = ('Unavailable frozen aggregate; no replacement estimate' if not available else
+                           'Lower descriptive central loss in both directions' if lower else
                            'Higher descriptive central loss in both directions' if higher else
                            'Mixed/tied directional central evidence') + '; no inferential or unique-winner claim'
         lines.append(f'| {hyp} {result["name"]} | {vector(result["inner"])} | {vector(result["of4"])} | {held} | {disposition} |')

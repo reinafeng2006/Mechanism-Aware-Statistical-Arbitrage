@@ -33,6 +33,16 @@ def source(roles):
 
 
 def main():
+    missing = source([('heldout',['2024','2025'])])
+    left,right = e.BINDINGS['H1'][1:]
+    missing['pairwise_common_support'][0]['metrics']['loss_abs_ab']['right_minus_left_equal_pair_median'] = None
+    missing['temporal_median_vector']['pairwise'][left+'__'+right]['loss_abs_ab']['temporal_median_of_fold_equal_pair_median_differences'] = None
+    unavailable = e.extract(missing,left,right,'heldout')['loss_abs_ab']
+    assert unavailable['temporal_median'] is None and unavailable['unavailable_folds'] == 1
+    assert unavailable['fold_range'] == [None,None]
+    missing['pairwise_common_support'][0]['metrics']['loss_abs_ab']['right_minus_left_equal_pair_median'] = float('nan')
+    missing['temporal_median_vector']['pairwise'][left+'__'+right]['loss_abs_ab']['temporal_median_of_fold_equal_pair_median_differences'] = float('nan')
+    assert e.extract(missing,left,right,'heldout')['loss_abs_ab']['temporal_median'] is None
     with tempfile.TemporaryDirectory() as folder:
         root = Path(folder)
         old, final, target, receipt, out, doc = [root / x for x in
