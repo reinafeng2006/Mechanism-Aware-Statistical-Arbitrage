@@ -63,6 +63,7 @@ $allowedGates = @(
     ,'AUTHORIZED_A1_H126_PRE_HELD_OUT_EXECUTION'
     ,'A1_H126_EXTERNAL_SYNTHESIS_READY'
     ,'AUTHORIZED_FINAL_2024_2025_HELDOUT_EXTERNAL_EXECUTION'
+    ,'FINAL_H1_H5_EVIDENCE_COMPLETE_TRADING_V1_1_DECISION_REQUIRED'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -335,6 +336,18 @@ if ($contract.computation_gate -eq 'AUTHORIZED_FINAL_2024_2025_HELDOUT_EXTERNAL_
     if ($next.action.held_out_access -ne 'AUTHORIZED_ONE_TIME_ACCESS_EVENT_REQUIRED_BEFORE_FIRST_READ') { throw 'Final held-out access-event guard mismatch.' }
     if ($contract.final_heldout.status -ne 'AUTHORIZED_ACCESS_NOT_YET_OPENED') { throw 'Final held-out contract status mismatch.' }
     if ($contract.final_heldout.a6_g5 -ne 'V1_NON_ESTIMABLE_NOT_EXECUTED') { throw 'A6/G5 disposition changed.' }
+}
+
+if ($contract.computation_gate -eq 'FINAL_H1_H5_EVIDENCE_COMPLETE_TRADING_V1_1_DECISION_REQUIRED') {
+    if ($next.action.action_id -ne 'NONE' -or $next.action.status -eq 'AUTHORIZED') { throw 'Completed research must not authorize trading implicitly.' }
+    if ($next.action.dataset_access -ne 'DENIED_PENDING_TRADING_V1_1_POLICY_DECISION') { throw 'Trading policy gate must deny fresh empirical execution.' }
+    if ($next.action.held_out_access -ne 'PREVIOUSLY_OPENED_ACCESS_EVENT_PRESERVED_NO_NEW_EXECUTION') { throw 'Completed research access history mismatch.' }
+    if ($contract.final_heldout.a6_g5 -ne 'V1_NON_ESTIMABLE_NOT_EXECUTED') { throw 'A6/G5 disposition changed.' }
+    $evidencePath = Join-Path $repoRoot 'data/manifests/V1_FINAL_HELDOUT_EVIDENCE_CHECKPOINT.json'
+    if (-not (Test-Path -LiteralPath $evidencePath)) { throw 'Final evidence manifest missing.' }
+    $evidence = Get-Content -Raw -LiteralPath $evidencePath | ConvertFrom-Json
+    if ($evidence.trading_pnl_accessed -ne $false) { throw 'Trading PnL must remain uninspected.' }
+    if ($evidence.hypotheses.H4.heldout.status -ne 'COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION') { throw 'H4 terminal disposition changed.' }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'
