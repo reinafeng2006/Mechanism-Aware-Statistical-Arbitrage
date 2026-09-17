@@ -238,6 +238,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("stage", choices=("prepare", "relationships", "state", "a3a5", "compress", "all"))
     parser.add_argument("--candidate", choices=CANDIDATES)
+    parser.add_argument("--partition", choices=YEARS)
     parser.add_argument("--shard", type=int, default=0)
     parser.add_argument("--shards", type=int, default=1)
     args = parser.parse_args()
@@ -285,7 +286,12 @@ def main() -> None:
         run(paths["r4"], "--augment-state")
     if args.stage in ("a3a5", "all"):
         relationship_manifest(input_hash)
-        run(paths["a3a5"])
+        extra = []
+        if args.candidate:
+            extra += ["--candidate", args.candidate]
+        if args.partition:
+            extra += ["--partition", args.partition]
+        run(paths["a3a5"], *extra)
     if args.stage in ("compress", "all"):
         compress_finalize(input_hash, args.shard, args.shards)
 

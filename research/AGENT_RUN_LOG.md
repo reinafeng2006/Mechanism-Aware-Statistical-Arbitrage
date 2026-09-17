@@ -318,3 +318,13 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Recorded `H4 FINAL HELD-OUT = COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION`, reason solely `FINAL-DAY COMPUTATIONAL-BUDGET EXHAUSTION`. No H4 support inference is permitted.
 - Activated `V1-FINAL-HELDOUT-REDUCED-SUPPORT-1.0`: preserve inner/OF4 R4 separately; exclude unavailable R4-2025 only where mathematically required; continue exact H1/H2/H3/H5 and final closure without imputation, approximation or semantic change.
 - Scientific values inspected: `NONE`.
+
+## 2026-09-17 — RUN-V1-HELDOUT-REDUCED-SUPPORT-RUNNER-20260917-01
+
+- Authority: researcher directed final-day closure under the reduced-support plan frozen at commit `2df48ef`, prohibited any R4-2025 continuation, and required researcher-operated execution for work exceeding 20 minutes.
+- Preserved all 524 R4-2025 engineering checkpoints without reading scientific values or treating them as final-held-out evidence.
+- Added a versioned six-candidate H1/H2/H3/H5 runner. It never invokes R4, never substitutes a candidate, and records C4/H4 as computation-incomplete with no final-held-out disposition.
+- Bound 12 independently resumable A3/A5 candidate-year units, 48 deterministic lossless compressed payloads, two H126 layers, and 44 exact A1/CS2 units (2 support, 12 summary, 30 comparison).
+- Frozen calculations remain exact common support, exact median, equal-pair influence, candidate-neutral H126, native-support reporting, squared-loss robustness and separate 2024/2025 aggregation.
+- Structural validation and external-root dry-run passed with zero scientific units executed and no scientific values exposed.
+- State: `READY FOR RESEARCHER-OPERATED REDUCED-SUPPORT EXECUTION`.
