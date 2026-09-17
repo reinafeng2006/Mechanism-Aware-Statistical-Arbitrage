@@ -1,0 +1,39 @@
+{
+  "completion_id": "V1-FINAL-H1-H5-REDUCED-SUPPORT-COMPLETION-1.0",
+  "status": "VALIDATED_EVIDENCE_COMPLETE_RESEARCHER_DECISION_REQUIRED",
+  "completed_action": "V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION",
+  "authorization_ancestor": "V1-FINAL-HELDOUT-CONFIRMATORY-1.0",
+  "reduced_support_plan": "V1-FINAL-HELDOUT-REDUCED-SUPPORT-1.0",
+  "reduced_support_plan_commit": "2df48ef",
+  "validated_implementation_commit": "67e2896b64980a5cb7162b42f4cb1ba691060ae4",
+  "aggregate_review_recorded_at": "2026-09-18T01:19:15+08:00",
+  "inspection_gate": "FULL_PIPELINE_VALIDATION_THEN_110_REPORTING_UNIT_HASH_VALIDATION_BEFORE_FROZEN_AGGREGATE_REVIEW",
+  "original_confirmatory_candidates": 7,
+  "executed_heldout_candidates": ["V1-R0D-252M", "V1-R0C-126W", "V1-R0L-126W", "V1-R1M-126W", "V1-R1MI-126W", "V1-R3-252M"],
+  "checkpoint_counts": {"orchestration_stages": 16, "a3_a5": 12, "compressed_payloads": 48, "h126_partitions": 12, "exact_a1_cs2_units": 44, "native_h5_reporting_units": 110},
+  "external_root": "D:\\MechanismAwareStatArbData\\FINAL_HELDOUT_V1",
+  "external_artifacts": {
+    "canonical_a1_cs2": {"path": "_metadata/V1_FINAL_HELDOUT_A1_SYNTHESIS_REDUCED_SUPPORT.json", "sha256": "1CE79BE5303A577D77AE42415648D54BBFEB2870627380E4EFC543B3B1DCD3E9"},
+    "h126_manifest": {"path": "_metadata/V1_FINAL_HELDOUT_A1_H126_REDUCED_SUPPORT.json", "sha256": "FE7EDFBD0AF04D72EAE548C4BEEDDC00745588AE5A5F55C459874DE4A7B5465F"},
+    "stage_manifest": {"path": "_metadata/final_relationship_stage_reduced_support.json", "sha256": "BB1077306EB576BE2C47F3E1F577B63FF2523FB7704146E8944A6B555FAC9A47"},
+    "integrity_receipt": {"path": "_control/reduced_support_final_validation.json", "sha256": "77766648987EE42D9A67DDBB3BE3B5A48C90676C06CF4C4EC2240976A3C107D4"},
+    "native_h5_vectors": {"path": "h5_native_target_report_v1/frozen_native_target_vectors.json", "sha256": "533564E6BC3A4578EE64589025BE95602CD5B601D96AD10B31C94A92DFDD1DEF"},
+    "heldout_access_event": {"path": "_control/heldout_access_event.json", "sha256": "E7D129135BF189655A5279301069FEA002344FA249F54A59D117C816E6831714"}
+  },
+  "repository_artifacts": {
+    "evidence_manifest": {"path": "data/manifests/V1_FINAL_HELDOUT_EVIDENCE_CHECKPOINT.json", "sha256": "6C40DA9B616078661FFF5772BE52BCD640EA4AF34A92C039A5ECABA0BD04AF66"},
+    "evidence_document": {"path": "docs/stages/G4/V1_FINAL_H1_H5_HELDOUT_EVIDENCE_CHECKPOINT.md", "sha256": "CB57BFBC1E034015F4FC4FF18439916034D34141047ED2219359AFFBD43B5522"},
+    "single_policy_decision_inventory": {"path": "docs/stages/G5/V1_1_FINAL_SINGLE_POLICY_CHECKPOINT.md", "sha256": "E4E2BF1A80BE4E2EBF5D597A8C075E3B07F43285F6B905E1E7348E7411371865"}
+  },
+  "h4_final_heldout": "COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION",
+  "h4_reason": "FINAL_DAY_COMPUTATIONAL_BUDGET_EXHAUSTION_ONLY",
+  "r4_engineering_checkpoints_preserved": 524,
+  "r4_engineering_checkpoints_are_scientific_evidence": false,
+  "reduced_support_action_r4_2025_execution": false,
+  "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED",
+  "trading_v1_1_policy": "UNAPPROVED_SINGLE_RESEARCHER_DECISION_REQUIRED",
+  "trading_pnl_computed_or_inspected": false,
+  "new_inference_threshold_or_winner_rule": false,
+  "scientific_semantics_changed": false,
+  "next_execution_authorized": false
+}

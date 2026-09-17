@@ -348,6 +348,17 @@ if ($contract.computation_gate -eq 'FINAL_H1_H5_EVIDENCE_COMPLETE_TRADING_V1_1_D
     $evidence = Get-Content -Raw -LiteralPath $evidencePath | ConvertFrom-Json
     if ($evidence.trading_pnl_accessed -ne $false) { throw 'Trading PnL must remain uninspected.' }
     if ($evidence.hypotheses.H4.heldout.status -ne 'COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION') { throw 'H4 terminal disposition changed.' }
+    $completion = Get-Content -Raw -LiteralPath (Join-Path $repoRoot 'research/V1_FINAL_HELDOUT_COMPLETION.json') | ConvertFrom-Json
+    if ($completion.next_execution_authorized -ne $false -or $completion.trading_pnl_computed_or_inspected -ne $false) { throw 'Completion record must not activate trading.' }
+    if ($completion.checkpoint_counts.exact_a1_cs2_units -ne 44 -or $completion.checkpoint_counts.native_h5_reporting_units -ne 110) { throw 'Completion unit counts mismatch.' }
+    foreach ($binding in $completion.repository_artifacts.psobject.Properties) {
+        $artifact = Join-Path $repoRoot $binding.Value.path
+        if ((Get-FileHash -LiteralPath $artifact -Algorithm SHA256).Hash -ne $binding.Value.sha256) { throw "Completion repository hash mismatch: $($binding.Name)" }
+    }
+    foreach ($binding in $completion.external_artifacts.psobject.Properties) {
+        $artifact = Join-Path $completion.external_root $binding.Value.path
+        if ((Get-FileHash -LiteralPath $artifact -Algorithm SHA256).Hash -ne $binding.Value.sha256) { throw "Completion external hash mismatch: $($binding.Name)" }
+    }
 }
 
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

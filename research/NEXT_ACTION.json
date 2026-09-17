@@ -1,22 +1,24 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION",
-    "name": "Final 2024-2025 held-out confirmatory evaluation",
-    "status": "AUTHORIZED",
-    "execution_state": "CODEX_SUPERVISED_REDUCED_SUPPORT_EXECUTION_AUTHORIZED",
-    "execution_operator": "CODEX_AUTHORIZED_DIRECTLY_BY_RESEARCHER_2026_09_17; checkpointed long execution and semantics-preserving repairs permitted; R4-2025 prohibited",
-    "objective": "Complete and validate the authorized reduced-support held-out A3/A5 and H126 A1/CS2 pipeline under Codex supervision; preserve terminal H4 incompleteness; construct H1-H5 evidence and one consolidated Trading V1.1 policy checkpoint without trading PnL.",
-    "prerequisites": ["commit 27be564 pre-held-out checkpoint accepted", "V1-A1-H126-CN-1.0 published", "immutable inner and OF4 manifests validate", "CORE-DATASET-FREEZE-V1 validates", "R0-C/R0-L lineage audit passes before access"],
-    "allowed_scope": ["non-empirical runner construction and validation", "versioned six-candidate reduced-support 2024-2025 A3 A5 materialization for H1 H2 H3 H5", "candidate-neutral H126 A1/CS2 layer", "frozen C1-C3 aggregation with C4 unavailable", "read-only checksum validation and final checkpoint construction"],
-    "forbidden_scope": ["R4-2025 resume repair approximation imputation or execution", "retuning or Search Budget change", "candidate/reference rebinding or R4 substitution", "manufactured seven-candidate common support", "new metric threshold aggregation multiplicity or winner rule", "A6 or G5 execution", "post-access scientific-semantic amendment", "mutation of immutable ancestors"],
-    "dataset_access": "ONE_TIME_2024_2025_FINAL_HELDOUT_VIA_CHECKPOINTED_EXTERNAL_RUNNER_ONLY",
-    "empirical_result_visibility": "DENIED_DURING_MATERIALIZATION_FINAL_FROZEN_AGGREGATES_ONLY_AFTER_COMPLETE_VALIDATION",
-    "held_out_access": "AUTHORIZED_ONE_TIME_ACCESS_EVENT_REQUIRED_BEFORE_FIRST_READ",
+    "action_id": "NONE",
+    "name": "Final H1-H5 evidence complete; single Trading V1.1 policy decision gate",
+    "status": "RESEARCHER_DECISION_REQUIRED",
+    "execution_state": "FINAL_H1_H5_EVIDENCE_COMPLETE_TRADING_V1_1_DECISION_REQUIRED",
+    "objective": "Preserve the validated reduced-support research evidence and await one consolidated Trading V1.1 policy decision before any further empirical execution or PnL access.",
+    "completed_action": "V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION",
+    "completion_record": "research/V1_FINAL_HELDOUT_COMPLETION.json",
+    "prerequisites": ["full reduced-support integrity receipt PASS", "44/44 exact synthesis unit hashes PASS", "110/110 native H5 reporting unit hashes PASS", "CORE-DATASET-FREEZE-V1 unchanged", "held-out access event and 524 R4 engineering checkpoints preserved"],
+    "allowed_scope": ["read-only inspection of frozen aggregation-level researcher evidence", "checksum and governance validation", "closing publication of the completed authorized research action and its single explicitly unapproved policy decision inventory", "control-framework maintenance explicitly requested by the researcher"],
+    "forbidden_scope": ["R4-2025 execution repair approximation or imputation", "recomputation of valid completed scientific checkpoints", "new model metric support scale threshold comparator Search Budget or winner rule", "A6/G5 rescue or execution", "Trading V1.1 policy selection without researcher decision", "any trading PnL computation or inspection", "V2 execution", "mutation of immutable ancestors"],
+    "dataset_access": "DENIED_PENDING_TRADING_V1_1_POLICY_DECISION",
+    "empirical_result_visibility": "VALIDATED_FROZEN_AGGREGATION_LEVEL_CHECKPOINT_ONLY",
+    "held_out_access": "PREVIOUSLY_OPENED_ACCESS_EVENT_PRESERVED_NO_NEW_EXECUTION",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "All held-out units and hashes validate and FINAL V1 HELD-OUT EVIDENCE CHECKPOINT is constructed; then stop for final researcher interpretation.",
-    "mandatory_stop_conditions": ["R0-C/R0-L implementation alias error", "immutable ancestor mismatch", "need for a new scientific semantic", "access-event creation failure", "attempted A6/G5 execution", "attempt to mutate immutable ancestors"]
+    "publication_scope": "Closing transaction only: validated evidence document/manifest, completion record, current control state, run log, validators and the unapproved consolidated policy inventory. These permissions do not authorize new scientific computation or trading.",
+    "completion_condition": "Researcher resolves the complete consolidated Trading V1.1 policy inventory in one decision and a separately authorized successor action is frozen and published; otherwise remain stopped.",
+    "mandatory_stop_conditions": ["immutable artifact or access-event mismatch", "need for new scientific semantics", "attempted R4-2025 continuation", "attempted trading or A6/G5 execution without separate authority", "attempt to infer an H4 final-held-out disposition from computational incompleteness"]
   }
 }

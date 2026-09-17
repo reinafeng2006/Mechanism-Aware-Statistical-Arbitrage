@@ -112,5 +112,6 @@
   "po_c": {"decision_id": "PO-C", "status": "PUBLISHED_BOUND_TO_PHASE1", "scope": "RELATIONSHIP_STAGE_OF4_ONLY_2020_2023"},
   "a1_candidate_neutral_scale": {"decision_id": "V1-A1-H126-CN-1.0", "status": "PUBLISHED_BOUND_TO_PRE_HELD_OUT_V1", "publication_commit": "938a43a", "history": "H126_QUALIFIED_PIT_OBSERVATIONS", "ps0": "1.4826_MAD", "ps1": "SAMPLE_SD_DDOF1", "held_out": "SEALED_DENIED"},
   "final_heldout": {"decision_id": "V1-FINAL-HELDOUT-CONFIRMATORY-1.0", "status": "AUTHORIZED_ACCESS_NOT_YET_OPENED", "accepted_preheldout_commit": "27be564a5fd24b5e10ba63e114cff3553f478d5a", "candidate_set": "COMPLETE_FROZEN_SEVEN_TUPLE", "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED"},
-  "computation_gate": "AUTHORIZED_FINAL_2024_2025_HELDOUT_EXTERNAL_EXECUTION"
+  "final_heldout_completion": {"completion_id": "V1-FINAL-H1-H5-REDUCED-SUPPORT-COMPLETION-1.0", "record": "research/V1_FINAL_HELDOUT_COMPLETION.json", "status": "VALIDATED_EVIDENCE_COMPLETE_RESEARCHER_DECISION_REQUIRED", "authorization_snapshot_above_preserved": true, "original_candidate_count": 7, "executed_candidate_count": 6, "h4": "COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION", "trading_policy_approved": false},
+  "computation_gate": "FINAL_H1_H5_EVIDENCE_COMPLETE_TRADING_V1_1_DECISION_REQUIRED"
 }
