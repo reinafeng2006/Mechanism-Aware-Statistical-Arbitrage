@@ -7,14 +7,14 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 PHASE 1 / INNER DEVELOPMENT` |
-| Stage status | `FINAL HELD-OUT REDUCED SUPPORT / EXTERNAL EXECUTION READY` |
+| Stage status | `FINAL HELD-OUT REDUCED SUPPORT / CODEX-SUPERVISED EXECUTION` |
 | Latest frozen decision | `V1-MP1-A-1.0 — PUBLISHED / BOUND TO PHASE 1` |
 | Current substage | R4-2025 stopped at final-day deadline; H4 final-held-out computation-incomplete; reduced-support downstream plan active for H1/H2/H3/H5 |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
-| Computation authorization | `RESEARCHER-OPERATED EXTERNAL REDUCED-SUPPORT FINAL HELD-OUT ONLY`; six-candidate H1/H2/H3/H5 A3/A5 and H126 A1/CS2; no R4-2025 execution |
+| Computation authorization | `CODEX-SUPERVISED CHECKPOINTED REDUCED-SUPPORT EXECUTION`; explicitly authorized in chat on 2026-09-17; six-candidate H1/H2/H3/H5 A3/A5 and H126 A1/CS2; no R4-2025 execution |
 | Current authorized action | `V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION` |
 | Last validation state | Reduced-support dry-run PASS: immutable six-candidate relationship/state inputs validated; 44 exact synthesis units registered; zero new units executed; R4 excluded |
 | Latest local commit | `dcc00e9` — external H126 runner engineering repair before checkpoint finalization |
