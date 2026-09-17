@@ -304,8 +304,8 @@ if ($contract.computation_gate -eq 'AUTHORIZED_2020_2023_RELATIONSHIP_OF4') {
 }
 if ($contract.computation_gate -eq 'PRE_HELD_OUT_V1_GATE_RESEARCHER_DECISION_REQUIRED') {
     if ($next.action.action_id -ne 'NONE') { throw 'Pre-held-out gate must have no active action.' }
-    if ($next.action.execution_state -ne 'PRE_HELD_OUT_V1_GATE_A1_SCALE_BINDING_REQUIRED') { throw 'Pre-held-out A1 gate state mismatch.' }
-    if ($next.action.dataset_access -ne 'DENIED_PENDING_A1_COMMON_SCALE_RESEARCHER_DECISION') { throw 'A1 gate must deny dataset access.' }
+    if ($next.action.execution_state -notin @('PRE_HELD_OUT_V1_GATE_A1_SCALE_BINDING_REQUIRED','PRE_HELD_OUT_V1_GATE_RESEARCHER_DECISION_REQUIRED')) { throw 'Pre-held-out gate state mismatch.' }
+    if ($next.action.dataset_access -notin @('DENIED_PENDING_A1_COMMON_SCALE_RESEARCHER_DECISION','DENIED_PENDING_PRE_HELD_OUT_RESEARCHER_DECISION')) { throw 'Pre-held-out gate must deny dataset access.' }
     if ($next.action.held_out_access -ne 'SEALED_DENIED') { throw 'Held-out access is not denied.' }
 }
 if ($contract.computation_gate -eq 'A1_H126_AMENDMENT_QUALIFIED_PENDING_PUBLICATION') {

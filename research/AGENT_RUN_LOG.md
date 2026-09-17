@@ -264,3 +264,14 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - External storage governance published as commit `4d793d1` on canonical `origin/main`; the researcher-authorized PO-C 2020–2023 relationship-only OF4 action is activated with D-drive storage, deterministic lossless atomic materialization, no storage-driven scientific reduction, A6/G5 excluded, and 2024–2025 held-out sealed.
 - PO-C OF4 completed 28 annual relationship partitions, 28 exact-equivalence RT3 companions, and 56 A3/A5 morphology payloads. All 112 payloads were deterministically gzip-compressed, decompression-hash verified, atomically finalized, and bound in `V1-PO-C-OF4-RELATIONSHIP-STAGE-1.0`; actual size was 142,810,708,252 raw bytes and 88,461,879,645 compressed bytes. No A6/G5 or held-out artifact was created and no scientific value was interpreted.
 - Mandatory pre-interpretation stop: frozen A1a requires one identical candidate-neutral scale across competing representations, while payload PS0/PS1 fields inherit candidate H63/H126/H252 histories. Selecting a common history after materialization is a new scientific semantic. No A1/CS2/SR0→SR1 result was computed; execution stops at `PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED` with all OF4 artifacts immutable.
+
+## 2026-09-17 — RUN-V1-PREHELDOUT-EVIDENCE-20260917-01
+
+- Authority: researcher requested validation of the completed external H126 synthesis, finalization of the canonical A1/CS2 artifact, and construction of the frozen pre-held-out evidence checkpoint.
+- Base commit `dcc00e95435ccd8a308a294c04042c54a783194e` matched canonical `origin/main`; the single-writer lock was acquired before canonical mutation.
+- Validated all 406/406 completed checkpoint units against recorded byte sizes and SHA-256 values without recomputation. Final synthesis SHA-256 is `6228A8EE392B939B12020F047CA41A44A472E1218721A9B11D7C23B2CB685796`.
+- Validated the 98-partition, 823,205,593-record H126 candidate-neutral layer; exact common-support structure; equal-pair exact-median summaries; separate ten-fold inner and four-fold OF4 temporal aggregation; and sealed/unaccessed held-out flags.
+- Revalidated immutable relationship, RT3, A3/A5 and OF4 ancestor manifests and hashes. No ancestor was recomputed, moved or rewritten.
+- Constructed the aggregation-level researcher checkpoint under frozen SR0→SR1 semantics. No p-value, confidence interval, multiplicity quantity, severe-failure threshold, ranking rule or winner was invented.
+- Preserved `A6/G5 = V1 NON-ESTIMABLE / NOT EXECUTED`; 2024–2025 was not accessed.
+- Successor action reset to `NONE`; computation stops at `PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED`.

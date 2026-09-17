@@ -1,21 +1,21 @@
 {
   "schema_version": "REA-ACTION-1.0",
   "action": {
-    "action_id": "V1-A1-H126-CANDIDATE-NEUTRAL-AMENDMENT",
-    "name": "Researcher-operated checkpointable H126 synthesis",
-    "status": "READY_FOR_RESEARCHER_OPERATED_EXECUTION",
-    "execution_state": "PARTIAL_READY_FOR_EXTERNAL_SYNTHESIS_RESUME",
-    "objective": "Researcher runs the deterministic checkpointable H126 A1/CS2 synthesis outside Codex; Codex may inspect status or validate but must not start the long run.",
+    "action_id": "NONE",
+    "name": "Pre-held-out V1 researcher decision gate",
+    "status": "RESEARCHER_DECISION_REQUIRED",
+    "execution_state": "PRE_HELD_OUT_V1_GATE_RESEARCHER_DECISION_REQUIRED",
+    "objective": "Preserve the validated H126 A1/CS2 pre-held-out evidence checkpoint and await an explicit researcher decision before any successor action.",
     "prerequisites": ["V1-A1-H126-CN-1.0 published before empirical access", "immutable inner and OF4 manifests validate", "CORE-DATASET-FREEZE-V1 validates", "no prior comparative-result inspection"],
-    "allowed_scope": ["researcher-operated external H126 synthesis", "read-only status", "checksum validation", "frozen A1/CS2/SR0-to-SR1 pre-held-out synthesis"],
+    "allowed_scope": ["read-only inspection of the frozen pre-held-out researcher checkpoint", "checksum validation", "control-framework maintenance explicitly requested by the researcher"],
     "forbidden_scope": ["relationship RT3 expected-response A3 or A5 recomputation", "candidate-native denominator substitution", "retuning or Search Budget change", "A6 or G5 execution", "2024-2025 held-out access", "mutation of immutable ancestors"],
-    "dataset_access": "EXTERNAL_RUNNER_ONLY_IMMUTABLE_H126_LAYER_INNER_AND_OF4",
-    "empirical_result_visibility": "DENIED_DURING_UNITS_FINAL_ARTIFACT_ONLY_AFTER_COMPLETE_VALIDATION",
+    "dataset_access": "DENIED_PENDING_PRE_HELD_OUT_RESEARCHER_DECISION",
+    "empirical_result_visibility": "FROZEN_AGGREGATION_LEVEL_CHECKPOINT_ONLY",
     "held_out_access": "SEALED_DENIED",
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "completion_condition": "H126 layer and pre-held-out synthesis are checksummed and control state returns to PRE-HELD-OUT V1 GATE / RESEARCHER DECISION REQUIRED.",
+    "completion_condition": "A separately authorized successor action is frozen and published; 2024-2025 remains inaccessible unless explicitly and separately authorized.",
     "mandatory_stop_conditions": ["immutable ancestor mismatch", "need for a new scientific semantic", "any A6 G5 or 2024-2025 access", "attempt to mutate immutable ancestors"]
   }
 }
