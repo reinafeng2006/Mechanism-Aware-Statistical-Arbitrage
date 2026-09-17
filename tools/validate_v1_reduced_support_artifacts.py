@@ -7,6 +7,17 @@ import v1_final_heldout_reduced_support as r
 ACCESS_HASH = 'E7D129135BF189655A5279301069FEA002344FA249F54A59D117C816E6831714'
 
 
+def audit_input():
+    manifest = json.loads((r.EXT / '_metadata/input_manifest.json').read_text())
+    actual = r.sha(r.INPUT)
+    assert actual == manifest['artifact_sha256'], 'held-out input hash mismatch'
+    for candidate in r.CANDIDATES:
+        for fold in r.FOLDS:
+            marker = json.loads((r.REL / candidate / f'{fold}.complete.json').read_text())
+            assert marker['input_sha256'] == actual, 'relationship input lineage mismatch'
+    return actual
+
+
 def audit_r4():
     root = r.STATE / 'V1-R4-63D'
     markers = sorted((root / '_engineering').rglob('*block-*.complete.json'))
@@ -22,6 +33,7 @@ def audit_r4():
 
 def main():
     audit_r4()
+    audit_input()
     p = r.load_progress()
     assert p['state'] == 'COMPLETE', 'pipeline incomplete'
     r.preflight()

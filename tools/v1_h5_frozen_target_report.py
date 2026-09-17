@@ -9,7 +9,7 @@ import gzip
 import json
 import os
 import shutil
-import warnings
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import numpy as np
@@ -34,9 +34,9 @@ def pair_medians(values, starts, ends):
         valid &= np.isfinite(block)
         block[~valid] = np.nan
         counts[first:last] = valid.sum(axis=1)
-        with warnings.catch_warnings():
-            warnings.simplefilter('ignore', RuntimeWarning)
-            medians[first:last] = np.nanmedian(block, axis=1)
+        populated = counts[first:last] > 0
+        medians[first:last] = np.nan
+        medians[first:last][populated] = np.nanmedian(block[populated], axis=1)
     return medians, counts
 
 
@@ -74,8 +74,9 @@ def mmap_source(path, label):
 
 def summarize(role, candidate, fold):
     rel_path, a5_path = sources(role, candidate, fold)
-    rel, rel_tmp = mmap_source(rel_path, 'relationship')
-    a5, a5_tmp = mmap_source(a5_path, 'a5')
+    unit = f'{role}__{candidate}__{fold}'
+    rel, rel_tmp = mmap_source(rel_path, unit + '_relationship')
+    a5, a5_tmp = mmap_source(a5_path, unit + '_a5')
     pairs = (rel['a'].astype(np.uint32) << 10) | rel['b'].astype(np.uint32)
     order = np.argsort(pairs, kind='stable')
     sorted_pairs = pairs[order]
@@ -111,6 +112,7 @@ def build():
     if receipt['result'] != 'PASS' or r.sha(r.FINAL) != receipt['final_sha256']:
         raise RuntimeError('complete held-out integrity receipt required before target reporting')
     p = json.loads(PROGRESS.read_text()) if PROGRESS.exists() else {'units': {}, 'completed': 0, 'total': 110}
+    pending = []
     for role, candidate, fold in specs():
         uid = f'{role}__{candidate}__{fold}'
         dest = ROOT / 'units' / f'{uid}.json'
@@ -118,10 +120,14 @@ def build():
             if r.sha(dest) != p['units'][uid]['sha256']: raise RuntimeError('H5 report checkpoint hash mismatch')
             continue
         if dest.exists(): raise RuntimeError('unbound H5 report unit requires controlled recovery')
-        r.atomic_json(dest, summarize(role, candidate, fold))
-        p['units'][uid] = {'path': str(dest), 'sha256': r.sha(dest)}
-        p['completed'] = len(p['units']); r.atomic_json(PROGRESS, p)
-        print(json.dumps({'completed': p['completed'], 'total': 110, 'scientific_values_exposed': False}), flush=True)
+        pending.append((role, candidate, fold))
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        for spec, result in zip(pending, pool.map(lambda x: summarize(*x), pending)):
+            uid = '__'.join(spec); dest = ROOT / 'units' / f'{uid}.json'
+            r.atomic_json(dest, result)
+            p['units'][uid] = {'path': str(dest), 'sha256': r.sha(dest)}
+            p['completed'] = len(p['units']); r.atomic_json(PROGRESS, p)
+            print(json.dumps({'completed': p['completed'], 'total': 110, 'scientific_values_exposed': False}), flush=True)
     results = [json.loads(Path(x['path']).read_text()) for x in p['units'].values()]
     r.atomic_json(FINAL, {'report_id': 'V1-H5-FROZEN-NATIVE-TARGET-VECTORS-1.0', 'results': results,
                          'inference': 'DESCRIPTIVE_ONLY_NO_BINARY_RESOLUTION_THRESHOLD_OR_SIGNIFICANCE_TEST',
@@ -145,6 +151,9 @@ def synthetic_test():
         finite = values[start:end][np.isfinite(values[start:end])]
         expected.append(np.median(finite) if len(finite) else np.nan)
     assert np.array_equal(got, np.array(expected), equal_nan=True)
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        repeats = list(pool.map(lambda _: pair_medians(values, starts, ends)[0], range(2)))
+    assert all(np.array_equal(x, got, equal_nan=True) for x in repeats)
     print('PASS: synthetic exact odd/even/finite native pair medians; no scientific inputs accessed')
 
 
