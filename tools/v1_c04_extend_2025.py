@@ -52,6 +52,8 @@ def fetch(url, referer, attempts=4):
         meta = json.loads(marker.read_text())
         if meta['url'] != url or digest(path) != meta['sha256']: raise RuntimeError('transport hash mismatch')
         return path.read_bytes(), meta['headers']
+    if (ROOT / 'data/manifests/C04_A_THROUGH_2025_FINAL_AUDIT.json').exists():
+        raise RuntimeError('Final C04 acquisition closed for V1; cache-only access permitted')
     action = json.loads((ROOT / 'research/NEXT_ACTION.json').read_text(encoding='utf-8'))['action']
     budget = action.get('final_c04_budget')
     if budget and dt.datetime.now(dt.timezone.utc) >= dt.datetime.fromisoformat(budget['cutoff']):
