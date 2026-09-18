@@ -1,5 +1,13 @@
 # Project Overview and Research Charter
 
+## V1 terminal snapshot — 2026-09-18
+
+**RESEARCH + TRADING V1 COMPLETE / FINAL FROZEN**, with material evidence
+unavailability. See the [final synthesis](stages/G5/V1_FINAL_RESEARCH_TRADING_SYNTHESIS.md).
+H6 has no complete-fold economic disposition; later research has a C04 input
+qualification limitation. No unique winner, successful full-period PnL, or V2
+execution is claimed. The architectural charter below is preserved.
+
 ## Research question
 
 Can fully data-driven, point-in-time market-relationship evidence, optionally augmented by incrementally validated company/economic context, support sequential mechanism/resolution updating and a later trade/update/reject/abstain decision for abnormal relative states among A-share machinery stocks, with economic value assessed only later under realistic frictions?

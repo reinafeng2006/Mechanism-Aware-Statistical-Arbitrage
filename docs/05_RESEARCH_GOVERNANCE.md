@@ -1,5 +1,16 @@
 # Research Governance — Current Authoritative State
 
+## Terminal V1 closure — 2026-09-18
+
+The [final freeze](decisions/V1_FINAL_FREEZE.md) and [final synthesis](stages/G5/V1_FINAL_RESEARCH_TRADING_SYNTHESIS.md)
+close V1 with explicit unavailable evidence. `NEXT_ACTION = NONE`; no new
+acquisition, R4-2025 continuation, retuning, repair branch or V2 execution is
+authorized. Earlier gate snapshots below remain historical protocol ancestry.
+The completed C04 calendar does not retroactively qualify the later immutable
+response masks; their historical research vectors carry that limitation.
+Trading V1.1 has no complete evaluable fold under T09. Original A6/G5 and H4
+terminal unavailable dispositions remain unchanged.
+
 ## Documentation architecture
 
 `Canonical docs = current truth`

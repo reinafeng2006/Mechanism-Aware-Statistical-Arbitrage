@@ -67,6 +67,7 @@ $allowedGates = @(
     ,'AUTHORIZED_TRADING_V1_1_OPTION_A_BATCH'
     ,'PAUSED_TRADING_V1_1_C04_COVERAGE'
     ,'AUTHORIZED_C04_THROUGH_2025_QUALIFICATION_NO_PNL'
+    ,'RESEARCH_TRADING_V1_FINAL_FROZEN'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -375,5 +376,12 @@ if ($contract.computation_gate -in @('AUTHORIZED_TRADING_V1_1_OPTION_A_BATCH', '
     if ($trading.retuning -ne $false -or $trading.security_cap -ne 0.1 -or $trading.gross_cap -ne 1 -or $trading.cash_return -ne 0) { throw 'Trading frozen constants mismatch.' }
     if ($contract.final_heldout.a6_g5 -ne 'V1_NON_ESTIMABLE_NOT_EXECUTED') { throw 'Original A6/G5 changed.' }
     if ($next.action.empirical_result_visibility -ne 'NO_PNL_DISCLOSURE_UNTIL_COMPLETE_OUTPUT_VALIDATION') { throw 'Trading reveal gate mismatch.' }
+}
+if ($contract.computation_gate -eq 'RESEARCH_TRADING_V1_FINAL_FROZEN') {
+    if ($next.action.action_id -ne 'NONE' -or $next.action.next_execution_authorized -ne $false) { throw 'Final freeze must deny further execution.' }
+    if ($next.action.dataset_access -ne 'DENIED_FINAL_FROZEN_NO_NEW_EXECUTION') { throw 'Final access guard mismatch.' }
+    $final = Get-Content -Raw (Join-Path $repoRoot 'research/V1_FINAL_FREEZE.json') | ConvertFrom-Json
+    if ($final.trading_units -ne 60 -or $final.complete_evaluable_cost_folds -ne 0 -or $final.no_v2_execution -ne $true) { throw 'Final disposition mismatch.' }
+    if ($final.h4 -ne 'COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION' -or $final.a6_g5 -ne 'V1_NON_ESTIMABLE_NOT_EXECUTED') { throw 'Frozen unavailable states changed.' }
 }
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

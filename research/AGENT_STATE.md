@@ -6,24 +6,24 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `V1 FINAL HELD-OUT / REDUCED-SUPPORT EVIDENCE CLOSURE` |
-| Stage status | `C04 BOUNDED CONTRACT AUDIT PASS / TRADING V1.1 ONE-SHOT AUTHORIZED / NO PNL YET` |
+| Current stage | `RESEARCH + TRADING V1 COMPLETE / FINAL FROZEN` |
+| Stage status | Terminal closure with explicit unavailable evidence; no new execution |
 | Latest frozen decision | `TRADING-V1.1-MORPHOLOGY-OPTION-A-BATCH-1.0`; H4 terminal computational incompleteness under plan `2df48ef` is preserved |
-| Current substage | Versioned official C04 descendant through 2025: 4,918 action rows; consolidated bounded-contract audit passed; original calendar unchanged. No authoritative no-action claim. Acquisition closed for V1 within the final 30-minute window |
+| Current substage | C04 acquisition closed within budget; 4,918 records qualified under bounded contract. Later immutable input exclusion mismatch prevents qualified later trading. One-shot inner execution has 60/60 validated units; all 180 complete cost-fold books are T09-unavailable |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
-| Computation authorization | One-shot Trading V1.1 after publication of the consolidated C04 audit and implementation validation; conservative T09 unavailable intervals retained. R4-2025/original A6/G5/V2 remain prohibited |
-| Current authorized action | `TRADING-V1-1-BATCH-EXECUTION / AUTHORIZED`; maximal scientifically valid economic execution and final closure |
-| Last validation state | Full reduced-support integrity PASS: 12 A3/A5, 48 lossless payloads, 12 H126 partitions, 44/44 exact synthesis units, 110/110 native H5 reporting units; 524 R4 engineering hashes and held-out access event unchanged |
-| Publication revision | Resolve the Git commit containing this completion state; validated implementation base is `67e2896b64980a5cb7162b42f4cb1ba691060ae4` |
+| Computation authorization | NONE. One-shot action completed; no repeat, repair, rescue, R4-2025/original A6/G5/V2 execution |
+| Current authorized action | `NONE`; final normal publication/tag transaction only |
+| Last validation state | 60 trading unit hashes and 288 explicit cost-fold dispositions PASS; immutable research/access receipt hashes unchanged. Byte integrity does not remove the newly recorded later C04 input-qualification limitation |
+| Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
 | Remote state observed | `origin/main` matched the implementation base before closing evidence publication; normal push/HEAD equality is verified as the transaction's final step |
 | Researcher action required | `NO`; bounded completion and unavailable-interval closure explicitly authorized. No further routine policy handoff |
 
 Completion binding: [versioned completion record](V1_FINAL_HELDOUT_COMPLETION.json). Research evidence: [final H1–H5 checkpoint](../docs/stages/G4/V1_FINAL_H1_H5_HELDOUT_EVIDENCE_CHECKPOINT.md). Current approved policy/readiness finding: [Option A descendant record](../docs/decisions/V1_1_OPTION_A_ADMISSION_SIZING_DECISION.md). The prior [policy inventory](../docs/stages/G5/V1_1_FINAL_SINGLE_POLICY_CHECKPOINT.md) remains immutable historical ancestry, not an assertion that the latest approval did not occur. Original A6/G5 remains `V1 NON-ESTIMABLE / NOT EXECUTED`; no final project-freeze tag is claimed before completion of authorized trading execution.
 
-Latest descendant: [complete simultaneous-admission policy](../docs/decisions/V1_1_SIMULTANEOUS_ADMISSION_FINAL_FREEZE.md). Sole current blocker: [C04 temporal qualification](../docs/stages/G5/V1_1_C04_EXECUTION_READINESS_BLOCKER.md). Earlier admission-count stop is resolved, not reopened.
+Latest terminal descendant: [final synthesis](../docs/stages/G5/V1_FINAL_RESEARCH_TRADING_SYNTHESIS.md) and [final checksum manifest](V1_FINAL_FREEZE.json). H6 is economically unavailable, not negative performance. The earlier C04 acquisition stop and policy checkpoints remain historical; no further researcher micro-decision is requested. All new execution is denied.
 
 ## Verified frozen chain relevant to activation
 

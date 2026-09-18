@@ -1,0 +1,153 @@
+{
+  "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED",
+  "complete_evaluable_cost_folds": 0,
+  "computed_inner_cost_folds": 180,
+  "core_fingerprint": "3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616",
+  "expected_tag": "v1-final-frozen-2026-09-18",
+  "external_artifacts": [
+    {
+      "path": "D:\\MechanismAwareStatArbData\\FINAL_HELDOUT_V1\\_metadata\\V1_FINAL_HELDOUT_A1_SYNTHESIS_REDUCED_SUPPORT.json",
+      "sha256": "1CE79BE5303A577D77AE42415648D54BBFEB2870627380E4EFC543B3B1DCD3E9"
+    },
+    {
+      "path": "D:\\MechanismAwareStatArbData\\FINAL_HELDOUT_V1\\_metadata\\V1_FINAL_HELDOUT_A1_H126_REDUCED_SUPPORT.json",
+      "sha256": "FE7EDFBD0AF04D72EAE548C4BEEDDC00745588AE5A5F55C459874DE4A7B5465F"
+    },
+    {
+      "path": "D:\\MechanismAwareStatArbData\\FINAL_HELDOUT_V1\\_metadata\\final_relationship_stage_reduced_support.json",
+      "sha256": "BB1077306EB576BE2C47F3E1F577B63FF2523FB7704146E8944A6B555FAC9A47"
+    },
+    {
+      "path": "D:\\MechanismAwareStatArbData\\FINAL_HELDOUT_V1\\_control\\reduced_support_final_validation.json",
+      "sha256": "77766648987EE42D9A67DDBB3BE3B5A48C90676C06CF4C4EC2240976A3C107D4"
+    },
+    {
+      "path": "D:\\MechanismAwareStatArbData\\FINAL_HELDOUT_V1\\h5_native_target_report_v1\\frozen_native_target_vectors.json",
+      "sha256": "533564E6BC3A4578EE64589025BE95602CD5B601D96AD10B31C94A92DFDD1DEF"
+    },
+    {
+      "path": "D:\\MechanismAwareStatArbData\\FINAL_HELDOUT_V1\\_control\\heldout_access_event.json",
+      "sha256": "E7D129135BF189655A5279301069FEA002344FA249F54A59D117C816E6831714"
+    },
+    {
+      "path": "D:\\MechanismAwareStatArbData\\TRADING_V1_1\\validation.json",
+      "sha256": "AA4353A14FEBA269287E7374E822E9F35A2710736E5EFEF814E279BCAAC281E3"
+    },
+    {
+      "path": "D:\\MechanismAwareStatArbData\\TRADING_V1_1\\first_result_inspection_event.json",
+      "sha256": "F06D7D64274CA153245A6D4CF49B48B3339668B1F308C622A7609D55CF0ECC92"
+    }
+  ],
+  "freeze_id": "RESEARCH-TRADING-V1-FINAL-FREEZE-2026-09-18",
+  "h4": "COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION",
+  "h6": "ECONOMICALLY_UNAVAILABLE_NO_COMPLETE_FOLD_H6_DISPOSITION",
+  "large_artifact_root": "D:\\MechanismAwareStatArbData\\TRADING_V1_1",
+  "later_research_c04_qualification": "HISTORICAL_DESCRIPTIVE_NOT_VALIDATED_UNDER_COMPLETED_EXCLUSION_CONTRACT",
+  "meaning": "TERMINAL_WORKFLOW_WITH_MATERIAL_EVIDENCE_UNAVAILABILITY_NOT_SUCCESSFUL_FULL_PERIOD_ECONOMIC_VALIDATION",
+  "no_further_acquisition": true,
+  "no_policy_retuning": true,
+  "no_v2_execution": true,
+  "numpy": "2.4.6",
+  "one_shot_engine_commit": "25ca18a",
+  "python": "3.11.9",
+  "r4_engineering_blocks_preserved": 524,
+  "repository_artifacts": [
+    {
+      "path": "research/TRADING_V1_1_POLICY.json",
+      "sha256": "851EC63DB822E889F9DC103C87B63BCBAF93EA48810941731686D43CA28A9786"
+    },
+    {
+      "path": "research/V1_TERMINAL_MODEL_REGISTRY.json",
+      "sha256": "B045C6C9DCE8F5D509EF9145EEE57A36D22FAD1092EB6B5C2E807528B7B496D9"
+    },
+    {
+      "path": "research/V1_FINAL_HELDOUT_COMPLETION.json",
+      "sha256": "94831A1F439D2EE3D97BED6A12AF2B7E93A2E1F69E82698AC213B06F86E639B0"
+    },
+    {
+      "path": "research/NEXT_ACTION.json",
+      "sha256": "5A56F9094E22FEAB4DFADBED27F7B5FD33B42F7E7376B7A4E68C8F04291A345C"
+    },
+    {
+      "path": "data/manifests/TRADING_V1_1_FINAL_EVIDENCE.json",
+      "sha256": "7ACE11411A2964DEB6B17116CD3588A68B2F667E3033312F4684ED7D4BCAFDEA"
+    },
+    {
+      "path": "data/manifests/TRADING_V1_1_INPUT_QUALIFICATION.json",
+      "sha256": "D2075997D5CBA6498177EB92BB31A1461B9699C06566E0A2315D8973FAC8A4AB"
+    },
+    {
+      "path": "data/manifests/C04_A_THROUGH_2025_V1.json",
+      "sha256": "E1C5D9DC3727875C9D427104AD8DBAC046EB19238AAEC373ADD67C6BFC76338A"
+    },
+    {
+      "path": "data/manifests/C04_A_THROUGH_2025_V2.json",
+      "sha256": "66EC54C7B0EE2E5BE3C09777D7B8CA81FEEB9BA161A8257BB24F3AC91A22707B"
+    },
+    {
+      "path": "data/manifests/C04_A_THROUGH_2025_FINAL_AUDIT.json",
+      "sha256": "B5BE53127A10DA8F6D4CC24D013947FC10C3715C073B1D69D98980CD630161BC"
+    },
+    {
+      "path": "data/manifests/C04_A_OFFICIAL_CALENDAR_V1.json",
+      "sha256": "402741A7BF767FD56508AC957DE12D2B422E2B0B80F30ABE0B47C03255AC267A"
+    },
+    {
+      "path": "docs/stages/G5/V1_FINAL_RESEARCH_TRADING_SYNTHESIS.md",
+      "sha256": "7B7286AACDE13FF85476AE902AE149F83E1643F64331CEBBDA65BCBBD8886258"
+    },
+    {
+      "path": "docs/stages/G5/V1_1_FINAL_ECONOMIC_EVIDENCE.md",
+      "sha256": "57C2D07160A7D982580C387EF8ABAAF89BE3FCF3665D73E1DC5E8FE2B9607CC1"
+    },
+    {
+      "path": "docs/stages/G5/V1_1_FINAL_INPUT_QUALIFICATION.md",
+      "sha256": "3D5C3BEF09719BAB675AAE3FEC8D2EB35A844E46164E786E1E53A89118495142"
+    },
+    {
+      "path": "docs/decisions/V1_FINAL_FREEZE.md",
+      "sha256": "46A90063678770878621ECBF5D2890B0B5528BDF8F53B9909BB029F72786BD64"
+    },
+    {
+      "path": "docs/stages/G4/V2_FINAL_LIMITATIONS_REGISTER.md",
+      "sha256": "F54AB3AB696A8AA9AB7791E1FC59C51A0488801F91E029DAA696A7A2DA8F200C"
+    },
+    {
+      "path": "tools/v1_1_trading.py",
+      "sha256": "320D0B9428FFBD465469AB556AAA81444F07CA70E03E639AD838399AE02F5606"
+    },
+    {
+      "path": "tools/v1_1_accounting.py",
+      "sha256": "FA959031B8F35F949933BFBF8CDA60F2CEAC45FF8511F558D9482B157426BD33"
+    },
+    {
+      "path": "tools/test_v1_1_trading.py",
+      "sha256": "BB1D38946E69E2D68F0A284F7F4D2C6D603F5FCDB95E147674329C759FBC3BFF"
+    },
+    {
+      "path": "tools/test_v1_1_accounting.py",
+      "sha256": "34CA277FE9F264E869498DD3867F8CB63E10BBA1C4D2D3C70A82597341DDA8B4"
+    },
+    {
+      "path": "tools/v1_1_final_report.py",
+      "sha256": "13F25116B76316B84139F38B2F364C041BD18FEB92EE04F533A0CF4A118C96E7"
+    },
+    {
+      "path": "tools/v1_1_input_qualification.py",
+      "sha256": "0095C04E7FF90BA1F185585F2B9E0C3D8B3182B714821977E03B3C9B4ED10AC1"
+    },
+    {
+      "path": "tools/v1_c04_final_audit.py",
+      "sha256": "4AFD753912679D82A464284B31830748D3BFC528411B99879E0F80151111EB21"
+    },
+    {
+      "path": "tools/validate_v1_final_freeze.py",
+      "sha256": "78ED6EE05E43E274526F2F6487F9B20AE6D39912984945DA0F262CAF5D05E18B"
+    }
+  ],
+  "reproduction_boundary": "Validation only in V1; one-shot runner refuses after closure; never recompute valid completed units",
+  "status": "RESEARCH + TRADING V1 COMPLETE / FINAL FROZEN",
+  "trading_units": 60,
+  "uncomputed_later_cost_folds": 108,
+  "unit_hash_manifest": "data/manifests/TRADING_V1_1_FINAL_EVIDENCE.json"
+}

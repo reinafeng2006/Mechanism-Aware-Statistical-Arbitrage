@@ -1,0 +1,25 @@
+{
+  "registry_id": "V1-TERMINAL-MODEL-REGISTRY-1.0",
+  "status": "FINAL_FROZEN_WITH_QUALIFICATION_LIMITATIONS",
+  "ancestor": "docs/stages/G4/G4_05_V1_EXECUTABLE_SPECIFICATION_REGISTRY.md",
+  "candidates": [
+    {"id": "V1-R0D-252M", "specification": "R0-DIST matched linear bridge H252/U1M", "trading": "INNER_ONE_SHOT_T09_UNAVAILABLE; LATER_INPUT_LINEAGE_UNAVAILABLE"},
+    {"id": "V1-R0C-126W", "specification": "Pearson R0-CORR matched linear bridge H126/U1W", "trading": "INNER_ONE_SHOT_T09_UNAVAILABLE; LATER_INPUT_LINEAGE_UNAVAILABLE"},
+    {"id": "V1-R0L-126W", "specification": "R0-LIN OLS H126/U1W", "trading": "INNER_ONE_SHOT_T09_UNAVAILABLE; LATER_INPUT_LINEAGE_UNAVAILABLE"},
+    {"id": "V1-R1M-126W", "specification": "Market-adjusted two-stage OLS H126/U1W", "trading": "INNER_ONE_SHOT_T09_UNAVAILABLE; LATER_INPUT_LINEAGE_UNAVAILABLE"},
+    {"id": "V1-R1MI-126W", "specification": "Market-plus-industry two-stage OLS H126/U1W", "trading": "INNER_ONE_SHOT_T09_UNAVAILABLE; LATER_INPUT_LINEAGE_UNAVAILABLE"},
+    {"id": "V1-R3-252M", "specification": "P0 Gaussian EB random intercept/slope REML N-ZERO H252/U1M", "trading": "INNER_ONE_SHOT_T09_UNAVAILABLE; LATER_INPUT_LINEAGE_UNAVAILABLE"},
+    {"id": "V1-R4-63D", "specification": "Static intercept/random-walk slope Kalman PIT-ML Q/R H63/U1D", "heldout": "COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION", "trading": "NOT_IN_AUTHORIZED_REDUCED_SUPPORT_TRADING_SET", "preserved_engineering_checkpoints": 524}
+  ],
+  "later_research_status": "IMMUTABLE_HISTORICAL_DESCRIPTIVE_OUTPUTS_WITH_C04_INPUT_QUALIFICATION_LIMITATION_NOT_VALIDATED_CONFIRMATION_UNDER_COMPLETED_CALENDAR",
+  "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED",
+  "h6": "ECONOMICALLY_UNAVAILABLE_NO_COMPLETE_FOLD_H6_DISPOSITION",
+  "R2_LIS": "NOT_DATA_READY_PRESERVED_NOT_EXECUTED",
+  "R2_N": "DEFERRED_NOT_EXECUTED",
+  "R4_MR": "DEFERRED_NOT_EXECUTED",
+  "R5_EG_ECM": "REGISTERED_BLOCKED_NOT_EXECUTED",
+  "VECM": "DEFERRED_NOT_EXECUTED",
+  "unique_winner": null,
+  "new_inference_or_threshold": false,
+  "v2_execution_authorized": false
+}
