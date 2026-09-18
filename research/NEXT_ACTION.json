@@ -2,10 +2,11 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "Final H1-H5 evidence complete; single Trading V1.1 policy decision gate",
+    "name": "Trading V1.1 Option A approved; simultaneous-admission count binding required",
     "status": "RESEARCHER_DECISION_REQUIRED",
-    "execution_state": "FINAL_H1_H5_EVIDENCE_COMPLETE_TRADING_V1_1_DECISION_REQUIRED",
-    "objective": "Preserve the validated reduced-support research evidence and await one consolidated Trading V1.1 policy decision before any further empirical execution or PnL access.",
+    "execution_state": "TRADING_V1_1_OPTION_A_APPROVED_PRE_PNL_ADMISSION_COUNT_STOP",
+    "objective": "Preserve approved morphology-only both-channel Option A, without choosing an unstated simultaneous-admission count/order rule. No empirical execution or PnL access before complete executable binding and validation.",
+    "approved_policy_record": "docs/decisions/V1_1_OPTION_A_ADMISSION_SIZING_DECISION.md",
     "completed_action": "V1-FINAL-HELDOUT-CONFIRMATORY-EVALUATION",
     "completion_record": "research/V1_FINAL_HELDOUT_COMPLETION.json",
     "prerequisites": ["full reduced-support integrity receipt PASS", "44/44 exact synthesis unit hashes PASS", "110/110 native H5 reporting unit hashes PASS", "CORE-DATASET-FREEZE-V1 unchanged", "held-out access event and 524 R4 engineering checkpoints preserved"],
@@ -17,8 +18,8 @@
     "commit_permitted": true,
     "push_permitted": true,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "Closing transaction only: validated evidence document/manifest, completion record, current control state, run log, validators and the unapproved consolidated policy inventory. These permissions do not authorize new scientific computation or trading.",
-    "completion_condition": "Researcher resolves the complete consolidated Trading V1.1 policy inventory in one decision and a separately authorized successor action is frozen and published; otherwise remain stopped.",
+    "publication_scope": "Researcher-requested policy persistence/control maintenance only: approved Option A descendant record, synthetic admission-count readiness test, current control state and append-only run log. Normal commit/push to the existing canonical main is permitted; no trading computation until the executable accounting binding is complete.",
+    "completion_condition": "Resolve simultaneous-admission N/snapshot binding without reopening approved Option A or other T01-T12 fields, then persist and validate the complete researcher-authorized execution contract before PnL.",
     "mandatory_stop_conditions": ["immutable artifact or access-event mismatch", "need for new scientific semantics", "attempted R4-2025 continuation", "attempted trading or A6/G5 execution without separate authority", "attempt to infer an H4 final-held-out disposition from computational incompleteness"]
   }
 }

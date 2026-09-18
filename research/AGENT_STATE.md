@@ -7,9 +7,9 @@ Basis: repository records and Git state verified during initialization; prompt a
 | State field | Verified current value |
 |---|---|
 | Current stage | `V1 FINAL HELD-OUT / REDUCED-SUPPORT EVIDENCE CLOSURE` |
-| Stage status | `FINAL H1–H5 HELD-OUT EVIDENCE COMPLETE / TRADING V1.1 SINGLE DECISION REQUIRED` |
+| Stage status | `TRADING V1.1 OPTION A APPROVED / PRE-PNL ADMISSION-COUNT BINDING REQUIRED` |
 | Latest frozen decision | `V1-FINAL-HELDOUT-REDUCED-SUPPORT-1.0`; H4 terminal computational incompleteness under plan `2df48ef` |
-| Current substage | Validated six-candidate evidence complete for H1/H2/H3/H5; H4 remains computation-incomplete with no final-held-out disposition; one unapproved Trading V1.1 decision inventory |
+| Current substage | Validated H1/H2/H3/H5 evidence preserved; morphology-only both-channel Option A approved; synthetic executable audit identifies unresolved simultaneous-admission N/snapshot binding before PnL |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
@@ -19,9 +19,9 @@ Basis: repository records and Git state verified during initialization; prompt a
 | Last validation state | Full reduced-support integrity PASS: 12 A3/A5, 48 lossless payloads, 12 H126 partitions, 44/44 exact synthesis units, 110/110 native H5 reporting units; 524 R4 engineering hashes and held-out access event unchanged |
 | Publication revision | Resolve the Git commit containing this completion state; validated implementation base is `67e2896b64980a5cb7162b42f4cb1ba691060ae4` |
 | Remote state observed | `origin/main` matched the implementation base before closing evidence publication; normal push/HEAD equality is verified as the transaction's final step |
-| Researcher action required | `YES`; resolve the one consolidated Trading V1.1 policy inventory, including explicitly unselected T07 fields, before any PnL |
+| Researcher action required | `YES`; bind simultaneous-admission count/snapshot semantics only. Option A survivor-share priority and all other approved policy fields are not reopened |
 
-Completion binding: [versioned completion record](V1_FINAL_HELDOUT_COMPLETION.json). Research evidence: [final H1–H5 checkpoint](../docs/stages/G4/V1_FINAL_H1_H5_HELDOUT_EVIDENCE_CHECKPOINT.md). Sole next decision: [Trading V1.1 policy inventory](../docs/stages/G5/V1_1_FINAL_SINGLE_POLICY_CHECKPOINT.md). Original A6/G5 remains `V1 NON-ESTIMABLE / NOT EXECUTED`; no final project-freeze tag is claimed before the authorized trading decision/execution path.
+Completion binding: [versioned completion record](V1_FINAL_HELDOUT_COMPLETION.json). Research evidence: [final H1–H5 checkpoint](../docs/stages/G4/V1_FINAL_H1_H5_HELDOUT_EVIDENCE_CHECKPOINT.md). Current approved policy/readiness finding: [Option A descendant record](../docs/decisions/V1_1_OPTION_A_ADMISSION_SIZING_DECISION.md). The prior [policy inventory](../docs/stages/G5/V1_1_FINAL_SINGLE_POLICY_CHECKPOINT.md) remains immutable historical ancestry, not an assertion that the latest approval did not occur. Original A6/G5 remains `V1 NON-ESTIMABLE / NOT EXECUTED`; no final project-freeze tag is claimed before completion of authorized trading execution.
 
 ## Verified frozen chain relevant to activation
 
