@@ -1,0 +1,61 @@
+{
+  "acquisition_closed_for_v1": true,
+  "action_rows": 4918,
+  "ancestor_manifest_sha256": "402741A7BF767FD56508AC957DE12D2B422E2B0B80F30ABE0B47C03255AC267A",
+  "audit_id": "C04-A-THROUGH-2025-FINAL-AUDIT-1.0",
+  "audit_time_utc": "2026-09-18T06:14:40.208535+00:00",
+  "authoritative_action_clean": false,
+  "core_or_ancestor_overwritten": false,
+  "coverage": [
+    {
+      "dates": "2020-01-01/2025-12-31",
+      "exchange": "SZSE",
+      "security_scope": "All 447 frozen SZSE securities",
+      "source": "72 official monthly action tables"
+    },
+    {
+      "dates": "2020-01-01/2021-12-31",
+      "exchange": "SSE",
+      "security_scope": "All 304 frozen SSE securities",
+      "source": "historical dividend/bonus plus official successor rights, boards 1 and 2"
+    },
+    {
+      "dates": "2022-01-01/2025-12-31",
+      "exchange": "SSE",
+      "security_scope": "All 304 frozen SSE securities",
+      "source": "explicitly linked official successor dividend/bonus/rights tables"
+    }
+  ],
+  "errors": [],
+  "exchange_security_counts": {
+    "SH": 304,
+    "SZ": 447
+  },
+  "exclusion_calendar": {
+    "bytes": 2777220,
+    "file": "D:\\MechanismAwareStatArbData\\C04_THROUGH_2025_V1\\qualified_v2\\v1_exclusion_calendar.jsonl",
+    "rows": 4918,
+    "sha256": "29F71E4CB7E1782F0204D89D8F385715DA53B109B0F3AD44A2152AFC85E45BD3"
+  },
+  "historical_handoff": "Historical module documented cutoff 2022-01-07; full 2022 successor table used; empty successor 2020/21 tables do not establish negative coverage",
+  "identifier_failures": [],
+  "negative_no_action_coverage": "NO_IDENTIFIED_ACTION_UNDER_V1_CALENDAR_ONLY; NOT_EXHAUSTIVE_NEGATIVE_INFERENCE",
+  "normalized_action_calendar": {
+    "bytes": 4574805,
+    "file": "D:\\MechanismAwareStatArbData\\C04_THROUGH_2025_V1\\qualified_v2\\official_action_calendar.jsonl",
+    "rows": 4918,
+    "sha256": "97F5075F7CCC56DE98E4EBBC1CE5959956513D3D7F219B14E53C5294BC927EE8"
+  },
+  "pnl_computed_or_inspected": false,
+  "policy_sha256": "851EC63DB822E889F9DC103C87B63BCBAF93EA48810941731686D43CA28A9786",
+  "positive_action_coverage": "QUALIFIED_BOUNDED_TABLE_LINEAGE",
+  "publication_time_missing": "Retained unavailable; retrieval timestamps never used as historical availability",
+  "qualification_meaning": "Original frozen two-state C04-A exclusion contract; not a new exhaustive no-action contract",
+  "raw_artifacts_verified": 384,
+  "source_manifest": "C:\\Users\\rfeng\\Documents\\ChatGPT\\Statistical Arbitrage\\data\\manifests\\C04_A_THROUGH_2025_V2.json",
+  "source_manifest_sha256": "66EC54C7B0EE2E5BE3C09777D7B8CA81FEEB9BA161A8257BB24F3AC91A22707B",
+  "status": "PASS_BOUNDED_C04_A_CONTRACT",
+  "supersession": "Inventory V1 retrieval completeness and V2 trading_ready are not standalone accounting qualification; this consolidated audit controls",
+  "t09": "Identified action without qualified entitlement treatment makes affected episode/portfolio interval unavailable; no fabricated adjusted prices or survivor renormalization",
+  "universe_count": 751
+}

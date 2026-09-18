@@ -1,0 +1,9 @@
+# Trading V1.1 bounded C04 extension authorization
+
+Researcher approved 2026-09-18. Existing official SSE historical dividend/bonus/rights tables and SZSE monthly action tables only; extend the complete frozen acquired security universe through 2025-12-31, without conditioning on candidates, signals, episodes or outcomes. The through-2019 ancestor is immutable. This approval does not alter the complete Trading V1.1 policy.
+
+Create a versioned descendant retaining source bytes/URLs/checksums, retrieval/qualification timestamps, security/time/action coverage, failed/unavailable scopes, effective dates, original publication-field availability and identifier lineage. Reuse original taxonomy and conservative interval exclusions. Missing publication dates remain unavailable; retrospective retrieval does not establish original publication time. No identified action is not authoritative action-clean. New providers and synthetic entitlements are prohibited.
+
+Qualification requires a consolidated source/scope/hash audit, explicit qualified action coverage versus supported no-action coverage versus unavailable/ambiguous intervals, and no silent clearing of C04/C05 unknowns. Residual unqualified intervals follow frozen T09. No PnL computation/inspection during acquisition/qualification. Publish the qualified descendant before proceeding directly to the already-authorized one-shot trading action. If existing official sources cannot establish required coverage, stop once with exact unavailable scope; no autonomous substitution.
+
+Large/raw/temp artifacts use `D:\MechanismAwareStatArbData\C04_THROUGH_2025_V1`; Git stores code, governance and lineage/coverage manifests. No immutable relationship, RT3, A3, A5, H126, core or prior C04 payload is rewritten. R4-2025 and V2 remain prohibited.
