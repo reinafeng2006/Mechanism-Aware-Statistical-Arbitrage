@@ -1,8 +1,10 @@
 # Mechanism-Aware Statistical Arbitrage
 
-Status: **G0 FROZEN — G1-02 EVIDENCE REVIEW REOPENED; G1-03 NOT STARTED**
+Current status: **S3 SCALE + THRESHOLD DESIGN / RESEARCHER DECISION REQUIRED**.
 
-The mature literature workflow is nested within G1 as G1-01 through G1-04. G1-01 and G1-02 are complete; G1-03 synthesis and G1-04 evidence freeze remain locked pending approval. Empirical work remains prohibited.
+**Fresh client: start with [Current project state and next action](docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md)**, then read `AGENTS.md`, `research/AGENT_POLICY.md` and `research/NEXT_ACTION.json`. Historical V1 is frozen at tag `v1-final-frozen-2026-09-18`; S3 peer-only hedged relative-value architecture is selected, but scale/threshold recommendations remain unapproved. No historical data access, implementation, calibration, C04 repair, backtest or PnL inspection is authorized. Git contains design context and artifact metadata, not the external scientific payload backup.
+
+The historical framework below explains project ancestry, not current execution authority. Its earlier gate language does not override the current handoff or NEXT_ACTION.
 
 ## Objective
 
@@ -10,7 +12,7 @@ Develop and test a potentially profitable statistical-arbitrage framework for ec
 
 This is a research hypothesis, not a claim of profitability or an established market fact.
 
-## Active strategy architecture
+## Historical research architecture
 
 `Company Representation → Industry-Specific Relationship Prior → Pair-Specific Normal Relationship → Continuous Pair-Specific Abnormality → Sequential Mechanism & Resolution Updating → Trade / Update / Reject / Abstain`
 

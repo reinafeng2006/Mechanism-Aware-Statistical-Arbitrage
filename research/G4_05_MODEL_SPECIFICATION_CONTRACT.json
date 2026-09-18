@@ -114,5 +114,5 @@
   "final_heldout": {"decision_id": "V1-FINAL-HELDOUT-CONFIRMATORY-1.0", "status": "AUTHORIZED_ACCESS_NOT_YET_OPENED", "accepted_preheldout_commit": "27be564a5fd24b5e10ba63e114cff3553f478d5a", "candidate_set": "COMPLETE_FROZEN_SEVEN_TUPLE", "a6_g5": "V1_NON_ESTIMABLE_NOT_EXECUTED"},
   "final_heldout_completion": {"completion_id": "V1-FINAL-H1-H5-REDUCED-SUPPORT-COMPLETION-1.0", "record": "research/V1_FINAL_HELDOUT_COMPLETION.json", "status": "VALIDATED_EVIDENCE_COMPLETE_RESEARCHER_DECISION_REQUIRED", "authorization_snapshot_above_preserved": true, "original_candidate_count": 7, "executed_candidate_count": 6, "h4": "COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION", "trading_policy_approved": false},
   "trading_v1_1_descendant": {"policy": "research/TRADING_V1_1_POLICY.json", "original_a6_g5_unchanged": true, "upstream_recomputation": false},
-  "computation_gate": "RESEARCH_TRADING_V1_FINAL_FROZEN"
+  "computation_gate": "TRADING_V1_1_MATHEMATICAL_REVIEW_NO_EXECUTION"
 }

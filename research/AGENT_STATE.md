@@ -6,22 +6,26 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `RESEARCH + TRADING V1 COMPLETE / FINAL FROZEN` |
-| Stage status | Terminal closure with explicit unavailable evidence; no new execution |
-| Latest frozen decision | `TRADING-V1.1-MORPHOLOGY-OPTION-A-BATCH-1.0`; H4 terminal computational incompleteness under plan `2df48ef` is preserved |
-| Current substage | C04 acquisition closed within budget; 4,918 records qualified under bounded contract. Later immutable input exclusion mismatch prevents qualified later trading. One-shot inner execution has 60/60 validated units; all 180 complete cost-fold books are T09-unavailable |
+| Current stage | `S3 SCALE + THRESHOLD DESIGN / RESEARCHER DECISION REQUIRED` |
+| Stage status | Design-only checkpoint complete; all data correction, acquisition, implementation, backtesting, trading and PnL/result inspection remain paused |
+| Latest frozen decision | Researcher selects S3 peer-only hedged relative-value architecture ONLY; V1 release and its prior decisions remain unchanged |
+| Current substage | Gate 01 document proposes aligned current-origin residual MAD, common history/refresh, common tail-frequency binding, one finite-grid fallback and two-sided scientific orientation. No scale, threshold, calibration or orientation proposal adopted |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
-| Computation authorization | NONE. One-shot action completed; no repeat, repair, rescue, R4-2025/original A6/G5/V2 execution |
-| Current authorized action | `NONE`; final normal publication/tag transaction only |
-| Last validation state | 60 trading unit hashes and 288 explicit cost-fold dispositions PASS; immutable research/access receipt hashes unchanged. Byte integrity does not remove the newly recorded later C04 input-qualification limitation |
+| Computation authorization | NONE. No repeat, repair, rescue, R4-2025/original A6/G5/V2 execution; no further PnL inspection |
+| Current authorized action | `NONE`; researcher scale/threshold decision required. Migration closeout publishes this successor state only; no future research, empirical, implementation or publication authority |
+| Last validation state | Specification-only audit: literature, documentation architecture, learning layer, control validator, core fingerprint and whitespace PASS; policy and held-out access-event hashes unchanged. Trading/final-result validators deliberately not run |
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
-| Remote state observed | `origin/main` matched the implementation base before closing evidence publication; normal push/HEAD equality is verified as the transaction's final step |
-| Researcher action required | `NO`; bounded completion and unavailable-interval closure explicitly authorized. No further routine policy handoff |
+| Remote state observed | Migration fetched origin: baseline HEAD=origin/main=1359dcb7fc1876321fec00709a00ccca26d1f217, ahead/behind 0/0. Migration commit is identified by the handoff file's Git history; post-push equality verified at closeout |
+| Researcher action required | `YES`; review S3_RESIDUAL_SCALE_THRESHOLD_DESIGN_CHECKPOINT.md. S3 architecture is selected; preferred P and at most one fallback F remain design proposals; expected-capture/cost gate deliberately deferred |
 
-Completion binding: [versioned completion record](V1_FINAL_HELDOUT_COMPLETION.json). Research evidence: [final H1–H5 checkpoint](../docs/stages/G4/V1_FINAL_H1_H5_HELDOUT_EVIDENCE_CHECKPOINT.md). Current approved policy/readiness finding: [Option A descendant record](../docs/decisions/V1_1_OPTION_A_ADMISSION_SIZING_DECISION.md). The prior [policy inventory](../docs/stages/G5/V1_1_FINAL_SINGLE_POLICY_CHECKPOINT.md) remains immutable historical ancestry, not an assertion that the latest approval did not occur. Original A6/G5 remains `V1 NON-ESTIMABLE / NOT EXECUTED`; no final project-freeze tag is claimed before completion of authorized trading execution.
+Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Current design: [S3 scale/threshold checkpoint](../docs/stages/G5/S3_RESIDUAL_SCALE_THRESHOLD_DESIGN_CHECKPOINT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
+
+## Historical V1 closure records (not active authorization)
+
+Historical completion binding: [versioned completion record](V1_FINAL_HELDOUT_COMPLETION.json). Research evidence: [final H1–H5 checkpoint](../docs/stages/G4/V1_FINAL_H1_H5_HELDOUT_EVIDENCE_CHECKPOINT.md). Historical approved policy: [Option A descendant record](../docs/decisions/V1_1_OPTION_A_ADMISSION_SIZING_DECISION.md). The [policy inventory](../docs/stages/G5/V1_1_FINAL_SINGLE_POLICY_CHECKPOINT.md) remains immutable ancestry. Original A6/G5 remains `V1 NON-ESTIMABLE / NOT EXECUTED`; frozen V1 tag is `v1-final-frozen-2026-09-18` at 1359dcb7fc1876321fec00709a00ccca26d1f217.
 
 Latest terminal descendant: [final synthesis](../docs/stages/G5/V1_FINAL_RESEARCH_TRADING_SYNTHESIS.md) and [final checksum manifest](V1_FINAL_FREEZE.json). H6 is economically unavailable, not negative performance. The earlier C04 acquisition stop and policy checkpoints remain historical; no further researcher micro-decision is requested. All new execution is denied.
 

@@ -68,6 +68,7 @@ $allowedGates = @(
     ,'PAUSED_TRADING_V1_1_C04_COVERAGE'
     ,'AUTHORIZED_C04_THROUGH_2025_QUALIFICATION_NO_PNL'
     ,'RESEARCH_TRADING_V1_FINAL_FROZEN'
+    ,'TRADING_V1_1_MATHEMATICAL_REVIEW_NO_EXECUTION'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -383,5 +384,13 @@ if ($contract.computation_gate -eq 'RESEARCH_TRADING_V1_FINAL_FROZEN') {
     $final = Get-Content -Raw (Join-Path $repoRoot 'research/V1_FINAL_FREEZE.json') | ConvertFrom-Json
     if ($final.trading_units -ne 60 -or $final.complete_evaluable_cost_folds -ne 0 -or $final.no_v2_execution -ne $true) { throw 'Final disposition mismatch.' }
     if ($final.h4 -ne 'COMPUTATION-INCOMPLETE / NO FINAL HELD-OUT DISPOSITION' -or $final.a6_g5 -ne 'V1_NON_ESTIMABLE_NOT_EXECUTED') { throw 'Frozen unavailable states changed.' }
+}
+if ($contract.computation_gate -eq 'TRADING_V1_1_MATHEMATICAL_REVIEW_NO_EXECUTION') {
+    if ($next.action.next_execution_authorized -ne $false) { throw 'Design review/migration must not enable empirical execution.' }
+    if ($next.action.action_id -notin @('TRADING-V1-1-MATHEMATICAL-SPECIFICATION-AUDIT','TRADING-ECONOMIC-REDESIGN-CHECKPOINT','S3-SCALE-THRESHOLD-DESIGN','PRE-CLIENT-MIGRATION-CANONICALIZATION','NONE')) { throw 'Mathematical review action mismatch.' }
+    if ($next.action.dataset_access -ne 'DENIED_SPECIFICATION_ONLY' -or $next.action.empirical_result_visibility -ne 'DENIED_NO_PNL_OR_TRADING_RESULT_INSPECTION') { throw 'Mathematical review must deny empirical access.' }
+    if ($next.action.action_id -eq 'PRE-CLIENT-MIGRATION-CANONICALIZATION') {
+        if ($next.action.status -ne 'AUTHORIZED' -or $next.action.push_destination -ne 'https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main') { throw 'Migration publication scope mismatch.' }
+    } elseif ($next.action.commit_permitted -ne $false -or $next.action.push_permitted -ne $false) { throw 'No publication authority for this review.' }
 }
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'

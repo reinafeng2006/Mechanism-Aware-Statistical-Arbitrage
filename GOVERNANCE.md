@@ -1,5 +1,9 @@
 # Governance Contract
 
+Current control overlay — 2026-09-18: researcher-requested Trading V1.1 mathematical specification review only. C04 correction, trading execution and PnL/result inspection are paused. Prior immutable execution/freeze history remains preserved; this overlay does not rewrite that history. See `docs/stages/G5/V1_1_COMPLETE_TRADING_STRATEGY_MATHEMATICAL_SPECIFICATION.md`. No resumption before researcher approval and an explicit authorized action.
+
+Held-security clarification — 2026-09-18: `docs/decisions/V1_1_HELD_SECURITY_POST_ENTRY_ELIGIBILITY_FREEZE.md` records the researcher-approved descendant. Pair eligibility remains mandatory at signal/admission; counterparty-only post-entry loss does not alter the held episode or its clock. Mathematical completeness is not implementation conformity or execution permission.
+
 1. G0 was frozen and passed on 2026-09-03; amendments require a new explicit decision and must preserve evidence ancestry.
 2. G0 freezes thesis and research boundaries, not downstream measurements, statistics, models, factors, formulas, or implementation.
 3. G1 contains the literature workflow as G1-01 Design/Discovery/Triage, G1-02 Evidence Review, G1-03 Cross-Paper Synthesis, and G1-04 Evidence Freeze/G2 Handoff. A later substage requires its own recorded authorization.
