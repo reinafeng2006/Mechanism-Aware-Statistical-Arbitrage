@@ -64,6 +64,8 @@ $allowedGates = @(
     ,'A1_H126_EXTERNAL_SYNTHESIS_READY'
     ,'AUTHORIZED_FINAL_2024_2025_HELDOUT_EXTERNAL_EXECUTION'
     ,'FINAL_H1_H5_EVIDENCE_COMPLETE_TRADING_V1_1_DECISION_REQUIRED'
+    ,'AUTHORIZED_TRADING_V1_1_OPTION_A_BATCH'
+    ,'PAUSED_TRADING_V1_1_C04_COVERAGE'
 )
 if ($allowedGates -notcontains $contract.computation_gate) { throw 'Model computation gate has an unrecognized state.' }
 if ($contract.computation_gate -eq 'AUTHORIZED_2015_2019_INNER_ONLY_AFTER_PROTOCOL_PUBLICATION_AND_C04_A_VALIDATION') {
@@ -361,4 +363,15 @@ if ($contract.computation_gate -eq 'FINAL_H1_H5_EVIDENCE_COMPLETE_TRADING_V1_1_D
     }
 }
 
+if ($contract.computation_gate -in @('AUTHORIZED_TRADING_V1_1_OPTION_A_BATCH', 'PAUSED_TRADING_V1_1_C04_COVERAGE')) {
+    if ($next.action.action_id -ne 'TRADING-V1-1-BATCH-EXECUTION') { throw 'Trading descendant lacks explicit action.' }
+    if ($contract.computation_gate -eq 'PAUSED_TRADING_V1_1_C04_COVERAGE') {
+        if ($next.action.status -ne 'BLOCKED_PREREQUISITE' -or $next.action.dataset_access -ne 'DENIED_UNTIL_REGISTERED_TEMPORAL_C04_COVERAGE_QUALIFIED_OR_SCOPE_EXPLICITLY_AMENDED') { throw 'C04 prerequisite must block empirical execution.' }
+    } elseif ($next.action.status -ne 'AUTHORIZED') { throw 'Trading execution requires AUTHORIZED status.' }
+    $trading = Get-Content -Raw -LiteralPath (Join-Path $repoRoot 'research/TRADING_V1_1_POLICY.json') | ConvertFrom-Json
+    if ($trading.policy_id -ne 'TRADING-V1.1-MORPHOLOGY-OPTION-A-BATCH-1.0' -or $trading.candidates.Count -ne 6 -or $trading.candidates -contains 'V1-R4-63D') { throw 'Trading policy identity mismatch.' }
+    if ($trading.retuning -ne $false -or $trading.security_cap -ne 0.1 -or $trading.gross_cap -ne 1 -or $trading.cash_return -ne 0) { throw 'Trading frozen constants mismatch.' }
+    if ($contract.final_heldout.a6_g5 -ne 'V1_NON_ESTIMABLE_NOT_EXECUTED') { throw 'Original A6/G5 changed.' }
+    if ($next.action.empirical_result_visibility -ne 'NO_PNL_DISCLOSURE_UNTIL_COMPLETE_OUTPUT_VALIDATION') { throw 'Trading reveal gate mismatch.' }
+}
 Write-Output 'PASS: bounded agent control state and G4-05 computation gate are structurally valid.'
