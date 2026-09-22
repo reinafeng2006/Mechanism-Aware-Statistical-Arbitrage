@@ -1,5 +1,7 @@
 # S3 capture/cost scenario model — design checkpoint
 
+> Historical proposal checkpoint, superseded where expressly bound by the [minimal capture/cost approval](../../decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md). H is now labeled F; pooled P1, the joint duration/exposure treatment, all-leg ledger and E1 are approved. No flexible conditional model or automatic P3 activation is permitted. Earlier normalized-payoff/sign-pooling recommendations below are not authority to replace the literal approved pooled baseline; outstanding pooling/support details remain gated. Current checkpoint: [hedge/borrow/joint execution](S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md). Original proposal body preserved.
+
 2026-09-22 — DESIGN PROPOSALS ONLY / RESEARCHER DECISION REQUIRED.
 
 The [researcher selected transparent joint scenario decomposition](../../decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) as the preferred design direction. Every detailed choice below is a proposal. No numerical parameters are selected or estimated. Direct conditional gross-payoff forecasting remains a documented alternative in the [parent checkpoint](S3_CAPTURE_COST_DESIGN_CHECKPOINT.md), not the primary design or an automatic rescue.

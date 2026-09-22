@@ -2,18 +2,18 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 capture and cost scenario model researcher decision required",
+    "name": "S3 hedge borrow and joint execution design researcher decision required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "No autonomous empirical or implementation action. Await approval of detailed capture/cost scenario-model design; numerical z0 and all estimation require separate bounded authorization.",
-    "completed_action": "S3-SCENARIO-DIRECTION-AND-DESIGN-2026-09-22",
+    "objective": "No autonomous empirical or implementation action. Await exact S3 hedge/borrow/joint-execution design and prerequisite bindings before any capture/cost estimation or numerical z0.",
+    "completed_action": "S3-CAPTURE-COST-APPROVAL-EXECUTION-DESIGN-2026-09-22",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 CAPTURE + COST SCENARIO MODEL / RESEARCHER DECISION REQUIRED",
-    "selected_architecture": "S3 peer-only hedged convergence; approved scale and alpha=0.05 empirical tail binding; transparent joint scenario decomposition selected as capture/cost direction only",
-    "unresolved_proposals": "Outcome states/tolerance, payoff and joint duration laws, P1/P2/P3, E1/E2/E3, cost ledger, economic pooling, support and development details; no numerical parameters selected",
-    "design_record": "docs/stages/G5/S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md",
+    "current_checkpoint": "S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED",
+    "selected_architecture": "S3 peer-only hedged convergence; approved scale, alpha=0.05 empirical tail, minimal F/P/N/A/X pooled-P1 capture/cost architecture and E1; execution contract pending",
+    "unresolved_proposals": "Exact hedge/factor replication, shares/capital, borrow/recall, collateral/funding, entry/partial-fill/joint-exit contract, action/calendar failures; scenario tolerance/cap/X and pooling/support prerequisites; all numerical estimation denied",
+    "design_record": "docs/stages/G5/S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md",
     "allowed_scope": [],
     "forbidden_scope": [
       "Implementation",
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Current direct researcher request authorizes scenario-direction persistence and design-only documentation publication; authority ledger sequence 9.",
+    "publication_scope": "No future publication authority. Current researcher instruction authorizes capture/cost architecture persistence and design-only execution-contract documentation; authority ledger sequence 10.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher resolves detailed scenario-model gate; no automatic empirical, estimation, implementation or execution action",
+    "completion_condition": "Researcher resolves execution-contract design and outstanding prerequisites; no automatic data access, estimation or implementation",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -69,6 +69,25 @@
       "occurrence_support_selection": "NOT_SELECTED_FOR_PRIMARY_THRESHOLD",
       "finite_grid_fallback": "INACTIVE"
     },
-    "selected_capture_cost_direction": "docs/decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md"
+    "selected_capture_cost_direction": "docs/decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md",
+    "approved_capture_cost_architecture": "docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md",
+    "capture_cost_binding": {
+      "states": [
+        "F",
+        "P",
+        "N",
+        "A",
+        "X"
+      ],
+      "probability_architecture": "P1_POOLED_PRIOR_EVENT_COUNTS",
+      "payoff_architecture": "POOLED_STATE_ARITHMETIC_MEAN_OR_ACTUALLY_EQUIVALENT_NORMALIZED_FORM",
+      "event_level_flexible_conditioning": false,
+      "duration": "JOINT_SCENARIO_PAYOFF_DURATION_EXPOSURE",
+      "economic_rule": "E1: mhat_u > chat_RT,u",
+      "safety_margin": null,
+      "cost_multiple": null,
+      "P3_fallback": "INACTIVE_SEPARATE_PRE_ACCESS_DECISION_REQUIRED",
+      "numerical_estimation": "NOT_AUTHORIZED"
+    }
   }
 }

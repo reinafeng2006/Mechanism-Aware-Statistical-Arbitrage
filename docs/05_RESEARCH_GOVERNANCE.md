@@ -2,8 +2,8 @@
 
 ## Current S3 design gate — 2026-09-22
 
-**S3 CAPTURE + COST SCENARIO MODEL / RESEARCHER DECISION REQUIRED**.
-The researcher [approved the scale architecture](decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) and [directly preregistered alpha=0.05, z0=Q^w_0.95(abs(z_ref))](decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Numerical z0 remains unestimated, fallback inactive, occurrence/support selection of the primary threshold excluded. The researcher selects [transparent joint scenario decomposition](decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) as design direction only. The [scenario-model checkpoint](stages/G5/S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md) proposes states, payoff/duration, probabilities, costs, admission and development; none of those details is approved. Direct gross-payoff forecasting is documented only. NEXT_ACTION remains NONE; no data access, estimation or implementation. Frozen V1 is unchanged.
+**S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED**.
+The researcher [approved the scale architecture](decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) and [directly preregistered alpha=0.05, z0=Q^w_0.95(abs(z_ref))](decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Numerical z0 remains unestimated, fallback inactive, occurrence/support selection of the primary threshold excluded. The researcher [approves the minimal capture/cost architecture](decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md): F/P/N/A/X, pooled prior-event P1, joint duration/exposure, one all-leg ledger and E1, with P3 inactive. Unresolved boundaries/support and all estimation stay gated. [Hedge/borrow/joint execution](stages/G5/S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md) is design-only; detailed execution choices remain proposals. NEXT_ACTION remains NONE; no data access, estimation or implementation. Frozen V1 is unchanged.
 
 ## Terminal V1 closure — 2026-09-18
 

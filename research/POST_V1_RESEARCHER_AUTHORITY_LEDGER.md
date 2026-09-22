@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-22, sequence 9): [transparent joint scenario decomposition selected](../docs/decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) as capture/cost direction only. All detailed scenario-model choices remain proposals. Alpha=0.05 empirical reference-tail binding is unchanged; numerical z0 unestimated; threshold fallback inactive. **S3 CAPTURE + COST SCENARIO MODEL / RESEARCHER DECISION REQUIRED**. Prior entries retain historical boundaries, superseded only by explicit later decisions.
+Current authority update (2026-09-22, sequence 10): [minimal scenario capture/cost architecture approved](../docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md): F/P/N/A/X, pooled P1, joint duration/exposure, one all-leg ledger and E1. P3 inactive; no estimation. Scale/alpha=0.05 unchanged; numerical z0 uncomputed. **S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED**. Prior entries retain their historical authority boundaries.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -62,3 +62,15 @@ Requested design scope: verify the fixed-origin target mapping; propose minimal 
 The instruction explicitly preserves all detailed state/model/parameter/development choices as proposals pending researcher approval. No numerical parameter selection, data access, estimation, numerical z0, implementation, hedge/borrow implementation, C04 repair, backtest or PnL inspection. Capture-model fallback discussion does not activate the frozen inactive threshold fallback.
 
 Persisted [direction decision](../docs/decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) and [scenario-model checkpoint](../docs/stages/G5/S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md). This is one bounded documentation publication; NEXT_ACTION remains NONE, with no continuing empirical/implementation/publication authority. Scale/threshold decisions, V1 and exposure history unchanged.
+
+## 10. 2026-09-22 — minimal capture/cost architecture approved; execution design next
+
+Direct researcher instruction: “RESEARCHER DECISION — APPROVE MINIMAL S3 SCENARIO CAPTURE/COST ARCHITECTURE”.
+
+Approved: five-state F/P/N/A/X classifier preserving complete prospective boundaries (F renames H); mhat=sum pihat_r*Ghat_r; full target distance is neither expected capture nor a hard bound. Select pooled prior-event P1 counts/conditional arithmetic payoff means, or an actually equivalent normalized representation; no flexible event-level conditional probability model or six independently tuned second-stage systems. Numerical boundaries, sparse-state pooling/shrinkage and support must be specified before development.
+
+Approve joint (R,G,T,exposure path) treatment and the non-overlapping all-leg cost ledger using identical basket, capital, size, duration, liquidation and feasibility assumptions. Missing cost evidence => ECONOMIC GATE UNAVAILABLE. Select E1 mhat>chat; no delta/lambda_c/performance buffer. P3 remains inactive and needs a separate pre-access decision.
+
+No parameter, numerical z0 or scenario-boundary estimation. The exact hedge/borrow/execution contract must be designed first; requested design topics include all-model hedge mapping, exact versus tracking-aware factor replication, shares/gross capital, borrow/recall, collateral/funding, multi-leg/partial entry, joint exits, calendar/suspension, long/short actions and failures. No acquisition, implementation, C04, backtest or PnL.
+
+Persisted [approval](../docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md) and [execution design checkpoint](../docs/stages/G5/S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md). Execution details remain proposals, not adopted by documenting them. One bounded documentation publication; NEXT_ACTION remains NONE with no continuing execution authority.

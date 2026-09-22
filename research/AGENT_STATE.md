@@ -6,22 +6,22 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `S3 CAPTURE + COST SCENARIO MODEL / RESEARCHER DECISION REQUIRED` |
+| Current stage | `S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED` |
 | Stage status | Design-only checkpoint complete; all data correction, acquisition, implementation, backtesting, trading and PnL/result inspection remain paused |
-| Latest frozen decision | Transparent joint scenario decomposition selected as design direction only; scale and alpha=0.05 empirical quantile rule unchanged; numerical z0 unestimated |
-| Current substage | Detailed scenario-model proposals: H/P/N/A/X, joint duration/exposure, P1 frequency/conditional payoff means, full cost ledger and E1 admission; no detail or numerical parameter selected |
+| Latest frozen decision | Minimal capture/cost architecture approved: F/P/N/A/X, pooled P1, joint duration/exposure, all-leg ledger and E1; P3 inactive; scale/threshold/V1 unchanged |
+| Current substage | Hedge/borrow/joint-execution design proposals only; exact factor replication feasibility unknown; no instruments, execution details or numerical values selected |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
 | Computation authorization | NONE. No repeat, repair, rescue, R4-2025/original A6/G5/V2 execution; no further PnL inspection |
-| Current authorized action | NONE; researcher scenario-model decision required; no future empirical, estimation, implementation or publication authority |
+| Current authorized action | NONE; researcher execution-contract design decision required; no future data, estimation, implementation or publication authority |
 | Last validation state | Current documentation/control structural checks recorded in latest run log. PowerShell suite unavailable in this client; core/final-result validation not run under no-data scope. Earlier PASS records are historical |
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
-| Remote state observed | Base main verified at 855a8625fd28e90e5c86b98e30365f66d2e7aa05 before this documentation transaction; frozen V1 verified unchanged at closeout |
-| Researcher action required | YES; S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md; all detailed choices pending; no data or estimation authorized |
+| Remote state observed | Base main verified at cac075c11e8dcf8094269a83cc06d14a36a8180d before this documentation transaction; frozen V1 checked unchanged at closeout |
+| Researcher action required | YES; S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md; exact execution contract before capture/cost estimation |
 
-Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Approved design: [scale architecture](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md). Approved threshold: [direct probability preregistration](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Selected direction: [scenario decomposition](../docs/decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md). Current gate: [scenario-model design](../docs/stages/G5/S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
+Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Approved design: [scale architecture](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md). Approved threshold: [direct probability preregistration](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Approved capture/cost: [minimal architecture](../docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md). Current gate: [hedge/borrow/joint execution](../docs/stages/G5/S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
 
 ## Historical V1 closure records (not active authorization)
 
