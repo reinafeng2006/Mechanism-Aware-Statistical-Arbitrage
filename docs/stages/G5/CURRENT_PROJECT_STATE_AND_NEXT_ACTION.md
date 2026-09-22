@@ -1,14 +1,14 @@
 # Current project state and next action — fresh-client entry point
 
-Updated 2026-09-22 after explicit researcher reference-tail preregistration; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
+Updated 2026-09-22 after explicit researcher scenario-decomposition direction selection; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
 
-**Current checkpoint: S3 CAPTURE + COST GATE DESIGN / RESEARCHER DECISION REQUIRED.**
+**Current checkpoint: S3 CAPTURE + COST SCENARIO MODEL / RESEARCHER DECISION REQUIRED.**
 
 ## A. Objective and authority
 
 Study PIT relationships and abnormality/resolution among economically related A-share machinery securities, then distinguish descriptive relationship evidence from an economically executable trading hypothesis. The current trading design direction is peer-only hedged relative-value convergence, not mechanism identification or a proven profitable strategy.
 
-Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the threshold-binding persistence transaction. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits persistence of its design bindings and design-only capture/cost comparison, not empirical work.
+Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the scenario-direction/design persistence transaction. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits persistence of its design bindings and design-only detailed scenario-model comparison, not empirical work.
 
 ## B. Frozen historical V1
 
@@ -40,7 +40,7 @@ The [complete V1.1 mathematical specification](V1_1_COMPLETE_TRADING_STRATEGY_MA
 
 ## D. Researcher-selected direction versus proposals
 
-**Selected: S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE, with the separately approved 2026-09-22 scale bindings.** The authority ledger records the researcher's selection independently of chat attachments. Source/MP1 is not part of the selected core. Selecting S3 originally approved architecture only. The [2026-09-22 decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) separately approves residual scale, two-sided orientation and reference-tail weighting architecture; the [subsequent probability decision](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule. Numerical z0 is unestimated; no hedge instrument, capture/cost model or development run is approved.
+**Selected: S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE, with the separately approved 2026-09-22 scale bindings.** The authority ledger records the researcher's selection independently of chat attachments. Source/MP1 is not part of the selected core. Selecting S3 originally approved architecture only. The [2026-09-22 decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) separately approves residual scale, two-sided orientation and reference-tail weighting architecture; the [subsequent probability decision](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule. Numerical z0 is unestimated. [Scenario decomposition](../../decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) is now selected as the capture/cost direction only; no detailed scenario model, hedge instrument or development run is approved.
 
 Compact design logic (still requiring unresolved bindings):
 
@@ -56,7 +56,7 @@ R0-D252, R0-C126, R0-L126, R1-M126, R1-MI126 and R3-252 remain relationship esti
 
 ## F. Exact unresolved gate
 
-Read the [approved scale decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md), [direct probability preregistration](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md), then [capture/cost design checkpoint](S3_CAPTURE_COST_DESIGN_CHECKPOINT.md).
+Read the [approved scale decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md), [direct probability preregistration](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md), then the [scenario direction decision](../../decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) and [scenario-model checkpoint](S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md).
 
 Approved scale: current-origin aligned residual MAD; common H126 prior qualified observations; daily strictly-prior refresh; z=d/sigma with invalid or insufficient scale SIGNAL UNAVAILABLE; two-sided peer convergence with signed reporting; common block/pair/direction/group weighting with R0-C/R0-L grouped. H252 MAD and H126 SD are non-selecting robustness only. Fit-overlap optimism remains.
 
@@ -64,12 +64,12 @@ Approved primary threshold binding: alpha=0.05, z0=Q^w_0.95(abs(z_ref)), abs(z_t
 
 Numerical z0 is NOT ESTIMATED. Reference population/dates and estimation/refresh details must be specified and data access separately authorized before mechanical quantile estimation. No historical data access is authorized.
 
-Current researcher question: how should pre-entry expected economically capturable remaining convergence m_hat_u and all-in round-trip cost c_hat_RT,u be specified? The design checkpoint compares joint scenario versus direct gross-payoff forecasts and proposes a consistent leg-level cost decomposition. All capture/cost choices remain proposals; no estimates, models or execution contracts are selected.
+Selected direction: transparent joint scenario decomposition; direct conditional gross-payoff forecasting is documented only. Current researcher question: which detailed scenario/payoff/duration/probability/cost/admission/pooling/development specification should be approved? The scenario checkpoint proposes five mutually exclusive states, a joint duration law, P1 frequency architecture, state-conditional payoff means, non-overlapping all-leg costs and E1 admission, with at most one P3 bounded fallback. These details are NOT selected; no parameters, estimates or execution contracts are approved.
 
 ## G. Remaining sequence — not executable NEXT_ACTION
 
 1. Scale/orientation/weighting and alpha=0.05 empirical quantile rule are approved; numerical z0 estimation remains separately gated.
-2. Researcher resolves the design of m_hat_u and c_hat_RT,u at the current capture/cost gate.
+2. Researcher resolves detailed m_hat_u/c_hat_RT,u scenario-model proposals; only scenario-decomposition direction is selected.
 3. Define/qualify hedge mapping, borrow, collateral and joint-leg executability.
 4. Freeze complete S3 mathematical protocol and finite research budget.
 5. Derive data requirements from those equations, not available fields.
@@ -96,19 +96,19 @@ Read [migration audit and external-artifact guide](PRE_CLIENT_MIGRATION_AUDIT.md
 
 ## K. Fresh-agent read order and conceptual reconstruction test
 
-Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → probability preregistration → capture/cost checkpoint → earlier threshold and S3 checkpoints as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
+Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → probability preregistration → selected scenario direction → scenario-model checkpoint → parent capture/cost and earlier threshold and S3 checkpoints as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
 
 | Reconstruction question | Canonical answer/source |
 |---|---|
 | Completed/frozen/failed? | Section B; immutable V1 tag, final freeze and terminal registry |
 | Why redesign? | Section C; economic redesign checkpoint |
 | What does S3 mean? | Sections D/E; parent equations |
-| What is approved? | Authority ledger: S3 architecture, approved scale/orientation/reference weighting and alpha=0.05 empirical quantile rule, plus prior held-security clarification |
-| What remains pending? | Section F; capture/cost design; numerical z0 not estimated |
+| What is approved? | Authority ledger: S3 architecture, approved scale/orientation/reference weighting and alpha=0.05 empirical quantile rule, selected scenario direction only, plus prior held-security clarification |
+| What remains pending? | Section F; detailed capture/cost scenario model; numerical z0 not estimated |
 | What data were exposed? | Section H; prior irreversible access-event hash/manifest |
-| Exact next action? | NONE; researcher capture/cost design decision; no execution |
+| Exact next action? | NONE; researcher scenario-model decision; no execution |
 | What remains external? | Section J; path-independent inventory and restoration guide |
 
-The 2026-09-22 probability decision advances only the design checkpoint:
+The 2026-09-22 scenario-direction selection advances only the design checkpoint:
 
-**S3 CAPTURE + COST GATE DESIGN / RESEARCHER DECISION REQUIRED**
+**S3 CAPTURE + COST SCENARIO MODEL / RESEARCHER DECISION REQUIRED**

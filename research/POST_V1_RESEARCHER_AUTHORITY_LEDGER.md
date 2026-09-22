@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-22, sequence 8): [direct probability preregistration](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule. Numerical z0 remains unestimated; fallback inactive. **S3 CAPTURE + COST GATE DESIGN / RESEARCHER DECISION REQUIRED**. Earlier entries retain their historical approval/proposal boundaries and are superseded only by explicit subsequent decisions.
+Current authority update (2026-09-22, sequence 9): [transparent joint scenario decomposition selected](../docs/decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) as capture/cost direction only. All detailed scenario-model choices remain proposals. Alpha=0.05 empirical reference-tail binding is unchanged; numerical z0 unestimated; threshold fallback inactive. **S3 CAPTURE + COST SCENARIO MODEL / RESEARCHER DECISION REQUIRED**. Prior entries retain historical boundaries, superseded only by explicit later decisions.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -50,3 +50,15 @@ No adaptive change for counts, concentration, convergence, PnL or estimator even
 Numerical quantile estimation requires separate bounded data-access authorization and has not occurred. Present authority permits persistence and design-only m_hat_u/c_hat_RT,u comparison, not adoption of a forecast/cost model, data access, cost estimation, implementation, C04 repair, backtest or PnL.
 
 Persisted [threshold decision](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) and [capture/cost design checkpoint](../docs/stages/G5/S3_CAPTURE_COST_DESIGN_CHECKPOINT.md). NEXT_ACTION remains NONE after this one documentation publication transaction; no continuing execution/publication authority. Frozen V1, scale decision and historical exposure remain unchanged.
+
+## 9. 2026-09-22 — transparent joint scenario direction and bounded design request
+
+Direct researcher request: “S3 CAPTURE + COST GATE — DEVELOP TRANSPARENT JOINT SCENARIO DECOMPOSITION”.
+
+Selected direction only: transparent joint scenario decomposition. Direct conditional gross-payoff forecasting is not selected for primary S3 and remains a documented alternative.
+
+Requested design scope: verify the fixed-origin target mapping; propose minimal exhaustive/disjoint economic states, probabilities, payoff magnitudes and joint duration; audit non-overlapping all-leg costs; compare E1/E2/E3 and P1/P2/P3; specify prospective payoffs, four distinct gates, bounded future 2015–2019 development and cost-evidence hierarchy; end with a decision table, one preferred complete proposal and at most one fallback.
+
+The instruction explicitly preserves all detailed state/model/parameter/development choices as proposals pending researcher approval. No numerical parameter selection, data access, estimation, numerical z0, implementation, hedge/borrow implementation, C04 repair, backtest or PnL inspection. Capture-model fallback discussion does not activate the frozen inactive threshold fallback.
+
+Persisted [direction decision](../docs/decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) and [scenario-model checkpoint](../docs/stages/G5/S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md). This is one bounded documentation publication; NEXT_ACTION remains NONE, with no continuing empirical/implementation/publication authority. Scale/threshold decisions, V1 and exposure history unchanged.

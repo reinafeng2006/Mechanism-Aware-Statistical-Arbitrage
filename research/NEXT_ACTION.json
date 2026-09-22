@@ -2,18 +2,18 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 capture and cost gate design researcher decision required",
+    "name": "S3 capture and cost scenario model researcher decision required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "No autonomous empirical or implementation action. Await researcher capture/cost design decision; numerical weighted reference-quantile estimation requires separate bounded authorization.",
-    "completed_action": "S3-TAIL-PREREGISTRATION-PERSISTENCE-2026-09-22",
+    "objective": "No autonomous empirical or implementation action. Await approval of detailed capture/cost scenario-model design; numerical z0 and all estimation require separate bounded authorization.",
+    "completed_action": "S3-SCENARIO-DIRECTION-AND-DESIGN-2026-09-22",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 CAPTURE + COST GATE DESIGN / RESEARCHER DECISION REQUIRED",
-    "selected_architecture": "S3 peer-only hedged convergence; approved scale/orientation/weighting plus direct alpha=0.05 empirical reference-tail binding; capture/cost proposals pending",
-    "unresolved_proposals": "Capture forecast target/model and cost accounting/uncertainty contract; reference-sample and estimation schedule prerequisites; numerical z0 not estimated; fallback inactive",
-    "design_record": "docs/stages/G5/S3_CAPTURE_COST_DESIGN_CHECKPOINT.md",
+    "current_checkpoint": "S3 CAPTURE + COST SCENARIO MODEL / RESEARCHER DECISION REQUIRED",
+    "selected_architecture": "S3 peer-only hedged convergence; approved scale and alpha=0.05 empirical tail binding; transparent joint scenario decomposition selected as capture/cost direction only",
+    "unresolved_proposals": "Outcome states/tolerance, payoff and joint duration laws, P1/P2/P3, E1/E2/E3, cost ledger, economic pooling, support and development details; no numerical parameters selected",
+    "design_record": "docs/stages/G5/S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md",
     "allowed_scope": [],
     "forbidden_scope": [
       "Implementation",
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Present explicit researcher instruction authorizes this threshold-decision and capture/cost-design documentation transaction only; authority ledger sequence 8.",
+    "publication_scope": "No future publication authority. Current direct researcher request authorizes scenario-direction persistence and design-only documentation publication; authority ledger sequence 9.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher resolves capture/cost design gate; no automatic data access, estimation, implementation or execution follows",
+    "completion_condition": "Researcher resolves detailed scenario-model gate; no automatic empirical, estimation, implementation or execution action",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -68,6 +68,7 @@
       "numerical_estimation_status": "NOT_ESTIMATED_SEPARATE_BOUNDED_DATA_AUTHORIZATION_REQUIRED",
       "occurrence_support_selection": "NOT_SELECTED_FOR_PRIMARY_THRESHOLD",
       "finite_grid_fallback": "INACTIVE"
-    }
+    },
+    "selected_capture_cost_direction": "docs/decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md"
   }
 }

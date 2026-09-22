@@ -1,5 +1,7 @@
 # S3 capture and cost gate — design checkpoint
 
+> Historical gate comparison. The researcher subsequently [selected transparent joint scenario decomposition](../../decisions/S3_CAPTURE_COST_SCENARIO_DIRECTION_SELECTION.md) as design direction only; direct gross-payoff forecasting remains a documented alternative. Detailed choices remain proposals in the [scenario-model checkpoint](S3_CAPTURE_COST_SCENARIO_MODEL_DESIGN_CHECKPOINT.md). Statements below about an unselected direction describe the earlier gate. Original body preserved.
+
 2026-09-22. DESIGN PROPOSALS ONLY / RESEARCHER DECISION REQUIRED.
 
 The researcher has [preregistered alpha_ref=0.05 and z0=Q^w_0.95(|z^ref|)](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Numerical z0 remains unestimated. The [scale architecture](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) is unchanged. This gate discusses how to estimate m_hat_u and c_hat_RT,u before entry; it does not select or fit a forecast, choose instruments, estimate costs, or authorize data access.
