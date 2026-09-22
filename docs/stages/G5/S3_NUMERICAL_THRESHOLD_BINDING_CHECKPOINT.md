@@ -1,5 +1,7 @@
 # S3 numerical threshold binding checkpoint
 
+> Historical comparison, superseded by the [direct preregistration decision](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md): path A selected, alpha=0.05 and the weighted 95th-percentile rule frozen; numerical z0 unestimated. Statements below that neither route/probability is selected describe the earlier checkpoint. Current gate: [capture and cost design](S3_CAPTURE_COST_DESIGN_CHECKPOINT.md). The original comparison body is preserved below.
+
 2026-09-22 — DESIGN ONLY / RESEARCHER DECISION REQUIRED.
 
 The [approved scale architecture](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) binds current-origin aligned residual MAD, common H126, daily prior-information refresh, two-sided peer convergence and the common weighted reference-tail architecture. H252 MAD and H126 SD are non-selecting robustness specifications. This gate does not reopen those bindings.

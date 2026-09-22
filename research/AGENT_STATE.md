@@ -6,22 +6,22 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED` |
+| Current stage | `S3 CAPTURE + COST GATE DESIGN / RESEARCHER DECISION REQUIRED` |
 | Stage status | Design-only checkpoint complete; all data correction, acquisition, implementation, backtesting, trading and PnL/result inspection remain paused |
-| Latest frozen decision | S3 scale/orientation/reference weighting approved 2026-09-22; no probability/quantile/z0 selected; V1 unchanged |
-| Current substage | Current-origin aligned MAD, common H126/daily and two-sided science approved; compare only preregistered rarity/materiality versus bounded 2015–2019 occurrence/support development; fallback inactive |
+| Latest frozen decision | Direct alpha=0.05 and z0=Q^w_0.95(abs(z_ref)) binding; numerical z0 unestimated; scale decision and V1 unchanged |
+| Current substage | Capture/cost design proposals only; joint scenario versus direct gross-payoff forecast, consistent all-in basket costs; no forecast/cost model or parameters approved |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
 | Computation authorization | NONE. No repeat, repair, rescue, R4-2025/original A6/G5/V2 execution; no further PnL inspection |
-| Current authorized action | NONE; numerical-threshold binding decision required. Current documentation persistence only; no future empirical, implementation or publication authority |
+| Current authorized action | NONE; capture/cost design decision required; no future empirical, estimation, implementation or publication authority |
 | Last validation state | Current documentation/control structural checks recorded in latest run log. PowerShell suite unavailable in this client; core/final-result validation not run under no-data scope. Earlier PASS records are historical |
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
-| Remote state observed | Base main verified at 1dc7632e40ab82f66fe5470d1d728860052b68c1 before this documentation transaction; frozen V1 annotated tag target verified unchanged |
-| Researcher action required | YES; S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md; probability, quantile and numerical z0 unselected; expected-capture/cost and execution gates remain deferred |
+| Remote state observed | Base main verified at d71b4e6495df9cff1916e5017f53a8c73022d428 before this documentation transaction; frozen V1 tag checked unchanged at closeout |
+| Researcher action required | YES; S3_CAPTURE_COST_DESIGN_CHECKPOINT.md; numerical quantile estimation separately gated; finite-grid fallback inactive |
 
-Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Approved design: [scale architecture](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md). Current gate: [numerical threshold binding](../docs/stages/G5/S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
+Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Approved design: [scale architecture](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md). Approved threshold: [direct probability preregistration](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Current gate: [capture/cost design](../docs/stages/G5/S3_CAPTURE_COST_DESIGN_CHECKPOINT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
 
 ## Historical V1 closure records (not active authorization)
 

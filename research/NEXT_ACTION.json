@@ -2,23 +2,23 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 numerical threshold binding researcher decision required",
+    "name": "S3 capture and cost gate design researcher decision required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "No autonomous research action. Await explicit researcher resolution of reference-tail probability / numerical z0 binding and a new bounded action.",
-    "completed_action": "S3-SCALE-ARCHITECTURE-PERSISTENCE-2026-09-22",
+    "objective": "No autonomous empirical or implementation action. Await researcher capture/cost design decision; numerical weighted reference-quantile estimation requires separate bounded authorization.",
+    "completed_action": "S3-TAIL-PREREGISTRATION-PERSISTENCE-2026-09-22",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED",
-    "selected_architecture": "S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE; scale/orientation/reference weighting approved 2026-09-22; no numerical threshold",
-    "unresolved_proposals": "Reference-tail probability, quantile and numerical z0; preregistered rarity/materiality versus bounded 2015–2019 occurrence/support development; finite-grid fallback inactive",
-    "design_record": "docs/stages/G5/S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md",
+    "current_checkpoint": "S3 CAPTURE + COST GATE DESIGN / RESEARCHER DECISION REQUIRED",
+    "selected_architecture": "S3 peer-only hedged convergence; approved scale/orientation/weighting plus direct alpha=0.05 empirical reference-tail binding; capture/cost proposals pending",
+    "unresolved_proposals": "Capture forecast target/model and cost accounting/uncertainty contract; reference-sample and estimation schedule prerequisites; numerical z0 not estimated; fallback inactive",
+    "design_record": "docs/stages/G5/S3_CAPTURE_COST_DESIGN_CHECKPOINT.md",
     "allowed_scope": [],
     "forbidden_scope": [
       "Implementation",
       "Historical data access/calibration",
-      "Threshold selection",
+      "Adaptive primary threshold selection or unauthorized numerical quantile estimation",
       "Data acquisition",
       "C04 repair",
       "Backtesting",
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. The explicit 2026-09-22 persistence instruction authorizes this bounded documentation/control transaction only; see authority ledger sequence 7.",
+    "publication_scope": "No future publication authority. Present explicit researcher instruction authorizes this threshold-decision and capture/cost-design documentation transaction only; authority ledger sequence 8.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher resolves numerical threshold binding gate; no automatic empirical or implementation execution follows",
+    "completion_condition": "Researcher resolves capture/cost design gate; no automatic data access, estimation, implementation or execution follows",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -57,6 +57,17 @@
       "Any proposed scientific decision not approved",
       "Any immutable artifact mismatch"
     ],
-    "approved_scale_architecture": "docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md"
+    "approved_scale_architecture": "docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md",
+    "approved_threshold_binding": "docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md",
+    "threshold_binding": {
+      "selection_path": "DIRECT_PREREGISTRATION",
+      "alpha_ref": 0.05,
+      "quantile_probability": 0.95,
+      "rule": "z0 = Q^w_0.95(abs(z_ref)); abs(z_t) >= z0",
+      "numerical_z0": null,
+      "numerical_estimation_status": "NOT_ESTIMATED_SEPARATE_BOUNDED_DATA_AUTHORIZATION_REQUIRED",
+      "occurrence_support_selection": "NOT_SELECTED_FOR_PRIMARY_THRESHOLD",
+      "finite_grid_fallback": "INACTIVE"
+    }
   }
 }

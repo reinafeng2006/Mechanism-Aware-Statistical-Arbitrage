@@ -1,6 +1,6 @@
 # S3 residual scale and threshold design checkpoint
 
-> Historical proposal record, dated 2026-09-18. The [2026-09-22 researcher decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) now approves the specified scale, orientation and weighting architecture. Statements below that all choices remain proposals describe the original checkpoint, not current authority. Tail probability/quantile/z0 remain unselected and the finite-grid fallback inactive. Current gate: [numerical threshold binding](S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md). The original proposal body is preserved below.
+> Historical proposal record, dated 2026-09-18. The [2026-09-22 researcher decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) now approves the specified scale, orientation and weighting architecture. Statements below that all choices remain proposals describe the original checkpoint, not current authority. The [subsequent preregistration](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule; numerical z0 remains unestimated and fallback inactive. Current gate: [capture/cost design](S3_CAPTURE_COST_DESIGN_CHECKPOINT.md). The original proposal body is preserved below.
 
 2026-09-18 — **S3 DEVELOPMENT DESIGN GATE 01 / DESIGN ONLY**.
 

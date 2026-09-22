@@ -1,8 +1,8 @@
 # Mechanism-Aware Statistical Arbitrage
 
-Current status: **S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED**.
+Current status: **S3 CAPTURE + COST GATE DESIGN / RESEARCHER DECISION REQUIRED**.
 
-**Fresh client: start with [Current project state and next action](docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md)**, then read `AGENTS.md`, `research/AGENT_POLICY.md` and `research/NEXT_ACTION.json`. Historical V1 is frozen at tag `v1-final-frozen-2026-09-18`; S3 peer-only hedged relative-value architecture and its [scale architecture](docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) are approved. Tail probability, reference quantile and numerical z0 remain unselected; the finite-grid fallback is inactive. No historical data access, implementation, calibration, C04 repair, backtest or PnL inspection is authorized. Git contains design context and artifact metadata, not the external scientific payload backup.
+**Fresh client: start with [Current project state and next action](docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md)**, then read `AGENTS.md`, `research/AGENT_POLICY.md` and `research/NEXT_ACTION.json`. Historical V1 is frozen at tag `v1-final-frozen-2026-09-18`; S3 peer-only hedged relative-value architecture and its [scale architecture](docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) are approved. The [primary tail binding](docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) is frozen at alpha=0.05 and z0=Q^w_0.95(abs(z_ref)); numerical z0 is not estimated. The finite-grid fallback is inactive. Capture/cost design remains for researcher decision. No historical data access, implementation, calibration, C04 repair, backtest or PnL inspection is authorized. Git contains design context and artifact metadata, not the external scientific payload backup.
 
 The historical framework below explains project ancestry, not current execution authority. Its earlier gate language does not override the current handoff or NEXT_ACTION.
 

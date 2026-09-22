@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-22): [scale architecture approved](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md); probability/quantile/z0 unselected; fallback inactive. **S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED**. The original 2026-09-18 ledger below records prior authority; sequence 7 supersedes its architecture-only boundary only for the explicitly approved bindings.
+Current authority update (2026-09-22, sequence 8): [direct probability preregistration](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule. Numerical z0 remains unestimated; fallback inactive. **S3 CAPTURE + COST GATE DESIGN / RESEARCHER DECISION REQUIRED**. Earlier entries retain their historical approval/proposal boundaries and are superseded only by explicit subsequent decisions.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -38,3 +38,15 @@ H252 MAD and H126 SD are non-selecting robustness specifications, never outcome-
 The researcher explicitly leaves tail probability, quantile and numerical z0 unselected; does not activate the finite-grid fallback; authorizes persistence and comparison only of preregistered rarity/materiality probability versus bounded 2015–2019 occurrence/support development without PnL optimization. No historical access, calibration, expected-capture/cost design, hedge execution, implementation, C04, backtest or PnL.
 
 Persisted [decision](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) and [next gate](../docs/stages/G5/S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md). This documentation transaction implements the present persistence instruction; no continuing commit/push or scientific-execution authority is created. NEXT_ACTION returns to NONE. Frozen V1 and historical exposure are unchanged.
+
+## 8. 2026-09-22 — direct S3 reference-tail probability preregistration
+
+Direct researcher instruction: “RESEARCHER DECISION — DIRECTLY PREREGISTER THE S3 REFERENCE-TAIL PROBABILITY”.
+
+Select direct preregistration, excluding 2015–2019 occurrence/support calibration for choosing the primary threshold. Freeze alpha=0.05, z0=Q^w_0.95(abs(z_ref)), and the inclusive two-sided abnormality rule abs(z_t)>=z0 using the already approved block/pair/direction/estimator-group weighting. Retain R0-C/R0-L grouping. This is reference rarity/materiality, not Gaussian significance, p-value, false-positive control, convergence probability or expected profitability.
+
+No adaptive change for counts, concentration, convergence, PnL or estimator event frequencies; insufficient support remains a limitation. Finite-grid fallback inactive. Future alternative probabilities, only if separately authorized, are non-selecting sensitivities; none defined now. No parametric 1.96 substitution.
+
+Numerical quantile estimation requires separate bounded data-access authorization and has not occurred. Present authority permits persistence and design-only m_hat_u/c_hat_RT,u comparison, not adoption of a forecast/cost model, data access, cost estimation, implementation, C04 repair, backtest or PnL.
+
+Persisted [threshold decision](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) and [capture/cost design checkpoint](../docs/stages/G5/S3_CAPTURE_COST_DESIGN_CHECKPOINT.md). NEXT_ACTION remains NONE after this one documentation publication transaction; no continuing execution/publication authority. Frozen V1, scale decision and historical exposure remain unchanged.
