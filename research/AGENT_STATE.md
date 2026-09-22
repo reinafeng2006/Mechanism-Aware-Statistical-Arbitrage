@@ -1,27 +1,27 @@
 # Research Execution Agent State
 
 State schema: `REA-STATE-1.0`
-As-of: 2026-09-18
+As-of: 2026-09-22
 Basis: repository records and Git state verified during initialization; prompt assertions were not treated as authority.
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `S3 SCALE + THRESHOLD DESIGN / RESEARCHER DECISION REQUIRED` |
+| Current stage | `S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED` |
 | Stage status | Design-only checkpoint complete; all data correction, acquisition, implementation, backtesting, trading and PnL/result inspection remain paused |
-| Latest frozen decision | Researcher selects S3 peer-only hedged relative-value architecture ONLY; V1 release and its prior decisions remain unchanged |
-| Current substage | Gate 01 document proposes aligned current-origin residual MAD, common history/refresh, common tail-frequency binding, one finite-grid fallback and two-sided scientific orientation. No scale, threshold, calibration or orientation proposal adopted |
+| Latest frozen decision | S3 scale/orientation/reference weighting approved 2026-09-22; no probability/quantile/z0 selected; V1 unchanged |
+| Current substage | Current-origin aligned MAD, common H126/daily and two-sided science approved; compare only preregistered rarity/materiality versus bounded 2015–2019 occurrence/support development; fallback inactive |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
 | Computation authorization | NONE. No repeat, repair, rescue, R4-2025/original A6/G5/V2 execution; no further PnL inspection |
-| Current authorized action | `NONE`; researcher scale/threshold decision required. Migration closeout publishes this successor state only; no future research, empirical, implementation or publication authority |
-| Last validation state | Specification-only audit: literature, documentation architecture, learning layer, control validator, core fingerprint and whitespace PASS; policy and held-out access-event hashes unchanged. Trading/final-result validators deliberately not run |
+| Current authorized action | NONE; numerical-threshold binding decision required. Current documentation persistence only; no future empirical, implementation or publication authority |
+| Last validation state | Current documentation/control structural checks recorded in latest run log. PowerShell suite unavailable in this client; core/final-result validation not run under no-data scope. Earlier PASS records are historical |
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
-| Remote state observed | Migration fetched origin: baseline HEAD=origin/main=1359dcb7fc1876321fec00709a00ccca26d1f217, ahead/behind 0/0. Migration commit is identified by the handoff file's Git history; post-push equality verified at closeout |
-| Researcher action required | `YES`; review S3_RESIDUAL_SCALE_THRESHOLD_DESIGN_CHECKPOINT.md. S3 architecture is selected; preferred P and at most one fallback F remain design proposals; expected-capture/cost gate deliberately deferred |
+| Remote state observed | Base main verified at 1dc7632e40ab82f66fe5470d1d728860052b68c1 before this documentation transaction; frozen V1 annotated tag target verified unchanged |
+| Researcher action required | YES; S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md; probability, quantile and numerical z0 unselected; expected-capture/cost and execution gates remain deferred |
 
-Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Current design: [S3 scale/threshold checkpoint](../docs/stages/G5/S3_RESIDUAL_SCALE_THRESHOLD_DESIGN_CHECKPOINT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
+Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Approved design: [scale architecture](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md). Current gate: [numerical threshold binding](../docs/stages/G5/S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
 
 ## Historical V1 closure records (not active authorization)
 

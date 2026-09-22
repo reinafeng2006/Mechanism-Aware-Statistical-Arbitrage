@@ -1,5 +1,10 @@
 # Research Governance — Current Authoritative State
 
+## Current S3 design gate — 2026-09-22
+
+**S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED**.
+The researcher [approved the scale architecture](decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md): current-origin MAD, common H126/daily, two-sided science and common weighted reference-tail binding. Numerical probability/quantile/z0 remain unselected; fallback inactive. Compare only [preregistered rarity versus bounded occurrence/support development](stages/G5/S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md). NEXT_ACTION remains NONE; no empirical access, calibration or implementation. Frozen V1 is unchanged.
+
 ## Terminal V1 closure — 2026-09-18
 
 The [final freeze](decisions/V1_FINAL_FREEZE.md) and [final synthesis](stages/G5/V1_FINAL_RESEARCH_TRADING_SYNTHESIS.md)

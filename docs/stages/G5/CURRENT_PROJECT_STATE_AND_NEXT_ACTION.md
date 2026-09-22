@@ -1,14 +1,14 @@
 # Current project state and next action — fresh-client entry point
 
-As of migration 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
+Updated 2026-09-22 after explicit researcher scale-architecture approval; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
 
-**Current checkpoint: S3 SCALE + THRESHOLD DESIGN / RESEARCHER DECISION REQUIRED.**
+**Current checkpoint: S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED.**
 
 ## A. Objective and authority
 
 Study PIT relationships and abnormality/resolution among economically related A-share machinery securities, then distinguish descriptive relationship evidence from an economically executable trading hypothesis. The current trading design direction is peer-only hedged relative-value convergence, not mechanism identification or a proven profitable strategy.
 
-Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It is NONE after migration. An old approval, runnable script, data presence or proposal is not authority to resume. The migration request permits publication only, not scientific work.
+Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the scale-architecture persistence transaction. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits persistence of its design bindings and the bounded next-gate comparison, not empirical work.
 
 ## B. Frozen historical V1
 
@@ -40,7 +40,7 @@ The [complete V1.1 mathematical specification](V1_1_COMPLETE_TRADING_STRATEGY_MA
 
 ## D. Researcher-selected direction versus proposals
 
-**Selected: S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE, architectural direction only.** The authority ledger records the researcher's selection independently of chat attachments. Source/MP1 is not part of the selected core. No implementation, scale, threshold, sign orientation, hedge instrument, borrow model, cost model or development run was approved by selecting S3.
+**Selected: S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE, with the separately approved 2026-09-22 scale bindings.** The authority ledger records the researcher's selection independently of chat attachments. Source/MP1 is not part of the selected core. Selecting S3 originally approved architecture only. The [2026-09-22 decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) separately approves residual scale, two-sided orientation and reference-tail weighting architecture; no numerical threshold, hedge instrument, borrow/cost model or development run is approved.
 
 Compact design logic (still requiring unresolved bindings):
 
@@ -56,22 +56,15 @@ R0-D252, R0-C126, R0-L126, R1-M126, R1-MI126 and R3-252 remain relationship esti
 
 ## F. Exact unresolved gate
 
-Read [S3_RESIDUAL_SCALE_THRESHOLD_DESIGN_CHECKPOINT.md](S3_RESIDUAL_SCALE_THRESHOLD_DESIGN_CHECKPOINT.md).
+Read the [approved scale decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md), then the [numerical threshold binding checkpoint](S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md). The [original scale checkpoint](S3_RESIDUAL_SCALE_THRESHOLD_DESIGN_CHECKPOINT.md) remains proposal ancestry, superseded only by explicit approved bindings.
 
-Researcher decision pending:
+Approved: current-origin aligned residual MAD; common H126 prior qualified observations; daily strictly-prior refresh; z=d/sigma with invalid or insufficient scale SIGNAL UNAVAILABLE; two-sided peer convergence with signed reporting; one common weighted reference-tail architecture balanced across blocks, pairs, directions and estimator groups, with R0-C/R0-L grouped. H252 MAD and H126 SD are non-selecting robustness specifications only. Fit-overlap optimism is preserved.
 
-- Residual geometry: current-origin replay versus historical prequential or disjoint replay. Current replay recommendation explicitly carries in-sample overlap/optimism limitations.
-- Scale: aligned residual MAD preferred; SD robustness; supplied predictive uncertainty not presumed equivalent across models.
-- History/refresh: common H126/daily recommended, H252 window robustness. This is not approval to reuse A3 security-response MAD or A1 H126 loss scale.
-- Threshold: one common reference-tail interpretation preferred; **no numerical z0 selected**. A proposed 5% tail budget is not an approved value or significance level.
-- Calibration: preferred descriptive occurrence path versus at most one explicitly chosen finite-grid O1 fallback; proposed grid {1,2,3}, periods, weighting and budget are not authorized searches.
-- Scientific orientation: two-sided peer convergence is recommended, **not approved**; peer-only does not resolve one-sided versus two-sided direction.
-
-Only the S3 architecture is approved. MAD/H126/daily, reference-tail binding, weighting, 5%, two-sided science, any proposed grid and fallback remain proposals. Do not silently turn a recommendation into a frozen decision. No redesigned-strategy historical calibration or PnL has been accessed.
+Unselected: tail probability (including the old 5% proposal), evaluated quantile and numerical z0. Finite-grid fallback inactive. The sole next question is how to bind probability/z0 without performance-driven optimization: directly preregistered rarity/materiality versus bounded 2015–2019 occurrence/support development. Neither path is selected or authorized for empirical access. No redesigned calibration/PnL access has occurred.
 
 ## G. Remaining sequence — not executable NEXT_ACTION
 
-1. Researcher resolves sigma/z0 design gate.
+1. Researcher resolves numerical threshold binding gate; scale/orientation/weighting architecture is now approved.
 2. Design m_hat_u and c_hat_RT,u separately.
 3. Define/qualify hedge mapping, borrow, collateral and joint-leg executability.
 4. Freeze complete S3 mathematical protocol and finite research budget.
@@ -89,7 +82,7 @@ The original trading workflow's access event exists; absence of complete valid r
 
 ## I. Prohibited next actions
 
-Until explicit researcher decisions and matching NEXT_ACTION authority: no implementation, historical calibration/access, data acquisition, C04 repair, backtest, PnL inspection, threshold selection, fallback execution, model/claim changes, R4 continuation or V2 execution. Do not launch any run/resume/build command based on a historical launcher.
+Beyond the approved documentation persistence, until explicit researcher decisions and matching NEXT_ACTION authority: no implementation, historical calibration/access, data acquisition, C04 repair, backtest, PnL inspection, threshold selection, fallback execution, model/claim changes, R4 continuation or V2 execution. Do not launch any run/resume/build command based on a historical launcher.
 
 ## J. External storage and fresh-clone sufficiency
 
@@ -99,19 +92,19 @@ Read [migration audit and external-artifact guide](PRE_CLIENT_MIGRATION_AUDIT.md
 
 ## K. Fresh-agent read order and conceptual reconstruction test
 
-Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → current S3 checkpoint → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
+Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → numerical-threshold checkpoint → original S3 checkpoint as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
 
 | Reconstruction question | Canonical answer/source |
 |---|---|
 | Completed/frozen/failed? | Section B; immutable V1 tag, final freeze and terminal registry |
 | Why redesign? | Section C; economic redesign checkpoint |
 | What does S3 mean? | Sections D/E; parent equations |
-| What is approved? | Authority ledger: architecture only plus prior held-security clarification |
-| What remains pending? | Section F; scale/threshold checkpoint, not selected z0 |
+| What is approved? | Authority ledger: S3 architecture, approved scale/orientation/reference weighting, plus prior held-security clarification |
+| What remains pending? | Section F; numerical threshold binding checkpoint; probability/quantile/z0 unselected |
 | What data were exposed? | Section H; prior irreversible access-event hash/manifest |
-| Exact next action? | NONE; ask researcher to resolve S3 scale/threshold gate; no execution |
+| Exact next action? | NONE; researcher numerical-threshold binding decision; no execution |
 | What remains external? | Section J; path-independent inventory and restoration guide |
 
-Migration publication does not alter the researcher checkpoint:
+The 2026-09-22 scale decision advances only the design checkpoint:
 
-**S3 SCALE + THRESHOLD DESIGN / RESEARCHER DECISION REQUIRED**
+**S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED**

@@ -2,18 +2,18 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 scale and threshold researcher decision required",
+    "name": "S3 numerical threshold binding researcher decision required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "No autonomous research action. Await explicit researcher resolution of the S3 scale/threshold design gate and a new bounded action.",
-    "completed_action": "PRE-CLIENT-MIGRATION-CANONICALIZATION",
+    "objective": "No autonomous research action. Await explicit researcher resolution of reference-tail probability / numerical z0 binding and a new bounded action.",
+    "completed_action": "S3-SCALE-ARCHITECTURE-PERSISTENCE-2026-09-22",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 SCALE + THRESHOLD DESIGN / RESEARCHER DECISION REQUIRED",
-    "selected_architecture": "S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE; architectural selection only",
-    "unresolved_proposals": "Residual geometry, MAD/SD/predictive scale, H_sigma/U_sigma, z0 method/value, tail budget, weighting, calibration objective/budget, one/two-sided orientation; no numerical z0 selected",
-    "design_record": "docs/stages/G5/S3_RESIDUAL_SCALE_THRESHOLD_DESIGN_CHECKPOINT.md",
+    "current_checkpoint": "S3 NUMERICAL THRESHOLD BINDING / RESEARCHER DECISION REQUIRED",
+    "selected_architecture": "S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE; scale/orientation/reference weighting approved 2026-09-22; no numerical threshold",
+    "unresolved_proposals": "Reference-tail probability, quantile and numerical z0; preregistered rarity/materiality versus bounded 2015–2019 occurrence/support development; finite-grid fallback inactive",
+    "design_record": "docs/stages/G5/S3_NUMERICAL_THRESHOLD_BINDING_CHECKPOINT.md",
     "allowed_scope": [],
     "forbidden_scope": [
       "Implementation",
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Researcher-authorized migration closeout transaction may publish this NONE successor state normally once; see migration authority ledger and run log.",
+    "publication_scope": "No future publication authority. The explicit 2026-09-22 persistence instruction authorizes this bounded documentation/control transaction only; see authority ledger sequence 7.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher resolves current gate; no automatic execution follows",
+    "completion_condition": "Researcher resolves numerical threshold binding gate; no automatic empirical or implementation execution follows",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -56,6 +56,7 @@
       "Any attempted empirical execution without new action",
       "Any proposed scientific decision not approved",
       "Any immutable artifact mismatch"
-    ]
+    ],
+    "approved_scale_architecture": "docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md"
   }
 }
