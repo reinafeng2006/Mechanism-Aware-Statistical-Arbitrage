@@ -2,18 +2,18 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 proxy hedge and tracking contract researcher decision required",
+    "name": "S3 convergence target bridge researcher decision required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "No autonomous empirical or implementation action. Await H-C common proxy universe, mapping, tracking/target contract and remaining execution bindings before any data access or estimation.",
-    "completed_action": "S3-HC-APPROVAL-PROXY-DESIGN-2026-09-23",
+    "objective": "No autonomous empirical or implementation action. Await Target A/B selection and explicit orientation/exit interpretation; actual funds, numerical qualification and execution prerequisites remain before any estimation.",
+    "completed_action": "S3-PROXY-CONSTRUCTION-APPROVAL-TARGET-DESIGN-2026-09-23",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 PROXY HEDGE + TRACKING CONTRACT / RESEARCHER DECISION REQUIRED",
-    "selected_architecture": "H-C practical factor-neutral/proxy-hedged S3; scale/alpha=0.05/P1/E1 preserved; approved abort/unwind, E-A, intended K and obligation-first exit precedence",
-    "unresolved_proposals": "Actual proxy universe, auxiliary exposure specification, common gamma-to-h map, static/rebalanced rule, tracking metrics/acceptance, proxy-target bridge; detailed entry timeout/unwind/exit contract and pooling/support prerequisites; no estimates",
-    "design_record": "docs/stages/G5/S3_PROXY_HEDGE_TRACKING_CONTRACT_DESIGN_CHECKPOINT.md",
+    "current_checkpoint": "S3 CONVERGENCE TARGET BRIDGE / RESEARCHER DECISION REQUIRED",
+    "selected_architecture": "H-C fund-share/M1/static-origin/T1; approved scale/model-alpha/P1/E1/abort-unwind/E-A/intended K preserved; convergence target UNSELECTED",
+    "unresolved_proposals": "Target A=model-gap versus B=tradable-basket gap; orientation/persistence/C4 and payoff-label implications; actual funds, common auxiliary exposure specification, T1 numerical qualification and remaining execution/pooling/support prerequisites",
+    "design_record": "docs/stages/G5/S3_CONVERGENCE_TARGET_BRIDGE_DESIGN_CHECKPOINT.md",
     "allowed_scope": [],
     "forbidden_scope": [
       "Implementation",
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Current direct instruction authorizes H-C execution/accounting persistence and design-only proxy/tracking documentation publication; authority ledger sequence 11.",
+    "publication_scope": "No future publication authority. Current instruction authorizes proxy-construction persistence and design-only A/B target comparison; authority ledger sequence 12.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher resolves proxy/tracking and remaining contract prerequisites; no automatic data access, estimation or implementation",
+    "completion_condition": "Researcher selects target bridge and resolves remaining prerequisites; no automatic data access, estimation or implementation",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -93,8 +93,8 @@
     "hedge_execution_binding": {
       "primary": "H-C",
       "estimand": "Extreme pair-conditioned abnormality predicts subsequent convergence in a preregistered approximately factor-neutral tradable relative-value basket.",
-      "proxy_universe_rule": "COMMON_ACROSS_SIX_ESTIMATORS_ACTUAL_INSTRUMENTS_UNSELECTED",
-      "hedge_construction_rule": "COMMON_ACROSS_SIX_ESTIMATORS_DETAILS_UNSELECTED",
+      "proxy_universe_rule": "COMMON_FUND_SHARE_SLOTS_ACTUAL_FUNDS_UNSELECTED",
+      "hedge_construction_rule": "COMMON_M1_EXACT_DECLARED_EXPOSURE_MATCHING",
       "exact_replication": "H-B_DIAGNOSTIC_BENCHMARK_ONLY",
       "pair_only": "H-A_INACTIVE_PRIMARY",
       "tracking_tolerance": null,
@@ -109,6 +109,26 @@
         "HEDGE_GEOMETRY"
       ],
       "discretionary_replacement": false
+    },
+    "approved_proxy_construction": "docs/decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md",
+    "proxy_construction_binding": {
+      "universe": "COMMON_QUALIFIED_MARKET_INDUSTRY_FUND_SHARE_SLOTS",
+      "actual_instruments": "UNSELECTED",
+      "exposure_target": "gamma_neut=B_j-beta*B_i; preserve compatible model coefficients; common auxiliary missing-dimension rule",
+      "mapping": "M1_EXACT_DECLARED_EXPOSURE_MATCHING",
+      "square_solution": "inverse(A)*gamma_neut",
+      "underdetermined_solution": "A' * inverse(A*A') * gamma_neut; full row rank required",
+      "M2_fallback": "INACTIVE",
+      "basket": "w=(1,-beta,-h'); physical duplicate aggregation",
+      "holding": "STATIC_ORIGIN_SHARES",
+      "rebalanced_architecture": "INACTIVE",
+      "tracking_qualification": "T1_ABSOLUTE_EXPOSURE_IMPLEMENTATION",
+      "tracking_numerical_parameters": null,
+      "T2_acceptance": "INACTIVE_DIAGNOSTIC_ONLY",
+      "physical_constituent_architecture": "INACTIVE",
+      "required_industry_missing": "HEDGE UNAVAILABLE",
+      "matching_infeasible": "HEDGE UNAVAILABLE",
+      "target_bridge": "UNSELECTED_A_OR_B"
     }
   }
 }

@@ -1,5 +1,7 @@
 # S3 proxy hedge and tracking contract — design checkpoint
 
+> Historical design comparison. The [proxy-construction approval](../../decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md) now selects fund shares, M1, static-origin shares, T1 and strict missing-industry HEDGE UNAVAILABLE. Physical constituent, M2 and rebalanced alternatives are inactive; T2 acceptance is inactive/diagnostic only. Actual funds and numerical qualifications remain unselected. The target bridge remains unresolved at the [A/B checkpoint](S3_CONVERGENCE_TARGET_BRIDGE_DESIGN_CHECKPOINT.md). Original proposal body preserved.
+
 2026-09-23 — DESIGN ONLY / RESEARCHER DECISION REQUIRED.
 
 [H-C and execution/accounting decisions are approved](../../decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md). Proxy identities, exposure construction, mapping algorithm, hedge refresh, tracking metrics/acceptance and unresolved execution details below are PROPOSALS. No proxy data, borrow evidence, tracking estimates, costs or historical strategy results are accessed.

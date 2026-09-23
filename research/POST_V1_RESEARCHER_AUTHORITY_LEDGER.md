@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-23, sequence 11): [H-C primary architecture and execution/accounting approved](../docs/decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md). Common proxy universe/rule; partial-fill abort/unwind; E-A; intended K; obligation-first exit precedence. Actual proxies, tracking contract and detailed mechanics pending. **S3 PROXY HEDGE + TRACKING CONTRACT / RESEARCHER DECISION REQUIRED**. Prior records retain their historical authority boundaries; frozen V1 and earlier approved scale/threshold/capture architecture remain.
+Current authority update (2026-09-23, sequence 12): [fund-share/M1/static-origin/T1 proxy construction approved](../docs/decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md), with strict missing-industry HEDGE UNAVAILABLE. Actual funds and numerical qualifications unselected. Convergence Target A/B and its direction/exit consequences remain unresolved; model z unchanged. **S3 CONVERGENCE TARGET BRIDGE / RESEARCHER DECISION REQUIRED**. Earlier approvals and frozen V1 remain preserved.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -88,3 +88,17 @@ Select E-A: all failed-attempt market results, execution deviations, fees, borro
 Request design-only bounded proxy/tracking comparison: market/industry/cross-industry, missing industry hedge, coefficient map, static/rebalanced, metrics/acceptance, actions and borrow. No outcome-selected proxies/tolerances, data acquisition, tracking/capture/cost estimation, numerical z0, implementation, backtest or PnL inspection.
 
 Persisted [H-C decision](../docs/decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md) and [proxy/tracking checkpoint](../docs/stages/G5/S3_PROXY_HEDGE_TRACKING_CONTRACT_DESIGN_CHECKPOINT.md). The latter's detailed mapping/target/acceptance choices remain proposals. One bounded documentation publication; NEXT_ACTION remains NONE with no continuing execution authority.
+
+## 12. 2026-09-23 — proxy construction approved; target bridge unselected
+
+Direct researcher instruction: “RESEARCHER DECISION — APPROVE S3 PROXY-HEDGE CONSTRUCTION; TARGET BRIDGE REMAINS UNRESOLVED”.
+
+Select common qualified fund-share market/industry slots; physical constituent architecture inactive. Preserve gamma_neut=B_j−beta*B_i and compatible model coefficients, with a common auxiliary rule for missing dimensions; no new history/refresh values or exposure estimates.
+
+Select M1 A*h=gamma_neut with inverse for square nonsingular A and deterministic minimum-norm A'*(A*A')^(-1)*gamma for full-row-rank underdetermined A. M2 inactive; matching infeasible => HEDGE UNAVAILABLE. Freeze actual-instrument w=(1,−beta,−h') with physical duplicate aggregation and static-origin shares; no drift-driven rebalance.
+
+Preserve total xi, residual exposure ell and unwanted tracking tau. Select T1 absolute exposure/implementation qualification and its diagnostic families; numerical tolerances/history/confidence/support unselected. T2 acceptance inactive/diagnostic only. Required industry proxy unavailable => HEDGE UNAVAILABLE, without market-only/H-A/H-B/physical fallback or relaxed tolerance.
+
+Explicitly do NOT approve the convergence target. Request comparison ONLY of A=model-gap target and B=actual-tradable-basket target, derived from d_trade=d_model+xi, including remaining target, gross target, z, C4 and mhat. The approved model z cannot change silently.
+
+Persisted [construction approval](../docs/decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md) and [target-bridge comparison](../docs/stages/G5/S3_CONVERGENCE_TARGET_BRIDGE_DESIGN_CHECKPOINT.md). No fund naming/selection, data acquisition, exposure/tracking/tolerance/capture/cost estimation, numerical z0, implementation, backtest or PnL. One bounded documentation publication; NEXT_ACTION remains NONE.
