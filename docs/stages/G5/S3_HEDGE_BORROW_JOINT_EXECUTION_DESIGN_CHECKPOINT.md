@@ -1,5 +1,7 @@
 # S3 hedge, borrow and joint execution — design checkpoint
 
+> Historical design checkpoint. The [2026-09-23 H-C approval](../../decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md) supersedes the exact-first/universal-replication proposal and binds H-C, common proxy rule, deterministic abort/unwind, E-A, intended K and obligation-first exit precedence. H-B is benchmark only; H-A inactive. All other detailed choices remain pending. Current gate: [proxy hedge and tracking contract](S3_PROXY_HEDGE_TRACKING_CONTRACT_DESIGN_CHECKPOINT.md). Original body preserved as ancestry.
+
 2026-09-22 — DESIGN ONLY / RESEARCHER DECISION REQUIRED.
 
 The [minimal capture/cost architecture](../../decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md) is approved: F/P/N/A/X, pooled P1, joint duration/exposure, one all-leg cost ledger and E1. P3 remains inactive. This document proposes the execution contract those objects require. All detailed execution choices below remain proposals. No instrument, provider, borrow contract, numerical parameter or empirical feasibility finding is selected.

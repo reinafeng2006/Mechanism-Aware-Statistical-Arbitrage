@@ -2,18 +2,18 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 hedge borrow and joint execution design researcher decision required",
+    "name": "S3 proxy hedge and tracking contract researcher decision required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "No autonomous empirical or implementation action. Await exact S3 hedge/borrow/joint-execution design and prerequisite bindings before any capture/cost estimation or numerical z0.",
-    "completed_action": "S3-CAPTURE-COST-APPROVAL-EXECUTION-DESIGN-2026-09-22",
+    "objective": "No autonomous empirical or implementation action. Await H-C common proxy universe, mapping, tracking/target contract and remaining execution bindings before any data access or estimation.",
+    "completed_action": "S3-HC-APPROVAL-PROXY-DESIGN-2026-09-23",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED",
-    "selected_architecture": "S3 peer-only hedged convergence; approved scale, alpha=0.05 empirical tail, minimal F/P/N/A/X pooled-P1 capture/cost architecture and E1; execution contract pending",
-    "unresolved_proposals": "Exact hedge/factor replication, shares/capital, borrow/recall, collateral/funding, entry/partial-fill/joint-exit contract, action/calendar failures; scenario tolerance/cap/X and pooling/support prerequisites; all numerical estimation denied",
-    "design_record": "docs/stages/G5/S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md",
+    "current_checkpoint": "S3 PROXY HEDGE + TRACKING CONTRACT / RESEARCHER DECISION REQUIRED",
+    "selected_architecture": "H-C practical factor-neutral/proxy-hedged S3; scale/alpha=0.05/P1/E1 preserved; approved abort/unwind, E-A, intended K and obligation-first exit precedence",
+    "unresolved_proposals": "Actual proxy universe, auxiliary exposure specification, common gamma-to-h map, static/rebalanced rule, tracking metrics/acceptance, proxy-target bridge; detailed entry timeout/unwind/exit contract and pooling/support prerequisites; no estimates",
+    "design_record": "docs/stages/G5/S3_PROXY_HEDGE_TRACKING_CONTRACT_DESIGN_CHECKPOINT.md",
     "allowed_scope": [],
     "forbidden_scope": [
       "Implementation",
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Current researcher instruction authorizes capture/cost architecture persistence and design-only execution-contract documentation; authority ledger sequence 10.",
+    "publication_scope": "No future publication authority. Current direct instruction authorizes H-C execution/accounting persistence and design-only proxy/tracking documentation publication; authority ledger sequence 11.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher resolves execution-contract design and outstanding prerequisites; no automatic data access, estimation or implementation",
+    "completion_condition": "Researcher resolves proxy/tracking and remaining contract prerequisites; no automatic data access, estimation or implementation",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -88,6 +88,27 @@
       "cost_multiple": null,
       "P3_fallback": "INACTIVE_SEPARATE_PRE_ACCESS_DECISION_REQUIRED",
       "numerical_estimation": "NOT_AUTHORIZED"
+    },
+    "approved_hedge_execution_accounting": "docs/decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md",
+    "hedge_execution_binding": {
+      "primary": "H-C",
+      "estimand": "Extreme pair-conditioned abnormality predicts subsequent convergence in a preregistered approximately factor-neutral tradable relative-value basket.",
+      "proxy_universe_rule": "COMMON_ACROSS_SIX_ESTIMATORS_ACTUAL_INSTRUMENTS_UNSELECTED",
+      "hedge_construction_rule": "COMMON_ACROSS_SIX_ESTIMATORS_DETAILS_UNSELECTED",
+      "exact_replication": "H-B_DIAGNOSTIC_BENCHMARK_ONLY",
+      "pair_only": "H-A_INACTIVE_PRIMARY",
+      "tracking_tolerance": null,
+      "entry": "PARTIAL_FILL_DETERMINISTIC_ABORT_UNWIND",
+      "exposure_start": "FIRST_ACTUAL_FILL",
+      "episode_admission": "COMPLETE_QUALIFIED_BASKET",
+      "failed_entry_accounting": "E-A_INCLUDE_ALL_ATTEMPT_ECONOMICS",
+      "event_denominator": "INTENDED_GROSS_K_FIXED_BEFORE_SUBMISSION",
+      "exit_precedence": [
+        "BINDING_CONTRACTUAL_LEGAL_OBLIGATIONS",
+        "FEASIBLE_RISK_REDUCTION",
+        "HEDGE_GEOMETRY"
+      ],
+      "discretionary_replacement": false
     }
   }
 }

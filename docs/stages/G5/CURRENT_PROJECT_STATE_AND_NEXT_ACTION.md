@@ -1,14 +1,14 @@
 # Current project state and next action — fresh-client entry point
 
-Updated 2026-09-22 after explicit researcher minimal capture/cost architecture approval; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
+Updated 2026-09-23 after explicit researcher H-C and execution/accounting approval; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
 
-**Current checkpoint: S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED.**
+**Current checkpoint: S3 PROXY HEDGE + TRACKING CONTRACT / RESEARCHER DECISION REQUIRED.**
 
 ## A. Objective and authority
 
 Study PIT relationships and abnormality/resolution among economically related A-share machinery securities, then distinguish descriptive relationship evidence from an economically executable trading hypothesis. The current trading design direction is peer-only hedged relative-value convergence, not mechanism identification or a proven profitable strategy.
 
-Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the capture/cost approval and execution-design persistence transaction. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits persistence of its design bindings and design-only hedge/borrow/joint-execution work, not empirical work.
+Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the H-C approval and proxy-design persistence transaction. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits persistence of its design bindings and design-only proxy mapping/tracking work, not empirical work.
 
 ## B. Frozen historical V1
 
@@ -40,9 +40,9 @@ The [complete V1.1 mathematical specification](V1_1_COMPLETE_TRADING_STRATEGY_MA
 
 ## D. Researcher-selected direction versus proposals
 
-**Selected: S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE, with the separately approved 2026-09-22 scale bindings.** The authority ledger records the researcher's selection independently of chat attachments. Source/MP1 is not part of the selected core. Selecting S3 originally approved architecture only. The [2026-09-22 decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) separately approves residual scale, two-sided orientation and reference-tail weighting architecture; the [subsequent probability decision](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule. Numerical z0 is unestimated. The [minimal scenario capture/cost architecture](../../decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md) is approved; no exact execution contract, instrument, parameter estimate or development run is approved.
+**Selected: S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE, with the separately approved 2026-09-22 scale bindings.** The authority ledger records the researcher's selection independently of chat attachments. Source/MP1 is not part of the selected core. Selecting S3 originally approved architecture only. The [2026-09-22 decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) separately approves residual scale, two-sided orientation and reference-tail weighting architecture; the [subsequent probability decision](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule. Numerical z0 is unestimated. The [minimal scenario capture/cost architecture](../../decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md) is approved; [H-C and enumerated execution/accounting bindings](../../decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md) are now approved. No actual instrument, tracking tolerance, complete execution contract, parameter estimate or development run is approved.
 
-Compact design logic (still requiring unresolved bindings):
+Historical exact-alignment design logic (H-C requires an explicitly approved proxy-target bridge before applying it economically):
 
 `d_t^c=mu_(j|i,t)^c−y_jt`; declare aligned residual-basket geometry w_t^c.
 
@@ -56,7 +56,7 @@ R0-D252, R0-C126, R0-L126, R1-M126, R1-MI126 and R3-252 remain relationship esti
 
 ## F. Exact unresolved gate
 
-Read the [approved scale decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md), [direct probability preregistration](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md), then the [capture/cost approval](../../decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md) and [execution design checkpoint](S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md).
+Read the [approved scale decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md), [direct probability preregistration](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md), then the [capture/cost approval](../../decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md), [H-C decision](../../decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md) and [proxy/tracking checkpoint](S3_PROXY_HEDGE_TRACKING_CONTRACT_DESIGN_CHECKPOINT.md).
 
 Approved scale: current-origin aligned residual MAD; common H126 prior qualified observations; daily strictly-prior refresh; z=d/sigma with invalid or insufficient scale SIGNAL UNAVAILABLE; two-sided peer convergence with signed reporting; common block/pair/direction/group weighting with R0-C/R0-L grouped. H252 MAD and H126 SD are non-selecting robustness only. Fit-overlap optimism remains.
 
@@ -66,13 +66,15 @@ Numerical z0 is NOT ESTIMATED. Reference population/dates and estimation/refresh
 
 Approved capture/cost architecture: F/P/N/A/X (F renames H), pooled prior-event P1 counts and state payoff means, joint scenario/payoff/duration/exposure law, one all-leg non-overlapping cost ledger and E1 strict positive expected net value. No flexible event-level conditional model, per-estimator tuning, safety margin or cost multiple. P3 documented but inactive. Unresolved tolerance/cap/X/support/pooling details and all numerical quantities remain unbound/unestimated.
 
-Current researcher question: freeze the exact S3 hedge/borrow/joint-execution contract before any capture/cost estimation. The design checkpoint derives R0/R3 and factor-expanded R1 mappings and compares exact versus tracking-aware replication, capital/share construction, borrow/funding, coordinated fills/aborts/exits and action/calendar failure handling. These execution choices remain proposals; empirical feasibility is unknown.
+Approved H-C estimand: extreme pair-conditioned abnormality predicts subsequent convergence in a preregistered approximately factor-neutral tradable relative-value basket. Use one common proxy universe/rule; explicit model-to-trade error xi. H-B exact replication is benchmark only; H-A inactive. Approved entry is partial-fill deterministic abort/unwind, first-fill exposure/full-basket episode admission, E-A failed-attempt accounting, intended K and obligation-first exit precedence. Detailed timing/exception rules remain pending.
+
+Current researcher question: choose the common proxy universe, exposure-to-instrument map and tracking contract. Actual instruments, auxiliary missing exposure fields, static/rebalanced rule, tracking metrics/acceptance and model-signal-to-proxy-target bridge are unselected. Do not impose universal exact replication or silently equate the model gap with the proxy gap. Feasibility is unknown; no data access.
 
 ## G. Remaining sequence — not executable NEXT_ACTION
 
 1. Scale/orientation/weighting and alpha=0.05 empirical quantile rule are approved; numerical z0 estimation remains separately gated.
 2. Minimal capture/cost architecture is approved; unresolved numerical boundaries, sparse-state/pooling and estimation remain gated.
-3. Researcher resolves exact hedge mapping, borrow, collateral and joint-leg execution contract at the current design gate.
+3. Researcher resolves H-C proxy universe/mapping/tracking and target bridge, then remaining detailed borrow/collateral/entry/exit mechanics, before any estimation.
 4. Freeze complete S3 mathematical protocol and finite research budget.
 5. Derive data requirements from those equations, not available fields.
 6. Separately authorize bounded development only.
@@ -98,19 +100,19 @@ Read [migration audit and external-artifact guide](PRE_CLIENT_MIGRATION_AUDIT.md
 
 ## K. Fresh-agent read order and conceptual reconstruction test
 
-Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → probability preregistration → approved minimal capture/cost architecture → execution-design checkpoint → scenario and parent capture/cost and earlier threshold and S3 checkpoints as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
+Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → probability preregistration → approved minimal capture/cost architecture → H-C decision → proxy/tracking checkpoint → execution/scenario and parent capture/cost and earlier threshold and S3 checkpoints as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
 
 | Reconstruction question | Canonical answer/source |
 |---|---|
 | Completed/frozen/failed? | Section B; immutable V1 tag, final freeze and terminal registry |
 | Why redesign? | Section C; economic redesign checkpoint |
 | What does S3 mean? | Sections D/E; parent equations |
-| What is approved? | Authority ledger: S3 architecture, approved scale/orientation/reference weighting and alpha=0.05 empirical quantile rule, approved minimal capture/cost architecture, plus prior held-security clarification |
-| What remains pending? | Section F; hedge/borrow/joint-execution contract and pre-estimation prerequisites |
+| What is approved? | Authority ledger: S3 architecture, approved scale/orientation/reference weighting and alpha=0.05 empirical quantile rule, approved minimal capture/cost architecture and H-C/entry/E-A/K/exit-precedence bindings, plus prior held-security clarification |
+| What remains pending? | Section F; common proxy mapping/tracking/target bridge and detailed execution prerequisites |
 | What data were exposed? | Section H; prior irreversible access-event hash/manifest |
-| Exact next action? | NONE; researcher execution-contract design decision; no execution |
+| Exact next action? | NONE; researcher proxy/tracking contract decision; no execution |
 | What remains external? | Section J; path-independent inventory and restoration guide |
 
-The 2026-09-22 capture/cost approval advances only the design checkpoint:
+The 2026-09-23 H-C approval advances only the design checkpoint:
 
-**S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED**
+**S3 PROXY HEDGE + TRACKING CONTRACT / RESEARCHER DECISION REQUIRED**

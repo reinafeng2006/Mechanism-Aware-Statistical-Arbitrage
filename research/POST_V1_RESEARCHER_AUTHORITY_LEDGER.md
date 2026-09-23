@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-22, sequence 10): [minimal scenario capture/cost architecture approved](../docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md): F/P/N/A/X, pooled P1, joint duration/exposure, one all-leg ledger and E1. P3 inactive; no estimation. Scale/alpha=0.05 unchanged; numerical z0 uncomputed. **S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED**. Prior entries retain their historical authority boundaries.
+Current authority update (2026-09-23, sequence 11): [H-C primary architecture and execution/accounting approved](../docs/decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md). Common proxy universe/rule; partial-fill abort/unwind; E-A; intended K; obligation-first exit precedence. Actual proxies, tracking contract and detailed mechanics pending. **S3 PROXY HEDGE + TRACKING CONTRACT / RESEARCHER DECISION REQUIRED**. Prior records retain their historical authority boundaries; frozen V1 and earlier approved scale/threshold/capture architecture remain.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -74,3 +74,17 @@ Approve joint (R,G,T,exposure path) treatment and the non-overlapping all-leg co
 No parameter, numerical z0 or scenario-boundary estimation. The exact hedge/borrow/execution contract must be designed first; requested design topics include all-model hedge mapping, exact versus tracking-aware factor replication, shares/gross capital, borrow/recall, collateral/funding, multi-leg/partial entry, joint exits, calendar/suspension, long/short actions and failures. No acquisition, implementation, C04, backtest or PnL.
 
 Persisted [approval](../docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md) and [execution design checkpoint](../docs/stages/G5/S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md). Execution details remain proposals, not adopted by documenting them. One bounded documentation publication; NEXT_ACTION remains NONE with no continuing execution authority.
+
+## 11. 2026-09-23 — H-C proxy-hedged estimand and execution/accounting approval
+
+Direct researcher instruction: “RESEARCHER DECISION — SELECT H-C PRACTICAL PROXY-HEDGED S3 ARCHITECTURE”.
+
+Select H-C prospectively: extreme pair-conditioned abnormality predicts subsequent convergence in a preregistered approximately factor-neutral tradable relative-value basket. Preserve model/trade residuals and xi=h'H−gamma_model'f. Exact replication is claimed only if separately demonstrated. One common proxy universe and construction rule across six estimators; preserve R0/R3 pair component and R1 exposure information. No actual proxy/tolerance selected. H-B benchmark only; H-A inactive; neither automatic fallback.
+
+Approve intended gross K fixed before submission and actual-instrument L/share mapping; K is common event denominator, peak deployed gross diagnostic and NAV aggregate denominator. Select partial-fill deterministic abort/unwind: first-fill exposure, complete-basket admission, failure-condition abort latch, cancellation, actual/late-fill unwind, no completion chase. Timing/details pending.
+
+Select E-A: all failed-attempt market results, execution deviations, fees, borrow/funding, entitlements and unwind costs enter executable economics despite no episode. Preserve the admitted/failed expectation mixture. Approve exit precedence: binding obligations, feasible risk reduction, then hedge geometry; no discretionary replacements or undefined risk-reduction algorithm.
+
+Request design-only bounded proxy/tracking comparison: market/industry/cross-industry, missing industry hedge, coefficient map, static/rebalanced, metrics/acceptance, actions and borrow. No outcome-selected proxies/tolerances, data acquisition, tracking/capture/cost estimation, numerical z0, implementation, backtest or PnL inspection.
+
+Persisted [H-C decision](../docs/decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md) and [proxy/tracking checkpoint](../docs/stages/G5/S3_PROXY_HEDGE_TRACKING_CONTRACT_DESIGN_CHECKPOINT.md). The latter's detailed mapping/target/acceptance choices remain proposals. One bounded documentation publication; NEXT_ACTION remains NONE with no continuing execution authority.

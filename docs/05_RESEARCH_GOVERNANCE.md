@@ -1,9 +1,9 @@
 # Research Governance — Current Authoritative State
 
-## Current S3 design gate — 2026-09-22
+## Current S3 design gate — 2026-09-23
 
-**S3 HEDGE + BORROW + JOINT EXECUTION DESIGN / RESEARCHER DECISION REQUIRED**.
-The researcher [approved the scale architecture](decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) and [directly preregistered alpha=0.05, z0=Q^w_0.95(abs(z_ref))](decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Numerical z0 remains unestimated, fallback inactive, occurrence/support selection of the primary threshold excluded. The researcher [approves the minimal capture/cost architecture](decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md): F/P/N/A/X, pooled prior-event P1, joint duration/exposure, one all-leg ledger and E1, with P3 inactive. Unresolved boundaries/support and all estimation stay gated. [Hedge/borrow/joint execution](stages/G5/S3_HEDGE_BORROW_JOINT_EXECUTION_DESIGN_CHECKPOINT.md) is design-only; detailed execution choices remain proposals. NEXT_ACTION remains NONE; no data access, estimation or implementation. Frozen V1 is unchanged.
+**S3 PROXY HEDGE + TRACKING CONTRACT / RESEARCHER DECISION REQUIRED**.
+The researcher [approved the scale architecture](decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) and [directly preregistered alpha=0.05, z0=Q^w_0.95(abs(z_ref))](decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Numerical z0 remains unestimated, fallback inactive, occurrence/support selection of the primary threshold excluded. The researcher [approves the minimal capture/cost architecture](decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md): F/P/N/A/X, pooled prior-event P1, joint duration/exposure, one all-leg ledger and E1, with P3 inactive. Unresolved boundaries/support and all estimation stay gated. [H-C and enumerated execution/accounting choices](decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md) are approved: common proxy universe/rule, deterministic abort/unwind, E-A, intended K and exit precedence. H-B is benchmark only; H-A inactive. [Proxy mapping/tracking](stages/G5/S3_PROXY_HEDGE_TRACKING_CONTRACT_DESIGN_CHECKPOINT.md) remains design-only, including actual instruments, acceptance and target bridge. NEXT_ACTION remains NONE; no data access, estimation or implementation. Frozen V1 is unchanged.
 
 ## Terminal V1 closure — 2026-09-18
 
