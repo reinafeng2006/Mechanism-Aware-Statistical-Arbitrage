@@ -2,17 +2,17 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 consolidated pre-development bindings required",
+    "name": "S3 consolidated pre-development protocol researcher decision required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "Mathematical architecture closed with Target B. Await one consolidated pre-development protocol freeze and separate bounded access/development authority; no autonomous empirical or implementation action.",
-    "completed_action": "S3-TARGET-B-ARCHITECTURE-CLOSURE-2026-09-27",
+    "objective": "Await one researcher decision on the complete proposed P0 protocol package. Mathematical architecture remains closed; no proposed parameter or execution/development rule is adopted and no empirical/implementation action is authorized.",
+    "completed_action": "S3-CONSOLIDATED-PRE-DEVELOPMENT-DESIGN-2026-09-27",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 MATHEMATICAL ARCHITECTURE CLOSED / PRE-DEVELOPMENT BINDINGS REQUIRED",
+    "current_checkpoint": "S3 CONSOLIDATED PRE-DEVELOPMENT PROTOCOL / RESEARCHER DECISION REQUIRED",
     "selected_architecture": "H-C fund-share/M1/static-origin/T1/Target B; unchanged model z discovery; both sign gates; P1/E1/abort-unwind/E-A/intended K",
-    "unresolved_proposals": "One consolidated gate: proxy/exposure/T1 qualification; PIT clocks/target-state accounting; execution/borrow/capital/cost; P1 event/support/maturity; reference-quantile protocol; bounded access/development/validation authority",
+    "unresolved_proposals": "Complete P0 protocol in checkpoint; every new numeric, estimator, execution, support, sample and validation setting remains PROPOSED. No outcome-selected calibration or fallback recommended.",
     "design_record": "docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md",
     "allowed_scope": [],
     "forbidden_scope": [
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Direct instruction authorizes this Target B persistence/specification/audit documentation transaction on main; authority ledger sequence 13.",
+    "publication_scope": "No future publication authority. Current researcher request authorizes creation/publication of one consolidated design checkpoint and bounded handoff/control updates on main; authority ledger sequence 14.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher freezes consolidated protocol, then separately authorizes bounded actions; no automatic acquisition, estimation or implementation",
+    "completion_condition": "Researcher decision on the single consolidated proposed protocol package; any acquisition, implementation, estimation or result inspection requires separate bounded authority.",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -149,6 +149,8 @@
       "economic_coordinate": "TARGET_B_ACTUAL_HC_BASKET_INTENDED_K",
       "numerical_estimation": "NOT_AUTHORIZED"
     },
-    "mathematical_architecture": "CLOSED_NOT_EXECUTABLE_READY"
+    "mathematical_architecture": "CLOSED_NOT_EXECUTABLE_READY",
+    "protocol_proposal": "docs/stages/G5/S3_CONSOLIDATED_PRE_DEVELOPMENT_PROTOCOL_CHECKPOINT.md",
+    "protocol_proposal_status": "PROPOSED_NOT_APPROVED"
   }
 }

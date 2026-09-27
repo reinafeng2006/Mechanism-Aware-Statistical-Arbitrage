@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-23, sequence 12): [fund-share/M1/static-origin/T1 proxy construction approved](../docs/decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md), with strict missing-industry HEDGE UNAVAILABLE. Actual funds and numerical qualifications unselected. Convergence Target A/B and its direction/exit consequences remain unresolved; model z unchanged. **S3 CONVERGENCE TARGET BRIDGE / RESEARCHER DECISION REQUIRED**. Earlier approvals and frozen V1 remain preserved.
+Current authority update (2026-09-27, sequence 14): Target B and the [canonical mathematical architecture](../docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md) remain approved as recorded in sequence 13. The researcher requested one [consolidated pre-development protocol proposal](../docs/stages/G5/S3_CONSOLIDATED_PRE_DEVELOPMENT_PROTOCOL_CHECKPOINT.md); none of its new rules/settings is approved. **S3 CONSOLIDATED PRE-DEVELOPMENT PROTOCOL / RESEARCHER DECISION REQUIRED**. NEXT_ACTION remains NONE; frozen V1 unchanged.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -114,3 +114,13 @@ Approve full remaining target abs(D_u)/L_u, not expected capture; static actual-
 Persisted [Target B approval](../docs/decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md), [canonical mathematical specification](../docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md) and [consolidated pre-development audit](../docs/stages/G5/S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md). One remaining protocol-freeze gate groups unresolved bindings without choosing any. Mathematical closure is not executable readiness.
 
 Direct authority covers this bounded documentation/control publication to GitHub main only. NEXT_ACTION remains NONE with no continuing publication/execution authority. No actual funds, data access/acquisition, numerical z0, exposures/tracking/capture/cost estimation, implementation, C04 repair, backtest or PnL inspection. Frozen V1 and estimators unchanged.
+
+## 14. 2026-09-27 — consolidated pre-development protocol design requested
+
+Direct researcher request: “S3 PRE-DEVELOPMENT PROTOCOL — CONSOLIDATED DESIGN”, anchored to canonical bf95f790dfb1d4a65173a819c375b7063aa58bd2. Do not reopen/modify the mathematical architecture. Convert the audit into ONE complete proposed protocol for one researcher decision, not sequential strategy micro-gates.
+
+Scope: prospective proxy eligibility/selection and simple common exposures; numerical-history/support and T1 qualification proposals; exact PIT timeline/accounting; holding/state boundaries; sizing/resources; borrow/funding evidence; deterministic entry/abort/exception exits; all-leg costs; pooled P1 including failed attempts; mechanical reference quantile protocol; finite development budget; strictly future validation; and a minimal acquisition requirements inventory. End with one decision table and one complete recommendation, at most one fallback, without adopting recommendations.
+
+Persisted [consolidated checkpoint](../docs/stages/G5/S3_CONSOLIDATED_PRE_DEVELOPMENT_PROTOCOL_CHECKPOINT.md). P0 proposes fixed ex-ante rules and mechanical estimates, zero outcome-selected calibration grids and no fallback. All new numeric settings/estimators/support/state/execution/development/validation rules are PROPOSED ONLY. Exact geometry, evidence and support can imply unavailability; no feasibility verdict is asserted.
+
+One documentation/control publication on main is within the requested canonical design workflow. No acquisition, historical scientific-data access, fitting, numerical z0, implementation, backtest or PnL inspection. Existing approved architecture/decision files and frozen V1 are unchanged. NEXT_ACTION remains NONE; no continuing publication or execution authority.

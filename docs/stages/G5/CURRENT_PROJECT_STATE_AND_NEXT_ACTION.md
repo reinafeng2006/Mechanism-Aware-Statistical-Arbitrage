@@ -1,14 +1,14 @@
 # Current project state and next action — fresh-client entry point
 
-Updated 2026-09-27 after explicit researcher Target B approval and design-completeness audit; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
+Updated 2026-09-27 after the researcher-requested consolidated pre-development design package; Target B architecture remains approved; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
 
-**Current checkpoint: S3 MATHEMATICAL ARCHITECTURE CLOSED / PRE-DEVELOPMENT BINDINGS REQUIRED.**
+**Current checkpoint: S3 CONSOLIDATED PRE-DEVELOPMENT PROTOCOL / RESEARCHER DECISION REQUIRED.**
 
 ## A. Objective and authority
 
 Study PIT relationships and abnormality/resolution among economically related A-share machinery securities, then distinguish descriptive relationship evidence from an economically executable trading hypothesis. The current trading design direction is peer-only hedged relative-value convergence, not mechanism identification or a proven profitable strategy.
 
-Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the Target B approval and mathematical-architecture/audit persistence transaction. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits Target B persistence, canonical mathematical consolidation and a design-completeness audit only.
+Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the consolidated protocol design publication. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits one complete proposed pre-development protocol package for one decision. No proposal or numerical setting in that package is approved by publication.
 
 ## B. Frozen historical V1
 
@@ -70,7 +70,9 @@ Approved Target B: D_t_trade=d_model+xi_t using only signal-time PIT inputs. Req
 
 Read the [Target B approval](../../decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md), [canonical specification](S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md) and [consolidated bindings audit](S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md).
 
-The audit groups all remaining bindings into: (1) actual proxies/exposures/T1 qualification; (2) PIT clocks/Target-B measurement/state/accounting; (3) execution/borrow/capital/cost contract; (4) pooled P1 event/support/maturity contract including failed attempts; (5) mechanical reference-quantile protocol; (6) bounded access/development/validation authority. Freeze estimation rules before data; fitted values are later authorized outputs. Proposed development dates/folds remain unapproved.
+The [consolidated protocol checkpoint](S3_CONSOLIDATED_PRE_DEVELOPMENT_PROTOCOL_CHECKPOINT.md) now proposes the complete rules under one package P0; **all newly specified numbers, dates, estimators, execution rules and support minima remain PROPOSED**. It recommends fixed ex-ante rules plus mechanical estimation, with no outcome-selected calibration grid and no fallback. Exact lot compatibility, qualified historical fills/borrow and rare-state support can render it unavailable; no evidence has been checked.
+
+The prior audit groups all remaining bindings into: (1) actual proxies/exposures/T1 qualification; (2) PIT clocks/Target-B measurement/state/accounting; (3) execution/borrow/capital/cost contract; (4) pooled P1 event/support/maturity contract including failed attempts; (5) mechanical reference-quantile protocol; (6) bounded access/development/validation authority. Freeze estimation rules before data; fitted values are later authorized outputs. The checkpoint's proposed 2015 warm-up/2016 formation/six 2017–2019 blocks and future post-freeze validation remain unapproved.
 
 NEXT_ACTION remains NONE. Protocol freeze does not automatically authorize acquisition, implementation, estimation, backtesting or PnL inspection. Each bounded future action requires explicit authority and qualified prerequisites.
 
@@ -92,7 +94,7 @@ Read [migration audit and external-artifact guide](PRE_CLIENT_MIGRATION_AUDIT.md
 
 ## K. Fresh-agent read order and conceptual reconstruction test
 
-Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → probability preregistration → approved minimal capture/cost architecture → H-C decision → proxy-construction approval → Target B approval → canonical S3 specification → pre-development audit → historical target-bridge comparison → historical proxy/execution/scenario and parent capture/cost and earlier threshold and S3 checkpoints as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
+Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → probability preregistration → approved minimal capture/cost architecture → H-C decision → proxy-construction approval → Target B approval → canonical S3 specification → pre-development audit → consolidated protocol proposal → historical target-bridge comparison → historical proxy/execution/scenario and parent capture/cost and earlier threshold and S3 checkpoints as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
 
 | Reconstruction question | Canonical answer/source |
 |---|---|
@@ -100,11 +102,11 @@ Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved s
 | Why redesign? | Section C; economic redesign checkpoint |
 | What does S3 mean? | Sections D/E; parent equations |
 | What is approved? | Authority ledger: S3 architecture, approved scale/orientation/reference weighting and alpha=0.05 empirical quantile rule, approved minimal capture/cost architecture and H-C/entry/E-A/K/exit-precedence and fund-share/M1/static/T1 bindings, Target B with both sign gates and C4 trade-coordinate convergence, plus prior held-security clarification |
-| What remains pending? | Sections F/G; consolidated pre-development protocol bindings, not target selection |
+| What remains pending? | Sections F/G; one complete proposed protocol package awaits researcher approval, not new target selection |
 | What data were exposed? | Section H; prior irreversible access-event hash/manifest |
-| Exact next action? | NONE; consolidated pre-development bindings required; no execution |
+| Exact next action? | NONE; consolidated protocol researcher decision required; no execution |
 | What remains external? | Section J; path-independent inventory and restoration guide |
 
-The 2026-09-27 Target B approval closes the mathematical architecture only:
+The mathematical architecture remains closed. The 2026-09-27 consolidated design is a proposal for one researcher decision:
 
-**S3 MATHEMATICAL ARCHITECTURE CLOSED / PRE-DEVELOPMENT BINDINGS REQUIRED**
+**S3 CONSOLIDATED PRE-DEVELOPMENT PROTOCOL / RESEARCHER DECISION REQUIRED**
