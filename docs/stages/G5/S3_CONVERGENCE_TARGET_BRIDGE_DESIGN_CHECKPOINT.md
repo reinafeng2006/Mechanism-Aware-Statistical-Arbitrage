@@ -1,3 +1,5 @@
+> Historical comparison superseded on 2026-09-27 by [Target B approval](../../decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md), including explicit same-direction sign gates. The unchanged body below records the prior unselected alternatives. Current authority is the [canonical specification](S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md) and [pre-development audit](S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md).
+
 # S3 convergence target bridge — researcher comparison
 
 2026-09-23 — DESIGN ONLY / TARGET A AND TARGET B UNSELECTED.

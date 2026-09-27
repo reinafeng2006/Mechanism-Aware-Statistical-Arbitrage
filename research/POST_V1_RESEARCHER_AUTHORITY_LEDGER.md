@@ -102,3 +102,15 @@ Preserve total xi, residual exposure ell and unwanted tracking tau. Select T1 ab
 Explicitly do NOT approve the convergence target. Request comparison ONLY of A=model-gap target and B=actual-tradable-basket target, derived from d_trade=d_model+xi, including remaining target, gross target, z, C4 and mhat. The approved model z cannot change silently.
 
 Persisted [construction approval](../docs/decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md) and [target-bridge comparison](../docs/stages/G5/S3_CONVERGENCE_TARGET_BRIDGE_DESIGN_CHECKPOINT.md). No fund naming/selection, data acquisition, exposure/tracking/tolerance/capture/cost estimation, numerical z0, implementation, backtest or PnL. One bounded documentation publication; NEXT_ACTION remains NONE.
+
+## 13. 2026-09-27 — Target B selected; mathematical architecture closed
+
+Direct researcher instruction: “RESEARCHER DECISION — SELECT TARGET B: TRADABLE-BASKET CONVERGENCE TARGET”.
+
+Preserve model d/sigma and alpha=.05 weighted empirical model-z discovery. Select D_t_trade=d_model+xi_t, using only signal-time PIT transformation inputs. Require d_model*D_t_trade>0; otherwise TARGET-MAPPING UNAVAILABLE / NO TRADE, no reversal or Target A. Subtract actual-basket overnight movement: D_u=D_t_trade−DeltaB_ON_trade; require D_t_trade*D_u>0 or OPPORTUNITY EXHAUSTED / NO TRADE. No resetting. All three signs agree; s=sign(D_u). Missing/nonfinite required inputs remain unavailable.
+
+Approve full remaining target abs(D_u)/L_u, not expected capture; static actual-basket remaining displacement R_trade(q)=D_u−DeltaB_u_trade(q); normal C4 trigger s*R_trade(q)<=0, subject to future complete holding/risk/exception contract. Future realized tau cannot retrospectively alter target/admission/orientation/exit. Scenario states/payoffs/duration/costs use Target B, same actual H-C basket and intended K; pooled P1/E1 and E-A remain.
+
+Persisted [Target B approval](../docs/decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md), [canonical mathematical specification](../docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md) and [consolidated pre-development audit](../docs/stages/G5/S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md). One remaining protocol-freeze gate groups unresolved bindings without choosing any. Mathematical closure is not executable readiness.
+
+Direct authority covers this bounded documentation/control publication to GitHub main only. NEXT_ACTION remains NONE with no continuing publication/execution authority. No actual funds, data access/acquisition, numerical z0, exposures/tracking/capture/cost estimation, implementation, C04 repair, backtest or PnL inspection. Frozen V1 and estimators unchanged.

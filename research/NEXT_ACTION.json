@@ -2,18 +2,18 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 convergence target bridge researcher decision required",
+    "name": "S3 consolidated pre-development bindings required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "No autonomous empirical or implementation action. Await Target A/B selection and explicit orientation/exit interpretation; actual funds, numerical qualification and execution prerequisites remain before any estimation.",
-    "completed_action": "S3-PROXY-CONSTRUCTION-APPROVAL-TARGET-DESIGN-2026-09-23",
+    "objective": "Mathematical architecture closed with Target B. Await one consolidated pre-development protocol freeze and separate bounded access/development authority; no autonomous empirical or implementation action.",
+    "completed_action": "S3-TARGET-B-ARCHITECTURE-CLOSURE-2026-09-27",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 CONVERGENCE TARGET BRIDGE / RESEARCHER DECISION REQUIRED",
-    "selected_architecture": "H-C fund-share/M1/static-origin/T1; approved scale/model-alpha/P1/E1/abort-unwind/E-A/intended K preserved; convergence target UNSELECTED",
-    "unresolved_proposals": "Target A=model-gap versus B=tradable-basket gap; orientation/persistence/C4 and payoff-label implications; actual funds, common auxiliary exposure specification, T1 numerical qualification and remaining execution/pooling/support prerequisites",
-    "design_record": "docs/stages/G5/S3_CONVERGENCE_TARGET_BRIDGE_DESIGN_CHECKPOINT.md",
+    "current_checkpoint": "S3 MATHEMATICAL ARCHITECTURE CLOSED / PRE-DEVELOPMENT BINDINGS REQUIRED",
+    "selected_architecture": "H-C fund-share/M1/static-origin/T1/Target B; unchanged model z discovery; both sign gates; P1/E1/abort-unwind/E-A/intended K",
+    "unresolved_proposals": "One consolidated gate: proxy/exposure/T1 qualification; PIT clocks/target-state accounting; execution/borrow/capital/cost; P1 event/support/maturity; reference-quantile protocol; bounded access/development/validation authority",
+    "design_record": "docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md",
     "allowed_scope": [],
     "forbidden_scope": [
       "Implementation",
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Current instruction authorizes proxy-construction persistence and design-only A/B target comparison; authority ledger sequence 12.",
+    "publication_scope": "No future publication authority. Direct instruction authorizes this Target B persistence/specification/audit documentation transaction on main; authority ledger sequence 13.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher selects target bridge and resolves remaining prerequisites; no automatic data access, estimation or implementation",
+    "completion_condition": "Researcher freezes consolidated protocol, then separately authorizes bounded actions; no automatic acquisition, estimation or implementation",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -128,7 +128,27 @@
       "physical_constituent_architecture": "INACTIVE",
       "required_industry_missing": "HEDGE UNAVAILABLE",
       "matching_infeasible": "HEDGE UNAVAILABLE",
-      "target_bridge": "UNSELECTED_A_OR_B"
-    }
+      "target_bridge": "TARGET_B_WITH_MODEL_TRADE_ENTRY_SIGN_CONCORDANCE"
+    },
+    "pre_development_audit": "docs/stages/G5/S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md",
+    "approved_target_bridge": "docs/decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md",
+    "target_binding": {
+      "primary": "B_TRADABLE_BASKET",
+      "discovery": "UNCHANGED_MODEL_Z_GATE",
+      "origin": "D_t_trade=d_model+xi_t; signal-time PIT inputs only",
+      "signal_sign_gate": "d_model*D_t_trade>0",
+      "signal_sign_failure": "TARGET-MAPPING UNAVAILABLE / NO TRADE",
+      "overnight": "D_u=D_t_trade-DeltaB_ON_trade",
+      "entry_sign_gate": "D_t_trade*D_u>0",
+      "entry_sign_failure": "OPPORTUNITY EXHAUSTED / NO TRADE",
+      "orientation": "sign(d_model)=sign(D_t_trade)=sign(D_u)=s",
+      "target_payoff": "abs(D_u)/L_u; not expected capture",
+      "C4": "s*(D_u-DeltaB_u_trade(q))<=0; qualified static-origin actual basket",
+      "future_tau_target_revision": false,
+      "Target_A_fallback": "INACTIVE",
+      "economic_coordinate": "TARGET_B_ACTUAL_HC_BASKET_INTENDED_K",
+      "numerical_estimation": "NOT_AUTHORIZED"
+    },
+    "mathematical_architecture": "CLOSED_NOT_EXECUTABLE_READY"
   }
 }

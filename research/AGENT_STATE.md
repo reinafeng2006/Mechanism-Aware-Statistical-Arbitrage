@@ -1,27 +1,27 @@
 # Research Execution Agent State
 
 State schema: `REA-STATE-1.0`
-As-of: 2026-09-23
+As-of: 2026-09-27
 Basis: repository records and Git state verified during initialization; prompt assertions were not treated as authority.
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `S3 CONVERGENCE TARGET BRIDGE / RESEARCHER DECISION REQUIRED` |
+| Current stage | `S3 MATHEMATICAL ARCHITECTURE CLOSED / PRE-DEVELOPMENT BINDINGS REQUIRED` |
 | Stage status | Design-only checkpoint complete; all data correction, acquisition, implementation, backtesting, trading and PnL/result inspection remain paused |
-| Latest frozen decision | Fund-share/M1/static-origin/T1 proxy construction approved; strict missing-industry HEDGE UNAVAILABLE; convergence target unselected; earlier H-C/scale/threshold/capture bindings preserved |
-| Current substage | Compare only Target A=model-gap versus B=actual-basket gap; derive direction/remaining target/C4/capture effects with model z unchanged; no target approved |
+| Latest frozen decision | Target B approved; unchanged model z discovery; PIT mapping and both sign gates; C4 tradable convergence; earlier architecture preserved |
+| Current substage | Mathematical architecture closed; one consolidated pre-development protocol gate remains; not executable readiness |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
 | Computation authorization | NONE. No repeat, repair, rescue, R4-2025/original A6/G5/V2 execution; no further PnL inspection |
-| Current authorized action | NONE; researcher convergence-target decision required; no future data, estimation, implementation or publication authority |
+| Current authorized action | NONE; consolidated pre-development bindings required; no future data, estimation, implementation or publication authority |
 | Last validation state | Current documentation/control structural checks recorded in latest run log. PowerShell suite unavailable in this client; core/final-result validation not run under no-data scope. Earlier PASS records are historical |
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
-| Remote state observed | Base main verified at e2ce1931a27bd76c5e49ca58b3b71b25cfd86459 before this documentation transaction; frozen V1 checked unchanged at closeout |
-| Researcher action required | YES; S3_CONVERGENCE_TARGET_BRIDGE_DESIGN_CHECKPOINT.md; target and orientation/exit interpretation unresolved |
+| Remote state observed | Base main verified at 5101806b4eefba9f90872bd2d3afaf5d1259d5fb before this documentation transaction; frozen V1 checked unchanged at closeout |
+| Researcher action required | YES; S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md; freeze consolidated protocol before separately authorized development |
 
-Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Approved design: [scale architecture](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md). Approved threshold: [direct probability preregistration](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Approved capture/cost: [minimal architecture](../docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md). Approved H-C/execution/accounting: [decision](../docs/decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md). Approved proxy construction: [decision](../docs/decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md). Current gate: [convergence target bridge](../docs/stages/G5/S3_CONVERGENCE_TARGET_BRIDGE_DESIGN_CHECKPOINT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
+Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Approved design: [scale architecture](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md). Approved threshold: [direct probability preregistration](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Approved capture/cost: [minimal architecture](../docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md). Approved H-C/execution/accounting: [decision](../docs/decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md). Approved proxy construction: [decision](../docs/decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md). Approved target: [Target B](../docs/decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md). Current mathematical chain: [canonical S3 specification](../docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md). Current gate: [pre-development audit](../docs/stages/G5/S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
 
 ## Historical V1 closure records (not active authorization)
 

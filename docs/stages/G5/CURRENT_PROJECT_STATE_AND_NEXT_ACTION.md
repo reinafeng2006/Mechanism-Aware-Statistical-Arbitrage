@@ -1,14 +1,14 @@
 # Current project state and next action — fresh-client entry point
 
-Updated 2026-09-23 after explicit researcher proxy-construction approval; convergence target unresolved; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
+Updated 2026-09-27 after explicit researcher Target B approval and design-completeness audit; migration ancestry 2026-09-18. **Read this before any research action.** This file is the repository-architecture equivalent of `docs/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md`; the docs root intentionally contains exactly six canonical documents. No conversation or original client attachment is needed to understand the current decision boundary.
 
-**Current checkpoint: S3 CONVERGENCE TARGET BRIDGE / RESEARCHER DECISION REQUIRED.**
+**Current checkpoint: S3 MATHEMATICAL ARCHITECTURE CLOSED / PRE-DEVELOPMENT BINDINGS REQUIRED.**
 
 ## A. Objective and authority
 
 Study PIT relationships and abnormality/resolution among economically related A-share machinery securities, then distinguish descriptive relationship evidence from an economically executable trading hypothesis. The current trading design direction is peer-only hedged relative-value convergence, not mechanism identification or a proven profitable strategy.
 
-Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the proxy-construction approval and target-comparison persistence transaction. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits persistence of its design bindings and design-only Target A/B comparison, not empirical work.
+Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract. It remains NONE after the Target B approval and mathematical-architecture/audit persistence transaction. An old approval, runnable script, data presence or proposal is not authority to resume. The latest researcher request permits Target B persistence, canonical mathematical consolidation and a design-completeness audit only.
 
 ## B. Frozen historical V1
 
@@ -40,15 +40,9 @@ The [complete V1.1 mathematical specification](V1_1_COMPLETE_TRADING_STRATEGY_MA
 
 ## D. Researcher-selected direction versus proposals
 
-**Selected: S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE, with the separately approved 2026-09-22 scale bindings.** The authority ledger records the researcher's selection independently of chat attachments. Source/MP1 is not part of the selected core. Selecting S3 originally approved architecture only. The [2026-09-22 decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) separately approves residual scale, two-sided orientation and reference-tail weighting architecture; the [subsequent probability decision](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule. Numerical z0 is unestimated. The [minimal scenario capture/cost architecture](../../decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md) is approved; [H-C and enumerated execution/accounting bindings](../../decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md) are now approved. [Fund-share/M1/static-origin/T1 construction](../../decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md) is now approved. No convergence target, actual fund, tracking tolerance, complete execution contract, parameter estimate or development run is approved.
+**Selected: S3 — PEER-ONLY HEDGED RELATIVE-VALUE CONVERGENCE, with the separately approved 2026-09-22 scale bindings.** The authority ledger records the researcher's selection independently of chat attachments. Source/MP1 is not part of the selected core. Selecting S3 originally approved architecture only. The [2026-09-22 decision](../../decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md) separately approves residual scale, two-sided orientation and reference-tail weighting architecture; the [subsequent probability decision](../../decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md) freezes alpha=0.05 and the weighted empirical 95th-percentile rule. Numerical z0 is unestimated. The [minimal scenario capture/cost architecture](../../decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md) is approved; [H-C and enumerated execution/accounting bindings](../../decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md) are now approved. [Fund-share/M1/static-origin/T1 construction](../../decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md) is now approved. [Target B](../../decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md) is approved with model/trade/entry sign concordance. No actual fund, tracking tolerance, complete execution contract, parameter estimate or development run is approved.
 
-Historical exact-alignment design logic (H-C requires an explicitly approved proxy-target bridge before applying it economically):
-
-`d_t^c=mu_(j|i,t)^c−y_jt`; declare aligned residual-basket geometry w_t^c.
-
-`epsilon_(s;t)^c=w_t^c' r_s−a0_t^c`; `z_t^c=d_t^c/sigma_t^c`.
-
-Subtract overnight basket movement to obtain remaining d_u; preserve the origin rather than resetting a vanished gap. Admit only with valid scale/signal, the approved threshold/orientation, `d_t*d_u>0`, separately defined `m_hat_u>c_hat_RT,u`, and complete hedge/borrow/execution feasibility. Position and exit must match that same relative basket; a response slope is not automatically a shares hedge ratio. Parent equations and three alternatives remain in the [economic redesign checkpoint](TRADING_STRATEGY_ECONOMIC_REDESIGN_CHECKPOINT.md). Only S3 was selected from that comparison; its detailed proposals were not approved wholesale.
+Current canonical chain: model abnormality → unchanged model z-gate → H-C proxy mapping → Target B → overnight persistence → capture/cost gate → execution → C4 tradable-basket convergence → PnL accounting. Read the [canonical S3 mathematical specification](S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md). This is architecture closure, not executable readiness or a claim of profitable convergence.
 
 ## E. Six-model role
 
@@ -70,19 +64,15 @@ Approved H-C estimand: extreme pair-conditioned abnormality predicts subsequent 
 
 Approved proxy construction: common fund-share slots; gamma_neut=B_j−beta*B_i with compatible model exposure information retained; M1 exact declared exposure matching and its specified inverse/minimum-norm solution; actual-instrument basket; static-origin shares; T1 absolute exposure/implementation-tracking qualification; strict missing-industry HEDGE UNAVAILABLE. Actual funds, auxiliary exposure details and numerical qualification remain unselected. Physical constituent/M2/rebalanced alternatives are inactive; T2 acceptance is inactive/diagnostic only.
 
-Current researcher question: Target A uses d_model as a hypothesized proxy-basket displacement; Target B uses d_trade=d_model+xi in the actual basket coordinate. Neither target or related orientation/exit interpretation is approved. The target checkpoint derives D_t, D_u, full target displacement, C4 and capture/cost consequences. Model z remains the discovery gate; no tradable-residual threshold is silently substituted.
+Approved Target B: D_t_trade=d_model+xi_t using only signal-time PIT inputs. Require d_model*D_t_trade>0 or TARGET-MAPPING UNAVAILABLE / NO TRADE. Set D_u=D_t_trade−DeltaB_ON_trade and require D_t_trade*D_u>0 or OPPORTUNITY EXHAUSTED / NO TRADE. No reversal or target reset; s=sign(D_u). Missing/nonfinite inputs remain unavailable. Full remaining target is abs(D_u)/L_u; normal C4 is s*(D_u−DeltaB_u_trade(q))<=0. Future realized tau cannot alter origin admission, orientation, target or exit retrospectively. Scenario labels/payoffs/duration/costs use this same actual basket and intended K. Model z is discovery, not the trade target.
 
-## G. Remaining sequence — not executable NEXT_ACTION
+## G. One consolidated pre-development gate — not execution authority
 
-1. Scale/orientation/weighting and alpha=0.05 empirical quantile rule are approved; numerical z0 estimation remains separately gated.
-2. Minimal capture/cost architecture is approved; unresolved numerical boundaries, sparse-state/pooling and estimation remain gated.
-3. Researcher selects the A/B convergence target bridge and resolves direction/exit interpretation, actual funds, auxiliary exposure/T1 numerical qualification and remaining execution mechanics before estimation.
-4. Freeze complete S3 mathematical protocol and finite research budget.
-5. Derive data requirements from those equations, not available fields.
-6. Separately authorize bounded development only.
-7. Use prospective or independently demonstrated untouched validation after the final protocol freeze.
+Read the [Target B approval](../../decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md), [canonical specification](S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md) and [consolidated bindings audit](S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md).
 
-Each future step requires explicit authority. A selection at step 1 is not permission to jump to calibration or acquisition.
+The audit groups all remaining bindings into: (1) actual proxies/exposures/T1 qualification; (2) PIT clocks/Target-B measurement/state/accounting; (3) execution/borrow/capital/cost contract; (4) pooled P1 event/support/maturity contract including failed attempts; (5) mechanical reference-quantile protocol; (6) bounded access/development/validation authority. Freeze estimation rules before data; fitted values are later authorized outputs. Proposed development dates/folds remain unapproved.
+
+NEXT_ACTION remains NONE. Protocol freeze does not automatically authorize acquisition, implementation, estimation, backtesting or PnL inspection. Each bounded future action requires explicit authority and qualified prerequisites.
 
 ## H. Exposure history
 
@@ -102,19 +92,19 @@ Read [migration audit and external-artifact guide](PRE_CLIENT_MIGRATION_AUDIT.md
 
 ## K. Fresh-agent read order and conceptual reconstruction test
 
-Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → probability preregistration → approved minimal capture/cost architecture → H-C decision → proxy-construction approval → target-bridge comparison → historical proxy/execution/scenario and parent capture/cost and earlier threshold and S3 checkpoints as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
+Read this file → AGENTS/policy/NEXT_ACTION → authority ledger → approved scale decision → probability preregistration → approved minimal capture/cost architecture → H-C decision → proxy-construction approval → Target B approval → canonical S3 specification → pre-development audit → historical target-bridge comparison → historical proxy/execution/scenario and parent capture/cost and earlier threshold and S3 checkpoints as ancestry → parent redesign → historical mathematical specification as needed → external guide only for storage questions. Current records supersede old 'local-only' statements in append-only logs; the migration commit publishes those documents without altering their scientific content.
 
 | Reconstruction question | Canonical answer/source |
 |---|---|
 | Completed/frozen/failed? | Section B; immutable V1 tag, final freeze and terminal registry |
 | Why redesign? | Section C; economic redesign checkpoint |
 | What does S3 mean? | Sections D/E; parent equations |
-| What is approved? | Authority ledger: S3 architecture, approved scale/orientation/reference weighting and alpha=0.05 empirical quantile rule, approved minimal capture/cost architecture and H-C/entry/E-A/K/exit-precedence and fund-share/M1/static/T1 bindings, plus prior held-security clarification |
-| What remains pending? | Section F; Target A/B and direction/exit semantics; actual funds/numerical qualification/execution prerequisites |
+| What is approved? | Authority ledger: S3 architecture, approved scale/orientation/reference weighting and alpha=0.05 empirical quantile rule, approved minimal capture/cost architecture and H-C/entry/E-A/K/exit-precedence and fund-share/M1/static/T1 bindings, Target B with both sign gates and C4 trade-coordinate convergence, plus prior held-security clarification |
+| What remains pending? | Sections F/G; consolidated pre-development protocol bindings, not target selection |
 | What data were exposed? | Section H; prior irreversible access-event hash/manifest |
-| Exact next action? | NONE; researcher convergence-target decision; no execution |
+| Exact next action? | NONE; consolidated pre-development bindings required; no execution |
 | What remains external? | Section J; path-independent inventory and restoration guide |
 
-The 2026-09-23 proxy-construction approval advances only the design checkpoint:
+The 2026-09-27 Target B approval closes the mathematical architecture only:
 
-**S3 CONVERGENCE TARGET BRIDGE / RESEARCHER DECISION REQUIRED**
+**S3 MATHEMATICAL ARCHITECTURE CLOSED / PRE-DEVELOPMENT BINDINGS REQUIRED**
