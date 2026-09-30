@@ -1,3 +1,5 @@
+> Status update 2026-09-30: [enumerated structural rules are approved](../../decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md), while new numerical constants remain unbound. See the [numerical constants audit](S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md). The original proposal body below is preserved; its “proposed in full” wording describes its publication date, not the latest partial approval. No blanket P0 or execution approval follows.
+
 # S3 consolidated pre-development protocol — researcher decision package
 
 2026-09-27 · **PROPOSED IN FULL — NOT APPROVED, NOT EXECUTION AUTHORITY**.

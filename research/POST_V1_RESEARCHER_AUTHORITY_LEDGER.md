@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-27, sequence 14): Target B and the [canonical mathematical architecture](../docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md) remain approved as recorded in sequence 13. The researcher requested one [consolidated pre-development protocol proposal](../docs/stages/G5/S3_CONSOLIDATED_PRE_DEVELOPMENT_PROTOCOL_CHECKPOINT.md); none of its new rules/settings is approved. **S3 CONSOLIDATED PRE-DEVELOPMENT PROTOCOL / RESEARCHER DECISION REQUIRED**. NEXT_ACTION remains NONE; frozen V1 unchanged.
+Current authority update (2026-09-30, sequence 15): [enumerated structural S3 protocol rules approved](../docs/decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md), while new numerical policy constants remain unfrozen. Existing H126/model-alpha/Target B and other approvals remain. [Numerical constants audit](../docs/stages/G5/S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md) supplies classifications and alternatives without selecting them. **S3 NUMERICAL PROTOCOL CONSTANTS / RESEARCHER DECISION REQUIRED**. NEXT_ACTION remains NONE; V1 unchanged.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -124,3 +124,15 @@ Scope: prospective proxy eligibility/selection and simple common exposures; nume
 Persisted [consolidated checkpoint](../docs/stages/G5/S3_CONSOLIDATED_PRE_DEVELOPMENT_PROTOCOL_CHECKPOINT.md). P0 proposes fixed ex-ante rules and mechanical estimates, zero outcome-selected calibration grids and no fallback. All new numeric settings/estimators/support/state/execution/development/validation rules are PROPOSED ONLY. Exact geometry, evidence and support can imply unavailability; no feasibility verdict is asserted.
 
 One documentation/control publication on main is within the requested canonical design workflow. No acquisition, historical scientific-data access, fitting, numerical z0, implementation, backtest or PnL inspection. Existing approved architecture/decision files and frozen V1 are unchanged. NEXT_ACTION remains NONE; no continuing publication or execution authority.
+
+## 15. 2026-09-30 — partial structural approval; numerical constants audit required
+
+Direct researcher instruction: “S3 CONSOLIDATED PRE-DEVELOPMENT PROTOCOL — PARTIAL APPROVAL / NUMERICAL CONSTANTS AUDIT REQUIRED”.
+
+Approve qualified fund-share/deterministic registry and common auxiliary architectures across six estimators; M1 with strict infeasibility handling; static-origin H-C/Target B; current-origin H126 daily MAD; weighted empirical 5% two-sided model-z; five mature F/P/N/A/X states with separate censor/unavailable status; pooled low-dimensional P1/E1; intended K/E-A failed-attempt economics; partial-fill deterministic abort/unwind; strict missing hedge/borrow/accounting handling; no fallback/rescue/flexible ML; prospective post-freeze validation, exposed 2020–2025 non-pristine.
+
+Do NOT freeze all new P0 numerical constants. Audit every explicit policy constant into institutional/contractual, mathematically necessary, administrative/ex-ante, statistically motivated, or future mechanical quantity. State value, rationale/authority, estimand/economic sensitivity, outcome-free justification and bounded alternatives. Preserve already-approved numerical bindings; similarly numbered proposed objects are distinct.
+
+Persisted [partial approval](../docs/decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md) and [numerical audit](../docs/stages/G5/S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md). All new values remain unselected, and structural approval does not imply wholesale approval of unenumerated P0 method details. Historical protocol body retained with status annotation.
+
+Documentation/control publication on main only. No data acquisition/access, estimation, implementation, calibration, numerical z0, backtest or PnL inspection. NEXT_ACTION remains NONE; frozen V1 and canonical mathematical specification unchanged.

@@ -2,17 +2,17 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 consolidated pre-development protocol researcher decision required",
+    "name": "S3 numerical protocol constants researcher decision required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
     "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "Await one researcher decision on the complete proposed P0 protocol package. Mathematical architecture remains closed; no proposed parameter or execution/development rule is adopted and no empirical/implementation action is authorized.",
-    "completed_action": "S3-CONSOLIDATED-PRE-DEVELOPMENT-DESIGN-2026-09-27",
+    "objective": "Preserve approved structural S3 protocol and existing numerical approvals. Await researcher binding of new policy/statistical constants; no automatic adoption of P0 methods or data/implementation action.",
+    "completed_action": "S3-PARTIAL-STRUCTURAL-APPROVAL-NUMERICAL-AUDIT-2026-09-30",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 CONSOLIDATED PRE-DEVELOPMENT PROTOCOL / RESEARCHER DECISION REQUIRED",
+    "current_checkpoint": "S3 NUMERICAL PROTOCOL CONSTANTS / RESEARCHER DECISION REQUIRED",
     "selected_architecture": "H-C fund-share/M1/static-origin/T1/Target B; unchanged model z discovery; both sign gates; P1/E1/abort-unwind/E-A/intended K",
-    "unresolved_proposals": "Complete P0 protocol in checkpoint; every new numeric, estimator, execution, support, sample and validation setting remains PROPOSED. No outcome-selected calibration or fallback recommended.",
+    "unresolved_proposals": "All newly proposed numerical histories/support, matrix tolerances, tracking budgets, timings, cap/eta, sizing, cohort/embargo, reference support, validation/inference settings; detailed unenumerated P0 methods not approved wholesale.",
     "design_record": "docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md",
     "allowed_scope": [],
     "forbidden_scope": [
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Current researcher request authorizes creation/publication of one consolidated design checkpoint and bounded handoff/control updates on main; authority ledger sequence 14.",
+    "publication_scope": "No future publication authority. Present researcher instruction authorizes this partial-approval/audit documentation transaction on main; ledger sequence 15.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher decision on the single consolidated proposed protocol package; any acquisition, implementation, estimation or result inspection requires separate bounded authority.",
+    "completion_condition": "Researcher binds numerical policies consistent with approved structure; any data/estimation/implementation action requires separate bounded authority.",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -151,6 +151,8 @@
     },
     "mathematical_architecture": "CLOSED_NOT_EXECUTABLE_READY",
     "protocol_proposal": "docs/stages/G5/S3_CONSOLIDATED_PRE_DEVELOPMENT_PROTOCOL_CHECKPOINT.md",
-    "protocol_proposal_status": "PROPOSED_NOT_APPROVED"
+    "protocol_proposal_status": "ENUMERATED_STRUCTURE_APPROVED_NEW_NUMERICAL_CONSTANTS_UNFROZEN",
+    "approved_protocol_structure": "docs/decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md",
+    "numerical_constants_audit": "docs/stages/G5/S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md"
   }
 }

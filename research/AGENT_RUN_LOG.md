@@ -526,3 +526,13 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Documentation-only checks: links against Git metadata, changed-path allowlist, unchanged approved control objects, strict proposal/denial status, six root docs, append-only run history, local-change preservation and whitespace. Full PowerShell suite unavailable; no full-suite PASS. Core/final-result/data validators not run under no-data scope; no dataset fingerprint recomputation.
 - No fund/provider selection, data acquisition/access, parameter or numerical z0 estimation, implementation, C04 repair, backtest or PnL inspection. One normal documentation publication; verify main/frozen tag then release owned lock.
 - Stop: S3 CONSOLIDATED PRE-DEVELOPMENT PROTOCOL / RESEARCHER DECISION REQUIRED. Publication identity is in this entry's Git history.
+
+## 2026-09-30 — STRUCTURAL APPROVAL / NUMERICAL CONSTANTS AUDIT
+
+- Direct researcher partially approves enumerated structural protocol rules, withholding new numerical constants. Base main 81abaecb5a4ff3484e725a2441d93e4affe0e203; owned lock s3-numerical-audit-20260930.
+- Added formal structural approval and 86-entry numerical constants audit with source/value/category, rationale, estimand/economic versus operational/inferential sensitivity, outcome-free justification and bounded unselected alternatives; final compact table.
+- Separated inherited approved H126/MAD/alpha/reference architecture from proposed T1 H126, horizons/support, error budgets and testing alpha. Classified external terms and future estimates without inventing values. No constants selected or calibrated.
+- Annotated original consolidated proposal without modifying its body. Updated current handoff/governance/state/control and authority header; preserved prior ledger entries/run history, approved control objects and canonical mathematics.
+- Documentation-only checks: allowlisted changed paths, links, 86 unique entry IDs, denial/partial-approval status, source-body/history preservation, six root docs and whitespace. Full PowerShell suite unavailable; no full-suite PASS. Core/data/result validators not run under no-data scope; fingerprint not recomputed.
+- No data access/acquisition, estimates, implementation, calibration, C04 repair, backtest or PnL inspection. Normal documentation publication only, followed by main/tag verification and owned-lock release.
+- Stop: S3 NUMERICAL PROTOCOL CONSTANTS / RESEARCHER DECISION REQUIRED. Publication identity is in this entry's Git history.
