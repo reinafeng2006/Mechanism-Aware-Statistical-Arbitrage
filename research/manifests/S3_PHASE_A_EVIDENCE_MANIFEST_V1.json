@@ -1,0 +1,752 @@
+{
+  "schema_version": "S3-PHASE-A-EVIDENCE-MANIFEST-1.0",
+  "manifest_id": "S3-PHASE-A-EVIDENCE-MANIFEST-V1",
+  "created_utc": "2026-09-30T21:31:05.198334+00:00",
+  "immutability": "DO_NOT_OVERWRITE; successor version must cite this manifest checksum",
+  "protocol_commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+  "phase_a_action": {
+    "schema_version": "REA-ACTION-1.0",
+    "action": {
+      "action_id": "S3-PHASE-A-EVIDENCE-1",
+      "status": "AUTHORIZED",
+      "objective": "Metadata-only evidence feasibility and immutable manifest under frozen commit 0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "historical_scope": {
+        "start": "2015-01-01",
+        "end": "2019-12-31"
+      },
+      "allowed_scope": [
+        "source/provider inventory",
+        "field/schema/date/PIT/vintage/receipt/account verification",
+        "immutable metadata manifest and integrity hashes",
+        "coverage/reason codes",
+        "documented C04 mismatch lineage only"
+      ],
+      "dataset_access": "METADATA_SCHEMA_CONTRACT_ONLY_NO_SCIENTIFIC_OR_ECONOMIC_VALUE_INSPECTION",
+      "empirical_result_visibility": "DENIED",
+      "held_out_access": "DENIED_2020_2025",
+      "forbidden_scope": [
+        "estimation",
+        "S3 implementation",
+        "attempt reconstruction",
+        "C04 repair",
+        "cost/payoff estimation",
+        "PnL",
+        "forward development"
+      ],
+      "commit_permitted": true,
+      "push_permitted": true,
+      "push_destination": "GitHub reinafeng2006/Mechanism-Aware-Statistical-Arbitrage main",
+      "publication_scope": "Phase A report/manifest/authorization/current control updates only; frozen protocol and V1 unchanged",
+      "completion_condition": "Classify nine mandatory evidence families and stop with NONE; no Phase B",
+      "validation_commands": [
+        "metadata schema/hash/link/allowlist/whitespace checks"
+      ],
+      "mandatory_stop_conditions": [
+        "economic outcome exposure",
+        "out-of-range data access",
+        "protocol change",
+        "unqualified evidence substitution"
+      ]
+    }
+  },
+  "phase_a_status": "COMPLETE_EVIDENCE_INVENTORY_NOT_PHASE_B_AUTHORIZATION",
+  "overall_state": "S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL",
+  "conclusion_scope": "Accessible/qualified evidence in this bounded audit; not a claim of universal historical nonexistence",
+  "scientific_interval": {
+    "start": "2015-01-01",
+    "end": "2019-12-31"
+  },
+  "scientific_payloads_opened": false,
+  "economic_outcomes_inspected": false,
+  "mixed_period_payload_access": false,
+  "local_inventory": {
+    "repo_raw_present": false,
+    "repo_qa_work_present": false,
+    "documented_external_research_volume_mounted": false,
+    "alternative_account_archive_supplied": false,
+    "search_scope": "Workspace path existence, pinned Git tree/documents and metadata-only migration locator inventory; no whole-machine payload scan"
+  },
+  "sources": [
+    {
+      "path": "data/manifests/CORE_DATASET_FREEZE_V1.json",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "f9a71b9c98713eff4a1b54a846599fafdf5173ce",
+      "sha256_verified_metadata_bytes": "71f2dc3fc5ba9ef8bcd5f6867fb5091acaa9c906bee07342dc71eb4783409751",
+      "bytes": 5207,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "data/manifests/V1_PHASE1_INNER_INPUT.json",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "3fdaddd6661bd819a09957f46260fb1674a8cb71",
+      "sha256_verified_metadata_bytes": "36cb3c41cf72585870b6e27a6a019183b8185310eabcbfcdaaacfa651a6226e0",
+      "bytes": 1255,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "docs/stages/G3B/SECURITY_DATE_ELIGIBILITY_SIDECAR_CONTRACT.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "0d7408296852d088dab4d45ae5a9eab14e271d00",
+      "sha256_verified_metadata_bytes": "c17eabf25c0332844567ab5d737b4f95ad1d11c9ccad0d4b586d5ac8ad704388",
+      "bytes": 2803,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "docs/decisions/V1_C06_AVAILABILITY_AMENDMENT_FREEZE.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "298a3d397d4a0f89ceccb772855fe11f1f21708f",
+      "sha256_verified_metadata_bytes": "f0c55e24bbebae5b6de7f5a83e21cb27c2815b11e856b402488bceead332abdf",
+      "bytes": 4932,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "tools/v1_phase1_prepare.py",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "afeee00b39641f7f4393d17361cff02213cf99f9",
+      "sha256_verified_metadata_bytes": "8e85651d14de10340dbec87402aa9947c6e21da8e99f05ee3bf5986f2b4dd50c",
+      "bytes": 9216,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "515790301a48bf2a5d32e87d3bfd615315f20a3e",
+      "sha256_verified_metadata_bytes": "b7e8d64831fa0a60b014b0aaa78cc55ef34016d05e46ab917edef50e89adda09",
+      "bytes": 30723,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "tools/v1_c04_official_action_calendar.py",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "0fc5752bba083a21e703a7c4b95640d37cb2752d",
+      "sha256_verified_metadata_bytes": "3e2c040baa46d5fb06b19605e70b83b3c1634d9fc8b47fc273291e23cebff2fa",
+      "bytes": 21545,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "research/G4_05_MODEL_SPECIFICATION_CONTRACT.json",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "de0a89de44a51058328fcb2efd298c45ba7f56f1",
+      "sha256_verified_metadata_bytes": "a454bdb46a82408427b65dedcc21da874d9414c3bd5aef6a45db70671fbb05b9",
+      "bytes": 6201,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "docs/stages/G3B/G3B_02_PROVIDER_FIELD_SCHEMA_PIT_QUALIFICATION_AUDIT.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "51fd890a9e95fb686231337609010e8bd888b07e",
+      "sha256_verified_metadata_bytes": "228c2a5e5ccced38f1f86c140c957c6cff6bc3220d6df25f19f09b83b7a7a3c0",
+      "bytes": 13126,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "357ae4ac6a930c33f3ad9a8c21e4d0d1d5581b9e",
+      "sha256_verified_metadata_bytes": "604ea2044dc6f3f867431905ffe45b2098233d8af878781c5e0baede2124a50c",
+      "bytes": 16478,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "AGENTS.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "7b98d798f574c9dd4b25dc77402e00a4b4c197a1",
+      "sha256_verified_metadata_bytes": "1e5be1757c5d3c772d57e357b9e0f94bdc761a4ed356a5c5ce035d664beb8193",
+      "bytes": 4380,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "research/AGENT_POLICY.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "5820091aac5593e9b60d5b7b674c68c5eef7056e",
+      "sha256_verified_metadata_bytes": "d696c9e4567005cc7e7d8c0cbbf6e848c00839a5eb43fd43b66cadaeb498c32c",
+      "bytes": 5569,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "docs/stages/G5/PRE_CLIENT_MIGRATION_AUDIT.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "503588b4e72638ad58ed45b76713b860d7b2d022",
+      "sha256_verified_metadata_bytes": "112312cb12feb4ff280cfb2fe031ae0cafaeccf5a207cfc070688bbf699520b9",
+      "bytes": 13850,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "docs/stages/G5/V1_1_C04_EXECUTION_READINESS_BLOCKER.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "32cd89e4c7050f86708b69b44395a843c9090ec0",
+      "sha256_verified_metadata_bytes": "b787a3ec3aff440bf77718c5aceee1d395924d65377032ea57b0933a642d368c",
+      "bytes": 3196,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "docs/decisions/G3B_TUSHARE_FINAL_ACQUISITION_AUTHORIZATION.md",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "687221f16602de354714679522c3d7d5f165506a",
+      "sha256_verified_metadata_bytes": "276130f2d380e407eb43cbaa6cab9f3a3a88dfdc74f85107433c64a9c0e6501b",
+      "bytes": 2255,
+      "role": "METADATA_SCHEMA_OR_SOURCE_ONLY"
+    },
+    {
+      "path": "research/migration/EXTERNAL_ARTIFACT_INVENTORY.json",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "71ca8c9f0cf38756832992241286bb6f9450fbff",
+      "sha256_verified_metadata_bytes": "ed2174712099e9312bbd6a73304d466f3d930284da40bb54324efb45b9f13e33",
+      "bytes": 4271070,
+      "role": "METADATA_ONLY_NO_REFERENCED_PAYLOAD_OPENED"
+    },
+    {
+      "path": "data/manifests/C04_A_OFFICIAL_CALENDAR_V1.json",
+      "commit": "0ef007f22deebcfc76520a5c4d6d72787a73606f",
+      "git_blob_sha1": "ae1fbdec9b47677ddd4262c1da617741f9463183",
+      "sha256_verified_metadata_bytes": "402741a7bf767fd56508ac957de12d2b422e2b0b80f30abe0b47c03255ac267a",
+      "bytes": 86301,
+      "role": "METADATA_ONLY_NO_REFERENCED_PAYLOAD_OPENED"
+    }
+  ],
+  "provider_documentation": [
+    {
+      "url": "https://tushare.pro/document/2?doc_id=27",
+      "checked_date": "2026-09-30",
+      "role": "CURRENT_SCHEMA_ONLY_NOT_HISTORICAL_VINTAGE_PROOF",
+      "content_hash": null
+    },
+    {
+      "url": "https://www.sseinfo.com/services/assortment/historical/",
+      "checked_date": "2026-09-30",
+      "role": "PRODUCT_CAPABILITY_ONLY_NOT_LICENSE_OR_ACCOUNT_QUALIFICATION",
+      "content_hash": null
+    }
+  ],
+  "families": [
+    {
+      "id": "baseline",
+      "evidence_family": "Frozen baseline / relationship inputs",
+      "mandatory_for_S3": true,
+      "source_provider": "Tushare C01/C03/E02/E03-A; official CSRC/CAPCO C06; internal frozen lineage",
+      "dataset_identifier": "CORE-DATASET-FREEZE-V1; V1-PHASE1-INNER-INPUT-1.0; C06-AVAILABILITY-AMENDMENT-V1",
+      "verified_schema_fields": [
+        "stable_security_id",
+        "observation_date",
+        "historical_ticker_code",
+        "identifier_lineage_state",
+        "c04_structural_state",
+        "c04_basis",
+        "c05_structural_state",
+        "c05_basis",
+        "eligibility_rule_version",
+        "upstream_artifact_references",
+        "schema_version",
+        "generation_version",
+        "ts_code",
+        "trade_date",
+        "open",
+        "close",
+        "vol",
+        "amount",
+        "snapshot_title",
+        "logical_snapshot_identifier",
+        "taxonomy_version",
+        "corrected_publication_time"
+      ],
+      "additional_required_fields_unverified": [
+        "source_event_time",
+        "original_receipt_time",
+        "source_revision_id",
+        "qualified_2015_2019_partition_hash"
+      ],
+      "field_verification_level": "DOCUMENTED_SCHEMA_NOT_PAYLOAD_VALUE_VALIDATED",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "Declared parent core 2013-01-07–2025-12-31; declared inner input ends 2019-12-31. Authorized intersection 2015-01-01–2019-12-31 only; actual partition completeness not verified."
+      },
+      "pit_timestamp_semantics": "Daily trade date is not original receipt time. C06 amendment uses first decision clock strictly after qualified publication date; date precision only. Raw-provider vintage/receipt proof remains limited.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Market/model fields generally account-independent; executable use needs separately qualified account evidence.",
+      "missingness": "Payloads absent locally; no permitted restored partition; historical unknown missingness retained; no 2015–2019 missing-row percentage computed.",
+      "legal_license_access_restriction": "Historical Tushare authorization does not prove present entitlement/license or rights for every S3 use; original licensing not supplied.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "REQUIRES DESCENDANT REQUALIFICATION",
+      "reason_codes": [
+        "PAYLOAD_NOT_ACCESSIBLE",
+        "PIT_RECEIPT_UNVERIFIED",
+        "SCOPED_PARTITION_REQUIRED"
+      ],
+      "evidence_paths": [
+        "data/manifests/CORE_DATASET_FREEZE_V1.json",
+        "data/manifests/V1_PHASE1_INNER_INPUT.json",
+        "docs/stages/G3B/SECURITY_DATE_ELIGIBILITY_SIDECAR_CONTRACT.md",
+        "docs/decisions/V1_C06_AVAILABILITY_AMENDMENT_FREEZE.md",
+        "tools/v1_phase1_prepare.py"
+      ]
+    },
+    {
+      "id": "fund_registry",
+      "evidence_family": "PIT fund-share universe and registry lineage",
+      "mandatory_for_S3": true,
+      "source_provider": "No qualified project source identified; official issuer/exchange/index records are required source classes",
+      "dataset_identifier": "UNAVAILABLE",
+      "verified_schema_fields": [],
+      "additional_required_fields_unverified": [
+        "instrument_id",
+        "exchange",
+        "share_class",
+        "first_tradable_date",
+        "delist_date",
+        "merger_predecessor_id",
+        "mandate",
+        "benchmark_id",
+        "taxonomy_version",
+        "holdings_publication_time",
+        "holdings_receipt_time",
+        "revision_id",
+        "currency",
+        "tick",
+        "lot",
+        "settlement_rule",
+        "calendar_version"
+      ],
+      "field_verification_level": "REQUIRED_SCHEMA_ONLY_NO_SUPPLIED_DATASET",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "No verified 2015–2019 candidate-universe dataset, including dead/merged funds."
+      },
+      "pit_timestamp_semantics": "No vintage/receipt chain or historical mandate/taxonomy qualification supplied; present survivors cannot establish it.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Broker/share-class access and short eligibility unverified.",
+      "missingness": "Entire required qualified registry lineage unavailable; no inferred missingness rate.",
+      "legal_license_access_restriction": "No acquired fund-data license/account entitlement evidenced; no procurement performed.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "MISSING / NON-ESTIMABLE",
+      "reason_codes": [
+        "FUND_UNIVERSE_NOT_REGISTERED",
+        "SURVIVORSHIP_LINEAGE_UNVERIFIED",
+        "LICENSE_UNVERIFIED"
+      ],
+      "evidence_paths": [
+        "research/migration/EXTERNAL_ARTIFACT_INVENTORY.json",
+        "docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md"
+      ]
+    },
+    {
+      "id": "prices_actions",
+      "evidence_family": "Stock/fund raw price and corporate-action histories",
+      "mandatory_for_S3": true,
+      "source_provider": "Stock daily: Tushare; partial stock actions: SSE historical action tables/SZSE monthly tables; qualified fund source absent",
+      "dataset_identifier": "CORE-DATASET-FREEZE-V1 stock C03; C04-A-OFFICIAL-CALENDAR-V1; fund component UNAVAILABLE",
+      "verified_schema_fields": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "pre_close",
+        "change",
+        "pct_chg",
+        "vol",
+        "amount",
+        "historical_ticker",
+        "record_date",
+        "effective_ex_date",
+        "action_publication_date",
+        "action_types",
+        "source"
+      ],
+      "additional_required_fields_unverified": [
+        "original_receipt_time",
+        "revision_chain",
+        "original_share_multiplier",
+        "cash_entitlement",
+        "long_tax_treatment",
+        "short_manufactured_distribution",
+        "receivable_settlement",
+        "fund_action_lineage"
+      ],
+      "field_verification_level": "DOCUMENTED_SCHEMA_NOT_PAYLOAD_VALUE_VALIDATED",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "Stock parent envelope includes permitted years; inner C04 archive ends 2019-12. No full stock+fund 2015–2019 coverage qualification. No action/price rows read."
+      },
+      "pit_timestamp_semantics": "C04 retrieval in 2026 is not historical availability; code allows absent publication dates. Action-date exclusion is not entitlement-complete accounting; future-adjusted price alone prohibited.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Gross issuer events alone do not establish account withholding, manufactured payments or settlement rights.",
+      "missingness": "Fund histories and complete long/short cash-flow terms missing; original stock payloads inaccessible. No absence-as-clean inference.",
+      "legal_license_access_restriction": "Official source provenance documented; archival/access/reuse rights and account applicability still require qualified terms.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "MISSING / NON-ESTIMABLE",
+      "reason_codes": [
+        "ENTITLEMENT_ACCOUNTING_UNQUALIFIED",
+        "FUND_HISTORY_UNAVAILABLE",
+        "PAYLOAD_NOT_ACCESSIBLE",
+        "RECEIPT_NOT_EVENT_TIME"
+      ],
+      "evidence_paths": [
+        "data/manifests/C04_A_OFFICIAL_CALENDAR_V1.json",
+        "tools/v1_c04_official_action_calendar.py",
+        "tools/v1_phase1_prepare.py",
+        "docs/stages/G3B/SECURITY_DATE_ELIGIBILITY_SIDECAR_CONTRACT.md"
+      ]
+    },
+    {
+      "id": "factors",
+      "evidence_family": "Factor reconstruction lineage",
+      "mandatory_for_S3": true,
+      "source_provider": "Existing internal factor/model definitions, Tushare E03-A benchmark and official C06 membership; complete holding-accumulation source not qualified",
+      "dataset_identifier": "V1-PHASE1-INNER-INPUT-1.0; G4-05-MODEL-CONTRACT-1.0; S3 C_f reconstruction UNAVAILABLE",
+      "verified_schema_fields": [
+        "benchmark_response",
+        "industry",
+        "snapshot_index",
+        "snapshot_ids",
+        "taxonomy_versions",
+        "response",
+        "response_ok",
+        "pair_member"
+      ],
+      "additional_required_fields_unverified": [
+        "factor_id",
+        "factor_definition_version",
+        "constituent_id",
+        "weight_effective_time",
+        "weight_available_time",
+        "cash_flow_reconstruction_lineage",
+        "holding_accumulation_mapping",
+        "receipt_time",
+        "revision_id"
+      ],
+      "field_verification_level": "DOCUMENTED_SCHEMA_NOT_PAYLOAD_VALUE_VALIDATED",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "Existing inner-input metadata covers permitted intersection; no separately qualified 2015–2019 cash-flow-consistent factor holding archive."
+      },
+      "pit_timestamp_semantics": "Publication-qualified membership does not establish every constituent/weight/cash-flow vintage or factor-to-static-holding map.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Research factor itself is not a tradable instrument; account qualification not applicable to its equation, but basket remains account-dependent.",
+      "missingness": "Frozen source schema exists; payload restoration and required static accumulation proof absent. No factors or tracking computed.",
+      "legal_license_access_restriction": "Underlying licenses inherit raw sources; no additional licensed constituent/weight archive supplied.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "MISSING / NON-ESTIMABLE",
+      "reason_codes": [
+        "FACTOR_ACCUMULATION_UNQUALIFIED",
+        "PAYLOAD_NOT_ACCESSIBLE"
+      ],
+      "evidence_paths": [
+        "research/G4_05_MODEL_SPECIFICATION_CONTRACT.json",
+        "tools/v1_phase1_prepare.py",
+        "docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md"
+      ]
+    },
+    {
+      "id": "intraday",
+      "evidence_family": "Intraday quotes/trades/calendar states",
+      "mandatory_for_S3": true,
+      "source_provider": "SSE Info historical product capability documented; no qualified licensed project feed; SZSE source-contract qualification absent",
+      "dataset_identifier": "Product catalogue only; acquired dataset identifier UNAVAILABLE",
+      "verified_schema_fields": [],
+      "additional_required_fields_unverified": [
+        "instrument_id",
+        "event_timestamp",
+        "receipt_timestamp",
+        "sequence",
+        "bid_price",
+        "ask_price",
+        "bid_quantity",
+        "ask_quantity",
+        "depth",
+        "trade_correction",
+        "halt_state",
+        "price_limit_state",
+        "continuous_open",
+        "continuous_close",
+        "calendar_revision"
+      ],
+      "field_verification_level": "REQUIRED_SCHEMA_ONLY_NO_SUPPLIED_DATASET",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "No verified both-venue stock+fund 2015–2019 partition coverage."
+      },
+      "pit_timestamp_semantics": "Public snapshots/ticks product capability does not prove historical original receipt clocks, synchronized coverage or correction chain.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Market-feed license/access and route eligibility not evidenced for an execution account.",
+      "missingness": "No acquired qualified intraday dataset found in bounded metadata inventory; daily OHLC cannot fill this gap.",
+      "legal_license_access_restriction": "Commercial application/license needed where applicable; no signed entitlement, purchase or download.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "MISSING / NON-ESTIMABLE",
+      "reason_codes": [
+        "INTRADAY_ARCHIVE_NOT_QUALIFIED",
+        "RECEIPT_CLOCK_UNVERIFIED",
+        "LICENSE_UNVERIFIED"
+      ],
+      "evidence_paths": [
+        "docs/stages/G3B/G3B_02_PROVIDER_FIELD_SCHEMA_PIT_QUALIFICATION_AUDIT.md",
+        "research/migration/EXTERNAL_ARTIFACT_INVENTORY.json"
+      ]
+    },
+    {
+      "id": "borrow",
+      "evidence_family": "Account-specific historical borrow",
+      "mandatory_for_S3": true,
+      "source_provider": "No historical broker/lender/account source supplied or registered",
+      "dataset_identifier": "UNAVAILABLE",
+      "verified_schema_fields": [],
+      "additional_required_fields_unverified": [
+        "account_id",
+        "broker_id",
+        "lender_id",
+        "instrument_id",
+        "locate_id",
+        "locate_receipt_time",
+        "valid_from",
+        "valid_to",
+        "binding_commitment",
+        "reserved_quantity",
+        "remaining_quantity",
+        "borrow_rate",
+        "reset_formula",
+        "day_count",
+        "minimum_fee",
+        "collateral_terms",
+        "recall_notice_time",
+        "recall_deadline",
+        "buyin_terms",
+        "manufactured_distribution_terms",
+        "short_restrictions"
+      ],
+      "field_verification_level": "REQUIRED_SCHEMA_ONLY_NO_SUPPLIED_DATASET",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "No verified records for any required 2015–2019 account/instrument/time."
+      },
+      "pit_timestamp_semantics": "No historical locate/commitment receipt or revisions; present-day lists and exchange short-interest aggregates are not substitutes.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Not qualified: no named applicable account, historical agreement or reservation evidence.",
+      "missingness": "Entire binding commitment/quantity/terms chain unavailable; missing is not not-borrowable or zero fee.",
+      "legal_license_access_restriction": "Private broker/lender records require owner authority and applicable confidentiality/access rights; no credentials requested/accessed.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "MISSING / NON-ESTIMABLE",
+      "reason_codes": [
+        "HISTORICAL_BINDING_LOCATE_ABSENT",
+        "ACCOUNT_NOT_IDENTIFIED"
+      ],
+      "evidence_paths": [
+        "research/migration/EXTERNAL_ARTIFACT_INVENTORY.json",
+        "docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md"
+      ]
+    },
+    {
+      "id": "funding",
+      "evidence_family": "Funding/collateral/fees/capital terms",
+      "mandatory_for_S3": true,
+      "source_provider": "No historical account-specific broker/custodian/funder contracts supplied",
+      "dataset_identifier": "UNAVAILABLE",
+      "verified_schema_fields": [],
+      "additional_required_fields_unverified": [
+        "account_id",
+        "effective_from",
+        "effective_to",
+        "available_time",
+        "contract_version",
+        "funded_NAV_basis",
+        "book_allocation",
+        "cash_balance",
+        "encumbrances",
+        "eligible_collateral",
+        "haircuts",
+        "initial_margin",
+        "maintenance_margin",
+        "restricted_proceeds",
+        "credit_limit",
+        "funding_rate",
+        "day_count",
+        "commission_schedule",
+        "tax_applicability",
+        "fee_minimum",
+        "rebates"
+      ],
+      "field_verification_level": "REQUIRED_SCHEMA_ONLY_NO_SUPPLIED_DATASET",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "No verified 2015–2019 historical applicability or capital basis."
+      },
+      "pit_timestamp_semantics": "Current public rules cannot establish historic signed account terms, receipt times or revisions.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Not qualified: no account, capital allocation, historical facility or applicable fee contract.",
+      "missingness": "Required terms unknown; no invented capital/fees/rates, no balance/PnL inspection.",
+      "legal_license_access_restriction": "Private account contracts and licensed records not available; no procurement/account contact performed.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "MISSING / NON-ESTIMABLE",
+      "reason_codes": [
+        "HISTORICAL_ACCOUNT_TERMS_ABSENT",
+        "CAPITAL_BASIS_UNDECLARED"
+      ],
+      "evidence_paths": [
+        "research/migration/EXTERNAL_ARTIFACT_INVENTORY.json",
+        "docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md"
+      ]
+    },
+    {
+      "id": "orders",
+      "evidence_family": "Orders/fills/cancels/settlement evidence",
+      "mandatory_for_S3": true,
+      "source_provider": "No historical broker/venue order-event or settlement archive identified; old research simulations not qualifying source",
+      "dataset_identifier": "UNAVAILABLE",
+      "verified_schema_fields": [],
+      "additional_required_fields_unverified": [
+        "account_id",
+        "parent_order_id",
+        "child_order_id",
+        "instrument_id",
+        "side",
+        "requested_quantity",
+        "filled_quantity",
+        "limit_price",
+        "benchmark_timestamp",
+        "submit_time",
+        "ack_time",
+        "reject_time",
+        "cancel_time",
+        "fill_time",
+        "receipt_time",
+        "sequence",
+        "late_fill_link",
+        "fee_event",
+        "borrow_return",
+        "cash_settlement",
+        "remaining_claim"
+      ],
+      "field_verification_level": "REQUIRED_SCHEMA_ONLY_NO_SUPPLIED_DATASET",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "No verified 2015–2019 complete event lifecycle for the frozen execution contract."
+      },
+      "pit_timestamp_semantics": "No sequence/receipt/late-fill/cancel completeness certificate; market prints or bars do not identify account fills.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Not qualified: absent account and route/settlement linkage.",
+      "missingness": "Observed or independently qualified reconstructible path evidence missing; counterfactual reconstruction not performed.",
+      "legal_license_access_restriction": "Account/venue confidentiality and use rights unverified. Historical trading-result artifacts excluded from inspection.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "MISSING / NON-ESTIMABLE",
+      "reason_codes": [
+        "ORDER_EVENT_EVIDENCE_ABSENT",
+        "COUNTERFACTUAL_IDENTIFICATION_UNPROVEN"
+      ],
+      "evidence_paths": [
+        "research/migration/EXTERNAL_ARTIFACT_INVENTORY.json",
+        "docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md"
+      ]
+    },
+    {
+      "id": "timing",
+      "evidence_family": "Timing-contract evidence",
+      "mandatory_for_S3": true,
+      "source_provider": "No qualified historical feed/venue/broker service-contract bundle supplied",
+      "dataset_identifier": "UNAVAILABLE",
+      "verified_schema_fields": [],
+      "additional_required_fields_unverified": [
+        "feed_id",
+        "venue_id",
+        "account_route_id",
+        "clock_basis",
+        "timestamp_resolution",
+        "clock_error_bound",
+        "receipt_latency_bound",
+        "quote_validity",
+        "cross_leg_skew_bound",
+        "dispatch_bound",
+        "ack_deadline",
+        "cancel_semantics",
+        "IOC_completion_deadline",
+        "retry_rule",
+        "effective_dates",
+        "available_time",
+        "version"
+      ],
+      "field_verification_level": "REQUIRED_SCHEMA_ONLY_NO_SUPPLIED_DATASET",
+      "coverage_dates": {
+        "authorized_start": "2015-01-01",
+        "authorized_end": "2019-12-31",
+        "verified_partition_start": null,
+        "verified_partition_end": null,
+        "statement": "No verified contracts effective across required 2015–2019 sessions."
+      },
+      "pit_timestamp_semantics": "Current product frequency is not a historical end-to-end receipt/dispatch/ack guarantee.",
+      "vintage_version": "Pinned repository evidence at 0ef007f22deebcfc76520a5c4d6d72787a73606f; historical provider/receipt version unverified unless explicitly documented",
+      "account_applicability": "Not qualified: no account/route-specific historical semantics.",
+      "missingness": "All contractual timing bounds required for qualified joint entry/exit remain unidentified.",
+      "legal_license_access_restriction": "Historical feed/broker contracts needed; no current brochure is backdated.",
+      "supports_frozen_protocol": false,
+      "qualified_source_exists": false,
+      "disposition": "MISSING / NON-ESTIMABLE",
+      "reason_codes": [
+        "HISTORICAL_TIMING_CONTRACT_ABSENT",
+        "ACCOUNT_ROUTE_UNQUALIFIED"
+      ],
+      "evidence_paths": [
+        "research/migration/EXTERNAL_ARTIFACT_INVENTORY.json",
+        "docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md"
+      ]
+    }
+  ],
+  "prior_expected_payload_hashes": {
+    "verification": "RECORDED_ANCESTRY_ONLY_NOT_REHASHED",
+    "core_fingerprint": "3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616",
+    "inner_input_sha256": "360E6E20E359BFF58F66E8E05FCD43E762160B3F47F24B59318E4EBF041F3916",
+    "c04_exclusion_sha256": "B63188E35EF76A3B8E5DAE4F02FE68CE2033ED5554113DBE30CEF3B3C993F910",
+    "c04_normalized_action_sha256": "61215BB425880B02A5E11F1C8DE2CE613BE73E15C31FD876AD85282E810E3E69"
+  },
+  "c04_scope": {
+    "parent_manifest": "C04-A-OFFICIAL-CALENDAR-V1",
+    "declared_last_archive_period": "2019-12",
+    "nonclaim": "NO IDENTIFIED ACTION UNDER V1 CALENDAR != AUTHORITATIVELY ACTION-CLEAN",
+    "inner_mismatch_measured": false,
+    "later_mismatch": "DOCUMENTED_LINEAGE_ONLY_2020_2025_OUT_OF_SCOPE",
+    "descendant_versions_proposed_not_created": [
+      "S3-INPUT-QUALIFICATION-2015-2019-V1",
+      "S3-C04-ENTITLEMENT-2015-2019-V1"
+    ],
+    "required_authorization": "Separate bounded restoration/partitioning/descendant action; economic entitlement/response reconstruction not authorized in Phase A"
+  },
+  "phase_b_eligible": false,
+  "phase_b_authorized": false,
+  "fallback_proposed": false,
+  "validation": {
+    "source_metadata_git_hashes": "PASS",
+    "expected_payload_hashes": "NOT_REVERIFIED",
+    "core_validator": "NOT_RUN_MIXED_PERIOD_EXTERNAL_PAYLOADS_UNAVAILABLE",
+    "powershell": "UNAVAILABLE",
+    "counts_are_payload_coverage": "NO"
+  }
+}

@@ -1,12 +1,12 @@
 # Mechanism-Aware Statistical Arbitrage
 
-Current status: **S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN**.
+Current status: **S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL** — Phase A evidence finding; strategy remains frozen.
 
 **Fresh client: start with [Current project state and next action](docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md)**, then AGENTS/policy/NEXT_ACTION. The [final approval](docs/decisions/S3_FINAL_PROTOCOL_FREEZE.md) freezes the [single authoritative S3 protocol](docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md), including T1 max |J_H|<=.005 and a bootstrap whose n counts fixed-sample common scheduled validation sessions. All 86 audit controls have a final disposition. Frozen V1 remains unchanged.
 
-Exactly one [bounded acquisition/development plan](docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md) is proposed, NOT AUTHORIZED. NEXT_ACTION=NONE; no scientific data access, estimates, implementation, backtests or PnL inspection. No further ordinary strategy/numerical design gates. Unmet frozen requirements produce FEASIBILITY / DATA AVAILABILITY RESULT, not redesign.
+[Phase A report](docs/stages/G5/S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md) and [immutable manifest](research/manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json) record nine-family qualification. No complete family is qualified for Phase B on accessible evidence; historical account/borrow/order/timing proof is missing. This is not a global provider-nonexistence or performance claim. The one frozen plan had Phase A only authorized; now complete, NEXT_ACTION=NONE. No scientific/economic payload inspection, estimation, C04 repair, implementation or development occurred.
 
-**S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED**.
+**S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL**.
 
 The historical framework below explains project ancestry, not current execution authority. Its earlier gate language does not override the current handoff or NEXT_ACTION.
 

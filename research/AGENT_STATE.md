@@ -6,20 +6,22 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED` |
-| Stage status | S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN; acquisition/development plan NOT AUTHORIZED |
+| Current stage | S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL |
+| Stage status | Phase A evidence/manifest review complete; frozen strategy unchanged; Phase B not eligible/authorized |
 | Latest frozen decision | Final twelve-package protocol approved with T1 .005 and validation-session bootstrap units; all 86 dispositions preserved |
-| Current substage | No further ordinary strategy/numerical design gates; future qualification failures are FEASIBILITY / DATA AVAILABILITY RESULT |
+| Current substage | Mandatory historical evidence unavailable/unqualified in accessible inventory; no scientific development |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
 | Computation authorization | NONE. No repeat, repair, rescue, R4-2025/original A6/G5/V2 execution; no further PnL inspection |
-| Current authorized action | NONE; bounded acquisition/development authorization required; no future data, estimation, implementation or publication authority |
+| Current authorized action | NONE; S3-PHASE-A-EVIDENCE-1 completed; no Phase B or future publication authority |
 | Last validation state | Current documentation/control structural checks recorded in latest run log. PowerShell suite unavailable in this client; core/final-result validation not run under no-data scope. Earlier PASS records are historical |
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
-| Remote state observed | Base main verified at 035e19764ad27162c38ae3281cc35d11d4a84049 before final-freeze documentation transaction; publication identity is in Git history |
-| Researcher action required | YES; authorize bounded execution/data/result access for the single plan, without changing frozen protocol |
+| Remote state observed | Base main 0ef007f22deebcfc76520a5c4d6d72787a73606f verified; Phase A publication identity in Git history |
+| Researcher action required | No strategy decision. Additional original evidence would require bounded qualification before any Phase B authorization |
+
+Phase A: [report](../docs/stages/G5/S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md) and [immutable manifest](manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json). None of nine complete families qualified; no Phase B authority.
 
 Fresh-client entry: [current state](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Authority: [final approval](../docs/decisions/S3_FINAL_PROTOCOL_FREEZE.md) and [ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Current specification: [frozen S3 protocol](../docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md). Only proposed successor: [bounded plan, NOT AUTHORIZED](../docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md). Earlier approvals/checkpoints remain ancestry; historical state below does not authorize execution.
 

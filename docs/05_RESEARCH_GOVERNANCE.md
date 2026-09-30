@@ -1,6 +1,10 @@
 # Research Governance — Current Authoritative State
 
-## Current S3 protocol freeze — 2026-09-30
+## Current Phase A disposition — 2026-09-30
+
+**S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL**. The [Phase A authority](decisions/S3_PHASE_A_EVIDENCE_AUTHORIZATION_AND_DISPOSITION.md), [report](stages/G5/S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md) and [immutable evidence manifest](../research/manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json) supersede the earlier no-Phase-A-authority status below. Only metadata/schema/contract feasibility was authorized and completed; Phase B remains denied. This availability finding does not amend strategy or establish universal source nonexistence. NEXT_ACTION=NONE; V1 unchanged.
+
+## Frozen S3 protocol — historical approval state, unchanged
 
 **S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN** under the [final approval](decisions/S3_FINAL_PROTOCOL_FREEZE.md). The [single authoritative specification](stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md) contains the full signal-to-validation chain and supersedes prior proposals as current protocol. T1 max |J_H|<=.005 per signal-origin gross; bootstrap n counts common scheduled validation sessions, with 50,000 replicates/protocol-hash seed/plus-one p/five-group Holm .05. The approval preserves all 86 control dispositions with their final replacement rules.
 

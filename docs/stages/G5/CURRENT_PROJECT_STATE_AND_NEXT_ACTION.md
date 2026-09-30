@@ -1,14 +1,14 @@
 # Current project state and next action — fresh-client entry point
 
-Updated 2026-09-30 after final S3 design/protocol freeze. **Read this before any research action.** This entry is under docs/stages/G5 so the docs root remains exactly six canonical documents. Canonical GitHub records suffice without prior conversation or scientific payloads.
+Updated 2026-09-30 after authorized Phase A metadata/evidence feasibility review. **Read this before any research action.** This entry is under docs/stages/G5 so the docs root remains exactly six canonical documents. Canonical GitHub records suffice without prior conversation or scientific payloads.
 
-**S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN.** Current checkpoint: **S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED**. [Final approval](../../decisions/S3_FINAL_PROTOCOL_FREEZE.md), [single authoritative protocol](S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md), [one bounded plan — NOT AUTHORIZED](S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md).
+**S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN.** Current checkpoint: **S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL**. [Phase A report](S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md), [immutable evidence manifest](../../../research/manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json), [Phase A authority/disposition](../../decisions/S3_PHASE_A_EVIDENCE_AUTHORIZATION_AND_DISPOSITION.md). The frozen protocol at 0ef007f remains unchanged. Phase B is neither eligible nor authorized on available evidence.
 
 ## A. Objective and authority
 
 Study PIT relationships and abnormality/resolution among economically related A-share machinery securities, then distinguish descriptive relationship evidence from an economically executable trading hypothesis. The current trading design direction is peer-only hedged relative-value convergence, not mechanism identification or a proven profitable strategy.
 
-Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION is the sole active execution contract and remains NONE. The latest researcher decision freezes the final twelve-package protocol with max |J_H|<=.005 and validation-session units in the bootstrap formula. This documentation publication grants no future data/implementation authority. No further ordinary strategy or numerical design gates are authorized.
+Read [AGENTS.md](../../../AGENTS.md), [agent policy](../../../research/AGENT_POLICY.md), [NEXT_ACTION](../../../research/NEXT_ACTION.json) and [post-V1 authority ledger](../../../research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). NEXT_ACTION remains the sole active execution contract and has returned to NONE after Phase A. The researcher authorized metadata/source/schema/coverage/PIT/account/integrity review only for the 2015–2019 evidence boundary. Phase A now records missing mandatory evidence; it did not implement, estimate or reconstruct S3. No ordinary strategy/numerical gate is reopened.
 
 ## B. Frozen historical V1
 
@@ -56,17 +56,19 @@ Holding cap 20 common sessions, eta=.10, raw K=1% declared book NAV, gross cap 1
 
 One 2015–2019 economic specification uses 2015 warm-up, 2016 formation, six 2017–2019 forward half-years and one final fit; two scale-only diagnostics. Prospective planning uses 10bp material effect and 80% power, shortest qualifying 1/2/3 calendar years, no outcome-selected rescue. Bootstrap b=max(H,L_information,ceil(n^(1/3))), where n is common scheduled validation sessions in the fixed sample; 50,000 replicates, protocol-hash seed, plus-one p and five-group Holm .05.
 
-## G. Exactly one bounded next plan; no execution authority
+## G. Phase A complete; no Phase B authority
 
-Read the [S3 data acquisition + development execution plan](S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md). It names required fields/source evidence,2015–2019 boundaries, reconstruction/qualification, one chronological development budget, output visibility and checkpointing. Status NOT AUTHORIZED; NEXT_ACTION=NONE. The next researcher action is bounded data/development authorization, not another strategy selection.
+The [Phase A report](S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md) and [immutable manifest](../../../research/manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json) classify all nine mandatory families. No complete family is qualified for Phase B. Baseline lineage requires descendant requalification; eight other families remain MISSING / NON-ESTIMABLE, including account-specific borrow/funding, orders/settlement and timing. Public product availability is not historical account/receipt qualification. External raw/QA payloads are absent from this client; this does not prove the originals were destroyed or that no provider could supply evidence.
 
-Missing evidence or inability to satisfy frozen requirements is a FEASIBILITY / DATA AVAILABILITY RESULT, never permission to relax thresholds, change instruments opportunistically, add a fallback or expand dates. Actual identities/contracts/estimates and technical conformance are future outputs. A later immutable technical release fixes qualified inputs/fitted outputs/prospective dates before validation; it does not reopen this design freeze or authorize future observations automatically.
+C04's documented later mismatch is outside scope; inner action exclusion is not complete entitlement accounting. The report specifies a conditional immutable descendant path without repair. No scientific/economic payload was opened, and no 2020–2025 outcome access occurred. Frozen V1/protocol/plan unchanged.
+
+The [single execution plan](S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md) remains the governing frozen plan, now with only Phase A authorized and completed by the separate record. NEXT_ACTION=NONE; no Phase B/development authority. Any newly supplied original evidence requires a new immutable bounded qualification record; no substitute evidence, fallback or strategy change.
 
 ## H. Exposure history
 
 2015–2019 inner, 2020–2023 OF4 and 2024–2025 held-out inputs/evidence have already been exposed in the historical research process. 2024–2025 was opened through a separately logged irreversible event; do not describe it as sealed now or as a pristine final trading holdout for redesign. No claim is made that 2026 is untouched either. The 2015–2019 development and prospective-validation rules are frozen, but their access/execution remains unauthorized.
 
-The original trading workflow's access event exists; absence of complete valid returns does not erase exposure. The redesigned S3 tasks used no historical observations, threshold calibration or PnL. Preserve both facts.
+The original trading workflow's access event exists; absence of complete valid returns does not erase exposure. The S3 design and Phase A tasks used no scientific payload observations, threshold calibration or PnL; Phase A inspected metadata/schema/contract evidence. Preserve both facts.
 
 ## I. Prohibited next actions
 
@@ -80,8 +82,8 @@ Read [migration audit and external-artifact guide](PRE_CLIENT_MIGRATION_AUDIT.md
 
 ## K. Fresh-agent read order
 
-Read this entry -> AGENTS/policy/NEXT_ACTION -> authority ledger -> final approval -> frozen S3 protocol -> one bounded execution plan. Consult earlier approvals/checkpoints/audits only for ancestry and the external-artifact guide only for storage questions. No prior client chat is required.
+Read this entry -> AGENTS/policy/NEXT_ACTION -> authority ledger -> final frozen protocol -> Phase A authority/report/manifest. The frozen plan supplies scope; old gate language is ancestry. No client chat or external economic payload is needed to understand this result.
 
-V1: immutable historical tag, with the limitations in section B. S3: strategy/protocol frozen, no data outputs or actual instruments selected. Next action: NONE. Required researcher action: bounded acquisition/development authority, with specified data/result access; no ordinary strategy gates. Scientific payloads remain external, not reconstructible from Git hashes.
+V1 and S3 design remain frozen. Phase A is complete; mandatory evidence is unqualified in the accessible inventory. No Phase B reconstruction/development or automated source acquisition is authorized. Missing evidence is not a negative-return finding or universal provider nonexistence claim.
 
-**S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED**
+**S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL**
