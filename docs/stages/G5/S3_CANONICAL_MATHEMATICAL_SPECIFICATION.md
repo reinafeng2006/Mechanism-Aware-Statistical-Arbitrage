@@ -1,3 +1,5 @@
+> Current authority, 2026-09-30: **S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN**. The [single authoritative frozen specification](S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md) and [final approval](../../decisions/S3_FINAL_PROTOCOL_FREEZE.md) supersede this historical snapshot's pending/proposed language. The [one bounded plan](S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md) is NOT AUTHORIZED; NEXT_ACTION=NONE. Original text below is preserved as ancestry, including obsolete proposed constants; do not execute it as current policy.
+
 # Canonical S3 mathematical architecture
 
 2026-09-27. Current S3 architecture consolidation; not an executable protocol or empirical result.

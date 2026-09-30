@@ -6,22 +6,22 @@ Basis: repository records and Git state verified during initialization; prompt a
 
 | State field | Verified current value |
 |---|---|
-| Current stage | `S3 NUMERICAL PROTOCOL CONSTANTS / RESEARCHER DECISION REQUIRED` |
-| Stage status | Design-only checkpoint complete; all data correction, acquisition, implementation, backtesting, trading and PnL/result inspection remain paused |
-| Latest frozen decision | Enumerated pre-development structure approved; existing Target B/H126/alpha/P1/E1/K/E-A preserved; new P0 constants not frozen |
-| Current substage | Enumerated protocol structure approved; new numerical constants and detailed unenumerated methods remain unbound |
+| Current stage | `S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED` |
+| Stage status | S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN; acquisition/development plan NOT AUTHORIZED |
+| Latest frozen decision | Final twelve-package protocol approved with T1 .005 and validation-session bootstrap units; all 86 dispositions preserved |
+| Current substage | No further ordinary strategy/numerical design gates; future qualification failures are FEASIBILITY / DATA AVAILABILITY RESULT |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
 | Computation authorization | NONE. No repeat, repair, rescue, R4-2025/original A6/G5/V2 execution; no further PnL inspection |
-| Current authorized action | NONE; numerical protocol constants researcher decision required; no future data, estimation, implementation or publication authority |
+| Current authorized action | NONE; bounded acquisition/development authorization required; no future data, estimation, implementation or publication authority |
 | Last validation state | Current documentation/control structural checks recorded in latest run log. PowerShell suite unavailable in this client; core/final-result validation not run under no-data scope. Earlier PASS records are historical |
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
-| Remote state observed | Base main verified at 81abaecb5a4ff3484e725a2441d93e4affe0e203 before this documentation transaction; frozen V1 checked unchanged at closeout |
-| Researcher action required | YES; S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md; approve coherent numerical bindings without reopening structure or authorizing data |
+| Remote state observed | Base main verified at 035e19764ad27162c38ae3281cc35d11d4a84049 before final-freeze documentation transaction; publication identity is in Git history |
+| Researcher action required | YES; authorize bounded execution/data/result access for the single plan, without changing frozen protocol |
 
-Fresh-client entry: [current project state and next action](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Approved design: [scale architecture](../docs/decisions/S3_SCALE_ARCHITECTURE_APPROVAL.md). Approved threshold: [direct probability preregistration](../docs/decisions/S3_REFERENCE_TAIL_PROBABILITY_PREREGISTRATION.md). Approved capture/cost: [minimal architecture](../docs/decisions/S3_MINIMAL_SCENARIO_CAPTURE_COST_ARCHITECTURE_APPROVAL.md). Approved H-C/execution/accounting: [decision](../docs/decisions/S3_HC_PROXY_HEDGE_EXECUTION_ACCOUNTING_APPROVAL.md). Approved proxy construction: [decision](../docs/decisions/S3_PROXY_CONSTRUCTION_APPROVAL.md). Approved target: [Target B](../docs/decisions/S3_TARGET_B_CONVERGENCE_APPROVAL.md). Current mathematical chain: [canonical S3 specification](../docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md). Current gate: [numerical constants audit](../docs/stages/G5/S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md); [structural approval](../docs/decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md); [audit ancestry](../docs/stages/G5/S3_PRE_DEVELOPMENT_BINDINGS_AUDIT.md). Authority: [post-V1 ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Migration publishes all prior local review documents; earlier 'local/uncommitted' log entries describe their historical state, not current publication. No new data, calibration or PnL was computed or inspected in the redesign/migration.
+Fresh-client entry: [current state](../docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Authority: [final approval](../docs/decisions/S3_FINAL_PROTOCOL_FREEZE.md) and [ledger](POST_V1_RESEARCHER_AUTHORITY_LEDGER.md). Current specification: [frozen S3 protocol](../docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md). Only proposed successor: [bounded plan, NOT AUTHORIZED](../docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md). Earlier approvals/checkpoints remain ancestry; historical state below does not authorize execution.
 
 ## Historical V1 closure records (not active authorization)
 

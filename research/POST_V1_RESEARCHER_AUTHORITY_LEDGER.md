@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-30, sequence 15): [enumerated structural S3 protocol rules approved](../docs/decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md), while new numerical policy constants remain unfrozen. Existing H126/model-alpha/Target B and other approvals remain. [Numerical constants audit](../docs/stages/G5/S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md) supplies classifications and alternatives without selecting them. **S3 NUMERICAL PROTOCOL CONSTANTS / RESEARCHER DECISION REQUIRED**. NEXT_ACTION remains NONE; V1 unchanged.
+Current authority update (2026-09-30, sequence 16): [final protocol approval](../docs/decisions/S3_FINAL_PROTOCOL_FREEZE.md); [single authoritative S3 specification](../docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md). **S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN**. T1 .005; validation-session-unit bootstrap/50,000 replicates. All 86 control dispositions frozen. [One bounded plan](../docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md) is NOT AUTHORIZED; NEXT_ACTION=NONE. **S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED**. No new ordinary strategy gates; unmet requirements are feasibility/data-availability results. V1 unchanged.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -136,3 +136,11 @@ Do NOT freeze all new P0 numerical constants. Audit every explicit policy consta
 Persisted [partial approval](../docs/decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md) and [numerical audit](../docs/stages/G5/S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md). All new values remain unselected, and structural approval does not imply wholesale approval of unenumerated P0 method details. Historical protocol body retained with status annotation.
 
 Documentation/control publication on main only. No data acquisition/access, estimation, implementation, calibration, numerical z0, backtest or PnL inspection. NEXT_ACTION remains NONE; frozen V1 and canonical mathematical specification unchanged.
+
+## 16. 2026-09-30 — final S3 protocol freeze with two amendments
+
+Direct researcher instruction: “APPROVE S3 PRE-DEVELOPMENT PROTOCOL WITH TWO SPECIFIED AMENDMENTS”. Approve the final twelve-package numerical disposition and consolidated structure. Amendment 1: max |J_H|<=.005 per signal-origin gross, not 1%; other tracking measures diagnostic, mathematical M1 preserved. Amendment 2: n in b=max(H,L_information,ceil(n^(1/3))) counts common scheduled validation sessions in the fixed sample, not attempts/pairs/securities/rows. Freeze 50,000 replicates/protocol-hash seed/plus-one p/five-group Holm .05.
+
+[Final approval](../docs/decisions/S3_FINAL_PROTOCOL_FREEZE.md) records all 12 packages and all 86 controls in exactly one of six disposition classes. [Single authoritative protocol](../docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md) closes the signal-to-validation specification; prior proposal bodies remain historical. [Exactly one bounded acquisition/development plan](../docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md) is derived without activation. No further ordinary strategy/numerical gates; missing frozen requirements are FEASIBILITY / DATA AVAILABILITY RESULT, not redesign authority.
+
+This instruction authorizes this documentation/control commit and normal publication to main only. No acquisition/data access, estimation, numerical z0, actual fund selection, implementation, C04 repair, backtest or PnL inspection. NEXT_ACTION=NONE after publication. Frozen V1 unchanged. Stop: **S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED**.

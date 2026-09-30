@@ -1,3 +1,5 @@
+> Current authority, 2026-09-30: **S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN**. The [single authoritative frozen specification](S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md) and [final approval](../../decisions/S3_FINAL_PROTOCOL_FREEZE.md) supersede this historical snapshot's pending/proposed language. The [one bounded plan](S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md) is NOT AUTHORIZED; NEXT_ACTION=NONE. Original text below is preserved as ancestry, including obsolete proposed constants; do not execute it as current policy.
+
 > Status update 2026-09-30: [enumerated structural rules are approved](../../decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md), while new numerical constants remain unbound. See the [numerical constants audit](S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md). The original proposal body below is preserved; its “proposed in full” wording describes its publication date, not the latest partial approval. No blanket P0 or execution approval follows.
 
 # S3 consolidated pre-development protocol — researcher decision package

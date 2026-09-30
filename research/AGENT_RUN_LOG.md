@@ -536,3 +536,12 @@ Append-only log schema: `REA-RUN-LOG-1.0`
 - Documentation-only checks: allowlisted changed paths, links, 86 unique entry IDs, denial/partial-approval status, source-body/history preservation, six root docs and whitespace. Full PowerShell suite unavailable; no full-suite PASS. Core/data/result validators not run under no-data scope; fingerprint not recomputed.
 - No data access/acquisition, estimates, implementation, calibration, C04 repair, backtest or PnL inspection. Normal documentation publication only, followed by main/tag verification and owned-lock release.
 - Stop: S3 NUMERICAL PROTOCOL CONSTANTS / RESEARCHER DECISION REQUIRED. Publication identity is in this entry's Git history.
+
+## 2026-09-30 — FINAL S3 PROTOCOL FREEZE / ONE BOUNDED EXECUTION PLAN
+
+- Direct researcher approves final twelve-package disposition with .005 T1 budget and common scheduled validation-session n; base main 035e19764ad27162c38ae3281cc35d11d4a84049; owned lock s3-final-protocol-freeze-20260930.
+- Persisted final approval including all 86 controls assigned once, one authoritative full S3 protocol, and exactly one bounded NOT_AUTHORIZED acquisition/development plan. Removed superseded administrative literals as active requirements; retained historical proposal/audit/math bodies with current authority pointers.
+- Updated current handoff/README/governance/state/NONE contract and authority ledger sequence 16. No ordinary design gates; failures yield FEASIBILITY / DATA AVAILABILITY RESULT. Later technical release is conformance/output/calendar locking, not strategy selection or automatic validation authority.
+- Documentation/control checks: exact changed-path allowlist, relative links,86 unique classifications, frozen numerical bindings/denied execution, historical body/log preservation, six root docs, whitespace and immutable V1 tag. Full PowerShell suite unavailable; no full-suite PASS. Core/data/result validators deliberately not run under no-data scope; no payload fingerprint recomputation.
+- No scientific data access, provider/fund selection, acquisition, estimation, numerical z0, implementation, C04 repair, backtest or PnL inspection. Normal main publication only, followed by remote/tag verification and release of owned lock. Publication identity is available in this entry's Git history.
+- Stop: S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED.

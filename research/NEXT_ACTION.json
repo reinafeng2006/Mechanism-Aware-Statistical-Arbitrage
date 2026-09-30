@@ -2,18 +2,18 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 numerical protocol constants researcher decision required",
+    "name": "S3 protocol frozen; bounded acquisition/development authorization required",
     "status": "AWAITING_RESEARCHER_DECISION",
     "next_execution_authorized": false,
-    "execution_state": "DESIGN_GATE_PENDING_ALL_EMPIRICAL_AND_IMPLEMENTATION_WORK_DENIED",
-    "objective": "Preserve approved structural S3 protocol and existing numerical approvals. Await researcher binding of new policy/statistical constants; no automatic adoption of P0 methods or data/implementation action.",
-    "completed_action": "S3-PARTIAL-STRUCTURAL-APPROVAL-NUMERICAL-AUDIT-2026-09-30",
+    "execution_state": "PROTOCOL_FROZEN_ALL_DATA_AND_IMPLEMENTATION_EXECUTION_DENIED",
+    "objective": "Preserve the final frozen S3 protocol; await explicit bounded acquisition/development authority for the single plan. No ordinary strategy/numerical design gates or automatic feasibility rescue.",
+    "completed_action": "S3-FINAL-PROTOCOL-FREEZE-PLAN-2026-09-30",
     "completion_record": "docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 NUMERICAL PROTOCOL CONSTANTS / RESEARCHER DECISION REQUIRED",
+    "current_checkpoint": "S3 PROTOCOL FROZEN / DATA ACQUISITION + DEVELOPMENT AUTHORIZATION REQUIRED",
     "selected_architecture": "H-C fund-share/M1/static-origin/T1/Target B; unchanged model z discovery; both sign gates; P1/E1/abort-unwind/E-A/intended K",
-    "unresolved_proposals": "All newly proposed numerical histories/support, matrix tolerances, tracking budgets, timings, cap/eta, sizing, cohort/embargo, reference support, validation/inference settings; detailed unenumerated P0 methods not approved wholesale.",
-    "design_record": "docs/stages/G5/S3_CANONICAL_MATHEMATICAL_SPECIFICATION.md",
+    "unresolved_proposals": "No ordinary strategy/numerical choices. Actual evidence, identities, estimates, conformance and access authorization remain outstanding; failed requirements are FEASIBILITY / DATA AVAILABILITY RESULT.",
+    "design_record": "docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md",
     "allowed_scope": [],
     "forbidden_scope": [
       "Implementation",
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "No future publication authority. Present researcher instruction authorizes this partial-approval/audit documentation transaction on main; ledger sequence 15.",
+    "publication_scope": "No future publication authority. Direct researcher final-freeze instruction authorizes this documentation/control transaction on GitHub main; ledger sequence 16.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Researcher binds numerical policies consistent with approved structure; any data/estimation/implementation action requires separate bounded authority.",
+    "completion_condition": "Researcher may authorize the single bounded acquisition/development plan without changing frozen semantics; no data/implementation begins automatically.",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -97,7 +97,13 @@
       "hedge_construction_rule": "COMMON_M1_EXACT_DECLARED_EXPOSURE_MATCHING",
       "exact_replication": "H-B_DIAGNOSTIC_BENCHMARK_ONLY",
       "pair_only": "H-A_INACTIVE_PRIMARY",
-      "tracking_tolerance": null,
+      "tracking_tolerance": {
+        "metric": "max abs(J_H)",
+        "maximum": 0.005,
+        "denominator": "SIGNAL_ORIGIN_GROSS",
+        "H_common_sessions": 20,
+        "interpretation": "EX_ANTE_RISK_BUDGET_NOT_CONFIDENCE_OR_PROFITABILITY"
+      },
       "entry": "PARTIAL_FILL_DETERMINISTIC_ABORT_UNWIND",
       "exposure_start": "FIRST_ACTUAL_FILL",
       "episode_admission": "COMPLETE_QUALIFIED_BASKET",
@@ -123,7 +129,18 @@
       "holding": "STATIC_ORIGIN_SHARES",
       "rebalanced_architecture": "INACTIVE",
       "tracking_qualification": "T1_ABSOLUTE_EXPOSURE_IMPLEMENTATION",
-      "tracking_numerical_parameters": null,
+      "tracking_numerical_parameters": {
+        "primary": {
+          "metric": "max abs(J_H)",
+          "maximum": 0.005,
+          "denominator": "SIGNAL_ORIGIN_GROSS",
+          "H_common_sessions": 20,
+          "interpretation": "EX_ANTE_RISK_BUDGET_NOT_CONFIDENCE_OR_PROFITABILITY"
+        },
+        "history": "ONE_CALENDAR_YEAR_STRICTLY_PRIOR",
+        "other_tracking_risk_measures": "DIAGNOSTICS_NOT_HARD_GATES",
+        "exact_M1": "MATHEMATICALLY_REQUIRED"
+      },
       "T2_acceptance": "INACTIVE_DIAGNOSTIC_ONLY",
       "physical_constituent_architecture": "INACTIVE",
       "required_industry_missing": "HEDGE UNAVAILABLE",
@@ -151,8 +168,82 @@
     },
     "mathematical_architecture": "CLOSED_NOT_EXECUTABLE_READY",
     "protocol_proposal": "docs/stages/G5/S3_CONSOLIDATED_PRE_DEVELOPMENT_PROTOCOL_CHECKPOINT.md",
-    "protocol_proposal_status": "ENUMERATED_STRUCTURE_APPROVED_NEW_NUMERICAL_CONSTANTS_UNFROZEN",
+    "protocol_proposal_status": "HISTORICAL_PROPOSAL_SUPERSEDED_BY_FINAL_FROZEN_PROTOCOL",
     "approved_protocol_structure": "docs/decisions/S3_PRE_DEVELOPMENT_STRUCTURAL_APPROVAL.md",
-    "numerical_constants_audit": "docs/stages/G5/S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md"
+    "numerical_constants_audit": "docs/stages/G5/S3_PRE_DEVELOPMENT_NUMERICAL_CONSTANTS_AUDIT.md",
+    "approved_final_protocol": "docs/decisions/S3_FINAL_PROTOCOL_FREEZE.md",
+    "execution_plan": "docs/stages/G5/S3_DATA_ACQUISITION_AND_DEVELOPMENT_EXECUTION_PLAN.md",
+    "execution_plan_status": "NOT_AUTHORIZED",
+    "protocol_status": "S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN",
+    "ordinary_design_gates_authorized": false,
+    "failure_disposition": "FEASIBILITY / DATA AVAILABILITY RESULT",
+    "decision_type": "BOUNDED_EXECUTION_AND_ACCESS_AUTHORIZATION_ONLY",
+    "final_protocol_binding": {
+      "auxiliary": {
+        "method": "COMMON_CONSTRAINED_UNWEIGHTED_OLS",
+        "history": "ONE_CALENDAR_YEAR_STRICTLY_PRIOR",
+        "refresh": "DAILY",
+        "numerical_checks": "SCALE_AWARE_CERTIFICATION"
+      },
+      "holding_cap_common_sessions": 20,
+      "eta": 0.1,
+      "raw_attempt_gross_NAV": 0.01,
+      "total_gross_NAV_cap": 1,
+      "physical_security_gross_NAV_cap": 0.1,
+      "quote_IOC_timing": "CONTRACT_DERIVED",
+      "maturity": "ACTUAL_INFORMATION_AVAILABILITY_AND_PURGING",
+      "P1_net_mean_precision": {
+        "confidence": 0.95,
+        "halfwidth_per_K": 0.0005
+      },
+      "reference_tail_probability_precision": {
+        "confidence": 0.95,
+        "halfwidth": 0.01
+      },
+      "development": {
+        "from": "2015-01-01",
+        "through": "2019-12-31",
+        "warmup": "2015",
+        "formation": "2016",
+        "forward_half_years": 6,
+        "final_fit": 1,
+        "economic_specifications": 1,
+        "scale_only_diagnostics": 2
+      },
+      "validation": {
+        "material_effect_per_K": 0.001,
+        "planning_power": 0.8,
+        "calendar_year_candidates": [
+          1,
+          2,
+          3
+        ],
+        "selection": "SHORTEST_QUALIFYING_BEFORE_VALIDATION",
+        "settlement_followup": "CONTRACT_DERIVED"
+      },
+      "bootstrap": {
+        "block_rule": "max(H,L_information,ceil(n^(1/3)))",
+        "n": "NUMBER_OF_COMMON_SCHEDULED_VALIDATION_SESSIONS_IN_FIXED_VALIDATION_SAMPLE",
+        "units": "COMMON_SCHEDULED_SESSIONS",
+        "H": 20,
+        "L_information": "LONGEST_QUALIFIED_DEVELOPMENT_EVENT_INFORMATION_SPAN",
+        "replicates": 50000,
+        "seed": "PROTOCOL_HASH_DERIVED",
+        "empirical_p": "(1+null_exceedances)/50001",
+        "Holm_groups": 5,
+        "Holm_alpha": 0.05
+      },
+      "numerical_control_dispositions": {
+        "FREEZE NOW — structural/numerical integrity": "A01 A02 A03 A04 A06 A07 A08 B06 B07 B09 B11 C01 E10 E11 F03 F06 F13 G06 G07 G08 G09 H01 H06 H08 I03",
+        "FREEZE NOW — economic policy": "C07 D06 D07 D08 E02 E03 E04",
+        "MECHANICALLY ESTIMATED LATER": "B01 B03 C02 D02 D03 D04 D05 E09 F05 H03 H07 I01 I02",
+        "DEVELOPMENT-ESTIMATED UNDER FIXED RULE": "F02 F07 F08 F09 F10 F11 G01 G02 G03 G04 G05 H02 H04 H05",
+        "REPORTING/ROBUSTNESS ONLY": "A05 C09 C10 H09",
+        "REMOVE / DO NOT HARD-CODE": "B02 B04 B05 B08 B10 B12 B13 B14 C03 C04 C05 C06 C08 D01 E01 E05 E06 E07 E08 E12 F01 F04 F12"
+      },
+      "actual_proxies": "UNSELECTED",
+      "numerical_z0": null,
+      "estimation": "NOT_AUTHORIZED"
+    }
   }
 }
