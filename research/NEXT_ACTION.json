@@ -2,17 +2,17 @@
   "schema_version": "REA-ACTION-1.0",
   "action": {
     "action_id": "NONE",
-    "name": "S3 Phase A complete; mandatory evidence unqualified",
-    "status": "AWAITING_RESEARCHER_DECISION",
+    "name": "S3 historical development closed; prospective design preserved",
+    "status": "CLOSED",
     "next_execution_authorized": false,
-    "execution_state": "PHASE_A_COMPLETE_DEVELOPMENT_NON_ESTIMABLE_NO_PHASE_B_AUTHORITY",
-    "objective": "Preserve frozen S3 protocol and Phase A evidence finding. No Phase B or automatic acquisition/reconstruction. Original evidence, if later supplied, requires a new bounded qualification record, not strategy redesign.",
-    "completed_action": "S3-PHASE-A-EVIDENCE-1",
-    "completion_record": "docs/stages/G5/S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md",
+    "execution_state": "S3_HISTORICAL_DEVELOPMENT_CLOSED_NON_ESTIMABLE",
+    "objective": "Preserve final S3 closure. No acquisition, evidence substitution, historical development or prospective execution. Reopening requires new qualified evidence explicitly supplied under a new researcher authorization.",
+    "completed_action": "S3-FINAL-SYNTHESIS-CLOSURE-2026-10-01",
+    "completion_record": "docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
-    "current_checkpoint": "S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL",
+    "current_checkpoint": "S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED",
     "selected_architecture": "H-C fund-share/M1/static-origin/T1/Target B; unchanged model z discovery; both sign gates; P1/E1/abort-unwind/E-A/intended K",
-    "unresolved_proposals": "No strategy proposals. Mandatory historical evidence remains unavailable/unqualified in the accessible inventory.",
+    "unresolved_proposals": "None; no design reopening or substitute evidence search.",
     "design_record": "docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md",
     "allowed_scope": [],
     "forbidden_scope": [
@@ -28,8 +28,8 @@
       "Frozen V1 mutation",
       "V2 execution"
     ],
-    "dataset_access": "DENIED_SPECIFICATION_ONLY",
-    "input_dataset": "Metadata/schema/source-contract inventory only; no scientific/economic payload opened",
+    "dataset_access": "DENIED_DOCUMENT_SYNTHESIS_ONLY",
+    "input_dataset": "None; only already-published canonical findings and Phase A metadata through 18455c2101e01a362c1a510b49c8e4d152f6b162",
     "empirical_result_visibility": "DENIED_NO_PNL_OR_TRADING_RESULT_INSPECTION",
     "held_out_access": "PREVIOUSLY_OPENED_ACCESS_EVENT_PRESERVED_NO_NEW_EXECUTION",
     "exposed_periods": [
@@ -40,10 +40,10 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "Present Phase A report/immutable manifest/authority/control transaction on GitHub main only; ledger sequence 17. No future publication authority.",
+    "publication_scope": "Final synthesis/current closure documentation on GitHub main under direct researcher instruction; ledger sequence 18. No future commit/push authority.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
-    "completion_condition": "Phase A complete with non-estimable disposition; stop. Phase B prohibited without qualified evidence and explicit bounded authority.",
+    "completion_condition": "Final historical-development closure complete. NEXT_ACTION remains NONE; no automatic successor.",
     "validation_commands": [
       "literature/validators/validate_literature_os.ps1",
       "literature/validators/validate_documentation_architecture.ps1",
@@ -177,7 +177,7 @@
     "protocol_status": "S3 STRATEGY + PRE-DEVELOPMENT PROTOCOL FROZEN",
     "ordinary_design_gates_authorized": false,
     "failure_disposition": "FEASIBILITY / DATA AVAILABILITY RESULT",
-    "decision_type": "BOUNDED_EXECUTION_AND_ACCESS_AUTHORIZATION_ONLY",
+    "decision_type": "CLOSED_NO_PENDING_ORDINARY_RESEARCHER_GATE",
     "final_protocol_binding": {
       "auxiliary": {
         "method": "COMMON_CONSTRAINED_UNWEIGHTED_OLS",
@@ -260,6 +260,12 @@
       "phase_b_eligible": false,
       "phase_b_authorized": false,
       "conclusion_scope": "AVAILABLE_QUALIFIED_EVIDENCE_NOT_GLOBAL_NONEXISTENCE"
-    }
+    },
+    "historical_development_status": "S3 HISTORICAL DEVELOPMENT — NON-ESTIMABLE UNDER FROZEN EXECUTABILITY PROTOCOL",
+    "historical_development_closed": true,
+    "prospective_design_status": "PRESERVED_NOT_EXECUTION_AUTHORIZED",
+    "reopening_condition": "NEW_QUALIFIED_EVIDENCE_EXPLICITLY_SUPPLIED_UNDER_NEW_RESEARCHER_AUTHORIZATION",
+    "final_synthesis": "docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md",
+    "source_evidence_cutoff": "18455c2101e01a362c1a510b49c8e4d152f6b162"
   }
 }

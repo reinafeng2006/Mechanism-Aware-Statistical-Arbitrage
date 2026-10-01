@@ -1,25 +1,27 @@
 # Research Execution Agent State
 
 State schema: `REA-STATE-1.0`
-As-of: 2026-09-30
+As-of: 2026-10-01
 Basis: repository records and Git state verified during initialization; prompt assertions were not treated as authority.
 
 | State field | Verified current value |
 |---|---|
-| Current stage | S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL |
-| Stage status | Phase A evidence/manifest review complete; frozen strategy unchanged; Phase B not eligible/authorized |
+| Current stage | S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED |
+| Stage status | HISTORICAL DEVELOPMENT CLOSED; frozen prospective design preserved, not execution-authorized |
 | Latest frozen decision | Final twelve-package protocol approved with T1 .005 and validation-session bootstrap units; all 86 dispositions preserved |
-| Current substage | Mandatory historical evidence unavailable/unqualified in accessible inventory; no scientific development |
+| Current substage | Final synthesis complete; identification/evidence-availability result, no S3 profitability test |
 | Dataset version | `CORE-DATASET-FREEZE-V1` |
 | Dataset root fingerprint | `3952FC92E5AB88787E82AE5629609C87150035A449A3D31C6030D0ADEE0C3616` |
 | Dataset status | G3B `COMPLETE / FROZEN`; dataset structural freeze is not measurement authorization |
 | Held-out status | `AUTHORIZED / OPENED IRREVERSIBLY`; access-event hash preserved; no redesign permitted |
 | Computation authorization | NONE. No repeat, repair, rescue, R4-2025/original A6/G5/V2 execution; no further PnL inspection |
-| Current authorized action | NONE; S3-PHASE-A-EVIDENCE-1 completed; no Phase B or future publication authority |
+| Current authorized action | NONE; no evidence search/acquisition/development or future publication authority |
 | Last validation state | Current documentation/control structural checks recorded in latest run log. PowerShell suite unavailable in this client; core/final-result validation not run under no-data scope. Earlier PASS records are historical |
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
-| Remote state observed | Base main 0ef007f22deebcfc76520a5c4d6d72787a73606f verified; Phase A publication identity in Git history |
-| Researcher action required | No strategy decision. Additional original evidence would require bounded qualification before any Phase B authorization |
+| Remote state observed | Canonical evidence cutoff/base main 18455c2101e01a362c1a510b49c8e4d152f6b162; closure publication identity in Git history |
+| Researcher action required | None for closure. Reopening only if new qualified evidence is explicitly supplied under new researcher authorization |
+
+Final disposition: [S3 historical-development synthesis](../docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md); historical workstream CLOSED, prospective design preserved.
 
 Phase A: [report](../docs/stages/G5/S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md) and [immutable manifest](manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json). None of nine complete families qualified; no Phase B authority.
 

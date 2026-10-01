@@ -1,6 +1,12 @@
 # Research Governance — Current Authoritative State
 
-## Current Phase A disposition — 2026-09-30
+## Current S3 historical-development closure — 2026-10-01
+
+**S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED**. The [final synthesis](stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md) records the researcher's terminal historical disposition using canonical evidence through 18455c2101e01a362c1a510b49c8e4d152f6b162. This is non-estimability under the frozen executability protocol, not negative performance, a failed backtest or evidence against convergence. S3 profitability was not tested.
+
+NEXT_ACTION=NONE. Historical development stays CLOSED unless new qualified evidence is explicitly supplied under a new researcher authorization. No substitute evidence, design reopening or scientific/economic data access. Frozen S3 prospective design, Phase A immutable evidence and V1 remain unchanged; no prospective study starts automatically.
+
+## Phase A disposition — historical record, 2026-09-30
 
 **S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL**. The [Phase A authority](decisions/S3_PHASE_A_EVIDENCE_AUTHORIZATION_AND_DISPOSITION.md), [report](stages/G5/S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md) and [immutable evidence manifest](../research/manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json) supersede the earlier no-Phase-A-authority status below. Only metadata/schema/contract feasibility was authorized and completed; Phase B remains denied. This availability finding does not amend strategy or establish universal source nonexistence. NEXT_ACTION=NONE; V1 unchanged.
 

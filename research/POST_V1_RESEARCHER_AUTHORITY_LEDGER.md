@@ -1,6 +1,6 @@
 # Post-V1 researcher authority ledger
 
-Current authority update (2026-09-30, sequence 17): [Phase A authorization/disposition](../docs/decisions/S3_PHASE_A_EVIDENCE_AUTHORIZATION_AND_DISPOSITION.md), [report](../docs/stages/G5/S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md), [immutable manifest](manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json). Phase A complete, **S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL** on accessible evidence. Frozen S3 strategy and V1 unchanged. NEXT_ACTION=NONE; no Phase B.
+Current authority update (2026-10-01, sequence 18): direct researcher closes historical S3 development. [Final synthesis/disposition](../docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md): **S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED**. NEXT_ACTION=NONE. Reopening requires new qualified evidence explicitly supplied under new researcher authorization. Frozen strategy/Phase A manifest/V1 unchanged; no substitute-source search or data access.
 
 Purpose: persist previously received researcher instructions without requiring the original client/chat. Migration transcribes authority; it grants no new science. Date: 2026-09-18. Historical V1 tag/commit: `v1-final-frozen-2026-09-18` / `1359dcb7fc1876321fec00709a00ccca26d1f217`.
 
@@ -152,3 +152,11 @@ Direct researcher authorizes only source/provider/schema/date/PIT/vintage/receip
 [Authorization/disposition](../docs/decisions/S3_PHASE_A_EVIDENCE_AUTHORIZATION_AND_DISPOSITION.md) records this scope. [Report](../docs/stages/G5/S3_PHASE_A_DATA_FEASIBILITY_AND_MANIFEST_REPORT.md) and [manifest](manifests/S3_PHASE_A_EVIDENCE_MANIFEST_V1.json) classify all nine mandatory families. Zero complete qualified families; one requires descendant requalification, eight missing/non-estimable. The result is bounded to accessible qualified evidence, not a universal provider nonexistence claim. Conditional C04 descendant source/fields/period/transform/version/authority are documented, not executed.
 
 Metadata hashes verified; previously recorded payload hashes not revalidated. No scientific/economic payload opened; external raw/QA absent locally. Phase B cannot proceed on this evidence and is not authorized. NEXT_ACTION=NONE; frozen strategy and V1 unchanged. **S3 DEVELOPMENT NON-ESTIMABLE UNDER FROZEN PROTOCOL**.
+
+## 18. 2026-10-01 — final S3 historical-development synthesis and closure
+
+Direct researcher instruction: “FINAL SYNTHESIS — CLOSE S3 HISTORICAL DEVELOPMENT AS NON-ESTIMABLE”. Use canonical records through 18455c2101e01a362c1a510b49c8e4d152f6b162; do not reopen design, seek substitute evidence or access additional scientific/economic data.
+
+[Final synthesis](../docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md) distinguishes completed six-estimator S3 architecture, earlier published V1 relationship-loss/held-out findings with their terminal qualifications, Phase A's one descendant-requalification/eight missing families and their frozen-equation dependencies, methodological lessons and preserved prospective prerequisites. No new inference or empirical result. S3 profitability was not tested; closure is identification/evidence availability, not negative performance, evidence against convergence or failed backtest. Inaccessible evidence is not universal provider nonexistence.
+
+Record S3 HISTORICAL DEVELOPMENT — NON-ESTIMABLE UNDER FROZEN EXECUTABILITY PROTOCOL. Historical workstream CLOSED unless new qualified evidence is explicitly supplied under new researcher authorization; NEXT_ACTION=NONE. Frozen protocol, plan, classifications, Phase A immutable manifest and V1 untouched. This requested synthesis/control publication to GitHub main is authorized; no future execution/publication authority. **S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED**.
