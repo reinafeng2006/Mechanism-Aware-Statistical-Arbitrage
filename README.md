@@ -2,6 +2,8 @@
 
 Current status: **S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED**.
 
+For a standalone quantitative overview, read the [final concise S3 strategy report](docs/S3_FINAL_CONCISE_STRATEGY_REPORT.md).
+
 Start with the [final synthesis and disposition](docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md) and [fresh-client entry](docs/stages/G5/CURRENT_PROJECT_STATE_AND_NEXT_ACTION.md). Earlier descriptive relationship-loss evidence is distinct from S3 economics. Phase A found one family requiring descendant requalification and eight missing/non-estimable families; historical S3 development never reached Phase B. This is an identification/evidence-availability result, not a failed backtest or a profitability finding.
 
 The [frozen S3 protocol](docs/stages/G5/S3_FROZEN_STRATEGY_AND_PRE_DEVELOPMENT_PROTOCOL.md), Phase A immutable manifest and frozen V1 remain unchanged. NEXT_ACTION=NONE. Historical development is closed unless new qualified evidence is explicitly supplied under a new researcher authorization. No substitute-evidence search, redesign, data access or prospective execution follows.

@@ -1,8 +1,8 @@
 # Current project state and next action — fresh-client entry point
 
-Updated 2026-10-01 after final S3 historical-development closure. **Read this before any research action.** This entry is under docs/stages/G5 so the docs root remains exactly six canonical documents. Canonical GitHub records suffice without prior conversation or scientific payloads.
+Updated 2026-10-02 after publication of the concise S3 researcher report; historical-development closure is unchanged. **Read this before any research action.** The docs root contains six numbered canonical documents plus the explicitly requested S3 concise strategy report. Canonical GitHub records suffice without prior conversation or scientific payloads.
 
-**S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED**. Read the [final synthesis and disposition](S3_FINAL_SYNTHESIS_AND_DISPOSITION.md). Canonical evidence cutoff: 18455c2101e01a362c1a510b49c8e4d152f6b162. The frozen S3 protocol and Phase A evidence manifest remain unchanged; NEXT_ACTION=NONE.
+**S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED**. Read the [concise researcher-facing strategy report](../../S3_FINAL_CONCISE_STRATEGY_REPORT.md) and [final synthesis and disposition](S3_FINAL_SYNTHESIS_AND_DISPOSITION.md). Canonical evidence cutoff: 18455c2101e01a362c1a510b49c8e4d152f6b162. The frozen S3 protocol and Phase A evidence manifest remain unchanged; NEXT_ACTION=NONE.
 
 ## A. Objective and authority
 

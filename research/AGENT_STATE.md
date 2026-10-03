@@ -1,7 +1,7 @@
 # Research Execution Agent State
 
 State schema: `REA-STATE-1.0`
-As-of: 2026-10-01
+As-of: 2026-10-02
 Basis: repository records and Git state verified during initialization; prompt assertions were not treated as authority.
 
 | State field | Verified current value |
@@ -20,6 +20,8 @@ Basis: repository records and Git state verified during initialization; prompt a
 | Publication revision | Resolve annotated tag `v1-final-frozen-2026-09-18`; one-shot engine publication `25ca18a` |
 | Remote state observed | Canonical evidence cutoff/base main 18455c2101e01a362c1a510b49c8e4d152f6b162; closure publication identity in Git history |
 | Researcher action required | None for closure. Reopening only if new qualified evidence is explicitly supplied under new researcher authorization |
+
+Concise researcher-facing reference: [S3 strategy report](../docs/S3_FINAL_CONCISE_STRATEGY_REPORT.md). Documentation-only publication; historical closure and NEXT_ACTION=NONE unchanged.
 
 Final disposition: [S3 historical-development synthesis](../docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md); historical workstream CLOSED, prospective design preserved.
 

@@ -7,7 +7,7 @@
     "next_execution_authorized": false,
     "execution_state": "S3_HISTORICAL_DEVELOPMENT_CLOSED_NON_ESTIMABLE",
     "objective": "Preserve final S3 closure. No acquisition, evidence substitution, historical development or prospective execution. Reopening requires new qualified evidence explicitly supplied under a new researcher authorization.",
-    "completed_action": "S3-FINAL-SYNTHESIS-CLOSURE-2026-10-01",
+    "completed_action": "S3-CONCISE-STRATEGY-REPORT-2026-10-02",
     "completion_record": "docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md",
     "authority_record": "research/POST_V1_RESEARCHER_AUTHORITY_LEDGER.md",
     "current_checkpoint": "S3 HISTORICAL DEVELOPMENT CLOSED — NON-ESTIMABLE; PROSPECTIVE DESIGN PRESERVED",
@@ -40,7 +40,7 @@
     "commit_permitted": false,
     "push_permitted": false,
     "push_destination": "https://github.com/reinafeng2006/Mechanism-Aware-Statistical-Arbitrage.git main",
-    "publication_scope": "Final synthesis/current closure documentation on GitHub main under direct researcher instruction; ledger sequence 18. No future commit/push authority.",
+    "publication_scope": "Direct researcher authorizes this concise report and documentation/control consistency changes, normal commit/push to GitHub main only. No future publication or execution authority.",
     "frozen_v1_commit": "1359dcb7fc1876321fec00709a00ccca26d1f217",
     "frozen_v1_tag": "v1-final-frozen-2026-09-18",
     "completion_condition": "Final historical-development closure complete. NEXT_ACTION remains NONE; no automatic successor.",
@@ -266,6 +266,7 @@
     "prospective_design_status": "PRESERVED_NOT_EXECUTION_AUTHORIZED",
     "reopening_condition": "NEW_QUALIFIED_EVIDENCE_EXPLICITLY_SUPPLIED_UNDER_NEW_RESEARCHER_AUTHORIZATION",
     "final_synthesis": "docs/stages/G5/S3_FINAL_SYNTHESIS_AND_DISPOSITION.md",
-    "source_evidence_cutoff": "18455c2101e01a362c1a510b49c8e4d152f6b162"
+    "source_evidence_cutoff": "18455c2101e01a362c1a510b49c8e4d152f6b162",
+    "concise_strategy_report": "docs/S3_FINAL_CONCISE_STRATEGY_REPORT.md"
   }
 }

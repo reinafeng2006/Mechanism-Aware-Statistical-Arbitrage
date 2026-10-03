@@ -5,7 +5,11 @@ function Assert-Doc($condition, $message) { if (-not $condition) { throw $messag
 
 $canonical = 0..5 | ForEach-Object { Join-Path $RepositoryRoot ("docs\{0:D2}_" -f $_) }
 $rootDocs = @(Get-ChildItem (Join-Path $RepositoryRoot 'docs') -File -Filter '*.md')
-Assert-Doc ($rootDocs.Count -eq 6) "docs root must contain exactly six canonical Markdown files."
+# The researcher explicitly requested this one root-level synthesis report.
+$reportName = 'S3_FINAL_CONCISE_STRATEGY_REPORT.md'
+$canonicalRootDocs = @($rootDocs | Where-Object { $_.Name -ne $reportName })
+Assert-Doc ($canonicalRootDocs.Count -eq 6) "docs root must contain exactly six numbered canonical Markdown files."
+Assert-Doc ($rootDocs.Count -eq 7 -and (Test-Path -LiteralPath (Join-Path $RepositoryRoot ("docs/" + $reportName)))) "Only the six canonical files and the named S3 concise report may occupy docs root."
 foreach ($prefix in $canonical) { Assert-Doc (@(Get-ChildItem ((Split-Path $prefix) + '\' + (Split-Path $prefix -Leaf) + '*.md')).Count -eq 1) "Missing or duplicate canonical prefix: $prefix" }
 
 $mapPath = Join-Path $RepositoryRoot 'docs\archive\DOCUMENTATION_MIGRATION_MAP.md'
@@ -54,7 +58,8 @@ Assert-Doc ($governance -match 'Canonical docs = current truth' -and $governance
     PreRefactorDocsReconciled = $mapped.Count
     LostFiles = 0
     BrokenMarkdownLinks = $broken.Count
-    CanonicalRootDocs = $rootDocs.Count
+    CanonicalRootDocs = $canonicalRootDocs.Count
+    ResearcherFacingS3Report = $reportName
     G1Status = 'FROZEN'
     G2Status = 'G2B_FROZEN_G3B_DESIGN_FROZEN_G3B01_PROVIDER_FIELD_FROZEN_G3B02_AUDIT_ONLY_ACQUISITION_LOCKED'
     EmpiricalAuthorization = 'UNCHANGED_LOCKED'
